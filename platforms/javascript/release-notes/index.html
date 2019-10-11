@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/ilp4lxb.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     
+    <title>リリースノート | Tealium for JavaScript（utag.js） |Preview of Tealium Developer Docs</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+     <meta name="generator" content="Hugo 0.54.0" />
+
+      
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      
+
+    <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
+
+  </head>
+  <body class="sidebar ma0 sans-serif bg-primary-color-light">
+      
+        
+<script>
+var utag_data = {
+    category_name : "JavaScript (Web)",
+    site_section  : "platforms",
+    site_language : "ja",
+    tealium_event : "page_view"
+}
+</script>
+
+<script>
+ (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/tealium\/docs/qa/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+  })();
+</script>
+
+      
+
+    
+<nav class="bg-primary-color-dark pv2 w-100 sticky-t" role="navigation">
+
+  <div class="center flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="http://docs-preview.tealium.co.jp/"><img src="/images/icons/tealdevdocs_logo_white.svg" width="180" height="41"/></a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+            
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="http://docs-preview.tealium.co.jp/platforms/" class="dim link">プラットフォーム</a>
+        </li>
+      
+    </ul>
+    <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
+  <fieldset class="bn ma0 pa0">
+    <label class="clip" for="search-input">Search</label>
+    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white"
+           placeholder="ドキュメントの検索" name="search-input" value=""
+           style="background: transparent url('/images/icons/icon-search-white.png') no-repeat 2px 10px /16px 16px;">
+  </fieldset>
+</form>
+</div>
+  </div>
+
+
+<div id="mainAppInner" class="padd-54">
+    <div id="leftFrame">
+        <div class="main-nav-container">
+            <ul class="menu-group flex-0 mb-3">
+                <li class="js-toggle-leftframe">
+                    <a href="#" class="menu-list-item top-level tooltip-right">
+                        <span class="menu-large-icon is-logo"> <img src="/images/icons/tealium_logo_color_sat.svg" class="as-main-icon"> </span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="flex-1">
+                <ul id="navCategoryHome" class="menu-group as-main-navigation">
+                    <li class="js-main-nav-section" data-section="home">
+                        <a href="https://community.tealiumiq.com/" class="menu-list-item top-level tooltip-right" title="Tearlium Learnig Center Home">
+                          <span class="menu-large-icon">
+                              <span class="as-platform-image square-xxxs is-rounded bg-transparent">
+                                  <span class="inner-image UDH-icon">TLC</span>
+                              </span>
+                          </span>
+                          <span class="menu-context supportLinks_buttonTitle">Tealium Learning Center</span>
+                        </a>
+                          <span class="tooltiptext">Tealium Learning <br>Community</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a href="https://community.tealiumiq.com/t5/Forums/ct-p/tealiumlearningcommunity" class="menu-list-item top-level tooltip-right" title="Community Forums">
+                            <span class="menu-large-icon">
+                                <i class="fa fa-comments"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">Forums</span>
+                        </a>
+                          <span class="tooltiptext">Forums</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a href="https://community.tealiumiq.com/t5/tkb/communitypage" class="menu-list-item top-level tooltip-right" title="Product Guides">
+                            <span class="menu-large-icon">
+                                <i class="fa fa-book"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">Product Guides</span>
+                        </a>
+                          <span class="tooltiptext">Product Guides</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section active">
+                        <a href="https://docs.tealium.com/" class="menu-list-item top-level tooltip-right" title="Developer Documentation">
+                            <span class="menu-large-icon">
+                                <i class="fa fa-code"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">Developer Docs</span>
+                        </a>
+                          <span class="tooltiptext">Developer Docs</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a href="https://community.tealiumiq.com/t5/Product-Ideas/idb-p/product-ideas" class="menu-list-item top-level tooltip-right" title="Product Ideas">
+                            <span class="menu-large-icon">
+                                <i class="fa fa-lightbulb-o"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">Product Ideas</span>
+                        </a>
+                          <span class="tooltiptext">Product Ideas</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a href="https://community.tealiumiq.com/t5/Education/ct-p/education" class="menu-list-item top-level tooltip-right" title="Education">
+                            <span class="menu-large-icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">Education</span>
+                        </a>
+                          <span class="tooltiptext">Education</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a href="https://community.tealiumiq.com/t5/TLC-Blog/bg-p/TLC-Blog" class="menu-list-item top-level tooltip-right" title="TLC Blog">
+                            <span class="menu-large-icon">
+                                <i class="fa fa-newspaper-o"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">TLC Blog</span>
+                        </a>
+                          <span class="tooltiptext">TLC Blog</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a  href="https://support.tealiumiq.com" target="_blank" class="menu-list-item top-level tooltip-right" title="Tealium Support Desk">
+                          <span class="menu-large-icon">
+                            <i class="fa fa-life-ring"></i>
+                          </span>
+                          <span class="menu-context supportLinks_buttonTitle">Support Desk</span>
+                        </a>
+                          <span class="tooltiptext">Support Desk</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="menu-group as-main-navigation flex-0 bottom-align">
+              <li class="menu-divider"></li>
+              <li class="js-main-nav-section">
+                <a href="https://my.tealiumiq.com/" class="menu-list-item top-level tooltip-right" title="Universal Data Hub">
+                    <span class="menu-large-icon">
+                        <span class="as-platform-image square-xxxs is-rounded bg-transparent">
+                            <span class="inner-image UDH-icon">UDH</span>
+                        </span>
+                    </span>
+                    <span class="menu-context supportLinks_buttonTitle">Universal Data Hub</span>
+                </a>
+                          <span class="tooltiptext">Universal Data Hub</span>
+              </li>
+              <li class="menu-divider"></li>
+              <li class="js-toggle-leftframe">
+                <a href="#" class="menu-list-item top-level d-flex justify-content-end" title="Expand/Collapse">
+                    <span class="menu-large-icon d-flex align-items-center justify-content-center mr-0">
+                        <span class="as-platform-image square-xxxs is-rounded bg-transparent d-flex align-items-center justify-content-center">
+                            <i class="fa as-caret"></i>
+                        </span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+
+</nav>
+
+    
+    <main role="main" class="content-with-sidebar pb7 pb0-ns">
+      
+  <article class="w-100 ph4 pb2 pb2-ns pt1 pt4-ns">
+    <div class="flex-l">
+
+      <div class="order-2 w-100 w-20-l ph4-m ph0-l mb4 sticky-r">
+
+
+
+
+  <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
+      <p class="b">目次</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-46">バージョン4.46</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-45">バージョン4.45</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-44">バージョン4.44</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-43">バージョン4.43</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-42">バージョン4.42</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-41">バージョン4.41</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-40">バージョン4.40</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-39">バージョン4.39</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-38">バージョン4.38</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-37">バージョン4.37</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-36">バージョン4.36</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-35">バージョン4.35</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-34">バージョン4.34</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-33">バージョン4.33</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-32">バージョン4.32</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-31">バージョン4.31</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-30">バージョン4.30</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-29">バージョン4.29</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-28">バージョン4.28</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-27">バージョン4.27</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-26">バージョン4.26</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-011">バージョン4.011</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-010">バージョン4.010</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-009">バージョン4.009</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-008">バージョン4.008</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-007">バージョン4.007</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-006">バージョン4.006</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-005">バージョン4.005</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-004">バージョン4.004</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-003">バージョン4.003</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-002">バージョン4.002</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-001">バージョン4.001</a></li>
+              <li><a href="#%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b34-000">バージョン4.000</a></li>
+              </nav>
+  </aside></div>
+
+      <div class="order-1 ph0 ph4-ns mid-gray nested-copy-line-height no-underline nested-links nested-copy-seperator nested-blockquote mt0-ns" style="flex-grow:1;">
+        <div class="documentation-copy center measure-wide-l">
+          <div id="readout" class="fixed right-0 bottom-0">
+          </div>
+          <header class="flex-none w-100">
+  
+    
+      <a href="/platforms/javascript" class="f6 fw8 mb0 link mid-gray dim mr3">
+        JAVASCRIPT
+      </a>
+    
+  
+
+  <h1 class="lh-title mb3 mv0 pt3">リリースノート</h1>
+</header>
+
+<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
+  
+    <div class="f4 fw4 lh-copy">
+      utag.jsのリリースノート。
+    </div>
+  
+
+  
+</aside>
+
+
+
+<div class="prose" id="prose">
+
+
+
+<p><a href="https://community.tealiumiq.com/t5/JavaScript-utag-js/How-do-I-upgrade-to-the-latest-utag-js/ta-p/5042">お使いのutag.jsを更新</a>して、最新バージョンの修正点や強化点を活用しましょう。</p>
+
+<h2 id="バージョン4-46">バージョン4.46</h2>
+
+<p>2018年6月リリース</p>
+
+<ul>
+<li>以下の新しいビルトイン変数のサポートを追加。
+
+<ul>
+<li><code>tealium_session_number</code> - 次に含まれる既存値の複製： <code>utag.data['cp.utag_main__sn']</code></li>
+<li><code>tealium_session_event_number</code> - 現在のセッション（訪問）でのトラッキングコール（utag.view()、utag.link()）の数をカウントする<code>utag.data['cp.utag_main__se']</code>内のCookie値。 1回限りのページ読み込みによってページ上の多数のトラッキング対象イベントが読み込まれる単一ページアプリ（SPA）に便利です。<br>&ldquo;noview&rdquo;フラグを使用しているページの場合、この値はページ読み込み（タグ配信ルールの評価）とutag.view()への初回コールの両方で&rdquo;1&rdquo;となります。</li>
+</ul></li>
+<li>utag.link/view/trackコールに渡される空のパラメータリストのサポートを追加。以前のバージョンでは、utag.link()またはutag.view()へのコールは問題なく機能するものの、余分な&rdquo;cfg&rdquo;オブジェクトがデータ層に追加されていました。 utag.track()へのコールは、以前のバージョンでは例外が発生する原因となっていました。</li>
+<li>&ldquo;noview&rdquo;フラグを使用しているページについては、以下の2点に留意する必要があります。
+
+<ul>
+<li>データ層の<code>tealium_session_event_number</code>には、ページ読み込み（utag.jsではタグの読み込みにデータ層が使用される）とutag.viewへの初回コール（これによってタグのトリガーや追加タグの読み込みが行われる）の両方について&rdquo;1&rdquo;の値が設定されます。</li>
+<li>Cookieはページ読み込み時に使用および初期化されるので、最初のページでutag.viewコールが発生しないままブラウザでページが更新されると、2番目のページで発生する最初のutag.viewコールの&rdquo;2&rdquo;に移行します。これは極端なケースであり、ほとんどの実装ではutag.jsの実行後すぐに<code>utag.view</code>がコールされることになります。</li>
+</ul></li>
+<li>この更新には、従来のプライバシーマネージャ拡張機能で使用されていた&rdquo;OU&rdquo;関数のための修正も含まれています。
+
+<ul>
+<li>OPTOUTMULTI Cookieは、utag.view/linkへのコールのたびに再チェックされます（ページ更新は不要）</li>
+<li>タグのUIDによって直接トリガーされるタグでも、その前にOPTOUTMULTI Cookie設定のチェックが行われます</li>
+</ul></li>
+</ul>
+
+<h2 id="バージョン4-45">バージョン4.45</h2>
+
+<p>2018年1月リリース</p>
+
+<ul>
+<li>バージョン4.40で発生していた、iframe内の同じタグが2回以上読み込まれたページについてブラウザ履歴に余分なエントリーが追加されるバグを修正。 この問題は、iframeベースのタグベンダーを利用する単一ページアプリ（SPA）に影響していた可能性があります。</li>
+</ul>
+
+<h2 id="バージョン4-44">バージョン4.44</h2>
+
+<p>2017年6月リリース</p>
+
+<ul>
+<li>&ldquo;tags.tiqcdn.cn&rdquo;（中国）でホストされているutag.jsの訪問者セッションカウントのサポートを追加しました。</li>
+<li>&ldquo;example.XX.jp&rdquo;のパターンに従うドメイン用のデフォルトの<code>utag_main</code> Cookieドメインロジックを更新しました（XX.jpドメインではCookieを設定できないが、&rdquo;example.XX.jp&rdquo;ドメインでは設定できる）。</li>
+</ul>
+
+<h2 id="バージョン4-43">バージョン4.43</h2>
+
+<p>2017年6月リリース</p>
+
+<ul>
+<li>以前はグローバル変数<code>utag_cfg_ovrd</code>（構成上書きオブジェクト）を通じてループで使用されていたグローバル変数&rdquo;i&rdquo;の使用を廃止しました。</li>
+<li>レガシーs2sサポートを廃止しました（既にTealium iQから削除されていたので）。  クラウドデリバリーはUDHでサポートされます。</li>
+<li>utag.ut.loaderユーティリティ関数に渡されるエラーハンドラー関数のサポートを追加。  このサポートは、最新ブラウザのみを対象としています（古いブラウザでは、標準コールバック&rdquo;cb&rdquo;関数が代わりにコールされる可能性が高い &ndash; 少なくともIE7およびIE8では確認済み）。<br>
+<br /></li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.ut.loader({
+        <span style="color:#b84">&#34;src&#34;</span>   <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;https://www.example.com/path/file.js&#34;</span>,
+        <span style="color:#b84">&#34;cb&#34;</span>    <span style="font-weight:bold">:</span> <span style="font-weight:bold">function</span>(){console.log(<span style="color:#b84">&#34;CALLBACK&#34;</span>)},
+        <span style="color:#b84">&#34;error&#34;</span> <span style="font-weight:bold">:</span> <span style="font-weight:bold">function</span>(){console.log(<span style="color:#b84">&#34;ERROR IN LOADING&#34;</span>)}
+        });
+</code></pre></div>
+<h2 id="バージョン4-42">バージョン4.42</h2>
+
+<p>2016年8月リリース</p>
+
+<p>新しいビルトインTealiumイベント属性を追加。 これらの新しい属性は、各Tealiumビューまたはリンクイベントとともにデータ層に追加されます。</p>
+
+<ul>
+<li><code>tealium_visitor_id</code> 
+Cookie <code>cp.utag_main_v_id</code>内のTealiumによって生成されるID</li>
+<li><code>tealium_session_id</code> 
+現在のセッション開始のエポックタイムスタンプ文字列（ミリ秒単位）</li>
+<li><code>tealium_account</code> 
+utag.jsファイルへのパスに含まれるアカウント文字列値</li>
+<li><code>tealium_profile</code> 
+utag.jsファイルへのパスに含まれるプロファイル文字列値</li>
+<li><code>tealium_environment</code> 
+utag.jsファイルへのパスに含まれる環境文字列値（&rdquo;dev&rdquo;または&rdquo;prod&rdquo;）</li>
+<li><code>tealium_datasource</code> 
+EventStreamからのデータソースキー。</li>
+<li><code>tealium_random</code> 
+キャッシュバスティングで使用するための乱数を表す文字列</li>
+<li><code>tealium_library_name</code> 
+ライブラリの名前（&rdquo;utag.js&rdquo;）</li>
+<li><code>tealium_library_version</code> 
+utag.jsのバージョン（このリリースでは&rdquo;4.42.0&rdquo;）</li>
+<li><code>tealium_timestamp_epoch</code> 
+秒単位での現在のエポック時間を表す整数</li>
+<li><code>tealium_timestamp_utc</code> 
+UTCタイムゾーンでの現在のISO文字列タイムスタンプ（古いブラウザでは利用不可）</li>
+<li><code>tealium_timestamp_local</code> 
+ブラウザのタイムゾーンでの現在のISO文字列タイムスタンプ（古いブラウザでは利用不可）</li>
+</ul>
+
+<h2 id="バージョン4-41">バージョン4.41</h2>
+
+<p>2016年6月リリース</p>
+
+<p><strong><code>utag.ut.encode</code>内のフォールバック関数に関する入力ミスを修正するための軽微な更新。</strong></p>
+
+<p>形式に誤りのあるUnicode文字をエンコードする際の例外として、<code>encodeURIComponent</code>コールでJavaScriptの<code>escape</code>コールが代わりに使用されるようになりました。</p>
+
+<h2 id="バージョン4-40">バージョン4.40</h2>
+
+<p>2016年4月リリース</p>
+
+<p><strong><code>utag.link</code>および<code>utag.view</code></strong>を使用している単一ページアプリ（SPA）サイトでの動作の改善</p>
+
+<p>以前は、utag.link/viewに渡される現在のデータ層内のアイテムはutag.dataグローバルオブジェクトにマージされていました。 この処理は、utag.link/viewコールのたびにタグ配信ルールを再評価するために必要でした。 utag.js 4.40テンプレートでは、この処理を行わなくても済むように、公開エンジンの更新が活用されています。 バージョン4.40では、utag.dataグローバルオブジェクトがutag.linkまたはutag.viewコールのたびに更新されることはありません。</p>
+
+<p><strong>重要</strong>：次のJS拡張機能を使用すれば、v4.40への更新前に<a href="#version4-39">v4.39</a>の動作との後方互換性をテストできます。 </p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#998;font-style:italic">// JS Extension scoped to &#34;Before Load Rules&#34;
+</span><span style="color:#998;font-style:italic"></span>utag.ut.merge( b, utag.data, <span style="color:#099">0</span> );
+utag.ut.merge( utag.data, b ,<span style="color:#099">1</span> );
+</code></pre></div>
+<p><strong>新しい&rdquo;noconsole&rdquo;フラグ。</strong></p>
+
+<p>このフラグを<a href="/platforms/javascript/settings/">utag_cfg_ovrdオブジェクト</a>でtrueに設定すると、utag.DBからの出力がウェブコンソールに表示されなくなります。 デバッグが有効になっている場合、出力はutag.db_log array内に引き続き保持されます。</p>
+
+<p><strong>utag.ut.loader関数を使用したDOMでのiframeの作成</strong></p>
+
+<p>同じIDのiframeが既に存在する場合、iframeが再度追加されることはありません。 代わりに、iframe srcが更新されます。</p>
+
+<p><strong>utag.view/linkコールに対するJS Page変数値の更新</strong></p>
+
+<p>JS Page変数が、utag.viewまたはutag.linkをコールするたびに現在の値に更新されるようになりました。 その結果、<code>b[&quot;js_page.my_global_var&quot;]</code>には、utag.linkがコールされるたびに&rdquo;window.my_global_var&rdquo;内の最新の値が設定されることになります。</p>
+
+<p><strong>utag.link/utag.viewがコールされるたびにデータ層内の&rdquo;cp.utag_main_ses_id&rdquo;が保持されるバグの修正</strong></p>
+
+<p>この値は、訪問者が30分間にわたってアクティビティなしで同じページにいる場合に実行されるutag.link/viewコールの後に、新しいセッションIDに更新されるようになりました。</p>
+
+<p><strong>&ldquo;eval&rdquo;を使用してdocument.referrer値をデータ層のb[&ldquo;dom.referrer&rdquo;]</strong>に読み込む手段を排除</p>
+
+<p><strong>新しいutag.ut.encode関数</strong></p>
+
+<p>この関数は、encodeURIComponentから例外が発生した場合（例外は不完全または不正確な形式のUnicode文字をエンコードしようとすると発生する可能性がある）、代わりにエスケープを使用します。</p>
+
+<p><strong>_t_visitor_idおよび_t_session_idの提供終了</strong></p>
+
+<p>自動生成のデータ層値である&rdquo;_t_visitor_id&rdquo;および&rdquo;_t_session_id&rdquo;は利用できなくなりました。 これらは&rdquo;ut.visitor_id&rdquo;および&rdquo;ut.session_id&rdquo;に置き換わります。 それでも必要な場合は、次のような方法で追加できます。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#998;font-style:italic">// JS Extension scoped to &#34;Before Load Rules&#34;
+</span><span style="color:#998;font-style:italic"></span>b[<span style="color:#b84">&#34;_t_visitor_id&#34;</span>] <span style="font-weight:bold">=</span> b[<span style="color:#b84">&#34;cp.utag_main_v_id&#34;</span>];
+b[<span style="color:#b84">&#34;_t_session_id&#34;</span>] <span style="font-weight:bold">=</span> b[<span style="color:#b84">&#34;cp.utag_main_ses_id&#34;</span>];
+</code></pre></div>
+<h2 id="バージョン4-39">バージョン4.39</h2>
+
+<p>2015年7月9日リリース</p>
+
+<ul>
+<li>訪問者エンリッチメントデータをローカルストレージ内のプロファイル固有の場所に書き込む<a href="https://community.tealiumiq.com/t5/AudienceStream/Tealium-Collect-Tag-formerly-DataCloud/ta-p/11923">Tealium Collectタグ</a>のサポートを追加。</li>
+</ul>
+
+<h2 id="バージョン4-38">バージョン4.38</h2>
+
+<p>2015年6月16日リリース</p>
+
+<ul>
+<li>すべてのタグをスコープとする拡張機能をいつ実行するかを選択するための新しいドロップダウンリストをサポート。
+
+<ul>
+<li>タグ配信ルールの後（デフォルトで選択されている）</li>
+<li>タグ配信ルールの前（4.37以前のバージョンではサポート対象外）</li>
+<li>タグの後（4.37以前のバージョンではサポート対象外）</li>
+</ul></li>
+</ul>
+
+<p class="note">この拡張機能は、4.37以前のバージョンでは複数回実行される可能性があるため、それらのバージョンとの互換性がありません。</p>
+
+
+<ul>
+<li>すべてのタグが読み込まれる前にutag.viewをコールする方法のサポートが追加されました。utag.viewをコールし、DOM Readyをスコープとする拡張機能内のUIDによって特定のタグをトリガーする際に発生するバグが、これによって修正されます。</li>
+<li>UIDによって特定のタグに対してutag.linkをコールする方法のサポートが追加されました。</li>
+</ul>
+
+<h2 id="バージョン4-37">バージョン4.37</h2>
+
+<p>2015年2月20日リリース</p>
+
+<ul>
+<li><code>utag_main</code> Cookie内の$値のインスタンスが誤ってデコードされ、代わりに区切り記号として表示されていたバグを修正しました。 この修正の後は、<code>utag_main</code> Cookie値が&rdquo;二重デコード&rdquo;されることはなくなります。</li>
+<li><a href="https://community.tealiumiq.com/t5/Tealium-iQ/Publish-Configurations/ta-p/13632">readywaitフラグ</a>が設定され、かつ<code>utag_data</code>オブジェクトがページに存在しない場合、またはそのいずれかの場合に<code>utag_main__ss</code> Cookieが誤って設定される原因となっていたバグを修正しました。</li>
+</ul>
+
+<h2 id="バージョン4-36">バージョン4.36</h2>
+
+<p>2015年1月9日リリース</p>
+
+<ul>
+<li><a href="/platforms/javascript/event-tracking/">utag.link()コール</a>で新しいタグを読み込むことができるようになりました。 以前は、<a href="/platforms/javascript/page-tracking/">utag.view()コール</a>でしかこの操作を行えませんでした。</li>
+<li>waittimerおよびreadywaitフラグがtrueに設定されている場合にutag.dataオブジェクトがDOM Readyをスコープとする拡張機能に対して初期化されないバグを修正しました。</li>
+<li>以下の新しいビルトインデータ層変数を追加しました。
+
+<ul>
+<li>utag.data[&ldquo;ut.domain&rdquo;] - ウェブサイトのドメイン</li>
+<li>utag.data[&ldquo;ut.version&rdquo;] - サイトで読み込まれるutag.jsのバージョン</li>
+<li>utag.data[&ldquo;ut.event&rdquo;] - イベントの種類（linkまたはview）</li>
+<li>utag.data[&ldquo;ut.account&rdquo;] - サイト上のTealium iQアカウント</li>
+<li>utag.data[&ldquo;ut.profile&rdquo;] - サイト上のTealium iQプロファイル</li>
+<li>utag.data[&ldquo;ut.env&rdquo;] - 公開環境</li>
+</ul></li>
+<li>手動のutag.viewおよびutag.linkコールによってセッション終了Cookieタイムスタンプが延長されないバグを修正しました。 この修正は、特に訪問者がサイトとやり取りをしている間にセッションを開いた状態に維持する手段として、AJAXを利用している単一ページアプリおよびサイトに効果的です。</li>
+<li>同期読み込みタグを<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Tag-Configuration-Advanced-Settings/ta-p/13600">ブロッキングタグ</a>として使用する妨げになっていたブロッキングタグのバグを修正しました。</li>
+<li>複数の同期ブロッキングタグの読み込みによって古いバージョンのInternet Explorer向けにキャッシュを取得するのを妨げていたバグを修正しました。</li>
+<li>すべてのタグをスコープとする拡張機能の実行直前にデータ層を出力するためのデバッグを追加しました。</li>
+</ul>
+
+<h2 id="バージョン4-35">バージョン4.35</h2>
+
+<p>2014年12月5日リリース</p>
+
+<ul>
+<li>立て続けに実行したutag.view()コールに対してデータ層が保持されないバグを修正しました。 現在は、コールごとにデータ層のスナップショットが保持されます。</li>
+<li>手動のutag.view()およびutag.link()コール用のデバッグ出力をさらに追加しました。</li>
+<li>新しいユーティリティ関数、utag.ut.typeOf()を追加しました。 たとえば、utag.ut.typeOf([])からは&rdquo;array&rdquo;という値が返されます。</li>
+</ul>
+
+<h2 id="バージョン4-34">バージョン4.34</h2>
+
+<p>2014年10月15日リリース</p>
+
+<ul>
+<li><p>DOM readyStateの&rdquo;complete&rdquo;（&rdquo;load&rdquo;とも呼ばれる）イベントまでタグの読み込みを遅延させるために、上書き（utag_cfg_ovrd）フラグをutag.jsに追加しました。 このフラグによって得られる遅延は、<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Tag-Configuration-Advanced-Settings/ta-p/13600">Wait = Yes設定</a>を持つすべてのタグの実行を遅らせることにより、ページの表示速度を向上させることができます。 このフラグは、プリローダーをスコープとする<a href="https://community.tealiumiq.com/t5/Tealium-iQ/JavaScript-Code-Extension/ta-p/11925" target="_blank">JavaScriptコード拡張機能</a>に次のコードを入力することで設定できます。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="font-weight:bold">var</span> utag_cfg_ovrd <span style="font-weight:bold">=</span> {};
+utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+</code></pre></div></li>
+
+<li><p>DOM readyStateが通常より早く&rdquo;interactive&rdquo;としてレポートされるInternet Explorer（IE）のバグを修正しました。 古いバージョンのIE向けに、readyState &ldquo;complete&rdquo;のための遅延が余分に追加されています。</p></li>
+</ul>
+
+<h2 id="バージョン4-33">バージョン4.33</h2>
+
+<p>2014年9月24日リリース</p>
+
+<ul>
+<li>2つの新しいDOM変数（以前のデータソース）、ブラウザ高さ（dom.viewport_height）とブラウザ幅（dom.viewport_width）を追加しました。). これらをタグ配信ルールで使用することにより、訪問者が特定のデバイスを使用してサイトを閲覧している場合に、それを検出できます。 たとえば、この値が480より小さいときは、訪問者がスマートフォンデバイスを使用していると考えられます。 お使いのスマートフォンで試してみましょう：<a href="http://viewportsizes.com/mine/">http://viewportsizes.com/mine/</a>。</li>
+<li>iframeおよびスクリプトでのカスタム属性のサポートをutag.ut.loader関数に追加しました。</li>
+<li>手動のutag.viewコールによってトリガーした場合に[Tags]タブに示されている順序でタグが読み込まれないバグを修正しました。</li>
+</ul>
+
+<h2 id="バージョン4-32">バージョン4.32</h2>
+
+<p>2014年8月20日リリース</p>
+
+<ul>
+<li>公開設定に伴うバグを修正したので、現在は<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Publish-Configurations/ta-p/13632">Ready待機フラグとバンドルライブラリ公開設定</a>の両方を同じプロファイルに対して有効化できます。</li>
+<li>Ready待機フラグ設定を有効にすると、<a href="#version-4-26">utag.cfg.noviewフラグ</a>を&rdquo;true&rdquo;に設定している場合、&rdquo;false&rdquo;に再設定されるというバグを修正しました。</li>
+
+<li><p>新しい構成フラグ、待機タイマー（utag_cfg_ovrd.waittimer）の導入。 DOM Ready信号が送信されるまでタグの読み込みは行われません。 このフラグを使用すれば、DOM Ready信号の後にタグが読み込まれるまで待機する正確な時間を設定できます。 このフラグを設定することで、サードパーティベンダーのタグの読み込み時間を含めずにウェブページの読み込み時間を公開できます。 この値は、ミリ秒単位で設定します。</p>
+
+<p>Here is an example of how to set the Wait Timer flag:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="font-weight:bold">var</span> utag_cfg_ovrd<span style="font-weight:bold">=</span>{};
+utag_cfg_ovrd.waittimer<span style="font-weight:bold">=</span><span style="color:#099">3000</span>;
+</code></pre></div>
+<p>This code snippet delays the loading of all Tags until 3 seconds after the DOM Ready signal.</p></li>
+</ul>
+
+<h2 id="バージョン4-31">バージョン4.31</h2>
+
+<p>2014年5月21日リリース</p>
+
+<ul>
+<li><p>外部JavaScriptファイルの取り込み時とコールバック関数の実行時に発生する、utagユーティリティ関数のIEブラウザ関連のバグを修正しました。 これにより、まれに発生する、コールバック関数が早すぎるタイミングで実行される問題が解決します。</p></li>
+
+<li><p>すべてのタグが読み込まれる前にutag.viewがコールされた場合のための追加のデバッグ出力を導入。 誤りが含まれる可能性のあるタグUIDは、現在はこの出力内に表示されます。</p></li>
+</ul>
+
+<h2 id="バージョン4-30">バージョン4.30</h2>
+
+<p>2014年4月30日リリース</p>
+
+<ul>
+<li><a href="https://community.tealiumiq.com/t5/Tealium-iQ/Tag-Configuration-Advanced-Settings/ta-p/13600">Wait = Yes</a>に設定されている最後のタグがトリガーされず、utag.X.jsファイルがキャッシュされている場合に手動のutag.viewコールがトリガーされないというIEブラウザ（IE 9以前）のバグを修正。</li>
+<li>現在のutag.jsでは、すべてのutag.viewコールにOPTOUTMULTI（<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Privacy-Manager-Extension/ta-p/13624">プライバシーマネージャ拡張機能</a>）Cookie内の値が使用されるようになっています。  AJAXコンテンツでトリガーされるutag.viewコールのためにオプトアウトされているタグがトリガーされることはなくなります。 
+<br /></li>
+</ul>
+
+<h2 id="バージョン4-29">バージョン4.29</h2>
+
+<p>2014年4月16日リリース</p>
+
+<ul>
+<li>複数の<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Tag-Configuration-Advanced-Settings/ta-p/13600">ブロッキングタグ</a>のサポートを妨げていたバグを修正。 現在は、<a href="https://community.tealiumiq.com/t5/2-Tealium-iQ-Documentation/Tealium-Currency-Converter-Tag/ta-p/5618" target="_blank">Tealium通貨コンバーター</a>などのブロッキングタグとして機能する複数のタグを、別の外部.jsファイルとともに使用できます。</li>
+<li>&ldquo;すべてのタグ&rdquo;をスコープとする拡張機能は、すべてのブロッキングタグの完了後に実行されます。</li>
+<li>utag.v.jsファイルは、<a href="https://community.tealiumiq.com/t5/2-Tealium-iQ-Documentation/Hosting-Tealium-iQ-files-on-your-own-domain/ta-p/10135">utag.jsファイルをセルフホストしている</a>状況では送信されなくなります。</li>
+<li>訪問者ID生成ロジックから&rdquo;top.&ldquo;を削除しました。 これにより、iframesでの問題が修正されています。 </li>
+</ul>
+
+<h2 id="バージョン4-28">バージョン4.28</h2>
+
+<p>2014年2月11日リリース</p>
+
+<ul>
+<li><code>utag_main</code>セッションCookieが既に4.27より前のバージョンのutag.jsによって設定されているウェブサイトに訪問者がアクセスすると、ページ番号（_pn）とセッション番号（_sn）の値が常に<a href="http://en.wikipedia.org/wiki/NaN">NaN</a>に設定される問題を修正。 これらの値は、1に再設定されるようになりました。 </li>
+</ul>
+
+<h2 id="バージョン4-27">バージョン4.27</h2>
+
+<p>2014年2月6日リリース</p>
+
+<ul>
+<li>AudienceStream<a href="https://community.tealiumiq.com/t5/3-AudienceStream-Documentation/Data-Layer-Enrichment/ta-p/684">データ層エンリッチメント</a>のサポートを導入。 これには、<a href="https://community.tealiumiq.com/t5/3-AudienceStream-Documentation/AudienceStream/ta-p/323" target="_blank">AudienceStream</a>と<a href="https://community.tealiumiq.com/t5/AudienceStream/Tealium-Collect-Tag-formerly-DataCloud/ta-p/11923" target="_blank">DataCloudタグ</a>が必要です。</li>
+<li>utag.jsは、動的メタタグを収集するために、utag.viewコールのたびに<a href="http://en.wikipedia.org/wiki/Meta_element">メタタグ</a>を読み取ります。</li>
+
+<li><p><code>utag_main</code> Cookieには、以下に示すいくつかの変更点があります。</p>
+
+<ul>
+<li>EU法への準拠のために、現在は<code>utag_main</code> Cookieの有効期間が1年に設定されています。</li>
+
+<li><p><code>utag_main</code> Cookie内のセッションID（ses_id）値が現在はタイムスタンプになっており、ウェブサイト上での訪問者の滞在時間を計算するために使用できます。</p>
+
+<p>To reference this value, use the following syntax:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#b84">&#34;cp.utag_main_ses_id&#34;</span>]
+</code></pre></div></li>
+
+<li><p><code>utag_main</code> Cookieにセッション番号値を導入。</p>
+
+<p>To reference this value, use the following syntax:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#b84">&#34;cp.utag_main__sn&#34;</span>]
+</code></pre></div></li>
+
+<li><p>utag.jsが読み込まれるたび、実質的には新しいURLが読み込まれるたびに増加するページ番号値を導入。 この値がイベントカウンターと混同されることはありません。 この値は、新しいセッションのたびに1からカウントし直されます。</p>
+
+<p>To reference this value, use the following syntax:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#b84">&#34;cp.utag_main__pn&#34;</span>]
+</code></pre></div></li>
+
+<li><p>既知の問題：<code>utag_main</code>セッションCookieが既に4.27より前のバージョンのutag.jsによって設定されているウェブサイトに訪問者がアクセスすると、ページ番号（_pn）とセッション番号（_sn）の値が常に<a href="http://en.wikipedia.org/wiki/NaN">NaN</a>に設定されます。 この問題は、utag.jsバージョン4.28では解決されています。</p></li>
+</ul></li>
+
+<li><p>オブジェクトをフラット化する<strong>utag.ut.flatten</strong>関数を導入。 この関数は、主にAudienceStream用のデータ層エンリッチメントで使用されます。</p></li>
+</ul>
+
+<h2 id="バージョン4-26">バージョン4.26</h2>
+
+<p>2014年1月28日リリース </p>
+
+<p>utag.js 4.26ファイルでのクエリ文字列パラメータとメタタグの処理方法の変更により、これらがデフォルトで小文字に設定されることはなくなりました。 プロファイル内にデータソースとして識別されているクエリ文字列パラメータやメタタグがある場合、それらのデータソース名の大文字と小文字が正確に一致するように、[Data Layer]タブで更新することが必要になる可能性があります。 </p>
+
+<p><strong>カスタムスクリプトソースはブロッキングタグ</strong></p>
+
+<p>ブロッキングタグは、他のすべてのタグが実行される前に実行する必要のあるタグです。 タグの<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Tag-Configuration-Advanced-Settings/ta-p/13600">カスタムスクリプトソース詳細設定</a>の場所を入力すると、そのタグは自動的にブロッキングタグになります。 このタグは引き続き非同期で読み込まれますが、それに続く非同期スクリプト（utag.10.jsなど）はブロッキングタグが完了するまで読み込まれません。</p>
+
+<p><strong>ベストプラクティス：</strong>タグのカスタムJavaScriptを読み込む必要があるが、ブロッキングタグにすることは望まないという場合は、<a href="https://community.tealiumiq.com/t5/Tags-and-Client-side/Tealium-s-Generic-Tag/ta-p/12034">Tealium汎用タグ</a>を使用して読み込みます。</p>
+
+<p><strong>待機フラグの改善</strong></p>
+
+<p><a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Tags/ta-p/5016#advanced_settings">待機フラグはタグ構成内の詳細設定</a>です。</p>
+
+<p><strong>待機フラグ</strong>が&rdquo;No&rdquo;に設定されているタグは、utag.jsファイルの読み込み直後に読み込まれ、トリガーされます。 <strong>待機フラグ</strong>が&rdquo;No&rdquo;に設定され、かつ先に読み込まれたタグは、そのTealium iQでの順序にかかわらず先にトリガーされる可能性があります。 たとえば、タグ2がタグ1より先に読み込まれた場合は、Tealium iQの[Tags]タブでタグ1がタグ2より上に配置されても、その順序にかかわらずタグ2が先にトリガーされる可能性があります。以前は、Tealium iQに指定されている順序でタグが実行されていました。 これらのタグは、より上の順位に配置されたタグが読み込まれるまで待機し、その後に読み込まれていました。</p>
+
+<p>これは、待機フラグが&rdquo;No&rdquo;に設定されたタグと&rdquo;Yes&rdquo;に設定されたタグが、現在は同じプロファイル内に混在する可能性があることを意味します。 </p>
+
+<p><strong>AJAX向けのタグ配信ルールベースのトラッキングを制御</strong></p>
+
+<p>その後のページ上での<code>utag.view()</code>コールにより、タグ配信ルールをトリガーして新しいタグを読み込むことができます。以前のバージョンでは、utag.viewコールで新しいタグは読み込まれませんでした。 この機能は、utag.js 4.26ではデフォルトで有効になっています。</p>
+
+<p>この機能を無効にすると、現在の動作を維持できます。 詳しくは、後述する<a href="#utagcfgloadrulesajax">utag.cfg.load_rules_ajaxフラグ</a>の詳細を参照してください。</p>
+
+<p class="note">utag.link()コールで新しいタグは読み込まれません。 この操作は、utag.view()コールでのみ行えます。</p>
+
+
+<p><strong>UIDによってタグを直接読み込む（utag.viewおよびutag.trackコールに対する更新）</strong></p>
+
+<p>特にAJAXを使用する高度な実装では、現在はutag.view()コールを使用して新しいタグを取り込み、それを（Tealium iQの[Tags]タブに表示される）タグのUIDに基づきトリガーすることができます。 これにより、すべてのタグ配信ルールがバイパスされます。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.view({page_name <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;New Page&#34;</span>}, <span style="font-weight:bold">null</span>, [<span style="color:#099">5</span>]);
+</code></pre></div>
+<ul>
+<li>パラメータ1 - データ層</li>
+<li>パラメータ2 - コールバック関数（またはnull）</li>
+<li>パラメータ3 - 読み込んでトリガーするUIDのarray</li>
+</ul>
+
+<p><a href="https://community.tealiumiq.com/t5/JavaScript-utag-js/Page-Tracking/ta-p/15563">ページトラッキングについての詳細を確認</a>。 </p>
+
+<p><strong>新しい&rdquo;メタ&rdquo;タグを自動的に読み取る</strong></p>
+
+<p>以前のバージョンのutag.jsでは、&rdquo;name=&ldquo;を含む以下の種類のメタタグがピックアップされていました。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080">meta</span> <span style="color:#008080">name</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;keywords&#34;</span> <span style="color:#008080">content</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;Apple,Tab&#34;</span> /&gt;</code></pre></div>
+<p>新しいutag.js 4.26では、&rdquo;property=&ldquo;を含むメタタグがピックアップされるようになっています（&rdquo;Open Graph&rdquo;メタタグを参照）</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080">meta</span> <span style="color:#008080">property</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;og:type&#34;</span> <span style="color:#008080">content</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;video.movie&#34;</span> /&gt; </code></pre></div>
+<p><strong>&ldquo;qp.&rdquo; （クエリ文字列）および&rdquo;meta.&ldquo;変数のデフォルトでの&rdquo;小文字化&rdquo;の廃止</strong></p>
+
+<p>これは、utag.dataのデフォルト動作におけるロジックの変更です。 現在でも、<a href="#utagcfglowerqp">utag.cfg.lowerqpフラグ</a>をtrueに設定すれば、これらを自動的に小文字にできます。 ただし、デフォルト設定では大文字と小文字の混在した状態が維持されます。 重要：以前のutag.js動作との後方互換性を確保するには、<code>utag.cfg.lowerqp</code>をtrueに設定します。</p>
+
+<p><a href="#utagcfglowermeta">utag.cfg.lowermetaフラグ</a>を&rdquo;true&rdquo;に設定すれば、メタタグの小文字化を有効にできます。 これは、そのメタタグの名前と値のペアの名前にのみ適用されます。</p>
+
+<p class="note">大文字と小文字の混在するクエリ文字列パラメータがある場合は、それに正確に一致するように[Data Sources]タブのデータソースの名前を更新する必要があります。 また、このクエリ文字列タイプのデータソースを参照するすべてのコードも更新しなければなりません。</p>
+
+
+<p><strong>utag_main Cookie内の新しい値</strong></p>
+
+<p>utag_main Cookieには、以下に示す新しいCookie名/値のペアがあります。</p>
+
+<ul>
+<li><strong>utag_main_vid</strong> - 訪問者を一意に識別する長い文字列（サンプル値：013efdc67183001adeec0eef13010a051001b00f0093c）</li>
+<li><strong>utag_main__ss</strong> - &ldquo;セッション開始&rdquo;フラグ。 新しいセッションの最初のページビューの場合は&rdquo;1&rdquo;に設定します。 デフォルトのセッション時間は、アクティビティなしで経過する30分です。</li>
+</ul>
+
+<p>（以前のCookie値、&rdquo;utag_main__st&rdquo;と&rdquo;utag_main_ses_id&rdquo;は引き続き設定されています）。</p>
+
+<p><strong>セッション開始のトラッキング</strong></p>
+
+<p>訪問者のセッションの開始時に、空のファイルであるutag.v.jsのリクエストが1回実行されます。 このファイルは、セッション数のログを取得するためにTealium内部で使用されます。 HTTPリクエストURLは、次のような形式になります。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">http://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a<span style="font-weight:bold">=</span>tealium/main/201306012057&amp;<span style="color:#008080">cb</span><span style="font-weight:bold">=</span><span style="color:#099">1370276499302</span></code></pre></div>
+<p>新しいCookie値、<code>utag_main__ss</code>はトリガーのタイミングを決めるために使用されます。 この値はセッションの最初のイベントでのみ送信されます。 このリクエストは、すべてのタグがトリガーされた後、最後に送信されます。</p>
+
+<p><strong>新しい&rdquo;Tealium&rdquo;値</strong></p>
+
+<p>[Data Layer]タブで、以下の新しいCookie値を確認できます。</p>
+
+<ul>
+<li>utag_main_ses_id Cookie内のセッションID値</li>
+<li>utag_main_v_id Cookie内の訪問者ID値</li>
+<li>utag_main__ss Cookie内にあるセッション開始フラグ（0または1）</li>
+</ul>
+
+<p><strong>URLフラグメントパラメータ</strong></p>
+
+<p>以前は、URLの<code>?</code>の後にある名前/値のペアが読み取られ、utag.data内に&rdquo;qp.&ldquo;値として格納されていました。 現在は、ハッシュやフラグメントの<code>#</code>記号の後にあるアイテムも、これらの構築に使用されます。 これは、AJAXサイト向けの重要な追加機能となっています。</p>
+
+<p>URL：<code>[http://www.example.com?param1=value1&amp;param2=value2#hash1=value3](http://www.example.com?param1=value1&amp;param2=value2#hash1=value3)</code></p>
+
+<p>以前：</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.data <span style="font-weight:bold">=</span> { <span style="color:#b84">&#34;qp.param1&#34;</span> <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value1&#34;</span>, <span style="color:#b84">&#34;qp.param2&#34;</span> <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value2&#34;</span>}
+</code></pre></div>
+<p>新：</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.data <span style="font-weight:bold">=</span> { <span style="color:#b84">&#34;qp.param1&#34;</span> <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value1&#34;</span>, <span style="color:#b84">&#34;qp.param2&#34;</span> <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value2&#34;</span>, <span style="color:#b84">&#34;qp.hash1&#34;</span>  <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value3&#34;</span>}
+</code></pre></div>
+<p><strong>utag.viewおよびutag.linkコールで利用可能なすべてのページデータ</strong></p>
+
+<p>以前は、utag.viewおよびutag.linkコールで得られる情報は、それらに渡したデータだけでした。 <code>b[&quot;qp.campaign&quot;]</code>のようなアイテムにはアクセスできませんでした。 現在は、URL、メタデータ、Cookie値など、すべての&rdquo;ビルトイン&rdquo;データポイントがutag.linkおよびutag.viewコール用のデータ層に追加されます。</p>
+
+<p>また、AJAXサイト向けに変更されている可能性のある動的アイテム（<code>b[&quot;dom.url&quot;]</code>など）は、現在の値を使用できるように再構築されます。 現在の値は、AJAXページへの初回ランディング時の値とは異なる可能性があります。 </p>
+
+<p><strong>utag.cfgの新しいオプション</strong></p>
+
+<p>プリローダーをスコープとする<a href="https://community.tealiumiq.com/t5/Tealium-iQ/JavaScript-Code-Extension/ta-p/11925">JavaScriptコード拡張機能</a>とグローバル変数<code>window.utag_cfg_ovrd</code>を使用します。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#998;font-style:italic">// JS Code in Preloader Extension
+</span><span style="color:#998;font-style:italic"></span><span style="color:#999">window</span>.utag_cfg_ovrd <span style="font-weight:bold">=</span> {
+    <span style="color:#b84">&#34;noview&#34;</span>          <span style="font-weight:bold">:</span> <span style="font-weight:bold">true</span>,
+    <span style="color:#b84">&#34;lowerqp&#34;</span>         <span style="font-weight:bold">:</span> <span style="font-weight:bold">true</span>,
+    <span style="color:#b84">&#34;load_rules_ajax&#34;</span> <span style="font-weight:bold">:</span> <span style="font-weight:bold">false</span>
+};
+</code></pre></div>
+<p><strong>以下の新しいオプションを利用できます。</strong></p>
+
+<ul>
+<li><code>utag.cfg.load_rules_ajax</code><br />
+utag.viewおよびutag.linkコールごとにタグ配信ルールを&rdquo;再評価&rdquo;*しない*場合は、このフラグをfalseに設定します。 utag.viewについては、この設定により、初回ページビューで読み込まれなかった場合に新しいutag.X.jsファイルも読み込まれる可能性があります。</li>
+<li><code>utag.udoname</code><br />
+データオブジェクトの名前。 utag.jsコードでは、データオブジェクトが別のオブジェクト内のオブジェクトではなく、グローバル変数と見なされます。 これはデフォルトで<code>utag_data</code>に設定されています</li>
+<li><code>utag.cfg.load_rules_at_wait</code><br />
+待機時（DOM Ready）のタグ配信ルールを再評価する場合は、このフラグをtrueに設定します。 これにより、utag.jsの読み込み後にデータが設定されている可能性があり、そのデータを使用してDOM Readyを待機するよう設定されているタグをトリガーする必要がある場合のレガシーサポートが有効になります。</li>
+<li><code>utag.cfg.lowerqp</code><br />
+クエリ文字列の名前/値のペアを小文字にする場合は、このフラグをtrueに設定します。 これはデフォルト動作に使用されます。</li>
+<li><code>utag.cfg.lowermeta</code><br />
+メタタグの名前を小文字にする場合は、このフラグをtrueに設定します。 メタタグの名前/値のペアの値は小文字になりません。</li>
+<li><code>utag.cfg.noview</code><br />
+最初のutag.viewコールのタイミングを制御する場合は、このフラグをtrueに設定します。 アプリケーションで（最初のページ読み込みアクションではなく）ページビューイベントを制御するAJAXサイトには一般的な設定です。 </li>
+</ul>
+
+<p><strong>検討事項</strong></p>
+
+<ul>
+<li>誤って複数の注文をトリガー - 現在のutag.linkおよびutag.viewコールは、あらゆる&rdquo;DOM&rdquo;タイプのデータポイントをすべてのコールで利用できます。 たとえば、<code>b[&quot;qp.order_id&quot;]</code>などのクエリ文字列データはページ読み込み時に読み取られ、それによって注文イベントがトリガーされます。 しかし、その同じ注文ページでutag.linkコールをトリガーすると、<code>b[&quot;qp.order_id&quot;]</code>データも設定され、それによって2つ目の注文イベントがトリガーされます。</li>
+<li>大部分の直感的動作については、utag.jsファイルを読み込む前にすべての<code>utag_data</code>値を設定することをお勧めします。 また、<code>utag.cfg.load_rules_at_wait</code>は、デフォルト設定である&rdquo;false&rdquo;のままにします。</li>
+<li>utag.js 4.26への更新により、クエリ文字列パラメータの小文字化に関するデフォルト動作が変更される点に注意してください。 値が自動的に小文字化されることはなくなります。</li>
+
+<li><p>&ldquo;すべてのタグ&rdquo;をスコープとする拡張機能は、DOM Readyをスコープとする拡張機能の前に実行される場合もあれば、後に実行される場合もあります。 順序は保証されていません。 すべてのタグをスコープとする拡張機能のデータ層要素を操作すると、コンテンツ変更拡張機能の基準に影響する可能性があります。</p>
+
+<p><strong>ベストプラクティス：</strong>元のデータ層オブジェクトは変更しないでください。 値を変更する必要がある場合は、代わりに新しい変数を使用します。</p></li>
+</ul>
+
+<p><strong>既知の問題</strong></p>
+
+<ul>
+<li>データ層の<code>utag_data</code>オブジェクトが<code>utag.data</code>への参照となり、一方を変更するともう一方も変更される。</li>
+<li>データ層が<code>&lt;body&gt;</code>要素の最後、DOM Readyの直前に定義されている場合（およびutag.jsが既に読み込まれている場合）、IE8でタイミングの問題が発生する可能性がある。 ベストプラクティスとしては、<code>utag_data</code>オブジェクトを常にutag.jsファイルの読み込みの前に宣言します。</li>
+</ul>
+
+<h2 id="バージョン4-011">バージョン4.011</h2>
+
+<p>2013年11月19日リリース</p>
+
+<p>Server to Serverのサポートの追加。 現在は、Server to Server機能をタグで使用できるようにする、&rdquo;Server to Server&rdquo;詳細設定が用意されています。</p>
+
+<h2 id="バージョン4-010">バージョン4.010</h2>
+
+<p>2013年11月12日リリース</p>
+
+<p>Tealium通貨コンバータータグやカスタムソース詳細設定に値が設定されている任意のタグを使用している場合に、そのタグが強制タイムアウトのしきい値である3秒以上にわたって待機してから他のタグに対してu.send関数をコールするバグを修正。</p>
+
+<h2 id="バージョン4-009">バージョン4.009</h2>
+
+<p>2013年9月17日リリース</p>
+
+<p>DOM Ready後にutag.jsが実行された場合に&rdquo;Wait = Yes&rdquo;タグがDOM Readyイベントではなく&rdquo;load&rdquo;イベントを待機するバグを修正。</p>
+
+<p>これにより、多くのサイトでパフォーマンスが大幅に向上し、DOM Readyを待機するよう設定されているタグがはるかに早く読み込まれるようになります。</p>
+
+<h2 id="バージョン4-008">バージョン4.008</h2>
+
+<p>2013年3月15日リリース</p>
+
+<p>末尾が&rdquo;.edu.au&rdquo;および&rdquo;.net.au&rdquo;（例として&rdquo;au&rdquo;を使用）のドメインをサポートするよう更新。 以前のutag.jsのサポート対象は、&rdquo;.com.au&rdquo;と&rdquo;.org.au&rdquo;のみでした。</p>
+
+<p>utag.loader.GV（&rdquo;オブジェクト内の変数を取得&rdquo;する内部関数）でhasOwnPropertyを使用するよう更新。 これにより、さらに安全に反復処理を行えます。</p>
+
+<h2 id="バージョン4-007">バージョン4.007</h2>
+
+<p>2013年1月29日リリース</p>
+
+<p>[Page Data Object]公開設定に<code>myobj.utag_data</code>などを入力することにより（&rdquo;myobj&rdquo;が存在しないと仮定）、ユーザーが&rdquo;定義前の&rdquo;関数で例外を引き起こす可能性がある問題を修正。 この例外は、一部のコードがスキップされ、定義されていないutag.handler.extend変数の.lengthがチェックされる原因となっていました。 現在は、utag.handler.extendが定義されているかどうかのチェックが行われるようになっています。</p>
+
+<h2 id="バージョン4-006">バージョン4.006</h2>
+
+<p>2013年1月7日リリース</p>
+
+<p>公開エンジンによってタグUIDのarrayであるutag.loader.cfgsort変数が構築されます。 このarrayは、Tealium iQ内のタグの順序に一致する適切な順序に並べられます。 現在のタグは、Tealium iQの順序に一致する順序でトリガーされるようになっています。</p>
+
+<h2 id="バージョン4-005">バージョン4.005</h2>
+
+<p>2012年12月18日リリース</p>
+
+<p>ユーティリティ関数、&rdquo;utag.ut.decode&rdquo;を追加。</p>
+
+<p>&ldquo;Cookieなし&rdquo;フラグのutag.cfg.nocookieも追加しています。 utag.cfg.nocookie値が定義され、trueに設定されると、utag.jsではutag_main Cookieが書き込まれなくなります。 注：既存のutag_main Cookieは変更されることも削除されることもありません。 一部のタグはutag_main Cookieがあることを前提としているので、このフラグは自己責任で使用してください。</p>
+
+<p>サンプル（プリローダーをスコープとするJavaScriptコード拡張機能）：</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="font-weight:bold">var</span> utag_cfg_ovrd<span style="font-weight:bold">=</span>{};  
+utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-weight:bold">true</span>;
+</code></pre></div>
+<p>utag.ut.decodeは、より安全なバージョンのdecodeURIComponentです（decodeURIComponentから例外が発生した場合、アンエスケープが使用されます）</p>
+
+<h2 id="バージョン4-004">バージョン4.004</h2>
+
+<p>2012年11月19日リリース</p>
+
+<p>タグが読み込まれる前にIEによってDOM Ready拡張機能が実行される場合と実行されない場合があるという、IE7およびIE8におけるInternet Explorer DOM Ready拡張機能の&rdquo;タイミング&rdquo;問題の修正を含みます。 このバージョンでは、DOM Ready拡張機能が最初に実行されるように問題が修正されています。 これにより、すべてのブラウザで一貫した動作が提供されます。</p>
+
+<p>utag.DBでの変更。 この関数は、すべてのutag.DBコールでCookieの&rdquo;utagdb=true&rdquo;が&rdquo;再チェック&rdquo;されないように変更されており、高パフォーマンスのutag.DB関数に役立ちます。</p>
+
+<p>新たなutag.DBコールをutag.jsに追加。</p>
+
+<p>デバッグを有効にする方法： コンソールでdocument.cookie=&ldquo;utagdb=true&rdquo;を実行します</p>
+
+<p>サンプルutag.DBコール：</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.DB(<span style="color:#b84">&#34;Inside of DOM Ready Extension&#34;</span>);
+</code></pre></div>
+<h2 id="バージョン4-003">バージョン4.003</h2>
+
+<p>2012年10月23日リリース</p>
+
+<p>utag_main Cookieを特定のタイムスタンプの時点で有効期限切れに設定する機能を追加。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.loader.SC(<span style="color:#b84">&#34;utag_main&#34;</span>,{<span style="color:#b84">&#34;mycookie123&#34;</span><span style="font-weight:bold">:</span><span style="color:#b84">&#34;testing123;exp-1351111959896u&#34;</span>});
+</code></pre></div>
+<p>タイムスタンプの末尾にある&rdquo;u&rdquo;に注意してください</p>
+
+<h2 id="バージョン4-002">バージョン4.002</h2>
+
+<p>2012年8月16日リリース</p>
+
+<p>各サブプロファイルタグに対してもutag.linkを実行。</p>
+
+<h2 id="バージョン4-001">バージョン4.001</h2>
+
+<p>2012年8月13日リリース</p>
+
+<p>Cookieに異常な文字が含まれるCookieデコード問題を修正。</p>
+
+<h2 id="バージョン4-000">バージョン4.000</h2>
+
+<p>バージョン番号を変更せずにこのファイルを反復したものが複数存在します。</p>
+
+</div>
+
+          
+
+
+        </div>
+      </div>
+      <div class="order-0 w-20 dn db-l pl3 sticky-l">
+        
+<nav class="side-nav f6" role="navigation">
+  <ul class="list pa0 nl2">
+    
+      
+      
+      <li class="w-100 hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".remote-commands">Remote Commands</a>
+        <ul class="remote-commands desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/remote-commands/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/remote-commands/how-it-works/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              仕組み
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/remote-commands/integrations/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Integrations
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".amp">AMP</a>
+        <ul class="amp desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/amp/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/amp/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/amp/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              データ層
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".android">Android</a>
+        <ul class="android desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/consent-manager/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Consent Manager
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              データ層
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/adid-module/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：Ad Identifier
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/crash-reporter-module/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：Crash Reporter
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/lifecycle-tracking-module/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：ライフサイクルトラッキング
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              リリースノート
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/optimizely-x-tracking-module/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：Optimizely X Tracking
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android/referrer-module/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：Install Referrer
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".android-wear">Android Wear</a>
+        <ul class="android-wear desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android-wear/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android-wear/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".angular">Angular</a>
+        <ul class="angular desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/angular/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/angular/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".csharp">C#</a>
+        <ul class="csharp desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/csharp/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/csharp/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/csharp/functions/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              関数の定義
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/csharp/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              リリースノート
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".cordova">Cordova</a>
+        <ul class="cordova desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/cordova/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/cordova/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/cordova/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              トラッキング
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/cordova/functions/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              関数の定義
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/cordova/module-adid/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：Ad Identifier
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/cordova/module-crash-reporter/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：Crash Reporter
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/cordova/module-install-referrer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：Install Referrer
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".http-api">HTTP API</a>
+        <ul class="http-api desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/http-api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/http-api/endpoint-spec/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              エンドポイント
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".ios">iOS</a>
+        <ul class="ios desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ios/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ios/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ios/consent-manager/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Consent Manager
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ios/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              データ層
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ios/tag-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              タグ管理
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ios/lifecycle-tracking-module/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：ライフサイクルトラッキング
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ios/optimizely-x-tracking-module/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール：Optimizely X Tracking
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ios/migrate-from-4x/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              4.xからの移行
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ios/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              リリースノート
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".java">Java</a>
+        <ul class="java desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/java/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/java/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/java/function-definitions/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              関数の定義
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8 active">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".javascript">JavaScript (Web)</a>
+        <ul class="javascript desktopmenu animated fadeIn list pl0 db">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/page-tracking/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              ページトラッキング
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/event-tracking/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              イベントトラッキング
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/validate/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              検証
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/settings/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              設定
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/about-utag-js/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              utag.jsについて
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/about-utag-data/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              utag_dataについて
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/the-b-object/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              bオブジェクト
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/debugging/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              デバッグ
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/built-in-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              ビルトイン変数
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/javascript/release-notes/" class="db link pl3 pr2 pv1 bg-secondary white">
+              リリースノート
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".node">Node</a>
+        <ul class="node desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/node/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/node/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".python">Python</a>
+        <ul class="python desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/python/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/python/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".react-native">React Native</a>
+        <ul class="react-native desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/react-native/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/react-native/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/react-native/functions/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              関数の定義
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".roku">Roku</a>
+        <ul class="roku desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/roku/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/roku/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/roku/functions/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              関数の定義
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".ruby">Ruby</a>
+        <ul class="ruby desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ruby/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/ruby/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".swift">Swift</a>
+        <ul class="swift desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              トラッキング
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/consent-manager/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Consent Manager
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/class-definitions/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              クラスの定義
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/modules/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              データ層
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              リリースノート
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/module-list/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              モジュールのリスト
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/with-objective-c/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Objective-Cとの連携
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/swift/feature-comparison/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              機能比較
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".tvos">tvOS</a>
+        <ul class="tvos desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/tvos/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/tvos/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".watchos">watchOS</a>
+        <ul class="watchos desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/watchos/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/watchos/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".xamarin">Xamarin</a>
+        <ul class="xamarin desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/xamarin/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/xamarin/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">android-tv</a>
+        <ul class=" desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android-tv/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/android-tv/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">flutter</a>
+        <ul class=" desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/platforms/flutter/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/flutter/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/platforms/flutter/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              リリースノート
+            </a>
+          </li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+
+      </div>
+
+    </div>
+  </article>
+
+  <div class="w-100 bg-light-gray">
+    <div class="mw7 pa2 ph0 ph6-ns center nested-lh-copy lh-copy">
+      <div class="feedback_form">
+  <span>
+	  <p style="display:inline">Did you find this article helpful?</p>
+		<button enabled id="feedback_yes" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-green link">Yes</button>
+	  <button enabled id="feedback_no" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-green link">No</button>
+  </span>
+	<span id="feedback_comment">
+		<textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better..." rows="4" cols="70"></textarea>
+		<button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button>
+  </span>
+  <span id="feedback_thank_you" style="display: none;">
+     <em>Thank you for your feedback!</em>
+  </span>
+</div>
+<p> This page was last updated: October 10, 2019</p>
+
+      
+
+
+    </div>
+  </div>
+
+    </main>
+
+    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    </div>
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu dn pl5">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/" class="ttu f6 link primary-color-light overflow hover-white db brand-font ma0 w-100 pv3 ph4">
+          プラットフォーム
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu dn pl5">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100 mb2 bb b--mid-gray">
+        <a href="http://docs-preview.tealium.co.jp/platforms/remote-commands/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Remote Commands
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/amp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          AMP
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/android/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Android
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/android-wear/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Android Wear
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/angular/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Angular
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/csharp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          C#
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/cordova/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Cordova
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/http-api/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          HTTP API
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/ios/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          iOS
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/java/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Java
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/javascript/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          JavaScript (Web)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/node/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Node
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/python/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Python
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/react-native/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          React Native
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/roku/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Roku
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/ruby/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Ruby
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/swift/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Swift
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/tvos/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          tvOS
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/watchos/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          watchOS
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/platforms/xamarin/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Xamarin
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          android-tv
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="http://docs-preview.tealium.co.jp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          flutter
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between pl5">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Menu</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Platforms</button>
+</div>
+</div>
+</footer>
+
+    <script src="/dist/js/app.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://use.fontawesome.com/0757c63fa2.js"></script>
+
+
+    
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript">
+docsearch({
+  apiKey: 'b909cfb6051533a37a6c253ac1ab02c9',
+  indexName: 'tealium',
+  inputSelector: 'input#search-input',
+  debug: "true" 
+});
+</script>
+
+    
+
+  </body>
+</html>
