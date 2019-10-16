@@ -214,7 +214,7 @@ var utag_data = {
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
       <p class="b">目次</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#utag-view">utag.view()</a></li>
-              <li><a href="#%e5%8d%98%e4%b8%80%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3">単一ページアプリケーション</a></li>
+              <li><a href="#%e3%82%b7%e3%83%b3%e3%82%b0%e3%83%ab%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3">シングルページアプリケーション</a></li>
               <li><a href="#%e9%87%8d%e8%a6%81%e3%81%aa%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a0%85">重要な注意事項</a></li>
               </nav>
   </aside></div>
@@ -310,9 +310,9 @@ var utag_data = {
     [<span style="color:#099">34</span>, <span style="color:#099">12</span>]
 );
 </code></pre></div>
-<h2 id="単一ページアプリケーション">単一ページアプリケーション</h2>
+<h2 id="シングルページアプリケーション">シングルページアプリケーション</h2>
 
-<p>utag.jsを訪問ごとに1回しか読み込まない単一ページアプリケーションでは、自動ページビュートラッキングコールを抑制することで、アプリケーションがそれらのコールを直接実行できるようにします。</p>
+<p>utag.jsを訪問ごとに1回しか読み込まないシングルページアプリケーションでは、自動ページビュートラッキングコールを抑制することで、アプリケーションがそれらのコールを直接実行できるようにします。</p>
 
 <p>自動ページトラッキングを上書きするには、utag.jsを読み込む前に、ページに以下の行を追加します。 </p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd <span style="font-weight:bold">=</span> {noview <span style="font-weight:bold">:</span> <span style="font-weight:bold">true</span>}; 
@@ -1146,19 +1146,19 @@ var utag_data = {
     <div class="mw7 pa2 ph0 ph6-ns center nested-lh-copy lh-copy">
       <div class="feedback_form">
   <span>
-	  <p style="display:inline">Did you find this article helpful?</p>
-		<button enabled id="feedback_yes" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-green link">Yes</button>
-	  <button enabled id="feedback_no" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-green link">No</button>
+	  <p style="display:inline">このページはお役にたちましたでしょうか？</p>
+		<button enabled id="feedback_yes" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-green link">はい</button>
+	  <button enabled id="feedback_no" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-green link">いいえ</button>
   </span>
 	<span id="feedback_comment">
-		<textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better..." rows="4" cols="70"></textarea>
-		<button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button>
+		<textarea id="feedback_textarea" type="text" placeholder="JA-Tell us how we can make this article better." rows="4" cols="70"></textarea>
+		<button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-blue link">JA-Send Feedback</button>
   </span>
   <span id="feedback_thank_you" style="display: none;">
-     <em>Thank you for your feedback!</em>
+     <em>JA-Thank you for your feedback!</em>
   </span>
 </div>
-<p> This page was last updated: October 10, 2019</p>
+<p>最終更新日 ::  2019年October月16日</p>
 
       
 
