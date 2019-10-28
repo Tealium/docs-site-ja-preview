@@ -59,6 +59,7 @@ var utag_data = {
         </li>
       
     </ul>
+    
     <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
   <fieldset class="bn ma0 pa0">
     <label class="clip" for="search-input">Search</label>
@@ -68,6 +69,7 @@ var utag_data = {
   </fieldset>
 </form>
 </div>
+    
   </div>
 
 
@@ -216,7 +218,7 @@ var utag_data = {
       <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#b%e3%82%aa%e3%83%96%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e3%81%a8%e3%81%af">bオブジェクトとは</a></li>
               <li><a href="#b%e3%82%aa%e3%83%96%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e3%82%92%e4%bd%bf%e7%94%a8%e3%81%99%e3%82%8b%e7%90%86%e7%94%b1">bオブジェクトを使用する理由</a></li>
               <li><a href="#%e5%a4%89%e6%95%b0%e3%81%ae%e7%a8%ae%e9%a1%9e">変数の種類</a></li>
-              <ul class="toc-h3"><li><a href="#%e3%83%87%e3%83%bc%e3%82%bf%e5%b1%a4%e5%a4%89%e6%95%b0">データ層変数</a></li>
+              <ul class="toc-h3"><li><a href="#%e3%83%87%e3%83%bc%e3%82%bf%e3%83%ac%e3%82%a4%e3%83%a4%e3%83%bc%e5%a4%89%e6%95%b0">データレイヤー変数</a></li>
               <li><a href="#javascript%e3%83%9a%e3%83%bc%e3%82%b8%e5%a4%89%e6%95%b0">JavaScriptページ変数</a></li>
               <li><a href="#%e3%82%af%e3%82%a8%e3%83%aa%e6%96%87%e5%ad%97%e5%88%97%e3%83%91%e3%83%a9%e3%83%a1%e3%83%bc%e3%82%bf">クエリ文字列パラメータ</a></li>
               <li><a href="#cookie%e3%81%ae%e5%80%a4">Cookieの値</a></li>
@@ -245,7 +247,7 @@ var utag_data = {
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      bオブジェクトとも呼ばれるデータ層オブジェクトにエイリアスを使用する方法について説明します。
+      bオブジェクトとも呼ばれるデータレイヤーオブジェクトにエイリアスを使用する方法について説明します。
     </div>
   
 
@@ -260,17 +262,17 @@ var utag_data = {
 
 <h2 id="bオブジェクトとは">bオブジェクトとは</h2>
 
-<p>bオブジェクトとは、データ層オブジェクトの最新のコピーが格納されているJavaScript変数です。 <code>b</code>オブジェクトは、参照されるタイミングに応じて、エイリアスまたは<code>utag.data</code>オブジェクトのローカルコピーのいずれかになります。 では、<code>utag.data</code>オブジェクトとは何でしょうか。 <code>utag.data</code>オブジェクトは、以下のようなページ上にあるすべてのデータのコレクションです。</p>
+<p>bオブジェクトとは、データレイヤーオブジェクトの最新のコピーが格納されているJavaScript変数です。 <code>b</code>オブジェクトは、参照されるタイミングに応じて、エイリアスまたは<code>utag.data</code>オブジェクトのローカルコピーのいずれかになります。 では、<code>utag.data</code>オブジェクトとは何でしょうか。 <code>utag.data</code>オブジェクトは、以下のようなページ上にあるすべてのデータのコレクションです。</p>
 
 <ul>
-<li>データ層変数</li>
+<li>データレイヤー変数</li>
 <li>JavaScriptページ変数</li>
 <li>メタタグ</li>
 <li>DOM属性</li>
 <li>Cookie</li>
 </ul>
 
-<p>そのため、実質的には、<code>b</code>オブジェクトはページのデータ層のコピーです。</p>
+<p>そのため、実質的には、<code>b</code>オブジェクトはページのデータレイヤーのコピーです。</p>
 
 <h2 id="bオブジェクトを使用する理由">bオブジェクトを使用する理由</h2>
 
@@ -290,7 +292,7 @@ By creating a local copy of <code>utag.data</code>, you can customize the valu
 
 <p>タグテンプレートまたは拡張機能で直接<code>b</code>オブジェクトの変数を参照するには、参照しようとしている変数の種類を検討する必要があります。つまり、構文は若干異なります。 </p>
 
-<h3 id="データ層変数">データ層変数</h3>
+<h3 id="データレイヤー変数">データレイヤー変数</h3>
 
 <p><code>utag_data</code>オブジェクトに格納されている変数では、次の構文を使用します。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#b84">&#39;var_name&#39;</span>]
@@ -399,7 +401,7 @@ By creating a local copy of <code>utag.data</code>, you can customize the valu
             
             
             <a href="/platforms/amp/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
         </ul>
@@ -434,7 +436,7 @@ By creating a local copy of <code>utag.data</code>, you can customize the valu
             
             
             <a href="/platforms/android/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
           <li class="fw4">
@@ -665,7 +667,7 @@ By creating a local copy of <code>utag.data</code>, you can customize the valu
             
             
             <a href="/platforms/ios/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
           <li class="fw4">
@@ -994,7 +996,7 @@ By creating a local copy of <code>utag.data</code>, you can customize the valu
             
             
             <a href="/platforms/swift/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
           <li class="fw4">
@@ -1157,13 +1159,13 @@ By creating a local copy of <code>utag.data</code>, you can customize the valu
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="JA-Tell us how we can make this article better." rows="4" cols="70"></textarea>
-		<button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-blue link">JA-Send Feedback</button>
+		<button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button>
   </span>
   <span id="feedback_thank_you" style="display: none;">
      <em>JA-Thank you for your feedback!</em>
   </span>
 </div>
-<p>最終更新日 ::  2019年October月10日</p>
+<p>最終更新日 ::  2019年October月28日</p>
 
       
 
@@ -1350,8 +1352,8 @@ By creating a local copy of <code>utag.data</code>, you can customize the valu
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script type="text/javascript">
 docsearch({
-  apiKey: 'b909cfb6051533a37a6c253ac1ab02c9',
-  indexName: 'tealium',
+  apiKey: '6784c7975bfcd2a1e2f86d3388d655b4',
+  indexName: 'tealium_jp',
   inputSelector: 'input#search-input',
   debug: "true" 
 });

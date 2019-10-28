@@ -59,6 +59,7 @@ var utag_data = {
         </li>
       
     </ul>
+    
     <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
   <fieldset class="bn ma0 pa0">
     <label class="clip" for="search-input">Search</label>
@@ -68,6 +69,7 @@ var utag_data = {
   </fieldset>
 </form>
 </div>
+    
   </div>
 
 
@@ -294,11 +296,11 @@ var utag_data = {
 <li><code>tealium_session_number</code> - 次に含まれる既存値の複製： <code>utag.data['cp.utag_main__sn']</code></li>
 <li><code>tealium_session_event_number</code> - 現在のセッション（訪問）でのトラッキングコール（utag.view()、utag.link()）の数をカウントする<code>utag.data['cp.utag_main__se']</code>内のCookie値。 1回限りのページ読み込みによってページ上の多数のトラッキング対象イベントが読み込まれる単一ページアプリ（SPA）に便利です。<br>&ldquo;noview&rdquo;フラグを使用しているページの場合、この値はページ読み込み（タグ配信ルールの評価）とutag.view()への初回コールの両方で&rdquo;1&rdquo;となります。</li>
 </ul></li>
-<li>utag.link/view/trackコールに渡される空のパラメータリストのサポートを追加。以前のバージョンでは、utag.link()またはutag.view()へのコールは問題なく機能するものの、余分な&rdquo;cfg&rdquo;オブジェクトがデータ層に追加されていました。 utag.track()へのコールは、以前のバージョンでは例外が発生する原因となっていました。</li>
+<li>utag.link/view/trackコールに渡される空のパラメータリストのサポートを追加。以前のバージョンでは、utag.link()またはutag.view()へのコールは問題なく機能するものの、余分な&rdquo;cfg&rdquo;オブジェクトがデータレイヤーに追加されていました。 utag.track()へのコールは、以前のバージョンでは例外が発生する原因となっていました。</li>
 <li>&ldquo;noview&rdquo;フラグを使用しているページについては、以下の2点に留意する必要があります。
 
 <ul>
-<li>データ層の<code>tealium_session_event_number</code>には、ページ読み込み（utag.jsではタグの読み込みにデータ層が使用される）とutag.viewへの初回コール（これによってタグのトリガーや追加タグの読み込みが行われる）の両方について&rdquo;1&rdquo;の値が設定されます。</li>
+<li>データレイヤーの<code>tealium_session_event_number</code>には、ページ読み込み（utag.jsではタグの読み込みにデータレイヤーが使用される）とutag.viewへの初回コール（これによってタグのトリガーや追加タグの読み込みが行われる）の両方について&rdquo;1&rdquo;の値が設定されます。</li>
 <li>Cookieはページ読み込み時に使用および初期化されるので、最初のページでutag.viewコールが発生しないままブラウザでページが更新されると、2番目のページで発生する最初のutag.viewコールの&rdquo;2&rdquo;に移行します。これは極端なケースであり、ほとんどの実装ではutag.jsの実行後すぐに<code>utag.view</code>がコールされることになります。</li>
 </ul></li>
 <li>この更新には、従来のプライバシーマネージャ拡張機能で使用されていた&rdquo;OU&rdquo;関数のための修正も含まれています。
@@ -346,7 +348,7 @@ var utag_data = {
 
 <p>2016年8月リリース</p>
 
-<p>新しいビルトインTealiumイベント属性を追加。 これらの新しい属性は、各Tealiumビューまたはリンクイベントとともにデータ層に追加されます。</p>
+<p>新しいビルトインTealiumイベント属性を追加。 これらの新しい属性は、各Tealiumビューまたはリンクイベントとともにデータレイヤーに追加されます。</p>
 
 <ul>
 <li><code>tealium_visitor_id</code> 
@@ -389,7 +391,7 @@ UTCタイムゾーンでの現在のISO文字列タイムスタンプ（古い�
 
 <p><strong><code>utag.link</code>および<code>utag.view</code></strong>を使用している単一ページアプリ（SPA）サイトでの動作の改善</p>
 
-<p>以前は、utag.link/viewに渡される現在のデータ層内のアイテムはutag.dataグローバルオブジェクトにマージされていました。 この処理は、utag.link/viewコールのたびにタグ配信ルールを再評価するために必要でした。 utag.js 4.40テンプレートでは、この処理を行わなくても済むように、公開エンジンの更新が活用されています。 バージョン4.40では、utag.dataグローバルオブジェクトがutag.linkまたはutag.viewコールのたびに更新されることはありません。</p>
+<p>以前は、utag.link/viewに渡される現在のデータレイヤー内のアイテムはutag.dataグローバルオブジェクトにマージされていました。 この処理は、utag.link/viewコールのたびにタグ配信ルールを再評価するために必要でした。 utag.js 4.40テンプレートでは、この処理を行わなくても済むように、公開エンジンの更新が活用されています。 バージョン4.40では、utag.dataグローバルオブジェクトがutag.linkまたはutag.viewコールのたびに更新されることはありません。</p>
 
 <p><strong>重要</strong>：次のJS拡張機能を使用すれば、v4.40への更新前に<a href="#version4-39">v4.39</a>の動作との後方互換性をテストできます。 </p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#998;font-style:italic">// JS Extension scoped to &#34;Before Load Rules&#34;
@@ -408,11 +410,11 @@ utag.ut.merge( utag.data, b ,<span style="color:#099">1</span> );
 
 <p>JS Page変数が、utag.viewまたはutag.linkをコールするたびに現在の値に更新されるようになりました。 その結果、<code>b[&quot;js_page.my_global_var&quot;]</code>には、utag.linkがコールされるたびに&rdquo;window.my_global_var&rdquo;内の最新の値が設定されることになります。</p>
 
-<p><strong>utag.link/utag.viewがコールされるたびにデータ層内の&rdquo;cp.utag_main_ses_id&rdquo;が保持されるバグの修正</strong></p>
+<p><strong>utag.link/utag.viewがコールされるたびにデータレイヤー内の&rdquo;cp.utag_main_ses_id&rdquo;が保持されるバグの修正</strong></p>
 
 <p>この値は、訪問者が30分間にわたってアクティビティなしで同じページにいる場合に実行されるutag.link/viewコールの後に、新しいセッションIDに更新されるようになりました。</p>
 
-<p><strong>&ldquo;eval&rdquo;を使用してdocument.referrer値をデータ層のb[&ldquo;dom.referrer&rdquo;]</strong>に読み込む手段を排除</p>
+<p><strong>&ldquo;eval&rdquo;を使用してdocument.referrer値をデータレイヤーのb[&ldquo;dom.referrer&rdquo;]</strong>に読み込む手段を排除</p>
 
 <p><strong>新しいutag.ut.encode関数</strong></p>
 
@@ -420,7 +422,7 @@ utag.ut.merge( utag.data, b ,<span style="color:#099">1</span> );
 
 <p><strong>_t_visitor_idおよび_t_session_idの提供終了</strong></p>
 
-<p>自動生成のデータ層値である&rdquo;_t_visitor_id&rdquo;および&rdquo;_t_session_id&rdquo;は利用できなくなりました。 これらは&rdquo;ut.visitor_id&rdquo;および&rdquo;ut.session_id&rdquo;に置き換わります。 それでも必要な場合は、次のような方法で追加できます。</p>
+<p>自動生成のデータレイヤー値である&rdquo;_t_visitor_id&rdquo;および&rdquo;_t_session_id&rdquo;は利用できなくなりました。 これらは&rdquo;ut.visitor_id&rdquo;および&rdquo;ut.session_id&rdquo;に置き換わります。 それでも必要な場合は、次のような方法で追加できます。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#998;font-style:italic">// JS Extension scoped to &#34;Before Load Rules&#34;
 </span><span style="color:#998;font-style:italic"></span>b[<span style="color:#b84">&#34;_t_visitor_id&#34;</span>] <span style="font-weight:bold">=</span> b[<span style="color:#b84">&#34;cp.utag_main_v_id&#34;</span>];
 b[<span style="color:#b84">&#34;_t_session_id&#34;</span>] <span style="font-weight:bold">=</span> b[<span style="color:#b84">&#34;cp.utag_main_ses_id&#34;</span>];
@@ -471,7 +473,7 @@ b[<span style="color:#b84">&#34;_t_session_id&#34;</span>] <span style="font-wei
 <ul>
 <li><a href="/platforms/javascript/event-tracking/">utag.link()コール</a>で新しいタグを読み込むことができるようになりました。 以前は、<a href="/platforms/javascript/page-tracking/">utag.view()コール</a>でしかこの操作を行えませんでした。</li>
 <li>waittimerおよびreadywaitフラグがtrueに設定されている場合にutag.dataオブジェクトがDOM Readyをスコープとする拡張機能に対して初期化されないバグを修正しました。</li>
-<li>以下の新しいビルトインデータ層変数を追加しました。
+<li>以下の新しいビルトインデータレイヤー変数を追加しました。
 
 <ul>
 <li>utag.data[&ldquo;ut.domain&rdquo;] - ウェブサイトのドメイン</li>
@@ -484,7 +486,7 @@ b[<span style="color:#b84">&#34;_t_session_id&#34;</span>] <span style="font-wei
 <li>手動のutag.viewおよびutag.linkコールによってセッション終了Cookieタイムスタンプが延長されないバグを修正しました。 この修正は、特に訪問者がサイトとやり取りをしている間にセッションを開いた状態に維持する手段として、AJAXを利用している単一ページアプリおよびサイトに効果的です。</li>
 <li>同期読み込みタグを<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Tag-Configuration-Advanced-Settings/ta-p/13600">ブロッキングタグ</a>として使用する妨げになっていたブロッキングタグのバグを修正しました。</li>
 <li>複数の同期ブロッキングタグの読み込みによって古いバージョンのInternet Explorer向けにキャッシュを取得するのを妨げていたバグを修正しました。</li>
-<li>すべてのタグをスコープとする拡張機能の実行直前にデータ層を出力するためのデバッグを追加しました。</li>
+<li>すべてのタグをスコープとする拡張機能の実行直前にデータレイヤーを出力するためのデバッグを追加しました。</li>
 </ul>
 
 <h2 id="バージョン4-35">バージョン4.35</h2>
@@ -492,7 +494,7 @@ b[<span style="color:#b84">&#34;_t_session_id&#34;</span>] <span style="font-wei
 <p>2014年12月5日リリース</p>
 
 <ul>
-<li>立て続けに実行したutag.view()コールに対してデータ層が保持されないバグを修正しました。 現在は、コールごとにデータ層のスナップショットが保持されます。</li>
+<li>立て続けに実行したutag.view()コールに対してデータレイヤーが保持されないバグを修正しました。 現在は、コールごとにデータレイヤーのスナップショットが保持されます。</li>
 <li>手動のutag.view()およびutag.link()コール用のデバッグ出力をさらに追加しました。</li>
 <li>新しいユーティリティ関数、utag.ut.typeOf()を追加しました。 たとえば、utag.ut.typeOf([])からは&rdquo;array&rdquo;という値が返されます。</li>
 </ul>
@@ -581,7 +583,7 @@ utag_cfg_ovrd.waittimer<span style="font-weight:bold">=</span><span style="color
 <p>2014年2月6日リリース</p>
 
 <ul>
-<li>AudienceStream<a href="https://community.tealiumiq.com/t5/3-AudienceStream-Documentation/Data-Layer-Enrichment/ta-p/684">データ層エンリッチメント</a>のサポートを導入。 これには、<a href="https://community.tealiumiq.com/t5/3-AudienceStream-Documentation/AudienceStream/ta-p/323" target="_blank">AudienceStream</a>と<a href="https://community.tealiumiq.com/t5/AudienceStream/Tealium-Collect-Tag-formerly-DataCloud/ta-p/11923" target="_blank">DataCloudタグ</a>が必要です。</li>
+<li>AudienceStream<a href="https://community.tealiumiq.com/t5/3-AudienceStream-Documentation/Data-Layer-Enrichment/ta-p/684">データレイヤーエンリッチメント</a>のサポートを導入。 これには、<a href="https://community.tealiumiq.com/t5/3-AudienceStream-Documentation/AudienceStream/ta-p/323" target="_blank">AudienceStream</a>と<a href="https://community.tealiumiq.com/t5/AudienceStream/Tealium-Collect-Tag-formerly-DataCloud/ta-p/11923" target="_blank">DataCloudタグ</a>が必要です。</li>
 <li>utag.jsは、動的メタタグを収集するために、utag.viewコールのたびに<a href="http://en.wikipedia.org/wiki/Meta_element">メタタグ</a>を読み取ります。</li>
 
 <li><p><code>utag_main</code> Cookieには、以下に示すいくつかの変更点があります。</p>
@@ -610,7 +612,7 @@ utag_cfg_ovrd.waittimer<span style="font-weight:bold">=</span><span style="color
 <li><p>既知の問題：<code>utag_main</code>セッションCookieが既に4.27より前のバージョンのutag.jsによって設定されているウェブサイトに訪問者がアクセスすると、ページ番号（_pn）とセッション番号（_sn）の値が常に<a href="http://en.wikipedia.org/wiki/NaN">NaN</a>に設定されます。 この問題は、utag.jsバージョン4.28では解決されています。</p></li>
 </ul></li>
 
-<li><p>オブジェクトをフラット化する<strong>utag.ut.flatten</strong>関数を導入。 この関数は、主にAudienceStream用のデータ層エンリッチメントで使用されます。</p></li>
+<li><p>オブジェクトをフラット化する<strong>utag.ut.flatten</strong>関数を導入。 この関数は、主にAudienceStream用のデータレイヤーエンリッチメントで使用されます。</p></li>
 </ul>
 
 <h2 id="バージョン4-26">バージョン4.26</h2>
@@ -648,7 +650,7 @@ utag_cfg_ovrd.waittimer<span style="font-weight:bold">=</span><span style="color
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.view({page_name <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;New Page&#34;</span>}, <span style="font-weight:bold">null</span>, [<span style="color:#099">5</span>]);
 </code></pre></div>
 <ul>
-<li>パラメータ1 - データ層</li>
+<li>パラメータ1 - データレイヤー</li>
 <li>パラメータ2 - コールバック関数（またはnull）</li>
 <li>パラメータ3 - 読み込んでトリガーするUIDのarray</li>
 </ul>
@@ -711,7 +713,7 @@ utag_cfg_ovrd.waittimer<span style="font-weight:bold">=</span><span style="color
 </code></pre></div>
 <p><strong>utag.viewおよびutag.linkコールで利用可能なすべてのページデータ</strong></p>
 
-<p>以前は、utag.viewおよびutag.linkコールで得られる情報は、それらに渡したデータだけでした。 <code>b[&quot;qp.campaign&quot;]</code>のようなアイテムにはアクセスできませんでした。 現在は、URL、メタデータ、Cookie値など、すべての&rdquo;ビルトイン&rdquo;データポイントがutag.linkおよびutag.viewコール用のデータ層に追加されます。</p>
+<p>以前は、utag.viewおよびutag.linkコールで得られる情報は、それらに渡したデータだけでした。 <code>b[&quot;qp.campaign&quot;]</code>のようなアイテムにはアクセスできませんでした。 現在は、URL、メタデータ、Cookie値など、すべての&rdquo;ビルトイン&rdquo;データポイントがutag.linkおよびutag.viewコール用のデータレイヤーに追加されます。</p>
 
 <p>また、AJAXサイト向けに変更されている可能性のある動的アイテム（<code>b[&quot;dom.url&quot;]</code>など）は、現在の値を使用できるように再構築されます。 現在の値は、AJAXページへの初回ランディング時の値とは異なる可能性があります。 </p>
 
@@ -749,16 +751,16 @@ utag.viewおよびutag.linkコールごとにタグ配信ルールを&rdquo;再�
 <li>大部分の直感的動作については、utag.jsファイルを読み込む前にすべての<code>utag_data</code>値を設定することをお勧めします。 また、<code>utag.cfg.load_rules_at_wait</code>は、デフォルト設定である&rdquo;false&rdquo;のままにします。</li>
 <li>utag.js 4.26への更新により、クエリ文字列パラメータの小文字化に関するデフォルト動作が変更される点に注意してください。 値が自動的に小文字化されることはなくなります。</li>
 
-<li><p>&ldquo;すべてのタグ&rdquo;をスコープとする拡張機能は、DOM Readyをスコープとする拡張機能の前に実行される場合もあれば、後に実行される場合もあります。 順序は保証されていません。 すべてのタグをスコープとする拡張機能のデータ層要素を操作すると、コンテンツ変更拡張機能の基準に影響する可能性があります。</p>
+<li><p>&ldquo;すべてのタグ&rdquo;をスコープとする拡張機能は、DOM Readyをスコープとする拡張機能の前に実行される場合もあれば、後に実行される場合もあります。 順序は保証されていません。 すべてのタグをスコープとする拡張機能のデータレイヤー要素を操作すると、コンテンツ変更拡張機能の基準に影響する可能性があります。</p>
 
-<p><strong>ベストプラクティス：</strong>元のデータ層オブジェクトは変更しないでください。 値を変更する必要がある場合は、代わりに新しい変数を使用します。</p></li>
+<p><strong>ベストプラクティス：</strong>元のデータレイヤーオブジェクトは変更しないでください。 値を変更する必要がある場合は、代わりに新しい変数を使用します。</p></li>
 </ul>
 
 <p><strong>既知の問題</strong></p>
 
 <ul>
-<li>データ層の<code>utag_data</code>オブジェクトが<code>utag.data</code>への参照となり、一方を変更するともう一方も変更される。</li>
-<li>データ層が<code>&lt;body&gt;</code>要素の最後、DOM Readyの直前に定義されている場合（およびutag.jsが既に読み込まれている場合）、IE8でタイミングの問題が発生する可能性がある。 ベストプラクティスとしては、<code>utag_data</code>オブジェクトを常にutag.jsファイルの読み込みの前に宣言します。</li>
+<li>データレイヤーの<code>utag_data</code>オブジェクトが<code>utag.data</code>への参照となり、一方を変更するともう一方も変更される。</li>
+<li>データレイヤーが<code>&lt;body&gt;</code>要素の最後、DOM Readyの直前に定義されている場合（およびutag.jsが既に読み込まれている場合）、IE8でタイミングの問題が発生する可能性がある。 ベストプラクティスとしては、<code>utag_data</code>オブジェクトを常にutag.jsファイルの読み込みの前に宣言します。</li>
 </ul>
 
 <h2 id="バージョン4-011">バージョン4.011</h2>
@@ -918,7 +920,7 @@ utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-w
             
             
             <a href="/platforms/amp/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
         </ul>
@@ -953,7 +955,7 @@ utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-w
             
             
             <a href="/platforms/android/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
           <li class="fw4">
@@ -1184,7 +1186,7 @@ utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-w
             
             
             <a href="/platforms/ios/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
           <li class="fw4">
@@ -1513,7 +1515,7 @@ utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-w
             
             
             <a href="/platforms/swift/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
           <li class="fw4">
@@ -1676,13 +1678,13 @@ utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-w
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="JA-Tell us how we can make this article better." rows="4" cols="70"></textarea>
-		<button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-blue link">JA-Send Feedback</button>
+		<button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button>
   </span>
   <span id="feedback_thank_you" style="display: none;">
      <em>JA-Thank you for your feedback!</em>
   </span>
 </div>
-<p>最終更新日 ::  2019年October月10日</p>
+<p>最終更新日 ::  2019年October月28日</p>
 
       
 
@@ -1869,8 +1871,8 @@ utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-w
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script type="text/javascript">
 docsearch({
-  apiKey: 'b909cfb6051533a37a6c253ac1ab02c9',
-  indexName: 'tealium',
+  apiKey: '6784c7975bfcd2a1e2f86d3388d655b4',
+  indexName: 'tealium_jp',
   inputSelector: 'input#search-input',
   debug: "true" 
 });

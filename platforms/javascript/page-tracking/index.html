@@ -59,6 +59,7 @@ var utag_data = {
         </li>
       
     </ul>
+    
     <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
   <fieldset class="bn ma0 pa0">
     <label class="clip" for="search-input">Search</label>
@@ -68,6 +69,7 @@ var utag_data = {
   </fieldset>
 </form>
 </div>
+    
   </div>
 
 
@@ -264,7 +266,7 @@ var utag_data = {
 <ul>
 <li>utag.jsは、ページが読み込まれるたびに、このメソッドを自動的にトリガーします。</li>
 <li>ユーザーがサイト内で移動するときにURLが更新されないAJAXページフロー（単一ページチェックアウトまたは単一ページアプリケーションなど）に対して一般的に使用されます。</li>
-<li>最初のページ読み込み時（<code>utag_data</code>）に宣言されたUDOは、これらのコールによって他の目的に使用されることはありません。 このメソッドには新しいデータオブジェクトを明示的に渡す必要があります。  
+<li>ページ読み込み時（<code>utag_data</code>）に宣言されたUDOは、これらのコールによって他の目的に使用されることはありません。 このメソッドには新しいデータオブジェクトを明示的に渡す必要があります。  
 <br /></li>
 </ul>
 
@@ -324,9 +326,9 @@ var utag_data = {
 <h2 id="重要な注意事項">重要な注意事項</h2>
 
 <ul>
-<li>最初のページランディング時に宣言された<code>utag_data</code>オブジェクトは、これらのコールによって他の目的に使用されることは_ありません_。 最初のページランディングからのデータを使用する必要がある場合は、それを再度宣言して、メソッドコールでもう一度渡す必要があります。</li>
-<li><a href="/platforms/javascript/release-notes/#version-4-36">utag.jsバージョン4.36以降</a>の時点で、utag.linkコールはページにまだ含まれていないタグを読み込みます。</li>
-<li><a href="/platforms/javascript/release-notes/#version-4-26">utag.jsバージョン4.26</a>の時点で、utag.viewとutag.linkコールの両方についてタグ配信ルールが再評価されています。 注意：utag.linkコールは新しいタグ（最初のページ読み込み時に既に読み込まれていないもの）を読み込みませんが、utag.viewコールは読み込みます。</li>
+<li>初回ページランディング時に宣言された<code>utag_data</code>オブジェクトは、これらのコールによって他の目的に使用されることはありません。 初回ページランディング時のデータを使用する必要がある場合は、それを再度宣言して、メソッドコールでもう一度渡す必要があります。</li>
+<li><a href="/platforms/javascript/release-notes/#version-4-36">utag.jsバージョン4.36以降</a>のutag.linkコールはページに読み込まれなかったタグも読み込みます。</li>
+<li><a href="/platforms/javascript/release-notes/#version-4-26">utag.jsバージョン4.26</a>の時点のutag.viewとutag.linkコールは、タグ配信ルールが再評価されています。 注意：utag.linkコールは新しいタグ（初回のページ読み込み時に読み込まれなかったタグ）は読み込みませんが、utag.viewコールは読み込みます。</li>
 <li><a href="/platforms/javascript/release-notes/#version-4-011">バージョン4.26より前のutag.js</a>では、手動でのutag.view()またはutag.link()コール時にタグ配信ルールが再度実行されません。 これは、最初のページランディング時に読み込まれたタグのみが実行可能であることを意味します。 たとえば、ページランディング時に実行するタグがSiteCatalystとDoubleClickの2つだけである場合、utagトラッキングコールへの応答に使用できるのはこの2つのタグだけになります。</li>
 <li>これらのコール中にはグローバルおよびタグをスコープとする拡張機能が実行されます。 プリローダーおよびDOM対応拡張機能は、これらのコール中に実行されません。</li>
 </ul>
@@ -394,7 +396,7 @@ var utag_data = {
             
             
             <a href="/platforms/amp/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
         </ul>
@@ -429,7 +431,7 @@ var utag_data = {
             
             
             <a href="/platforms/android/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
           <li class="fw4">
@@ -660,7 +662,7 @@ var utag_data = {
             
             
             <a href="/platforms/ios/data-layer-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
           <li class="fw4">
@@ -989,7 +991,7 @@ var utag_data = {
             
             
             <a href="/platforms/swift/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              データ層
+              データレイヤー
             </a>
           </li>
           <li class="fw4">
@@ -1152,13 +1154,13 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="JA-Tell us how we can make this article better." rows="4" cols="70"></textarea>
-		<button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-blue link">JA-Send Feedback</button>
+		<button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc ttu mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button>
   </span>
   <span id="feedback_thank_you" style="display: none;">
      <em>JA-Thank you for your feedback!</em>
   </span>
 </div>
-<p>最終更新日 ::  2019年October月16日</p>
+<p>最終更新日 ::  2019年October月28日</p>
 
       
 
@@ -1345,8 +1347,8 @@ var utag_data = {
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script type="text/javascript">
 docsearch({
-  apiKey: 'b909cfb6051533a37a6c253ac1ab02c9',
-  indexName: 'tealium',
+  apiKey: '6784c7975bfcd2a1e2f86d3388d655b4',
+  indexName: 'tealium_jp',
   inputSelector: 'input#search-input',
   debug: "true" 
 });
