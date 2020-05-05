@@ -22,6 +22,25 @@
   </head>
   <body class="sidebar ma0 sans-serif bg-primary-color-light">
       
+        
+<script>
+var utag_data = {
+    category_name : "EventStream",
+    site_section  : "guides",
+    site_language : "ja",
+    tealium_event : "page_view"
+}
+</script>
+
+<script>
+ (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/tealium\/docs/qa/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+  })();
+</script>
+
+      
 
     
 <nav class="bg-primary-color-dark pv2 w-100 sticky-t" role="navigation">
@@ -37,8 +56,8 @@
         <li class="f5 dib mr4" role="menuitem">
             
           <a href="https://docs-preview.tealium.co.jp/guides/" class="dim link">
-          手引き	
-            	
+          手引き
+            
             
           </a>
         </li>
@@ -47,8 +66,8 @@
         <li class="f5 dib mr4" role="menuitem">
             
           <a href="https://docs-preview.tealium.co.jp/platforms/" class="dim link">
-          プラットフォーム	
-            	
+          プラットフォーム
+            
             
           </a>
         </li>
@@ -167,15 +186,15 @@
             <ul class="menu-group as-main-navigation flex-0 bottom-align">
               <li class="menu-divider"></li>
               <li class="js-main-nav-section">
-                <a href="https://my.tealiumiq.com/" class="menu-list-item top-level tooltip-right" title="Universal Data Hub">
+                <a href="https://my.tealiumiq.com/" class="menu-list-item top-level tooltip-right" title="Customer Data Hub">
                     <span class="menu-large-icon">
                         <span class="as-platform-image square-xxxs is-rounded bg-transparent">
-                            <span class="inner-image UDH-icon">UDH</span>
+                            <span class="inner-image UDH-icon">CDH</span>
                         </span>
                     </span>
-                    <span class="menu-context supportLinks_buttonTitle">Universal Data Hub</span>
+                    <span class="menu-context supportLinks_buttonTitle">Customer Data Hub</span>
                 </a>
-                          <span class="tooltiptext">Universal Data Hub</span>
+                          <span class="tooltiptext">Customer Data Hub</span>
               </li>
               <li class="menu-divider"></li>
               <li class="js-toggle-leftframe">
@@ -207,7 +226,12 @@
 
 
 
-</div>
+
+  <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
+      <p class="b">目次</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#google-sheets-%e3%82%b3%e3%83%8d%e3%82%af%e3%82%bf%e3%81%ae%e8%bf%bd%e5%8a%a0">Google Sheets コネクタの追加</a></li>
+              </nav>
+  </aside></div>
 
       <div class="order-1 ph0 ph4-ns mid-gray nested-copy-line-height no-underline nested-links nested-copy-seperator nested-blockquote mt0-ns" style="flex-grow:1;">
         <div class="documentation-copy center measure-wide-l">
@@ -328,985 +352,77 @@
 
         </div>
       </div>
-      <div class="order-0 w-20 dn db-l pl3 sticky-l">
+      <div class="order-0 w-20 dn db-l sticky-l">
         
 
 
 <nav class="side-nav f6" role="navigation">
-  <ul class="list pa0 nl2">
+  <ul class="list pa0">
+
     
       
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw8">
-      <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target="iq-tag-management">iQ Tag Management</a>
-      <ul class="iq-tag-management desktopmenu animated fadeIn list pl0 dn">
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-overview">概要</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw8">
-      <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 pl3 pr2  primary-color hover-bg-primary" data-target="iq-tag-management-getting-started">はじめに</a>
-      <ul class="iq-tag-management-getting-started desktopmenu animated fadeIn list pl0 dn">
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/introduction/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-introduction">はじめに</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/data-layer-basics/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-data-layer-basics">データ層の基本</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/data-layer-add-variables/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-data-layer-add-variables">データ層の基本: 共通変数の追加</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/tag-basics/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-tag-basics">タグの基本</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/tag-basics-add-tag/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-tag-basics-add-tag">タグの基本: タグを追加する</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/tag-basics-load-rule/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-tag-basics-load-rule">タグの基本: 読み込みルールを追加する</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/tag-basics-data-mapping/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-tag-basics-data-mapping">タグの基本: データマッピングを追加する</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/extensions/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-extensions">拡張機能</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/extensions-add/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-extensions-add">拡張機能: 拡張機能の追加</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/save-publish-basics/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-save-publish-basics&#34;">Saving and Publishing</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/saving-changes/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-saving-changes&#34;">変更の保存</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/publish-environments/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-publish-environments&#34;">公開環境</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/save-publish/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-save-publish&#34;">保存と公開</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/install-test/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-install-test&#34;">インストールとテスト</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/install-utag/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-install-utag&#34;">utag_data と utag.js のインストール</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/web-companion/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-web-companion&#34;">Web コンパニオンの有効化</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/code-center/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-code-center&#34;">コードセンターの使用</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/iq-tag-management/getting-started/next-steps/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="iq-tag-management-getting-started-next-steps&#34;">次のステップ</a>
-    </li>
-    
-  
-
-      </ul>
-    </li>
-    
-  
-
-      </ul>
-    </li>
-    
-  
-
       
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw8 active">
-      <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2 primary-color " data-target="eventstream">EventStream</a>
-      <ul class="eventstream desktopmenu animated fadeIn list pl0 db">
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-overview">概要</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw8 active">
-      <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 pl3 pr2 primary-color " data-target="eventstream-getting-started">はじめに</a>
-      <ul class="eventstream-getting-started desktopmenu animated fadeIn list pl0 db">
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/introduction/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-introduction">はじめに</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/data-sources/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-data-sources">データソース</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/data-sources-add/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-data-sources-add">データソース: データソースの追加</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/data-sources-install-test/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-data-sources-install-test">データソース: インストールとテスト</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/live-events/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-live-events">ライブイベント</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/event-specs/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-event-specs">イベント仕様</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/event-specs-add/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-event-specs-add">イベント仕様: 仕様の追加</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/event-specs-data-quality/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-event-specs-data-quality">イベント仕様: データ品質</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/event-feeds/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-event-feeds">イベントフィード</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/event-feeds-add/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-event-feeds-add">イベントフィード: フィードの追加</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/connectors/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-connectors">コネクタ</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/connectors-add/" class="db link pl4 pr2 pv1 bg-secondary white" data-target="eventstream-getting-started-connectors-add">コネクタ: コネクタの追加</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/trace/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-trace">トレース</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/trace-test/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-trace-test">トレース: トレースでテストする</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/save-publish/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-save-publish">Saving and Publishing</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/eventstream/getting-started/next-steps/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="eventstream-getting-started-next-steps">次のステップ</a>
-    </li>
-    
-  
-
-      </ul>
-    </li>
-    
-  
-
-      </ul>
-    </li>
-    
-  
-
+      <li class="w-100 hover-accent-color-light fw8 pl2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".iq-tag-management">iQ Tag Management</a>
+        <ul class="iq-tag-management desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              はじめに
+            </a>
+          </li>
+        </ul>
+      </li>
       
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw8">
-      <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target="audiencestream">AudienceStream</a>
-      <ul class="audiencestream desktopmenu animated fadeIn list pl0 dn">
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-overview">概要</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw8">
-      <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 pl3 pr2  primary-color hover-bg-primary" data-target="audiencestream-getting-started">はじめに</a>
-      <ul class="audiencestream-getting-started desktopmenu animated fadeIn list pl0 dn">
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/introduction/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-introduction">はじめに</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/attributes/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-attributes">属性</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/attributes-enrichments/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-attributes-enrichments">属性: エンリッチメント</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/attributes-badges/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-attributes-badges">属性: バッジ</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/attributes-offline-data/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-attributes-offline-data">属性: オフラインデータ（オムニチャネル）</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/visitor-stitching/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-visitor-stitching">Visitor Stitching</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/visitor-stitching-id/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-visitor-stitching-id">Visitor Stitching: ビジター ID</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/visitor-stitching-part1/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-visitor-stitching-part1">Visitor Stitching: パート 1</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/visitor-stitching-discovery/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-visitor-stitching-discovery">Visitor Stitching: ディスカバリー</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/visitor-stitching-part2/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-visitor-stitching-part2">Visitor Stitching: パート 2</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/audiences/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-audiences">オーディエンス</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/connectors/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-connectors">コネクタ</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/connectors-add/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-connectors-add">コネクタ: コネクタの追加</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/trace/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-trace">トレース</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/trace-test/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-trace-test">トレース: トレースでテストする</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/save-publish/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-save-publish">Saving and Publishing</a>
-    </li>
-    
-  
-
-          
-  
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="w-100 hover-accent-color-light fw4 ">
-      <a href="/guides/audiencestream/getting-started/next-steps/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target="audiencestream-getting-started-next-steps">次のステップ</a>
-    </li>
-    
-  
-
-      </ul>
-    </li>
-    
-  
-
-      </ul>
-    </li>
-    
-  
-
+      
+      <li class="w-100 hover-accent-color-light fw8 active pl2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".eventstream">EventStream</a>
+        <ul class="eventstream desktopmenu animated fadeIn list pl0 db">
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/" class="db link pl3 pr2 pv1 bg-secondary white">
+              はじめに
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8 pl2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".audiencestream">AudienceStream</a>
+        <ul class="audiencestream desktopmenu animated fadeIn list pl0 dn">
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              概要
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              はじめに
+            </a>
+          </li>
+        </ul>
+      </li>
     
   </ul>
 </nav>
@@ -1326,7 +442,7 @@
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="JA-Tell us how we can make this article better." rows="4" cols="70"></textarea>
-    <span>最終更新日 ::  2019年December月3日
+    <span>最終更新日 ::  2020年May月5日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
   </span>
