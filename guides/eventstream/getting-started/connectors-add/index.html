@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>コネクタ: コネクタの追加 | はじめに |Tealium Developer Docs</title>
+    <title>コネクタ: コネクタの追加 | はじめに |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -22,25 +22,6 @@
   </head>
   <body class="sidebar ma0 sans-serif bg-primary-color-light">
       
-        
-<script>
-var utag_data = {
-    category_name : "EventStream",
-    site_section  : "guides",
-    site_language : "ja",
-    tealium_event : "page_view"
-}
-</script>
-
-<script>
- (function(a,b,c,d){
-    a='//tags.tiqcdn.com/utag/tealium\/docs/qa/utag.js';
-    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
-    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
-  })();
-</script>
-
-      
 
     
 <nav class="bg-primary-color-dark pv2 w-100 sticky-t" role="navigation">
@@ -52,8 +33,7 @@ var utag_data = {
     </h1>
     <ul class="list ma0 pa0 dn dib-l">
       
-            
-        <li class="f5 dib mr4" role="menuitem">
+        <li class="f5 dib mr4 active" role="menuitem">
             
           <a href="https://docs-preview.tealium.co.jp/guides/" class="dim link">
           手引き
@@ -62,7 +42,6 @@ var utag_data = {
           </a>
         </li>
       
-            
         <li class="f5 dib mr4" role="menuitem">
             
           <a href="https://docs-preview.tealium.co.jp/platforms/" class="dim link">
@@ -239,12 +218,6 @@ var utag_data = {
           </div>
           <header class="flex-none w-100">
   
-    
-      <a href="/platforms/eventstream/getting-started" class="f6 fw8 mb0 link mid-gray dim mr3">
-        EVENTSTREAM/GETTING STARTED
-      </a>
-    
-  
 
   <h1 class="lh-title mb3 mv0 pt3">コネクタ: コネクタの追加</h1>
 </header>
@@ -277,42 +250,50 @@ var utag_data = {
 
 <p>以下の手順を使って、EventStream に Google Sheets コネクタを構成します。</p>
 
-<p>1.<strong>EventStream &gt; Connectors &gt; Connector Marketplace</strong> に移動します。
-2.横のナビゲーションパネルの<strong>Categories</strong>下にある<strong>Big Data</strong>をクリックして選択を絞り込みます。
-3.<strong>[Google Sheets]</strong>を選択し、<strong>[Add Connector]</strong>をクリックします。
-<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8155i3151273C5560544B/image-dimensions/360x265?v=1.0" alt="Google Sheets" />
-4.<strong>[Configure]</strong>タブ上でタイトルを入力し、<strong>[Establish Connection]</strong>をクリックします。お客様のGoogleアカウントの承認ダイアログが表示されます。
-5.お客様のユーザーアカウント名を確認し、<strong>[Allow]</strong>をクリックします。コネクタの構成ウィンドウが、_Connected<em>と表示されます。
-6.<strong>[Next]</strong>をクリックします。</em>[Actions]_タブが表示されます。
-7.デフォルトアクション <code>&quot;Add or Update Row&quot;</code> を選択し、<strong>+[Create Action]</strong> をクリックして以下のパラメータを構成します。
-  *   <strong>アクション名</strong>
-  <code>&quot;Search Terms with Zero Results&quot;</code> といった記述名をアクションに与えます。
-  *   <strong>ソース</strong>
-  イベントフィード <code>&quot;Search with No Results&quot;</code> を選択します。これらは、アクション（スプレッドシートに行を追加するか更新するような）をトリガーするイベントです。
-  *   <strong>スプレッドシート名</strong>
-  使用するスプレッドシートファイル名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択して、使用するスプレッドシートファイル名（「EventStream Test」という名前で作成したもの）を入力します。
-  <img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8156i219077D1C44FAA38/image-dimensions/480x140?v=1.0" alt="スプレッドシート名" />
-  *   <strong>ワークシート名</strong>
-  使用するスプレッドシートファイルの中にあるワークシート名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択して、<code>&quot;Sheet1&quot;</code>といった使用するワークシート名を入力します。
-  <img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8157i41F9A04CB2A9DBC1/image-dimensions/480x153?v=1.0" alt="ワークシート名" />
-  *   <strong>行 ID</strong>
-  各イベントに対して一意の行IDを含む列を特定します。これは通常はイベントタイムスタンプ属性です。マッピングに使用するため、列を <code>&quot;Timestamp&quot;</code> と名付けました。
-  <img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8158iB6FB3A619408DC16/image-dimensions/480x148?v=1.0" alt="行 ID" />
-  Mapリストからお客様の属性を選択して、対応するスプレッドシート列名（カスタム値）を <strong>To</strong>フィールドに入力します。   アクションが開始されると、指定された列の属性値を探し、次のいずれかになります:</p>
+<ol>
+<li><strong>EventStream &gt; Connectors &gt; Connector Marketplace</strong> に移動します。</li>
+<li>横のナビゲーションパネルの<strong>Categories</strong>下にある<strong>Big Data</strong>をクリックして選択を絞り込みます。</li>
+<li><strong>[Google Sheets]</strong>を選択し、<strong>[Add Connector]</strong>をクリックします。<br />
+<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8155i3151273C5560544B/image-dimensions/360x265?v=1.0" alt="Google Sheets" /></li>
+<li><strong>[Configure]</strong>タブ上でタイトルを入力し、<strong>[Establish Connection]</strong>をクリックします。お客様のGoogleアカウントの承認ダイアログが表示されます。</li>
+<li>お客様のユーザーアカウント名を確認し、<strong>[Allow]</strong>をクリックします。コネクタの構成ウィンドウが、_Connected_と表示されます。</li>
+<li><strong>[Next]</strong>をクリックします。_[Actions]_タブが表示されます。</li>
 
-<pre><code>  - 値が存在する場合、行データマッピングに指定されたように対応する行が更新されます。
-
-  - 値が存在しない場合、行データに指定される行 ID の値と属性を持つ新しい行が作成されます。
-</code></pre>
+<li><p>デフォルトアクション <code>&quot;Add or Update Row&quot;</code> を選択し、<strong>+[Create Action]</strong> をクリックして以下のパラメータを構成します。</p>
 
 <ul>
-<li><strong>行データ</strong>
+<li><strong>アクション名</strong>
+<code>&quot;Search Terms with Zero Results&quot;</code> といった記述名をアクションに与えます。</li>
+<li><strong>ソース</strong>
+イベントフィード <code>&quot;Search with No Results&quot;</code> を選択します。これらは、アクション（スプレッドシートに行を追加するか更新するような）をトリガーするイベントです。</li>
+<li><strong>スプレッドシート名</strong>
+使用するスプレッドシートファイル名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択して、使用するスプレッドシートファイル名（「EventStream Test」という名前で作成したもの）を入力します。
+<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8156i219077D1C44FAA38/image-dimensions/480x140?v=1.0" alt="スプレッドシート名" /></li>
+<li><strong>ワークシート名</strong>
+使用するスプレッドシートファイルの中にあるワークシート名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択して、<code>&quot;Sheet1&quot;</code>といった使用するワークシート名を入力します。
+<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8157i41F9A04CB2A9DBC1/image-dimensions/480x153?v=1.0" alt="ワークシート名" /></li>
+
+<li><p><strong>行 ID</strong>
+各イベントに対して一意の行IDを含む列を特定します。これは通常はイベントタイムスタンプ属性です。マッピングに使用するため、列を <code>&quot;Timestamp&quot;</code> と名付けました。
+<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8158iB6FB3A619408DC16/image-dimensions/480x148?v=1.0" alt="行 ID" />
+Mapリストからお客様の属性を選択して、対応するスプレッドシート列名（カスタム値）を <strong>To</strong>フィールドに入力します。   アクションが開始されると、指定された列の属性値を探し、次のいずれかになります:</p>
+
+<ul>
+<li><p>値が存在する場合、行データマッピングに指定されたように対応する行が更新されます。</p></li>
+
+<li><p>値が存在しない場合、行データに指定される行 ID の値と属性を持つ新しい行が作成されます。</p></li>
+</ul></li>
+
+<li><p><strong>行データ</strong>
 スプレッドシートに追加したい追加属性をマップします。各属性には、スプレッドシートの中で割り当てられた列名がなくてはなりません。この場合、<code>search_keyword</code> 属性の値を <code>&quot;Search Term&quot;</code> と名付けられたスプレッドシート列に記録します。
-<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8159iA2D72C59CE6B5280/image-dimensions/481x113?v=1.0" alt="行データ" /></li>
-<li><strong>更新する際に、空白値は除外します</strong>
-お客様が、空白の属性が更新されたり、スプレッドシート内にある既存のデータが上書きされたりしないようにしたい場合には、このボックスをチェックします。
-8.<strong>[Save]</strong>をクリックします。</li>
-</ul>
+<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8159iA2D72C59CE6B5280/image-dimensions/481x113?v=1.0" alt="行データ" /></p></li>
+
+<li><p><strong>更新する際に、空白値は除外します</strong>
+お客様が、空白の属性が更新されたり、スプレッドシート内にある既存のデータが上書きされたりしないようにしたい場合には、このボックスをチェックします。</p></li>
+</ul></li>
+
+<li><p><strong>[Save]</strong>をクリックします。</p></li>
+</ol>
 
 <p>お客様のアカウントを保存して公開し、トレースツールを使ってテストを開始する次の手順に進みます。</p>
 
@@ -354,24 +335,15 @@ var utag_data = {
       </div>
       <div class="order-0 w-20 dn db-l sticky-l">
         
-
-
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0">
 
     
       
       
-      <li class="w-100 hover-accent-color-light fw8 pl2">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".iq-tag-management">iQ Tag Management</a>
+      <li class="w-100 hover-accent-color-light fw8 f4 mid-gray pv1 pl2">
+        iQ Tag Management
         <ul class="iq-tag-management desktopmenu animated fadeIn list pl0 dn">
-          <li class="fw4">
-            
-            
-            <a href="/guides/iq-tag-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              概要
-            </a>
-          </li>
           <li class="fw4">
             
             
@@ -383,37 +355,278 @@ var utag_data = {
       </li>
       
       
-      <li class="w-100 hover-accent-color-light fw8 active pl2">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".eventstream">EventStream</a>
-        <ul class="eventstream desktopmenu animated fadeIn list pl0 db">
+      <li class="w-100 hover-accent-color-light fw8 pl2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".iq-tag-management-getting-started">はじめに</a>
+        <ul class="iq-tag-management-getting-started desktopmenu animated fadeIn list pl0 dn">
           <li class="fw4">
             
             
-            <a href="/guides/eventstream/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              概要
+            <a href="/guides/iq-tag-management/getting-started/introduction/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              はじめに
             </a>
           </li>
           <li class="fw4">
             
             
-            <a href="/guides/eventstream/getting-started/" class="db link pl3 pr2 pv1 bg-secondary white">
-              はじめに
+            <a href="/guides/iq-tag-management/getting-started/data-layer-basics/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              データレイヤーの基本
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/data-layer-add-variables/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              データレイヤーの基本: 共通変数の追加
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/tag-basics/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              タグの基本
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/tag-basics-add-tag/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              タグの基本: タグを追加する
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/tag-basics-load-rule/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              タグの基本: 読み込みルールを追加する
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/tag-basics-data-mapping/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              タグの基本: データマッピングを追加する
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/extensions/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              拡張機能
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/extensions-add/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              拡張機能: 拡張機能の追加
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/save-publish-basics/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              保存と公開
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/saving-changes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              変更の保存
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/publish-environments/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              公開環境
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/save-publish/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              保存と公開
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/install-test/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              インストールとテスト
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/install-utag/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              utag_data と utag.js のインストール
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/web-companion/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Web コンパニオンの有効化
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/code-center/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              コードセンターの使用
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/iq-tag-management/getting-started/next-steps/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              次のステップ
             </a>
           </li>
         </ul>
       </li>
       
       
-      <li class="w-100 hover-accent-color-light fw8 pl2">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".audiencestream">AudienceStream</a>
-        <ul class="audiencestream desktopmenu animated fadeIn list pl0 dn">
+      <li class="w-100 hover-accent-color-light fw8 f4 mid-gray pv1 pl2">
+        EventStream
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8 active pl2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".eventstream-getting-started">はじめに</a>
+        <ul class="eventstream-getting-started desktopmenu animated fadeIn list pl0 db">
           <li class="fw4">
             
             
-            <a href="/guides/audiencestream/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
-              概要
+            <a href="/guides/eventstream/getting-started/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              はじめに
             </a>
           </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/introduction/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              はじめに
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/data-sources/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              データソース
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/data-sources-add/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              データソース: データソースの追加
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/data-sources-install-test/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              データソース: インストールとテスト
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/live-events/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              ライブイベント
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/event-specs/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              イベント仕様
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/event-specs-add/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              イベント仕様: 仕様の追加
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/event-specs-data-quality/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              イベント仕様: データ品質
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/event-feeds/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              イベントフィード
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/event-feeds-add/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              イベントフィード: フィードの追加
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/connectors/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              コネクタ
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/connectors-add/" class="db link pl3 pr2 pv1 bg-secondary white">
+              コネクタ: コネクタの追加
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/trace/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              トレース
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/trace-test/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              トレース: トレースでテストする
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/save-publish/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              保存と公開
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/eventstream/getting-started/next-steps/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              次のステップ
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8 f4 mid-gray pv1 pl2">
+        AudienceStream
+      </li>
+      
+      
+      <li class="w-100 hover-accent-color-light fw8 pl2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".audiencestream-getting-started">はじめに</a>
+        <ul class="audiencestream-getting-started desktopmenu animated fadeIn list pl0 dn">
           <li class="fw4">
             
             
@@ -421,9 +634,127 @@ var utag_data = {
               はじめに
             </a>
           </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/introduction/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              はじめに
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/attributes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              属性
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/attributes-enrichments/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              属性: エンリッチメント
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/attributes-badges/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              属性: バッジ
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/attributes-offline-data/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              属性: オフラインデータ（オムニチャネル）
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/visitor-stitching/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Visitor Stitching
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/visitor-stitching-id/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Visitor Stitching: ビジター ID
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/visitor-stitching-part1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Visitor Stitching: パート 1
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/visitor-stitching-discovery/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Visitor Stitching: ディスカバリー
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/visitor-stitching-part2/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              Visitor Stitching: パート 2
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/audiences/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              オーディエンス
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/connectors/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              コネクタ
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/connectors-add/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              コネクタ: コネクタの追加
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/trace/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              トレース
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/trace-test/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              トレース: トレースでテストする
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/save-publish/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              保存と公開
+            </a>
+          </li>
+          <li class="fw4">
+            
+            
+            <a href="/guides/audiencestream/getting-started/next-steps/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary ">
+              次のステップ
+            </a>
+          </li>
         </ul>
       </li>
-    
   </ul>
 </nav>
 
@@ -442,7 +773,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="JA-Tell us how we can make this article better." rows="4" cols="70"></textarea>
-    <span>最終更新日 ::  2020年May月5日
+    <span>最終更新日 ::  2019年December月3日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
   </span>
@@ -469,7 +800,7 @@ var utag_data = {
 <ul class="list hidden dib ph0 ma0 scrolling-touch tc">
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/guides/" class="ttu f6 link primary-color-light overflow hover-white db brand-font ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.co.jp/guides/" class="ttu f6 link primary-color-light overflow hover-white db brand-font ma0 w-100 pv3 ph4 bg-primary-color">
           手引き
         </a>
     </li>
@@ -488,15 +819,15 @@ var utag_data = {
 
 <ul class="list dib ph0 ma0 scrolling-touch tc">
   
-    <li  class="tl dib ma0 hover-bg-primary w-100 mb2 bb b--mid-gray">
-        <a href="https://docs-preview.tealium.co.jp/platforms/remote-commands/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          Remote Commands
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Mobile
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/amp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          AMP
+        <a href="https://docs-preview.tealium.co.jp/platforms/remote-commands/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Remote Commands
         </a>
     </li>
   
@@ -519,18 +850,6 @@ var utag_data = {
     </li>
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/angular/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          Angular
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/csharp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          C#
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/platforms/cordova/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
           Cordova
         </a>
@@ -543,26 +862,86 @@ var utag_data = {
     </li>
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/ios/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          iOS (Objective-C)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/swift/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          iOS (Swift)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/tvos/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          iOS (tvOS)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/watchos/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          iOS (watchOS)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/react-native/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          React Native
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100 mb2 bb b--mid-gray">
+        <a href="https://docs-preview.tealium.co.jp/platforms/xamarin/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Xamarin
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Web
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/amp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          AMP
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/angular/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Angular
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100 mb2 bb b--mid-gray">
+        <a href="https://docs-preview.tealium.co.jp/platforms/javascript/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          JavaScript (Web)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Server
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/csharp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          C#
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/platforms/http-api/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
           HTTP API
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/ios/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          iOS
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/platforms/java/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
           Java
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/javascript/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          JavaScript (Web)
         </a>
     </li>
   
@@ -579,12 +958,6 @@ var utag_data = {
     </li>
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/react-native/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          React Native
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/platforms/roku/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
           Roku
         </a>
@@ -593,30 +966,6 @@ var utag_data = {
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/platforms/ruby/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
           Ruby
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/swift/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          Swift
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/tvos/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          tvOS
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/watchos/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          watchOS
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/platforms/xamarin/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
-          Xamarin
         </a>
     </li>
   

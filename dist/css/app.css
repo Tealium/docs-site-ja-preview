@@ -244,9 +244,6 @@ textarea {
 /**
  * Add the correct display in IE 10+.
  */
-template {
-  display: none;
-}
 /**
  * Add the correct display in IE 10.
  */
@@ -1314,11 +1311,6 @@ img { max-width: 100%; }
 }
 /* Measure is limited to ~45 characters */
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */
-.indent {
-  text-indent: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 /* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
 .truncate {
   white-space: nowrap;
