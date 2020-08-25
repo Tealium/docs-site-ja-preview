@@ -244,6 +244,9 @@ textarea {
 /**
  * Add the correct display in IE 10+.
  */
+template {
+  display: none;
+}
 /**
  * Add the correct display in IE 10.
  */
@@ -418,6 +421,7 @@ img { max-width: 100%; }
 
 */
 .br2 {        border-radius: .25rem; }
+.br3 {        border-radius: .5rem; }
 .br-100 {     border-radius: 100%; }
 /*
 
@@ -552,7 +556,7 @@ img { max-width: 100%; }
   This will set table to full width and then
   all cells will be equal width
 */
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 45em) {
   .db-ns {              display: block; }
   .dib-ns {             display: inline-block; }
 }
@@ -581,20 +585,20 @@ img { max-width: 100%; }
   min-height: 0; /* 1 */
 }
 .flex-none { -ms-flex: none; flex: none; }
-.flex-column  { -ms-flex-direction: column; flex-direction: column; }
 .flex-row     { -ms-flex-direction: row; flex-direction: row; }
 .flex-wrap    { -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .flex-nowrap    { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
 .items-center   { -ms-flex-align: center; align-items: center; }
 .items-stretch  { -ms-flex-align: stretch; align-items: stretch; }
 .justify-start   { -ms-flex-pack: start; justify-content: flex-start; }
+.justify-center  { -ms-flex-pack: center; justify-content: center; }
 .justify-between { -ms-flex-pack: justify; justify-content: space-between; }
 .order-0 { -ms-flex-order: 0; order: 0; }
 .order-1 { -ms-flex-order: 1; order: 1; }
 .order-2 { -ms-flex-order: 2; order: 2; }
 .flex-grow-0 { -ms-flex-positive: 0; flex-grow: 0; }
 .flex-shrink-0 { -ms-flex-negative: 0; flex-shrink: 0; }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 45em) {
   .flex-ns { display: -ms-flexbox; display: flex; }
 }
 @media screen and (min-width: 60em) {
@@ -625,6 +629,8 @@ img { max-width: 100%; }
      -l  = large
 
 */
+.fl { float: left;  _display: inline; }
+.fr { float: right; _display: inline; }
 .fn { float: none; }
 /*@import 'tachyons/src/_font-family';*/
 /*
@@ -867,20 +873,18 @@ img { max-width: 100%; }
 .w-90 {  width:  90%; }
 .w-100 { width: 100%; }
 .w-auto { width: auto; }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 45em) {
   .w4-ns {  width: 8rem; }
   .w-30-ns { width:  30%; }
-  .w-50-ns { width:  50%; }
   .w-90-ns { width:  90%; }
 }
-@media screen and (min-width: 30em) and (max-width: 60em) {
+@media screen and (min-width: 45em) and (max-width: 60em) {
   .w-50-m { width:  50%; }
 }
 @media screen and (min-width: 60em) {
   .w-10-l {    width:  10%; }
   .w-20-l {    width:  20%; }
   .w-25-l {    width:  25%; }
-  .w-40-l {    width:  40%; }
   .w-60-l {    width:  60%; }
   .w-80-l {    width:  80%; }
   .w-90-l {    width:  90%; }
@@ -931,7 +935,6 @@ img { max-width: 100%; }
 
 */
 /* Text colors */
-.white-90 {         color: rgba(255, 255, 255, .9); }
 .black {         color: #000; }
 .near-black {    color: #111; }
 .mid-gray {      color: #555; }
@@ -1016,7 +1019,6 @@ img { max-width: 100%; }
 .pl5 { padding-left: 4rem; }
 .pr1 { padding-right: .25rem; }
 .pr2 { padding-right: .5rem; }
-.pr3 { padding-right: 1rem; }
 .pb1 { padding-bottom: .25rem; }
 .pb2 { padding-bottom: .5rem; }
 .pb3 { padding-bottom: 1rem; }
@@ -1060,6 +1062,7 @@ img { max-width: 100%; }
 }
 .ma0  {  margin: 0; }
 .ml0  {  margin-left: 0; }
+.ml3  {  margin-left: 1rem; }
 .ml4  {  margin-left: 2rem; }
 .ml6 {  margin-left: 8rem; }
 .mr0  {  margin-right: 0; }
@@ -1084,7 +1087,7 @@ img { max-width: 100%; }
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 45em) {
   .pa4-ns  {  padding: 2rem; }
   .pl4-ns  {  padding-left: 2rem; }
 
@@ -1126,7 +1129,7 @@ img { max-width: 100%; }
   .mt0-ns  {  margin-top: 0; }
 
 }
-@media screen and (min-width: 30em) and (max-width: 60em) {
+@media screen and (min-width: 45em) and (max-width: 60em) {
   .ph4-m {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1135,7 +1138,6 @@ img { max-width: 100%; }
 }
 @media screen and (min-width: 60em) {
   .pa4-l  {  padding: 2rem; }
-  .pb4-l  {  padding-bottom: 2rem; }
   .pv4-l {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1221,10 +1223,9 @@ img { max-width: 100%; }
 .tl  { text-align: left; }
 .tr  { text-align: right; }
 .tc  { text-align: center; }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 45em) {
   .tl-ns  { text-align: left; }
   .tr-ns  { text-align: right; }
-  .tc-ns  { text-align: center; }
 }
 @media screen and (min-width: 60em) {
   .tl-l  { text-align: left; }
@@ -1285,7 +1286,7 @@ img { max-width: 100%; }
 .f5 { font-size: 1rem; }
 .f6 { font-size: .875rem; }
 /* Small and hard to read for many people so use with extreme caution */
-@media screen and (min-width: 30em){
+@media screen and (min-width: 45em){
   .f2-ns { font-size: 2.25rem; }
   .f3-ns { font-size: 1.5rem; }
 }
@@ -1311,6 +1312,11 @@ img { max-width: 100%; }
 }
 /* Measure is limited to ~45 characters */
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */
+.indent {
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
 .truncate {
   white-space: nowrap;
@@ -1319,7 +1325,7 @@ img { max-width: 100%; }
 }
 @media screen and (min-width: 60em) {
   .measure-wide-l {
-    max-width: 34em;
+    max-width: 40em;
   }
 }
 /*
@@ -1552,6 +1558,7 @@ img { max-width: 100%; }
 
 */
 /* Media Queries */
+/* @custom-media --breakpoint-not-small screen and (min-width: 30em); */
 /* Debugging */
 /*@import 'tachyons/src/_debug-children';
 @import 'tachyons/src/_debug-grid';*/
@@ -1559,6 +1566,11 @@ img { max-width: 100%; }
 /* @import 'tachyons/src/_debug'; */
 /* Customizations */
 /* @media (--breakpoint-small) { }*/
+@media screen and (min-width: 60em) {
+  .measure-wide-l {
+    max-width: 40em;
+  }
+}
 /*type*/
 /*@import 'font/_muli-200';*/
 /*@import 'font/_muli-400';*/
@@ -1923,9 +1935,22 @@ code, .code, pre code, .highlight pre  {
 /* Sans-Serif Typefaces */
 /* Serif Typefaces */
 /*@import '_hljs';*/
+a.js-toggle:after {
+    font-family: Font Awesome\ 5 Pro;
+    font-weight: 900;
+    content: "\F054";
+    color: currentColor;
+    font-size: 8px;
+    padding-left: 6px;
+}
+a.js-toggle.expanded:after {
+    font-family: Font Awesome\ 5 Pro;
+    font-weight: 900;
+    content: "\F078";
+}
 /* overrides */
 .link,.link:active,.link:focus,.link:hover,.link:link,.link:visited {
-    transition: none;
+  transition: none;
 }
 .ba-link:hover {
   border-color: #3BB9F0;
@@ -2007,7 +2032,17 @@ nav.side-nav>ul>li.active{
 }
 .sticky-l::-webkit-scrollbar-corner {
 }
-@media screen and (min-width: 30em) {
+.bg-subtle {
+  background-color: #F6FAFF;
+}
+.w-45 {
+  min-width: 45%;
+}
+.flex-1 {
+  -ms-flex: 1 1;
+      flex: 1 1;
+}
+@media screen and (min-width: 45em) {
   #leftFrame > .main-nav-container {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -2305,7 +2340,7 @@ ul.menu-group > li:hover .tooltiptext::before {
     position: sticky;
   }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 45em) {
   
   /* Sticky Top ----------------------------- */
   [data-scrolldir="down"] .sticky-t,
