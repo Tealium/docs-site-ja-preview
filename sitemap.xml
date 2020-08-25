@@ -1188,31 +1188,6 @@
   </url>
   
   <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/javascript/page-tracking/</loc>
-    <lastmod>2019-10-28T11:07:13-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/csharp/functions/</loc>
-    <lastmod>2020-01-23T15:54:07-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/java/function-definitions/</loc>
-    <lastmod>2020-01-23T15:54:07-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/react-native/functions/</loc>
-    <lastmod>2020-01-23T15:54:07-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/roku/functions/</loc>
-    <lastmod>2020-01-23T15:54:07-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/ios-swift/module-list/autotracking/</loc>
     <lastmod>2020-08-21T08:01:10-07:00</lastmod>
     <xhtml:link
@@ -1224,21 +1199,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/platforms/ios-swift/module-list/autotracking/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/</loc>
-    <lastmod>2020-08-19T17:09:07-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/remote-commands/integrations/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/"
                 />
   </url>
   
@@ -1399,6 +1359,21 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/platforms/unity/track/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/</loc>
+    <lastmod>2020-08-25T14:41:01-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/platforms/remote-commands/integrations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/"
                 />
   </url>
   
@@ -1588,11 +1563,6 @@
   </url>
   
   <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/javascript/event-tracking/</loc>
-    <lastmod>2019-10-28T11:07:13-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/ios-objective-c/data-layer/</loc>
     <lastmod>2020-08-19T17:09:07-07:00</lastmod>
     <xhtml:link
@@ -1650,11 +1620,6 @@
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/platforms/cordova/data-management/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/cordova/functions/</loc>
-    <lastmod>2019-10-28T11:07:13-07:00</lastmod>
   </url>
   
   <url>
@@ -1950,16 +1915,6 @@
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/platforms/ios-swift/data-management/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/cordova/module-adid/</loc>
-    <lastmod>2020-08-21T08:01:10-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/javascript/validate/</loc>
-    <lastmod>2019-10-28T11:07:13-07:00</lastmod>
   </url>
   
   <url>
@@ -2318,11 +2273,6 @@
   </url>
   
   <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/cordova/module-crash-reporter/</loc>
-    <lastmod>2020-08-21T08:01:10-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/facebook/</loc>
     <lastmod>2020-08-21T08:01:10-07:00</lastmod>
     <xhtml:link
@@ -2430,11 +2380,6 @@
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/platforms/ios-swift/modules/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/cordova/module-install-referrer/</loc>
-    <lastmod>2020-08-21T08:01:10-07:00</lastmod>
   </url>
   
   <url>
@@ -2723,11 +2668,6 @@
   </url>
   
   <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/javascript/about-utag-js/</loc>
-    <lastmod>2019-10-28T11:07:13-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/javascript/debugging/</loc>
     <lastmod>2020-08-21T08:01:10-07:00</lastmod>
     <xhtml:link
@@ -2785,11 +2725,6 @@
   <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/javascript/api-reference/</loc>
     <lastmod>2020-08-19T17:09:07-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/javascript/about-utag-data/</loc>
-    <lastmod>2019-10-28T11:07:13-07:00</lastmod>
   </url>
   
   <url>
@@ -2870,11 +2805,6 @@
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/platforms/android-java/release-notes/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/javascript/the-b-object/</loc>
-    <lastmod>2019-10-28T11:07:13-07:00</lastmod>
   </url>
   
   <url>
@@ -2973,11 +2903,6 @@
   </url>
   
   <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/javascript/built-in-variables/</loc>
-    <lastmod>2019-10-28T11:07:13-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/ios-swift/module-list/logger/</loc>
     <lastmod>2020-08-21T08:01:10-07:00</lastmod>
   </url>
@@ -3050,11 +2975,6 @@
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/platforms/xamarin/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/javascript/install-utag/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
