@@ -1617,6 +1617,7 @@ h3:hover .header-link svg {
 }
 .note,
 .tip {
+  font-size: 1rem;
   border-left-width: 4px;
   border-left-style: solid;
   position: relative;
