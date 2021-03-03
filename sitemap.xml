@@ -334,7 +334,7 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/</loc>
-    <lastmod>2021-01-05T09:50:09-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -409,7 +409,7 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/eventstream/getting-started/introduction/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -594,7 +594,7 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/introduction/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -635,16 +635,6 @@
   <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/ios-objective-c/module-list/optimizely-x-tracking/</loc>
     <lastmod>2020-08-27T14:00:18-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/ios-objective-c/module-list/optimizely-x-tracking/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/ios-objective-c/module-list/optimizely-x-tracking/"
-                />
   </url>
   
   <url>
@@ -1034,7 +1024,7 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/data-layer-basics/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -1409,7 +1399,7 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/data-layer-add-variables/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -1449,12 +1439,12 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/eventstream/getting-started/event-specs/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/tag-basics/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -1804,17 +1794,17 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/eventstream/getting-started/event-specs-data-quality/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/tag-basics-load-rule/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/tag-basics-data-mapping/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -1834,12 +1824,12 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/eventstream/getting-started/event-feeds/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/extensions/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -2054,7 +2044,7 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/extensions-add/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -2334,7 +2324,7 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/audiencestream/getting-started/trace-test/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -2349,7 +2339,7 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/install-test/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -2504,7 +2494,7 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/eventstream/getting-started/trace-test/</loc>
-    <lastmod>2020-08-27T14:00:18-07:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
@@ -2984,112 +2974,112 @@
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/introduction-to-predict/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/terminology/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/available-tiers/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/prerequisites/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/approaches/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/data-readiness/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/model-scores-and-ratings/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/about-models/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/adding-a-model/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/review-and-start-training/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/evaluating-the-trained-version/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/retraining-a-model/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/deploying-a-model/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/deleting-a-model/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/viewing-model-health/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/deployed-model-health-scores/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/audience-considerations/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/model-retraining-recommendations/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/how-visitor-stitching-affects-predict-models/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/data-compliance-and-usage/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/machine-learning-vs-artificial-intelligence/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/machine-learning-concepts-and-technology/</loc>
-    <lastmod>2021-01-05T09:53:38-08:00</lastmod>
+    <lastmod>2021-03-02T21:23:44-08:00</lastmod>
   </url>
   
   <url>
