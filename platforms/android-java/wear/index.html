@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.59.1" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -318,13 +318,13 @@ var utag_data = {
 <p class="note">非ウェアラブルのAndroidアプリケーションの場合、追加のコードは必要ありません。</p></p></li>
 
 <li><p>次の例に示すように、<code>Application</code>クラスのサブクラスを作成し、<code>TealiumWear</code>の初期化コードをアプリの<code>onCreate()</code>メソッドに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">class</span> WearApp <span style="color:#900;font-weight:bold">extends</span> Application {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">public class WearApp extends </span>Application {
 
    <span style="color:#998;font-style:italic">// Instance name from main app
-</span><span style="color:#998;font-style:italic"></span>   <span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">static</span> <span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">String</span> TEALIUM_MAIN <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;
+</span><span style="color:#998;font-style:italic"></span>   <span style="color:#a61717;background-color:#e3d2d2">public static final String </span>TEALIUM_MAIN <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;
 
    @Override
-   <span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">void</span> onCreate() {
+   <span style="color:#a61717;background-color:#e3d2d2">public void </span>onCreate() {
      <span style="font-weight:bold">super</span>.<span style="color:#008080">onCreate</span>();
      TealiumWear.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN,
          TealiumWear.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(<span style="font-weight:bold">this</span>)
@@ -338,7 +338,7 @@ var utag_data = {
 </span><span style="color:#998;font-style:italic"></span>Tealium.<span style="color:#008080">createInstance</span>(<span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>, config);
 
 <span style="color:#998;font-style:italic">// WearApp initialization
-</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">static</span> <span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">String</span> TEALIUM_MAIN <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;</code></pre></div></li>
+</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">public static final String </span>TEALIUM_MAIN <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;</code></pre></div></li>
 </ol>
 
 <h2 id="トラッキング">トラッキング</h2>
@@ -348,14 +348,14 @@ var utag_data = {
 <p>ウェアラブルでのトラッキングはハンドヘルドとほぼ同じです。唯一の違いは、トラッキングコールへのカスタムデータの渡し方です。ウェアラブル側は<code>Map</code>ではなく<a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/DataMap"><code>DataMap</code></a>オブジェクトを使用します。</p>
 
 <p><a href="/platforms/android-java/api/#trackview"><code>trackView()</code></a>メソッドは、次の例に示すようにスクリーンビューをトラッキングします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">DataMap</span> data <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> DataMap();
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">final DataMap </span>data <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> DataMap();
 <span style="color:#998;font-style:italic">// ...
 </span><span style="color:#998;font-style:italic"></span>TealiumWear.<span style="color:#008080">getInstance</span>(WearApp.<span style="color:#008080">TEALIUM_MAIN</span>)
     .<span style="color:#008080">trackView</span>(<span style="color:#b84">&#34;SCREEN_NAME&#34;</span>, data);</code></pre></div>
 <h3 id="イベントのトラッキング">イベントのトラッキング</h3>
 
 <p><a href="/platforms/android-java/api/#trackevent"><code>trackEvent()</code></a>メソッドは、次の例に示すように非ビューイベントをトラッキングします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">DataMap</span> data <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> DataMap();
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">final DataMap </span>data <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> DataMap();
 <span style="color:#998;font-style:italic">// ...
 </span><span style="color:#998;font-style:italic"></span>TealiumWear.<span style="color:#008080">getInstance</span>(WearApp.<span style="color:#008080">TEALIUM_MAIN</span>)
     .<span style="color:#008080">trackEvent</span>(<span style="color:#b84">&#34;EVENT_NAME&#34;</span>, data);</code></pre></div>

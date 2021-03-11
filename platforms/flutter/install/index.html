@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.59.1" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -321,7 +321,7 @@ tealium: <span style="color:#b84">&#39;1.0.0&#39;</span></code></pre></div></li>
 <p>java</p></li>
 
 <li><p>Dartコードをプロジェクトにインポートします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">tealium</span><span style="font-weight:bold">/</span>tealium.<span style="color:#008080">dart</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">import tealium</span><span style="font-weight:bold">/</span>tealium.<span style="color:#008080">dart</span></code></pre></div></li>
 </ol>
 
 <p>Flutterプロジェクト内でTealium APIを使用します。</p>
@@ -329,9 +329,9 @@ tealium: <span style="color:#b84">&#39;1.0.0&#39;</span></code></pre></div></li>
 <h2 id="初期化">初期化</h2>
 
 <p><a href="/platforms/flutter/api/#initialize"><code>initialize()</code></a>メソッドは、Tealiumインスタンスを次の例に示すように初期化します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">var <span style="color:#900;font-weight:bold">teal</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">initialize</span>(<span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">var teal </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">initialize</span>(<span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>);</code></pre></div>
 <p><a href="/platforms/flutter/api/#initializecustom"><code>initializeCustom()</code></a>メソッドは、すべての初期化オプションを使用してTealiumインスタンスを次の例に示すように初期化します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">var <span style="color:#900;font-weight:bold">teal</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">initializeCustom</span>(<span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>,
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">var teal </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">initializeCustom</span>(<span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>,
       <span style="color:#b84">&#34;INSTANCE&#34;</span>, <span style="font-weight:bold">true</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">true</span>);</code></pre></div>
 <p>初期化オプションの詳細については、<a href="/platforms/flutter/api">Flutter API</a>を参照してください。</p>
 

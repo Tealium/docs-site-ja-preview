@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.59.1" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -370,8 +370,8 @@ var utag_data = {
 <p>このライブラリは<a href="http://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html">Application.ActivityLifecycleCallbacks</a> APIを利用し、<a href="http://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityResumed%28android.app.Activity%29">onActivityResumed</a>および<a href="http://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityPaused%28android.app.Activity%29">onActivityPaused</a>で条件を評価します。</p>
 
 <p>以下のコードを使用して有効化されます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium.<span style="color:#008080">Config</span> <span style="color:#900;font-weight:bold">config</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
-<span style="color:#458;font-weight:bold">boolean</span> <span style="color:#900;font-weight:bold">isAutoTracking</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">Tealium.Config config </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
+<span style="color:#a61717;background-color:#e3d2d2">boolean isAutoTracking </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
 
 <span style="color:#998;font-style:italic">// Additional instance for Lifecycle Tracking
 </span><span style="color:#998;font-style:italic"></span>LifeCycle.<span style="color:#008080">setupInstance</span>(<span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>, config, isAutoTracking);
@@ -382,34 +382,34 @@ var utag_data = {
 <p>特定のライフサイクルパラダイムおよび通常とは異なるライフサイクルトラッキングに使用できます。ほとんどの実装には、この方法は推奨しません。手動のライフサイクルトラッキングを許可するには、ライフサイクル初期化コードを更新し、<code>isAutoTracking</code>を<code>false</code>に設定します。</p>
 
 <p><code>launch</code>イベントを手動でトラッキングするには、<code>trackLaunchEvent()</code>メソッドを呼び出します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">LifeCycle <span style="color:#900;font-weight:bold">lifeCycle</span> <span style="font-weight:bold">=</span> LifeCycle.<span style="color:#008080">getInstance</span>(TEALIUM_INSTANCE_ID);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">LifeCycle lifeCycle </span><span style="font-weight:bold">=</span> LifeCycle.<span style="color:#008080">getInstance</span>(TEALIUM_INSTANCE_ID);
 
 <span style="font-weight:bold">if</span>(lifeCycle <span style="font-weight:bold">!=</span> <span style="font-weight:bold">null</span>) {
 
     <span style="color:#998;font-style:italic">// OPTIONAL
-</span><span style="color:#998;font-style:italic"></span>    Map<span style="font-weight:bold">&lt;</span>String, String<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">data</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashMap<span style="font-weight:bold">&lt;&gt;</span>();
+</span><span style="color:#998;font-style:italic"></span>    Map<span style="font-weight:bold">&lt;</span>String, <span style="color:#a61717;background-color:#e3d2d2">String&gt; data </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashMap<span style="font-weight:bold">&lt;&gt;</span>();
     data.<span style="color:#008080">put</span>(<span style="color:#b84">&#34;boot_time&#34;</span>, <span style="color:#b84">&#34;5ms&#34;</span>);
 
     lifeCycle.<span style="color:#008080">trackLaunchEvent</span>(data);
 }</code></pre></div>
 <p><code>sleep</code>イベントを手動でトラッキングするには、<code>trackSleepEvent()</code>メソッドを呼び出します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">LifeCycle <span style="color:#900;font-weight:bold">lifeCycle</span> <span style="font-weight:bold">=</span> LifeCycle.<span style="color:#008080">getInstance</span>(TEALIUM_INSTANCE_ID);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">LifeCycle lifeCycle </span><span style="font-weight:bold">=</span> LifeCycle.<span style="color:#008080">getInstance</span>(TEALIUM_INSTANCE_ID);
 
 <span style="font-weight:bold">if</span>(lifeCycle <span style="font-weight:bold">!=</span> <span style="font-weight:bold">null</span>) {
 
     <span style="color:#998;font-style:italic">// OPTIONAL
-</span><span style="color:#998;font-style:italic"></span>    Map<span style="font-weight:bold">&lt;</span>String, String<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">data</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashMap<span style="font-weight:bold">&lt;&gt;</span>();
+</span><span style="color:#998;font-style:italic"></span>    Map<span style="font-weight:bold">&lt;</span>String, <span style="color:#a61717;background-color:#e3d2d2">String&gt; data </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashMap<span style="font-weight:bold">&lt;&gt;</span>();
     data.<span style="color:#008080">put</span>(<span style="color:#b84">&#34;foreground_time&#34;</span>, <span style="color:#b84">&#34;4000ms&#34;</span>);
 
     lifeCycle.<span style="color:#008080">trackSleepEvent</span>(data);
 }</code></pre></div>
 <p><code>wake</code>イベントを手動でトラッキングするには、<code>trackWakeEvent()</code>メソッドを呼び出します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">LifeCycle <span style="color:#900;font-weight:bold">lifeCycle</span> <span style="font-weight:bold">=</span> LifeCycle.<span style="color:#008080">getInstance</span>(TEALIUM_INSTANCE_ID);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">LifeCycle lifeCycle </span><span style="font-weight:bold">=</span> LifeCycle.<span style="color:#008080">getInstance</span>(TEALIUM_INSTANCE_ID);
 
 <span style="font-weight:bold">if</span>(lifeCycle <span style="font-weight:bold">!=</span> <span style="font-weight:bold">null</span>) {
 
     <span style="color:#998;font-style:italic">// OPTIONAL
-</span><span style="color:#998;font-style:italic"></span>    Map<span style="font-weight:bold">&lt;</span>String, String<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">data</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashMap<span style="font-weight:bold">&lt;&gt;</span>();
+</span><span style="color:#998;font-style:italic"></span>    Map<span style="font-weight:bold">&lt;</span>String, <span style="color:#a61717;background-color:#e3d2d2">String&gt; data </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashMap<span style="font-weight:bold">&lt;&gt;</span>();
     data.<span style="color:#008080">put</span>(<span style="color:#b84">&#34;background_time&#34;</span>, <span style="color:#b84">&#34;600000ms&#34;</span>);
 
     lifeCycle.<span style="color:#008080">trackWakeEvent</span>(data);

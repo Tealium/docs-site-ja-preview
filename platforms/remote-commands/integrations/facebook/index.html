@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.59.1" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -399,7 +399,7 @@ var utag_data = {
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b84">&#39;tealium-swift/TealiumLogger&#39;</span>
 <span style="color:#b84">&#39;tealium-swift/TealiumLifecycle&#39;</span>
 <span style="color:#b84">&#39;tealium-swift/TealiumAppData&#39;</span></code></pre></div>
-<p>iOS向け推奨モジュールの詳細については、<a href="https://docs.tealium.com/platforms/ios-swift/modules/">こちら</a>を参照してください。</p></li>
+<p>iOS向け推奨モジュールの詳細については、<a href="/platforms/ios-swift/modules/">こちら</a>を参照してください。</p></li>
 
 <li><p>モジュール<code>TealiumSwift</code>および<code>TealiumFacebook</code>を、<code>TealiumHelper</code>ファイル、<code>Tealium</code>クラスにアクセスするその他のファイル、またはFacebookリモートコマンドにインポートします。</p></li>
 </ol>
@@ -455,8 +455,8 @@ maven <span style="font-weight:bold">{</span>
 <p>Facebookリモートコマンドを手動でインストールするには、次のいずれかのiOSライブラリがインストールされている必要があります。</p>
 
 <ul>
-<li><a href="https://docs.tealium.com/platforms/ios-swift/">Tealium for Swift</a></li>
-<li><a href="https://docs.tealium.com/platforms/ios-objective-c/">Tealium for Objective-C</a></li>
+<li><a href="/platforms/ios-swift/">Tealium for Swift</a></li>
+<li><a href="/platforms/ios-objective-c/">Tealium for Objective-C</a></li>
 </ul>
 
 <p>iOSプロジェクトのFacebookリモートコマンドをインストールするには：</p>
@@ -516,7 +516,7 @@ TEALRemoteCommandResponseBlock facebookRemoteCommandResponse <span style="font-w
 <p>Facebookリモートコマンドを手動でインストールするには、次のAndroidライブラリがインストールされている必要があります。</p>
 
 <ul>
-<li><a href="https://docs.tealium.com/platforms/android-java/">Tealium for Android</a></li>
+<li><a href="/platforms/android-java/">Tealium for Android</a></li>
 </ul>
 
 <p>AndroidプロジェクトのFacebookリモートコマンドをインストールするには：</p>
@@ -549,12 +549,12 @@ TEALRemoteCommandResponseBlock facebookRemoteCommandResponse <span style="font-w
   <div class="tab-content">
 <div class="tab-pane" data-lang="Android" title="Android">
   <p>次のコードは、TealiumのAndroidライブラリで使用するように設計されています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">remotecommands</span>.<span style="color:#008080">facebook</span>.<span style="color:#008080">FacebookRemoteCommand</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">remotecommands</span>.<span style="color:#008080">facebook</span>.<span style="color:#008080">FacebookRemoteCommand</span>;
 
-Tealium.<span style="color:#008080">Config</span> <span style="color:#900;font-weight:bold">config</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
-Tealium <span style="color:#900;font-weight:bold">teal</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
+<span style="color:#a61717;background-color:#e3d2d2">Tealium.Config config </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
+<span style="color:#a61717;background-color:#e3d2d2">Tealium teal </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
 
-FacebookRemoteCommand <span style="color:#900;font-weight:bold">facebook</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> FacebookRemoteCommand(<span style="font-weight:bold">this</span>);
+<span style="color:#a61717;background-color:#e3d2d2">FacebookRemoteCommand facebook </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> FacebookRemoteCommand(<span style="font-weight:bold">this</span>);
 
 <span style="color:#998;font-style:italic">// register the command
 </span><span style="color:#998;font-style:italic"></span>teal.<span style="color:#008080">addRemoteCommand</span>(facebook);</code></pre></div>
@@ -5532,7 +5532,7 @@ teal = Tealium(config: config) { responses <span style="font-weight:bold">in</sp
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="70"></textarea>
-    <span>最終更新日 ::  2020年August月27日
+    <span>最終更新日 ::  2021年March月10日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
   </span>

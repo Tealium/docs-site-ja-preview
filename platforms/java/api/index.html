@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.59.1" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -369,7 +369,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Udo <span style="color:#900;font-weight:bold">data</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> Udo();
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">Udo data </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> Udo();
 data.<span style="color:#008080">put</span>(<span style="color:#b84">&#34;KEY&#34;</span>, <span style="color:#b84">&#34;VALUE&#34;</span>);
 tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#008080">addPersistentData</span>(data);</code></pre></div>
 <h3 id="deletepersistentdata"><code>deletePersistentData()</code></h3>
@@ -395,7 +395,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="font-weight:bold">&lt;</span>String<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">list</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> List<span style="font-weight:bold">&lt;&gt;</span>();
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">List&lt;String&gt; list </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> List<span style="font-weight:bold">&lt;&gt;</span>();
 list.<span style="color:#008080">append</span>(<span style="color:#b84">&#34;key_to_delete&#34;</span>);
 tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#008080">deletePersistentData</span>(list);</code></pre></div>
 <h3 id="getdatamanager"><code>getDataManager()</code></h3>
@@ -417,7 +417,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">DataManager <span style="color:#900;font-weight:bold">dm</span> <span style="font-weight:bold">=</span> tealium.<span style="color:#008080">getDataManager</span>()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">DataManager dm </span><span style="font-weight:bold">=</span> tealium.<span style="color:#008080">getDataManager</span>()</code></pre></div>
 <h3 id="getpersistentdata"><code>getPersistentData()</code></h3>
 
 <p><code>DataManager</code>を使用して、永続化されたデータを取得します。</p>
@@ -439,7 +439,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Udo <span style="color:#900;font-weight:bold">persistentData</span> <span style="font-weight:bold">=</span> tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#008080">getPersistentData</span>()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">Udo persistentData </span><span style="font-weight:bold">=</span> tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#008080">getPersistentData</span>()</code></pre></div>
 <h3 id="getsessionid"><code>getSessionId()</code></h3>
 
 <p><code>DataManager</code>を使用して、現在のセッションIDを取得します。セッションIDは、<code>Tealium</code>オブジェクトの初期化時に作成されます。</p>
@@ -572,7 +572,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 
 <p>Tealiumオブジェクトをインスタンス化するためのコンストラクタ。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium.<span style="color:#008080">Builder</span>(account, profile, environment).<span style="color:#008080">build</span>()</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#998;font-style:italic">// Init Tealium
-</span><span style="color:#998;font-style:italic"></span>Tealium <span style="color:#900;font-weight:bold">tealium</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> Tealium.<span style="color:#008080">Builder</span>(account, profile)
+</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">Tealium tealium </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> Tealium.<span style="color:#008080">Builder</span>(account, profile)
     .<span style="color:#008080">setEnvironment</span>(environment)
     .<span style="color:#008080">setDatasource</span>(datasource)
     .<span style="color:#008080">build</span>();</code></pre></div>
