@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -317,13 +317,13 @@ var utag_data = {
 
 <li><p>Tealiumをインスタンス化した後で、Tealiumライブラリをインスタンス化する同じブロックで、以下を追加します。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#998;font-style:italic">// import the Tealium AdIdentifier module in the import section
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">adidentifier</span>.<span style="color:#008080">AdIdentifier</span>;
+</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">adidentifier</span>.<span style="color:#008080">AdIdentifier</span>;
 
 <span style="color:#998;font-style:italic">// context to pass to AdIdentifier module
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">Context mContext </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">this</span>;
+</span><span style="color:#998;font-style:italic"></span>Context <span style="color:#900;font-weight:bold">mContext</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">this</span>;
 
 <span style="color:#998;font-style:italic">// substitute the example instance name here with the same instance name you used when initializing the Tealium library
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">private static final String </span>TEALIUM_INSTANCENAME <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;
+</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">private</span> <span style="color:#900;font-weight:bold">static</span> <span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">String</span> TEALIUM_INSTANCENAME <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;
 
 <span style="color:#998;font-style:italic">// call this to store the referrer as Persistent data - recommended
 </span><span style="color:#998;font-style:italic"></span>AdIdentifier.<span style="color:#008080">setIdPersistent</span>(TEALIUM_INSTANCENAME, mContext);
@@ -370,10 +370,10 @@ var utag_data = {
 <li><p><strong>Ad Identifierの削除</strong>
 保存されたAd Identifier文字列を削除するには、Tealiumライブラリに用意されている標準メソッドをコールして、永続的ストレージまたは揮発性ストレージから変数を削除します。変数のキー名は、<code>TealiumAdIdentifier</code>クラスによって公開されます。永続性データと揮発性データの両方から保存されたAd Identifierを削除する例を次に示します。変数が存在しない場合、このコードは何も行わず、エラーも発生しません。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#998;font-style:italic">// import the Tealium AdIdentifier module in the import section
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">adidentifier</span>.<span style="color:#008080">AdIdentifier</span>;
+</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">adidentifier</span>.<span style="color:#008080">AdIdentifier</span>;
 
-<span style="color:#a61717;background-color:#e3d2d2">private static final String </span>TEALIUM_INSTANCENAME <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;
-<span style="color:#a61717;background-color:#e3d2d2">final Tealium </span>instance <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">getInstance</span>(TEALIUM_INSTANCENAME);
+<span style="font-weight:bold">private</span> <span style="color:#900;font-weight:bold">static</span> <span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">String</span> TEALIUM_INSTANCENAME <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;
+<span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">Tealium</span> instance <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">getInstance</span>(TEALIUM_INSTANCENAME);
 
 <span style="color:#998;font-style:italic">// remove from persistent data store
 </span><span style="color:#998;font-style:italic"></span>instance.<span style="color:#008080">getDataSources</span>().<span style="color:#008080">getPersistentDataSources</span>().<span style="color:#008080">edit</span>().<span style="color:#008080">remove</span>(AdIdentifier.<span style="color:#008080">KEY_GOOGLE_ADID</span>).<span style="color:#008080">apply</span>();

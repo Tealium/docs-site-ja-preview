@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -289,7 +289,7 @@ var utag_data = {
 
 <p>スプレッドシートは、次のようになります。</p>
 
-<p><img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/6855i687D5D5B1E8BF00C/image-size/medium?v=1.0&amp;px=-1" alt="es-getting-started-connector-google-sheet-spreadsheet.jpg" /></p>
+<p><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/6855i687D5D5B1E8BF00C/image-size/medium?v=1.0&amp;px=-1" alt="es-getting-started-connector-google-sheet-spreadsheet.jpg" /></p>
 
 <h2 id="google-sheetsコネクタの追加">Google Sheetsコネクタの追加</h2>
 
@@ -299,7 +299,7 @@ var utag_data = {
 <li><strong>EventStream &gt; Connectors &gt; Connector Marketplace</strong>に移動します。</li>
 <li>横のナビゲーションパネルの<strong>Categories</strong>の下にある<strong>[Big Data]</strong>をクリックして、選択を絞り込みます。</li>
 <li><strong>[Google Sheets]</strong>を選択し、<strong>[Add Connector]</strong>をクリックします。<br />
-<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8155i3151273C5560544B/image-dimensions/360x265?v=1.0" alt="Google Sheets" /></li>
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8155i3151273C5560544B/image-dimensions/360x265?v=1.0" alt="Google Sheets" /></li>
 <li><strong>[Configure]</strong>タブでタイトルを入力し、<strong>[Establish Connection]</strong>をクリックします。Googleアカウントの承認ダイアログが表示されます。</li>
 <li>ユーザーアカウント名を確認し、<strong>[Allow]</strong>をクリックします。コネクタの構成ウィンドウが、_Connected_と表示されます。</li>
 <li><strong>[Next]</strong>をクリックします。_[Actions]_タブが表示されます。</li>
@@ -312,13 +312,13 @@ var utag_data = {
 イベントフィード<code>&quot;Search with No Results&quot;</code>を選択します。これらはアクション（スプレッドシートの行の追加、更新など）をトリガーするイベントです。</li>
 <li><strong>スプレッドシート名</strong><br />
 使用するスプレッドシートファイル名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択し、使用するスプレッドシートファイル名（「EventStream Test」という名前で作成したもの）を入力します。<br />
-<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8156i219077D1C44FAA38/image-dimensions/480x140?v=1.0" alt="スプレッドシート名" /></li>
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8156i219077D1C44FAA38/image-dimensions/480x140?v=1.0" alt="スプレッドシート名" /></li>
 <li><strong>ワークシート名</strong><br />
 使用するスプレッドシートファイルのワークシート名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択し、使用するワークシート名（<code>&quot;Sheet1&quot;</code>など）を入力します。<br />
-<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8157i41F9A04CB2A9DBC1/image-dimensions/480x153?v=1.0" alt="ワークシート名" /></li>
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8157i41F9A04CB2A9DBC1/image-dimensions/480x153?v=1.0" alt="ワークシート名" /></li>
 <li><strong>行ID</strong><br />
 イベントごとに一意の行IDを含む列を特定します。通常はイベントタイムスタンプ属性です。マッピングに使用するため、列に<code>&quot;Timestamp&quot;</code>という名前を付けました。<br />
-<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8158iB6FB3A619408DC16/image-dimensions/480x148?v=1.0" alt="行ID" />
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8158iB6FB3A619408DC16/image-dimensions/480x148?v=1.0" alt="行ID" />
 <strong>Map</strong>リストから属性を選択し、対応するスプレッドシート列名（カスタム値）を<strong>To</strong>フィールドに入力します。   アクションが開始されると、指定された列の属性値が検索され、次の処理が実行されます。<br />
 
 <ul>
@@ -327,7 +327,7 @@ var utag_data = {
 </ul></li>
 <li><strong>行データ</strong><br />
 スプレッドシートに追加する追加属性をマップします。各属性には、スプレッドシートで割り当てられた列名が必要です。ここでは、<code>search_keyword</code>属性の値を、<code>&quot;Search Term&quot;</code>という名前のスプレッドシート列に記録します。<br />
-<img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/8159iA2D72C59CE6B5280/image-dimensions/481x113?v=1.0" alt="行データ" /></li>
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8159iA2D72C59CE6B5280/image-dimensions/481x113?v=1.0" alt="行データ" /></li>
 <li><strong>更新時、空の値を除外する</strong><br />
 空の属性が更新されたり、スプレッドシートの既存のデータが上書きされたりしないようにするときに、このボックスをオンにします。</li>
 </ul></li>
@@ -2101,7 +2101,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="70"></textarea>
-    <span>最終更新日 ::  2020年August月27日
+    <span>最終更新日 ::  2021年June月29日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
   </span>

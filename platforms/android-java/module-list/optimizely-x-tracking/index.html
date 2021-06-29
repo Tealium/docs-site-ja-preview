@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -356,20 +356,20 @@ var utag_data = {
 
 <p><code>Optimizely</code>には、<code>OptimizelyManager</code>が初期化されるとすぐに呼び出されるリスナーが用意されています。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#998;font-style:italic">// import the Tealium OptimizelyListener module in the import section
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">optimizelylistener</span>.<span style="color:#008080">TealiumOptimizelyEventListener</span>;
+</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">optimizelylistener</span>.<span style="color:#008080">TealiumOptimizelyEventListener</span>;
 <span style="color:#998;font-style:italic">//...
 </span><span style="color:#998;font-style:italic"></span>
 <span style="color:#998;font-style:italic">// substitute the example instance name here with the same instance name you used when initializing the Tealium library
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">private static final String </span>TEALIUM_INSTANCENAME <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;teal&#34;</span>;
+</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">private</span> <span style="color:#900;font-weight:bold">static</span> <span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">String</span> TEALIUM_INSTANCENAME <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;teal&#34;</span>;
 
 myOptlyManager.<span style="color:#008080">initialize</span>(getApplicationContext(), <span style="font-weight:bold">new</span> OptimizelyStartListener() {
-    @Override <span style="color:#a61717;background-color:#e3d2d2">public void </span>onStart(<span style="color:#a61717;background-color:#e3d2d2">OptimizelyClient optimizely</span>) {
+    @Override <span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">void</span> onStart(OptimizelyClient <span style="color:#900;font-weight:bold">optimizely</span>) {
         <span style="color:#998;font-style:italic">// call this to init the Optimizely listener with a valid OptimizelyManager instance
 </span><span style="color:#998;font-style:italic"></span>        <span style="color:#998;font-style:italic">// myOptlyManager is your own reference to the global OptimizelyManager instance
 </span><span style="color:#998;font-style:italic"></span>        TealiumOptimizelyEventListener.<span style="color:#008080">init</span>(TEALIUM_INSTANCENAME, myOptlyManager);
         <span style="color:#998;font-style:italic">// activate experiment AFTER initializing the Tealium listener.
 </span><span style="color:#998;font-style:italic"></span>        <span style="color:#998;font-style:italic">// tracking calls are missed if not done in this order.
-</span><span style="color:#998;font-style:italic"></span>        <span style="color:#a61717;background-color:#e3d2d2">Variation v </span><span style="font-weight:bold">=</span> optimizely.<span style="color:#008080">activate</span>(<span style="color:#b84">&#34;tealiumtest&#34;</span>, <span style="color:#b84">&#34;userid&#34;</span>);
+</span><span style="color:#998;font-style:italic"></span>        Variation <span style="color:#900;font-weight:bold">v</span> <span style="font-weight:bold">=</span> optimizely.<span style="color:#008080">activate</span>(<span style="color:#b84">&#34;tealiumtest&#34;</span>, <span style="color:#b84">&#34;userid&#34;</span>);
     }
 });</code></pre></div>
 <p>モジュールの初期化が完了した後は、特に追加の構成は必要ありません。モジュールは<code>Optimizely</code> SDKからの通知を監視するようになり、必要に応じてTealium SDKにデータを渡します。</p>
@@ -449,17 +449,17 @@ myOptlyManager.<span style="color:#008080">initialize</span>(getApplicationConte
 <h3 id="変数名の上書き-オプション">変数名の上書き（オプション）</h3>
 
 <p>異なる名前付け規則を使用したい場合は、デフォルトの変数名を簡単にオーバーライドできます。変数名のオーバーライドは、<code>TealiumOptimizelyEventListener</code>クラスの一連のパブリックプロパティを変更することによって行われます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">optimizelylistener</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">optimizelylistener</span>;
 <span style="color:#998;font-style:italic">//...
 </span><span style="color:#998;font-style:italic"></span>
-TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EXPERIMENT_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span><span style="color:#a61717;background-color:#e3d2d2">your new </span>value<span style="font-weight:bold">&gt;</span>;
-TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_VARIATION_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span><span style="color:#a61717;background-color:#e3d2d2">your new </span>value<span style="font-weight:bold">&gt;</span>;
-TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_USERID_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span><span style="color:#a61717;background-color:#e3d2d2">your new </span>value<span style="font-weight:bold">&gt;</span>;
-TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EVENTKEY_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span><span style="color:#a61717;background-color:#e3d2d2">your new </span>value<span style="font-weight:bold">&gt;</span>;
-TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EVENTVALUE_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span><span style="color:#a61717;background-color:#e3d2d2">your new </span>value<span style="font-weight:bold">&gt;</span>;
-TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EXPERIMENT_STARTED</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span><span style="color:#a61717;background-color:#e3d2d2">your new </span>value<span style="font-weight:bold">&gt;</span>;
-TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EVENT_TRACKED</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span><span style="color:#a61717;background-color:#e3d2d2">your new </span>value<span style="font-weight:bold">&gt;</span>;
-TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_ATTRIBUTE_PREFIX</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span><span style="color:#a61717;background-color:#e3d2d2">your new </span>value<span style="font-weight:bold">&gt;</span>;</code></pre></div>
+TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EXPERIMENT_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span>your <span style="color:#900;font-weight:bold">new</span> value<span style="font-weight:bold">&gt;</span>;
+TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_VARIATION_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span>your <span style="color:#900;font-weight:bold">new</span> value<span style="font-weight:bold">&gt;</span>;
+TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_USERID_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span>your <span style="color:#900;font-weight:bold">new</span> value<span style="font-weight:bold">&gt;</span>;
+TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EVENTKEY_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span>your <span style="color:#900;font-weight:bold">new</span> value<span style="font-weight:bold">&gt;</span>;
+TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EVENTVALUE_KEYNAME</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span>your <span style="color:#900;font-weight:bold">new</span> value<span style="font-weight:bold">&gt;</span>;
+TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EXPERIMENT_STARTED</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span>your <span style="color:#900;font-weight:bold">new</span> value<span style="font-weight:bold">&gt;</span>;
+TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_EVENT_TRACKED</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span>your <span style="color:#900;font-weight:bold">new</span> value<span style="font-weight:bold">&gt;</span>;
+TealiumOptimizelyEventListener.<span style="color:#008080">OPTIMIZELY_ATTRIBUTE_PREFIX</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">&lt;</span>your <span style="color:#900;font-weight:bold">new</span> value<span style="font-weight:bold">&gt;</span>;</code></pre></div>
 <h2 id="apiリファレンス">APIリファレンス</h2>
 
 <p>Optimizely X Trackingモジュールのメソッドの完全なリファレンスについては、Tealium SDK for Android APIの<a href="https://tealium.github.io/tealium-android/com/tealium/optimizelylistener/TealiumOptimizelyEventListener.html"><code>TealiumOptimizelyEventListener</code></a>クラスを参照してください。</p>

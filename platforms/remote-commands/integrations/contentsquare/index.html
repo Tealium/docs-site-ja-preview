@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -454,17 +454,17 @@ TEALRemoteCommandResponseBlock contentsquareRemoteCommand <span style="font-weig
   <div class="tab-content">
 <div class="tab-pane" data-lang="Android" title="Android">
   <p>次のコードは、TealiumのAndroidライブラリで使用するように設計されています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">remotecommands</span>.<span style="color:#008080">contentsquare</span>.<span style="color:#008080">ContentsquareRemoteCommand</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">remotecommands</span>.<span style="color:#008080">contentsquare</span>.<span style="color:#008080">ContentsquareRemoteCommand</span>;
 
-<span style="color:#a61717;background-color:#e3d2d2">Tealium.Config config </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
-<span style="color:#a61717;background-color:#e3d2d2">Tealium teal </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
+Tealium.<span style="color:#008080">Config</span> <span style="color:#900;font-weight:bold">config</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
+Tealium <span style="color:#900;font-weight:bold">teal</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
 
 <span style="color:#998;font-style:italic">// Initialize with `Application` in order to take advantage of consent management and other
 </span><span style="color:#998;font-style:italic">// advanced features
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">ContentsquareRemoteCommand contentsquare </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> ContentsquareRemoteCommand(<span style="font-weight:bold">this</span>);
+</span><span style="color:#998;font-style:italic"></span>ContentsquareRemoteCommand <span style="color:#900;font-weight:bold">contentsquare</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> ContentsquareRemoteCommand(<span style="font-weight:bold">this</span>);
 
 <span style="color:#998;font-style:italic">// Or for simple tracking, you can initialize without `Application`
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">ContentsquareRemoteCommand contentsquare </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> ContentsquareRemoteCommand();
+</span><span style="color:#998;font-style:italic"></span>ContentsquareRemoteCommand <span style="color:#900;font-weight:bold">contentsquare</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> ContentsquareRemoteCommand();
 
 <span style="color:#998;font-style:italic">// register the command
 </span><span style="color:#998;font-style:italic"></span>teal.<span style="color:#008080">addRemoteCommand</span>(contentsquare);</code></pre></div>

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -349,7 +349,7 @@ var utag_data = {
 <h3 id="create"><code>create()</code></h3>
 
 <p>Configオブジェクトのインスタンスを作成します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">Tealium.Config config </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium.<span style="color:#008080">Config</span> <span style="color:#900;font-weight:bold">config</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(
       application,
       account,
       profile,
@@ -400,8 +400,8 @@ var utag_data = {
 <h3 id="enableconsentmanager"><code>enableConsentManager()</code></h3>
 
 <p>Consent Managerを有効にします。このメソッドは、Tealiumの初期化前に使用します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">public final String TEALIUM_INSTANCE </span><span style="font-weight:bold">=</span> <span style="color:#b84">&#34;main&#34;</span>;
-<span style="color:#a61717;background-color:#e3d2d2">final Tealium</span>.<span style="color:#008080">Config</span> config <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(...);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">final</span> String <span style="color:#900;font-weight:bold">TEALIUM_INSTANCE</span> <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;main&#34;</span>;
+<span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">Tealium</span>.<span style="color:#008080">Config</span> config <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(...);
 config.<span style="color:#008080">enableConsentManager</span>(TEALIUM_INSTANCE);</code></pre></div>
 <table>
 <thead>

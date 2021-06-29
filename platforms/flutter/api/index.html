@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -477,8 +477,8 @@ var utag_data = {
 <p>例：</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium.<span style="color:#008080">addRemoteCommand</span>(<span style="color:#b84">&#34;firebase&#34;</span>, <span style="color:#b84">&#34;Firebase Remote Command&#34;</span>, (payload) {
 
-  <span style="color:#a61717;background-color:#e3d2d2">var eventName </span><span style="font-weight:bold">=</span> payload[<span style="color:#b84">&#34;firebase_event_name&#34;</span>];
-  <span style="color:#a61717;background-color:#e3d2d2">var eventProperties </span><span style="font-weight:bold">=</span> payload[<span style="color:#b84">&#34;firebase_event_properties&#34;</span>];
+  var <span style="color:#900;font-weight:bold">eventName</span> <span style="font-weight:bold">=</span> payload[<span style="color:#b84">&#34;firebase_event_name&#34;</span>];
+  var <span style="color:#900;font-weight:bold">eventProperties</span> <span style="font-weight:bold">=</span> payload[<span style="color:#b84">&#34;firebase_event_properties&#34;</span>];
 
   analytics.<span style="color:#008080">logEvent</span>(name<span style="font-weight:bold">:</span> eventName, parameters<span style="font-weight:bold">:</span> eventProperties);
 });</code></pre></div>

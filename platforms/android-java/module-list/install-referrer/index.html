@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -324,10 +324,10 @@ var utag_data = {
 
 <li><p>（Tealiumをインスタンス化した後で）Tealiumライブラリをインスタンス化する同じブロックで、以下を追加します。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#998;font-style:italic">// import the Tealium InstallReferrer module in the import section
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">installreferrer</span>.<span style="color:#008080">InstallReferrerReceiver</span>;
+</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">installreferrer</span>.<span style="color:#008080">InstallReferrerReceiver</span>;
 
 <span style="color:#998;font-style:italic">// substitute the example instance name here with the same instance name you used when initializing the Tealium library
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">private static final String </span>TEALIUM_INSTANCENAME <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;
+</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">private</span> <span style="color:#900;font-weight:bold">static</span> <span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">String</span> TEALIUM_INSTANCENAME <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTANCE_NAME&#34;</span>;
 
 <span style="color:#998;font-style:italic">// call this to store the referrer as Persistent data - recommended
 </span><span style="color:#998;font-style:italic"></span>InstallReferrerReceiver.<span style="color:#008080">setReferrerPersistent</span>(applicationContext, TEALIUM_INSTANCENAME);
@@ -399,19 +399,19 @@ utm_campaign=test_name
         <span style="color:#000080">&lt;action</span> <span style="color:#008080">android:name=</span><span style="color:#b84">&#34;com.android.vending.INSTALL_REFERRER&#34;</span> <span style="color:#000080">/&gt;</span>
     <span style="color:#000080">&lt;/intent-filter&gt;</span>
 <span style="color:#000080">&lt;/receiver&gt;</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#998;font-style:italic">// Class for retrieving install referrer
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">public class InstallReferrerReceiver extends </span>BroadcastReceiver {
+</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">class</span> InstallReferrerReceiver <span style="color:#900;font-weight:bold">extends</span> BroadcastReceiver {
 
-    <span style="color:#a61717;background-color:#e3d2d2">private static final String </span>INSTALL_REFERRER <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTALL_REFERRER&#34;</span>;
+    <span style="font-weight:bold">private</span> <span style="color:#900;font-weight:bold">static</span> <span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">String</span> INSTALL_REFERRER <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;INSTALL_REFERRER&#34;</span>;
 
-    <span style="color:#a61717;background-color:#e3d2d2">public void </span>onReceive(<span style="color:#a61717;background-color:#e3d2d2">Context context</span>, <span style="color:#a61717;background-color:#e3d2d2">Intent intent</span>) {
+    <span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">void</span> onReceive(Context <span style="color:#900;font-weight:bold">context</span>, Intent <span style="color:#900;font-weight:bold">intent</span>) {
         <span style="font-weight:bold">if</span> (intent <span style="font-weight:bold">!=</span> <span style="font-weight:bold">null</span>) {
             <span style="font-weight:bold">return</span>;
         }
-        <span style="color:#a61717;background-color:#e3d2d2">Bundle extras </span><span style="font-weight:bold">=</span> intent.<span style="color:#008080">getExtras</span>();
+        Bundle <span style="color:#900;font-weight:bold">extras</span> <span style="font-weight:bold">=</span> intent.<span style="color:#008080">getExtras</span>();
         <span style="font-weight:bold">if</span> (extras <span style="font-weight:bold">==</span> <span style="font-weight:bold">null</span>) {
             <span style="font-weight:bold">return</span>;
         }
-        <span style="color:#a61717;background-color:#e3d2d2">String referrer </span><span style="font-weight:bold">=</span> extras.<span style="color:#008080">getString</span>(<span style="color:#b84">&#34;referrer&#34;</span>);
+        String <span style="color:#900;font-weight:bold">referrer</span> <span style="font-weight:bold">=</span> extras.<span style="color:#008080">getString</span>(<span style="color:#b84">&#34;referrer&#34;</span>);
 
         <span style="font-weight:bold">if</span> (StringUtils.<span style="color:#008080">isNotBlank</span>(referrer)) {
             Tealium.<span style="color:#008080">getGlobalCustomData</span>().<span style="color:#008080">edit</span>().<span style="color:#008080">putString</span>(INSTALL_REFERRER, referrer).<span style="color:#008080">apply</span>();

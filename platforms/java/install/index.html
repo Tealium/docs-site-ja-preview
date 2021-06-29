@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -326,13 +326,13 @@ var utag_data = {
 <li><p><code>src/main/java/com/tealium/</code>ディレクトリからすべてのJavaファイルをインポートします。</p></li>
 
 <li><p>次のインポートステートメントをコードに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="font-weight:bold">*</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="font-weight:bold">*</span></code></pre></div></li>
 </ol>
 
 <h2 id="初期化">初期化</h2>
 
 <p><code>Tealium</code>インスタンスを<a href="/platforms/java/api/#builder"><code>Builder()</code></a>メソッドで初期化するには：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">Tealium tealium </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> Tealium.<span style="color:#008080">Builder</span>(<span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium <span style="color:#900;font-weight:bold">tealium</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> Tealium.<span style="color:#008080">Builder</span>(<span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>)
     .<span style="color:#008080">setEnvironment</span>(<span style="color:#b84">&#34;ENVIRONMENT&#34;</span>)
     .<span style="color:#008080">setDatasource</span>(<span style="color:#b84">&#34;DATASOURCE&#34;</span>)
     .<span style="color:#008080">build</span>();</code></pre></div>

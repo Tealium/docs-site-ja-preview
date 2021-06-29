@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -366,7 +366,7 @@ var utag_data = {
 
 <ol>
 <li><p><a href="/platforms/android-java/api/#class-tealium-config"><code>Tealium.Config</code></a>オブジェクトのインスタンスを作成します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">Tealium.Config tealConfig </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium.<span style="color:#008080">Config</span> <span style="color:#900;font-weight:bold">tealConfig</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(
     <span style="font-weight:bold">this</span>,
     <span style="color:#b84">&#34;ACCOUNT&#34;</span>,
     <span style="color:#b84">&#34;PROFILE&#34;</span>,
@@ -396,11 +396,11 @@ var utag_data = {
 
 <p>初期化ステートメントの後に次のコードを追加して、Cookie管理をアクティベートします。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">config.<span style="color:#008080">getEventListeners</span>().<span style="color:#008080">add</span>(createCookieEnablerListener());
-<span style="color:#a61717;background-color:#e3d2d2">private static WebViewCreatedListener createCookieEnablerListener</span>() {
+<span style="font-weight:bold">private</span> <span style="color:#900;font-weight:bold">static</span> WebViewCreatedListener <span style="color:#900;font-weight:bold">createCookieEnablerListener</span>() {
     <span style="font-weight:bold">return</span> <span style="font-weight:bold">new</span> WebViewCreatedListener() {
         @Override
-        <span style="color:#a61717;background-color:#e3d2d2">public void </span>onWebViewCreated(<span style="color:#a61717;background-color:#e3d2d2">WebView webView</span>) {
-            <span style="color:#a61717;background-color:#e3d2d2">final CookieManager </span>mgr <span style="font-weight:bold">=</span> CookieManager.<span style="color:#008080">getInstance</span>();
+        <span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">void</span> onWebViewCreated(WebView <span style="color:#900;font-weight:bold">webView</span>) {
+            <span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">CookieManager</span> mgr <span style="font-weight:bold">=</span> CookieManager.<span style="color:#008080">getInstance</span>();
             <span style="color:#998;font-style:italic">// Accept all cookies
 </span><span style="color:#998;font-style:italic"></span>            mgr.<span style="color:#008080">setAcceptCookie</span>(<span style="font-weight:bold">true</span>);
             <span style="font-weight:bold">if</span> (Build.<span style="color:#008080">VERSION</span>.<span style="color:#008080">SDK_INT</span> <span style="font-weight:bold">&gt;=</span> Build.<span style="color:#008080">VERSION_CODES</span>.<span style="color:#008080">LOLLIPOP</span>) {

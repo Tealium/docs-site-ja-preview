@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -492,14 +492,14 @@ TEALRemoteCommandResponseBlock appsFlyerRemoteCommand <span style="font-weight:b
   <div class="tab-content">
 <div class="tab-pane" data-lang="Android" title="Android">
   <p>次のコードは、TealiumのAndroidライブラリで使用するように設計されています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">private val </span>devKey <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;&lt;your_appsflyer_dev_key&gt;&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">private</span> <span style="color:#900;font-weight:bold">val</span> devKey <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;&lt;your_appsflyer_dev_key&gt;&#34;</span>
 
 <span style="color:#998;font-style:italic">// Sets up a config object and creates a Tealium instance
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">val config</span><span style="font-weight:bold">:</span> Tealium.<span style="color:#008080">Config</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;your_account&#34;</span>, <span style="color:#b84">&#34;your_profile&#34;</span>, <span style="color:#b84">&#34;dev&#34;</span>);
-<span style="color:#a61717;background-color:#e3d2d2">var tealium</span><span style="font-weight:bold">:</span> Tealium <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config)
+</span><span style="color:#998;font-style:italic"></span>val <span style="color:#900;font-weight:bold">config</span><span style="font-weight:bold">:</span> Tealium.<span style="color:#008080">Config</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;your_account&#34;</span>, <span style="color:#b84">&#34;your_profile&#34;</span>, <span style="color:#b84">&#34;dev&#34;</span>);
+var <span style="color:#900;font-weight:bold">tealium</span><span style="font-weight:bold">:</span> Tealium <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config)
 
 <span style="color:#998;font-style:italic">// New code to add the AppsFlyer Remote Command
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">val appsFlyerRemoteCommand </span><span style="font-weight:bold">=</span> AppsFlyerRemoteCommand(instanceName, application, appsFlyerDevKey <span style="font-weight:bold">=</span> devKey)
+</span><span style="color:#998;font-style:italic"></span>val <span style="color:#900;font-weight:bold">appsFlyerRemoteCommand</span> <span style="font-weight:bold">=</span> AppsFlyerRemoteCommand(instanceName, application, appsFlyerDevKey <span style="font-weight:bold">=</span> devKey)
 tealium.<span style="color:#008080">addRemoteCommand</span>(appappsFlyerRemoteCommandsflyer);</code></pre></div>
 </div>
 

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -457,18 +457,18 @@ TEALRemoteCommandResponseBlock brazeRemoteCommand <span style="font-weight:bold"
   <div class="tab-content">
 <div class="tab-pane" data-lang="Android" title="Android">
   <p>次のコードは、TealiumのAndroidライブラリで使用するように設計されています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">remotecommands</span>.<span style="color:#008080">BrazeRemoteCommand</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">remotecommands</span>.<span style="color:#008080">BrazeRemoteCommand</span>;
 
-<span style="color:#a61717;background-color:#e3d2d2">Tealium.Config config </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
-<span style="color:#a61717;background-color:#e3d2d2">Tealium teal </span><span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
+Tealium.<span style="color:#008080">Config</span> <span style="color:#900;font-weight:bold">config</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
+Tealium <span style="color:#900;font-weight:bold">teal</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
 
-<span style="color:#a61717;background-color:#e3d2d2">BrazeRemoteCommand braze</span>;
+BrazeRemoteCommand <span style="color:#900;font-weight:bold">braze</span>;
 <span style="color:#998;font-style:italic">// Initialize with default configuration options.
 </span><span style="color:#998;font-style:italic"></span>braze <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> BrazeRemoteCommand(config);
 
 <span style="color:#998;font-style:italic">// Or alternatively initialize with some additional config options:
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">Set&lt;Class&gt; sessionHandlingBlacklist </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashSet<span style="font-weight:bold">&lt;&gt;</span>();
-<span style="color:#a61717;background-color:#e3d2d2">Set&lt;Class&gt; inAppMessageBlacklist </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashSet<span style="font-weight:bold">&lt;&gt;</span>();
+</span><span style="color:#998;font-style:italic"></span>Set<span style="font-weight:bold">&lt;</span>Class<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">sessionHandlingBlacklist</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashSet<span style="font-weight:bold">&lt;&gt;</span>();
+Set<span style="font-weight:bold">&lt;</span>Class<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">inAppMessageBlacklist</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashSet<span style="font-weight:bold">&lt;&gt;</span>();
 <span style="color:#998;font-style:italic">// sessionHandlingBlacklist.add(MainActivity.class);
 </span><span style="color:#998;font-style:italic">// inAppMessageBlacklist.add(UserActivity.class);
 </span><span style="color:#998;font-style:italic"></span>braze <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> BrazeRemoteCommand(config,
@@ -481,7 +481,7 @@ TEALRemoteCommandResponseBlock brazeRemoteCommand <span style="font-weight:bold"
 </span><span style="color:#998;font-style:italic">//              or simply to override settings locally.
 </span><span style="color:#998;font-style:italic"></span>braze.<span style="color:#008080">registerConfigOverride</span>(<span style="font-weight:bold">new</span> BrazeRemoteCommand.<span style="color:#008080">ConfigOverrider</span>() {
     @Override
-    <span style="color:#a61717;background-color:#e3d2d2">public void </span>onOverride(<span style="color:#a61717;background-color:#e3d2d2">AppboyConfig.Builder b</span>) {
+    <span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">void</span> onOverride(AppboyConfig.<span style="color:#008080">Builder</span> <span style="color:#900;font-weight:bold">b</span>) {
         b.<span style="color:#008080">setPushDeepLinkBackStackActivityEnabled</span>(<span style="font-weight:bold">true</span>);
         b.<span style="color:#008080">setPushDeepLinkBackStackActivityClass</span>(UserActivity.<span style="color:#008080">class</span>);
     }

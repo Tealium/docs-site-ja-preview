@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -377,7 +377,7 @@ var utag_data = {
 <h2 id="初期化">初期化</h2>
 
 <p>Tealiumインスタンス名を<a href="/platforms/android-java/api/#setupinstance-1"><code>TealiumLocation.setupInstance()</code></a>に渡して、Locationモジュールを初期化します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a61717;background-color:#e3d2d2">Set&lt;String&gt; tealiumInstances </span><span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashSet<span style="font-weight:bold">&lt;&gt;</span>();
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Set<span style="font-weight:bold">&lt;</span>String<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">tealiumInstances</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashSet<span style="font-weight:bold">&lt;&gt;</span>();
 tealiumInstances.<span style="color:#008080">add</span>(TealiumHelper.<span style="color:#008080">TEALIUM_MAIN</span>);
 
 mInstance <span style="font-weight:bold">=</span> TealiumLocation.<span style="color:#008080">setupInstance</span>(<span style="font-weight:bold">this</span>, tealiumInstances);</code></pre></div>

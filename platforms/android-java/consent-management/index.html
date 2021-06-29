@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.1" />
+     <meta name="generator" content="Hugo 0.59.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -308,16 +308,16 @@ var utag_data = {
 
 <p>次の例では、同意管理が有効になります。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#998;font-style:italic">//TealiumHelper.java
-</span><span style="color:#998;font-style:italic"></span><span style="color:#a61717;background-color:#e3d2d2">import com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">library</span>.<span style="color:#008080">ConsentManager</span>;
+</span><span style="color:#998;font-style:italic"></span><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">com</span>.<span style="color:#008080">tealium</span>.<span style="color:#008080">library</span>.<span style="color:#008080">ConsentManager</span>;
 
-<span style="color:#a61717;background-color:#e3d2d2">public static final String </span>TEALIUM_MAIN <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;main&#34;</span>;
+<span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">static</span> <span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">String</span> TEALIUM_MAIN <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;main&#34;</span>;
 
-<span style="color:#a61717;background-color:#e3d2d2">public static void initialize</span>(<span style="color:#a61717;background-color:#e3d2d2">Application application</span>) {
-	<span style="color:#a61717;background-color:#e3d2d2">final Tealium</span>.<span style="color:#008080">Config</span> config <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
+<span style="font-weight:bold">public</span> <span style="color:#900;font-weight:bold">static</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">initialize</span>(Application <span style="color:#900;font-weight:bold">application</span>) {
+	<span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">Tealium</span>.<span style="color:#008080">Config</span> config <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">Config</span>.<span style="color:#008080">create</span>(application, <span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>);
 
 	config.<span style="color:#008080">enableConsentManager</span>(TEALIUM_MAIN); <span style="color:#998;font-style:italic">//enable with tealium instance name
 </span><span style="color:#998;font-style:italic"></span>
-	<span style="color:#a61717;background-color:#e3d2d2">final Tealium </span>tealiumInstance <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
+	<span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">Tealium</span> tealiumInstance <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
 }</code></pre></div>
 <h2 id="データ層">データ層</h2>
 
