@@ -314,9 +314,9 @@ var utag_data = {
 <h3 id="cocoapods">CocoaPods</h3>
 
 <p>VisitorServiceモジュールをCocoaPodsによってインストールするには、Podfileに以下のポッドを追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">pod <span style="color:#b84">&#39;tealium-swift/TealiumCore&#39;</span>
-pod <span style="color:#b84">&#39;tealium-swift/TealiumCollect&#39;</span> <span style="color:#808000">//o</span>r <span style="color:#b84">&#39;tealium-swift/TealiumTagManagement&#39;</span>
-pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">pod <span style="color:#a31515">&#39;tealium-swift/TealiumCore&#39;</span>
+pod <span style="color:#a31515">&#39;tealium-swift/TealiumCollect&#39;</span> <span style="color:#a31515">//o</span>r <span style="color:#a31515">&#39;tealium-swift/TealiumTagManagement&#39;</span>
+pod <span style="color:#a31515">&#39;tealium-swift/TealiumVisitorService&#39;</span></code></pre></div>
 <p>フレームワークは自動でインスタンス化され、<code>TealiumCore</code>ポッドに加え、ディスパッチサービスポッドのうちの1つ（<code>TealiumCollect</code>または<code>TealiumTagManagement</code>）に依存しています。iOS向けCocoaPodsのインストールの詳細については、<a href="/platforms/ios-swift/install/#cocoapods">こちら</a>を参照してください。</p>
 
 <h3 id="carthage">Carthage</h3>
@@ -327,12 +327,12 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 <li><p>Xcodeで対象アプリの[General]構成ページに移動します。</p></li>
 
 <li><p>以下のフレームワークを<strong>[Embedded Binaries]</strong>セクションに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">TealiumVisitorService<span style="font-weight:bold">.</span>framework</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">TealiumVisitorService.framework</code></pre></div></li>
 
 <li><p>VisitorServiceモジュールを設定するには、次の必須のインポートステートメントをプロジェクトに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">import</span> <span style="color:#458;font-weight:bold">TealiumCore</span>
-<span style="font-weight:bold">import</span> <span style="color:#458;font-weight:bold">TealiumCollect</span> <span style="color:#998;font-style:italic">//or import TealiumTagManagement</span>
-<span style="color:#458;font-weight:bold">import</span> <span style="color:#458;font-weight:bold">TealiumVisitorService</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">import</span> <span style="color:#2b91af">TealiumCore</span>
+<span style="color:#00f">import</span> <span style="color:#2b91af">TealiumCollect</span> <span style="color:#008000">//or import TealiumTagManagement</span>
+<span style="color:#2b91af">import</span> <span style="color:#2b91af">TealiumVisitorService</span></code></pre></div></li>
 </ol>
 
 <p>フレームワークは自動でインスタンス化され、<code>TealiumCore</code>に加え、少なくとも1つのディスパッチサービス（<code>TealiumCore</code>または<code>TealiumTagManagement</code>）に依存しています。追加のインポートステートメントは必要ありません。</p>
@@ -467,12 +467,12 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return an array of booleans value</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">arraysOfBooleans</span> = profile.arraysOfBooleans?[<span style="color:#b84">&#34;5279&#34;</span>] {
-            <span style="font-weight:bold">let</span> <span style="color:#008080">numberOfPositiveBools</span> = arraysOfBooleans.map { <span style="color:#008080">$0</span> == <span style="font-weight:bold">true</span> }.count
+        <span style="color:#008000">// Return an array of booleans value</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> arraysOfBooleans = profile.arraysOfBooleans?[<span style="color:#a31515">&#34;5279&#34;</span>] {
+            <span style="color:#00f">let</span> numberOfPositiveBools = arraysOfBooleans.map { $0 == <span style="color:#00f">true</span> }.count
             print(numberOfPositiveBools)
         }
 }</code></pre></div>
@@ -508,14 +508,14 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return an array of numbers value</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">arraysOfNumbers</span> = profile. arraysOfNumbers?[<span style="color:#b84">&#34;5279&#34;</span>] {
-            arraysOfNumbers.forEach { number <span style="font-weight:bold">in</span>
-        		<span style="font-weight:bold">if</span> number <span style="font-weight:bold">&gt;</span> <span style="color:#099">3.0</span> {
-        			<span style="color:#998;font-style:italic">// ... take action</span>
+        <span style="color:#008000">// Return an array of numbers value</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> arraysOfNumbers = profile. arraysOfNumbers?[<span style="color:#a31515">&#34;5279&#34;</span>] {
+            arraysOfNumbers.forEach { number <span style="color:#00f">in</span>
+        		<span style="color:#00f">if</span> number &gt; 3.0 {
+        			<span style="color:#008000">// ... take action</span>
         		}
             }
         }
@@ -552,14 +552,14 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return an array of strings value</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">arraysOfStrings</span> = profile.arraysOfStrings?[<span style="color:#b84">&#34;3390&#34;</span>] {
-            arraysOfStrings.forEach { string <span style="font-weight:bold">in</span>
-        		<span style="font-weight:bold">if</span> string.lowercased().contains(<span style="color:#b84">&#34;Jeans&#34;</span>) {
-        			<span style="color:#998;font-style:italic">// ... take action</span>
+        <span style="color:#008000">// Return an array of strings value</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> arraysOfStrings = profile.arraysOfStrings?[<span style="color:#a31515">&#34;3390&#34;</span>] {
+            arraysOfStrings.forEach { string <span style="color:#00f">in</span>
+        		<span style="color:#00f">if</span> string.lowercased().contains(<span style="color:#a31515">&#34;Jeans&#34;</span>) {
+        			<span style="color:#008000">// ... take action</span>
         		}
             }
         }
@@ -603,23 +603,23 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return the current Audiences for which the user is assigned</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">currentVisitorAudiences</span> = profile.audiences {
-            print(<span style="color:#b84">&#34;Visitor audiences: </span><span style="color:#b84">\(</span>currentVisitorAudiences<span style="color:#b84">)</span><span style="color:#b84">&#34;</span>)
+        <span style="color:#008000">// Return the current Audiences for which the user is assigned</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> currentVisitorAudiences = profile.audiences {
+            print(<span style="color:#a31515">&#34;Visitor audiences: </span><span style="color:#a31515">\(</span>currentVisitorAudiences<span style="color:#a31515">)</span><span style="color:#a31515">&#34;</span>)
 
-            <span style="color:#998;font-style:italic">// Check if an Audience is assigned to a user by id</span>
-            <span style="font-weight:bold">if</span> currentVisitorAudiences[id: <span style="color:#b84">&#34;106&#34;</span>] {
-                print(<span style="color:#b84">&#34;Visitor is a member of audience id 106&#34;</span>)
-                <span style="color:#998;font-style:italic">// ... Visitor is a member of this audience, take appropriate action</span>
+            <span style="color:#008000">// Check if an Audience is assigned to a user by id</span>
+            <span style="color:#00f">if</span> currentVisitorAudiences[id: <span style="color:#a31515">&#34;106&#34;</span>] {
+                print(<span style="color:#a31515">&#34;Visitor is a member of audience id 106&#34;</span>)
+                <span style="color:#008000">// ... Visitor is a member of this audience, take appropriate action</span>
             }
 
-            <span style="color:#998;font-style:italic">// Check if an Audience is assigned to a user by name</span>
-            <span style="font-weight:bold">if</span> currentVisitorAudiences[name: <span style="color:#b84">&#34;ios users&#34;</span>] {
-                print(<span style="color:#b84">&#34;Visitor is a member of audience iOS Users&#34;</span>)
-                <span style="color:#998;font-style:italic">// ... Visitor is a member of this audience, take appropriate action</span>
+            <span style="color:#008000">// Check if an Audience is assigned to a user by name</span>
+            <span style="color:#00f">if</span> currentVisitorAudiences[name: <span style="color:#a31515">&#34;ios users&#34;</span>] {
+                print(<span style="color:#a31515">&#34;Visitor is a member of audience iOS Users&#34;</span>)
+                <span style="color:#008000">// ... Visitor is a member of this audience, take appropriate action</span>
             }
         }
 }</code></pre></div>
@@ -655,12 +655,12 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return a badge value</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">badgeAssigned</span> = profile.badges?[<span style="color:#b84">&#34;5279&#34;</span>] {
-            print(badgeAssigned ? <span style="color:#b84">&#34;Badge id 5279 is assigned&#34;</span> : <span style="color:#b84">&#34;Badge id 5945 is not assigned&#34;</span>)
+        <span style="color:#008000">// Return a badge value</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> badgeAssigned = profile.badges?[<span style="color:#a31515">&#34;5279&#34;</span>] {
+            print(badgeAssigned ? <span style="color:#a31515">&#34;Badge id 5279 is assigned&#34;</span> : <span style="color:#a31515">&#34;Badge id 5945 is not assigned&#34;</span>)
         }
 }</code></pre></div>
 <h4 id="booleans"><code>booleans</code></h4>
@@ -695,13 +695,13 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return a boolean value</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">booleanValue</span> = profile. booleans?[<span style="color:#b84">&#34;4479&#34;</span>] {
-            <span style="font-weight:bold">if</span> booleanValue {
-            	<span style="color:#998;font-style:italic">// ... do something</span>
+        <span style="color:#008000">// Return a boolean value</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> booleanValue = profile. booleans?[<span style="color:#a31515">&#34;4479&#34;</span>] {
+            <span style="color:#00f">if</span> booleanValue {
+            	<span style="color:#008000">// ... do something</span>
             }
         }
 }</code></pre></div>
@@ -737,14 +737,14 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return a current visit string attribute</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">currentVisit</span> = profile.currentVisit,
-           <span style="font-weight:bold">let</span> <span style="color:#008080">string</span> = currentVisit.strings?[<span style="color:#b84">&#34;34&#34;</span>] {
+        <span style="color:#008000">// Return a current visit string attribute</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> currentVisit = profile.currentVisit,
+           <span style="color:#00f">let</span> string = currentVisit.strings?[<span style="color:#a31515">&#34;34&#34;</span>] {
             print(string)
-            <span style="color:#998;font-style:italic">// ... take action</span>
+            <span style="color:#008000">// ... take action</span>
         }
 }</code></pre></div>
 <h4 id="dates"><code>dates</code></h4>
@@ -779,13 +779,13 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return a date value</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">date</span> = profile.dates?[<span style="color:#b84">&#34;33&#34;</span>] {
+        <span style="color:#008000">// Return a date value</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> date = profile.dates?[<span style="color:#a31515">&#34;33&#34;</span>] {
             print(date)
-            <span style="color:#998;font-style:italic">// .. take action</span>
+            <span style="color:#008000">// .. take action</span>
         }
 }</code></pre></div>
 <h4 id="numbers"><code>numbers</code></h4>
@@ -820,13 +820,13 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return a number value</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">number</span> = profile. numbers?[<span style="color:#b84">&#34;1399&#34;</span>] {
-            <span style="font-weight:bold">if</span> number <span style="font-weight:bold">&gt;</span> <span style="color:#099">3.0</span> {
-            	<span style="color:#998;font-style:italic">// ... take action</span>
+        <span style="color:#008000">// Return a number value</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> number = profile. numbers?[<span style="color:#a31515">&#34;1399&#34;</span>] {
+            <span style="color:#00f">if</span> number &gt; 3.0 {
+            	<span style="color:#008000">// ... take action</span>
             }
         }
 }</code></pre></div>
@@ -862,13 +862,13 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return an set of strings value</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">setOfStrings</span> = profile.setsOfStrings?[<span style="color:#b84">&#34;5279&#34;</span>] {
-            <span style="font-weight:bold">if</span> setOfStrings.contains(<span style="color:#b84">&#34;toys&#34;</span>) {
-            	<span style="color:#998;font-style:italic">// ... take action</span>
+        <span style="color:#008000">// Return an set of strings value</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> setOfStrings = profile.setsOfStrings?[<span style="color:#a31515">&#34;5279&#34;</span>] {
+            <span style="color:#00f">if</span> setOfStrings.contains(<span style="color:#a31515">&#34;toys&#34;</span>) {
+            	<span style="color:#008000">// ... take action</span>
             }
         }
 }</code></pre></div>
@@ -904,13 +904,13 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return a string value</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">string</span> = profile.strings?[<span style="color:#b84">&#34;5699&#34;</span>] {
+        <span style="color:#008000">// Return a string value</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> string = profile.strings?[<span style="color:#a31515">&#34;5699&#34;</span>] {
             print(string)
-            <span style="color:#998;font-style:italic">// ... take action</span>
+            <span style="color:#008000">// ... take action</span>
         }
 }</code></pre></div>
 <h4 id="tallies-および-tallyvalue"><code>tallies</code> および<code>tallyValue</code></h4>
@@ -952,17 +952,17 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 </table>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// Return an entire tally</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">tally</span> = profile.tallies?[<span style="color:#b84">&#34;1399&#34;</span>] {
-            print(<span style="color:#b84">&#34;Tally id 5377: </span><span style="color:#b84">\(</span>tally<span style="color:#b84">)</span><span style="color:#b84">&#34;</span>)
+        <span style="color:#008000">// Return an entire tally</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> tally = profile.tallies?[<span style="color:#a31515">&#34;1399&#34;</span>] {
+            print(<span style="color:#a31515">&#34;Tally id 5377: </span><span style="color:#a31515">\(</span>tally<span style="color:#a31515">)</span><span style="color:#a31515">&#34;</span>)
         }
 
-        <span style="color:#998;font-style:italic">// Return a tally value by using the tally id and the key for the value desired</span>
-        <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">tallyValue</span> = profile.tallies?[tally: <span style="color:#b84">&#34;5381&#34;</span>, key: <span style="color:#b84">&#34;red shirts&#34;</span>]{
-            print(<span style="color:#b84">&#34;Tally value for id 5381 and key &#39;red shirts&#39;: </span><span style="color:#b84">\(</span>tallyValue<span style="color:#b84">)</span><span style="color:#b84">&#34;</span>)
+        <span style="color:#008000">// Return a tally value by using the tally id and the key for the value desired</span>
+        <span style="color:#00f">if</span> <span style="color:#00f">let</span> tallyValue = profile.tallies?[tally: <span style="color:#a31515">&#34;5381&#34;</span>, key: <span style="color:#a31515">&#34;red shirts&#34;</span>]{
+            print(<span style="color:#a31515">&#34;Tally value for id 5381 and key &#39;red shirts&#39;: </span><span style="color:#a31515">\(</span>tallyValue<span style="color:#a31515">)</span><span style="color:#a31515">&#34;</span>)
         }
 }</code></pre></div>
 <h2 id="apiリファレンス">APIリファレンス</h2>
@@ -974,23 +974,23 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 <h4 id="visitorservice"><code>visitorService()</code></h4>
 
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">MyHelperClass</span> {
-    <span style="font-weight:bold">var</span> <span style="color:#008080">tealium</span>: Tealium?
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">class</span> <span style="color:#2b91af">MyHelperClass</span> {
+    <span style="color:#00f">var</span> tealium: Tealium?
 
-    <span style="font-weight:bold">public</span> <span style="font-weight:bold">init</span> () {
-        <span style="font-weight:bold">let</span> <span style="color:#008080">config</span> = TealiumConfig(account: <span style="color:#b84">&#34;ACCOUNT&#34;</span>,
-                                   profile: <span style="color:#b84">&#34;PROFILE&#34;</span>,
-                                   environment: <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>,
-                                   datasource: <span style="color:#b84">&#34;DATASOURCE&#34;</span>,
-                                   optionalData: <span style="font-weight:bold">nil</span>)
-        config.addVisitorServiceDelegate(<span style="font-weight:bold">self</span>)                           
-	     config.setVisitorServiceRefresh(interval: <span style="color:#099">10</span>)		
-		<span style="font-weight:bold">self</span>.tealium = Tealium(config) {
-			<span style="color:#998;font-style:italic">// Note: this is inside the completion block after initialization</span>
+    <span style="color:#00f">public</span> <span style="color:#00f">init</span> () {
+        <span style="color:#00f">let</span> config = TealiumConfig(account: <span style="color:#a31515">&#34;ACCOUNT&#34;</span>,
+                                   profile: <span style="color:#a31515">&#34;PROFILE&#34;</span>,
+                                   environment: <span style="color:#a31515">&#34;ENVIRONMENT&#34;</span>,
+                                   datasource: <span style="color:#a31515">&#34;DATASOURCE&#34;</span>,
+                                   optionalData: <span style="color:#00f">nil</span>)
+        config.addVisitorServiceDelegate(<span style="color:#00f">self</span>)                           
+	     config.setVisitorServiceRefresh(interval: 10)		
+		<span style="color:#00f">self</span>.tealium = Tealium(config) {
+			<span style="color:#008000">// Note: this is inside the completion block after initialization</span>
 
-			<span style="color:#998;font-style:italic">// self.tealium is guaranteed to be initialized inside the completion block</span>
+			<span style="color:#008000">// self.tealium is guaranteed to be initialized inside the completion block</span>
 
-			<span style="font-weight:bold">self</span>.tealium?.visitorService()?.#### <span style="color:#998;font-style:italic">// where #### is any public API method on the visitorProfile object - see other methods for examples</span>
+			<span style="color:#00f">self</span>.tealium?.visitorService()?.#### <span style="color:#008000">// where #### is any public API method on the visitorProfile object - see other methods for examples</span>
 		}
 	}
 }</code></pre></div>
@@ -999,16 +999,16 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 <p>このメソッドは、現在のプロファイルを取得するためのVisitorServiceへの即時リクエストをトリガーします。プロファイルが前回のフェッチ以降に更新されている場合は、<code>profileDidUpdate</code>デリゲートメソッドが呼び出されます。</p>
 
 <p>このメソッドは、訪問者プロファイルの更新間隔が<code>0</code>に設定されている場合、トラッキングリクエストが送信されるたびに自動的に呼び出されます。これよりも高い値を更新間隔に設定している場合は、このメソッドを呼び出して、スケジュールされた次回の更新を待たずにプロファイルをただちに取得できます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">self</span>.tealium?.visitorService()?.requestVisitorProfile()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">self</span>.tealium?.visitorService()?.requestVisitorProfile()</code></pre></div>
 <p>使用方法の例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">track</span>(title: <span style="color:#999">String</span>, data: [<span style="color:#999">String</span>: <span style="color:#999">Any</span>]?) {
-        tealium?.track(title: title, data: data, completion: { success, <span style="color:#a61717;background-color:#e3d2d2">\</span><span style="font-weight:bold">_</span>, error <span style="font-weight:bold">in</span>
-            <span style="font-weight:bold">if</span> error <span style="font-weight:bold">!=</span> <span style="font-weight:bold">nil</span> {
-                print(<span style="color:#b84">&#34;*** Track not completed because of error: </span><span style="color:#b84">\n</span><span style="color:#b84">\(</span><span style="color:#999">String</span><span style="color:#b84">(</span>describing: error<span style="color:#b84">))</span><span style="color:#b84">&#34;</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> track(title: String, data: [String: Any]?) {
+        tealium?.track(title: title, data: data, completion: { success, <span style="">\</span><span style="color:#00f">_</span>, error <span style="color:#00f">in</span>
+            <span style="color:#00f">if</span> error != <span style="color:#00f">nil</span> {
+                print(<span style="color:#a31515">&#34;*** Track not completed because of error: </span><span style="color:#a31515">\n</span><span style="color:#a31515">\(</span>String<span style="color:#a31515">(</span>describing: error<span style="color:#a31515">))</span><span style="color:#a31515">&#34;</span>)
             }
-            <span style="font-weight:bold">if</span> success {
-                print(<span style="color:#b84">&#34;*** Track with VisitorService completed ***&#34;</span>)
-                <span style="font-weight:bold">self</span>.tealium?.visitorProfile()?.requestVisitorProfile()
+            <span style="color:#00f">if</span> success {
+                print(<span style="color:#a31515">&#34;*** Track with VisitorService completed ***&#34;</span>)
+                <span style="color:#00f">self</span>.tealium?.visitorProfile()?.requestVisitorProfile()
 
             }
         })
@@ -1018,9 +1018,9 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 <p>新しいリクエストをトリガーすることなく、永続的ストレージから最後に取得した訪問者プロファイルを返します。インターネットに接続されていないが、以前のリクエストが正常に完了している状況で役立ちます。</p>
 
 <p>例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">self</span>.tealium?.visitorService()?.getCachedProfile(completion: { profile <span style="font-weight:bold">in</span>
-                <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
-                <span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">json</span> = <span style="font-weight:bold">try</span>? JSONEncoder().encode(profile), <span style="font-weight:bold">let</span> <span style="color:#008080">string</span> = <span style="color:#999">String</span>(data: 					json, encoding: .utf8) {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">self</span>.tealium?.visitorService()?.getCachedProfile(completion: { profile <span style="color:#00f">in</span>
+                <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
+                <span style="color:#00f">if</span> <span style="color:#00f">let</span> json = <span style="color:#00f">try</span>? JSONEncoder().encode(profile), <span style="color:#00f">let</span> string = String(data: 					json, encoding: .utf8) {
                     print(string)
    		}
 })</code></pre></div>
@@ -1045,11 +1045,11 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 <h4 id="removeallvisitorservicedelegates"><code>removeAllVisitorServiceDelegates()</code></h4>
 
 <p>すべての訪問者プロファイルデリゲートを削除します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">self</span>.tealium?.visitorService()?.removeAllVisitorServiceDelegates()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">self</span>.tealium?.visitorService()?.removeAllVisitorServiceDelegates()</code></pre></div>
 <h4 id="addvisitorservicedelegate"><code>addVisitorServiceDelegate()</code></h4>
 
 <p><code>VisitorServiceDelegate</code>に準拠する新しいクラスを追加します</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">self</span>.tealium?.visitorService()?.addVisitorServiceDelegate(<span style="font-weight:bold">self</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">self</span>.tealium?.visitorService()?.addVisitorServiceDelegate(<span style="color:#00f">self</span>)</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -1073,7 +1073,7 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 <p>特定の訪問者プロファイルデリゲートを削除します。</p>
 
 <p>例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">self</span>.tealium?.visitorService()?.removeSingleDelegate(<span style="font-weight:bold">self</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">self</span>.tealium?.visitorService()?.removeSingleDelegate(<span style="color:#00f">self</span>)</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -1097,10 +1097,10 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 <h4 id="profiledidupdate"><code>profileDidUpdate()</code></h4>
 
 <p>このメソッドは、訪問者プロファイルが更新されるたびに呼び出されます。ほとんどの場合、<code>requestVisitorProfile()</code>メソッドが使用されるたびに呼び出されます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">profile</span> = profile <span style="font-weight:bold">else</span> { <span style="font-weight:bold">return</span> }
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">func</span> profileDidUpdate(profile: TealiumVisitorProfile?) {
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> profile = profile <span style="color:#00f">else</span> { <span style="color:#00f">return</span> }
 
-        <span style="color:#998;font-style:italic">// act on profile attributes</span>
+        <span style="color:#008000">// act on profile attributes</span>
         print(profile.audiences)
 
         ...
@@ -1110,8 +1110,8 @@ pod <span style="color:#b84">&#39;tealium-swift/TealiumVisitorService&#39;</span
 <h4 id="setvisitorservicerefresh"><code>setVisitorServiceRefresh()</code></h4>
 
 <p>これにより、訪問者プロファイルの取得頻度を設定できます。この設定のデフォルト値は5分です。このメソッドは、頻度を調整するために使用します。<code>requestVisitorProfile</code>メソッドをすべてのトラッキングコールに追加しても、このメソッドを0に設定しない限り、プロファイルは毎回取得されません。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">let</span> <span style="color:#008080">config</span> = TealiumConfig(...)
-config.setVisitorServiceRefresh(<span style="color:#099">3</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">let</span> config = TealiumConfig(...)
+config.setVisitorServiceRefresh(3)</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -1131,7 +1131,7 @@ config.setVisitorServiceRefresh(<span style="color:#099">3</span>)</code></pre><
 </table>
 
 <h4 id="addvisitorservicedelegate-1"><code>addVisitorServiceDelegate()</code></h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">config.addVisitorServiceDelegate(<span style="font-weight:bold">self</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">config.addVisitorServiceDelegate(<span style="color:#00f">self</span>)</code></pre></div>
 <p><code>profileDidUpdate</code>デリゲートメソッドを使用するには、デリゲートをVisitorServiceデリゲートの配列に追加します。デリゲートとして割り当てられた複数のオブジェクトが存在する可能性があります。</p>
 
 <table>
@@ -1159,9 +1159,9 @@ config.setVisitorServiceRefresh(<span style="color:#099">3</span>)</code></pre><
 <h4 id="setvisitorserviceoverrideprofile"><code>setVisitorServiceOverrideProfile()</code></h4>
 
 <p>訪問者プロファイルの取得元プロファイルをオーバーライドします。Collectモジュールでデータ収集に使用されているプロファイルと整合する必要があります。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">config. setVisitorServiceOverrideProfile(<span style="color:#b84">&#34;PROFILE&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">config. setVisitorServiceOverrideProfile(<span style="color:#a31515">&#34;PROFILE&#34;</span>)</code></pre></div>
 <h4 id="setvisitorserviceoverrideurl"><code>setVisitorServiceOverrideURL()</code></h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">config. setVisitorServiceOverrideURL(<span style="color:#b84">&#34;https://overridden-subdomain.yourdomain.com/&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">config. setVisitorServiceOverrideURL(<span style="color:#a31515">&#34;https://overridden-subdomain.yourdomain.com/&#34;</span>)</code></pre></div>
 <p>訪問者プロファイルの取得元ベースURLをオーバーライドします。アカウント、プロファイル、および訪問者IDがURLに自動的に追加されます。</p>
 
 <h2 id="リリースノート">リリースノート</h2>
@@ -1618,7 +1618,7 @@ config.setVisitorServiceRefresh(<span style="color:#099">3</span>)</code></pre><
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

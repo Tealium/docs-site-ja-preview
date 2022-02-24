@@ -296,15 +296,15 @@ var utag_data = {
 <p>永続性データの値はデバイスで<a href="https://developer.android.com/reference/android/content/SharedPreferences">SharedPreferences</a>として保存され、各イベントにマージされます。これらの値は、アプリを終了し、再度起動しても保持されます。</p>
 
 <p><a href="/platforms/android-java/api/#getpersistentdatasources"><code>getPersistentDataSources()</code></a>メソッドは、次の例に示すように永続性データを取得します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">SharedPreferences <span style="color:#900;font-weight:bold">sp</span> <span style="font-weight:bold">=</span> instance.<span style="color:#008080">getDataSources</span>().<span style="color:#008080">getPersistentDataSources</span>();
-sp.<span style="color:#008080">edit</span>().<span style="color:#008080">putInt</span>(<span style="color:#b84">&#34;KEY_TEALIUM_INIT_COUNT&#34;</span>, sp.<span style="color:#008080">getInt</span>(<span style="color:#b84">&#34;KEY_TEALIUM_INIT_COUNT&#34;</span>, 0) <span style="font-weight:bold">+</span> 1).<span style="color:#008080">commit</span>();</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">SharedPreferences sp = instance.getDataSources().getPersistentDataSources();
+sp.edit().putInt(<span style="color:#a31515">&#34;KEY_TEALIUM_INIT_COUNT&#34;</span>, sp.getInt(<span style="color:#a31515">&#34;KEY_TEALIUM_INIT_COUNT&#34;</span>, 0) + 1).commit();</code></pre></div>
 <h2 id="揮発性データ">揮発性データ</h2>
 
 <p>揮発性データの値はデバイスで<a href="https://developer.android.com/reference/android/content/SharedPreferences">SharedPreferences</a>として保存され、各イベントにマージされます。これらの値は、アプリを終了して再起動すると破棄されます。</p>
 
 <p><a href="/platforms/android-java/api/#getvolatiledatasources"><code>getVolatileDataSources()</code></a>メソッドは、次の例に示すように揮発性データを取得します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">SharedPreferences <span style="color:#900;font-weight:bold">sp</span> <span style="font-weight:bold">=</span> instance.<span style="color:#008080">getDataSources</span>().<span style="color:#008080">getVolatileDataSources</span>()
-   .<span style="color:#008080">put</span>(<span style="color:#b84">&#34;KEY_TEALIUM_INITIALIZED&#34;</span>, System.<span style="color:#008080">currentTimeMillis</span>());</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">SharedPreferences sp = instance.getDataSources().getVolatileDataSources()
+   .put(<span style="color:#a31515">&#34;KEY_TEALIUM_INITIALIZED&#34;</span>, System.currentTimeMillis());</code></pre></div>
 </div>
 
 <b class="pv1 br2 dib tc mv3 link">
@@ -749,7 +749,7 @@ sp.<span style="color:#008080">edit</span>().<span style="color:#008080">putInt<
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

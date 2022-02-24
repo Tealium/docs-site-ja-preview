@@ -322,7 +322,7 @@ var utag_data = {
 <li><code>Tealium.Platform.iOS.dll</code></li>
 </ul>
 
-<p class="note">バインディングライブラリは、単独で使用可能です。ライブラリが自動的に生成されるということは、プラットフォームごとに大きく異なる名前空間ができることになり、開発作業が必要以上に複雑になります。代わりに<code>Common</code>ライブラリや、プラットフォーム固有の抽象ライブラリを利用することを推奨しています。</p>
+<p class="note"><i class="fas fa-info-circle"></i>バインディングライブラリは、単独で使用可能です。ライブラリが自動的に生成されるということは、プラットフォームごとに大きく異なる名前空間ができることになり、開発作業が必要以上に複雑になります。代わりに<code>Common</code>ライブラリや、プラットフォーム固有の抽象ライブラリを利用することを推奨しています。</p>
 
 <h4 id="ライフサイクルモジュール">ライフサイクルモジュール</h4>
 
@@ -356,22 +356,22 @@ var utag_data = {
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content">
 <div class="tab-pane" data-lang="Android" title="Android">
-  <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="font-weight:bold">using</span> <span style="color:#555">Tealium.Droid</span>;
-<span style="color:#998;font-style:italic">//...
-</span><span style="color:#998;font-style:italic"></span>
-ITealiumInstanceManager instanceManager = <span style="font-weight:bold">new</span> TealiumInstanceManager(<span style="font-weight:bold">new</span> TealiumInstanceFactoryDroid(&lt;myAndroidApplication&gt;));
-<span style="color:#998;font-style:italic">//Optional Lifecycle Module enablement - must reference Tealium.Platform.Lifecycle.Droid.dll
-</span><span style="color:#998;font-style:italic"></span>TealiumLifecycleManager.SetLifecycleAutoTracking = TealiumDroid.Lifecycle.TealiumLifecycleControlDelegation.SetLifecycleAutoTracking;
+  <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#00f">using</span> Tealium.Droid;
+<span style="color:#008000">//...
+</span><span style="color:#008000"></span>
+ITealiumInstanceManager instanceManager = <span style="color:#00f">new</span> TealiumInstanceManager(<span style="color:#00f">new</span> TealiumInstanceFactoryDroid(&lt;myAndroidApplication&gt;));
+<span style="color:#008000">//Optional Lifecycle Module enablement - must reference Tealium.Platform.Lifecycle.Droid.dll
+</span><span style="color:#008000"></span>TealiumLifecycleManager.SetLifecycleAutoTracking = TealiumDroid.Lifecycle.TealiumLifecycleControlDelegation.SetLifecycleAutoTracking;
 </code></pre></div>
 </div>
 
 <div class="tab-pane" data-lang="iOS" title="iOS">
-  <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="font-weight:bold">using</span> <span style="color:#555">Tealium.iOS</span>;
-<span style="color:#998;font-style:italic">//...
-</span><span style="color:#998;font-style:italic"></span>
-ITealiumInstanceManager instanceManager = <span style="font-weight:bold">new</span> TealiumInstanceManager(<span style="font-weight:bold">new</span> TealiumInstanceFactoryIOS());
-<span style="color:#998;font-style:italic">//Optional Lifecycle Module enablement - must reference Tealium.Platform.Lifecycle.iOS.dll
-</span><span style="color:#998;font-style:italic"></span>TealiumLifecycleManager.SetLifecycleAutoTracking =TealiumIOS.Lifecycle.TealiumLifecycleControlDelegation.SetLifecycleAutoTracking;
+  <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#00f">using</span> Tealium.iOS;
+<span style="color:#008000">//...
+</span><span style="color:#008000"></span>
+ITealiumInstanceManager instanceManager = <span style="color:#00f">new</span> TealiumInstanceManager(<span style="color:#00f">new</span> TealiumInstanceFactoryIOS());
+<span style="color:#008000">//Optional Lifecycle Module enablement - must reference Tealium.Platform.Lifecycle.iOS.dll
+</span><span style="color:#008000"></span>TealiumLifecycleManager.SetLifecycleAutoTracking =TealiumIOS.Lifecycle.TealiumLifecycleControlDelegation.SetLifecycleAutoTracking;
 </code></pre></div>
 </div>
 
@@ -388,7 +388,7 @@ ITealiumInstanceManager instanceManager = <span style="font-weight:bold">new</sp
 
 <p>新しいインスタンスを作成するには、まず、アカウントの詳細とともに<code>TealiumConfig</code>オブジェクトを作成します。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">TealiumConfig tealConfig
-     = <span style="font-weight:bold">new</span> TealiumConfig(instance, account, profile, environment, lifecycleAutoTracking);
+     = <span style="color:#00f">new</span> TealiumConfig(instance, account, profile, environment, lifecycleAutoTracking);
 </code></pre></div>
 <table>
 <thead>
@@ -452,15 +452,15 @@ ITealiumInstanceManager instanceManager = <span style="font-weight:bold">new</sp
 <p>モバイル内のイベントの大部分は、データ収集サーバーに送信されてコネクタで処理されるか、タグ管理ウェブビューで処理されてベンダータグをトリガーします。タグ管理に使用されるイベントが、<code>IRemoteCommand</code>インターフェイスを介してネイティブコードにデータを返すという点で、リモートコマンドはさらなる柔軟性を提供します。</p>
 
 <p>以下のサンプルコードでは、コマンドID（<code>TealiumConsts.REMOTE_COMMAND_ID</code>に設定）を出力しています。この例を使用することで、このセットアップに必要な関連TagBridge Custom Commandタグで構成されているとおり、データの完全なペイロードにアクセスすることもできます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="font-weight:bold">static</span> List&lt;IRemoteCommand&gt; SetupRemoteCommands()
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#00f">static</span> List&lt;IRemoteCommand&gt; SetupRemoteCommands()
 {
-    <span style="color:#458;font-weight:bold">var</span> command = <span style="font-weight:bold">new</span> DelegateRemoteCommand(TealiumConsts.REMOTE_COMMAND_ID, <span style="color:#b84">&#34;Test command &#34;</span> + TealiumConsts.REMOTE_COMMAND_ID) {
+    <span style="color:#2b91af">var</span> command = <span style="color:#00f">new</span> DelegateRemoteCommand(TealiumConsts.REMOTE_COMMAND_ID, <span style="color:#a31515">&#34;Test command &#34;</span> + TealiumConsts.REMOTE_COMMAND_ID) {
         HandleResponseDelegate = (DelegateRemoteCommand cmd,
             IRemoteCommandResponse resp) =&gt; {
-                System.Diagnostics.Debug.WriteLine(<span style="color:#b84">$&#34;Handling command {cmd.CommandId}...&#34;</span>);
+                System.Diagnostics.Debug.WriteLine(<span style="color:#a31515">$&#34;Handling command {cmd.CommandId}...&#34;</span>);
             }
         };
-    <span style="font-weight:bold">return</span> <span style="font-weight:bold">new</span> List&lt;IRemoteCommand&gt;() { command };
+    <span style="color:#00f">return</span> <span style="color:#00f">new</span> List&lt;IRemoteCommand&gt;() { command };
 }
 </code></pre></div>
 <p>リモートコマンドの詳細については、<a href="/platforms/remote-commands/how-it-works/">こちら</a>を参照してください。</p>
@@ -506,44 +506,44 @@ ITealiumInstanceManager instanceManager = <span style="font-weight:bold">new</sp
 </table>
 
 <p>以下はデリゲートメソッドの使用例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="font-weight:bold">static</span> TealiumAdvancedConfig SetupAdvancedConfig() {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#00f">static</span> TealiumAdvancedConfig SetupAdvancedConfig() {
 
-    DelegateDispatchValidator validator = <span style="font-weight:bold">new</span> DelegateDispatchValidator() {
+    DelegateDispatchValidator validator = <span style="color:#00f">new</span> DelegateDispatchValidator() {
         ShouldDropDispatchDelegate = (ITealium arg1, IDispatch arg2) =&gt; {
-            System.Diagnostics.Debug.WriteLine(<span style="color:#b84">&#34;Inside ShouldDropDispatchDelegate!&#34;</span>);
-            <span style="font-weight:bold">return</span> <span style="font-weight:bold">false</span>;
+            System.Diagnostics.Debug.WriteLine(<span style="color:#a31515">&#34;Inside ShouldDropDispatchDelegate!&#34;</span>);
+            <span style="color:#00f">return</span> <span style="color:#00f">false</span>;
         },
-        ShouldQueueDispatchDelegate = (ITealium arg1, IDispatch arg2, <span style="color:#458;font-weight:bold">bool</span> shouldQueue) =&gt; {
-            System.Diagnostics.Debug.WriteLine(<span style="color:#b84">&#34;Inside ShouldQueueDispatchDelegate!&#34;</span>);
-            <span style="font-weight:bold">return</span> shouldQueue;
+        ShouldQueueDispatchDelegate = (ITealium arg1, IDispatch arg2, <span style="color:#2b91af">bool</span> shouldQueue) =&gt; {
+            System.Diagnostics.Debug.WriteLine(<span style="color:#a31515">&#34;Inside ShouldQueueDispatchDelegate!&#34;</span>);
+            <span style="color:#00f">return</span> shouldQueue;
         }
     };
-    DispatchSentDelegateEventListener sendingListener = <span style="font-weight:bold">new</span> DispatchSentDelegateEventListener() {
+    DispatchSentDelegateEventListener sendingListener = <span style="color:#00f">new</span> DispatchSentDelegateEventListener() {
         DispatchSent = (tealium, dispatch) =&gt; {
-            System.Diagnostics.Debug.WriteLine(<span style="color:#b84">&#34;Inside DispatchSent!&#34;</span>);
-            dispatch.PutString(<span style="color:#b84">&#34;KeyAddedBySendListener&#34;</span>, <span style="color:#b84">&#34;Value added by sending listener.&#34;</span>);
+            System.Diagnostics.Debug.WriteLine(<span style="color:#a31515">&#34;Inside DispatchSent!&#34;</span>);
+            dispatch.PutString(<span style="color:#a31515">&#34;KeyAddedBySendListener&#34;</span>, <span style="color:#a31515">&#34;Value added by sending listener.&#34;</span>);
         }
     };
-    DispatchQueuedDelegateEventListener queuingListener = <span style="font-weight:bold">new</span> DispatchQueuedDelegateEventListener() {
+    DispatchQueuedDelegateEventListener queuingListener = <span style="color:#00f">new</span> DispatchQueuedDelegateEventListener() {
         DispatchQueued = (tealium, dispatch) =&gt; {
-            System.Diagnostics.Debug.WriteLine(<span style="color:#b84">&#34;Inside DispatchQueued!&#34;</span>);
-            dispatch.PutString(<span style="color:#b84">&#34;KeyAddedByQueuedListener&#34;</span>, <span style="color:#b84">&#34;Value added by queuing listener.&#34;</span>);
+            System.Diagnostics.Debug.WriteLine(<span style="color:#a31515">&#34;Inside DispatchQueued!&#34;</span>);
+            dispatch.PutString(<span style="color:#a31515">&#34;KeyAddedByQueuedListener&#34;</span>, <span style="color:#a31515">&#34;Value added by queuing listener.&#34;</span>);
         }
     };
-    WebViewReadyDelegateEventListener webViewListener = <span style="font-weight:bold">new</span> WebViewReadyDelegateEventListener() {
+    WebViewReadyDelegateEventListener webViewListener = <span style="color:#00f">new</span> WebViewReadyDelegateEventListener() {
         WebViewReady = (tealium, webView) =&gt;  {
-            System.Diagnostics.Debug.WriteLine(<span style="color:#b84">&#34;Inside WebViewReady!&#34;</span>);
+            System.Diagnostics.Debug.WriteLine(<span style="color:#a31515">&#34;Inside WebViewReady!&#34;</span>);
         }
     };
-    SettingsPublishedDelegateEventListener settingsListener = <span style="font-weight:bold">new</span> SettingsPublishedDelegateEventListener() {
+    SettingsPublishedDelegateEventListener settingsListener = <span style="color:#00f">new</span> SettingsPublishedDelegateEventListener() {
         SettingsPublished = (tealium) =&gt; {
-            System.Diagnostics.Debug.WriteLine(<span style="color:#b84">&#34;Inside SettingsPublished!&#34;</span>);
+            System.Diagnostics.Debug.WriteLine(<span style="color:#a31515">&#34;Inside SettingsPublished!&#34;</span>);
         }
     };
-    TealiumAdvancedConfig advConfig = <span style="font-weight:bold">new</span> TealiumAdvancedConfig(validator,
+    TealiumAdvancedConfig advConfig = <span style="color:#00f">new</span> TealiumAdvancedConfig(validator,
         sendingListener, queuingListener, webViewListener, settingsListener);
 
-    <span style="font-weight:bold">return</span> advConfig;
+    <span style="color:#00f">return</span> advConfig;
 }
 </code></pre></div>
 <h2 id="リソース">リソース</h2>
@@ -1001,7 +1001,7 @@ ITealiumInstanceManager instanceManager = <span style="font-weight:bold">new</sp
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

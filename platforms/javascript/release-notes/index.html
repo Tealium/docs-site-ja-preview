@@ -350,9 +350,9 @@ var utag_data = {
 
 <li><p><code>utag.ut.loader</code>ユーティリティ関数に渡されるエラーハンドラー関数のサポートを追加。 このサポートは、最新ブラウザのみを対象としています（古いブラウザでは、標準コールバック&rdquo;cb&rdquo;関数が代わりにコールされる可能性があります）。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.ut.loader({
-    <span style="color:#b84">&#34;src&#34;</span>   <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;https://www.example.com/path/file.js&#34;</span>,
-    <span style="color:#b84">&#34;cb&#34;</span>    <span style="font-weight:bold">:</span> <span style="font-weight:bold">function</span>(){console.log(<span style="color:#b84">&#34;CALLBACK&#34;</span>)},
-    <span style="color:#b84">&#34;error&#34;</span> <span style="font-weight:bold">:</span> <span style="font-weight:bold">function</span>(){console.log(<span style="color:#b84">&#34;ERROR IN LOADING&#34;</span>)}
+    <span style="color:#a31515">&#34;src&#34;</span>   : <span style="color:#a31515">&#34;https://www.example.com/path/file.js&#34;</span>,
+    <span style="color:#a31515">&#34;cb&#34;</span>    : <span style="color:#00f">function</span>(){console.log(<span style="color:#a31515">&#34;CALLBACK&#34;</span>)},
+    <span style="color:#a31515">&#34;error&#34;</span> : <span style="color:#00f">function</span>(){console.log(<span style="color:#a31515">&#34;ERROR IN LOADING&#34;</span>)}
     });
 </code></pre></div></li>
 </ul>
@@ -406,10 +406,10 @@ UTCタイムゾーンでの現在のISO文字列タイムスタンプ（古い�
 
 <p>以前は、<code>utag.link/view</code>に渡される現在のデータ層内のアイテムは<code>utag.data</code>グローバルオブジェクトにマージされていました。この処理は、<code>utag.link/view</code>コールのたびにタグ配信ルールを再評価するために必要でした。<code>utag.js</code> 4.40テンプレートでは、この処理を行わなくても済むように、公開エンジンの更新が活用されています。バージョン4.40では、<code>utag.data</code>グローバルオブジェクトが<code>utag.link</code>または<code>utag.view</code>コールのたびに更新されることはありません。</p>
 
-<p class="note">次のJS拡張機能を使用すれば、4.40への更新前に4.39の動作との後方互換性をテストできます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#998;font-style:italic">// JS Extension scoped to &#34;Before Load Rules&#34;
-</span><span style="color:#998;font-style:italic"></span>utag.ut.merge( b, utag.data, <span style="color:#099">0</span> );
-utag.ut.merge( utag.data, b ,<span style="color:#099">1</span> );
+<p class="note"><i class="fas fa-info-circle"></i>次のJS拡張機能を使用すれば、4.40への更新前に4.39の動作との後方互換性をテストできます。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#008000">// JS Extension scoped to &#34;Before Load Rules&#34;
+</span><span style="color:#008000"></span>utag.ut.merge( b, utag.data, 0 );
+utag.ut.merge( utag.data, b ,1 );
 </code></pre></div>
 <p><strong>新しい&rdquo;noconsole&rdquo;フラグ。</strong></p>
 
@@ -436,9 +436,9 @@ utag.ut.merge( utag.data, b ,<span style="color:#099">1</span> );
 <p><strong><code>_t_visitor_id</code>および<code>_t_session_id</code>の提供終了</strong></p>
 
 <p>自動生成のデータ層値である<code>_t_visitor_id</code>および<code>_t_session_id</code>は利用できなくなりました。これらは<code>ut.visitor_id</code>および<code>ut.session_id</code>に置き換わります。それでも必要な場合は、次のような方法で追加できます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#998;font-style:italic">// JS Extension scoped to &#34;Before Load Rules&#34;
-</span><span style="color:#998;font-style:italic"></span>b[<span style="color:#b84">&#34;_t_visitor_id&#34;</span>] <span style="font-weight:bold">=</span> b[<span style="color:#b84">&#34;cp.utag_main_v_id&#34;</span>];
-b[<span style="color:#b84">&#34;_t_session_id&#34;</span>] <span style="font-weight:bold">=</span> b[<span style="color:#b84">&#34;cp.utag_main_ses_id&#34;</span>];
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#008000">// JS Extension scoped to &#34;Before Load Rules&#34;
+</span><span style="color:#008000"></span>b[<span style="color:#a31515">&#34;_t_visitor_id&#34;</span>] = b[<span style="color:#a31515">&#34;cp.utag_main_v_id&#34;</span>];
+b[<span style="color:#a31515">&#34;_t_session_id&#34;</span>] = b[<span style="color:#a31515">&#34;cp.utag_main_ses_id&#34;</span>];
 </code></pre></div>
 <h2 id="バージョン4-36-4-39">バージョン4.36～4.39</h2>
 
@@ -464,7 +464,7 @@ b[<span style="color:#b84">&#34;_t_session_id&#34;</span>] <span style="font-wei
 </ul></li>
 </ul>
 
-<p class="note">この拡張機能は、4.37以前のバージョンでは複数回実行される可能性があるため、それらのバージョンとの互換性がありません。</p>
+<p class="note"><i class="fas fa-info-circle"></i>この拡張機能は、4.37以前のバージョンでは複数回実行される可能性があるため、それらのバージョンとの互換性がありません。</p>
 
 <ul>
 <li>すべてのタグが読み込まれる前に<code>utag.view</code>をコールする方法のサポートが追加されました。<code>utag.view</code>をコールし、DOM Readyをスコープとする拡張機能内のUIDによって特定のタグをトリガーする際に発生するバグが、これによって修正されます。</li>
@@ -521,8 +521,8 @@ b[<span style="color:#b84">&#34;_t_session_id&#34;</span>] <span style="font-wei
 
 <ul>
 <li><p>DOM readyStateの&rdquo;complete&rdquo;（&rdquo;load&rdquo;とも呼ばれる）イベントまでタグの読み込みを遅延させるために、オーバーライド（<code>utag_cfg_ovrd</code>）フラグを<code>utag.js</code>に追加しました。このフラグによって得られる遅延は、<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Tag-Configuration-Advanced-Settings/ta-p/13600">Wait = Yes設定</a>を持つすべてのタグの実行を遅らせることにより、ページの表示速度を向上させることができます。このフラグを設定するには、プリローダーをスコープとする<a href="ttps://community.tealiumiq.com/t5/Tealium-iQ/JavaScript-Code-Extension/ta-p/11925">JavaScriptコード拡張機能</a>に次のコードを入力します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="font-weight:bold">var</span> utag_cfg_ovrd <span style="font-weight:bold">=</span> {};
-utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">var</span> utag_cfg_ovrd = {};
+utag_cfg_ovrd.dom_complete = <span style="color:#00f">true</span>;
 </code></pre></div></li>
 
 <li><p>DOM readyStateが通常より早く&rdquo;interactive&rdquo;としてレポートされるInternet Explorerブラウザのバグを修正しました。古いバージョンのInternet Explorer向けに、readyState &ldquo;complete&rdquo;のための遅延が余分に追加されています。</p></li>
@@ -549,8 +549,8 @@ utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="
 </ul>
 
 <p>以下は、待機タイマーフラグの設定方法の例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">    <span style="font-weight:bold">var</span> utag_cfg_ovrd<span style="font-weight:bold">=</span>{};
-    utag_cfg_ovrd.waittimer<span style="font-weight:bold">=</span><span style="color:#099">3000</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">    <span style="color:#00f">var</span> utag_cfg_ovrd={};
+    utag_cfg_ovrd.waittimer=3000;
 </code></pre></div>
 <p>このコードスニペットは、すべてのタグの読み込みをDOM Ready信号の3秒後まで遅らせます。</p>
 
@@ -608,19 +608,19 @@ utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="
 <li><p><code>utag_main</code> Cookie内のセッションID（<code>ses_id</code>）値が現在はタイムスタンプになっており、ウェブサイト上での訪問者の滞在時間を計算するために使用されます。</p>
 
 <p>この値を参照するには、次の構文を使用します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#b84">&#34;cp.utag_main_ses_id&#34;</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#a31515">&#34;cp.utag_main_ses_id&#34;</span>]
 </code></pre></div></li>
 
 <li><p><code>utag_main</code> Cookieにセッション番号値を導入。</p>
 
 <p>この値を参照するには、次の構文を使用します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#b84">&#34;cp.utag_main__sn&#34;</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#a31515">&#34;cp.utag_main__sn&#34;</span>]
 </code></pre></div></li>
 
 <li><p><code>utag.js</code>が読み込まれるたび、実質的には新しいURLが読み込まれるたびに増加するページ番号値を導入。この値がイベントカウンターと混同されることはありません。この値は、新しいセッションのたびに1からカウントし直されます。</p>
 
 <p>この値を参照するには、次の構文を使用します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#b84">&#34;cp.utag_main__pn&#34;</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">b[<span style="color:#a31515">&#34;cp.utag_main__pn&#34;</span>]
 </code></pre></div></li>
 
 <li><p>既知の問題：<code>utag_main</code>セッションCookieが既に4.27より前のバージョンの<code>utag.js</code>によって設定されているウェブサイトに訪問者がアクセスすると、ページ番号（<code>_pn</code>）とセッション番号（<code>_sn</code>）の値が常に<a href="http://en.wikipedia.org/wiki/NaN">NaN</a>に設定されます。この問題は、<code>utag.js</code>バージョン4.28では解決されています。</p></li>
@@ -657,12 +657,12 @@ utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="
 
 <p>この機能を無効にすると、現在の動作を維持できます。詳しくは、後述する<a href="#utagcfgloadrulesajax">utag.cfg.load_rules_ajaxフラグ</a>の詳細を参照してください。</p>
 
-<p class="note"><code>utag.link()</code>コールで新しいタグは読み込まれません。この操作は、<code>utag.view()</code>コールでのみ行えます。</p>
+<p class="note"><i class="fas fa-info-circle"></i><code>utag.link()</code>コールで新しいタグは読み込まれません。この操作は、<code>utag.view()</code>コールでのみ行えます。</p>
 
 <p><strong>UIDによってタグを直接読み込む（<code>utag.view</code>および<code>utag.track</code>コールに対する更新）</strong></p>
 
 <p>特にAJAXを使用する高度な実装では、<code>utag.view()</code>コールを使用して新しいタグを取り込み、それを（Tealium iQの[Tags]タブに表示される）タグのUIDに基づきトリガーします。これにより、すべてのタグ配信ルールがバイパスされます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.view({page_name <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;New Page&#34;</span>}, <span style="font-weight:bold">null</span>, [<span style="color:#099">5</span>]);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.view({page_name : <span style="color:#a31515">&#34;New Page&#34;</span>}, <span style="color:#00f">null</span>, [5]);
 </code></pre></div>
 <ul>
 <li>パラメータ1：データ層</li>
@@ -675,18 +675,18 @@ utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="
 <p><strong>新しい&rdquo;メタ&rdquo;タグを自動的に読み取る</strong></p>
 
 <p>以前のバージョンの<code>utag.js</code>では、&rdquo;name=&ldquo;を含む以下の種類のメタタグがピックアップされていました。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080">meta</span> <span style="color:#008080">name</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;keywords&#34;</span> <span style="color:#008080">content</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;Apple,Tab&#34;</span> /&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;meta name=<span style="color:#a31515">&#34;keywords&#34;</span> content=<span style="color:#a31515">&#34;Apple,Tab&#34;</span> /&gt;</code></pre></div>
 <p>新しい<code>utag.js</code> 4.26では、<code>property=</code>を含むメタタグがピックアップされるようになっています（&rdquo;Open Graph&rdquo;メタタグを参照）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080">meta</span> <span style="color:#008080">property</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;og:type&#34;</span> <span style="color:#008080">content</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;video.movie&#34;</span> /&gt; </code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;meta property=<span style="color:#a31515">&#34;og:type&#34;</span> content=<span style="color:#a31515">&#34;video.movie&#34;</span> /&gt; </code></pre></div>
 <p><strong>&ldquo;qp.&ldquo;（クエリ文字列）および&rdquo;meta.&ldquo;変数のデフォルトでの&rdquo;小文字化&rdquo;の廃止</strong></p>
 
 <p>これは、<code>utag.data</code>のデフォルト動作におけるロジックの変更です。自動的に小文字にするには、<a href="#utagcfglowerqp">utag.cfg.lowerqpフラグ</a>を<code>true</code>に設定します。ただし、デフォルト設定では大文字と小文字の混在した状態が維持されます。</p>
 
-<p class="tip">以前の<code>utag.js</code>動作との後方互換性を確保するには、<code>utag.cfg.lowerqp</code>フラグをtrueに設定します。</p>
+<p class="tip"><i class="fas fa-star"></i>以前の<code>utag.js</code>動作との後方互換性を確保するには、<code>utag.cfg.lowerqp</code>フラグをtrueに設定します。</p>
 
 <p>メタタグの小文字化を有効にするには、<code>utag.cfg.lowermeta</code>フラグを<code>true</code>に設定します。これは、そのメタタグの名前と値のペアの名前にのみ適用されます。</p>
 
-<p class="note">大文字と小文字の混在するクエリ文字列パラメータがある場合は、それに正確に一致するように[Data Sources]タブのデータソースの名前を更新する必要があります。また、このクエリ文字列タイプのデータソースを参照するすべてのコードも更新しなければなりません。</p>
+<p class="note"><i class="fas fa-info-circle"></i>大文字と小文字の混在するクエリ文字列パラメータがある場合は、それに正確に一致するように[Data Sources]タブのデータソースの名前を更新する必要があります。また、このクエリ文字列タイプのデータソースを参照するすべてのコードも更新しなければなりません。</p>
 
 <p><strong><code>utag_main</code> Cookie内の新しい値</strong></p>
 
@@ -704,7 +704,7 @@ utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="
 <p><strong>セッション開始のトラッキング</strong></p>
 
 <p>訪問者のセッションの開始時に、空のファイルである<code>utag.v.js</code>のリクエストが1回実行されます。このファイルは、セッション数のログを取得するためにTealium内部で使用されます。HTTPリクエストURLは、次のような形式になります。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">http://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a<span style="font-weight:bold">=</span>tealium/main/201306012057&amp;<span style="color:#008080">cb</span><span style="font-weight:bold">=</span><span style="color:#099">1370276499302</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">http://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=tealium/main/201306012057&amp;cb=1370276499302</code></pre></div>
 <p>新しいCookie値、<code>utag_main__ss</code>はトリガーのタイミングを決めるために使用されます。この値はセッションの最初のイベントでのみ送信されます。このリクエストは、すべてのタグがトリガーされた後、最後に送信されます。</p>
 
 <p><strong>新しい&rdquo;Tealium&rdquo;値</strong></p>
@@ -724,10 +724,10 @@ utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="
 <p>ドメインURLの例：（<a href="http://www.example.com?param1=value1&amp;param2=value2#hash1=value3）">http://www.example.com?param1=value1&amp;param2=value2#hash1=value3）</a></p>
 
 <p>以前：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.data <span style="font-weight:bold">=</span> { <span style="color:#b84">&#34;qp.param1&#34;</span> <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value1&#34;</span>, <span style="color:#b84">&#34;qp.param2&#34;</span> <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value2&#34;</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.data = { <span style="color:#a31515">&#34;qp.param1&#34;</span> : <span style="color:#a31515">&#34;value1&#34;</span>, <span style="color:#a31515">&#34;qp.param2&#34;</span> : <span style="color:#a31515">&#34;value2&#34;</span>}
 </code></pre></div>
 <p>新：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.data <span style="font-weight:bold">=</span> { <span style="color:#b84">&#34;qp.param1&#34;</span> <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value1&#34;</span>, <span style="color:#b84">&#34;qp.param2&#34;</span> <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value2&#34;</span>, <span style="color:#b84">&#34;qp.hash1&#34;</span>  <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;value3&#34;</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.data = { <span style="color:#a31515">&#34;qp.param1&#34;</span> : <span style="color:#a31515">&#34;value1&#34;</span>, <span style="color:#a31515">&#34;qp.param2&#34;</span> : <span style="color:#a31515">&#34;value2&#34;</span>, <span style="color:#a31515">&#34;qp.hash1&#34;</span>  : <span style="color:#a31515">&#34;value3&#34;</span>}
 </code></pre></div>
 <p><strong><code>utag.view</code>および<code>utag.link</code>コールで利用可能なすべてのページデータ</strong></p>
 
@@ -738,11 +738,11 @@ utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="
 <p><strong>utag.cfgの新しいオプション</strong></p>
 
 <p>プリローダーをスコープとする<a href="https://community.tealiumiq.com/t5/Tealium-iQ/JavaScript-Code-Extension/ta-p/11925">JavaScriptコード拡張機能</a>とグローバル変数<code>window.utag_cfg_ovrd</code>を使用します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#998;font-style:italic">// JS Code in Preloader Extension
-</span><span style="color:#998;font-style:italic"></span><span style="color:#999">window</span>.utag_cfg_ovrd <span style="font-weight:bold">=</span> {
-    <span style="color:#b84">&#34;noview&#34;</span>          <span style="font-weight:bold">:</span> <span style="font-weight:bold">true</span>,
-    <span style="color:#b84">&#34;lowerqp&#34;</span>         <span style="font-weight:bold">:</span> <span style="font-weight:bold">true</span>,
-    <span style="color:#b84">&#34;load_rules_ajax&#34;</span> <span style="font-weight:bold">:</span> <span style="font-weight:bold">false</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#008000">// JS Code in Preloader Extension
+</span><span style="color:#008000"></span>window.utag_cfg_ovrd = {
+    <span style="color:#a31515">&#34;noview&#34;</span>          : <span style="color:#00f">true</span>,
+    <span style="color:#a31515">&#34;lowerqp&#34;</span>         : <span style="color:#00f">true</span>,
+    <span style="color:#a31515">&#34;load_rules_ajax&#34;</span> : <span style="color:#00f">false</span>
 };
 </code></pre></div>
 <p><strong>以下の新しいオプションを利用できます。</strong></p>
@@ -833,11 +833,11 @@ utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="
 
 <p>&ldquo;Cookieなし&rdquo;フラグの<code>utag.cfg.nocookie</code>も追加しています。<code>utag.cfg.nocookie</code>値が定義され、trueに設定されると、<code>utag.js</code>では<code>utag_main</code> Cookieが書き込まれなくなります。</p>
 
-<p class="note">既存の<code>utag_main</code> Cookieは変更されることも削除されることもありません。一部のタグは<code>utag_main</code> Cookieがあることを前提としているので、このフラグは自己責任で使用してください。</p>
+<p class="note"><i class="fas fa-info-circle"></i>既存の<code>utag_main</code> Cookieは変更されることも削除されることもありません。一部のタグは<code>utag_main</code> Cookieがあることを前提としているので、このフラグは自己責任で使用してください。</p>
 
 <p>サンプル（プリローダーをスコープとするJavaScriptコード拡張機能）：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="font-weight:bold">var</span> utag_cfg_ovrd<span style="font-weight:bold">=</span>{};  
-utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">var</span> utag_cfg_ovrd={};  
+utag_cfg_ovrd.nocookie=<span style="color:#00f">true</span>;
 </code></pre></div>
 <p><code>utag.ut.decode</code>は、より安全なバージョンの<code>decodeURIComponent</code>です（<code>decodeURIComponent</code>から例外が発生した場合、アンエスケープが使用されます）</p>
 
@@ -854,14 +854,14 @@ utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-w
 <p>デバッグを有効にする方法：コンソールで<code>document.cookie=&quot;utagdb=true&quot;</code>を実行します</p>
 
 <p>サンプル<code>utag.DB</code>コール：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.DB(<span style="color:#b84">&#34;Inside of DOM Ready Extension&#34;</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.DB(<span style="color:#a31515">&#34;Inside of DOM Ready Extension&#34;</span>);
 </code></pre></div>
 <h4 id="バージョン4-003">バージョン4.003</h4>
 
 <p><strong>リリース：</strong>2012年10月</p>
 
 <p><code>utag_main</code> Cookieを特定のタイムスタンプの時点で有効期限切れに設定する機能を追加。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.loader.SC(<span style="color:#b84">&#34;utag_main&#34;</span>,{<span style="color:#b84">&#34;mycookie123&#34;</span><span style="font-weight:bold">:</span><span style="color:#b84">&#34;testing123;exp-1351111959896u&#34;</span>});
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">utag.loader.SC(<span style="color:#a31515">&#34;utag_main&#34;</span>,{<span style="color:#a31515">&#34;mycookie123&#34;</span>:<span style="color:#a31515">&#34;testing123;exp-1351111959896u&#34;</span>});
 </code></pre></div>
 <p>タイムスタンプの末尾にある&rdquo;u&rdquo;に注意してください</p>
 
@@ -1313,7 +1313,7 @@ utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-w
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

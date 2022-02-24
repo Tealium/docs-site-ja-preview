@@ -304,33 +304,33 @@ var utag_data = {
 <p>アプリ拡張機能には、ホストiOSアプリ（使用可能な場合）と共有されない独自のサンドボックスデータストレージがあります。そのため、アプリが初めて起動されると、新しい永続的な訪問者IDがデフォルトで生成されます。</p>
 
 <p>iOSアプリ、Todayウィジェット、およびwatchOS拡張機能を使用している場合は、同じ訪問者に対して3つの異なる訪問者IDが生成される問題が発生します。Visitor Stitchingを使用しており、アプリユーザーの既知の訪問者IDが既にある場合、これは問題になりません。この状況を回避するには、アプリとその拡張機能の間で訪問者IDを同期します。これを行うには、Tealiumを初期化するときに、アプリ拡張機能の<code>TealiumConfig</code>オブジェクトで現在のTealiumファーストパーティ訪問者IDを渡します。このIDは保存され、再生成されることなく、アプリの今後の起動で使用されます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">TealiumHelper</span> {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">class</span> <span style="color:#2b91af">TealiumHelper</span> {
 
-	<span style="font-weight:bold">var</span> <span style="color:#008080">tealium</span>: Tealium?
+	<span style="color:#00f">var</span> tealium: Tealium?
 
-	<span style="color:#998;font-style:italic">// ...</span>
+	<span style="color:#008000">// ...</span>
 
-	<span style="color:#998;font-style:italic">// Return the current visitor ID from the Tealium Swift library on the iOS app</span>
-	<span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">getVisitorId</span>() -&gt; <span style="color:#999">String</span>? {
-		<span style="font-weight:bold">return</span> <span style="font-weight:bold">self</span>.tealium.visitorId
+	<span style="color:#008000">// Return the current visitor ID from the Tealium Swift library on the iOS app</span>
+	<span style="color:#00f">func</span> getVisitorId() -&gt; String? {
+		<span style="color:#00f">return</span> <span style="color:#00f">self</span>.tealium.visitorId
 	}
 
-	<span style="color:#998;font-style:italic">// On the app extension, pass the ID retrieved from the iOS app in the config object</span>
-	<span style="font-weight:bold">private</span> <span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">initTealium</span>(existingVisitorId id: <span style="color:#999">String</span>) {
-		<span style="font-weight:bold">let</span> <span style="color:#008080">config</span> = TealiumConfig(account: <span style="color:#b84">&#34;ACCOUNT&#34;</span>,
- 	       		                 profile: <span style="color:#b84">&#34;PROFILE&#34;</span>,
-        	   	                 environment: <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>,
-           		                 datasource: <span style="color:#b84">&#34;DATASOURCE&#34;</span>)
+	<span style="color:#008000">// On the app extension, pass the ID retrieved from the iOS app in the config object</span>
+	<span style="color:#00f">private</span> <span style="color:#00f">func</span> initTealium(existingVisitorId id: String) {
+		<span style="color:#00f">let</span> config = TealiumConfig(account: <span style="color:#a31515">&#34;ACCOUNT&#34;</span>,
+ 	       		                 profile: <span style="color:#a31515">&#34;PROFILE&#34;</span>,
+        	   	                 environment: <span style="color:#a31515">&#34;ENVIRONMENT&#34;</span>,
+           		                 datasource: <span style="color:#a31515">&#34;DATASOURCE&#34;</span>)
 
-		<span style="color:#998;font-style:italic">// existing ID is used as the first party ID in the app extension</span>
+		<span style="color:#008000">// existing ID is used as the first party ID in the app extension</span>
         config.existingVisitorId = id
-        <span style="font-weight:bold">self</span>.tealium = Tealium(config: config)
+        <span style="color:#00f">self</span>.tealium = Tealium(config: config)
 	}
 
 }</code></pre></div>
 <p>または、訪問者IDを一元的に生成し、初期化時にそれを各Tealiumインスタンスに渡します。UUIDを使用することが推奨されます。</p>
 
-<p class="tip">ファーストパーティの訪問者IDには、メールアドレスなどの単純なIDを使用しないでください。</p>
+<p class="tip"><i class="fas fa-star"></i>ファーストパーティの訪問者IDには、メールアドレスなどの単純なIDを使用しないでください。</p>
 
 </div>
 
@@ -776,7 +776,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

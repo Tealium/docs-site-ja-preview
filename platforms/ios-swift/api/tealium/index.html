@@ -337,7 +337,7 @@ var utag_data = {
 <h3 id="jointrace"><code>joinTrace()</code></h3>
 
 <p>指定されたIDでトレースに参加します。このトレースは、アプリのセッション中、<code>leaveTrace()</code>が呼び出されるまでアクティブなままになります。Tealium Customer Data Hubでのトレース機能の詳細については、<a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Trace/ta-p/12058">こちら</a>を参照してください。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">joinTrace(traceId: <span style="color:#999">String</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">joinTrace(traceId: String)</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -361,7 +361,7 @@ var utag_data = {
 <h3 id="leavetrace"><code>leaveTrace()</code></h3>
 
 <p>以前に参加したトレースから退出し、訪問者セッションを終了します。トレースから退出する際に訪問者セッションのトレースを保持するパラメータは任意です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">tealium?.leaveTrace(killVisitorSession: <span style="font-weight:bold">false</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">tealium?.leaveTrace(killVisitorSession: <span style="color:#00f">false</span>)</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -413,7 +413,7 @@ var utag_data = {
 <h3 id="track"><code>track()</code></h3>
 
 <p>関連付けられたデータを含むイベントをトラッキングし、任意でコールバック関数をトリガーします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">track(title:<span style="color:#999">String</span>, data:[<span style="color:#999">String</span>:<span style="color:#999">Any</span>], completion:ClosureType)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">track(title:String, data:[String:Any], completion:ClosureType)</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -451,7 +451,7 @@ var utag_data = {
 <h3 id="trackview"><code>trackView()</code></h3>
 
 <p>関連付けられたデータを含むスクリーンビューをトラッキングし、任意でコールバック関数をトリガーします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">trackView(title:<span style="color:#999">String</span>, data:[<span style="color:#999">String</span>:<span style="color:#999">Any</span>], completion:ClosureType)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">trackView(title:String, data:[String:Any], completion:ClosureType)</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -489,7 +489,7 @@ var utag_data = {
 <h3 id="visitorid"><code>visitorId</code></h3>
 
 <p>ランダムに生成された一意の永続的な訪問者IDを返します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">let</span> <span style="color:#008080">visitorId</span>: <span style="color:#999">String</span> = tealium.visitorId</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">let</span> visitorId: String = tealium.visitorId</code></pre></div>
 </div>
 
 <b class="pv1 br2 dib tc mv3 link">
@@ -922,7 +922,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

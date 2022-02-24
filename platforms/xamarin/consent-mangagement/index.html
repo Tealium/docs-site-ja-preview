@@ -308,41 +308,41 @@ var utag_data = {
 </ul>
 
 <p>同意管理を有効にするには、以下の例のように<code>TealiumConfig</code>のコンストラクタ内で任意のパラメータを渡すか、プロパティとして設定します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">TealiumConfig tealConfig = <span style="font-weight:bold">new</span> TealiumConfig(
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">TealiumConfig tealConfig = <span style="color:#00f">new</span> TealiumConfig(
         TealiumConsts.INSTANCE_ID,
         TealiumConsts.ACCOUNT,
         TealiumConsts.PROFILE,
         TealiumConsts.ENVIRONMENT,
-        <span style="font-weight:bold">true</span>,
+        <span style="color:#00f">true</span>,
         commands,
         advConfig,
-        <span style="font-weight:bold">false</span>); <span style="color:#998;font-style:italic">// optional Consent Manager Enablement
-</span><span style="color:#998;font-style:italic"></span>
-<span style="color:#998;font-style:italic">// or subsequently enable it:
-</span><span style="color:#998;font-style:italic"></span>tealConfig.IsConsentManagerEnabled = <span style="font-weight:bold">true</span>;
+        <span style="color:#00f">false</span>); <span style="color:#008000">// optional Consent Manager Enablement
+</span><span style="color:#008000"></span>
+<span style="color:#008000">// or subsequently enable it:
+</span><span style="color:#008000"></span>tealConfig.IsConsentManagerEnabled = <span style="color:#00f">true</span>;
 
-<span style="color:#998;font-style:italic">// initialise your Tealium Instance:
-</span><span style="color:#998;font-style:italic"></span><span style="color:#458;font-weight:bold">var</span> tealium = instanceManager.CreateInstance(tealConfig);
+<span style="color:#008000">// initialise your Tealium Instance:
+</span><span style="color:#008000"></span><span style="color:#2b91af">var</span> tealium = instanceManager.CreateInstance(tealConfig);
 </code></pre></div>
 <h2 id="同意ステータス">同意ステータス</h2>
 
 <p>AndroidおよびiOSのネイティブSDKと同様に、同意管理が有効になっている場合、新しいユーザーは未知の状態だと見なされます。同意ステータスがオプトインまたはオプトアウトされ、各イベントが送信または消去されるまで、トラッキング要求がキューに登録されます。</p>
 
 <p>以下の例のように、<code>TealiumConfig</code>オブジェクトのプロパティを使って初期ステータスをオーバーライドします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#998;font-style:italic">// enable Consent Manager:
-</span><span style="color:#998;font-style:italic"></span>tealConfig.IsConsentManagerEnabled = <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#008000">// enable Consent Manager:
+</span><span style="color:#008000"></span>tealConfig.IsConsentManagerEnabled = <span style="color:#00f">true</span>;
 
-<span style="color:#998;font-style:italic">// Set Users to be Consented by default:
-</span><span style="color:#998;font-style:italic"></span>tealConfig.InitialUserConsentStatus = ConsentManager.ConsentStatus.Consented;
-<span style="color:#998;font-style:italic">// Or set Users to be Not Consented by default:
-</span><span style="color:#998;font-style:italic"></span>tealConfig.InitialUserConsentStatus = ConsentManager.ConsentStatus.NotConsented;
+<span style="color:#008000">// Set Users to be Consented by default:
+</span><span style="color:#008000"></span>tealConfig.InitialUserConsentStatus = ConsentManager.ConsentStatus.Consented;
+<span style="color:#008000">// Or set Users to be Not Consented by default:
+</span><span style="color:#008000"></span>tealConfig.InitialUserConsentStatus = ConsentManager.ConsentStatus.NotConsented;
 
-<span style="color:#998;font-style:italic">// Opt users into All Categories
-</span><span style="color:#998;font-style:italic"></span>tealConfig.InitialUserConsentCategories = ConsentManager.AllCategories;
-<span style="color:#998;font-style:italic">// or none:
-</span><span style="color:#998;font-style:italic"></span>tealConfig.InitialUserConsentCategories = ConsentManager.NoCategories;
-<span style="color:#998;font-style:italic">// or partial opt-in, only to Analytics and Mobile categories.
-</span><span style="color:#998;font-style:italic"></span>tealConfig.InitialUserConsentCategories = <span style="font-weight:bold">new</span> ConsentCategory[]{
+<span style="color:#008000">// Opt users into All Categories
+</span><span style="color:#008000"></span>tealConfig.InitialUserConsentCategories = ConsentManager.AllCategories;
+<span style="color:#008000">// or none:
+</span><span style="color:#008000"></span>tealConfig.InitialUserConsentCategories = ConsentManager.NoCategories;
+<span style="color:#008000">// or partial opt-in, only to Analytics and Mobile categories.
+</span><span style="color:#008000"></span>tealConfig.InitialUserConsentCategories = <span style="color:#00f">new</span> ConsentCategory[]{
     ConsentManager.ConsentCategory.Analytics,
         ConsentManager.ConsentCategory.Mobile
 };
@@ -352,13 +352,13 @@ var utag_data = {
 <p>Tealiumインスタンスから<code>ConsentManager</code>プロパティを介して、Consent Managementと直接やりとりします。</p>
 
 <p>ユーザーの同意選択を更新する必要がある場合は、以下の例のように<code>ConsentManager.ConsentCategory</code>および<code>ConsentManager.ConsentStatus</code>で利用可能な列挙型の値の1つを渡します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#998;font-style:italic">// if the user is in an Unknown state, then the following code triggers any queued events are sent after this:
-</span><span style="color:#998;font-style:italic"></span>ITealium tealium = instanceManager.GetExistingInstance(TealiumConsts.INSTANCE_ID);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#008000">// if the user is in an Unknown state, then the following code triggers any queued events are sent after this:
+</span><span style="color:#008000"></span>ITealium tealium = instanceManager.GetExistingInstance(TealiumConsts.INSTANCE_ID);
 tealium.ConsentManager.UserConsentStatus = ConsentManager.ConsentStatus.Consented;
 
-<span style="color:#998;font-style:italic">// The previous inherently opts the user into all categories as none have been provide.
-</span><span style="color:#998;font-style:italic">// To grant consent and opt into a subset of categories, use the overload:
-</span><span style="color:#998;font-style:italic"></span>tealium.ConsentManager.UserConsentStatusWithCategories(ConsentManager.ConsentStatus.Consented, <span style="font-weight:bold">new</span> ConsentCategory[]{
+<span style="color:#008000">// The previous inherently opts the user into all categories as none have been provide.
+</span><span style="color:#008000">// To grant consent and opt into a subset of categories, use the overload:
+</span><span style="color:#008000"></span>tealium.ConsentManager.UserConsentStatusWithCategories(ConsentManager.ConsentStatus.Consented, <span style="color:#00f">new</span> ConsentCategory[]{
     ConsentManager.ConsentCategory.Analytics
 });
 </code></pre></div>
@@ -802,7 +802,7 @@ tealium.ConsentManager.ResetUserConsentPreferences();
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

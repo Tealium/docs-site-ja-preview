@@ -369,9 +369,9 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Udo <span style="color:#900;font-weight:bold">data</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> Udo();
-data.<span style="color:#008080">put</span>(<span style="color:#b84">&#34;KEY&#34;</span>, <span style="color:#b84">&#34;VALUE&#34;</span>);
-tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#008080">addPersistentData</span>(data);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Udo data = <span style="color:#00f">new</span> Udo();
+data.put(<span style="color:#a31515">&#34;KEY&#34;</span>, <span style="color:#a31515">&#34;VALUE&#34;</span>);
+tealium.getDataManager().addPersistentData(data);</code></pre></div>
 <h3 id="deletepersistentdata"><code>deletePersistentData()</code></h3>
 
 <p><code>DataManager</code>を使用して、削除するキーのリストを指定することで、以前に永続化されたデータを削除します。</p>
@@ -395,9 +395,9 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="font-weight:bold">&lt;</span>String<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">list</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> List<span style="font-weight:bold">&lt;&gt;</span>();
-list.<span style="color:#008080">append</span>(<span style="color:#b84">&#34;key_to_delete&#34;</span>);
-tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#008080">deletePersistentData</span>(list);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List&lt;String&gt; list = <span style="color:#00f">new</span> List&lt;&gt;();
+list.append(<span style="color:#a31515">&#34;key_to_delete&#34;</span>);
+tealium.getDataManager().deletePersistentData(list);</code></pre></div>
 <h3 id="getdatamanager"><code>getDataManager()</code></h3>
 
 <p>コール時のデータを処理し、永続性データを扱う<code>DataManager</code>オブジェクトを取得します。</p>
@@ -417,7 +417,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">DataManager <span style="color:#900;font-weight:bold">dm</span> <span style="font-weight:bold">=</span> tealium.<span style="color:#008080">getDataManager</span>()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">DataManager dm = tealium.getDataManager()</code></pre></div>
 <h3 id="getpersistentdata"><code>getPersistentData()</code></h3>
 
 <p><code>DataManager</code>を使用して、永続化されたデータを取得します。</p>
@@ -439,7 +439,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Udo <span style="color:#900;font-weight:bold">persistentData</span> <span style="font-weight:bold">=</span> tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#008080">getPersistentData</span>()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Udo persistentData = tealium.getDataManager().getPersistentData()</code></pre></div>
 <h3 id="getsessionid"><code>getSessionId()</code></h3>
 
 <p><code>DataManager</code>を使用して、現在のセッションIDを取得します。セッションIDは、<code>Tealium</code>オブジェクトの初期化時に作成されます。</p>
@@ -461,7 +461,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#008080">getSessionId</span>() </code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.getDataManager().getSessionId() </code></pre></div>
 <h3 id="resetsessionid"><code>resetSessionId()</code></h3>
 
 <p><code>DataManager</code>を使用して、セッションIDをリセットします。アプリの起動時以外に新しいセッションを開始する必要がある場合に使用します。</p>
@@ -483,7 +483,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#008080">resetSessionId</span>()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.getDataManager().resetSessionId()</code></pre></div>
 <h3 id="track"><code>track()</code></h3>
 
 <p>イベントをトラッキングします。</p>
@@ -567,15 +567,15 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 <h3 id="build"><code>build()</code></h3>
 
 <p>ビルドを実行します。<code>setPersistentData()</code>メソッドで明示的に設定されていない場合に永続性データを設定します。setCollectDispatcher()メソッドで明示的に設定されていない場合に収集ディスパッチャーを設定します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.<span style="color:#008080">build</span>();</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.build();</code></pre></div>
 <h3 id="builder"><code>Builder()</code></h3>
 
 <p>Tealiumオブジェクトをインスタンス化するためのコンストラクタ。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium.<span style="color:#008080">Builder</span>(account, profile, environment).<span style="color:#008080">build</span>()</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#998;font-style:italic">// Init Tealium
-</span><span style="color:#998;font-style:italic"></span>Tealium <span style="color:#900;font-weight:bold">tealium</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> Tealium.<span style="color:#008080">Builder</span>(account, profile)
-    .<span style="color:#008080">setEnvironment</span>(environment)
-    .<span style="color:#008080">setDatasource</span>(datasource)
-    .<span style="color:#008080">build</span>();</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium.Builder(account, profile, environment).build()</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Init Tealium
+</span><span style="color:#008000"></span>Tealium tealium = <span style="color:#00f">new</span> Tealium.Builder(account, profile)
+    .setEnvironment(environment)
+    .setDatasource(datasource)
+    .build();</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -620,7 +620,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 <h3 id="setdatasource"><code>setDatasource()</code></h3>
 
 <p>データソースキーを設定します。ない場合は<code>null</code>に設定されます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.<span style="color:#008080">setEnvironment</span>(datasource);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.setEnvironment(datasource);</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -644,7 +644,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 <h3 id="setenvironment"><code>setEnvironment()</code></h3>
 
 <p>Tealium環境の名前を設定します</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.<span style="color:#008080">setEnvironment</span>(environment);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.setEnvironment(environment);</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -668,7 +668,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
 <h3 id="setpersistentdata"><code>setPersistentData()</code></h3>
 
 <p>永続性データを設定します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.<span style="color:#008080">setPersistentData</span>(persistentData);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tealium.setPersistentData(persistentData);</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -1133,7 +1133,7 @@ tealium.<span style="color:#008080">getDataManager</span>().<span style="color:#
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

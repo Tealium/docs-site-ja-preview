@@ -290,23 +290,23 @@ var utag_data = {
 <p>イベントは、イベントデータの<code>tealium_event</code>変数を設定することで、EventStreamで特定されます。インストールライブラリのほとんどが、単純にトラッキングコールでイベントパラメータを取ることで<code>tealium_event</code>が設定されますが、HTTP APIでは、これを明示的に設定します。このテストイベントでは、<code>&quot;search&quot;</code>というイベントを送信します。</p>
 
 <p>GETメソッドを使うと、テストイベントのURLは次のようになります。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">https<span style="font-weight:bold">:</span><span style="color:#998;font-style:italic">//collect.tealiumiq.com/event?
-</span><span style="color:#998;font-style:italic"></span>tealium_account<span style="font-weight:bold">=</span>ACCOUNT
-<span style="font-weight:bold">&amp;</span>tealium_profile<span style="font-weight:bold">=</span>PROFILE
-<span style="font-weight:bold">&amp;</span>tealium_datasource<span style="font-weight:bold">=</span>DATASOURCE
-<span style="font-weight:bold">&amp;</span>tealium_event<span style="font-weight:bold">=</span>search
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">https:<span style="color:#008000">//collect.tealiumiq.com/event?
+</span><span style="color:#008000"></span>tealium_account=ACCOUNT
+&amp;tealium_profile=PROFILE
+&amp;tealium_datasource=DATASOURCE
+&amp;tealium_event=search
 </code></pre></div>
 <p>以下は、Swift（iOS）の対応するコードの例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">var</span> tealConfig <span style="font-weight:bold">=</span> TealiumConfig(
-      account<span style="font-weight:bold">:</span> <span style="color:#b84">&#34;ACCOUNT&#34;</span>,
-      profile<span style="font-weight:bold">:</span> <span style="color:#b84">&#34;PROFILE&#34;</span>,
-      environment<span style="font-weight:bold">:</span> <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>,
-      datasource<span style="font-weight:bold">:</span> <span style="color:#b84">&#34;DATASOURCE&#34;</span>)
-<span style="font-weight:bold">let</span> tealium <span style="font-weight:bold">=</span> Tealium(config<span style="font-weight:bold">:</span> tealConfig)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">var</span> tealConfig = TealiumConfig(
+      account: <span style="color:#a31515">&#34;ACCOUNT&#34;</span>,
+      profile: <span style="color:#a31515">&#34;PROFILE&#34;</span>,
+      environment: <span style="color:#a31515">&#34;ENVIRONMENT&#34;</span>,
+      datasource: <span style="color:#a31515">&#34;DATASOURCE&#34;</span>)
+<span style="color:#00f">let</span> tealium = Tealium(config: tealConfig)
 
-<span style="color:#998;font-style:italic">// Tracked event &#34;search&#34; automatically results in:
-</span><span style="color:#998;font-style:italic">// tealium_event : &#34;search&#34; in the event data
-</span><span style="color:#998;font-style:italic"></span>tealium<span style="font-weight:bold">?</span>.trackEventWithTitle(<span style="color:#b84">&#34;search&#34;</span>, dataSources<span style="font-weight:bold">:</span> [<span style="font-weight:bold">:</span>])
+<span style="color:#008000">// Tracked event &#34;search&#34; automatically results in:
+</span><span style="color:#008000">// tealium_event : &#34;search&#34; in the event data
+</span><span style="color:#008000"></span>tealium?.trackEventWithTitle(<span style="color:#a31515">&#34;search&#34;</span>, dataSources: [:])
 </code></pre></div>
 </div>
 

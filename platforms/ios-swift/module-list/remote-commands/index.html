@@ -319,7 +319,7 @@ var utag_data = {
 <h3 id="cocoapods">CocoaPods</h3>
 
 <p>RemoteCommandsモジュールをCocoaPodsによってインストールするには、Podfileに以下のポッドを追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">pod <span style="color:#b84">&#39;tealium-swift/TealiumRemoteCommands&#39;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">pod <span style="color:#a31515">&#39;tealium-swift/TealiumRemoteCommands&#39;</span></code></pre></div>
 <p>フレームワークは自動でインスタンス化され、<code>TealiumCore</code>ポッドに依存しています。iOS向けCocoaPodsのインストールの詳細については、<a href="/platforms/ios-swift/install/#cocoapods">こちら</a>を参照してください。</p>
 
 <h3 id="carthage">Carthage</h3>
@@ -330,10 +330,10 @@ var utag_data = {
 <li><p>Xcodeで対象アプリの[General]構成ページに移動します。</p></li>
 
 <li><p>以下のフレームワークを<strong>[Embedded Binaries]</strong>セクションに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">TealiumRemoteCommands<span style="font-weight:bold">.</span>framework</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">TealiumRemoteCommands.framework</code></pre></div></li>
 
 <li><p>RemoteCommands APIを対話的に操作する必要がある場合は、次の必須のインポートステートメントをプロジェクトに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">import</span> <span style="color:#458;font-weight:bold">TealiumRemoteCommands</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">import</span> <span style="color:#2b91af">TealiumRemoteCommands</span></code></pre></div></li>
 </ol>
 
 <p>フレームワークは自動でインスタンス化され、<code>TealiumCore</code>に依存しています。追加のインポートステートメントは必要ありません。iOS向けCarthageのインストールの詳細については、<a href="/platforms/ios-swift/install/#carthage">こちら</a>を参照してください。</p>
@@ -341,22 +341,22 @@ var utag_data = {
 <h2 id="例">例</h2>
 
 <p>Tealium IQでリモートコマンドタグが設定され、モジュールがアプリにインストールされたら、次の例に示すように、次の行を初期化に追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">TealiumHelper</span> {
-	<span style="font-weight:bold">var</span> <span style="color:#008080">tealium</span>: Tealium?
-	<span style="color:#998;font-style:italic">// ...</span>
-	<span style="font-weight:bold">private</span> <span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">initTealium</span>() {
-		<span style="font-weight:bold">let</span> <span style="color:#008080">config</span> = TealiumConfig(account: <span style="color:#b84">&#34;ACCOUNT&#34;</span>,
- 	       		                 profile: <span style="color:#b84">&#34;PROFILE&#34;</span>,
-        	   	                 environment: <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>,
-           		                 datasource: <span style="color:#b84">&#34;DATASOURCE&#34;</span>)
-    	<span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">remoteCommands</span> = <span style="font-weight:bold">self</span>?.tealium?.remoteCommands() <span style="font-weight:bold">else</span> {
-          <span style="font-weight:bold">return</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">class</span> <span style="color:#2b91af">TealiumHelper</span> {
+	<span style="color:#00f">var</span> tealium: Tealium?
+	<span style="color:#008000">// ...</span>
+	<span style="color:#00f">private</span> <span style="color:#00f">func</span> initTealium() {
+		<span style="color:#00f">let</span> config = TealiumConfig(account: <span style="color:#a31515">&#34;ACCOUNT&#34;</span>,
+ 	       		                 profile: <span style="color:#a31515">&#34;PROFILE&#34;</span>,
+        	   	                 environment: <span style="color:#a31515">&#34;ENVIRONMENT&#34;</span>,
+           		                 datasource: <span style="color:#a31515">&#34;DATASOURCE&#34;</span>)
+    	<span style="color:#00f">guard</span> <span style="color:#00f">let</span> remoteCommands = <span style="color:#00f">self</span>?.tealium?.remoteCommands() <span style="color:#00f">else</span> {
+          <span style="color:#00f">return</span>
         }
-        <span style="font-weight:bold">let</span> <span style="color:#008080">brazeCommand</span> = BrazeCommand(brazeTracker: BrazeTracker())
-        <span style="font-weight:bold">let</span> <span style="color:#008080">brazeRemoteCommand</span> = brazeCommand.remoteCommand()
+        <span style="color:#00f">let</span> brazeCommand = BrazeCommand(brazeTracker: BrazeTracker())
+        <span style="color:#00f">let</span> brazeRemoteCommand = brazeCommand.remoteCommand()
         remoteCommands.add(brazeRemoteCommand)
 
-		<span style="color:#998;font-style:italic">// ...</span>
+		<span style="color:#008000">// ...</span>
 	}
 }</code></pre></div>
 <h2 id="データ層">データ層</h2>
@@ -406,65 +406,65 @@ var utag_data = {
 </table>
 
 <p>以下は使用例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">let</span> <span style="color:#008080">customCommand</span> = TealiumRemoteCommand(commandId: <span style="color:#b84">&#34;logger&#34;</span>,
-                                        description: <span style="color:#b84">&#34;Log Response object to console&#34;</span>,
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">let</span> customCommand = TealiumRemoteCommand(commandId: <span style="color:#a31515">&#34;logger&#34;</span>,
+                                        description: <span style="color:#a31515">&#34;Log Response object to console&#34;</span>,
                                         queue: DispatchQueue.main)
-                                        { (response) <span style="font-weight:bold">in</span>
-                                            <span style="color:#998;font-style:italic">// code to execute</span>
-                                            print(<span style="color:#b84">&#34;Custom command response: (response)&#34;</span>)
+                                        { (response) <span style="color:#00f">in</span>
+                                            <span style="color:#008000">// code to execute</span>
+                                            print(<span style="color:#a31515">&#34;Custom command response: (response)&#34;</span>)
                                         })</code></pre></div>
 <h3 id="add"><code>add()</code></h3>
 
-<p class="note">1.6.5の時点では、<code>TealiumConfig</code>の<a href="/platforms/ios-swift/class-definitions/tealium-config/#addremotecommand"><code>addRemoteCommand()</code></a>メソッドを使用してリモートコマンドを追加することを推奨します。</p>
+<p class="note"><i class="fas fa-info-circle"></i>1.6.5の時点では、<code>TealiumConfig</code>の<a href="/platforms/ios-swift/class-definitions/tealium-config/#addremotecommand"><code>addRemoteCommand()</code></a>メソッドを使用してリモートコマンドを追加することを推奨します。</p>
 
 <p>後でトリガーするために、指定したリモートコマンドをTealiumに登録します。新しいリモートコマンドを追加する前に、Tealiumを初期化しておく必要があります。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">add(remoteCommand: TealiumRemoteCommand)</code></pre></div>
 <p>以下は使用例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">var</span> <span style="color:#008080">tealium</span>: Tealium?
-<span style="font-weight:bold">let</span> <span style="color:#008080">customCommand</span> = TealiumRemoteCommand(commandId: <span style="color:#b84">&#34;logger&#34;</span>,
-    description: <span style="font-weight:bold">nil</span>,
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">var</span> tealium: Tealium?
+<span style="color:#00f">let</span> customCommand = TealiumRemoteCommand(commandId: <span style="color:#a31515">&#34;logger&#34;</span>,
+    description: <span style="color:#00f">nil</span>,
     queue: DispatchQueue.main)
-    { response <span style="font-weight:bold">in</span>
-        <span style="color:#998;font-style:italic">// code to execute</span>
-        print(<span style="color:#b84">&#34;Custom command response: (response)&#34;</span>)
+    { response <span style="color:#00f">in</span>
+        <span style="color:#008000">// code to execute</span>
+        print(<span style="color:#a31515">&#34;Custom command response: (response)&#34;</span>)
     })
-<span style="font-weight:bold">if</span> <span style="font-weight:bold">let</span> <span style="color:#008080">remoteCommands</span> = <span style="font-weight:bold">self</span>.tealium?.remoteCommands() {
+<span style="color:#00f">if</span> <span style="color:#00f">let</span> remoteCommands = <span style="color:#00f">self</span>.tealium?.remoteCommands() {
         remoteCommands.add(customCommand)
-} <span style="font-weight:bold">else</span> {
-print(<span style="color:#b84">&#34;Remote commands not available&#34;</span>)
+} <span style="color:#00f">else</span> {
+print(<span style="color:#a31515">&#34;Remote commands not available&#34;</span>)
 }</code></pre></div>
 <h3 id="remove"><code>remove()</code></h3>
 
 <p>以前に登録したリモートコマンドを削除して、再度トリガーされないようにします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">remove(commandWithId: <span style="color:#999">String</span>)</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#998;font-style:italic">// assumes &#34;tealium&#34; previously instantiated</span>
-tealium?.remoteCommands()?.remove(commandWithId: <span style="color:#b84">&#34;logger&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">remove(commandWithId: String)</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#008000">// assumes &#34;tealium&#34; previously instantiated</span>
+tealium?.remoteCommands()?.remove(commandWithId: <span style="color:#a31515">&#34;logger&#34;</span>)</code></pre></div>
 <h3 id="disableremotecommands"><code>disableRemoteCommands()</code></h3>
 
 <p>RemoteCommandsモジュールを無効にします。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">disableRemoteCommands()</code></pre></div>
 <p>以下は使用例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#998;font-style:italic">// assumes &#34;tealium&#34; previously instantiated</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#008000">// assumes &#34;tealium&#34; previously instantiated</span>
 tealium?.remoteCommands()?.disableRemoteCommands()</code></pre></div>
 <h3 id="enableremotecommands"><code>enableRemoteCommands()</code></h3>
 
 <p>RemoteCommandsモジュールを有効にします（以前に無効にした場合のみ必要、デフォルトでは有効）。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TealiumSwift" data-lang="TealiumSwift">enabledRemoteCommands()</code></pre></div>
 <p>以下は使用例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#998;font-style:italic">// assumes &#34;tealium&#34; previously instantiated</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#008000">// assumes &#34;tealium&#34; previously instantiated</span>
 tealium?.remoteCommands()?.enableRemoteCommands()</code></pre></div>
 <h3 id="disableremotehttpcommand"><code>disableRemoteHTTPCommand()</code></h3>
 
 <p>ビルトインリモートHTTPコマンドを無効にしますが、他のコマンド用にRemoteCommandsモジュールは有効のままにします。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">disableRemoteHTTPCommand()</code></pre></div>
 <p>以下は使用例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#998;font-style:italic">// assumes &#34;tealium&#34; previously instantiated</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#008000">// assumes &#34;tealium&#34; previously instantiated</span>
 tealium?.remoteCommands()?.disableRemoteHTTPCommand()</code></pre></div>
 <h3 id="enableremotehttpcommand"><code>enableRemoteHTTPCommand()</code></h3>
 
 <p>ビルトインリモートHTTPコマンドを有効にします（以前に無効にした場合のみ必要、デフォルトでは有効）。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">enableRemoteHTTPCommand()`</code></pre></div>
 <p>以下は使用例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#998;font-style:italic">// assumes &#34;tealium&#34; previously instantiated</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#008000">// assumes &#34;tealium&#34; previously instantiated</span>
 tealium?.remoteCommands()?.enableRemoteHTTPCommand()</code></pre></div>
 <h2 id="リモートhttpコマンド">リモートHTTPコマンド</h2>
 
@@ -502,8 +502,8 @@ tealium?.remoteCommands()?.enableRemoteHTTPCommand()</code></pre></div>
 </table>
 
 <p>コールバック関数の例を示します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">var</span> <span style="color:#008080">my_callback</span> = function(code, body) {
-   <span style="color:#998;font-style:italic">// assuming the response body was a JSON object, this logs a variable called my_response_variable to the console in the web view</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">var</span> my_callback = function(code, body) {
+   <span style="color:#008000">// assuming the response body was a JSON object, this logs a variable called my_response_variable to the console in the web view</span>
 	console.log(body.my_response_variable);
 }</code></pre></div>
 <p>実際の例については、<a href="https://community.tealiumiq.com/t5/Mobile-Libraries/Mobile-App-Download-Tracking-with-Adobe-Analytics/ta-p/17914">Adobe Analyticsによるアプリダウンロードのトラッキングに関する記事</a>を参照してください。</p>
@@ -952,7 +952,7 @@ tealium?.remoteCommands()?.enableRemoteHTTPCommand()</code></pre></div>
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

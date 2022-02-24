@@ -290,18 +290,18 @@ var utag_data = {
 <p>AudienceStreamを使用している場合、これは、この訪問者に関連付けられているメインのファーストパーティ訪問者IDになります。トラッキングコールで変数として送信することにより、追加の既知の訪問者IDを必要に応じて指定できます。</p>
 
 <p>AudienceStreamでの訪問者IDの設定の詳細については、<a href="https://community.tealiumiq.com/t5/Getting-Started-with/Visitor-Stitching-Visitor-ID/ta-p/25790">こちら</a>を参照してください。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">TealiumHelper</span> {
-	<span style="font-weight:bold">var</span> <span style="color:#008080">tealium</span>: Tealium?
-	<span style="color:#998;font-style:italic">// ...</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">class</span> <span style="color:#2b91af">TealiumHelper</span> {
+	<span style="color:#00f">var</span> tealium: Tealium?
+	<span style="color:#008000">// ...</span>
 
-	<span style="color:#998;font-style:italic">// Retrieve Tealium&#39;s first party visitor ID, if needed</span>
-	<span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">getVisitorId</span>() -&gt; <span style="color:#999">String</span>? {
-		<span style="font-weight:bold">return</span> <span style="font-weight:bold">self</span>.tealium?.visitorId
+	<span style="color:#008000">// Retrieve Tealium&#39;s first party visitor ID, if needed</span>
+	<span style="color:#00f">func</span> getVisitorId() -&gt; String? {
+		<span style="color:#00f">return</span> <span style="color:#00f">self</span>.tealium?.visitorId
 	}
 
-	<span style="color:#998;font-style:italic">// adds a known visitor ID (such as an email address) to the persistent data store</span>
-	<span style="font-weight:bold">func</span> <span style="color:#900;font-weight:bold">setKnownVisitorId</span>(<span style="font-weight:bold">_</span> id: <span style="color:#999">String</span>) {
-		<span style="font-weight:bold">self</span>.tealium?.persistentData()?.addPersistentData([<span style="color:#b84">&#34;customer_id&#34;</span>: id])
+	<span style="color:#008000">// adds a known visitor ID (such as an email address) to the persistent data store</span>
+	<span style="color:#00f">func</span> setKnownVisitorId(<span style="color:#00f">_</span> id: String) {
+		<span style="color:#00f">self</span>.tealium?.persistentData()?.addPersistentData([<span style="color:#a31515">&#34;customer_id&#34;</span>: id])
 	}
 
 }</code></pre></div>
@@ -749,7 +749,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

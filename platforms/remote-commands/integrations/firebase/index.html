@@ -245,12 +245,19 @@ var utag_data = {
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
       <p class="b">目次</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#%e8%a6%81%e4%bb%b6">要件</a></li>
-              <li><a href="#%e4%bb%95%e7%b5%84%e3%81%bf">仕組み</a></li>
+              <li><a href="#%e5%8b%95%e4%bd%9c">動作</a></li>
               <li><a href="#%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab">インストール</a></li>
-              <ul class="toc-h3"><li><a href="#%e4%be%9d%e5%ad%98%e9%96%a2%e4%bf%82%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3">依存関係マネージャ</a></li>
-              <li><a href="#%e6%89%8b%e5%8b%95%e3%81%ab%e3%82%88%e3%82%8b%e6%89%8b%e9%a0%86-ios">手動による手順（iOS）</a></li>
+              <ul class="toc-h3"><li><a href="#%e4%be%9d%e5%ad%98%e9%96%a2%e4%bf%82%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3%e3%81%ae%e5%88%a9%e7%94%a8">依存関係マネージャの利用</a></li>
+              <li><a href="#%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%81%a7%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab-ios">マニュアルでのインストール (iOS)</a></li>
               </ul><li><a href="#%e5%88%9d%e6%9c%9f%e5%8c%96">初期化</a></li>
+              <ul class="toc-h3"><li><a href="#android-kotlin">Android (Kotlin)</a></li>
+              <li><a href="#android-java">Android (Java)</a></li>
+              <li><a href="#ios-swift">iOS (Swift)</a></li>
+              </ul><li><a href="#json%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88">JSONテンプレート</a></li>
               <li><a href="#%e3%83%88%e3%83%a9%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0">トラッキング</a></li>
+              <li><a href="#google-%e3%82%a2%e3%83%8a%e3%83%aa%e3%83%86%e3%82%a3%e3%82%af%e3%82%b9%e3%81%a8tealium%e3%81%ae%e5%90%8c%e6%84%8f%e7%ae%a1%e7%90%86">Google アナリティクスとTealiumの同意管理</a></li>
+              <ul class="toc-h3"><li><a href="#%e5%90%8c%e6%84%8f%e3%82%aa%e3%83%97%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%ae%e5%85%b1%e6%9c%89">同意オプションの共有</a></li>
+              <li><a href="#faq">FAQ</a></li>
               </nav>
   </aside></div>
 
@@ -292,204 +299,393 @@ var utag_data = {
 <h2 id="要件">要件</h2>
 
 <ul>
-<li><a href="/platforms/android-java/">Tealium for Android</a>または<a href="/platforms/ios-swift/">Tealium for iOS</a>（アプリ内）</li>
-<li>適切なレポジトリ（AndroidまたはiOS）からアプリに追加されたFirebaseリモートコマンドクラス</li>
-<li><a href="https://community.tealiumiq.com/t5/Tags/Firebase-Mobile-Remote-Command-Tag-Setup-Guide/ta-p/30310">Firebaseモバイルリモートコマンドタグ</a>（Tealium iQ Tag Management）</li>
+<li>次のいずれかのモバイルライブラリ:
+
+<ul>
+<li><a href="/platforms/android-kotlin/">Tealium for Android-Kotlin</a> (1.0.0+)</li>
+<li><a href="/platforms/android-java/">Tealium for Android-Java</a> (5.9.0+ for Firebase 2.0.0+ or &lt;5.9.0 for previous versions)</li>
+<li><a href="/platforms/ios-swift/">Tealium for iOS-Swift</a></li>
+</ul></li>
+<li>次のいずれかのリモートコマンド連携:
+
+<ul>
+<li><a href="/platforms/remote-commands/integrations/firebase/#json-template">Firebase Remote Command JSON File</a> (Requires Android-Kotlin 1.0.0+ or iOS-Swift 2.1.0+)</li>
+<li><a href="https://community.tealiumiq.com/t5/Tags/Firebase-Mobile-Remote-Command-Tag-Setup-Guide/ta-p/30310">Firebase Remote Command tag</a> in Tealium iQ Tag Management</li>
+</ul></li>
 </ul>
 
-<h2 id="仕組み">仕組み</h2>
+<h2 id="動作">動作</h2>
 
-<p>Firebase統合では、ネイティブFirebase SDK、Firebaseメソッドをラップするリモートコマンドモジュール、およびイベントトラッキングをネイティブFirebaseコールに変換するFirebaseリモートコマンドタグを使用します。このソリューションでは、Tealium iQ Tag Managementの利便性を活用して、アプリにベンダー固有のコードを追加することなくネイティブのFirebase実装を構成します。</p>
+<p>Firebase連携には、下記の３つのアイテムが必要となります:</p>
 
-<p>Firebaseリモートコマンドモジュールをアプリに追加すると、必要なFirebaseライブラリが自動的にインストールされ、ビルドされます。依存関係マネージャのインストールを使用している場合、Firebase SDKを個別にインストールする必要はありません。</p>
+<ol>
+<li>FirebaseのネイティブSDK</li>
+<li>Fireabaseモジュールを内包するリモートコマンドのモジュール</li>
+<li>JSON設定ファイル、もしくは（Tealiumの）イベントをFirebaseネイティブの機能呼び出しに変換する「リモートコマンド」タグ</li>
+</ol>
+
+<p>モバイルアプリにFirebaseリモートコマンドのモジュールを追加すれば、特定のベンダーに依存するコードをアプリに追記することなく、必要となるFirebaseのライブラリを自動的に追加してビルドします。依存関係マネージャを利用してインストールすれば、Fireabase SDKを個別にインストールする必要はありません。</p>
+
+<p>リモートコマンドには「JSON設定ファイル」と「iQタグマネージメントによるマッピング」の２つのオプションがあります。我々が推奨するのはJSON設定ファイルでの連携で、これはリモートもしくはローカルに連携したいベンダー別に設定ファイルを保存しておくという方法です。iQタグマネージメントによる連携を希望する場合、連携したいベンダーのリモートコマンドタグを（タグマネージメントの管理画面で）追加します。詳細については <a href="/platforms/remote-commands/how-it-works/#vendor-integrations">ベンダー統合</a>を参照願います。</p>
 
 <h2 id="インストール">インストール</h2>
 
-<h3 id="依存関係マネージャ">依存関係マネージャ</h3>
+<h3 id="依存関係マネージャの利用">依存関係マネージャの利用</h3>
 
-<p>次の依存関係マネージャのいずれかをインストールに使用することをお勧めします。</p>
+<p>JSON設定ファイルを利用していない場合、依存関係マネージャによるインストールを推奨します。</p>
 
-<p class="note">Tealium iOS（Objective-C）ライブラリを使用している場合は、手動インストール方法を使用してください。CocoaPodsおよびCarthageオプションは、Tealium iOS（Swift）ライブラリを使用している場合にのみ使用可能です。</p>
+<p class="note"><i class="fas fa-info-circle"></i>Tealium iOS（Objective-C）ライブラリを使用している場合は、手動インストール方法を使用してください。CocoaPodsおよびCarthageオプションは、Tealium iOS（Swift）ライブラリを使用している場合にのみ使用可能です。</p>
+
+<p>TealiumFirebaseリモートコマンドをCocoaPodsかCarthageでインストールします。</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content">
-
-<div class="tab-pane" data-lang="CocoaPods" title="CocoaPods">
-  <p>CocoaPodsを使用してiOSのFirebaseリモートコマンドをインストールするには：</p>
+<div class="tab-pane" data-lang="Swift Package Manager" title="Swift Package Manager">
+  <p>Swiftパッケージマネージャを使ってiOSにFirebaseリモートコマンドをインストールする方法:</p>
 
 <ol>
-<li><p>以下の行がPodfileに存在する場合は、その行を削除します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pod <span style="color:#b84">&#34;Firebase/Analytics&#34;</span></code></pre></div></li>
+<li>Xcodeのプロジェクトで<strong>File &gt; Swift Packages &gt; Add Package Dependency</strong>を選択します。</li>
+<li>リポジトリのURLを入力します。
+<code>https://github.com/tealium/tealium-ios-firebase-remote-command</code>.</li>
+<li>バージョンのルールを設定します。一般的には<code>Up to Next Major Version</code>が推奨されています。現在の<code>TealiumFirebase</code>のバージョンが一覧に表示されない場合、Swiftパッケージマネージャのキャッシュをクリアします。</li>
+<li><code>TealiumFirebase</code>モジュールを選択してインストールします。そして、
+<strong>Frameworks &gt; Libraries &amp; Embedded Content</strong>で、Xcodeプロジェクトにあるアプリのターゲットを追加します。</li>
+</ol>
 
-<li><p>Add the following dependency to your Podfile:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">pod <span style="color:#b84">&#34;TealiumFirebase&#34;</span></code></pre></div>
-<p><code>TealiumFirebase</code>ポッドには以下の<code>TealiumSwift</code>依存関係が含まれています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b84">&#39;tealium-swift/Core&#39;</span>
-<span style="color:#b84">&#39;tealium-swift/TealiumDelegate&#39;</span>
-<span style="color:#b84">&#39;tealium-swift/TealiumRemoteCommands&#39;</span>
-<span style="color:#b84">&#39;tealium-swift/TealiumTagManagement&#39;</span></code></pre></div></li>
+<p>Tealium Swiftライブラリからモジュールを追加したい場合は、<a href="/platforms/ios-swift/install/#swift-package-manager-recommended">Swiftパッケージマネージャ</a>の手順に従います。</p>
 
-<li><p>上記以外に必要なモジュールがある場合は、Podfileに手動で追加します。以下はその例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b84">&#39;tealium-swift/TealiumLogger&#39;</span>
-<span style="color:#b84">&#39;tealium-swift/TealiumLifecycle&#39;</span></code></pre></div>
-<p>iOS向け推奨モジュールの詳細については、<a href="/platforms/ios-swift/modules/">こちら</a>を参照してください。</p></li>
+</div>
 
-<li><p>モジュール<code>TealiumSwift</code>および<code>TealiumFirebase</code>を、<code>TealiumHelper</code>ファイル、<code>Tealium</code>クラスにアクセスするその他のファイル、またはFirebaseリモートコマンドにインポートします。</p></li>
+<div class="tab-pane" data-lang="CocoaPods" title="CocoaPods">
+  <p>Cocoapodを利用してFirebaseリモートコマンドをインストールする方法:</p>
+
+<ol>
+<li><p>Podfileに次の行があれば削除:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pod <span style="color:#a31515">&#34;Firebase/Analytics&#34;</span></code></pre></div></li>
+
+<li><p>Podfileに次の依存を追加:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">pod <span style="color:#a31515">&#34;TealiumFirebase&#34;</span></code></pre></div>
+<p><code>TealiumFirebase</code>のpodには、次の<code>TealiumSwift</code>パッケージへの依存が含まれます:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#a31515">&#39;tealium-swift/Core&#39;</span>
+<span style="color:#a31515">&#39;tealium-swift/RemoteCommands&#39;</span>
+<span style="color:#a31515">&#39;tealium-swift/TagManagement&#39;</span></code></pre></div></li>
+
+<li><p><code>TealiumHelper</code>ファイルなどTealiumクラスやFireabaseリモートコマンドを利用するファイルに、<code>TealiumSwift</code>と<code>TealiumFirebase</code>モジュールをインポートします。</p></li>
 </ol>
 
 </div>
 
 <div class="tab-pane" data-lang="Carthage" title="Carthage">
-  <p>Carthageを使用してiOSのFirebaseリモートコマンドをインストールするには：</p>
+  <p>Carthageを利用してFirebaseリモートコマンドをインストールする方法:</p>
 
 <ol>
-<li><p><code>tealium-swift</code>をCartfileから削除します。<code>tealium-swift</code>の依存関係は<code>TealiumFirebase</code>フレームワークに既に含まれています。</p></li>
+<li><p>Cartfileから<code>tealium-swift</code>を削除します。<code>tealium-swift</code>への依存は、<code>TealiumFirebase</code>に含まれています。</p></li>
 
-<li><p>以下の行がCartfileに存在する場合は、その行を削除します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">binary <span style="color:#b84">&#34;https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json&#34;</span></code></pre></div></li>
+<li><p>Cartfileに次の行があれば削除:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">binary <span style="color:#a31515">&#34;https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json&#34;</span></code></pre></div></li>
 
-<li><p>次の依存関係をCartfileに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">github <span style="color:#b84">&#34;tealium/tealium-ios-firebase-remote-command&#34;</span></code></pre></div></li>
+<li><p>Cartfileに下記の依存を追加:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">github <span style="color:#a31515">&#34;tealium/tealium-ios-firebase-remote-command&#34;</span></code></pre></div></li>
 </ol>
 
-<p class="note">Tealium for Swift SDK（バージョン1.6.5以降）では、<code>TealiumDelegate</code>モジュールがインストールに含まれている必要があります。</p>
+<p class="note"><i class="fas fa-info-circle"></i>Carthageの<code>--use-xcframeworks</code>フラグを利用している場合、<code>TealiumFirebase</code>モジュールを<code>xcframework</code>としてビルドできません。Carthageの公式な<a href="https://github.com/Carthage/Carthage/blob/master/Documentation/Xcode12Workaround.md">Xcode 12での対策</a>が推奨されます。</p>
 
 </div>
 
 <div class="tab-pane" data-lang="Maven" title="Maven">
-  <p>Mavenを使用してインストールするには、次の依存関係を<code>build.gradle</code>ファイルに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">dependencies <span style="font-weight:bold">{</span>
-    implementation <span style="color:#b84">&#39;com.tealium.remotecommands:firebase:1.0.0&#39;</span>
-<span style="font-weight:bold">}</span></code></pre></div>
-</div>
-
-<p></div>
-</div></p>
-
-<h3 id="手動による手順-ios">手動による手順（iOS）</h3>
-
-<p>Firebaseリモートコマンドを手動でインストールするには、次のいずれかのiOSライブラリがインストールされている必要があります。</p>
-
-<ul>
-<li><a href="/platforms/ios-swift/">Tealium for Swift</a></li>
-<li><a href="/platforms/ios-objective-c/">Tealium for Objective-C</a></li>
-</ul>
-
-<p>iOSプロジェクトのFirebaseリモートコマンドをインストールするには：</p>
+  <p>Mavenを利用してAndroidにFirebaseリモートコマンドをインストールする方法:</p>
 
 <ol>
-<li><p><a href="https://firebase.google.com/docs/ios/setup">Firebase SDK</a>をまだインストールしていない場合はインストールします。</p></li>
+<li><p><a href="/platforms/android-kotlin/install/">Tealium for Android (Kotlin)</a>もしくは<a href="/platforms/android-java/install/">Tealium for Android (Java)</a>を事前にインストールします.</p></li>
 
-<li><p><a href="https://github.com/tealium/tealium-ios-firebase-remote-command">Tealium iOS Firebaseリモートコマンド</a>レポジトリをクローンして、<code>Sources</code>フォルダ内のファイルをプロジェクトにドラッグします。</p></li>
-
-<li><p>Tealium SDKを初期化する際には、完了ハンドラーを以下のように更新します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">tealium = Tealium(config: config) { responses <span style="font-weight:bold">in</span>
-  <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">remoteCommands</span> = <span style="font-weight:bold">self</span>.tealium?.remoteCommands() <span style="font-weight:bold">else</span> {
-      <span style="font-weight:bold">return</span>
-  }
-  <span style="font-weight:bold">let</span> <span style="color:#008080">firebaseTracker</span> = FirebaseTracker()
-  <span style="font-weight:bold">let</span> <span style="color:#008080">firebaseCommand</span> = FirebaseCommand(firebaseTracker: FirebaseTracker)
-  <span style="font-weight:bold">let</span> <span style="color:#008080">firebaseRemoteCommand</span> = firebaseCommand.remoteCommand()
-  remoteCommands.add(firebaseRemoteCommand)
+<li><p><code>build.gradle</code>ファイルに下記の依存を追加:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">dependencies {
+implementation <span style="color:#a31515">&#39;com.tealium.remotecommands:firebase:2.0.0&#39;</span>
 }</code></pre></div></li>
 </ol>
 
-<p>手動インストールオプションは、iOS SwiftおよびObjective-Cプラットフォームで使用できます。</p>
-
-<div class="code-tabs">
-  <ul class="nav nav-tabs"></ul>
-  <div class="tab-content">
-
-<div class="tab-pane" data-lang="Swift" title="Swift">
-  <p>リモートコマンドを<code>TealiumHelper.swift</code>ファイルに次のように追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">let</span> <span style="color:#008080">firebaseRemoteCommand</span> = firebaseCommand.remoteCommand()
-tealium.addRemoteCommand(<span style="color:#b84">&#34;firebase&#34;</span>,
-                           description: <span style="font-weight:bold">nil</span>,
-                           targetQueue: DispatchQueue.main,
-                           responseBlock: firebaseRemoteCommand)</code></pre></div>
-</div>
-
-<div class="tab-pane" data-lang="Objective-C" title="Objective-C">
-  <ol>
-<li><p>レポジトリをクローンして、プロジェクトの<code>Objective-C</code>フォルダにファイルをドラッグします。</p></li>
-
-<li><p>次の行をファイル<code>TealiumHelper.m</code>に追加して、Swiftコードをインポートします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">#<span style="font-weight:bold">import</span> <span style="color:#b84">&#34;TealiumRemoteCommandObjcApp-Swift.h&#34;</span></code></pre></div>
-<p class="note">ターゲットのSwiftブリッジヘッダーは、名前が<code>&lt;MODULE-NAME&gt;-Swift.h</code>であり、ターゲットのビルド設定で「モジュール名」をフィルタリングして見つけることができます。</p></li>
-
-<li><p>リモートコマンドを初期化します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Objective-C" data-lang="Objective-C">FirebaseTracker <span style="font-weight:bold">*</span>firebaseTracker <span style="font-weight:bold">=</span> [[FirebaseTracker alloc] init];
-FirebaseCommand <span style="font-weight:bold">*</span>firebaseCommand <span style="font-weight:bold">=</span> [[FirebaseCommand alloc] initWithFirebaseTracker: firebaseTracker];
-TEALRemoteCommandResponseBlock firebaseRemoteCommand <span style="font-weight:bold">=</span> [firebaseCommand remoteCommand];
-[[Tealium instanceForKey:<span style="color:#b84">@&#34;MY_INSTANCE&#34;</span>] addRemoteCommandID:<span style="color:#b84">@&#34;firebase&#34;</span>
-                                description:<span style="color:#b84">@&#34;Firebase Remote Command&#34;</span>
-                                targetQueue:dispatch_get_main_queue()
-                                responseBlock:firebaseRemoteCommand];</code></pre></div></li>
-</ol>
-
-<p>Objective-CにSwiftをインポートする方法の詳細については、<a href="https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_swift_into_objective-c">こちら</a>)を参照してください。</p>
-
 </div>
 
 <p></div>
 </div></p>
+
+<h3 id="マニュアルでのインストール-ios">マニュアルでのインストール (iOS)</h3>
+
+<!-- The manual installation for Firebase remote commands requires the [Tealium for Swift](/platforms/ios-swift/) library to be installed. To install the Firebase remote commands for your iOS project: -->
+
+<p>マニュアルによるFirebaseリモートコマンドのインストールには<a href="/platforms/ios-swift/">TealiumのSwiftライブラリ</a>が必要です。FireabaseリモートコマンドをiOSのプロジェクトに追加する方法は下記の通りです。</p>
+
+<ol>
+<li><p><a href="https://firebase.google.com/docs/ios/setup">Firebase SDK</a>を事前にインストールしておきます。</p></li>
+
+<li><p><a href="https://github.com/tealium/tealium-ios-firebase-remote-command">Tealium iOSのFirebaseリモートコマンド</a>をレポジトリからクローンして、プロジェクトの<code>Sources</code>フォルダにドラッグします。</p></li>
+
+<li><p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a>設定のフラグに<code>true</code>をセットします。</p></li>
+</ol>
 
 <h2 id="初期化">初期化</h2>
 
-<p>すべてのTealiumライブラリについて、初期化時にFirebaseモバイルリモートコマンドを登録します。</p>
+<p>全てのライブラリで、初期化時にFirebaseモバイルリモートコマンドの登録が必要になります。</p>
+
+<h3 id="android-kotlin">Android (Kotlin)</h3>
+
+<p>JSON設定ファイルもしくはリモートコマンドタグを使って、TealiumのKotlinライブラリでリモートコマンドを初期化します。</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content">
-<div class="tab-pane" data-lang="Android" title="Android">
-  <p>次のコードは、TealiumのAndroidライブラリで使用するように設計されています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">RemoteCommand <span style="color:#900;font-weight:bold">firebase</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> FirebaseRemoteCommand(application);
-teal.<span style="color:#008080">addRemoteCommand</span>(firebase);</code></pre></div>
-</div>
-
-<div class="tab-pane" data-lang="Swift" title="Swift">
-  <p>次のコードは、TealiumのiOS向けSwiftライブラリで使用するように設計されています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">var</span> <span style="color:#008080">teal</span> : Tealium?
-<span style="font-weight:bold">let</span> <span style="color:#008080">config</span> = TealiumConfig(account: <span style="color:#b84">&#34;ACCOUNT&#34;</span>,
-                           profile: <span style="color:#b84">&#34;PROFILE&#34;</span>,
-                           environment: <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>,<span style="color:#a61717;background-color:#e3d2d2">˜˜</span>
-                           datasource: <span style="color:#b84">&#34;DATASOURCE&#34;</span>,
-                           optionalData: <span style="font-weight:bold">nil</span>)
-
-teal = Tealium(config: config) { responses <span style="font-weight:bold">in</span>
-  <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">remoteCommands</span> = <span style="font-weight:bold">self</span>.tealium?.remoteCommands() <span style="font-weight:bold">else</span> {
-        <span style="font-weight:bold">return</span>
-  }
-  <span style="font-weight:bold">let</span> <span style="color:#008080">firebaseTracker</span> = FirebaseTracker()
-  <span style="font-weight:bold">let</span> <span style="color:#008080">firebaseCommand</span> = FirebaseCommand(firebaseTracker: firebaseTracker)
-  <span style="font-weight:bold">let</span> <span style="color:#008080">firebaseRemoteCommand</span> = firebaseCommand.remoteCommand()
-  remoteCommands.add(firebaseRemoteCommand)
+<div class="tab-pane" data-lang="JSON Remote Command" title="JSON Remote Command">
+  <p>下記のコードは、ローカルファイルを利用してJSONリモートコマンドを実行します:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#00f">val</span> config = TealiumConfig(application,
+        <span style="color:#a31515">&#34;ACCOUNT&#34;</span>,
+        <span style="color:#a31515">&#34;PROFILE&#34;</span>,
+        Environment.DEV,
+        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+<span style="color:#00f">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+    <span style="color:#00f">val</span> firebase = FirebaseRemoteCommand(application);
+  <span style="color:#008000">// register the command
+</span><span style="color:#008000"></span>  remoteCommands?.add(firebase, filename = <span style="color:#a31515">&#34;firebase.json&#34;</span>);
 }</code></pre></div>
 </div>
 
-<div class="tab-pane" data-lang="Objective-C" title="Objective-C">
-  <p>次のコードは、iOS向けのTealiumのObjective-Cライブラリで使用するように設計されていますが、Swiftで記述されています。このコードが正しく機能するためには、Xcodeプロジェクトにブリッジヘッダーが必要です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objc" data-lang="objc">let config <span style="font-weight:bold">=</span> TEALConfiguration(account: <span style="color:#b84">&#34;ACCOUNT&#34;</span>,
-                               profile: <span style="color:#b84">&#34;PROFILE&#34;</span>,
-                               environment: <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>,
-                               datasource: <span style="color:#b84">&#34;DATASOURCE&#34;</span>)
-let teal <span style="font-weight:bold">=</span> Tealium.newInstance(forKey: <span style="color:#b84">&#34;teal&#34;</span>, configuration: config)
-
-let firebaseTracker <span style="font-weight:bold">=</span> FirebaseTracker()
-let firebaseCommand <span style="font-weight:bold">=</span> FirebaseCommand(firebaseTracker: firebaseTracker)
-let firebaseRemoteCommand <span style="font-weight:bold">=</span> firebaseCommand.remoteCommand()
-teal.addRemoteCommandID(<span style="color:#b84">&#34;firebase&#34;</span>, description: <span style="color:#999">nil</span>, targetQueue: DispatchQueue.main, responseBlock: firebaseRemoteCommand)</code></pre></div>
+<div class="tab-pane" data-lang="Remote Command tag" title="Remote Command tag">
+  <p>下記のコードは、リモートコマンドタグを利用してJSONリモートコマンドを実行します:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#00f">val</span> config = TealiumConfig(application,
+        <span style="color:#a31515">&#34;ACCOUNT&#34;</span>,
+        <span style="color:#a31515">&#34;PROFILE&#34;</span>,
+        Environment.DEV,
+        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+<span style="color:#00f">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+    <span style="color:#00f">val</span> firebase = FirebaseRemoteCommand(application);
+  <span style="color:#008000">// register the command
+</span><span style="color:#008000"></span>  remoteCommands?.add(firebase);
+}</code></pre></div>
 </div>
 
 <p></div>
 </div></p>
 
+<h3 id="android-java">Android (Java)</h3>
+
+<p>リモートコマンドタグを使って、TealiumのJavaライブラリでリモートコマンドを初期化します。</p>
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content">
+
+<div class="tab-pane" data-lang="JSON Remote Command" title="JSON Remote Command">
+  <p>AndroidのJSONリモートコマンドはKotlin SDKでのみ利用できます。</p>
+
+</div>
+
+<div class="tab-pane" data-lang="Remote Command tag" title="Remote Command tag">
+  <p>下記のコードは、リモートコマンドタグを利用してJSONリモートコマンドを実行します:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">RemoteCommand firebase = <span style="color:#00f">new</span> FirebaseRemoteCommand(application);
+teal.addRemoteCommand(firebase);</code></pre></div>
+</div>
+
+<p></div>
+</div></p>
+
+<h3 id="ios-swift">iOS (Swift)</h3>
+
+<p>JSON設定ファイルもしくはリモートコマンドタグを使って、TealiumのiOS(Swift)ライブラリでリモートコマンドを初期化します。</p>
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content">
+
+<div class="tab-pane" data-lang="JSON Remote Command" title="JSON Remote Command">
+  <p>下記のコードは、ローカルファイルを利用してJSONリモートコマンドを実行します:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">var</span> tealium : Tealium?
+<span style="color:#00f">let</span> config = TealiumConfig(account: <span style="color:#a31515">&#34;ACCOUNT&#34;</span>,
+                           profile: <span style="color:#a31515">&#34;PROFILE&#34;</span>,
+                           environment: <span style="color:#a31515">&#34;ENVIRONMENT&#34;</span>,
+                           dataSource: <span style="color:#a31515">&#34;DATASOURCE&#34;</span>,
+                           optionalData: <span style="color:#00f">nil</span>)
+
+config.remoteAPIEnabled = <span style="color:#00f">true</span> <span style="color:#008000">// Required to use Remote Commands</span>
+
+tealium = Tealium(config: config) { <span style="color:#00f">_</span> <span style="color:#00f">in</span>
+    <span style="color:#00f">guard</span> <span style="color:#00f">let</span> remoteCommands = <span style="color:#00f">self</span>.tealium?.remoteCommands <span style="color:#00f">else</span> {
+        <span style="color:#00f">return</span>
+    }
+    <span style="color:#00f">let</span> firebase = FirebaseRemoteCommand(type: .local(file: <span style="color:#a31515">&#34;firebase&#34;</span>))
+    remoteCommands.add(firebase)
+}</code></pre></div>
+</div>
+
+<div class="tab-pane" data-lang="Remote Command tag" title="Remote Command tag">
+  <p>下記のコードは、リモートコマンドタグを利用してJSONリモートコマンドを実行します:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">var</span> tealium : Tealium?
+<span style="color:#00f">let</span> config = TealiumConfig(account: <span style="color:#a31515">&#34;ACCOUNT&#34;</span>,
+                           profile: <span style="color:#a31515">&#34;PROFILE&#34;</span>,
+                           environment: <span style="color:#a31515">&#34;ENVIRONMENT&#34;</span>,<span style="">˜˜</span>
+                           dataSource: <span style="color:#a31515">&#34;DATASOURCE&#34;</span>,
+                           optionalData: <span style="color:#00f">nil</span>)
+
+config.remoteAPIEnabled = <span style="color:#00f">true</span> <span style="color:#008000">// Required to use Remote Commands</span>
+
+tealium = Tealium(config: config) { <span style="color:#00f">_</span> <span style="color:#00f">in</span>
+    <span style="color:#00f">guard</span> <span style="color:#00f">let</span> remoteCommands = <span style="color:#00f">self</span>.tealium?.remoteCommands <span style="color:#00f">else</span> {
+        <span style="color:#00f">return</span>
+    }
+    <span style="color:#00f">let</span> firebase = FirebaseRemoteCommand()
+    remoteCommands.add(firebase)
+}</code></pre></div>
+</div>
+
+<p></div>
+</div></p>
+
+<h2 id="jsonテンプレート">JSONテンプレート</h2>
+
+<p><a href="/platforms/remote-commands/how-it-works/#json-configuration-file">JSON configuration file</a>を使ってリモートコマンドを設定する場合、下記のテンプレートを足がかりに始めると良いでしょう。このテンプレートには、標準的なeコマースで利用されるマッピングが含まれています。必要に応じて、マッピングを編集します。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    &#34;config&#34;: {
+        &#34;firebase_analytics_enabled&#34;: <span style="color:#a31515">&#34;true&#34;</span>,
+        &#34;firebase_session_timeout_seconds&#34;: <span style="color:#a31515">&#34;30&#34;</span>,
+        &#34;firebase_log_level&#34;: <span style="color:#a31515">&#34;max&#34;</span>,
+        &#34;firebase_session_minimum_seconds&#34;: <span style="color:#a31515">&#34;100&#34;</span>
+    },
+    &#34;mappings&#34;: {
+        &#34;achievement_id&#34;: <span style="color:#a31515">&#34;event.param_achievement_id&#34;</span>,
+        &#34;ad_network_click_id&#34;: <span style="color:#a31515">&#34;event.param_ad_network_click_id&#34;</span>,
+        &#34;affiliation&#34;: <span style="color:#a31515">&#34;event.param_affiliation&#34;</span>,
+        &#34;campaign_keywords&#34;: <span style="color:#a31515">&#34;event.param_cp1&#34;</span>,
+        &#34;campaign&#34;: <span style="color:#a31515">&#34;event.param_campaign&#34;</span>,
+        &#34;game_character&#34;: <span style="color:#a31515">&#34;event.param_character&#34;</span>,
+        &#34;checkout_option&#34;: <span style="color:#a31515">&#34;event.param_checkout_option&#34;</span>,
+        &#34;checkout_step&#34;: <span style="color:#a31515">&#34;event.param_checkout_step&#34;</span>,
+        &#34;content&#34;: <span style="color:#a31515">&#34;event.param_content&#34;</span>,
+        &#34;content_type&#34;: <span style="color:#a31515">&#34;event.param_content_type&#34;</span>,
+        &#34;coupon&#34;: <span style="color:#a31515">&#34;event.param_coupon&#34;</span>,
+        &#34;creative_name&#34;: <span style="color:#a31515">&#34;event.param_creative_name&#34;</span>,
+        &#34;creative_slot&#34;: <span style="color:#a31515">&#34;event.param_creative_slot&#34;</span>,
+        &#34;currency_code&#34;: <span style="color:#a31515">&#34;event.param_currency&#34;</span>,
+        &#34;travel_destination&#34;: <span style="color:#a31515">&#34;event.param_destination&#34;</span>,
+        &#34;end_date&#34;: <span style="color:#a31515">&#34;event.param_end_date&#34;</span>,
+        &#34;flight_number&#34;: <span style="color:#a31515">&#34;event.param_flight_number&#34;</span>,
+        &#34;group_id&#34;: <span style="color:#a31515">&#34;event.param_group_id&#34;</span>,
+        &#34;current_index&#34;: <span style="color:#a31515">&#34;param_index&#34;</span>,
+        &#34;product_brand&#34;: <span style="color:#a31515">&#34;items.param_item_brand&#34;</span>,
+        &#34;product_category&#34;: <span style="color:#a31515">&#34;items.param_item_category&#34;</span>,
+        &#34;product_id&#34;: <span style="color:#a31515">&#34;items.param_item_id&#34;</span>,
+        &#34;product_unit_price&#34;: <span style="color:#a31515">&#34;items.param_price&#34;</span>,
+        &#34;product_quantity&#34;: <span style="color:#a31515">&#34;items.param_quantity&#34;</span>,
+        &#34;product_list&#34;: <span style="color:#a31515">&#34;items.param_item_list&#34;</span>,
+        &#34;product_location_id&#34;: <span style="color:#a31515">&#34;items.param_item_location_id&#34;</span>,
+        &#34;product_name&#34;: <span style="color:#a31515">&#34;items.param_item_name&#34;</span>,
+        &#34;product_variant&#34;: <span style="color:#a31515">&#34;items.param_item_variant&#34;</span>,
+        &#34;current_level&#34;: <span style="color:#a31515">&#34;event.param_level&#34;</span>,
+        &#34;most_recent_location&#34;: <span style="color:#a31515">&#34;event.param_location&#34;</span>,
+        &#34;campaign_medium&#34;: <span style="color:#a31515">&#34;event.param_medium&#34;</span>,
+        &#34;number_nights&#34;: <span style="color:#a31515">&#34;event.param_number_nights&#34;</span>,
+        &#34;number_pax&#34;: <span style="color:#a31515">&#34;event.param_number_pax&#34;</span>,
+        &#34;number_rooms&#34;: <span style="color:#a31515">&#34;event.param_number_rooms&#34;</span>,
+        &#34;travel_origin&#34;: <span style="color:#a31515">&#34;event.param_origin&#34;</span>,
+        &#34;score&#34;: <span style="color:#a31515">&#34;event.param_score&#34;</span>,
+        &#34;search_keyword&#34;: <span style="color:#a31515">&#34;event.param_search_term&#34;</span>,
+        &#34;order_shipping_amount&#34;: <span style="color:#a31515">&#34;event.param_shipping&#34;</span>,
+        &#34;signup_method&#34;: <span style="color:#a31515">&#34;event.param_signup_method&#34;</span>,
+        &#34;campaign_source&#34;: <span style="color:#a31515">&#34;event.param_source&#34;</span>,
+        &#34;start_date&#34;: <span style="color:#a31515">&#34;event.param_start_date&#34;</span>,
+        &#34;order_tax_amount&#34;: <span style="color:#a31515">&#34;event.param_tax&#34;</span>,
+        &#34;product_term&#34;: <span style="color:#a31515">&#34;event.param_term&#34;</span>,
+        &#34;order_id&#34;: <span style="color:#a31515">&#34;event.param_transaction_id&#34;</span>,
+        &#34;travel_class&#34;: <span style="color:#a31515">&#34;event.param_travel_class&#34;</span>,
+        &#34;order_total&#34;: <span style="color:#a31515">&#34;event.param_value&#34;</span>,
+        &#34;currency_type&#34;: <span style="color:#a31515">&#34;event.param_virtual_currency_name&#34;</span>,
+        &#34;user_signup_method&#34;: <span style="color:#a31515">&#34;event.param_user_signup_method&#34;</span>,
+        &#34;event_title&#34;: <span style="color:#a31515">&#34;firebase_event_name&#34;</span>,
+        &#34;screen_name&#34;: <span style="color:#a31515">&#34;firebase_screen_name&#34;</span>,
+        &#34;screen_class&#34;: <span style="color:#a31515">&#34;firebase_screen_class&#34;</span>,
+        &#34;customer_property&#34;: <span style="color:#a31515">&#34;firebase_property_name&#34;</span>,
+        &#34;customer_value&#34;: <span style="color:#a31515">&#34;firebase_property_value&#34;</span>,
+        &#34;customer_id&#34;: <span style="color:#a31515">&#34;firebase_user_id&#34;</span>
+    },
+    &#34;commands&#34;: {
+        &#34;launch&#34;: <span style="color:#a31515">&#34;config&#34;</span>,
+        &#34;user_login&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;user_register&#34;: <span style="color:#a31515">&#34;logevent,setuserproperty&#34;</span>,
+        &#34;share&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;show_offers&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;join_group&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;travel_order&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;earn_currency&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;spend_currency&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;unlock_achievement&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;level_up&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;start_tutorial&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;stop_tutorial&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;record_score&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;category&#34;: <span style="color:#a31515">&#34;logevent,setscreenname&#34;</span>,
+        &#34;product&#34;: <span style="color:#a31515">&#34;logevent,setscreenname&#34;</span>,
+        &#34;cart_add&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;wishlist_add&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;checkout&#34;: <span style="color:#a31515">&#34;logevent,setscreenname&#34;</span>,
+        &#34;checkout_progress&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;email_signup&#34;: <span style="color:#a31515">&#34;logevent&#34;</span>,
+        &#34;order&#34;: <span style="color:#a31515">&#34;logevent,setscreenname&#34;</span>
+    }
+}</code></pre></div>
 <h2 id="トラッキング">トラッキング</h2>
 
-<p>アプリとの基本的なインタラクションによってトリガーされたイベントは自動的にトラッキングされます。Firebaseによって自動的に収集されるイベントの詳細については、<a href="https://support.google.com/firebase/answer/6317485?hl=en">こちら</a>を参照してください。</p>
+<p>アプリにおける標準的なインタラクションでトリガーされるイベントは自動的に計測されます。<a href="https://support.google.com/firebase/answer/6317485?hl=en">Fireabaseが自動で計測するイベント</a>についてはリンクを参照願います。</p>
 
-<p>Firebaseモバイルリモートコマンドタグの設定については、<a href="https://community.tealiumiq.com/t5/Tags/Firebase-Mobile-Remote-Command-Tag-Setup-Guide/ta-p/30310">こちら</a>を参照してください。</p>
+<p><a href="https://community.tealiumiq.com/t5/Tags/Firebase-Mobile-Remote-Command-Tag-Setup-Guide/ta-p/30310">Firebase Mobile Remote Command Tag setup</a>も合わせて確認します。</p>
+
+<h2 id="google-アナリティクスとtealiumの同意管理">Google アナリティクスとTealiumの同意管理</h2>
+
+<p>Google アナリティクス for Firabase （GA4）は、アプリの利用状況やエンゲージメントに関する洞察を提供するアプリの計測サービスです。このサービスは、Firebaseの機能全体を統合し、FirebaseSDKで定義された最大500種類のイベントに関するレポートを無制限に提供します。</p>
+
+<p>FirebaseのAPIは一般に公開されていないため、Firebaseにデータを送信するにはAndroidもしくはiOSに対応したネイティブSDKを使います。TealiumのリモートコマンドはFirebaseのSDKを呼び出します。すでに実装されたデータレイヤーとトラッキングコールを利用すれば、アプリがAndroid StoreやApple App Storeにリリースした後であっても、Firebase SDKの挙動が調整可能です。</p>
+
+<p>詳細は<a href="https://community.tealiumiq.com/t5/Installation-Libraries/Google-Analytics-for-Firebase-Mobile-Integration-Guide/ta-p/21200">Google Analytics for Firebase Mobile Integration Guide</a>を参照願います。</p>
+
+<h3 id="同意オプションの共有">同意オプションの共有</h3>
+
+<p>ネイティブの画面からWebViewに同意オプションを共有する方法は3種類あります。ここで説明するWebView連携は、まずページが汎用的な作りであること、そしてアプリからアクセスした場合に限定されます。</p>
+
+<p><strong>その1: Cookieの利用</strong><br />
+Tealium iQと有効化された同意管理により、TealiumはCookieをモバイルWebViewに残します。クライアント端末は、ページを読み込む前に当該Cookieから同意オプションを参照します。</p>
+
+<p><strong>その2: APIからWebviewの連携</strong><br />
+リスナーイベントを設定し、ユーザの同意設定変更を検知したら、APIを呼び出してWebViewのCookieを書き換えます。</p>
+
+<p><strong>その3: クエリーストリングの利用</strong><br />
+WebViewページにTealium iQの同意管理を利用している場合、WebViewを呼び出すURLに同意設定をクエリーストリングに含めておきます。それにより、Tealium iQのプリローダースコープの機能拡張で設定情報を読み込み、同意管理のCookieを再生成できます。</p>
+
+<h3 id="faq">FAQ</h3>
+
+<p><strong>GoogleがFirebase SDKを更新した場合は？</strong></p>
+
+<p>メジャーなAPIに変更がないという前提で、FireabaseのSDKを更新することに問題はありません。TealiumはFirebaseのAPI機能の更新を積極的に観察しており、Firabaseリモートコマンドに必要な更新を行っています。</p>
+
+<p><strong>Firebase SDKは、初期状態でイベント計測を自動実行します。ユーザから同意を得る前の計測を停止するには？</strong></p>
+
+<p>Firebase SDKにて、<code>firebase_analytics_collection_enabled</code>の設定を<code>false</code> (初期値は<code>true</code>)にセットします。ユーザが計測に同意しているなら、Firebaseリモートコマンドを使って<code>true</code>にセットし直すことも可能です。</p>
+
+<p>下記のステップでユーザの操作例を解説します。</p>
+
+<ol>
+<li>ユーザがアプリを起動します。</li>
+<li>Firebaseでのデータ収集は停止しています。(<code>setAnalyticsCollectionEnabled(false)</code>)</li>
+<li>ユーザが計測に同意すると、Tealiumに同意のイベントが送信されます。</li>
+<li>TealiumはFirebase SDKに計測開始のメッセージを送ります。(<code>firebase_analytics_enabled = true</code>)</li>
+<li>ユーザの操作がGoogle アナリティックスで計測されます。</li>
+</ol>
+
+<p><strong>どの同意（カテゴリ）がアプリで承諾されたか確認する方法は？</strong></p>
+
+<p>Tealium SDKにAPIリクエストを送信することで、ユーザが特定のカテゴリを承認したかどうかを確認できます。</p>
+
+<p class="note"><i class="fas fa-info-circle"></i>Tealiumでは同意情報を記録していません。アプリ内に保存されます。</p>
+
+<p><strong>APIを使って特定のタグのみ無効にすることは可能か？</strong></p>
+
+<p>いいえ、それはできないです。同意はカテゴリレベルでオプトイン・オプトアウトされます。</p>
 
 </div>
 
@@ -935,7 +1131,7 @@ teal.addRemoteCommandID(<span style="color:#b84">&#34;firebase&#34;</span>, desc
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 bg-secondary white" data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 bg-secondary white" data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     
@@ -4670,7 +4866,7 @@ teal.addRemoteCommandID(<span style="color:#b84">&#34;firebase&#34;</span>, desc
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="70"></textarea>
-    <span>最終更新日 ::  2021年March月10日
+    <span>最終更新日 ::  2022年February月23日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
   </span>

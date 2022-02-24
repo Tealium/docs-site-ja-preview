@@ -290,21 +290,21 @@ var utag_data = {
 <p>ベースインストールにより、ユーザーがAMPサイトの画面の表示や変更をするたびにトラッキングコールが実行されます。</p>
 
 <p>このトラッキングに使用されるデータ層をカスタマイズするには、変数のキーと値のペアとともに<a href="https://amp.dev/documentation/components/amp-analytics/?format=websites#extra-url-params">外部URLパラメータ</a>ブロック<code>extraUrlParams</code>を追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080">amp-analytics</span> <span style="color:#008080">type</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;tealiumcollect&#34;</span>&gt;
-&lt;<span style="color:#000080">script</span> <span style="color:#008080">type</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;application/json&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;amp-analytics type=<span style="color:#a31515">&#34;tealiumcollect&#34;</span>&gt;
+&lt;script type=<span style="color:#a31515">&#34;application/json&#34;</span>&gt;
 {
-  <span style="color:#b84">&#34;vars&#34;</span><span style="font-weight:bold">:</span> {
-    <span style="color:#b84">&#34;account&#34;</span><span style="font-weight:bold">:</span> <span style="color:#b84">&#34;ACCOUNT&#34;</span>,
-    <span style="color:#b84">&#34;profile&#34;</span><span style="font-weight:bold">:</span> <span style="color:#b84">&#34;PROFILE&#34;</span>,
-    <span style="color:#b84">&#34;datasource&#34;</span><span style="font-weight:bold">:</span> <span style="color:#b84">&#34;DATASOURCE&#34;</span>
+  <span style="color:#a31515">&#34;vars&#34;</span>: {
+    <span style="color:#a31515">&#34;account&#34;</span>: <span style="color:#a31515">&#34;ACCOUNT&#34;</span>,
+    <span style="color:#a31515">&#34;profile&#34;</span>: <span style="color:#a31515">&#34;PROFILE&#34;</span>,
+    <span style="color:#a31515">&#34;datasource&#34;</span>: <span style="color:#a31515">&#34;DATASOURCE&#34;</span>
   },
-  <span style="color:#b84">&#34;extraUrlParams&#34;</span><span style="font-weight:bold">:</span> {
-    <span style="color:#b84">&#34;example_param1&#34;</span><span style="font-weight:bold">:</span> <span style="color:#b84">&#34;abc&#34;</span>,
-    <span style="color:#b84">&#34;example_param2&#34;</span><span style="font-weight:bold">:</span> <span style="color:#099">123</span>
+  <span style="color:#a31515">&#34;extraUrlParams&#34;</span>: {
+    <span style="color:#a31515">&#34;example_param1&#34;</span>: <span style="color:#a31515">&#34;abc&#34;</span>,
+    <span style="color:#a31515">&#34;example_param2&#34;</span>: 123
   }
 }     
-&lt;/<span style="color:#000080">script</span>&gt;
-&lt;/<span style="color:#000080">amp-analytics</span>&gt;</code></pre></div>
+&lt;/script&gt;
+&lt;/amp-analytics&gt;</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -344,16 +344,16 @@ var utag_data = {
 <p>構成オブジェクトの<code>triggers</code>では、トラッキングするイベントを定義します。トリガーは、トリガー名と構成を表すキーと値のペアとして定義されます。トリガー名は英数字の文字列であり、構成がイベントのターゲットを決定します。</p>
 
 <p>以下はトリガーの例です。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#b84">&#34;triggers&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> {
-  <span style="color:#000080">&#34;trigger_name&#34;</span>: {
-    <span style="color:#000080">&#34;on&#34;</span>: <span style="color:#b84">&#34;VALUE&#34;</span>,
-    <span style="color:#000080">&#34;selector&#34;</span>: <span style="color:#b84">&#34;VALUE&#34;</span>,
-    <span style="color:#000080">&#34;request&#34;</span>: <span style="color:#b84">&#34;VALUE&#34;</span>,
-    <span style="color:#000080">&#34;vars&#34;</span>: {
-      <span style="color:#000080">&#34;tealium_event&#34;</span>: <span style="color:#b84">&#34;VALUE&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#a31515">&#34;triggers&#34;</span><span style="">:</span> {
+  &#34;trigger_name&#34;: {
+    &#34;on&#34;: <span style="color:#a31515">&#34;VALUE&#34;</span>,
+    &#34;selector&#34;: <span style="color:#a31515">&#34;VALUE&#34;</span>,
+    &#34;request&#34;: <span style="color:#a31515">&#34;VALUE&#34;</span>,
+    &#34;vars&#34;: {
+      &#34;tealium_event&#34;: <span style="color:#a31515">&#34;VALUE&#34;</span>
     }
-    <span style="color:#b84">&#34;extraUrlParams&#34;</span>: {
-      <span style="color:#000080">&#34;extra_var&#34;</span>: <span style="color:#b84">&#34;${extraVar}&#34;</span>
+    <span style="color:#a31515">&#34;extraUrlParams&#34;</span>: {
+      &#34;extra_var&#34;: <span style="color:#a31515">&#34;${extraVar}&#34;</span>
     }
   }
 }</code></pre></div>
@@ -364,25 +364,25 @@ var utag_data = {
 <p><code>visible</code>と<code>click</code>のイベントタイプ（<code>on</code>プロパティで使用）では、<code>data-vars-*</code>の形式を使用することによって、HTML5の要素の属性を使用して動的なトラッキング変数を渡します。この方法を使って渡された変数はキャメルケースを使った名前に変換されます。</p>
 
 <p>たとえば、<code>data-vars-link-name=&quot;register&quot;</code>というプロパティは、変数<code>${linkName}</code>となり、トリガーの<code>extraUrlParams</code>ブロック内で参照されます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#b84">&#34;triggers&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> {
-  <span style="color:#000080">&#34;custom_click&#34;</span>: {
-    <span style="color:#000080">&#34;on&#34;</span>: <span style="color:#b84">&#34;click&#34;</span>,
-    <span style="color:#000080">&#34;selector&#34;</span>: <span style="color:#b84">&#34;#the-button&#34;</span>,
-    <span style="color:#000080">&#34;request&#34;</span>: <span style="color:#b84">&#34;event&#34;</span>,
-    <span style="color:#000080">&#34;vars&#34;</span>: {
-      <span style="color:#000080">&#34;tealium_event&#34;</span>: <span style="color:#b84">&#34;custom_click&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#a31515">&#34;triggers&#34;</span><span style="">:</span> {
+  &#34;custom_click&#34;: {
+    &#34;on&#34;: <span style="color:#a31515">&#34;click&#34;</span>,
+    &#34;selector&#34;: <span style="color:#a31515">&#34;#the-button&#34;</span>,
+    &#34;request&#34;: <span style="color:#a31515">&#34;event&#34;</span>,
+    &#34;vars&#34;: {
+      &#34;tealium_event&#34;: <span style="color:#a31515">&#34;custom_click&#34;</span>
     }
-    <span style="color:#b84">&#34;extraUrlParams&#34;</span>: {
-      <span style="color:#000080">&#34;link_name&#34;</span>: <span style="color:#b84">&#34;${linkName}&#34;</span>
+    <span style="color:#a31515">&#34;extraUrlParams&#34;</span>: {
+      &#34;link_name&#34;: <span style="color:#a31515">&#34;${linkName}&#34;</span>
     }
   }
 }</code></pre></div>
 <p>AMPでは以下の<a href="https://amp.dev/documentation/components/amp-analytics/?referrer=ampproject.org#extra-url-params"><code>amp-analytics</code>追加URLパラメータ</a>がサポートされています。</p>
 
 <p>ボタンのHTMLの例：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080">span</span> <span style="color:#008080">id</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;the-button&#34;</span> <span style="color:#008080">data-vars-link-name</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;register&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;span id=<span style="color:#a31515">&#34;the-button&#34;</span> data-vars-link-name=<span style="color:#a31515">&#34;register&#34;</span>&gt;
 Button Text
-&lt;/<span style="color:#000080">span</span>&gt;</code></pre></div>
+&lt;/span&gt;</code></pre></div>
 </div>
 
 <b class="pv1 br2 dib tc mv3 link">
@@ -827,7 +827,7 @@ Button Text
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

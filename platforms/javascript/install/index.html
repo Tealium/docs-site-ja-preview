@@ -296,29 +296,29 @@ var utag_data = {
 <p>ユニバーサルデータオブジェクト（UDO）は、<a href="/platforms/javascript/about-utag-data/"><code>utag_data</code></a>と呼ばれるJavaScriptオブジェクトです。このオブジェクトでは、ウェブページからの動的データがTealiumタグに渡されます。このオブジェクトのプロパティには、ビジネスに合わせてベンダーに依存しないわかりやすい名前を使用します。 </p>
 
 <p>次の例は、ユニバーサルタグ<a href="/platforms/javascript/about-utag-js/"><code>utag.js</code></a>を読み込む_前_に、<code>utag_data</code>を定義してこの変数に値を入力する方法を示しています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#998;font-style:italic">&lt;!-- Tealium Universal Data Object --&gt;</span>
-&lt;<span style="color:#000080">script</span> <span style="color:#008080">type</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;text/javascript&#34;</span>&gt;
-  <span style="font-weight:bold">var</span> utag_data<span style="font-weight:bold">=</span>{
-      <span style="color:#b84">&#34;page_type&#34;</span>     <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;section&#34;</span>,
-      <span style="color:#b84">&#34;site_section&#34;</span>  <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;men&#34;</span>,
-      <span style="color:#b84">&#34;page_name&#34;</span>     <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;Men&#39;s Fashion | Acme Inc.&#34;</span>,
-      <span style="color:#b84">&#34;country_code&#34;</span>  <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;US&#34;</span>,
-      <span style="color:#b84">&#34;currency_code&#34;</span> <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;USD&#34;</span>};
-&lt;/<span style="color:#000080">script</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#008000">&lt;!-- Tealium Universal Data Object --&gt;</span>
+&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span>&gt;
+  <span style="color:#00f">var</span> utag_data={
+      <span style="color:#a31515">&#34;page_type&#34;</span>     : <span style="color:#a31515">&#34;section&#34;</span>,
+      <span style="color:#a31515">&#34;site_section&#34;</span>  : <span style="color:#a31515">&#34;men&#34;</span>,
+      <span style="color:#a31515">&#34;page_name&#34;</span>     : <span style="color:#a31515">&#34;Men&#39;s Fashion | Acme Inc.&#34;</span>,
+      <span style="color:#a31515">&#34;country_code&#34;</span>  : <span style="color:#a31515">&#34;US&#34;</span>,
+      <span style="color:#a31515">&#34;currency_code&#34;</span> : <span style="color:#a31515">&#34;USD&#34;</span>};
+&lt;/script&gt;</code></pre></div>
 <p>データ層とウェブサイトの連携の詳細については、<a href="https://community.tealiumiq.com/t5/Data-Layer/How-the-Data-Layer-Works-for-Websites/ta-p/13618">こちら</a>を参照してください。</p>
 
 <h3 id="ユニバーサルタグ-utag-js">ユニバーサルタグ（<code>utag.js</code>）</h3>
 
 <p><code>utag.js</code> JavaScriptライブラリは、Tealiumのユニバーサルタグで、複数のサードパーティタグを1つのコードスニペットに置き換えます。<code>utag.js</code>ファイルには、サードパーティタグをサイトに読み込むのに必要なコードがすべて生成済みの状態で含まれています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#998;font-style:italic">&lt;!-- Tealium Universal Tag --&gt;</span>
-&lt;<span style="color:#000080">script</span> <span style="color:#008080">type</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;text/javascript&#34;</span>&gt;
-  (<span style="font-weight:bold">function</span>(a,b,c,d) {
-      a<span style="font-weight:bold">=</span><span style="color:#b84">&#39;//tags.tiqcdn.com/utag/ACCOUNT/PROFILE/ENVIRONMENT/utag.js&#39;</span>;
-      b<span style="font-weight:bold">=</span><span style="color:#999">document</span>;c<span style="font-weight:bold">=</span><span style="color:#b84">&#39;script&#39;</span>;d<span style="font-weight:bold">=</span>b.createElement(c);d.src<span style="font-weight:bold">=</span>a;
-      d.type<span style="font-weight:bold">=</span><span style="color:#b84">&#39;text/java&#39;</span><span style="font-weight:bold">+</span>c;d.async<span style="font-weight:bold">=</span><span style="font-weight:bold">true</span>;
-      a<span style="font-weight:bold">=</span>b.getElementsByTagName(c)[<span style="color:#099">0</span>];a.parentNode.insertBefore(d,a)})();
-&lt;/<span style="color:#000080">script</span>&gt;</code></pre></div>
-<p class="tip">特定のスニペットをアカウントの<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Code-Center/ta-p/13631">コードセンター</a>から取得します。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#008000">&lt;!-- Tealium Universal Tag --&gt;</span>
+&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span>&gt;
+  (<span style="color:#00f">function</span>(a,b,c,d) {
+      a=<span style="color:#a31515">&#39;//tags.tiqcdn.com/utag/ACCOUNT/PROFILE/ENVIRONMENT/utag.js&#39;</span>;
+      b=document;c=<span style="color:#a31515">&#39;script&#39;</span>;d=b.createElement(c);d.src=a;
+      d.type=<span style="color:#a31515">&#39;text/java&#39;</span>+c;d.async=<span style="color:#00f">true</span>;
+      a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)})();
+&lt;/script&gt;</code></pre></div>
+<p class="tip"><i class="fas fa-star"></i>特定のスニペットをアカウントの<a href="https://community.tealiumiq.com/t5/Tealium-iQ/Code-Center/ta-p/13631">コードセンター</a>から取得します。</p>
 
 <p><code>utag.sync.js</code>の詳細については、<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Using-the-utag-sync-js-Script/ta-p/19175">こちら</a>を参照してください。</p>
 
@@ -355,7 +355,7 @@ var utag_data = {
 
 <p><strong>ターゲット環境</strong>
 ページで検出された環境はオレンジ色の輪郭で示されます。現在表示している環境は青色でハイライトされます。目的のボタンをクリックしてページを再読み込みしてからWeb Companionを再起動することで、3つの環境のいずれかを表示できます。
-<p class="note">Web Companionを再起動する前に、ウェブページの読み込みを完了します。</p></p>
+<p class="note"><i class="fas fa-info-circle"></i>Web Companionを再起動する前に、ウェブページの読み込みを完了します。</p></p>
 
 <p><strong>タグおよび拡張機能のタブ</strong>
 このタブには、読み込まれたタグとそれらのタグが正常に要求を送信したかどうかが表示されます。正常に完了した拡張機能も表示されます。</p>
@@ -799,7 +799,7 @@ Web Companionを使用してプロファイルに適用された変更は、ブ�
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

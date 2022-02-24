@@ -329,18 +329,18 @@ var utag_data = {
 タグからネイティブアプリに渡されるデータ。iQ Tag Managementでデータマッピングとして構成され、アプリ内でハンドラーのレスポンスコールバックの<code>requestPayload</code>オブジェクトとして受信されます。</li>
 </ul>
 
-<p class="note">リモートコマンドはビルド時にネイティブアプリで定義されている必要があります。リモートコマンドタグでは、デバイス上で定義済みのコードのみ実行されます。</p>
+<p class="note"><i class="fas fa-info-circle"></i>リモートコマンドはビルド時にネイティブアプリで定義されている必要があります。リモートコマンドタグでは、デバイス上で定義済みのコードのみ実行されます。</p>
 
 <h3 id="ネイティブコード">ネイティブコード</h3>
 
 <p>ネイティブコードでは、<code>addRemoteCommandID</code>というヘルパー関数が、リモートコマンド用のハンドラーを登録します。コールバック関数<code>responseBlock</code>は、<code>response.requestPayload</code>内のペイロードにアクセスします。ここで参照されるペイロード変数には、iQ Tag Managementで構成され、対応するデータ層変数があるはずです。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">TealiumHelper.shared.tealium.addRemoteCommandID(
-    <span style="color:#b84">&#34;myRemoteCommand&#34;</span>,
-    description: <span style="color:#b84">&#34;&#34;</span>,
+    <span style="color:#a31515">&#34;myRemoteCommand&#34;</span>,
+    description: <span style="color:#a31515">&#34;&#34;</span>,
     targetQueue: DispatchQueue.main,
-    responseBlock: { response <span style="font-weight:bold">in</span>
-        <span style="font-weight:bold">guard</span> <span style="font-weight:bold">let</span> <span style="color:#008080">myVariable</span> = response.requestPayload[<span style="color:#b84">&#34;myVariable&#34;</span>] <span style="font-weight:bold">as</span>? <span style="color:#999">String</span> <span style="font-weight:bold">else</span> {
-            <span style="font-weight:bold">return</span>
+    responseBlock: { response <span style="color:#00f">in</span>
+        <span style="color:#00f">guard</span> <span style="color:#00f">let</span> myVariable = response.requestPayload[<span style="color:#a31515">&#34;myVariable&#34;</span>] <span style="color:#00f">as</span>? String <span style="color:#00f">else</span> {
+            <span style="color:#00f">return</span>
         }
     }
 )</code></pre></div>
@@ -361,8 +361,8 @@ var utag_data = {
 
 <h4 id="トラッキングされたイベント">トラッキングされたイベント：</h4>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">tealium?.track(
-    title: <span style="color:#b84">&#34;My Screen&#34;</span>,
-    data: [<span style="color:#b84">&#34;tealium_event&#34;</span>: <span style="color:#b84">&#34;my_event&#34;</span>, <span style="color:#b84">&#34;my_variable&#34;</span>: <span style="color:#b84">&#34;my_value&#34;</span>]
+    title: <span style="color:#a31515">&#34;My Screen&#34;</span>,
+    data: [<span style="color:#a31515">&#34;tealium_event&#34;</span>: <span style="color:#a31515">&#34;my_event&#34;</span>, <span style="color:#a31515">&#34;my_variable&#34;</span>: <span style="color:#a31515">&#34;my_value&#34;</span>]
 );</code></pre></div>
 <h4 id="タグのセットアップ">タグのセットアップ：</h4>
 
@@ -828,7 +828,7 @@ pod &quot;TealiumVendorXYZ&quot;
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

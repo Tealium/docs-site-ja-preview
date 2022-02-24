@@ -284,33 +284,33 @@ var utag_data = {
 <img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/9010i6A08F5D742E0DA07/image-size/large?v=1.0&amp;px=999" alt="コードセンター" /></li>
 
 <li><p>以下のようなユニバーサルデータオブジェクト（UDO）コードサンプルを探します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#998;font-style:italic">&lt;!-- Tealium Universal Data Object --&gt;</span>
-&lt;<span style="color:#000080">script</span> <span style="color:#008080">type</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;text/javascript&#34;</span>&gt;
-<span style="font-weight:bold">var</span> utag_data <span style="font-weight:bold">=</span> {
-page_name <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;&#34;</span>,
-page_section <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;&#34;</span>,
-page_category <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;&#34;</span>,
-page_subcategory <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;&#34;</span>,
-page_type <span style="font-weight:bold">:</span> <span style="color:#b84">&#34;&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#008000">&lt;!-- Tealium Universal Data Object --&gt;</span>
+&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span>&gt;
+<span style="color:#00f">var</span> utag_data = {
+page_name : <span style="color:#a31515">&#34;&#34;</span>,
+page_section : <span style="color:#a31515">&#34;&#34;</span>,
+page_category : <span style="color:#a31515">&#34;&#34;</span>,
+page_subcategory : <span style="color:#a31515">&#34;&#34;</span>,
+page_type : <span style="color:#a31515">&#34;&#34;</span>
 }
-&lt;/<span style="color:#000080">script</span>&gt;</code></pre></div>
+&lt;/script&gt;</code></pre></div>
 <p>UDOの変数は、ウェブアプリケーションフレームワークによって動的に設定されますが、このテストの値はハードコーディングされています。</p></li>
 
 <li><p>このコードをコピーして、サイトのテストページのHTMLにある<code>&lt;body&gt;</code>タグの後ろに貼り付けます。</p></li>
 
 <li><p>次に、以下のようなユニバーサルタグコードを探します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#998;font-style:italic">&lt;!-- Tealium Universal Tag --&gt;</span>
-&lt;<span style="color:#000080">script</span> <span style="color:#008080">type</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;text/javascript&#34;</span>&gt;
-(<span style="font-weight:bold">function</span>(a,b,c,d){
-a<span style="font-weight:bold">=</span><span style="color:#b84">&#39;https://tags.tiqcdn.com/utag/ACCOUNT/main/qa/utag.js&#39;</span>;
-b<span style="font-weight:bold">=</span><span style="color:#999">document</span>;c<span style="font-weight:bold">=</span><span style="color:#b84">&#39;script&#39;</span>;d<span style="font-weight:bold">=</span>b.createElement(c);d.src<span style="font-weight:bold">=</span>a;
-d.type<span style="font-weight:bold">=</span><span style="color:#b84">&#39;text/java&#39;</span><span style="font-weight:bold">+</span>c;d.async<span style="font-weight:bold">=</span><span style="font-weight:bold">true</span>;
-a<span style="font-weight:bold">=</span>b.getElementsByTagName(c)[<span style="color:#099">0</span>];a.parentNode.insertBefore(d,a)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#008000">&lt;!-- Tealium Universal Tag --&gt;</span>
+&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span>&gt;
+(<span style="color:#00f">function</span>(a,b,c,d){
+a=<span style="color:#a31515">&#39;https://tags.tiqcdn.com/utag/ACCOUNT/main/qa/utag.js&#39;</span>;
+b=document;c=<span style="color:#a31515">&#39;script&#39;</span>;d=b.createElement(c);d.src=a;
+d.type=<span style="color:#a31515">&#39;text/java&#39;</span>+c;d.async=<span style="color:#00f">true</span>;
+a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
 })();
-&lt;/<span style="color:#000080">script</span>&gt;</code></pre></div></li>
+&lt;/script&gt;</code></pre></div></li>
 
 <li><p>このコードをコピーして、HTMLのUDOコードの後ろに貼り付けます。これによりTealiumタグがページに非同期で読み込まれ、その他の資産の読み込みがブロックされるのを防ぎます。<br />
-<p class="note">このコードをコピーしたら、<code>ACCOUNT</code>を実際のアカウント名に変更する必要があります。そうしない場合は、ご利用のアカウント、プロファイル、環境を含むコードセンターのコードを使用します。</p></p></li>
+<p class="note"><i class="fas fa-info-circle"></i>このコードをコピーしたら、<code>ACCOUNT</code>を実際のアカウント名に変更する必要があります。そうしない場合は、ご利用のアカウント、プロファイル、環境を含むコードセンターのコードを使用します。</p></p></li>
 </ol>
 
 <p>テストページがTealiumコードとともに保存されたら、テストを行います。</p>

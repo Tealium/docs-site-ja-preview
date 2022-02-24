@@ -314,14 +314,14 @@ var utag_data = {
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">dependencies:
 flutter:
 sdk: flutter
-tealium: <span style="color:#b84">&#39;1.0.0&#39;</span></code></pre></div></li>
+tealium: <span style="color:#a31515">&#39;1.0.0&#39;</span></code></pre></div></li>
 
 <li><p>プロジェクト内でTealium Flutterの依存関係をプルするには、次のコマンドを実行します。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">flutter pub get</code></pre></div>
 <p>java</p></li>
 
 <li><p>Dartコードをプロジェクトにインポートします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">import</span> <span style="color:#900;font-weight:bold">tealium</span><span style="font-weight:bold">/</span>tealium.<span style="color:#008080">dart</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">import</span> tealium/tealium.dart</code></pre></div></li>
 </ol>
 
 <p>Flutterプロジェクト内でTealium APIを使用します。</p>
@@ -329,10 +329,10 @@ tealium: <span style="color:#b84">&#39;1.0.0&#39;</span></code></pre></div></li>
 <h2 id="初期化">初期化</h2>
 
 <p><a href="/platforms/flutter/api/#initialize"><code>initialize()</code></a>メソッドは、Tealiumインスタンスを次の例に示すように初期化します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">var <span style="color:#900;font-weight:bold">teal</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">initialize</span>(<span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">var teal = Tealium.initialize(<span style="color:#a31515">&#34;ACCOUNT&#34;</span>, <span style="color:#a31515">&#34;PROFILE&#34;</span>, <span style="color:#a31515">&#34;ENVIRONMENT&#34;</span>, <span style="color:#00f">null</span>, <span style="color:#00f">null</span>);</code></pre></div>
 <p><a href="/platforms/flutter/api/#initializecustom"><code>initializeCustom()</code></a>メソッドは、すべての初期化オプションを使用してTealiumインスタンスを次の例に示すように初期化します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">var <span style="color:#900;font-weight:bold">teal</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">initializeCustom</span>(<span style="color:#b84">&#34;ACCOUNT&#34;</span>, <span style="color:#b84">&#34;PROFILE&#34;</span>, <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>,
-      <span style="color:#b84">&#34;INSTANCE&#34;</span>, <span style="font-weight:bold">true</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">null</span>, <span style="font-weight:bold">true</span>);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">var teal = Tealium.initializeCustom(<span style="color:#a31515">&#34;ACCOUNT&#34;</span>, <span style="color:#a31515">&#34;PROFILE&#34;</span>, <span style="color:#a31515">&#34;ENVIRONMENT&#34;</span>, <span style="color:#00f">null</span>, <span style="color:#00f">null</span>,
+      <span style="color:#a31515">&#34;INSTANCE&#34;</span>, <span style="color:#00f">true</span>, <span style="color:#00f">null</span>, <span style="color:#00f">null</span>, <span style="color:#00f">null</span>, <span style="color:#00f">true</span>);</code></pre></div>
 <p>初期化オプションの詳細については、<a href="/platforms/flutter/api">Flutter API</a>を参照してください。</p>
 
 </div>
@@ -766,7 +766,7 @@ tealium: <span style="color:#b84">&#39;1.0.0&#39;</span></code></pre></div></li>
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

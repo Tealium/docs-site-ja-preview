@@ -308,11 +308,11 @@ var utag_data = {
 </ol>
 
 <p>次に、以下のコードを使用して、SwiftからObjective-Cコードを呼び出します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objc" data-lang="objc"><span style="font-weight:bold">class</span> TealiumHelper {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objc" data-lang="objc"><span style="color:#00f">class</span> TealiumHelper {
     func somefunc () {
-        let tealConfig <span style="font-weight:bold">=</span> TEALConfiguration.init(account: <span style="color:#b84">&#34;ACCOUNT&#34;</span>, profile: <span style="color:#b84">&#34;PROFILE&#34;</span>, environment: <span style="color:#b84">&#34;ENVIRONMENT&#34;</span>)
-        let teal <span style="font-weight:bold">=</span> Tealium.newInstance(forKey: <span style="color:#b84">&#34;KEY&#34;</span>, configuration: tealConfig)
-        teal.trackView(withTitle: <span style="color:#b84">&#34;SCREEN_NAME&#34;</span>, dataSources: [<span style="color:#b84">&#34;DATA&#34;</span><span style="font-weight:bold">:</span><span style="color:#b84">&#34;VALUE&#34;</span>])
+        let tealConfig = TEALConfiguration.init(account: <span style="color:#a31515">&#34;ACCOUNT&#34;</span>, profile: <span style="color:#a31515">&#34;PROFILE&#34;</span>, environment: <span style="color:#a31515">&#34;ENVIRONMENT&#34;</span>)
+        let teal = Tealium.newInstance(forKey: <span style="color:#a31515">&#34;KEY&#34;</span>, configuration: tealConfig)
+        teal.trackView(withTitle: <span style="color:#a31515">&#34;SCREEN_NAME&#34;</span>, dataSources: [<span style="color:#a31515">&#34;DATA&#34;</span>:<span style="color:#a31515">&#34;VALUE&#34;</span>])
     }
 }</code></pre></div>
 <h2 id="objective-cからswiftを呼び出す">Objective-CからSwiftを呼び出す</h2>
@@ -326,20 +326,20 @@ var utag_data = {
 <li>Objective-Cプロジェクトで新しいSwiftファイルを作成します。ブリッジヘッダーがまだ存在しない場合は、ブリッジヘッダーを追加するよう求められます。この指示に従います。新しいSwiftファイルに&rdquo;TealiumHelper.swift&rdquo;という名前を付けます。</li>
 
 <li><p>新しいヘルパーを呼び出すのに必要なファイルに、新しいSwiftヘッダー（<code>&lt;ProjectName&gt;-Swift.h</code>）をインポートします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objc" data-lang="objc"><span style="color:#999;font-weight:bold">#import &#34;ProjectName-Swift.h&#34;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objc" data-lang="objc"><span style="color:#00f">#import &#34;ProjectName-Swift.h&#34;</span></code></pre></div></li>
 </ol>
 
 <p>ヘルパーファイル内のメソッドが、Objective-Cコードで利用できるようになります。ヘルパーはシングルトンにすることをお勧めします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objc" data-lang="objc"><span style="color:#999;font-weight:bold">#import &#34;TestSwiftBridge-Swift.h&#34;
-</span><span style="color:#999;font-weight:bold"></span>
-- (<span style="color:#458;font-weight:bold">BOOL</span>)<span style="color:#900;font-weight:bold">application:</span>(UIApplication <span style="font-weight:bold">*</span>)<span style="color:#008080">application</span> <span style="color:#900;font-weight:bold">didFinishLaunchingWithOptions:</span>(NSDictionary <span style="font-weight:bold">*</span>)<span style="color:#008080">launchOptions</span> {
-	<span style="color:#998;font-style:italic">// instantiate the helper singleton
-</span><span style="color:#998;font-style:italic"></span>    TealiumHelper <span style="font-weight:bold">*</span> help <span style="font-weight:bold">=</span> [TealiumHelper sharedInstance];
-    <span style="color:#998;font-style:italic">// call the start method, which initializes the Tealium library
-</span><span style="color:#998;font-style:italic"></span>    [help start];
-    <span style="color:#998;font-style:italic">// trigger a new event tracking call from objective-c
-</span><span style="color:#998;font-style:italic"></span>    [help track:<span style="color:#b84">@&#34;this is from objective-c!&#34;</span> data:@{<span style="color:#b84">@&#34;mydata&#34;</span><span style="font-weight:bold">:</span><span style="color:#b84">@&#34;hello from obj-c&#34;</span>}];
-    <span style="font-weight:bold">return</span> <span style="color:#999">YES</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objc" data-lang="objc"><span style="color:#00f">#import &#34;TestSwiftBridge-Swift.h&#34;
+</span><span style="color:#00f"></span>
+- (<span style="color:#2b91af">BOOL</span>)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	<span style="color:#008000">// instantiate the helper singleton
+</span><span style="color:#008000"></span>    TealiumHelper * help = [TealiumHelper sharedInstance];
+    <span style="color:#008000">// call the start method, which initializes the Tealium library
+</span><span style="color:#008000"></span>    [help start];
+    <span style="color:#008000">// trigger a new event tracking call from objective-c
+</span><span style="color:#008000"></span>    [help track:<span style="color:#a31515">@&#34;this is from objective-c!&#34;</span> data:@{<span style="color:#a31515">@&#34;mydata&#34;</span>:<span style="color:#a31515">@&#34;hello from obj-c&#34;</span>}];
+    <span style="color:#00f">return</span> YES;
 }</code></pre></div>
 <h3 id="リンク">リンク</h3>
 
@@ -791,7 +791,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

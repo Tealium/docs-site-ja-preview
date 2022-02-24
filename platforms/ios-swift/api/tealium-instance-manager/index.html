@@ -319,7 +319,7 @@ var utag_data = {
 <h3 id="getinstancebyname"><code>getInstanceByName()</code></h3>
 
 <p>指定されたキー（形式：&rdquo;ACCOUNT.PROFILE.ENVIRONMENT&rdquo;）のTealiumインスタンスを返します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">getInstanceByName(instanceKey: <span style="color:#999">String</span>) -&gt; Tealium?</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">getInstanceByName(instanceKey: String) -&gt; Tealium?</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -341,10 +341,10 @@ var utag_data = {
 </table>
 
 <p>次の例は、指定されたアカウント/プロファイル/環境キーのTealiumインスタンスを取得する方法を示しています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">let</span> <span style="color:#008080">instanceManager</span> = TealiumInstanceManager.shared
-<span style="font-weight:bold">let</span> <span style="color:#008080">myTealiumInstance</span> = instanceManager.getInstanceByName(<span style="color:#b84">&#34;ACCOUNT.PROFILE.ENVIRONMENT&#34;</span>)
-<span style="color:#998;font-style:italic">// call any methods on the Tealium instance you just retrieved</span>
-<span style="color:#998;font-style:italic">// myTealiumInstance?.track(&#34;myevent&#34;)</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">let</span> instanceManager = TealiumInstanceManager.shared
+<span style="color:#00f">let</span> myTealiumInstance = instanceManager.getInstanceByName(<span style="color:#a31515">&#34;ACCOUNT.PROFILE.ENVIRONMENT&#34;</span>)
+<span style="color:#008000">// call any methods on the Tealium instance you just retrieved</span>
+<span style="color:#008000">// myTealiumInstance?.track(&#34;myevent&#34;)</span></code></pre></div>
 <h3 id="removeinstance"><code>removeInstance()</code></h3>
 
 <p>指定された<code>TealiumConfig</code>インスタンスのTealiumインスタンスを削除（割り当て解除）します。このメソッドと<code>removeInstanceForKey()</code>メソッドのいずれも呼び出されない場合は、永続的な参照が保持され、インスタンスは削除されません。</p>
@@ -396,15 +396,15 @@ var utag_data = {
 </table>
 
 <p>次の例では、指定されたアカウント/プロファイル/環境キーのTealiumインスタンスが削除されます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">let</span> <span style="color:#008080">instanceManager</span> = TealiumInstanceManager.shared
-instanceManager.removeInstanceForKey(<span style="color:#b84">&#34;ACCOUNT.PROFILE.ENVIRONMENT&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">let</span> instanceManager = TealiumInstanceManager.shared
+instanceManager.removeInstanceForKey(<span style="color:#a31515">&#34;ACCOUNT.PROFILE.ENVIRONMENT&#34;</span>)</code></pre></div>
 <p><strong><code>tealiumInstances</code>変数</strong>
 登録済みのすべてのTealiumインスタンスのディクショナリを格納します。</p>
 
 <p>次の例は、この変数を使用してすべての登録済みTealiumインスタンスを取得する方法を示しています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">let</span> <span style="color:#008080">instanceManager</span> = TealiumInstanceManager.shared
-<span style="font-weight:bold">let</span> <span style="color:#008080">allTealiumInstances</span> = instanceManager.tealiumInstances
-<span style="color:#998;font-style:italic">// do any required processing with the dictionary of valid Tealium instances</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">let</span> instanceManager = TealiumInstanceManager.shared
+<span style="color:#00f">let</span> allTealiumInstances = instanceManager.tealiumInstances
+<span style="color:#008000">// do any required processing with the dictionary of valid Tealium instances</span></code></pre></div>
 </div>
 
 <b class="pv1 br2 dib tc mv3 link">
@@ -849,7 +849,7 @@ instanceManager.removeInstanceForKey(<span style="color:#b84">&#34;ACCOUNT.PROFI
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

@@ -329,7 +329,7 @@ var utag_data = {
 
 <p>ベンダーのタグライブラリや画像ピクセルは、ページのDOMに同じように表示されます。Tealiumでは、タグができる限り仕様どおりに読み込まれるように努めています。まれにコードの変更が必要になった場合も、最終的なトラッキングビーコンが要件に適合するよう確認しています。</p>
 
-<p class="note">Tealiumで同期JavaScriptを読み込み、A/Bテストや多変量テストを行うベンダーをサポートすることもできます。</p>
+<p class="note"><i class="fas fa-info-circle"></i>Tealiumで同期JavaScriptを読み込み、A/Bテストや多変量テストを行うベンダーをサポートすることもできます。</p>
 
 <h3 id="eコマース値">eコマース値</h3>
 
@@ -374,24 +374,24 @@ redirect=https://collect.tealiumiq.com/vdata?dsp_uid=$UID&amp;tealium_visitor_id
 <p>サーバー側有効化タグには、直接Tealium EventStreamとAudienceStreamにイベントを送信するための追加機能が備えられています。たとえば、マウスの動きのトラッキングによりユーザーセンチメントを推測するユーザーエクスペリエンスベンダーは、直接Tealium Collectに対して特定のイベントをトリガーすることができます。このタイプの統合が_標準タグに含まれています_。</p>
 
 <p>次に示す関数の例では、Tealiumイベントエンドポイントにデータを送信します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.tealium.sendEvent <span style="font-weight:bold">=</span> <span style="font-weight:bold">function</span>(event_data) {
-    <span style="color:#998;font-style:italic">//Send Event to CDH event endpoint
-</span><span style="color:#998;font-style:italic"></span>    event_data[<span style="color:#b84">&#39;tealium_event&#39;</span>] <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;EVENT_NAME&#34;</span>;
-    event_data[<span style="color:#b84">&#39;tealium_account&#39;</span>] <span style="font-weight:bold">=</span> b.tealium_account; <span style="color:#998;font-style:italic">// required
-</span><span style="color:#998;font-style:italic"></span>    event_data[<span style="color:#b84">&#39;tealium_profile&#39;</span>] <span style="font-weight:bold">=</span> b.tealium_profile; <span style="color:#998;font-style:italic">// required
-</span><span style="color:#998;font-style:italic"></span>    event_data[<span style="color:#b84">&#39;tealium_visitor_id&#39;</span>] <span style="font-weight:bold">=</span> b.tealium_visitor_id; <span style="color:#998;font-style:italic">// required
-</span><span style="color:#998;font-style:italic"></span>    event_data[<span style="color:#b84">&#39;tealium_trace_id&#39;</span>] <span style="font-weight:bold">=</span> b[<span style="color:#b84">&#34;cp.trace_id&#34;</span>]; <span style="color:#998;font-style:italic">// optional
-</span><span style="color:#998;font-style:italic"></span>    event_data[<span style="color:#b84">&#39;tealium_datasource&#39;</span>] <span style="font-weight:bold">=</span> <span style="color:#b84">&#39;DATASOURCE_KEY&#39;</span>; <span style="color:#998;font-style:italic">// optional
-</span><span style="color:#998;font-style:italic"></span>
-    <span style="font-weight:bold">var</span> data <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> FormData();
-    data.append(<span style="color:#b84">&#34;data&#34;</span>, JSON.stringify(event_data));
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.tealium.sendEvent = <span style="color:#00f">function</span>(event_data) {
+    <span style="color:#008000">//Send Event to CDH event endpoint
+</span><span style="color:#008000"></span>    event_data[<span style="color:#a31515">&#39;tealium_event&#39;</span>] = <span style="color:#a31515">&#34;EVENT_NAME&#34;</span>;
+    event_data[<span style="color:#a31515">&#39;tealium_account&#39;</span>] = b.tealium_account; <span style="color:#008000">// required
+</span><span style="color:#008000"></span>    event_data[<span style="color:#a31515">&#39;tealium_profile&#39;</span>] = b.tealium_profile; <span style="color:#008000">// required
+</span><span style="color:#008000"></span>    event_data[<span style="color:#a31515">&#39;tealium_visitor_id&#39;</span>] = b.tealium_visitor_id; <span style="color:#008000">// required
+</span><span style="color:#008000"></span>    event_data[<span style="color:#a31515">&#39;tealium_trace_id&#39;</span>] = b[<span style="color:#a31515">&#34;cp.trace_id&#34;</span>]; <span style="color:#008000">// optional
+</span><span style="color:#008000"></span>    event_data[<span style="color:#a31515">&#39;tealium_datasource&#39;</span>] = <span style="color:#a31515">&#39;DATASOURCE_KEY&#39;</span>; <span style="color:#008000">// optional
+</span><span style="color:#008000"></span>
+    <span style="color:#00f">var</span> data = <span style="color:#00f">new</span> FormData();
+    data.append(<span style="color:#a31515">&#34;data&#34;</span>, JSON.stringify(event_data));
 
-    <span style="font-weight:bold">if</span> (<span style="color:#999">window</span>.utag <span style="font-weight:bold">&amp;&amp;</span> utag.data <span style="font-weight:bold">&amp;&amp;</span> utag.data.tealium_account) {
-        <span style="font-weight:bold">var</span> xhr <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> XMLHttpRequest();
-        xhr.open(<span style="color:#b84">&#34;POST&#34;</span>, <span style="color:#b84">&#34;https://collect.tealiumiq.com/event?&#34;</span>);
+    <span style="color:#00f">if</span> (window.utag &amp;&amp; utag.data &amp;&amp; utag.data.tealium_account) {
+        <span style="color:#00f">var</span> xhr = <span style="color:#00f">new</span> XMLHttpRequest();
+        xhr.open(<span style="color:#a31515">&#34;POST&#34;</span>, <span style="color:#a31515">&#34;https://collect.tealiumiq.com/event?&#34;</span>);
         xhr.send(data);
         }
-    <span style="font-weight:bold">return</span> <span style="font-weight:bold">true</span>;
+    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
 };
 </code></pre></div>
 <h2 id="パートナーになる">パートナーになる</h2>

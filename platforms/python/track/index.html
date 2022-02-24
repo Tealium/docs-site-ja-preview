@@ -287,24 +287,24 @@ var utag_data = {
 <h2 id="ビューのトラッキング">ビューのトラッキング</h2>
 
 <p><a href="/platforms/python/api/#trackevent"><code>trackEvent()</code></a>メソッドは、次の例に示すようにビューをトラッキングするために使用されます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">trackEvent(<span style="color:#b84">&#34;SCREEN_NAME&#34;</span>, data, callback)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">trackEvent(<span style="color:#a31515">&#34;SCREEN_NAME&#34;</span>, data, callback)</code></pre></div>
 <p>パラメータ<code>data</code>および<code>callback</code>はオプションです。</p>
 
 <h2 id="イベントのトラッキング">イベントのトラッキング</h2>
 
 <p>これと同じ<a href="/platforms/python/api/#trackevent"><code>trackEvent()</code></a>メソッドが、次の例に示すようにイベントをトラッキングするために使用されます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">trackEvent(<span style="color:#b84">&#34;EVENT_NAME&#34;</span>, data, callback)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">trackEvent(<span style="color:#a31515">&#34;EVENT_NAME&#34;</span>, data, callback)</code></pre></div>
 <p>パラメータ<code>data</code>および<code>callback</code>はオプションです。</p>
 
 <p>次の例は、オプションのdataおよびcallback引数が指定されたイベントを示しています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="font-weight:bold">def</span> <span style="color:#900;font-weight:bold">tealiumCallback</span>(info, success, error<span style="font-weight:bold">=</span>None):
-    <span style="font-weight:bold">if</span> error <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> None:
-        <span style="font-weight:bold">print</span> (info, success, error)
-        <span style="font-weight:bold">return</span>
-    <span style="font-weight:bold">print</span> (info, success)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> tealiumCallback(info, success, error=None):
+    <span style="color:#00f">if</span> error <span style="color:#00f">is</span> <span style="color:#00f">not</span> None:
+        <span style="color:#00f">print</span> (info, success, error)
+        <span style="color:#00f">return</span>
+    <span style="color:#00f">print</span> (info, success)
 
-eventData <span style="font-weight:bold">=</span> {<span style="color:#b84">&#39;KEY&#39;</span>: <span style="color:#b84">&#39;VALUE&#39;</span>}
-teal<span style="font-weight:bold">.</span>trackEvent(<span style="color:#b84">&#39;EVENT_NAME&#39;</span>,
+eventData = {<span style="color:#a31515">&#39;KEY&#39;</span>: <span style="color:#a31515">&#39;VALUE&#39;</span>}
+teal.trackEvent(<span style="color:#a31515">&#39;EVENT_NAME&#39;</span>,
                 data:eventData,
                 callback:tealiumCallback) </code></pre></div>
 </div>
@@ -751,7 +751,7 @@ teal<span style="font-weight:bold">.</span>trackEvent(<span style="color:#b84">&
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

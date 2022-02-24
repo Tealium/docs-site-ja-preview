@@ -300,7 +300,7 @@ var utag_data = {
 <h2 id="仕組み">仕組み</h2>
 
 <p><code>utag.js</code>の動作の多くは、<code>utag.cfg</code>オブジェクト内の設定によって制御されます。これらの設定によって制御されるデフォルトの動作は、<code>utag_cfg_ovrd</code>という名前の新しいオブジェクトを使用してオーバーライドされます。このオブジェクトを使用するには、<code>utag.js</code>を読み込む前にページコードで設定するか、または<strong>[Pre Loader]</strong>をスコープとする<a href="https://community.tealiumiq.com/t5/Tealium-iQ-Tag-Management/JavaScript-Code-Extension/ta-p/11925">JavaScriptコード拡張機能</a>内で以下のように設定します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd <span style="font-weight:bold">=</span> <span style="color:#999">window</span>.utag_cfg_ovrd <span style="font-weight:bold">||</span> {};
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd = window.utag_cfg_ovrd || {};
 </code></pre></div>
 <h2 id="設定">設定</h2>
 
@@ -386,83 +386,83 @@ var utag_data = {
 
 <p><strong>Consent Managementの保持期間</strong>
 デフォルトの90日間を任意の日数でオーバーライドします。（デフォルト：設定なし、ただし<code>90</code>と等価）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.consentPeriod <span style="font-weight:bold">=</span> <span style="color:#099">60</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.consentPeriod = 60;
 </code></pre></div>
 <h3 id="dom-complete"><code>dom_complete</code></h3>
 
 <p><strong>DOM完了時（読み込み）イベントまでタグを遅延</strong>
 DOM対応時ではなく<a href="https://developer.mozilla.org/en-US/docs/Web/Events/load">ドキュメント読み込みイベント</a>時にタグをトリガーします。また、[DOM Ready]をスコープとするすべての拡張機能を抑制します。（デフォルト：<code>false</code>）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.dom_complete <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.dom_complete = <span style="color:#00f">true</span>;
 </code></pre></div>
 <h3 id="domain"><code>domain</code></h3>
 
 <p><strong>Cookieドメインのオーバーライド</strong>
 <code>utag_main</code> Cookieが設定されるドメインを設定します。Cookieを受け付けないルートドメイン上のサイトに対して役立ちます。たとえば、<code>amazonaws.com</code>などです。（デフォルト値<code>location.hostname</code>の最上位ドメイン）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.domain <span style="font-weight:bold">=</span> <span style="color:#b84">&#34;mysite.amazonaws.com&#34;</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.domain = <span style="color:#a31515">&#34;mysite.amazonaws.com&#34;</span>;
 </code></pre></div>
 <h3 id="load-rules-ajax"><code>load_rules_ajax</code></h3>
 
 <p><strong>ページ読み込み後にタグ配信ルールを無効化（レガシー）</strong>
 同じページ読み込み内で<code>utag.view</code>および<code>utag.link</code>を呼び出すたびにタグ配信ルールを再処理するかどうかを制御します。新しくトリガーされたタグ配信ルールにより、ページに新しいタグが読み込まれる可能性があります。この設定は、4.2xより古いバージョンの<code>utag.js</code>での動作を再現する場合に使用します。（デフォルト：<code>true</code>）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.load_rules_ajax <span style="font-weight:bold">=</span> <span style="font-weight:bold">false</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.load_rules_ajax = <span style="color:#00f">false</span>;
 </code></pre></div>
 <h3 id="load-rules-at-wait"><code>load_rules_at_wait</code></h3>
 
 <p><strong>拡張機能後にタグ配信ルールを実行（レガシー）</strong>
 拡張機能後にタグ配信ルールを評価します。古いバージョンの<code>utag.js</code>で、<code>utag.js</code>の読み込み後にデータ層オブジェクトに値が入力されるようなインストール環境に対して使用されます。新しいバージョンの<code>utag.js</code>では、この設定の代わりに拡張機能の実行順序を利用できます。（デフォルト：<code>false</code>）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.load_rules_at_wait <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.load_rules_at_wait = <span style="color:#00f">true</span>;
 </code></pre></div>
 <h3 id="lowermeta"><code>lowermeta</code></h3>
 
 <p><strong>小文字のメタタグデータ（レガシー）</strong>
 メタデータの変数と値をすべて小文字にします。たとえば、<code>utag.data['meta.author']</code>などです。この設定は、4.2xより前のバージョンの<code>utag.js</code>での動作を再現します。（デフォルト：<code>false</code>）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.lowermeta <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.lowermeta = <span style="color:#00f">true</span>;
 </code></pre></div>
 <h3 id="lowerqp"><code>lowerqp</code></h3>
 
 <p><strong>小文字のクエリ文字列パラメータと値（レガシー）</strong>
 クエリ文字列の変数と値をすべて小文字にします。たとえば、<code>utag.data['qp.refid']</code>などです。この設定は、4.2xより前のバージョンの<code>utag.js</code>での動作を再現します。（デフォルト：<code>false</code>）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.lowerqp <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.lowerqp = <span style="color:#00f">true</span>;
 </code></pre></div>
 <h3 id="noload"><code>noload</code></h3>
 
 <p><strong><code>utag.js</code></strong>の無効化
 すべてのタグの読み込みを抑制します。<strong>[Pre Loader]</strong>拡張機能の後、<code>utag.js</code>の実行が停止します。<strong>[DOM Ready]</strong>をスコープとする拡張機能は、引き続き実行されます。これは通常、<strong>[Prevent Tag Load]</strong>の[Publish Configuration]設定を使用して調整されます。（デフォルト：<code>0</code>）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.noload <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.noload = <span style="color:#00f">true</span>;
 </code></pre></div>
 <h3 id="noview"><code>noview</code></h3>
 
 <p><strong>最初のトラッキングの無効化（単一ページアプリケーション）</strong>
 <code>utag.js</code>によって呼び出される自動ページトラッキングイベントを抑制します。一般に、単一ページアプリケーションサイトで使用されます。（デフォルト：<code>false</code>）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.noview <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.noview = <span style="color:#00f">true</span>;
 </code></pre></div>
 <h3 id="nocookie"><code>nocookie</code></h3>
 
 <p><strong>Cookieのオプトアウト</strong>
 このオプションは、サイトを訪問するユーザーが明示的にすべてのCookieをオプトアウトした場合のみ設定します。（デフォルト：<code>false</code>）
-<p class="note">このオプションを使用すると、訪問者およびセッションの数が増加し、すべての訪問が単一ページセッションのように見えます。</p></p>
+<p class="note"><i class="fas fa-info-circle"></i>このオプションを使用すると、訪問者およびセッションの数が増加し、すべての訪問が単一ページセッションのように見えます。</p></p>
 
 <p>このオプションを設定すると、<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Persist-Data-Value-Extension/ta-p/13623">データ値を保持拡張機能</a>で設定されたCookieや訪問者/セッションCookieを含めて、_すべて_のCookieが<code>utag.js</code>によって保存されなくなります。また、Cookieが使用できないとき、変数<code>ut.visitor_id</code>、<code>tealium_visitor_id</code>、<code>cp.utag_main_v_id</code>に新しいタイムスタンプが設定されます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.nocookie<span style="font-weight:bold">=</span><span style="font-weight:bold">true</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.nocookie=<span style="color:#00f">true</span>
 </code></pre></div>
 <h3 id="readywait"><code>readywait</code></h3>
 
 <p><strong>DOM対応まで<code>utag.js</code>を遅延</strong>
 ブラウザからDOM対応信号が受信されるまで、<code>utag.js</code>のすべての動作を停止します。<strong>[Pre Loader]</strong>をスコープとする拡張機能は、<code>utag.js</code>が読み込まれても引き続き実行されます。（デフォルト：<code>0</code>）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.readywait <span style="font-weight:bold">=</span> <span style="font-weight:bold">true</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.readywait = <span style="color:#00f">true</span>;
 </code></pre></div>
 <h3 id="session-timeout"><code>session_timeout</code></h3>
 
 <p><strong>セッションのタイムアウト</strong>
 現在のセッションを有効期限切れにするまで待つ時間（ミリ秒単位）を設定します。これは通常、[Session Timeout]の[Publish Configuration]設定を使用して調整されます。（デフォルト値：<code>1800000</code>（30分））</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#998;font-style:italic">// set timeout to 900000 milliseconds (15 minutes)
-</span><span style="color:#998;font-style:italic"></span><span style="color:#999">window</span>.utag_cfg_ovrd.session_timeout <span style="font-weight:bold">=</span> <span style="color:#099">900000</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#008000">// set timeout to 900000 milliseconds (15 minutes)
+</span><span style="color:#008000"></span>window.utag_cfg_ovrd.session_timeout = 900000;
 </code></pre></div>
 <h3 id="waittimer"><code>waittimer</code></h3>
 
 <p><strong>タイマによるタグの遅延</strong>
 DOM対応イベント後にタグを読み込むまで待つ時間（ミリ秒単位）を設定します。（デフォルト：設定なし）</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#999">window</span>.utag_cfg_ovrd.waittimer <span style="font-weight:bold">=</span> <span style="color:#099">1000</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">window.utag_cfg_ovrd.waittimer = 1000;
 </code></pre></div>
 </div>
 
@@ -908,7 +908,7 @@ DOM対応イベント後にタグを読み込むまで待つ時間（ミリ秒�
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

@@ -337,7 +337,7 @@ var utag_data = {
 <h3 id="createinstance"><code>createInstance()</code></h3>
 
 <p>新しいTealium Multitonを作成し、新規作成されたインスタンスを返します。インスタンスは<code>getInstance()</code>によってアクセスでき、<code>destroyInstance()</code>によって破壊できます。複数のインスタンスがサポートされています。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium.<span style="color:#008080">createInstance</span>(key, config);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium.createInstance(key, config);</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -384,15 +384,15 @@ var utag_data = {
 <h3 id="disableconsentmanager"><code>disableConsentManager()</code></h3>
 
 <p>Consent Managerを無効にします。このメソッドは、Tealiumが完全に初期化された後でConsent Managerを無効にするために呼び出します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">Tealium</span> tealiumInstance <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">final</span> Tealium tealiumInstance = Tealium.createInstance(TEALIUM_MAIN, config);
 
-tealiumInstance.<span style="color:#008080">disableConsentManager</span>();</code></pre></div>
+tealiumInstance.disableConsentManager();</code></pre></div>
 <h3 id="getconsentmanager"><code>getConsentManager()</code></h3>
 
 <p>Consent Managerが有効な場合、そのインスタンスを返します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="font-weight:bold">final</span> <span style="color:#900;font-weight:bold">Tealium</span> tealiumInstance <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">createInstance</span>(TEALIUM_MAIN, config);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">final</span> Tealium tealiumInstance = Tealium.createInstance(TEALIUM_MAIN, config);
 
-ConsentManager <span style="color:#900;font-weight:bold">consentManager</span> <span style="font-weight:bold">=</span> tealiumInstance.<span style="color:#008080">getConsentManager</span>();</code></pre></div>
+ConsentManager consentManager = tealiumInstance.getConsentManager();</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -412,14 +412,14 @@ ConsentManager <span style="color:#900;font-weight:bold">consentManager</span> <
 <h3 id="requestflush"><code>requestFlush()</code></h3>
 
 <p>バッチ制限に達していない場合に、イベントのバッチキューをディスパッチするようリクエストします。他のどのディスパッチチェック（オンライン、同意管理、ディスパッチバリデーター）にも問題がない場合は、キューがディスパッチされます。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium <span style="color:#900;font-weight:bold">instance</span> <span style="font-weight:bold">=</span> Tealium.<span style="color:#008080">getInstance</span>(<span style="color:#b84">&#34;my_instance_name&#34;</span>);
-instance.<span style="color:#008080">requestFlush</span>();</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Tealium instance = Tealium.getInstance(<span style="color:#a31515">&#34;my_instance_name&#34;</span>);
+instance.requestFlush();</code></pre></div>
 <h3 id="trackevent"><code>trackEvent()</code></h3>
 
 <p>非ビューイベントをトラッキングします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Map<span style="font-weight:bold">&lt;</span>String, Object<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">data</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashMap<span style="font-weight:bold">&lt;&gt;</span>(1);
-data.<span style="color:#008080">put</span>(<span style="color:#b84">&#34;KEY&#34;</span>, <span style="color:#b84">&#34;VALUE&#34;</span>);
-Tealium.<span style="color:#008080">getInstance</span>(<span style="color:#b84">&#34;INSTANCE KEY&#34;</span>).<span style="color:#008080">trackEvent</span>(eventName, data);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Map&lt;String, Object&gt; data = <span style="color:#00f">new</span> HashMap&lt;&gt;(1);
+data.put(<span style="color:#a31515">&#34;KEY&#34;</span>, <span style="color:#a31515">&#34;VALUE&#34;</span>);
+Tealium.getInstance(<span style="color:#a31515">&#34;INSTANCE KEY&#34;</span>).trackEvent(eventName, data);</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -450,9 +450,9 @@ Tealium.<span style="color:#008080">getInstance</span>(<span style="color:#b84">
 <h3 id="trackview"><code>trackView()</code></h3>
 
 <p>表示されたビューをトラッキングします。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Map<span style="font-weight:bold">&lt;</span>String, Object<span style="font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">data</span> <span style="font-weight:bold">=</span> <span style="font-weight:bold">new</span> HashMap<span style="font-weight:bold">&lt;&gt;</span>(1);
-data.<span style="color:#008080">put</span>(<span style="color:#b84">&#34;KEY&#34;</span>, <span style="color:#b84">&#34;VALUE&#34;</span>);
-Tealium.<span style="color:#008080">getInstance</span>(<span style="color:#b84">&#34;INSTANCE KEY&#34;</span>).<span style="color:#008080">trackView</span>(screenName, data);</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Map&lt;String, Object&gt; data = <span style="color:#00f">new</span> HashMap&lt;&gt;(1);
+data.put(<span style="color:#a31515">&#34;KEY&#34;</span>, <span style="color:#a31515">&#34;VALUE&#34;</span>);
+Tealium.getInstance(<span style="color:#a31515">&#34;INSTANCE KEY&#34;</span>).trackView(screenName, data);</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -924,7 +924,7 @@ Tealium.<span style="color:#008080">getInstance</span>(<span style="color:#b84">
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     

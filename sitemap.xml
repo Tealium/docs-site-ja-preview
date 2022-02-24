@@ -385,16 +385,6 @@
   <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/cordova/module-list/adid/</loc>
     <lastmod>2020-08-27T14:00:18-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/cordova/module-list/adid/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/cordova/module-list/adid/"
-                />
   </url>
   
   <url>
@@ -575,16 +565,6 @@
   <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/cordova/module-list/crash-reporter/</loc>
     <lastmod>2020-08-27T14:00:18-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/cordova/module-list/crash-reporter/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/cordova/module-list/crash-reporter/"
-                />
   </url>
   
   <url>
@@ -1030,16 +1010,6 @@
   <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/cordova/module-list/install-referrer/</loc>
     <lastmod>2020-08-27T14:00:18-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/cordova/module-list/install-referrer/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/cordova/module-list/install-referrer/"
-                />
   </url>
   
   <url>
@@ -1585,16 +1555,6 @@
   <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/cordova/data-management/</loc>
     <lastmod>2020-08-27T14:00:18-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/cordova/data-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/cordova/data-management/"
-                />
   </url>
   
   <url>
@@ -1790,16 +1750,6 @@
   <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/cordova/module-list/</loc>
     <lastmod>2020-08-27T14:00:18-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/cordova/module-list/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/cordova/module-list/"
-                />
   </url>
   
   <url>
@@ -2388,6 +2338,21 @@
   </url>
   
   <url>
+    <loc>https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/firebase/</loc>
+    <lastmod>2022-02-23T16:30:30-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/platforms/remote-commands/integrations/firebase/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/firebase/"
+                />
+  </url>
+  
+  <url>
     <loc>https://docs-preview.tealium.co.jp/platforms/ios-swift/api/tealium-volatile-data/</loc>
     <lastmod>2020-08-27T14:00:18-07:00</lastmod>
   </url>
@@ -2404,21 +2369,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/platforms/getting-started/troubleshooting/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/firebase/</loc>
-    <lastmod>2021-03-10T08:41:21-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/remote-commands/integrations/firebase/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/firebase/"
                 />
   </url>
   

@@ -320,7 +320,7 @@ var utag_data = {
 <h3 id="cocoapods">CocoaPods</h3>
 
 <p>LifecycleモジュールをCocoaPodsによってインストールするには、Podfileに以下のポッドを追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">pod <span style="color:#b84">&#39;tealium-swift/TealiumLifecycle&#39;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">pod <span style="color:#a31515">&#39;tealium-swift/TealiumLifecycle&#39;</span></code></pre></div>
 <p>フレームワークは自動でインスタンス化され、<code>TealiumCore</code>ポッドに依存しています。iOS向けCocoaPodsのインストールの詳細については、<a href="/platforms/ios-swift/install/#cocoapods">こちら</a>を参照してください。</p>
 
 <h3 id="carthage">Carthage</h3>
@@ -331,10 +331,10 @@ var utag_data = {
 <li><p>Xcodeで対象アプリの[General]構成ページに移動します。</p></li>
 
 <li><p>以下のフレームワークを<strong>[Embedded Binaries]</strong>セクションに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">TealiumLifecycle<span style="font-weight:bold">.</span>framework</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">TealiumLifecycle.framework</code></pre></div></li>
 
 <li><p>Lifecycleライブラリをインポートするには、次のインポートステートメントをプロジェクトに追加します。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="font-weight:bold">import</span> <span style="color:#458;font-weight:bold">TealiumLifecycle</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00f">import</span> <span style="color:#2b91af">TealiumLifecycle</span></code></pre></div></li>
 </ol>
 
 <p>フレームワークは自動でインスタンス化され、<code>TealiumCore</code>に依存しています。追加のインポートステートメントは必要ありません。iOS向けCarthageのインストールの詳細については、<a href="/platforms/ios-swift/install/#carthage">こちら</a>を参照してください。</p>
@@ -556,7 +556,7 @@ var utag_data = {
 }
 </code></pre>
 
-<p class="note"><code>wakeDetected()</code>コールは、同じ関数内の<code>launchDetected()</code>の後に安全に追加されます。このモジュールは、インスタンス化されたインスタンスごとに1つの起動イベントだけを受け入れます。</p>
+<p class="note"><i class="fas fa-info-circle"></i><code>wakeDetected()</code>コールは、同じ関数内の<code>launchDetected()</code>の後に安全に追加されます。このモジュールは、インスタンス化されたインスタンスごとに1つの起動イベントだけを受け入れます。</p>
 
 <h3 id="sleepdetected"><code>sleepDetected()</code></h3>
 
@@ -1019,7 +1019,7 @@ let wakeCount = tealium?.lifecycle()?.dictionary?[&quot;lifecycle_totalwakecount
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">リモートコマンド：Firebase</a>
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
       </li>
       
     
