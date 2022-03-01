@@ -247,7 +247,7 @@ var utag_data = {
       <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#tealium-collect">Tealium Collect</a></li>
               <ul class="toc-h3"><li><a href="#javascript%e3%82%bf%e3%82%b0">JavaScriptタグ</a></li>
               <li><a href="#%e3%83%8d%e3%82%a4%e3%83%86%e3%82%a3%e3%83%96%e3%83%a2%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%ab">ネイティブモジュール</a></li>
-              <li><a href="#%e3%83%87%e3%83%bc%e3%82%bf%e5%b1%a4%e3%82%a8%e3%83%b3%e3%83%aa%e3%83%83%e3%83%81%e3%83%a1%e3%83%b3%e3%83%88-dle">データ層エンリッチメント（DLE）</a></li>
+              <li><a href="#%e3%83%87%e3%83%bc%e3%82%bf%e3%83%ac%e3%82%a4%e3%83%a4%e3%83%bc%e3%82%a8%e3%83%b3%e3%83%aa%e3%83%83%e3%83%81%e3%83%a1%e3%83%b3%e3%83%88-dle">データレイヤーエンリッチメント（DLE）</a></li>
               </nav>
   </aside></div>
 
@@ -272,7 +272,7 @@ var utag_data = {
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
-    <div class="f4 fw4 lh-copy">
+    <div class="f4 fw4 lh-copy mb4">
       モバイル向けサーバーサイドソリューションの実装について説明します。
     </div>
   
@@ -316,7 +316,7 @@ var utag_data = {
 
 <ul>
 <li>Tag Managementモジュールを既に使用しているインストール</li>
-<li>iQの拡張機能を使用したデータ層カスタマイズ</li>
+<li>iQの拡張機能を使用したデータレイヤーカスタマイズ</li>
 </ul>
 
 <p>Tealium Collectタグの設定方法については、<a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Tealium-Collect-Tag-Setup-Guide/ta-p/11923">こちら</a>を参照してください。</p>
@@ -334,13 +334,13 @@ var utag_data = {
 
 <p class="note"><i class="fas fa-info-circle"></i>Swiftライブラリの場合は、Tealium Collectをネイティブコードで有効化および無効化する必要があります。</p>
 
-<h3 id="データ層エンリッチメント-dle">データ層エンリッチメント（DLE）</h3>
+<h3 id="データレイヤーエンリッチメント-dle">データレイヤーエンリッチメント（DLE）</h3>
 
-<p>Tealium AudienceStreamでは、<a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Data-Layer-Enrichment-Public-API/ta-p/155">データ層エンリッチメント（DLE）</a>と呼ばれる機能を使用して、訪問者プロファイルデータをTealium Collectに返すこともできます。CollectモジュールでDLEを使用して、返された訪問者属性に基づいてアプリをパーソナライズします。</p>
+<p>Tealium AudienceStreamでは、<a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Data-Layer-Enrichment-Public-API/ta-p/155">データレイヤーエンリッチメント（DLE）</a>と呼ばれる機能を使用して、訪問者プロファイルデータをTealium Collectに返すこともできます。CollectモジュールでDLEを使用して、返された訪問者属性に基づいてアプリをパーソナライズします。</p>
 
 <p>Tealium iQ Tag Managementでは、Collectタグを実行すると、非表示のWebView <code>mobile.html</code>によってDLE訪問者属性へのアクセスが提供されます。これらの属性には、拡張機能や読み込みルールなどを設定するときにアクセスできます。<a href="/platforms/remote-commands/">リモートコマンド</a>は、DLE値に基づくアプリ内パーソナライゼーションのためのWebViewとモバイルアプリ間の通信に必要です。</p>
 
-<p>訪問者プロファイルのデータ層への追加は、<a href="/platforms/ios-swift/module-list/visitor-service/">Swift向けVisitorServiceモジュール</a>によっても行われます。</p>
+<p>訪問者プロファイルのデータレイヤーへの追加は、<a href="/platforms/ios-swift/module-list/visitor-service/">Swift向けVisitorServiceモジュール</a>によっても行われます。</p>
 
 </div>
 
@@ -364,8 +364,8 @@ var utag_data = {
 	<div date-pref class="white">
 
 		
-			<a href="https://docs-preview.tealium.co.jp/platforms/getting-started/data-layer/" title="データ層">
-			データ層 <svg class="fill-current" height="18px" viewBox="0 0 18 18" width="18px" xmlns="http://www.w3.org/2000/svg"> <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path> <path d="M0 0h24v24H0z" fill="none"></path> </svg>
+			<a href="https://docs-preview.tealium.co.jp/platforms/getting-started/data-layer/" title="データレイヤー">
+			データレイヤー <svg class="fill-current" height="18px" viewBox="0 0 18 18" width="18px" xmlns="http://www.w3.org/2000/svg"> <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path> <path d="M0 0h24v24H0z" fill="none"></path> </svg>
 
 			</a>
 		
@@ -509,7 +509,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/getting-started/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-data-layer">データ層</a>
+        <a href="/platforms/getting-started/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-data-layer">データレイヤー</a>
       </li>
       
     
@@ -915,7 +915,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/android-java/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-data-layer">データ層</a>
+        <a href="/platforms/android-java/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-data-layer">データレイヤー</a>
       </li>
       
     
@@ -1787,7 +1787,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-objective-c/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-data-layer">データ層</a>
+        <a href="/platforms/ios-objective-c/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-data-layer">データレイヤー</a>
       </li>
       
     
@@ -2091,7 +2091,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-swift/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-data-layer">データ層</a>
+        <a href="/platforms/ios-swift/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-data-layer">データレイヤー</a>
       </li>
       
     
@@ -3255,7 +3255,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/amp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-data-layer">データ層</a>
+        <a href="/platforms/amp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-data-layer">データレイヤー</a>
       </li>
       
     
@@ -3459,7 +3459,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/javascript/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データ層</a>
+        <a href="/platforms/javascript/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データレイヤー</a>
       </li>
       
     
@@ -3519,7 +3519,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/javascript/data-layer-object/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データ層オブジェクト（b）</a>
+        <a href="/platforms/javascript/data-layer-object/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データレイヤーオブジェクト（b）</a>
       </li>
       
     
@@ -3735,7 +3735,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/csharp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-data-layer">データ層</a>
+        <a href="/platforms/csharp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-data-layer">データレイヤー</a>
       </li>
       
     
@@ -3857,7 +3857,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/http-api/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".http-api-data-layer">データ層</a>
+        <a href="/platforms/http-api/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".http-api-data-layer">データレイヤー</a>
       </li>
       
     
@@ -4521,7 +4521,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="70"></textarea>
-    <span>最終更新日 ::  2021年March月18日
+    <span>最終更新日 ::  2022年March月2日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
   </span>

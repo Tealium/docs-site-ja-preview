@@ -256,7 +256,7 @@ var utag_data = {
               </ul><li><a href="#%e4%bd%8d%e7%bd%ae%e8%bf%bd%e8%b7%a1">位置追跡</a></li>
               <li><a href="#%e3%82%b8%e3%82%aa%e3%83%95%e3%82%a7%e3%83%b3%e3%82%b7%e3%83%b3%e3%82%b0">ジオフェンシング</a></li>
               <li><a href="#%e8%bf%bd%e5%8a%a0%e3%81%ae%e6%a4%9c%e8%a8%8e%e4%ba%8b%e9%a0%85">追加の検討事項</a></li>
-              <li><a href="#%e3%83%87%e3%83%bc%e3%82%bf%e5%b1%a4">データ層</a></li>
+              <li><a href="#%e3%83%87%e3%83%bc%e3%82%bf%e3%83%ac%e3%82%a4%e3%83%a4%e3%83%bc">データレイヤー</a></li>
               <li><a href="#api%e3%83%aa%e3%83%95%e3%82%a1%e3%83%ac%e3%83%b3%e3%82%b9">APIリファレンス</a></li>
               </nav>
   </aside></div>
@@ -282,7 +282,7 @@ var utag_data = {
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
-    <div class="f4 fw4 lh-copy">
+    <div class="f4 fw4 lh-copy mb4">
       イベントのデバイス位置データに加え、目標物の周囲にジオフェンスを追加する機能を提供します。
     </div>
   
@@ -391,7 +391,7 @@ var utag_data = {
 <ul>
 <li><p><strong>ホスト型URL</strong>
 プロパティ<a href="/platforms/ios-swift/api/tealium-config/#geofenceurl"><code>geofenceUrl</code></a>へのURLとして指定されている独自のホスト型ジオフェンスファイルを使用します。
-このオプションは、公開設定URLをオーバーライドした場合、または<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/About-Hosted-Data-Layer/ta-p/17572">ホスト型データ層</a>を使用する必要がある場合に推奨されます。</p>
+このオプションは、公開設定URLをオーバーライドした場合、または<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/About-Hosted-Data-Layer/ta-p/17572">ホスト型データレイヤー</a>を使用する必要がある場合に推奨されます。</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">config.geofenceUrl = <span style="color:#a31515">&#34;https://example.com/geofences.json&#34;</span></code></pre></div></li>
 
 <li><p><strong>ローカルファイル</strong>
@@ -407,9 +407,9 @@ var utag_data = {
 <p><strong>ジオフェンスの初期化</strong>
 作成時にユーザーがジオフェンス内にいる場合、<code>&quot;enter&quot;</code>遷移イベントはトリガーされません。これは、<code>&quot;exit&quot;</code>および<code>&quot;enter&quot;</code>の遷移イベントが境界を横断するときにトリガーされ、境界内に存在するときにはトリガーされないためです。</p>
 
-<h2 id="データ層">データ層</h2>
+<h2 id="データレイヤー">データレイヤー</h2>
 
-<p>以下の変数は、モバイルデータ層の一部としてLocationモジュールによって値が入力されます。これらの変数はライブラリから自動的に各トラッキングコールに含まれます。</p>
+<p>以下の変数は、モバイルデータレイヤーの一部としてLocationモジュールによって値が入力されます。これらの変数はライブラリから自動的に各トラッキングコールに含まれます。</p>
 
 <table>
 <thead>
@@ -445,7 +445,7 @@ var utag_data = {
 </tbody>
 </table>
 
-<p>ジオフェンシング中にユーザーの遷移状態が変化すると、位置データを含むトラッキングコールが送信されます。遷移状態の変化には、ジオフェンスへのユーザーの入退出が含まれます。以下の追加の変数がデータ層に送信されます。</p>
+<p>ジオフェンシング中にユーザーの遷移状態が変化すると、位置データを含むトラッキングコールが送信されます。遷移状態の変化には、ジオフェンスへのユーザーの入退出が含まれます。以下の追加の変数がデータレイヤーに送信されます。</p>
 
 <table>
 <thead>
@@ -666,7 +666,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/getting-started/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-data-layer">データ層</a>
+        <a href="/platforms/getting-started/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-data-layer">データレイヤー</a>
       </li>
       
     
@@ -1072,7 +1072,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/android-java/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-data-layer">データ層</a>
+        <a href="/platforms/android-java/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-data-layer">データレイヤー</a>
       </li>
       
     
@@ -1944,7 +1944,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-objective-c/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-data-layer">データ層</a>
+        <a href="/platforms/ios-objective-c/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-data-layer">データレイヤー</a>
       </li>
       
     
@@ -2248,7 +2248,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-swift/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-data-layer">データ層</a>
+        <a href="/platforms/ios-swift/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-data-layer">データレイヤー</a>
       </li>
       
     
@@ -3412,7 +3412,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/amp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-data-layer">データ層</a>
+        <a href="/platforms/amp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-data-layer">データレイヤー</a>
       </li>
       
     
@@ -3616,7 +3616,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/javascript/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データ層</a>
+        <a href="/platforms/javascript/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データレイヤー</a>
       </li>
       
     
@@ -3676,7 +3676,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/javascript/data-layer-object/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データ層オブジェクト（b）</a>
+        <a href="/platforms/javascript/data-layer-object/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データレイヤーオブジェクト（b）</a>
       </li>
       
     
@@ -3892,7 +3892,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/csharp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-data-layer">データ層</a>
+        <a href="/platforms/csharp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-data-layer">データレイヤー</a>
       </li>
       
     
@@ -4014,7 +4014,7 @@ var utag_data = {
       
       
       <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/http-api/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".http-api-data-layer">データ層</a>
+        <a href="/platforms/http-api/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".http-api-data-layer">データレイヤー</a>
       </li>
       
     
@@ -4678,7 +4678,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="70"></textarea>
-    <span>最終更新日 ::  2020年August月27日
+    <span>最終更新日 ::  2022年March月2日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
   </span>
