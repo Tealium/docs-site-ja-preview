@@ -1,0 +1,3429 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/ilp4lxb.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     
+    <title>メディア トラッキング | はじめに |Tealium開発者ドキュメントプレビュー</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+     <meta name="generator" content="Hugo 0.98.0" />
+
+      
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      
+
+    <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
+
+  </head>
+  <body class="sidebar ma0 sans-serif bg-primary-color-light">
+      
+        
+<script>
+var utag_data = {
+    site_section  : "platforms",
+    site_language : "ja",
+    tealium_event : "page_view"
+}
+</script>
+
+<script>
+ (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/tealium\/docs/qa/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+  })();
+</script>
+
+      
+
+    
+<nav class="bg-primary-color-dark pv3 w-100 sticky-t" role="navigation">
+
+  <div class="flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="https://docs-preview.tealium.co.jp"><img src="/images/icons/tealdevdocs_logo_white.svg" width="180" height="41"/></a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://docs-preview.tealium.co.jp/guides/" class="dim link">
+          手引き</a>
+        </li>
+        <li class="f5 dib mr4 active" role="menuitem">
+            
+          <a href="https://docs-preview.tealium.co.jp/platforms/" class="dim link">
+          プラットフォーム</a>
+        </li>
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://docs-preview.tealium.co.jp/partners/" class="dim link">
+          パートナー</a>
+        </li></ul>
+    
+    <div class="db dib-ns pl3 mr4"><form id="site-search-form" action="" role="search">
+  <fieldset class="bn ma0 pa0">
+    <label class="clip" for="search-input">Search</label>
+    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white"
+           placeholder="ドキュメントの検索" name="search-input" value=""
+           style="background: transparent url('/images/icons/icon-search-white.png') no-repeat 6px 10px /16px 16px;background-color: hsla(0,0%,100%,.1)!important;border-radius:4px;">
+  </fieldset>
+</form>
+</div><ul class="list ma0 pa0 dn dib-l">
+      <li class="f5 dib">
+         <i class="fa fa-globe" style="color: rgba(255, 255, 255, .6)" aria-hidden="true"></i>
+      </li>
+      <li class="f5 dib mr4"><a href="https://docs.tealium.com/">English</a>
+</li>
+    </ul>
+
+  </div>
+
+
+<div id="mainAppInner" class="padd-54">
+    <div id="leftFrame">
+        <div class="main-nav-container">
+            <ul class="menu-group flex-0 mb-3">
+                <li class="js-toggle-leftframe">
+                    <a href="#" class="menu-list-item top-level tooltip-right">
+                        <span class="menu-large-icon is-logo"> <img src="/images/icons/tealium_logo_color_sat.svg" class="as-main-icon"> </span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="flex-1">
+                <ul id="navCategoryHome" class="menu-group as-main-navigation">
+                    <li class="js-main-nav-section" data-section="home">
+                        <a href="https://community.tealiumiq.com/" class="menu-list-item top-level tooltip-right" title="Tearlium Learnig Center Home">
+                          <span class="menu-large-icon">
+                              <span class="as-platform-image square-xxxs is-rounded bg-transparent">
+                                  <span class="inner-image UDH-icon">TLC</span>
+                              </span>
+                          </span>
+                          <span class="menu-context supportLinks_buttonTitle">Tealium Learning Center</span>
+                        </a>
+                          <span class="tooltiptext">Tealium Learning <br>Community</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a href="https://community.tealiumiq.com/t5/Forums/ct-p/tealiumlearningcommunity" class="menu-list-item top-level tooltip-right" title="Discussions & Ideas">
+                            <span class="menu-large-icon">
+                                <i class="fal fa-comments"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">Discussions & Ideas</span>
+                        </a>
+                          <span class="tooltiptext">Dicussions & Ideas</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a href="https://community.tealiumiq.com/t5/tkb/communitypage" class="menu-list-item top-level tooltip-right" title="Product Guides">
+                            <span class="menu-large-icon">
+                                <i class="fal fa-book"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">Product Guides</span>
+                        </a>
+                          <span class="tooltiptext">Product Guides</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section" data-section="kb">
+                        <a href="https://support.tealiumiq.com/en/support/solutions" class="menu-list-item top-level tooltip-right">
+                            <span class="menu-large-icon">
+                                <i class="fal fa-head-side-brain"></i>
+                            </span>
+                            <span class="menu-context">Knowledge Base</span>
+                        </a>
+                          <span class="tooltiptext"> Knowledge Base </span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section active">
+                        <a href="https://docs.tealium.com/" class="menu-list-item top-level tooltip-right" title="Developer Documentation">
+                            <span class="menu-large-icon">
+                                <i class="fal fa-code"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">Developer Docs</span>
+                        </a>
+                          <span class="tooltiptext">Developer Docs</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a href="https://community.tealiumiq.com/t5/Education/ct-p/education" class="menu-list-item top-level tooltip-right" title="Education">
+                            <span class="menu-large-icon">
+                                <i class="fal fa-graduation-cap"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">Education</span>
+                        </a>
+                          <span class="tooltiptext">Education</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a href="https://community.tealiumiq.com/t5/TLC-Blog/bg-p/TLC-Blog" class="menu-list-item top-level tooltip-right" title="TLC Blog">
+                            <span class="menu-large-icon">
+                                <i class="fal fa-newspaper"></i>
+                            </span>
+                            <span class="menu-context supportLinks_buttonTitle">TLC Blog</span>
+                        </a>
+                          <span class="tooltiptext">TLC Blog</span>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li class="js-main-nav-section">
+                        <a  href="https://support.tealiumiq.com" target="_blank" class="menu-list-item top-level tooltip-right" title="Tealium Support Desk">
+                          <span class="menu-large-icon">
+                            <i class="fal fa-life-ring"></i>
+                          </span>
+                          <span class="menu-context supportLinks_buttonTitle">Support Desk</span>
+                        </a>
+                          <span class="tooltiptext">Support Desk</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="menu-group as-main-navigation flex-0 bottom-align">
+              <li class="menu-divider"></li>
+              <li class="js-main-nav-section">
+                <a href="https://my.tealiumiq.com/" class="menu-list-item top-level tooltip-right" title="Customer Data Hub">
+                    <span class="menu-large-icon">
+                        <span class="as-platform-image square-xxxs is-rounded bg-transparent">
+                            <span class="inner-image UDH-icon">CDH</span>
+                        </span>
+                    </span>
+                    <span class="menu-context supportLinks_buttonTitle">Customer Data Hub</span>
+                </a>
+                          <span class="tooltiptext">Customer Data Hub</span>
+              </li>
+              <li class="menu-divider"></li>
+              <li class="js-toggle-leftframe">
+                <a href="#" class="menu-list-item top-level d-flex justify-content-end" title="Expand/Collapse">
+                    <span class="menu-large-icon d-flex align-items-center justify-content-center mr-0">
+                        <span class="as-platform-image square-xxxs is-rounded bg-transparent d-flex align-items-center justify-content-center">
+                            <i class="fa as-caret"></i>
+                        </span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+
+</nav>
+
+    
+    <main role="main" class="content-with-sidebar pb0-ns">
+      
+  <article class="w-100 ph0-l ph4 pr4">
+    
+    <div class="flex">
+      
+
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-auto dn db-l sticky-l ph3" style="width:225px;">
+        <nav class="side-nav f6" role="navigation">
+  <ul class="list pa0"><li class="w-100 hover-accent-color-light fw8 f4 mid-gray pv1 pl2" data-level="1">モバイル</li>
+      <li class="w-100 hover-accent-color-light fw8  active" data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2 primary-color expanded " data-target=".getting-started">始める</a>
+        <ul class="getting-started desktopmenu animated fadeIn list pl0"><li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/getting-started/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/quick-start/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-quick-start">クイック スタート ガイド</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/mobile-concepts/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-mobile-concepts">モバイルの概念</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/client-side/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-client-side">クライアントサイド</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/server-side/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-server-side">サーバーサイド</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/tracking-webviews/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-javascript-interface">ウェブビューのトラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-data-layer">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/consent-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-consent-management">同意管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/event-batching/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-event-batching">イベントバッチ処理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/location/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-geolocation">ユーザーの位置情報とジオフェンシング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/media/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".getting-started-media">メディア トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/deep-linking/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-deep-linking">ディープ リンク</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/timed-events/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-timed-events">時間付きイベント</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/trace/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-trace">Trace</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/hosted-data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-hosted-data-layer">ホスト型データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/adobe-visitor-service/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-adobe-visitor-service">Adobe Visitor Service モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/feature-comparison/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-feature-comparison">機能比較</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started/troubleshooting/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-troubleshooting">トラブルシューティング</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".remote-commands">Remote Commands</a>
+        <ul class="remote-commands desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/remote-commands/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/remote-commands/how-it-works/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-how-it-works">仕組み</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".remote-commands-integrations">Integrations</a>
+        <ul class="remote-commands-integrations desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/remote-commands/integrations/adjust/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-adjust">Adjust</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/remote-commands/integrations/appsflyer/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-appsflyer">AppsFlyer</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/remote-commands/integrations/branch/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-branch">Branch</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/remote-commands/integrations/braze/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-braze">Braze</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/remote-commands/integrations/contentsquare/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-contentsquare">Contentsquare</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/remote-commands/integrations/facebook/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-facebook">Facebook</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-firebase">Firebase</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/remote-commands/integrations/kochava/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-kochava">Kochava</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/remote-commands/integrations/usabilla/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-usabilla">Usabilla</a>
+      </li></ul>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".android-java">Android (Java)</a>
+        <ul class="android-java desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-java/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-java/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-java/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-java/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-data-layer">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-java/data-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-data-management">データ管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-java/consent-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-consent-management">同意管理</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".android-java-module-list">モジュールのリスト</a>
+        <ul class="android-java-module-list desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/module-list/adid/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-module-list-adid">Ad Identifierモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/module-list/crash-reporter/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-module-list-crash-reporter">Crash Reporterモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/module-list/install-referrer/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-module-list-install-referrer">Install Referrerモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/module-list/lifecycle-tracking/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-module-list-lifecycle-tracking">Lifecycle Trackingモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/module-list/location/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-module-list-location">Locationモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/module-list/optimizely-x-tracking/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-module-list-optimizely-x-tracking">Optimizely X Trackingモジュール</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-java/tv/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-tv">Android TV</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-java/wear/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-wear">Android Wear</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".android-java-api">APIリファレンス</a>
+        <ul class="android-java-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/api/consent-manager/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-api-consent-manager">ConsentManager</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/api/data-sources/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-api-data-sources">DataSources</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/api/life-cycle/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-api-life-cycle">Lifecycle</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/api/tealium/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-api-tealium">Tealium</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/api/tealium-config/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-api-tealium-config">Tealium.Config</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-java/api/tealium-location/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-api-tealium-location">TealiumLocation</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-java/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".android-kotlin">Android (Kotlin)</a>
+        <ul class="android-kotlin desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-kotlin/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-kotlin/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-kotlin/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-kotlin/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-data-layer">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-kotlin/identity-resolution/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-identity-resolution">アイデンティティの解決</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-kotlin/consent-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-consent-management">同意管理</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".android-kotlin-module-list">モジュールのリスト</a>
+        <ul class="android-kotlin-module-list desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/adid/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-adid">Ad Identifierモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/autotracking/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-autotracking">AutoTrackingモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/adobe-visitor-service/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-adobe-visitor-service">AdobeVisitorService モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/collect/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-collect">Collectモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/collectors/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-collectors">Collectors モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/crash-reporter/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-crash-reporter">Crash Reporterモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/in-app-purchase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-in-app-purchase">「In-App Purchase モジュール」</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/install-referrer/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-install-referrer">Install Referrerモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/lifecycle-tracking/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-lifecycle-tracking">Lifecycle Trackingモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/location/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-location">Location Manager モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/media/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-media">Media モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/remote-commands/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-remotecommands">RemoteCommandsモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/tag-management/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-tagmanagement">Tag Management Dispatcher モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/module-list/visitor-service/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-module-list-visitor-service">Visitor Service モジュール</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-kotlin/tv/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-tv">Android TV</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".android-kotlin-api">APIリファレンス</a>
+        <ul class="android-kotlin-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/consent-category/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-consent-category">ConsentCategory</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/consent-manager/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-consent-manager">ConsentManager</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/current-visit/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-current-visit">CurrentVisit</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/data-layer/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-data-layer">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/lifecycle/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-lifecycle">Lifecycle</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/location-manager/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-location-manager">LocationManager</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/media/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-media">メディア</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/tealium/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-tealium">Tealium</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/tealium-config/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-tealium-config">TealiumConfig</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/visitor-profile/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-visitor-profile">VisitorProfile</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/android-kotlin/api/visitor-service/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-api-visitor-service">VisitorService</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/android-kotlin/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".cordova-v1">Cordova 1.x</a>
+        <ul class="cordova-v1 desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova-v1/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova-v1/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova-v1/data-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-data-management">データ管理</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".cordova-v1-module-list">モジュールのリスト</a>
+        <ul class="cordova-v1-module-list desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/cordova-v1/module-list/adid/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-module-list-adid">Ad Identifierモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/cordova-v1/module-list/crash-reporter/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-module-list-crash-reporter">Crash Reporterモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/cordova-v1/module-list/install-referrer/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-module-list-install-referrer">Install Referrerモジュール</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova-v1/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova-v1/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".cordova">Cordova 2.x</a>
+        <ul class="cordova desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/cordova/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".flutter-v1">Flutter 1.x</a>
+        <ul class="flutter-v1 desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-v1-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter-v1/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-v1-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter-v1/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-v1-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter-v1/consent-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-v1-consent-management">同意管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter-v1/data-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-v1-data-management">データ管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter-v1/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-v1-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter-v1/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-v1-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".flutter">Flutter 2.x</a>
+        <ul class="flutter desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter/consent-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-consent-management">同意管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter/data-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-data-management">データ管理</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".flutter-api">API Reference</a>
+        <ul class="flutter-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/flutter/api/tealium/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-api-tealium">Tealium</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/flutter/api/tealium-config/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-api-tealium-config">TealiumConfig</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/flutter/api/visitor-profile/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-api-visitor-profile">VisitorProfile</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/flutter/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".ios-objective-c">iOS (Objective-C)</a>
+        <ul class="ios-objective-c desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-data-layer">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/data-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-data-management">データ管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/consent-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-consent-management">同意管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/tag-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-tag-management">Tag Management</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".ios-objective-c-module-list">モジュールのリスト</a>
+        <ul class="ios-objective-c-module-list desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-objective-c/module-list/lifecycle-tracking/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-module-list-lifecycle-tracking">Lifecycle Trackingモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-objective-c/module-list/optimizely-x-tracking/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-module-list-optimizely-x-tracking">Optimizely X Trackingモジュール</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/tvos/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-tvos">tvOS</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/watchos/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-watchos">watchOS</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-objective-c/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".ios-swift-v1">iOS (Swift) 1.x</a>
+        <ul class="ios-swift-v1 desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-data-layer">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/data-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-data-management">データ管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/identity-resolution/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-identity-resolution">アイデンティティの解決</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/app-extensions/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-app-extensions">アプリ拡張機能</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/consent-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-consent-management">同意管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/modules/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-modules">モジュール</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".ios-swift-v1-module-list">モジュールのリスト</a>
+        <ul class="ios-swift-v1-module-list desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/appdata/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-appdata">AppDataモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/attribution/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-attribution">Attributionモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/autotracking/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-autotracking">AutoTrackingモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/collect/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-collect">Collectモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/connectivity/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-connectivity">Connectivityモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/crash-reporter/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-crashreporter">CrashReporterモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/datasource/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-datasource">DataSourceモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/defaults-storage/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-defaultstorage">DefaultStorageモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/delegate/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-delegate">Delegateモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/device-data/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-devicedata">DeviceDataモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/dispatch-queue/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-dispatchqueue">DispatchQueueモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/file-storage/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-filestorage">FileStorageモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/lifecycle/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-lifecycle">Lifecycleモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/location/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-location">Locationモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/logger/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-logger">Loggerモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/persistent-data/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-persistentdata">PersistentDataモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/remote-commands/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-remotecommands">RemoteCommandsモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/tag-management/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-tagmanagement">TagManagementモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/visitor-service/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-visitor-service">VisitorServiceモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/module-list/volatile-data/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-module-volatiledata">VolatileDataモジュール</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/with-objective-c/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-with-objective-c">Objective-Cとの連携</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/feature-comparison/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-feature-comparison">機能比較</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".ios-swift-v1-api">APIリファレンス</a>
+        <ul class="ios-swift-v1-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/api/tealium-config/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-api-tealium-config">TealiumConfig</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/api/tealium-consent-categories/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-api-tealium-consent-categories">TealiumConsentCategories</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/api/tealium-consent-manager-delegate/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-api-tealium-consent-manager-delegate">TealiumConsentManagerDelegate</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/api/tealium-consent-manager/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-api-tealium-consent-manager">TealiumConsentManager</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/api/tealium-instance-manager/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-api-tealium-instance-manager">TealiumInstanceManager</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/api/tealium-persistent-data/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-api-tealium-persistent-data">TealiumPersistentData</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/api/tealium-volatile-data/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-api-tealium-volatile-data">TealiumVolatileData</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift-v1/api/tealium/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-api-tealium">Tealium</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift-v1/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".ios-swift">iOS (Swift) 2.x</a>
+        <ul class="ios-swift desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-data-layer">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/consent-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-consent-management">同意管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/app-extensions/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-app-extensions">アプリ拡張機能</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/identity-resolution/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-identity-resolution">アイデンティティの解決</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/modules/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-modules">モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/with-objective-c/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".with-objective-c">Objective-Cとの連携</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".ios-swift-module-list">モジュールのリスト</a>
+        <ul class="ios-swift-module-list desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/appdata/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-appdata">AppDataモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/adobe-visitor-service/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-adobe-visitor-service">AdobeVisitorService モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/attribution/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-attribution">Attributionモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/autotracking/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-autotracking">AutoTrackingモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/collect/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-collect">Collectモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/connectivity/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-connectivity">Connectivityモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/crash-reporter/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-crashreporter">CrashReporterモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/device-data/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-devicedata">DeviceDataモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/in-app-purchase/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-inapppurchase">In-App Purchase モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/lifecycle/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-lifecycle">Lifecycleモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/location/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-location">Locationモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/media/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-media">Media モジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/remote-commands/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-remotecommands">RemoteCommandsモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/tag-management/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-tagmanagement">TagManagementモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/module-list/visitor-service/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-module-visitor-service">VisitorServiceモジュール</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".ios-swift-api">APIリファレンス</a>
+        <ul class="ios-swift-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/api/tealium/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-api-tealium">Tealium</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/api/tealium-config/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-api-tealium-config">TealiumConfig</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/api/tealium-consent-categories/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-api-tealium-consent-categories">TealiumConsentCategories</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/api/tealium-consent-manager/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-api-tealium-consent-manager">TealiumConsentManager</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/api/tealium-data-layer/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-api-tealium-data-layer">TealiumDataLayer</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/api/tealium-instance-manager/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-api-tealium-instance-manager">TealiumInstanceManager</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/ios-swift/api/media-session/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-api-media-session">MediaSession</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ios-swift/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".nativescript">NativeScript</a>
+        <ul class="nativescript desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/nativescript/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".nativescript-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/nativescript/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".nativescript-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/nativescript/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".nativescript-track">トラッキング</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".nativescript-api">API Reference</a>
+        <ul class="nativescript-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/nativescript/api/tealium/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".nativescript-api-tealium">Tealium</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/nativescript/api/tealium-config/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".nativescriptt-api-tealium-config">TealiumConfig</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/nativescript/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".nativescript-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".react-native-v1">React Native 1.x</a>
+        <ul class="react-native-v1 desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-v1-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native-v1/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-v1-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native-v1/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-v1-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native-v1/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-v1-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native-v1/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-v1-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".react-native">React Native 2.x</a>
+        <ul class="react-native desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native/location/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-location-install">Locationモジュール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/react-native/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".react-native-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".unity-v1">Unity 1.x</a>
+        <ul class="unity-v1 desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/unity-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".unity-v1-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/unity-v1/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".unity-v1-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/unity-v1/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".unity-v1-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/unity-v1/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".unity-v1-api">APIリファレンス</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".unity">Unity 2.x</a>
+        <ul class="unity desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/unity/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".unity-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/unity/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".unity-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/unity/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".unity-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/unity/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".unity-api">APIリファレンス</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".xamarin-v1">Xamarin 1.x</a>
+        <ul class="xamarin-v1 desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-v1-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin-v1/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-v1-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin-v1/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-v1-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin-v1/data-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-v1-data-management">データ管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin-v1/consent-mangagement/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-v1-consent-management">同意管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin-v1/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-v1-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin-v1/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-v1-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8  mb1 bb b--moon-gray" data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".xamarin">Xamarin 2.x</a>
+        <ul class="xamarin desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin/data-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-data-layer">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin/consent-mangagement/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-consent-management">同意管理</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/xamarin/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-release-notes">リリースノート</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw8 f4 mid-gray pv1 pl2" data-level="1">ウェブ</li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".getting-started-web">始める</a>
+        <ul class="getting-started-web desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started-web/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started-web/quick-start/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-quick-start">クイック スタート ガイド</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/getting-started-web/web-concepts/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-web-concepts">ウェブの概念</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".getting-started-web-data-layer">データレイヤー</a>
+        <ul class="getting-started-web-data-layer desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/getting-started-web/data-layer/an-introduction-to-the-data-layer/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-an-introduction-to-the-data-layer">An Introduction to the Data Layer</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/getting-started-web/data-layer/how-the-data-layer-works-for-websites/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-how-the-data-layer-works-for-websites">ウェブサイトに対するデータレイヤーの役割</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/getting-started-web/data-layer/data-layer-best-practices/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-data-layer-best-practices">データレイヤーのベストプラクティス</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="3">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl4 pr2  " data-target=".getting-started-web-data-layer-definitions">定義</a>
+        <ul class="getting-started-web-data-layer-definitions desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="4">
+        <a href="/platforms/getting-started-web/data-layer/definitions/retail/" class="db link pl5 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-data-layer-definitions-retail">小売</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="4">
+        <a href="/platforms/getting-started-web/data-layer/definitions/publisher/" class="db link pl5 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-data-layer-definitions-publisher">パブリッシャー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="4">
+        <a href="/platforms/getting-started-web/data-layer/definitions/hotel/" class="db link pl5 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-data-layer-definitions-hotel">ホテル</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="4">
+        <a href="/platforms/getting-started-web/data-layer/definitions/travel/" class="db link pl5 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-data-layer-definitions-travel">トラベル</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="4">
+        <a href="/platforms/getting-started-web/data-layer/definitions/basic-video-tracking/" class="db link pl5 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-data-layer-definitions-basic-video-tracking">基本的なビデオ トラッキング</a>
+      </li></ul>
+      </li></ul>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".adobe-launch">Adobe Launch</a>
+        <ul class="adobe-launch desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/adobe-launch/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".adobe-launch-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/adobe-launch/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".adobe-launch-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/adobe-launch/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".adobe-launch-data-layer">データレイヤー</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".amp">AMP</a>
+        <ul class="amp desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/amp/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/amp/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/amp/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/amp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-data-layer">データレイヤー</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".angular">Angular</a>
+        <ul class="angular desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/angular/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".angular-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/angular/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".angular-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/angular/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".angular-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/angular/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".angular-api">APIリファレンス</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".google-tag-manager">Google タグ マネージャー</a>
+        <ul class="google-tag-manager desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/google-tag-manager/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".google-tag-manager-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/google-tag-manager/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".google-tag-manager-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/google-tag-manager/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".google-tag-manager-data-layer">データレイヤー</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8  mb1 bb b--moon-gray" data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".javascript">JavaScript (Web)</a>
+        <ul class="javascript desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".javascript-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".utag-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".javascript-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/universal-data-object/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">ユニバーサルデータオブジェクト（utag_data）</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/universal-tag/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">ユニバーサルタグ（utag.js）</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/data-layer-object/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">データレイヤーオブジェクト（b）</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/single-page-applications/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">単一ページアプリケーション</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/settings/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".utag-settings">設定</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/api-reference/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/debugging/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">デバッグ</a>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="2">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".javascript-api">API Reference</a>
+        <ul class="javascript-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/javascript/api/cookie-functions/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".javascript-api-cookie-functions">Cookie 機能</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/javascript/api/gdpr-functions/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".javascript-api-gdpr-functions">GDPR 機能</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/javascript/api/tracking-functions/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".javascript-api-tracking-functions">トラッキング関数</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
+        <a href="/platforms/javascript/api/utility-functions/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".javascript-api-utility-functions">ユーティリティ関数</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/javascript/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">リリースノート</a>
+      </li></ul>
+      </li><li class="w-100 hover-accent-color-light fw8 f4 mid-gray pv1 pl2" data-level="1">サーバーサイド</li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".csharp">C#</a>
+        <ul class="csharp desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/csharp/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/csharp/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/csharp/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/csharp/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-data-layer">データレイヤー</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/csharp/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/csharp/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".http-api">HTTP API</a>
+        <ul class="http-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/http-api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".http-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/http-api/endpoint-spec/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">エンドポイント</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/http-api/data-layer/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".http-api-data-layer">データレイヤー</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".java">Java</a>
+        <ul class="java desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/java/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/java/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".java-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/java/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".java-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/java/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".java-api">APIリファレンス</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/java/release-notes/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".java-release-notes">リリースノート</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".node">Node</a>
+        <ul class="node desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/node/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".node-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/node/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".node-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/node/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".node-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/node/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".node-api">APIリファレンス</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".python">Python</a>
+        <ul class="python desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/python/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".python-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/python/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".python-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/python/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".python-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/python/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".python-api">APIリファレンス</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".roku">Roku</a>
+        <ul class="roku desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/roku/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".roku-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/roku/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".roku-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/roku/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".roku-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/roku/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".roku-api">APIリファレンス</a>
+      </li></ul>
+      </li>
+      <li class="w-100 hover-accent-color-light fw8 " data-level="1">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv2 mid-gray hover-accent-color-light pl2 pr2  " data-target=".ruby">Ruby</a>
+        <ul class="ruby desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ruby/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ruby-overview">概要</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ruby/install/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ruby-install">インストール</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ruby/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ruby-track">トラッキング</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/ruby/api/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ruby-api">APIリファレンス</a>
+      </li></ul>
+      </li></ul>
+</nav>
+      </div>
+
+      <div id="content" class="order-1 overflow-auto max-vh-100 pt3 ph4-l mid-gray nested-copy-line-height no-underline nested-links nested-copy-seperator nested-blockquote mt0-ns w-100" style="flex:1;">
+        <div class="documentation-copy ml3">
+          <div id="readout" class="fixed right-0 bottom-0">
+          </div>
+          <header class="flex-none w-100">
+
+  
+    
+      <a href="/platforms/getting-started/" class="f6 fw8 mb0 link mid-gray dim mr3">
+        GETTING STARTED
+      </a>
+    
+  
+
+  
+
+  <h1 class="lh-title mb3 mv0 pt3">メディア トラッキング</h1>
+</header>
+
+<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
+  
+    <div class="f4 fw4 lh-copy mb4">
+      モバイル向けのメディア トラッキングについて説明します。
+    </div>
+  
+
+  
+</aside>
+
+
+
+
+<div class="prose" id="prose">
+  
+
+<p>メディア トラッキングは、アプリ内のストリーミング メディア イベント (ビデオやオーディオ) をトラッキングする機能です。ストリーミング メディア イベントには、セッション、チャプター、広告や、プレイヤー イベント (再生、シーク、一時停止など) が含まれます。Media モジュールをインストールして、お使いの iOS や Android アプリにこうしたトラッキング機能を追加し、メディア トラッキング メソッドを実装します。</p>
+
+<h2 id="仕組み">仕組み</h2>
+
+<p>Media モジュールは、ユーザーのストリーミング メディア エクスペリエンス全体のトラッキングをサポートします。これには、セッションの開始と終了、広告ブレークの開始と終了や、メディア プレイヤーとの各インタラクション (再生、一時停止、シークなど) が含まれます。</p>
+
+<p>Media モジュールは、以下の階層の要素によりトラッキングを構成します。</p>
+
+<p><strong>メディア セッション</strong>
+メディア セッションは、他の要素のすべてについてのコンテナであり、それは、ストリーミング エクスペリエンスに関する一般情報を定義します。メディア セッションは、トラッキングのための必須要素です。</p>
+
+<p><strong>チャプター</strong>
+チャプターは、コンテンツ内でブレークがなされるときにセッションを分割する、オプションとしてのセグメントであり、オーディオブックの章や、映画のシーンなどがこれにあたります。</p>
+
+<p><strong>広告ブレーク</strong>
+広告ブレークは、一または複数の広告についてのオプションとしてのコンテナです。広告ブレークは、通常、セッションの開始時、中間、終了時に置かれます。</p>
+
+<p><strong>広告</strong>
+広告は、広告ブレーク内においてなされるオプションとしての要素です。</p>
+
+<p>メディア セッションの構成の例：</p>
+<pre tabindex="0"><code>└── Media Session
+    ├── Ad Break 1
+    │   ├── Ad 1
+    │   └── Ad 2
+    ├── Chapter 1
+    ├── Ad Break 2
+    │   ├── Ad 3
+    │   └── Ad 4
+    └── Chapter 2</code></pre>
+<h2 id="インストール">インストール</h2>
+
+<p>まず、サポートされているプラットフォームのうちの一つについて Media モジュールをインストールします。</p>
+
+<ul>
+<li><a href="/platforms/android-kotlin/module-list/media/">Android (Kotlin)</a></li>
+<li><a href="/platforms/ios-swift/module-list/media/">iOS (Swift v2.x)</a></li>
+</ul>
+
+<h2 id="初期化">初期化</h2>
+
+<p>Media モジュールをインストールした後、 <code>MediaContent</code> オブジェクトを初期化します:</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> mediaContent: MediaContent = MediaContent(
+</span></span><span style="display:flex;"><span>  name = <span style="color:#e6db74">&#34;What is the Tealium Customer Data Hub?&#34;</span>,
+</span></span><span style="display:flex;"><span>  trackingType = TrackingType.MILESTONE,
+</span></span><span style="display:flex;"><span>  streamType = StreamType.DVOD,
+</span></span><span style="display:flex;"><span>  mediaType = MediaType.VIDEO,
+</span></span><span style="display:flex;"><span>  qoe = QoE(<span style="color:#ae81ff">1500</span>),
+</span></span><span style="display:flex;"><span>  duration = <span style="color:#ae81ff">130</span>
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div>
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> media = MediaContent(
+</span></span><span style="display:flex;"><span>  name: <span style="color:#e6db74">&#34;What is the Tealium Customer Data Hub?&#34;</span>,
+</span></span><span style="display:flex;"><span>  trackingType: .milestone,
+</span></span><span style="display:flex;"><span>  streamType: .vod,
+</span></span><span style="display:flex;"><span>  mediaType: .video,
+</span></span><span style="display:flex;"><span>  qoe: QoE(bitrate: <span style="color:#ae81ff">1500</span>),
+</span></span><span style="display:flex;"><span>  duration: <span style="color:#ae81ff">130</span>
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
+
+<h3 id="trackingtype"><code>TrackingType</code></h3>
+
+<p>トラッキング タイプは、Tealium イベントとしてトラッキングするメディア イベントがどれかを定めます。(<a href="#tracking-type-overview">トラッキング タイプの概要</a>を参照。)</p>
+
+<p>次の定数のいずれかを用いて、 <code>TrackingType</code>を設定します。</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="left">プロパティ</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="#full-playback-events">完全プレイバック</a></td>
+<td align="left"><code>FULL_PLAYBACK</code></td>
+<td align="left">インターバル イベントを除き、すべてのメディア イベントをトラッキングします。</td>
+</tr>
+
+<tr>
+<td align="left">- <a href="#interval-events">インターバル</a></td>
+<td align="left"><code>INTERVAL</code></td>
+<td align="left">標準的なメディア イベントをトラッキングし、10 秒ごとにピンを実行して、コンテンツが再生されているかどうかをチェックします。</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#milestone-events">マイルストーン</a></td>
+<td align="left"><code>MILESTONE</code></td>
+<td align="left">標準的なメディア イベントをトラッキングし、コンテンツの再生された割合 (%) を測定します。</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#interval-milestone-events">インターバル マイルストーン</a></td>
+<td align="left"><code>INTERVAL_MILESTONE</code></td>
+<td align="left">インターバル イベントとマイルストーン イベントの双方をトラッキングします。</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#summary-events">サマリー</a></td>
+<td align="left"><code>SUMMARY</code></td>
+<td align="left">セッション終了時に単一のサマリー (再生されたコンテンツや広告の時間の計算など) をデータレイヤーに送信します。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="left">プロパティ</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="#full-playback-events">完全プレイバック</a></td>
+<td align="left"><code>fullPlayback</code></td>
+<td align="left">インターバル イベントを除き、すべてのメディア イベントをトラッキングします。</td>
+</tr>
+
+<tr>
+<td align="left">- <a href="#interval-events">インターバル</a></td>
+<td align="left"><code>interval</code></td>
+<td align="left">標準的なメディア イベントをトラッキングし、10 秒ごとにピンを実行して、コンテンツが再生されているかどうかをチェックします。</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#milestone-events">マイルストーン</a></td>
+<td align="left"><code>milestone</code></td>
+<td align="left">標準的なメディア イベントをトラッキングし、コンテンツの再生された割合 (%) を測定します。</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#interval-milestone-events">インターバル マイルストーン</a></td>
+<td align="left"><code>intervalMilestone</code></td>
+<td align="left">インターバル イベントとマイルストーン イベントの双方をトラッキングします。</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#summary-events">サマリー</a></td>
+<td align="left"><code>summary</code></td>
+<td align="left">セッション終了時に単一のサマリー (再生されたコンテンツや広告の時間の計算など) をデータレイヤーに送信します。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+<h3 id="streamtype"><code>StreamType</code></h3>
+
+<p>次の定数のいずれかを用いて、 <code>StreamType</code>を設定します。</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <table>
+<thead>
+<tr>
+<th align="left">値</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>AOD</code></td>
+<td align="left">オンデマンド オーディオのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>AUDIOBOOK</code></td>
+<td align="left">オーディオ ブックのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>CUSTOM</code></td>
+<td align="left">カスタム ストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>DVOD</code></td>
+<td align="left">オンデマンド デジタル ビデオのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>LINEAR</code></td>
+<td align="left">リニア (1 次元) コンテンツのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>LIVE</code></td>
+<td align="left">ライブ コンテンツのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>PODCAST</code></td>
+<td align="left">ポッドキャストのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>SONG</code></td>
+<td align="left">曲のストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>UGC</code></td>
+<td align="left">ユーザー生成コンテンツのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>VOD</code></td>
+<td align="left">オンデマンド ビデオのストリーム タイプ。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <table>
+<thead>
+<tr>
+<th align="left">値</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>aod</code></td>
+<td align="left">オンデマンド オーディオのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>audiobook</code></td>
+<td align="left">オーディオ ブックのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>custom</code></td>
+<td align="left">カスタム ストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>dvod</code></td>
+<td align="left">オンデマンド デジタル ビデオのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>linear</code></td>
+<td align="left">リニア (1 次元) コンテンツのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>live</code></td>
+<td align="left">ライブ コンテンツのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>podcast</code></td>
+<td align="left">ポッドキャストのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>song</code></td>
+<td align="left">曲のストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>ugc</code></td>
+<td align="left">ユーザー生成コンテンツのストリーム タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>vod</code></td>
+<td align="left">オンデマンド ビデオのストリーム タイプ。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+<h3 id="mediatype"><code>MediaType</code></h3>
+
+<p><code>MediaType</code> 定数は、以下のとおりです。</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>ALL</code></td>
+<td align="left">オーディオとビデオを含む、すべてのメディア タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>AUDIO</code></td>
+<td align="left">オーディオ ストリーム向けのメディア タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>VIDEO</code></td>
+<td align="left">ビデオ ストリーム向けのメディア タイプ。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>all</code></td>
+<td align="left">オーディオとビデオを含む、すべてのメディア タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>audio</code></td>
+<td align="left">オーディオ ストリーム向けのメディア タイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>video</code></td>
+<td align="left">オーディオ ストリーム向けのメディア タイプ。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+<h3 id="state"><code>State</code></h3>
+
+<p>プレイヤー状態トラッキングは、プレイバック中のビデオ プレイヤーのモード (全画面モード、字幕、音声のミュートなど) をキャプチャします。プレイヤー状態は、データレイヤー変数 <code>media_player_state</code> に設定されます。</p>
+
+<p>プレイヤー状態の変動のトラッキングの例:</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <p>開始値を設定するには、メソッド <a href="/platforms/android-kotlin/api/media/#updateplayerstate"><code>updatePlayerState()</code></a>を呼び出します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>updatePlayerState(STATE_CONSTANT_VALUE)</span></span></code></pre></div>
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <p>開始値を設定するには、 <a href="/platforms/ios-swift/api/media-session/#playerstate"><code>playerState</code></a> 変数を設定します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>mediaSession.playerState = STATE_CONSTANT_VALUE</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
+
+<p>次の定数のいずれかを用いて、 <code>State</code>を設定します。</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <table>
+<thead>
+<tr>
+<th align="left">値</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>CLOSED_CAPTION</code></td>
+<td align="left">字幕状態のタイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>FULLSCREEN</code></td>
+<td align="left">全画面状態のタイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>IN_FOCUS</code></td>
+<td align="left">イン フォーカス状態のタイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>MUTE</code></td>
+<td align="left">ミュート状態のタイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>PICTURE_IN_PICTURE</code></td>
+<td align="left">ピクチャー イン ピクチャー状態のタイプ。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <table>
+<thead>
+<tr>
+<th align="left">値</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>closedCaption</code></td>
+<td align="left">字幕状態のタイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>fullscreen</code></td>
+<td align="left">全画面状態のタイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>inFocus</code></td>
+<td align="left">イン フォーカス状態のタイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>mute</code></td>
+<td align="left">ミュート状態のタイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>pictureInPicture</code></td>
+<td align="left">ピクチャー イン ピクチャー状態のタイプ。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+<h3 id="quality-of-experience-qoe">Quality of Experience (QoE)</h3>
+
+<p>メディア セッションの Quality of Experience (QoE) 。キロバイト/秒 (kpps) 単位のビットレートに設定されます。メディア プレイバック中に現在のビットレート値が入手できる場合は、 <code>qoe</code> 変数として、 <code>MediaContent</code> オブジェクトの初期化時にそれを提供します。Quality of Experience (QoE) を設定すると、 <code>media_bitrate_change</code> tealium イベントがトリガーされます。</p>
+
+<p>Quality of Experience (QoE) のトラッキングの例:</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <p>Quality of Experience (QoE) ビットレート値を設定するには、 <a href="/platforms/android-kotlin/api/media/#updateqoe"><code>updateQOE()</code></a> メソッドを呼び出します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>updateQOE(BITRATE_VALUE)</span></span></code></pre></div>
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <p>Quality of Experience (QoE) ビットレート値を設定するには、 <a href="/platforms/ios-swift/api/media-session/#bitrate"><code>bitrate</code></a> 変数を設定します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>mediaSession.bitrate = BITRATE_VALUE</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
+
+<h3 id="メタデータ">メタデータ</h3>
+
+<p>メタデータは、オブジェクトに関する追加の情報を設定するパラメータです。メタデータをオブジェクトに送信すると、こうしたキーと値のペアもデータレイヤーに設定されます。メタデータを受け付けるオブジェクトは、以下のとおりです: <code>MediaContent</code>、 <code>Chapter</code>、 <code>QoE</code>。</p>
+
+<p>メタデータが複数のオブジェクト内で設定可能であることから、同一のメタデータ キーを複数回設定することができます。データレイヤー内でのメタデータ キーの抵触を解決するには、複数のオブジェクトからのメタデータを、オブジェクト階層 ( <code>MediaContent</code> &gt; <code>Chapter</code> &gt; <code>QoE</code>) を用いて、データレイヤーにマージします。</p>
+
+<p>たとえば、 <code>feed_type</code> を <code>MediaContent</code> と <code>Chapter</code>の双方に設定する場合は、 <code>Chapter</code> メタデータからの値は、最終データレイヤーにおいて <code>MediaContent</code> メタデータからの値をオーバーライドします。</p>
+
+<p>メタデータの設定の例:</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> mediaContent: MediaContent = MediaContent(
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    metadata = mutableMapOf(<span style="color:#e6db74">&#34;episode&#34;</span> to <span style="color:#e6db74">&#34;2&#34;</span>, <span style="color:#e6db74">&#34;network&#34;</span> to <span style="color:#e6db74">&#34;YouTube&#34;</span>)
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div>
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> media = MediaContent(
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>    metadata: [<span style="color:#e6db74">&#34;episode&#34;</span>: <span style="color:#e6db74">&#34;2&#34;</span>, <span style="color:#e6db74">&#34;network&#34;</span>: <span style="color:#e6db74">&#34;YouTube&#34;</span>]
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
+
+<h4 id="ビデオ-メタデータ-キー">ビデオ メタデータ キー</h4>
+
+<p>以下は、一般的なビデオ メタデータ キーの例です。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">変数</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>authorized</code></td>
+<td align="left">ユーザーは、認証されるか、または認証されません。</td>
+</tr>
+
+<tr>
+<td align="left"><code>episode</code></td>
+<td align="left">エピソードの名前または番号。</td>
+</tr>
+
+<tr>
+<td align="left"><code>asset_id</code></td>
+<td align="left">TMS ID。これは、1 つのビデオ コンテンツについての業界標準 ID です。</td>
+</tr>
+
+<tr>
+<td align="left"><code>daypart</code></td>
+<td align="left">時間帯 (午前、プライムタイムなど)。</td>
+</tr>
+
+<tr>
+<td align="left"><code>feed_type</code></td>
+<td align="left">フィード タイプ (HD、SD、リージョナルなど)。</td>
+</tr>
+
+<tr>
+<td align="left"><code>first_air_date</code></td>
+<td align="left">メディアが最初に配信された日付。</td>
+</tr>
+
+<tr>
+<td align="left"><code>first_digital_date</code></td>
+<td align="left">メディアが最初にデジタルで利用可能になった日付。</td>
+</tr>
+
+<tr>
+<td align="left"><code>genre</code></td>
+<td align="left">ジャンル。</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_mvpd</code></td>
+<td align="left">マルチチャンネル ビデオ プログラミング ディストリビュータ。通常は、ケーブル ネットワークや衛星ネットワーク (Cox、DirecTV、Sky など)。</td>
+</tr>
+
+<tr>
+<td align="left"><code>network</code></td>
+<td align="left">ネットワーク。</td>
+</tr>
+
+<tr>
+<td align="left"><code>originator</code></td>
+<td align="left">ショー オリジネーター。</td>
+</tr>
+
+<tr>
+<td align="left"><code>rating</code></td>
+<td align="left">レーティング。</td>
+</tr>
+
+<tr>
+<td align="left"><code>season</code></td>
+<td align="left">シーズンの番号または名前。</td>
+</tr>
+
+<tr>
+<td align="left"><code>show</code></td>
+<td align="left">ショーの名前。</td>
+</tr>
+
+<tr>
+<td align="left"><code>show_type</code></td>
+<td align="left">ショーのタイプ。</td>
+</tr>
+
+<tr>
+<td align="left"><code>stream_format</code></td>
+<td align="left">ストリームの形式: <code>0</code> は、部分的なコンテンツであり、 <code>1</code> は、完全なエピソードです。</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="オーディオ-メタデータ-キー">オーディオ メタデータ キー</h4>
+
+<p>以下は、一般的なオーディオ メタデータ キーの例です。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">変数</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>album</code></td>
+<td align="left">アルバム名。</td>
+</tr>
+
+<tr>
+<td align="left"><code>artist</code></td>
+<td align="left">アーティスト名。</td>
+</tr>
+
+<tr>
+<td align="left"><code>author</code></td>
+<td align="left">オーディオブックの作者名。</td>
+</tr>
+
+<tr>
+<td align="left"><code>publisher</code></td>
+<td align="left">音楽出版社。</td>
+</tr>
+
+<tr>
+<td align="left"><code>record_label</code></td>
+<td align="left">レコード レベル名。</td>
+</tr>
+
+<tr>
+<td align="left"><code>station</code></td>
+<td align="left">ラジオ局。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="トラッキング-タイプの概要">トラッキング タイプの概要</h2>
+
+<p>トラッキング タイプは、トリガーされる Tealium イベントがどれであるかを定めます。トリガーするイベントのレベルに基づき、トラッキング タイプを選択します。</p>
+
+<p>たとえば、全トラッキング メソッドを実装して、サマリー トラッキングを用いる場合は、 <code>media_session_end</code> イベントのみがトリガーされます。</p>
+
+<h3 id="完全プレイバック-イベント">完全プレイバック イベント</h3>
+
+<p>完全プレイバック トラッキングを用いるには、インターバル イベントを除くすべてのメディア イベントをトラッキングします。</p>
+
+<p>トラッキングされるイベントには、以下が含まれます:</p>
+
+<ul>
+<li>セッション イベント:
+
+<ul>
+<li><code>media_session_start</code></li>
+<li><code>media_session_resume</code></li>
+<li><code>media_session_end</code></li>
+</ul></li>
+<li>広告ブレーク イベント:
+
+<ul>
+<li><code>media_adbreak_start</code></li>
+<li><code>media_adbreak_end</code></li>
+</ul></li>
+<li>広告イベント:
+
+<ul>
+<li><code>media_ad_start</code></li>
+<li><code>media_ad_end</code></li>
+<li><code>media_ad_click</code></li>
+<li><code>media_ad_skip</code></li>
+</ul></li>
+<li>チャプター イベント:
+
+<ul>
+<li><code>media_chapter_start</code></li>
+<li><code>media_chapter_skip</code></li>
+<li><code>media_chapter_end</code></li>
+</ul></li>
+<li>バッファ イベント:
+
+<ul>
+<li><code>media_buffer_start</code></li>
+<li><code>media_buffer_end</code></li>
+</ul></li>
+<li>プレイヤー イベント:
+
+<ul>
+<li><code>media_play</code></li>
+<li><code>media_pause</code></li>
+<li><code>media_seek_start</code></li>
+<li><code>media_seek_end</code></li>
+</ul></li>
+<li>その他のイベント
+
+<ul>
+<li><code>media_bitrate_change</code></li>
+</ul></li>
+</ul>
+
+<h3 id="インターバル-イベント">インターバル イベント</h3>
+
+<p>インターバル トラッキングを用いて、繰り返しインターバル時にメディア プレイヤーのステータスをトラッキングします。このタイプを用いるときは、10 秒ごとに <code>ping()</code> メソッドが呼び出され、コンテンツが再生中であるかどうかをチェックし、データレイヤーで <code>tealium_event</code> を <code>media_interval</code> に設定します。</p>
+
+<p>トラッキングされるイベントには、以下が含まれます:</p>
+
+<ul>
+<li>セッション イベント:
+
+<ul>
+<li><code>media_session_start</code></li>
+<li><code>media_session_resume</code></li>
+<li><code>media_session_end</code></li>
+</ul></li>
+<li>プレイヤー イベント:
+
+<ul>
+<li><code>media_play</code></li>
+<li><code>media_pause</code></li>
+</ul></li>
+<li>インターバル イベント:
+
+<ul>
+<li><code>media_interval</code></li>
+</ul></li>
+</ul>
+
+<h3 id="マイルストーン-イベント">マイルストーン イベント</h3>
+
+<p>コンテンツの一定割合 (%) が再生済みであるときにマイルストーン トラッキングを使用します。各マイルストーン パーセントに達したときに、 <code>sendMilestone()</code> メソッドが呼び出され、データレイヤーで <code>tealium_event</code> を <code>media_milestone</code> に設定します。</p>
+
+<p>トラッキングされるマイルストーン パーセントは、以下のとおりです。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Media % Played</th>
+<th align="left"><code>media_milestone</code>の値</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">8.0 - 12.0</td>
+<td align="left"><code>10%</code></td>
+</tr>
+
+<tr>
+<td align="left">23.0 - 27.0</td>
+<td align="left"><code>25%</code></td>
+</tr>
+
+<tr>
+<td align="left">48.0 - 52.0</td>
+<td align="left"><code>50%</code></td>
+</tr>
+
+<tr>
+<td align="left">73.0 - 77.0</td>
+<td align="left"><code>75%</code></td>
+</tr>
+
+<tr>
+<td align="left">88.0 - 92.0</td>
+<td align="left"><code>90%</code></td>
+</tr>
+
+<tr>
+<td align="left">97.0 - 100.0</td>
+<td align="left"><code>100%</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>トラッキングされるイベントには、以下が含まれます:</p>
+
+<ul>
+<li>マイルストーン イベント:
+
+<ul>
+<li><code>media_milesetone</code></li>
+</ul></li>
+<li>セッション イベント:
+
+<ul>
+<li><code>media_session_start</code></li>
+<li><code>media_session_resume</code></li>
+<li><code>media_session_end</code></li>
+</ul></li>
+<li>プレイヤー イベント:
+
+<ul>
+<li><code>media_play</code></li>
+<li><code>media_pause</code></li>
+<li><code>media_seek_start</code></li>
+<li><code>media_seek_end</code></li>
+</ul></li>
+<li>広告ブレーク イベント:
+
+<ul>
+<li><code>media_adbreak_start</code></li>
+<li><code>media_adbreak_end</code></li>
+</ul></li>
+</ul>
+
+<h3 id="インターバル-マイルストーン-イベント">インターバル マイルストーン イベント</h3>
+
+<p>インターバル マイルストーン イベントを用いて、 <a href="#interval-events">インターバル</a> イベントと <a href="#milestone-events">マイルストーン</a> イベントの両方をトラッキングします。</p>
+
+<h3 id="サマリー-イベント">サマリー イベント</h3>
+
+<p>サマリー トラッキングを用いて、セッション終了時に単一のサマリー イベントを送信します。セッション サマリー イベントには、再生されたコンテンツや広告の時間の計算が含まれます。</p>
+
+<p>サマリー イベントには、以下が含まれます:</p>
+
+<ul>
+<li>セッション イベント:
+
+<ul>
+<li><code>media_session_start</code></li>
+<li><code>media_session_end</code></li>
+</ul></li>
+</ul>
+
+<p>トラッキングされる <a href="/platforms/getting-started/media/#media-summary-data">メディア サマリー変数</a> のすべての完全なリストを参照してください。</p>
+
+<h3 id="比較チャート">比較チャート</h3>
+
+<p>使用可能なメディア イベントの完全なリストについては、 <a href="#track">トラッキング</a> セクションを参照してください。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Event</th>
+<th align="left">完全プレイバック</th>
+<th align="left">インターバル</th>
+<th align="left">マイルストーン</th>
+<th align="left">インターバル マイルストーン</th>
+<th align="left">概要</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Session Start/Resume/End</td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+</tr>
+
+<tr>
+<td align="left">Chapter Start/Skip/End</td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Ad Break Start/End</td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Ad Start/Click/Skip/End</td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Buffer Start/End</td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Milestone</td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Play</td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Pause</td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Seek Start/End</td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left">✔</td>
+<td align="left">✔</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Player Bitrate Change</td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Player State Change</td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Interval</td>
+<td align="left"></td>
+<td align="left">✔</td>
+<td align="left"></td>
+<td align="left">✔</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="トラッキング">トラッキング</h2>
+
+<p><code>MediaContent</code> オブジェクトを初期化した後、以下のメソッドを用いて、メディア インタラクションをトラッキングします。</p>
+
+<h3 id="メディア-セッション">メディア セッション</h3>
+
+<p>メディア セッションは、チャプター、広告ブレーク、広告、メディア プレイヤー イベントを含むメディア コンテンツの全体です。</p>
+
+<p>メディア セッションのトラッキングを開始するには、 <code>startSession()</code> メソッドを <code>MediaContent</code> を使用して呼び出します。メディア セッションのトラッキングを停止するには、 <code>endSession()</code> メソッドを呼び出します。</p>
+
+<p class="note"><i class="fas fa-info-circle"></i>セッションの開始は、 <code>play()</code> イベントを暗示しません。</p>
+
+<p>例:</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>startSession(mediaContentObject)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>endSession()</span></span></code></pre></div>
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> mediaSessionObject = tealium?.media?.createSession(
+</span></span><span style="display:flex;"><span>      from: mediaContentObject)                                
+</span></span><span style="display:flex;"><span>mediaSessionObject.startSession()
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>mediaSessionObject.end()</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
+
+<p>以下の表は、各セッション トラッキング メソッドについての <code>tealium_event</code> の値を列挙したものです。</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <table>
+<thead>
+<tr>
+<th align="left">メソッド</th>
+<th align="left">イベントの説明</th>
+<th align="left">Tealiumイベント</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#startsession"><code>startSession()</code></a></td>
+<td align="left">セッションが開始しました。</td>
+<td align="left"><code>media_start_session</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#resumesession"><code>resumeSession()</code></a></td>
+<td align="left">セッションが再開しました。</td>
+<td align="left"><code>media_resume_session</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#endsession"><code>endSession()</code></a></td>
+<td align="left">広告とコンテンツを含むセッションが終了しました。</td>
+<td align="left"><code>media_session_end</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <table>
+<thead>
+<tr>
+<th align="left">メソッド</th>
+<th align="left">イベントの説明</th>
+<th align="left">Tealiumイベント</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#startsession"><code>startSession()</code></a></td>
+<td align="left">セッションが開始しました。</td>
+<td align="left"><code>media_start_session</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#resumesession"><code>resumeSession()</code></a></td>
+<td align="left">セッションが再開しました。</td>
+<td align="left"><code>media_resume_session</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#endsession"><code>endSession()</code></a></td>
+<td align="left">広告とコンテンツを含むセッションが終了しました。</td>
+<td align="left"><code>media_session_end</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+<h3 id="プレイヤー-イベント">プレイヤー イベント</h3>
+
+<p>メディア プレイヤー イベントは、再生、シーク、一時停止などの、メディアとのインタラクションをトラッキングします。</p>
+
+<p>以下の表は、各プレイヤー トラッキング メソッドについての <code>tealium_event</code> の値を列挙したものです。</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <table>
+<thead>
+<tr>
+<th align="left">メソッド</th>
+<th align="left">イベントの説明</th>
+<th align="left">Tealiumイベント</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#play"><code>play()</code></a></td>
+<td align="left">メディア コンテンツが再生を開始しました。</td>
+<td align="left"><code>media_play</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#pause"><code>pause()</code></a></td>
+<td align="left">ユーザーがメディアを一時停止しました。</td>
+<td align="left"><code>media_pause</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#startseek"><code>startSeek()</code></a></td>
+<td align="left">ユーザーがシークを開始しました。</td>
+<td align="left"><code>media_seek_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#endseek"><code>endSeek()</code></a></td>
+<td align="left">ユーザーがシークを終了しました。</td>
+<td align="left"><code>media_seek_end</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#startbuffer"><code>startBuffer()</code></a></td>
+<td align="left">バッファが開始しました。</td>
+<td align="left"><code>media_buffer_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#endbuffer"><code>endBuffer()</code></a></td>
+<td align="left">バッファが終了しました。</td>
+<td align="left"><code>media_buffer_end</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#custom"><code>custom()</code></a></td>
+<td align="left">カスタム イベント ステータス。</td>
+<td align="left"><code>&lt;custom event name&gt;</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <table>
+<thead>
+<tr>
+<th align="left">メソッド</th>
+<th align="left">イベントの説明</th>
+<th align="left">Tealiumイベント</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#play"><code>play()</code></a></td>
+<td align="left">メディア コンテンツが再生を開始しました。</td>
+<td align="left"><code>media_play</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#pause"><code>pause()</code></a></td>
+<td align="left">ユーザーがメディアを一時停止しました。</td>
+<td align="left"><code>media_pause</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#startsession"><code>startSeek()</code></a></td>
+<td align="left">ユーザーがシークを開始しました。</td>
+<td align="left"><code>media_seek_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#endseek"><code>endSeek()</code></a></td>
+<td align="left">ユーザーがシークを終了しました。</td>
+<td align="left"><code>media_seek_end</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#startbuffer"><code>startBuffer()</code></a></td>
+<td align="left">バッファが開始しました。</td>
+<td align="left"><code>media_buffer_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#endbuffer"><code>endBuffer()</code></a></td>
+<td align="left">バッファが終了しました。</td>
+<td align="left"><code>media_buffer_end</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#custom"><code>custom()</code></a></td>
+<td align="left">カスタム イベント ステータス。</td>
+<td align="left"><code>&lt;custom event name&gt;</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+<h3 id="チャプター">チャプター</h3>
+
+<p>チャプターは、コンテンツ内のブレーク (オーディオブックの章や、映画のシーンなど) を表す、メディア セッション内のオプションとしてのセグメントです。</p>
+
+<p>メディア セッションでチャプター セグメントをトラッキングするには、 <code>Chapter</code> オブジェクトを作成して、これを <code>startChapter()</code> メソッドに渡します。チャプターのトラッキングを停止するには、 <code>endChapter()</code> メソッドを呼び出します。</p>
+
+<p>チャプターのトラッキングの例:</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> chapterObject = Chapter(
+</span></span><span style="display:flex;"><span>  name = <span style="color:#e6db74">&#34;What is the Tealium Customer Data Hub?&#34;</span>,
+</span></span><span style="display:flex;"><span>  duration = <span style="color:#ae81ff">114</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>startChapter(chapterObject)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>endChapter()</span></span></code></pre></div>
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> chapterObject = Chapter(
+</span></span><span style="display:flex;"><span>  name: <span style="color:#e6db74">&#34;What is the Tealium Customer Data Hub?&#34;</span>,
+</span></span><span style="display:flex;"><span>  duration: <span style="color:#ae81ff">114</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>mediaSession.startChapter(chapterObject)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>mediaSession.endChapter()</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
+
+<p>以下の表は、各チャプター トラッキング メソッドについての <code>tealium_event</code> の値を列挙したものです。</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <table>
+<thead>
+<tr>
+<th align="left">メソッド</th>
+<th align="left">イベントの説明</th>
+<th align="left">Tealiumイベント</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#startchapter"><code>startChapter()</code></a></td>
+<td align="left">チャプターが開始しました。</td>
+<td align="left"><code>media_chapter_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#skipchapter"><code>skipChapter()</code></a></td>
+<td align="left">ユーザーがチャプターをスキップしました。</td>
+<td align="left"><code>media_chapter_skip</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#endchapter"><code>endChapter()</code></a></td>
+<td align="left">チャプターが終了しました。</td>
+<td align="left"><code>media_chapter_end</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <table>
+<thead>
+<tr>
+<th align="left">メソッド</th>
+<th align="left">イベントの説明</th>
+<th align="left">Tealiumイベント</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#startchapter"><code>startChapter()</code></a></td>
+<td align="left">チャプターが開始しました。</td>
+<td align="left"><code>media_chapter_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#skipchapter"><code>skipChapter()</code></a></td>
+<td align="left">ユーザーがチャプターをスキップしました。</td>
+<td align="left"><code>media_chapter_skip</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#endchapter"><code>endChapter()</code></a></td>
+<td align="left">チャプターが終了しました。</td>
+<td align="left"><code>media_chapter_end</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+<h3 id="広告">広告</h3>
+
+<p>広告ブレークは、一または複数の広告についてのシークエンスです。</p>
+
+<p>広告ブレークの開始をトラッキングするには、 <code>AdBreak</code> オブジェクトを作成して、これを <code>startAdBreak()</code> メソッドに渡します。広告ブレーク内の広告の開始をトラッキングするには、 <code>Ad</code> オブジェクトを作成して、これを <code>startAd()</code> メソッドに渡します。</p>
+
+<p>広告の終了をトラッキングするには、 <code>endAd()</code> メソッドを呼び出します。広告ブレークの終了をトラッキングするには、 <code>endAdBreak()</code> メソッドを呼び出します。</p>
+
+<p>広告ブレークと広告のトラッキングの例:</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> adBreak = AdBreak(name = <span style="color:#e6db74">&#34;Ad Break&#34;</span>)
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>startAdBreak(adBreak)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> ad1 = Ad(<span style="color:#e6db74">&#34;Ad 1&#34;</span>)
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>startAd(ad1)
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>endAd()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> ad2 = Ad(<span style="color:#e6db74">&#34;Ad 2&#34;</span>)
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>startAd(ad2)
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>endAd()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>endAdBreak()</span></span></code></pre></div>
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>val adBreak = AdBreak(name: <span style="color:#e6db74">&#34;Ad Break&#34;</span>)
+</span></span><span style="display:flex;"><span>session.endAdBreak(adBreak)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> ad1 = Ad(<span style="color:#e6db74">&#34;Ad 1&#34;</span>)
+</span></span><span style="display:flex;"><span>session.startAd(ad1)
+</span></span><span style="display:flex;"><span>session.endAd()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> ad2 = Ad(<span style="color:#e6db74">&#34;Ad 2&#34;</span>)
+</span></span><span style="display:flex;"><span>session.adStart(ad2)
+</span></span><span style="display:flex;"><span>session.endAd()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>session.endAdBreak()</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
+
+<p>以下の表は、各広告トラッキング メソッドについての <code>tealium_event</code> の値を列挙したものです。</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <table>
+<thead>
+<tr>
+<th align="left">メソッド</th>
+<th align="left">イベントの説明</th>
+<th align="left">Tealiumイベント</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#startadbreak"><code>startAdBreak()</code></a></td>
+<td align="left">広告ブレークが開始しました。</td>
+<td align="left"><code>media_adbreak_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#endadbreak"><code>endAdBreak()</code></a></td>
+<td align="left">広告ブレークが終了しました。</td>
+<td align="left"><code>media_adbreak_end</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#startad"><code>startAd()</code></a></td>
+<td align="left">広告が開始しました。</td>
+<td align="left"><code>media_ad_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#endad"><code>endAd()</code></a></td>
+<td align="left">広告が終了しました。</td>
+<td align="left"><code>media_ad_end</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#clickad"><code>clickAd()</code></a></td>
+<td align="left">ユーザーが、現在表示されている広告をクリックしました。</td>
+<td align="left"><code>media_ad_click</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/android-kotlin/api/media/#skipad"><code>skipAd()</code></a></td>
+<td align="left">ユーザーが現在の広告をスキップしました。</td>
+<td align="left"><code>media_ad_skip</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <table>
+<thead>
+<tr>
+<th align="left">メソッド</th>
+<th align="left">イベントの説明</th>
+<th align="left">Tealiumイベント</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#startadbreak"><code>startAdBreak()</code></a></td>
+<td align="left">広告ブレークが開始しました。</td>
+<td align="left"><code>media_adbreak_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#endadbreak"><code>endAdBreak()</code></a></td>
+<td align="left">広告ブレークが終了しました。</td>
+<td align="left"><code>media_adbreak_end</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#startAd"><code>startAd()</code></a></td>
+<td align="left">広告が開始しました。</td>
+<td align="left"><code>media_ad_start</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#endad"><code>endAd()</code></a></td>
+<td align="left">広告が終了しました。</td>
+<td align="left"><code>media_ad_end</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#clickad"><code>clickAd()</code></a></td>
+<td align="left">ユーザーが、現在表示されている広告をクリックしました。</td>
+<td align="left"><code>media_ad_click</code></td>
+</tr>
+
+<tr>
+<td align="left"><a href="/platforms/ios-swift/api/media-session/#skipad"><code>skipAd()</code></a></td>
+<td align="left">ユーザーが現在の広告をスキップしました。</td>
+<td align="left"><code>media_ad_skip</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+<h2 id="データレイヤー">データレイヤー</h2>
+
+<p>Media モジュールは、各タイプのトラッキング対象のイベントについてさまざまな変数を送信します。各 Tealium イベントに関連付けられたデータレイヤー変数は、以下のセクションで列挙するとおりです。</p>
+
+<p class="note"><i class="fas fa-info-circle"></i>オプションの追加の変数は、定義されている場合のみ送信されます。</p>
+
+<h3 id="メディア-セッション-データ">メディア セッション データ</h3>
+
+<p>Tealium イベント: <code>media_session_start</code>、 <code>media_session_end</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">変数</th>
+<th align="left">説明</th>
+<th align="left">必須</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>media_channel_name</code></td>
+<td align="left">チャンネル名。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_custom_id</code></td>
+<td align="left">メディア セッション用のカスタム ID (自動生成されないもの)。たとえば、 <code>customId123</code>。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_duration</code></td>
+<td align="left">メディア期間 (秒単位)。たとえば <code>130</code>。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_milestone</code></td>
+<td align="left">メディア マイルストーン (コンテンツの再生された割合 (%) で測定されるもの)。考えられる値は、次のとおりです: <code>10%</code>、 <code>25%</code>、 <code>50%</code>、 <code>75%</code>、 <code>90%</code>、 <code>100%</code>。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_name</code></td>
+<td align="left">メイン コンテンツの名前。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_player_name</code></td>
+<td align="left">メディア プレイヤーの名称 (Brightcove、AVPlayer など)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_qoe</code></td>
+<td align="left">メディア Quality of Experience (QoE) ストリーム品質オブジェクト。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_session_start_time</code></td>
+<td align="left">メディア開始時間 (定義されていない場合は計算されたもの)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_stream_type</code></td>
+<td align="left">メディア ストリームのタイプ (<code>DVoD</code>など)。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_tracking_type</code></td>
+<td align="left"><a href="#trackingtype"><code>TrackingType</code></a> 値 (<code>MediaContent</code> オブジェクトに渡されたもの) (たとえば、 <code>interval</code>)</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_type</code></td>
+<td align="left">メディアのタイプ (<code>video</code>など)。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_uuid</code></td>
+<td align="left">メディア セッション用の一意 ID でTealium SDK により自動生成されないもの (たとえば、 <code>83675D85-F0D3-48BB-A1BB-18111B7A89AA</code>)。</td>
+<td align="left">はい</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="チャプター-データ">チャプター データ</h3>
+
+<p>Tealium イベント: <code>media_chapter_start</code>、 <code>media_chapter_end</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">変数</th>
+<th align="left">説明</th>
+<th align="left">必須</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>media_chapter_uuid</code></td>
+<td align="left">チャプターの一意 ID (<code>83675D85-F0D3-48BB-A1BB-18111B7A89AA</code>など)。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_chapter_name</code></td>
+<td align="left">チャプター名 (<code>Chapter 2</code>など)。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_chapter_duration</code></td>
+<td align="left">チャプター期間 (秒単位) (定義されていない場合は計算されるもの)。たとえば <code>600</code>。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_chapter_position</code></td>
+<td align="left">セッション内のチャプターの数値上の位置づけ (初期値: <code>0</code>)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_chapter_start_time</code></td>
+<td align="left">コンテンツ開始からのオフセット (秒単位) (たとえば、 <code>641407641.724858</code>)。</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="広告ブレーク-データ">広告ブレーク データ</h3>
+
+<p>Tealium イベント: <code>media_adbreak_start</code>、 <code>media_adbreak_end</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">変数</th>
+<th align="left">説明</th>
+<th align="left">必須</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>media_ad_break_id</code></td>
+<td align="left">広告ブレークのカスタム ID。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_break_index</code></td>
+<td align="left">広告ブレークのインデックス (たとえば、最初の広告ブレークに <code>1</code>)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_break_duration</code></td>
+<td align="left">広告ブレーク期間 (秒単位) (定義されていない場合は計算されるもの)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_break_name</code></td>
+<td align="left">広告ブレークの名前。提供されていない場合は、 <code>media_ad_break_uuid</code>の値に自動的に設定されます。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_break_position</code></td>
+<td align="left">コンテンツ内の広告ブレークの数値上の位置づけ (初期値: <code>0</code>)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_break_uuid</code></td>
+<td align="left">ブレークの UUID (Tealium SDK によって自動生成されないもの)。</td>
+<td align="left">はい</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="広告データ">広告データ</h3>
+
+<p>Tealium イベント: <code>media_ad_start</code>、 <code>media_ad_end</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">変数</th>
+<th align="left">説明</th>
+<th align="left">必須</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>media_ad_campaign_id</code></td>
+<td align="left">広告のキャンペーン ID。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_creative_id</code></td>
+<td align="left">広告のクリエイティブ コンテンツの ID。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_creative_url</code></td>
+<td align="left">広告のクリエイティブ コンテンツの URL。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_duration</code></td>
+<td align="left">広告ブレーク期間 (秒単位) (提供されていない場合は、SDK により計算されるもの)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_id</code></td>
+<td align="left">広告のカスタム ID。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_load</code></td>
+<td align="left">広告読み込みの数。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_name</code></td>
+<td align="left">広告の名前。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_placement_id</code></td>
+<td align="left">広告のプレースメント ID (通常は、ヘッダーまたはフッタ内)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_player_name</code></td>
+<td align="left">広告用のプレイヤーの名前。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_pod</code></td>
+<td align="left">広告が帰属するポッド。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_position</code></td>
+<td align="left">広告ブレーク内の広告の数値上の位置づけ (初期値: <code>0</code>)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_site_id</code></td>
+<td align="left">広告のサイト ID。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_ad_uuid</code></td>
+<td align="left">広告の UUID (<code>83675D85-F0D3-48BB-A1BB-18111B7A89AA</code>など)。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_advertiser</code></td>
+<td align="left">広告の広告主名。</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="quality-of-experience-qoe-データ">Quality of Experience (QoE) データ</h3>
+
+<p>Tealium イベント: <code>media_bitrate_change</code></p>
+
+<p>Quality of Experience (QoE) プロパティは、品質が変化した場合や、フレームがドロップした場合に、セッションの有効期限内に更新されることがあります。<code>media_bitrate_change</code> イベントは、ビットレート値が設定される都度、トリガーされます。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">変数</th>
+<th align="left">説明</th>
+<th align="left">必須</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>media_qoe_bitrate</code></td>
+<td align="left">Quality of Experience (QoE) ビットレート値 (キロバイト/秒 (kpps) 単位) (<code>1500</code>など)。</td>
+<td align="left">はい</td>
+</tr>
+
+<tr>
+<td align="left"><code>media_qoe_startup_time</code></td>
+<td align="left">コンテンツの起動にかかる時間 (ミリ秒単位)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_qoe_frames_per_second</code></td>
+<td align="left">コンテンツのフレーム レート (秒あたり)。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_qoe_dropped_frames</code></td>
+<td align="left">セッション中にドロップした全フレームの合計。</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_qoe_playback_speed</code></td>
+<td align="left">ユーザーが選択したコンテンツ プレイバック スピード (<code>1.5</code> (通常メディア スピードの 1.5 倍) など)。</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="メディア-サマリー-データ">メディア サマリー データ</h3>
+
+<p>Tealium イベント: <code>media_session_end</code> (<code>TrackingType</code> を <code>summary</code>に設定したとき)</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">変数</th>
+<th align="left">データ型</th>
+<th align="left">説明</th>
+<th align="left">例</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>media_ad_uuids</code></td>
+<td align="left"><code>[String]</code></td>
+<td align="left">メディア セッション中に再生される広告の一意識別子の配列。</td>
+<td align="left"><code>[“8B51B7FA-EEC5-4754-ACAB-58B9B7643AE8”, “83675D85-F0D3-48BB-A1BB-18111B7A89AA”]</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_percentage_ad_complete</code></td>
+<td align="left"><code>Double</code></td>
+<td align="left">開始後における広告の完了割合 (%)。</td>
+<td align="left"><code>90.0</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_percentage_ad_time</code></td>
+<td align="left"><code>Double</code></td>
+<td align="left">広告コンテンツのプレイバック時間の割合 (%)。</td>
+<td align="left"><code>23.7</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_percentage_chapter_complete</code></td>
+<td align="left"><code>Double</code></td>
+<td align="left">開始後におけるチャプターの完了割合 (%)。</td>
+<td align="left"><code>75.0</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_played_to_end</code></td>
+<td align="left"><code>Boolean</code></td>
+<td align="left">コンテンツが全体であるかどうかを示します。</td>
+<td align="left"><code>true</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_session_duration</code></td>
+<td align="left"><code>Double</code></td>
+<td align="left">セッションの時間 (秒単位) (<code>sessionStart</code> から <code>sessionEnd</code>まで)。</td>
+<td align="left"><code>1300.0</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_session_end_time</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">セッションが終了した日時 (UTC (協定世界時))。</td>
+<td align="left"><code>2021-01-26T16:43:53Z</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_session_start_time</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">セッションが開始した日時 (UTC (協定世界時))。</td>
+<td align="left"><code>2021-01-26T16:43:53Z</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_total_ad_skips</code></td>
+<td align="left"><code>Int</code></td>
+<td align="left"><code>skipAd()</code> メソッドが呼び出された回数。</td>
+<td align="left"><code>3</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_total_ad_time</code></td>
+<td align="left"><code>Double</code></td>
+<td align="left">広告コンテンツが再生された総秒数。</td>
+<td align="left"><code>30.0</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_total_ads</code></td>
+<td align="left"><code>Int</code></td>
+<td align="left"><code>startAd()</code> メソッドが呼び出された回数。</td>
+<td align="left"><code>4</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_total_buffer_time</code></td>
+<td align="left"><code>Double</code></td>
+<td align="left">コンテンツがバッファしていた総秒数 (<code>startBuffer</code> から <code>endBuffer</code>まで)。</td>
+<td align="left"><code>2.1</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_total_chapter_skips</code></td>
+<td align="left"><code>Int</code></td>
+<td align="left"><code>chapterSkip()</code> メソッドが呼び出された回数。</td>
+<td align="left"><code>1</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_total_pauses</code></td>
+<td align="left"><code>Int</code></td>
+<td align="left"><code>pause()</code> メソッドが呼び出された回数。</td>
+<td align="left"><code>1</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_total_play_time</code></td>
+<td align="left"><code>Double</code></td>
+<td align="left">コンテンツが再生していた総秒数。</td>
+<td align="left"><code>9300.2</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_total_plays</code></td>
+<td align="left"><code>Int</code></td>
+<td align="left"><code>play()</code> メソッドが呼び出された回数。</td>
+<td align="left"><code>2</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>media_total_seek_time</code></td>
+<td align="left"><code>Double</code></td>
+<td align="left">シークされていた総秒数 (<code>seekStart</code> から <code>seekEnd</code>まで)。</td>
+<td align="left"><code>46.5</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="pv3">
+	<div class="di">
+		
+		
+		<a href="/platforms/getting-started/location/"
+			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
+      <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+				<title>"ユーザーの位置情報とジオフェンシング "</title>
+				<path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+			</svg>
+     <section class="tr pl3">
+				<div class="text-color-secondary f7">前 </div>
+				<div>ユーザーの位置情報とジオフェンシング</div>
+			</section>
+		</a>
+		
+
+	</div>
+
+
+	<div class="fr">
+
+		
+		<a href="/platforms/getting-started/deep-linking/"
+      class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
+			<section class="tl pr3">
+				<div class="f7 text-color-secondary">次に</div>
+				<div>ディープ リンク</div>
+			</section>
+      <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+			  <title>"ディープ リンク"</title>
+			  <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+			</svg>
+    </a>
+		
+		
+	</div>
+
+</div>
+<br>&nbsp;</br>
+
+          
+
+
+
+          <div class="nested-lh-copy lh-copy bt-l b--moon-gray pt2 mt4">
+            <div class="feedback_form">
+  <span>
+	  <p style="display:inline">このページはお役にたちましたでしょうか？</p>
+		<button enabled id="feedback_yes" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-green link">はい</button>
+	  <button enabled id="feedback_no" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-green link">いいえ</button>
+  </span>
+	<span id="feedback_comment">
+		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
+    <span><p>最終更新日 ::  2022年August月23日
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
+    </p>
+  </span>
+  <span id="feedback_thank_you" style="display: none;">
+     <em>ご意見有難うございます。</em>
+  </span>
+</div>
+
+            
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div id="toc" class="order-2 w-100 w-20-l pl4 ph4-m mb4 sticky-r dn db-l">
+
+
+
+
+  <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
+      <p class="b">目次</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#%e4%bb%95%e7%b5%84%e3%81%bf">仕組み</a></li>
+              <li><a href="#%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab">インストール</a></li>
+              <li><a href="#%e5%88%9d%e6%9c%9f%e5%8c%96">初期化</a></li>
+              <ul class="toc-h3"><li><a href="#trackingtype">TrackingType</a></li>
+              <li><a href="#streamtype">StreamType</a></li>
+              <li><a href="#mediatype">MediaType</a></li>
+              <li><a href="#state">State</a></li>
+              <li><a href="#quality-of-experience-qoe">Quality of Experience (QoE)</a></li>
+              <li><a href="#%e3%83%a1%e3%82%bf%e3%83%87%e3%83%bc%e3%82%bf">メタデータ</a></li>
+              </ul><li><a href="#%e3%83%88%e3%83%a9%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0-%e3%82%bf%e3%82%a4%e3%83%97%e3%81%ae%e6%a6%82%e8%a6%81">トラッキング タイプの概要</a></li>
+              <ul class="toc-h3"><li><a href="#%e5%ae%8c%e5%85%a8%e3%83%97%e3%83%ac%e3%82%a4%e3%83%90%e3%83%83%e3%82%af-%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">完全プレイバック イベント</a></li>
+              <li><a href="#%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%90%e3%83%ab-%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">インターバル イベント</a></li>
+              <li><a href="#%e3%83%9e%e3%82%a4%e3%83%ab%e3%82%b9%e3%83%88%e3%83%bc%e3%83%b3-%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">マイルストーン イベント</a></li>
+              <li><a href="#%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%90%e3%83%ab-%e3%83%9e%e3%82%a4%e3%83%ab%e3%82%b9%e3%83%88%e3%83%bc%e3%83%b3-%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">インターバル マイルストーン イベント</a></li>
+              <li><a href="#%e3%82%b5%e3%83%9e%e3%83%aa%e3%83%bc-%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">サマリー イベント</a></li>
+              <li><a href="#%e6%af%94%e8%bc%83%e3%83%81%e3%83%a3%e3%83%bc%e3%83%88">比較チャート</a></li>
+              </ul><li><a href="#%e3%83%88%e3%83%a9%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0">トラッキング</a></li>
+              <ul class="toc-h3"><li><a href="#%e3%83%a1%e3%83%87%e3%82%a3%e3%82%a2-%e3%82%bb%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3">メディア セッション</a></li>
+              <li><a href="#%e3%83%97%e3%83%ac%e3%82%a4%e3%83%a4%e3%83%bc-%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">プレイヤー イベント</a></li>
+              <li><a href="#%e3%83%81%e3%83%a3%e3%83%97%e3%82%bf%e3%83%bc">チャプター</a></li>
+              <li><a href="#%e5%ba%83%e5%91%8a">広告</a></li>
+              </ul><li><a href="#%e3%83%87%e3%83%bc%e3%82%bf%e3%83%ac%e3%82%a4%e3%83%a4%e3%83%bc">データレイヤー</a></li>
+              <ul class="toc-h3"><li><a href="#%e3%83%a1%e3%83%87%e3%82%a3%e3%82%a2-%e3%82%bb%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3-%e3%83%87%e3%83%bc%e3%82%bf">メディア セッション データ</a></li>
+              <li><a href="#%e3%83%81%e3%83%a3%e3%83%97%e3%82%bf%e3%83%bc-%e3%83%87%e3%83%bc%e3%82%bf">チャプター データ</a></li>
+              <li><a href="#%e5%ba%83%e5%91%8a%e3%83%96%e3%83%ac%e3%83%bc%e3%82%af-%e3%83%87%e3%83%bc%e3%82%bf">広告ブレーク データ</a></li>
+              <li><a href="#%e5%ba%83%e5%91%8a%e3%83%87%e3%83%bc%e3%82%bf">広告データ</a></li>
+              <li><a href="#quality-of-experience-qoe-%e3%83%87%e3%83%bc%e3%82%bf">Quality of Experience (QoE) データ</a></li>
+              <li><a href="#%e3%83%a1%e3%83%87%e3%82%a3%e3%82%a2-%e3%82%b5%e3%83%9e%e3%83%aa%e3%83%bc-%e3%83%87%e3%83%bc%e3%82%bf">メディア サマリー データ</a></li>
+              </nav>
+  </aside></div>
+
+    </div>
+  </article>
+
+    
+
+    </main>
+
+    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    </div>
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu dn pl5">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/guides/" class="ttu f6 link primary-color-light overflow hover-white db brand-font ma0 w-100 pv3 ph4">
+          手引き
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/" class="ttu f6 link primary-color-light overflow hover-white db brand-font ma0 w-100 pv3 ph4">
+          プラットフォーム
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/partners/" class="ttu f6 link primary-color-light overflow hover-white db brand-font ma0 w-100 pv3 ph4">
+          パートナー
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu dn pl5">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          モバイル
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          始める
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/remote-commands/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Remote Commands
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/android-java/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Android (Java)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/android-kotlin/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Android (Kotlin)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/cordova-v1/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Cordova 1.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/cordova/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Cordova 2.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/flutter-v1/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Flutter 1.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/flutter/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Flutter 2.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/ios-objective-c/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          iOS (Objective-C)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/ios-swift-v1/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          iOS (Swift) 1.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/ios-swift/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          iOS (Swift) 2.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/nativescript" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          NativeScript
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/react-native-v1/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          React Native 1.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/react-native/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          React Native 2.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/unity-v1/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Unity 1.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/unity/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Unity 2.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/xamarin-v1/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Xamarin 1.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100 mb2 bb b--mid-gray">
+        <a href="https://docs-preview.tealium.co.jp/platforms/xamarin/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Xamarin 2.x
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          ウェブ
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/getting-started-web/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          始める
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/adobe-launch/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Adobe Launch
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/amp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          AMP
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/angular/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Angular
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/google-tag-manager/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Google タグ マネージャー
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100 mb2 bb b--mid-gray">
+        <a href="https://docs-preview.tealium.co.jp/platforms/javascript/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          JavaScript (Web)
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          サーバーサイド
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/csharp/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          C#
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/http-api/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          HTTP API
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/java/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Java
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/node/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Node
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/python/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Python
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/roku/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Roku
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/ruby/" class="ttu f6 link primary-color-light  hover-white db brand-font ma0 w-100 pv2 ph4">
+          Ruby
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between pl5">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Menu</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Platforms</button>
+</div>
+</div>
+</footer>
+
+    <script src="/dist/js/app.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://kit.fontawesome.com/59194dc628.js" crossorigin="anonymous"></script>
+
+
+    
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript">
+docsearch({
+  apiKey: '6784c7975bfcd2a1e2f86d3388d655b4',
+  indexName: 'tealium_jp',
+  inputSelector: 'input#search-input',
+  debug: "true" 
+});
+</script>
+
+    
+
+  </body>
+</html>
