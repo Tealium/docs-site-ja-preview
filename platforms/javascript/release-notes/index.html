@@ -67,14 +67,8 @@ var utag_data = {
           パートナー</a>
         </li></ul>
     
-    <div class="db dib-ns pl3 mr4"><form id="site-search-form" action="" role="search">
-  <fieldset class="bn ma0 pa0">
-    <label class="clip" for="search-input">Search</label>
-    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white"
-           placeholder="ドキュメントの検索" name="search-input" value=""
-           style="background: transparent url('/images/icons/icon-search-white.png') no-repeat 6px 10px /16px 16px;background-color: hsla(0,0%,100%,.1)!important;border-radius:4px;">
-  </fieldset>
-</form>
+    <div class="db dib-ns pl3 mr4"><div id="docsearch">
+</div>
 </div><ul class="list ma0 pa0 dn dib-l">
       <li class="f5 dib">
          <i class="fa fa-globe" style="color: rgba(255, 255, 255, .6)" aria-hidden="true"></i>
@@ -500,7 +494,7 @@ var utag_data = {
         <a href="/platforms/flutter/data-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-data-management">データ管理</a>
       </li>
       <li class="w-100 hover-accent-color-light fw8 " data-level="2">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".flutter-api">API Reference</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".flutter-api">APIリファレンス</a>
         <ul class="flutter-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
         <a href="/platforms/flutter/api/tealium/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-api-tealium">Tealium</a>
       </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
@@ -724,7 +718,7 @@ var utag_data = {
         <a href="/platforms/nativescript/track/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".nativescript-track">トラッキング</a>
       </li>
       <li class="w-100 hover-accent-color-light fw8 " data-level="2">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".nativescript-api">API Reference</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".nativescript-api">APIリファレンス</a>
         <ul class="nativescript-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
         <a href="/platforms/nativescript/api/tealium/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".nativescript-api-tealium">Tealium</a>
       </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
@@ -923,12 +917,10 @@ var utag_data = {
       </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
         <a href="/platforms/javascript/settings/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".utag-settings">設定</a>
       </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/javascript/api-reference/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">APIリファレンス</a>
-      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
         <a href="/platforms/javascript/debugging/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">デバッグ</a>
       </li>
       <li class="w-100 hover-accent-color-light fw8 " data-level="2">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".javascript-api">API Reference</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2  " data-target=".javascript-api">APIリファレンス</a>
         <ul class="javascript-api desktopmenu animated fadeIn list pl0 dn"><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
         <a href="/platforms/javascript/api/cookie-functions/" class="db link pl4 pr2 pv1 primary-color hover-bg-primary " data-target=".javascript-api-cookie-functions">Cookie 機能</a>
       </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="3">
@@ -1052,11 +1044,7 @@ var utag_data = {
   <h1 class="lh-title mb3 mv0 pt3">リリースノート</h1>
 </header>
 
-<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
-  
-    <div class="f4 fw4 lh-copy mb4">
-      リリースノート。
-    </div>
+<aside class="bt bw1 mt2 mid-gray b--mid-gray fn w-100">
   
 
   
@@ -1635,7 +1623,7 @@ UTCタイムゾーンでの現在のISO文字列タイムスタンプ（古い�
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
-    <span><p>最終更新日 ::  2022年August月23日
+    <span><p>最終更新日 ::  2022年August月29日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
     </p>
@@ -1935,13 +1923,80 @@ UTCタイムゾーンでの現在のISO文字列タイムスタンプ（古い�
 
 
     
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+      
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
+const translations = {
+  button: {
+    buttonText: 'ドキュメントの検索',
+    buttonAriaLabel: 'ドキュメントの検索',
+  },
+  modal: {
+    searchBox: {
+      resetButtonTitle: 'クエリを消去',
+      resetButtonAriaLabel: 'クエリを消去',
+      cancelButtonText: 'キャンセル',
+      cancelButtonAriaLabel: 'キャンセル',
+    },
+    startScreen: {
+      recentSearchesTitle: '最近',
+      noRecentSearchesText: '最近の検索はありません',
+      saveRecentSearchButtonTitle: 'この検索を保存',
+      removeRecentSearchButtonTitle: 'この検索を履歴から削除',
+      favoriteSearchesTitle: 'お気に入り',
+      removeFavoriteSearchButtonTitle: 'このクエリをお気に入りから削除',
+    },
+    errorScreen: {
+      titleText: '結果を取得できません',
+      helpText: 'ネットワーク接続を確認してください',
+    },
+    footer: {
+      selectText: '選択する',
+      selectKeyAriaLabel: 'キーを入力してください',
+      navigateText: 'ナビゲートする',
+      navigateUpKeyAriaLabel: '上',
+      navigateDownKeyAriaLabel: '下',
+      closeText: '閉じる',
+      closeKeyAriaLabel: 'エスケープキー',
+      searchByText: '次で検索：',
+    },
+    noResultsScreen: {
+      noResultsText: '次の結果はありません：',
+      suggestedQueryText: '次で検索してみてください：',
+      reportMissingResultsText: 'このクエリで結果が返ってくるはずですか?',
+      reportMissingResultsLinkText: '連絡願います',
+    },
+  },
+};
+var filter_sections = [
+  "JAVASCRIPT",
+  "GETTING STARTED WEB",
+  "ANDROID KOTLIN",
+  "IOS SWIFT",
+  "GETTING STARTED"
+];
+var section = $('header a')
+if(section && section.length == 1) {
+  var sect = section.text().trim();
+  filter_sections = [sect];
+}
+var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var opt_filters = [];
+if(hier_filters.length) {
+  opt_filters.push(hier_filters);
+}
 docsearch({
-  apiKey: '6784c7975bfcd2a1e2f86d3388d655b4',
+  container: '#docsearch',
+  appId: '2V5C0M31GH',
+  apiKey: '32b47c4ec1ccc76fbe18808c48f9d8b6',
   indexName: 'tealium_jp',
-  inputSelector: 'input#search-input',
-  debug: "true" 
+  placeholder: 'ドキュメントの検索',
+  translations: translations,
+  searchParameters: {
+    "hitsPerPage": 50,
+    optionalFilters: opt_filters
+  },
+  debug: "true"
 });
 </script>
 
