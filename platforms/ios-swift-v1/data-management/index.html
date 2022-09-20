@@ -1188,9 +1188,6 @@ var utag_data = {
   </span>
 </div>
 
-            
-
-
           </div>
         </div>
       </div>
@@ -1519,19 +1516,35 @@ const translations = {
     },
   },
 };
-var filter_sections = [
+var default_sections = [
   "JAVASCRIPT",
   "GETTING STARTED WEB",
   "ANDROID KOTLIN",
   "IOS SWIFT",
   "GETTING STARTED"
 ];
-var section = $('header a')
-if(section && section.length == 1) {
-  var sect = section.text().trim();
-  filter_sections = [sect];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+var local_sections = new Set(ls_sections);
+var cur_section = $('header a');
+if(cur_section && cur_section.length == 1) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 5) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
 }
-var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
 var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);
