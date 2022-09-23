@@ -430,15 +430,20 @@ var utag_data = {
 
 <p>仕組みは次のとおりです。</p>
 
-<p>1.ビューのイベント詳細では、以下のオプションを利用できます（イベントによって異なります）。
-    *   <strong>仕様のプレビュー</strong>
-    このオプションは、イベントが広く認められたマーケットプレイス仕様の場合に表示されます。このボタンをクリックすると、仕様によって予期される属性が表示され、現在のイベント データに対して検証されます。
-    *   <strong>イベント仕様の作成</strong>
-    このオプションは、イベントが広く認められていない場合に表示されます。このボタンをクリックするとり、現在のイベントで検出された属性に基づいて、カスタムイベント仕様を作成するダイアログが開きます。
-2.<code>&quot;search&quot;</code>イベントについては、<strong>[Preview Spec]</strong>をクリックして、その仕様を表示します。現在のフォーマットでは、必須属性である<code>search_keyword</code>と<code>search_results</code>が見つからないために、送信されたテストイベントは無効ですが、それでも構いません。後でイベントトラッキングを調整します。
-3.<strong>[Create Event Specification]</strong> をクリックして全体的な仕様ダイアログを開き、この仕様を追加します。メモまたは追加属性を追加します (既存の属性は編集できません)。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8145i28170BA195DA3C17/image-dimensions/463x378?v=1.0" alt="イベント仕様の追加" />
-4.<strong>[Finish]</strong>をクリックします。</p>
+<ol>
+<li>ビューのイベント詳細では、以下のオプションを利用できます（イベントによって異なります）。
+
+<ul>
+<li><strong>仕様のプレビュー</strong>
+このオプションは、イベントが広く認められたマーケットプレイス仕様の場合に表示されます。このボタンをクリックすると、仕様によって予期される属性が表示され、現在のイベント データに対して検証されます。</li>
+<li><strong>イベント仕様の作成</strong>
+このオプションは、イベントが広く認められていない場合に表示されます。このボタンをクリックするとり、現在のイベントで検出された属性に基づいて、カスタムイベント仕様を作成するダイアログが開きます。</li>
+</ul></li>
+<li><code>&quot;search&quot;</code>イベントについては、<strong>[Preview Spec]</strong>をクリックして、その仕様を表示します。現在のフォーマットでは、必須属性である<code>search_keyword</code>と<code>search_results</code>が見つからないために、送信されたテストイベントは無効ですが、それでも構いません。後でイベントトラッキングを調整します。</li>
+<li><strong>[Create Event Specification]</strong> をクリックして全体的な仕様ダイアログを開き、この仕様を追加します。メモまたは追加属性を追加します (既存の属性は編集できません)。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8145i28170BA195DA3C17/image-dimensions/463x378?v=1.0" alt="イベント仕様の追加" /></li>
+<li><strong>[Finish]</strong>をクリックします。</li>
+</ol>
 
 <p>これでイベント仕様が作成できました。次は、Live Events画面でデータ品質を確認します。</p>
 
@@ -498,7 +503,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
-    <span><p>最終更新日 ::  2022年August月29日
+    <span><p>最終更新日 ::  2022年September月23日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
     </p>
@@ -507,9 +512,6 @@ var utag_data = {
      <em>ご意見有難うございます。</em>
   </span>
 </div>
-
-            
-
 
           </div>
         </div>
@@ -559,7 +561,7 @@ var utag_data = {
 </ul>
 
 </div>
-<div  class="docsmenu mobilemenu dn pl5">
+<div  class="docsmenu mobilemenu dn pl5 vh-100" style="overflow-y:scroll;padding-top: 150px;">
     
 
 <ul class="list dib ph0 ma0 scrolling-touch tc">
@@ -832,19 +834,35 @@ const translations = {
     },
   },
 };
-var filter_sections = [
+var default_sections = [
   "JAVASCRIPT",
   "GETTING STARTED WEB",
   "ANDROID KOTLIN",
   "IOS SWIFT",
   "GETTING STARTED"
 ];
-var section = $('header a')
-if(section && section.length == 1) {
-  var sect = section.text().trim();
-  filter_sections = [sect];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+var local_sections = new Set(ls_sections);
+var cur_section = $('header a');
+if(cur_section && cur_section.length == 1) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 5) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
 }
-var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
 var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);

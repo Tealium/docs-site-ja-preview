@@ -455,22 +455,24 @@ var utag_data = {
 
 <p>この読み込みルールを追加するには、以下の手順に従います。</p>
 
-<p>1.先に作成した<strong>Google Analytics</strong>タグをクリックし、使用可能なオプションを表示します。
-2._Load Rules_領域で、<strong>[Edit]</strong>をクリックします。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8005iDAADD8565D66E3CF/image-dimensions/431x178?v=1.0" alt="読み込みルール" />
-3.<strong>[+Create Rule]</strong>をクリックします。[New Load Rule]ダイアログが表示されます。
-4._Title_フィールドで、<code>Production Site</code>と入力します。
-5.最初のドロップダウンリストで、<code>domain</code>を選択します。
-6.2番目のドロップダウンリストで、<strong>[does not contain]</strong>を演算子として選択します。
-7.3番目のフィールドで、<code>stage</code>と入力します。
-8.<strong>[+]</strong>ボタンをクリックし、AND条件を追加します。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8007i55B4C4DFD1FF5A61/image-dimensions/252x104?v=1.0" alt="プラスボタン" />
-9.最初のドロップダウンリストで、<code>domain</code>を選択します。
-10.2番目のドロップダウンリストで、<strong>[does not contain]</strong>を演算子として選択します。
-11.3番目のフィールドで、<code>qa</code>と入力します。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8009i6BCD53AE5B782DC8/image-dimensions/621x192?v=1.0" alt="qa" />
-12.<strong>[Apply]</strong>をクリックし、読み込みルールを適用します。
-13.再度<strong>[Apply]</strong>をクリックし、タグを更新します。</p>
+<ol>
+<li>先に作成した<strong>Google Analytics</strong>タグをクリックし、使用可能なオプションを表示します。</li>
+<li>_Load Rules_領域で、<strong>[Edit]</strong>をクリックします。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8005iDAADD8565D66E3CF/image-dimensions/431x178?v=1.0" alt="読み込みルール" /></li>
+<li><strong>[+Create Rule]</strong>をクリックします。[New Load Rule]ダイアログが表示されます。</li>
+<li>_Title_フィールドで、<code>Production Site</code>と入力します。</li>
+<li>最初のドロップダウンリストで、<code>domain</code>を選択します。</li>
+<li>2番目のドロップダウンリストで、<strong>[does not contain]</strong>を演算子として選択します。</li>
+<li>3番目のフィールドで、<code>stage</code>と入力します。</li>
+<li><strong>[+]</strong>ボタンをクリックし、AND条件を追加します。<br />
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8007i55B4C4DFD1FF5A61/image-dimensions/252x104?v=1.0" alt="プラスボタン" /></li>
+<li>最初のドロップダウンリストで、<code>domain</code>を選択します。</li>
+<li>番目のドロップダウンリストで、<strong>[does not contain]</strong>を演算子として選択します。</li>
+<li>番目のフィールドで、<code>qa</code>と入力します。<br />
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8009i6BCD53AE5B782DC8/image-dimensions/621x192?v=1.0" alt="qa" /></li>
+<li><strong>[Apply]</strong>をクリックし、読み込みルールを適用します。</li>
+<li>再度<strong>[Apply]</strong>をクリックし、タグを更新します。</li>
+</ol>
 
 <p>これで、プロダクションサイト (<code>&quot;stage&quot;</code>または<code>&quot;qa&quot;</code>が含まれるドメイン以外) でのみタグが読み込まれるようになります。</p>
 
@@ -530,7 +532,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
-    <span><p>最終更新日 ::  2022年August月29日
+    <span><p>最終更新日 ::  2022年September月23日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
     </p>
@@ -539,9 +541,6 @@ var utag_data = {
      <em>ご意見有難うございます。</em>
   </span>
 </div>
-
-            
-
 
           </div>
         </div>
@@ -591,7 +590,7 @@ var utag_data = {
 </ul>
 
 </div>
-<div  class="docsmenu mobilemenu dn pl5">
+<div  class="docsmenu mobilemenu dn pl5 vh-100" style="overflow-y:scroll;padding-top: 150px;">
     
 
 <ul class="list dib ph0 ma0 scrolling-touch tc">
@@ -864,19 +863,35 @@ const translations = {
     },
   },
 };
-var filter_sections = [
+var default_sections = [
   "JAVASCRIPT",
   "GETTING STARTED WEB",
   "ANDROID KOTLIN",
   "IOS SWIFT",
   "GETTING STARTED"
 ];
-var section = $('header a')
-if(section && section.length == 1) {
-  var sect = section.text().trim();
-  filter_sections = [sect];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+var local_sections = new Set(ls_sections);
+var cur_section = $('header a');
+if(cur_section && cur_section.length == 1) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 5) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
 }
-var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
 var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);

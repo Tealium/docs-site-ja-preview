@@ -420,32 +420,38 @@ var utag_data = {
 <div class="prose" id="prose">
   <p>TiQのコードセンターは、次の手順で示すとおり、お客様のページにTealiumタグ管理システムをインストールするコードを提供します。</p>
 
-<p>1.画面の右上にあるユーザーメニューに移動し、<strong>[Code Center]</strong>を選択します。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/9010i6A08F5D742E0DA07/image-size/large?v=1.0&amp;px=999" alt="コードセンター" /></p>
+<ol>
+<li><p>画面の右上にあるユーザーメニューに移動し、<strong>[Code Center]</strong>を選択します。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/9010i6A08F5D742E0DA07/image-size/large?v=1.0&amp;px=999" alt="コードセンター" /></p></li>
 
-<p>2.以下のようなユニバーサルデータオブジェクト（UDO）コードサンプルを探します。</p>
+<li><p>以下のようなユニバーサルデータオブジェクト（UDO）コードサンプルを探します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Tealium Universal Data Object --&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">utag_data</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">page_name</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">page_section</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">page_category</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">page_subcategory</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">page_type</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">page_name</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">page_section</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">page_category</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">page_subcategory</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">page_type</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div><pre tabindex="0"><code>UDOの変数は、ウェブアプリケーションフレームワークによって動的に設定されますが、このテストの値はハードコーディングされています。</code></pre>
-<p>3.このコードをコピーして、サイトのテストページのHTMLにある<code>&lt;body&gt;</code>タグの後ろに貼り付けます。
-4.次に、以下のようなユニバーサルタグコードを探します。</p>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div>
+<p>UDOの変数は、ウェブアプリケーションフレームワークによって動的に設定されますが、このテストの値はハードコーディングされています。</p></li>
+
+<li><p>このコードをコピーして、サイトのテストページのHTMLにある<code>&lt;body&gt;</code>タグの後ろに貼り付けます。</p></li>
+
+<li><p>次に、以下のようなユニバーサルタグコードを探します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Tealium Universal Tag --&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>,<span style="color:#a6e22e">c</span>,<span style="color:#a6e22e">d</span>){
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://tags.tiqcdn.com/utag/ACCOUNT/main/qa/utag.js&#39;</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">b</span><span style="color:#f92672">=</span>document;<span style="color:#a6e22e">c</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;script&#39;</span>;<span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#a6e22e">c</span>);<span style="color:#a6e22e">d</span>.<span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#a6e22e">a</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">d</span>.<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;text/java&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">c</span>;<span style="color:#a6e22e">d</span>.<span style="color:#66d9ef">async</span><span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span><span style="color:#f92672">=</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#a6e22e">c</span>)[<span style="color:#ae81ff">0</span>];<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">parentNode</span>.<span style="color:#a6e22e">insertBefore</span>(<span style="color:#a6e22e">d</span>,<span style="color:#a6e22e">a</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://tags.tiqcdn.com/utag/ACCOUNT/main/qa/utag.js&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">b</span><span style="color:#f92672">=</span>document;<span style="color:#a6e22e">c</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;script&#39;</span>;<span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#a6e22e">c</span>);<span style="color:#a6e22e">d</span>.<span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#a6e22e">a</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">d</span>.<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;text/java&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">c</span>;<span style="color:#a6e22e">d</span>.<span style="color:#66d9ef">async</span><span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a</span><span style="color:#f92672">=</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#a6e22e">c</span>)[<span style="color:#ae81ff">0</span>];<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">parentNode</span>.<span style="color:#a6e22e">insertBefore</span>(<span style="color:#a6e22e">d</span>,<span style="color:#a6e22e">a</span>)
 </span></span><span style="display:flex;"><span>})();
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div>
-<p>5.このコードをコピーして、HTMLのUDOコードの後ろに貼り付けます。これによりTealiumタグがページに非同期で読み込まれ、その他の資産の読み込みがブロックされるのを防ぎます。</p>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div></li>
+
+<li><p>このコードをコピーして、HTMLのUDOコードの後ろに貼り付けます。これによりTealiumタグがページに非同期で読み込まれ、その他の資産の読み込みがブロックされるのを防ぎます。</p></li>
+</ol>
 
 <p class="note"><i class="fas fa-info-circle"></i>このコードをコピーしたら、<code>ACCOUNT</code>を実際のアカウント名に変更する必要があります。そうしない場合は、ご利用のアカウント、プロファイル、環境を含むコードセンターのコードを使用します。</p>
 
@@ -507,7 +513,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
-    <span><p>最終更新日 ::  2022年August月29日
+    <span><p>最終更新日 ::  2022年September月23日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
     </p>
@@ -516,9 +522,6 @@ var utag_data = {
      <em>ご意見有難うございます。</em>
   </span>
 </div>
-
-            
-
 
           </div>
         </div>
@@ -568,7 +571,7 @@ var utag_data = {
 </ul>
 
 </div>
-<div  class="docsmenu mobilemenu dn pl5">
+<div  class="docsmenu mobilemenu dn pl5 vh-100" style="overflow-y:scroll;padding-top: 150px;">
     
 
 <ul class="list dib ph0 ma0 scrolling-touch tc">
@@ -841,19 +844,35 @@ const translations = {
     },
   },
 };
-var filter_sections = [
+var default_sections = [
   "JAVASCRIPT",
   "GETTING STARTED WEB",
   "ANDROID KOTLIN",
   "IOS SWIFT",
   "GETTING STARTED"
 ];
-var section = $('header a')
-if(section && section.length == 1) {
-  var sect = section.text().trim();
-  filter_sections = [sect];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+var local_sections = new Set(ls_sections);
+var cur_section = $('header a');
+if(cur_section && cur_section.length == 1) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 5) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
 }
-var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
 var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);

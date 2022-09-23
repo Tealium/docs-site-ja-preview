@@ -432,39 +432,50 @@ var utag_data = {
 
 <p>以下の手順を使って、EventStreamでGoogle Sheetsコネクタを構成します。</p>
 
-<p>1.<strong>EventStream &gt; Connectors &gt; Connector Marketplace</strong>に移動します。
-2.横のナビゲーションパネルの<strong>Categories</strong>の下にある<strong>[Big Data]</strong>をクリックして、選択を絞り込みます。
-3.<strong>[Google Sheets]</strong>を選択し、<strong>[Add Connector]</strong>をクリックします。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8155i3151273C5560544B/image-dimensions/360x265?v=1.0" alt="Google Sheets" />
-4.<strong>[Configure]</strong>タブでタイトルを入力し、<strong>[Establish Connection]</strong>をクリックします。Googleアカウントの承認ダイアログが表示されます。
-5.ユーザーアカウント名を確認し、<strong>[Allow]</strong>をクリックします。コネクタの構成ウィンドウが、_Connected<em>と表示されます。
-6.<strong>[Next]</strong>をクリックします。</em>[Actions]_タブが表示されます。
-7.デフォルトアクション<code>&quot;Add or Update Row&quot;</code>を選択し、<strong>+[Create Action]</strong>をクリックして、次のパラメータを構成します。
-  *   <strong>アクション名</strong>
-  アクションにわかりやすい名前を付けます（<code>&quot;Search Terms with Zero Results&quot;</code>など）
-  *   <strong>ソース</strong>
-  イベントフィード<code>&quot;Search with No Results&quot;</code>を選択します。これらはアクション（スプレッドシートの行の追加、更新など）をトリガーするイベントです。
-  *   <strong>スプレッドシート名</strong>
-  使用するスプレッドシートファイル名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択し、使用するスプレッドシートファイル名（「EventStream Test」という名前で作成したもの）を入力します。
-  <img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8156i219077D1C44FAA38/image-dimensions/480x140?v=1.0" alt="スプレッドシート名" />
-  *   <strong>ワークシート名</strong>
-  使用するスプレッドシートファイルのワークシート名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択し、使用するワークシート名（<code>&quot;Sheet1&quot;</code>など）を入力します。
-  <img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8157i41F9A04CB2A9DBC1/image-dimensions/480x153?v=1.0" alt="ワークシート名" />
-  *   <strong>行ID</strong>
-  イベントごとに一意の行IDを含む列を特定します。通常はイベントタイムスタンプ属性です。マッピングに使用するため、列に<code>&quot;Timestamp&quot;</code>という名前を付けました。
-  <img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8158iB6FB3A619408DC16/image-dimensions/480x148?v=1.0" alt="行 ID" />
-  <strong>Map</strong>リストから属性を選択し、対応するスプレッドシート列名（カスタム値）を<strong>To</strong>フィールドに入力します。   アクションが開始されると、指定された列の属性値が検索され、次の処理が実行されます。</p>
-<pre tabindex="0"><code>  - 値が存在する場合、行データマッピングで指定されたように、対応する行が更新されます。
+<ol>
+<li><strong>EventStream &gt; Connectors &gt; Connector Marketplace</strong>に移動します。</li>
+<li>横のナビゲーションパネルの<strong>Categories</strong>の下にある<strong>[Big Data]</strong>をクリックして、選択を絞り込みます。</li>
+<li><strong>[Google Sheets]</strong>を選択し、<strong>[Add Connector]</strong>をクリックします。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8155i3151273C5560544B/image-dimensions/360x265?v=1.0" alt="Google Sheets" /></li>
+<li><strong>[Configure]</strong>タブでタイトルを入力し、<strong>[Establish Connection]</strong>をクリックします。Googleアカウントの承認ダイアログが表示されます。</li>
+<li>ユーザーアカウント名を確認し、<strong>[Allow]</strong>をクリックします。コネクタの構成ウィンドウが、_Connected_と表示されます。</li>
+<li><strong>[Next]</strong>をクリックします。_[Actions]_タブが表示されます。</li>
 
-  - 値が存在しない場合、行データで指定された行IDの値と属性を使用して、新しい行が作成されます。</code></pre>
+<li><p>デフォルトアクション<code>&quot;Add or Update Row&quot;</code>を選択し、<strong>+[Create Action]</strong>をクリックして、次のパラメータを構成します。</p>
+
 <ul>
-<li><strong>行データ</strong>
+<li><strong>アクション名</strong>
+アクションにわかりやすい名前を付けます（<code>&quot;Search Terms with Zero Results&quot;</code>など）</li>
+<li><strong>ソース</strong>
+イベントフィード<code>&quot;Search with No Results&quot;</code>を選択します。これらはアクション（スプレッドシートの行の追加、更新など）をトリガーするイベントです。</li>
+<li><strong>スプレッドシート名</strong>
+使用するスプレッドシートファイル名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択し、使用するスプレッドシートファイル名（「EventStream Test」という名前で作成したもの）を入力します。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8156i219077D1C44FAA38/image-dimensions/480x140?v=1.0" alt="スプレッドシート名" /></li>
+<li><strong>ワークシート名</strong>
+使用するスプレッドシートファイルのワークシート名を特定します。ドロップダウンから<strong>[Custom Value]</strong>を選択し、使用するワークシート名（<code>&quot;Sheet1&quot;</code>など）を入力します。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8157i41F9A04CB2A9DBC1/image-dimensions/480x153?v=1.0" alt="ワークシート名" /></li>
+
+<li><p><strong>行ID</strong>
+イベントごとに一意の行IDを含む列を特定します。通常はイベントタイムスタンプ属性です。マッピングに使用するため、列に<code>&quot;Timestamp&quot;</code>という名前を付けました。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8158iB6FB3A619408DC16/image-dimensions/480x148?v=1.0" alt="行 ID" />
+<strong>Map</strong>リストから属性を選択し、対応するスプレッドシート列名（カスタム値）を<strong>To</strong>フィールドに入力します。   アクションが開始されると、指定された列の属性値が検索され、次の処理が実行されます。</p>
+
+<ul>
+<li><p>値が存在する場合、行データマッピングで指定されたように、対応する行が更新されます。</p></li>
+
+<li><p>値が存在しない場合、行データで指定された行IDの値と属性を使用して、新しい行が作成されます。</p></li>
+</ul></li>
+
+<li><p><strong>行データ</strong>
 スプレッドシートに追加する追加属性をマップします。各属性には、スプレッドシートで割り当てられた列名が必要です。ここでは、<code>search_keyword</code>属性の値を、<code>&quot;Search Term&quot;</code>という名前のスプレッドシート列に記録します。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8159iA2D72C59CE6B5280/image-dimensions/481x113?v=1.0" alt="行データ" /></li>
-<li><strong>更新時、空の値を除外する</strong>
-空の属性が更新されたり、スプレッドシートの既存のデータが上書きされたりしないようにするときに、このボックスをオンにします。
-8.<strong>[Save]</strong>をクリックします。</li>
-</ul>
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8159iA2D72C59CE6B5280/image-dimensions/481x113?v=1.0" alt="行データ" /></p></li>
+
+<li><p><strong>更新時、空の値を除外する</strong>
+空の属性が更新されたり、スプレッドシートの既存のデータが上書きされたりしないようにするときに、このボックスをオンにします。</p></li>
+</ul></li>
+
+<li><p><strong>[Save]</strong>をクリックします。</p></li>
+</ol>
 
 <p>ここでアカウントを保存して公開し、次の手順に進んで、トレースツールを使ってテストを開始します。</p>
 
@@ -524,7 +535,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
-    <span><p>最終更新日 ::  2022年August月29日
+    <span><p>最終更新日 ::  2022年September月23日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
     </p>
@@ -533,9 +544,6 @@ var utag_data = {
      <em>ご意見有難うございます。</em>
   </span>
 </div>
-
-            
-
 
           </div>
         </div>
@@ -585,7 +593,7 @@ var utag_data = {
 </ul>
 
 </div>
-<div  class="docsmenu mobilemenu dn pl5">
+<div  class="docsmenu mobilemenu dn pl5 vh-100" style="overflow-y:scroll;padding-top: 150px;">
     
 
 <ul class="list dib ph0 ma0 scrolling-touch tc">
@@ -858,19 +866,35 @@ const translations = {
     },
   },
 };
-var filter_sections = [
+var default_sections = [
   "JAVASCRIPT",
   "GETTING STARTED WEB",
   "ANDROID KOTLIN",
   "IOS SWIFT",
   "GETTING STARTED"
 ];
-var section = $('header a')
-if(section && section.length == 1) {
-  var sect = section.text().trim();
-  filter_sections = [sect];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+var local_sections = new Set(ls_sections);
+var cur_section = $('header a');
+if(cur_section && cur_section.length == 1) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 5) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
 }
-var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
 var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);

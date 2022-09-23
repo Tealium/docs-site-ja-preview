@@ -428,32 +428,42 @@ var utag_data = {
 
 <p>トレーニング済みモデルの確認と編集を実施するには、以下の手順を使用します。</p>
 
-<p>1.1つのトレーニング済みモデルをクリックし、詳細を開きます。
-1._[Edit]_ボタンの右にあるドロップダウンメニューをクリックし、<strong>[View Target Attribute]</strong>または<strong>[View Output Attribute]</strong>を選択します。
-詳細については、 <a href="/guides/predict/getting-started/review-and-start-training/">確認とトレーニングの開始</a> を参照してください。
-1.属性を確認し、必要に応じて調整を行うために鉛筆アイコンをクリックします。
-1.<strong>[Save]</strong>をクリックします。
-1.[Save and Publish]を選択し、変更結果を保存および公開します</p>
+<ol>
+<li>1つのトレーニング済みモデルをクリックし、詳細を開きます。</li>
+<li>_[Edit]_ボタンの右にあるドロップダウンメニューをクリックし、<strong>[View Target Attribute]</strong>または<strong>[View Output Attribute]</strong>を選択します。
+詳細については、 <a href="/guides/predict/getting-started/review-and-start-training/">確認とトレーニングの開始</a> を参照してください。</li>
+<li>属性を確認し、必要に応じて調整を行うために鉛筆アイコンをクリックします。</li>
+<li><strong>[Save]</strong>をクリックします。</li>
+<li>[Save and Publish]を選択し、変更結果を保存および公開します</li>
+</ol>
 
 <h3 id="モデルの再トレーニング">モデルの再トレーニング</h3>
 
 <p>モデルを再トレーニングするには、以下の手順に従います。</p>
 
-<p>1.トレーニング済みモデルをクリックし、詳細を開きます。
-1.概要の[Status]列で、<strong>[Trained]</strong>ステータスをクリックします。
+<ol>
+<li>トレーニング済みモデルをクリックし、詳細を開きます。</li>
+<li>概要の[Status]列で、<strong>[Trained]</strong>ステータスをクリックします。
 <img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/10341i5BE51699371B645E/image-size/large?v=1.0&amp;px=999" alt="Predict Click Status to Retrain.jpg" title="Predict Click Status to Retrain.jpg" />
-_[Version 1]<em>に関するトレーニングの詳細が表示されます。
-1.<strong>[Retrain Model]</strong>をクリックします。
-1.必要に応じて、以下のような</em>[Advanced Options]_を調整します。
-  * Training Date Range（トレーニング期間）
-  * Attributes to Include（投入する属性）
-  * Attributes to Exclude（除外する属性）</p>
+_[Version 1]_に関するトレーニングの詳細が表示されます。</li>
+<li><strong>[Retrain Model]</strong>をクリックします。</li>
 
-<p>1.<strong>[Finish]</strong>をクリックします。
-1.<strong>[Retrain Model]</strong>をもう一度クリックし、再トレーニングに進んでよいことを確認します。
-そのモデルは&rdquo;Version 2&rdquo;になり、そのステータスは&rdquo;Requires Publish&rdquo;になります。
-1.[Save and Publish]を選択し、変更結果を保存および公開します。
-そのモデルは&rdquo;Version 2&rdquo;になり、そのステータスは&rdquo;In Training&rdquo;になります。</p>
+<li><p>必要に応じて、以下のような_[Advanced Options]_を調整します。</p>
+
+<ul>
+<li>Training Date Range（トレーニング期間）</li>
+<li>Attributes to Include（投入する属性）</li>
+<li>Attributes to Exclude（除外する属性）</li>
+</ul></li>
+
+<li><p><strong>[Finish]</strong>をクリックします。</p></li>
+
+<li><p><strong>[Retrain Model]</strong>をもう一度クリックし、再トレーニングに進んでよいことを確認します。
+そのモデルは&rdquo;Version 2&rdquo;になり、そのステータスは&rdquo;Requires Publish&rdquo;になります。</p></li>
+
+<li><p>[Save and Publish]を選択し、変更結果を保存および公開します。
+そのモデルは&rdquo;Version 2&rdquo;になり、そのステータスは&rdquo;In Training&rdquo;になります。</p></li>
+</ol>
 
 <h3 id="再トレーニングの結果とデプロイの準備状態を表示">再トレーニングの結果とデプロイの準備状態を表示</h3>
 
@@ -519,7 +529,7 @@ _[Version 1]<em>に関するトレーニングの詳細が表示されます。
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
-    <span><p>最終更新日 ::  2022年August月29日
+    <span><p>最終更新日 ::  2022年September月23日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
     </p>
@@ -528,9 +538,6 @@ _[Version 1]<em>に関するトレーニングの詳細が表示されます。
      <em>ご意見有難うございます。</em>
   </span>
 </div>
-
-            
-
 
           </div>
         </div>
@@ -589,7 +596,7 @@ _[Version 1]<em>に関するトレーニングの詳細が表示されます。
 </ul>
 
 </div>
-<div  class="docsmenu mobilemenu dn pl5">
+<div  class="docsmenu mobilemenu dn pl5 vh-100" style="overflow-y:scroll;padding-top: 150px;">
     
 
 <ul class="list dib ph0 ma0 scrolling-touch tc">
@@ -862,19 +869,35 @@ const translations = {
     },
   },
 };
-var filter_sections = [
+var default_sections = [
   "JAVASCRIPT",
   "GETTING STARTED WEB",
   "ANDROID KOTLIN",
   "IOS SWIFT",
   "GETTING STARTED"
 ];
-var section = $('header a')
-if(section && section.length == 1) {
-  var sect = section.text().trim();
-  filter_sections = [sect];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+var local_sections = new Set(ls_sections);
+var cur_section = $('header a');
+if(cur_section && cur_section.length == 1) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 5) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
 }
-var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
 var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);

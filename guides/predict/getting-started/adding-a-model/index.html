@@ -426,26 +426,33 @@ var utag_data = {
 
 <p>モデルを追加し、ターゲット属性を選択するには、以下の手順を使用します。</p>
 
-<p>1.左側のサイドバーで、<strong>[Predict]</strong>をクリックします。
-_[Predict Overview]_が表示されます。
-1.<strong>[+ Add Model]</strong>をクリックします。
+<ol>
+<li>左側のサイドバーで、<strong>[Predict]</strong>をクリックします。
+_[Predict Overview]_が表示されます。</li>
+<li><strong>[+ Add Model]</strong>をクリックします。
 _[Add Model]_ダイアログが表示されます。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/11068iDAB39F3850BEBB7A/image-size/large?v=1.0&amp;px=999" alt="Predict 1.1 Terminology Change_Add a Model.png" title="Predict 1.1 Terminology Change_Add a Model.png" />
-1.<strong>[What would you like to predict?]</strong>フィールドで、ドロップダウンリストからターゲット属性を1つ選択します。
-判断しやすくなるように、各属性の右に表示される正常性ステータスインジケータを使用することもできます。
-1.<strong>[What is your prediction timeframe?]</strong>フィールドで、<strong>[number]</strong>に、予測しようとする日数、週数、または月数を入力します。
-<p class="note"><i class="fas fa-info-circle"></i>このフィールドで、今後&rdquo;x&rdquo;日、週、または月のうちに&rdquo;likelihood to return&rdquo;（再アクセスする可能性）など、特定のアクティビティ（ターゲット属性）に対応する時間枠を指定します。</p></p>
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/11068iDAB39F3850BEBB7A/image-size/large?v=1.0&amp;px=999" alt="Predict 1.1 Terminology Change_Add a Model.png" title="Predict 1.1 Terminology Change_Add a Model.png" /></li>
+<li><strong>[What would you like to predict?]</strong>フィールドで、ドロップダウンリストからターゲット属性を1つ選択します。
+判断しやすくなるように、各属性の右に表示される正常性ステータスインジケータを使用することもできます。</li>
 
-<p>1.ドロップダウンリストから<strong>[days]</strong>、<strong>[weeks]</strong>、または<strong>[months]</strong>を選択します。
-1.<strong>[Name your model]</strong>フィールドで、このモデルに関するわかりやすい名前を入力します。
-意味のある名前を使用します。例：_Likelihood to Purchase in Next 1 Days<em>（今後1日のうちに購入する可能性）。
-1.<strong>[Output Attribute Name]</strong>フィールドで、指定したモデル名に基づくデフォルト名を受け入れるか、この出力属性に関するわかりやすい独自の名前を入力します。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/10331i272BD9D41C5D7A44/image-dimensions/438x190?v=1.0" alt="Predict Name Model and Output Attribute.jpg" title="Predict Name Model and Output Attribute.jpg" />
-1.オプションの<strong>[Notes]</strong>フィールドで、このモデルが何の予測を意図しているのか他のユーザーが理解するのに役立つ、わかりやすい注を入力します。
-1.完了する場合は<strong>[Finish]</strong>をクリックし、または詳細設定オプションを構成する場合は<strong>[Next]</strong>をクリックします。
-<strong>[Finish]</strong>を選択した場合、新しいモデルは</em>[Version 1]<em>と表示され、そのステータスは</em>[Requires Publish]_になります。
+<li><p><strong>[What is your prediction timeframe?]</strong>フィールドで、<strong>[number]</strong>に、予測しようとする日数、週数、または月数を入力します。
+<p class="note"><i class="fas fa-info-circle"></i>このフィールドで、今後&rdquo;x&rdquo;日、週、または月のうちに&rdquo;likelihood to return&rdquo;（再アクセスする可能性）など、特定のアクティビティ（ターゲット属性）に対応する時間枠を指定します。</p></p></li>
+
+<li><p>ドロップダウンリストから<strong>[days]</strong>、<strong>[weeks]</strong>、または<strong>[months]</strong>を選択します。</p></li>
+
+<li><p><strong>[Name your model]</strong>フィールドで、このモデルに関するわかりやすい名前を入力します。
+意味のある名前を使用します。例：_Likelihood to Purchase in Next 1 Days_（今後1日のうちに購入する可能性）。</p></li>
+
+<li><p><strong>[Output Attribute Name]</strong>フィールドで、指定したモデル名に基づくデフォルト名を受け入れるか、この出力属性に関するわかりやすい独自の名前を入力します。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/10331i272BD9D41C5D7A44/image-dimensions/438x190?v=1.0" alt="Predict Name Model and Output Attribute.jpg" title="Predict Name Model and Output Attribute.jpg" /></p></li>
+
+<li><p>オプションの<strong>[Notes]</strong>フィールドで、このモデルが何の予測を意図しているのか他のユーザーが理解するのに役立つ、わかりやすい注を入力します。</p></li>
+
+<li><p>完了する場合は<strong>[Finish]</strong>をクリックし、または詳細設定オプションを構成する場合は<strong>[Next]</strong>をクリックします。
+<strong>[Finish]</strong>を選択した場合、新しいモデルは_[Version 1]<em>と表示され、そのステータスは</em>[Requires Publish]_になります。
 モデルの各バージョンには、作成した順に、連続番号が自動的に割り当てられます。
-<p class="note"><i class="fas fa-info-circle"></i>モデルを最初に追加するときは、続行するために利用規約を受け入れるよう求められます。契約を読み、同意する場合は<strong>[I accept the terms of use]</strong>をクリックします。</p></p>
+<p class="note"><i class="fas fa-info-circle"></i>モデルを最初に追加するときは、続行するために利用規約を受け入れるよう求められます。契約を読み、同意する場合は<strong>[I accept the terms of use]</strong>をクリックします。</p></p></li>
+</ol>
 
 <p><strong>[Next]</strong>を選択した場合、<strong>[Choose Data To Act On]</strong>に移動して、1つの期間と、除外する複数の属性を選択する方法で、動作に使用するデータをさらに詳細に指定します。</p>
 
@@ -453,23 +460,32 @@ _[Add Model]_ダイアログが表示されます。
 
 <p>以下の手順を使って、モデルに対応する詳細設定オプションを構成します。</p>
 
-<p>1.<strong>[Choose training date range]</strong>で、<strong>[Use all available data]</strong>または<strong>[Custom]</strong>を選択します。
+<ol>
+<li><p><strong>[Choose training date range]</strong>で、<strong>[Use all available data]</strong>または<strong>[Custom]</strong>を選択します。
 デフォルトのオプションは<strong>[Use all available data]</strong>（推奨）です。
-<p class="note"><i class="fas fa-info-circle"></i>この期間は、モデルが使用するデータを表しています。たとえば、使用可能なデータすべての代わりに、特定の休日におけるショッピングの時間枠を選択することもできます。</p></p>
+<p class="note"><i class="fas fa-info-circle"></i>この期間は、モデルが使用するデータを表しています。たとえば、使用可能なデータすべての代わりに、特定の休日におけるショッピングの時間枠を選択することもできます。</p></p></li>
 
-<p>1.<strong>[Custom]</strong>を選択する場合、カレンダードロップダウンメニューを使用し、1つの期間を選択します。
-予測の時間枠を選択すると、トレーニングに使用する期間が決定されます。2番目の期間に関するデフォルト値は、今日の日付です。
-  * 選択する日付は、過去の日付にする必要があり、今日の日付より未来にある日付を選択することはできません。
-  * プロファイルがデータ収集をどの時点から開始するかを指定するために、さかのぼれる過去の日付を複数選択することもできます。</p>
+<li><p><strong>[Custom]</strong>を選択する場合、カレンダードロップダウンメニューを使用し、1つの期間を選択します。
+予測の時間枠を選択すると、トレーニングに使用する期間が決定されます。2番目の期間に関するデフォルト値は、今日の日付です。</p>
 
-<p>1.<strong>[Choose attributes to exclude]</strong>で、<strong>[Use all available attributes]</strong>または<strong>[Select attributes to exclude]</strong>を選択します。
-デフォルトのオプションは<strong>[Use all available attributes]</strong>（推奨）です。
-1.<strong>[Select attributes to exclude]</strong>を選択した場合、ドロップダウンリストを使用し、モデルの結果から除外する1つ以上の属性を選択します。
-1.複数の属性を除外する場合、必要なだけプラス記号(<strong>+</strong>)を複数回クリックし、除外ごとにドロップダウンリストから別の属性を選択します。
-1.以前に選択した属性を一覧から削除するには、マイナス記号(<strong>-</strong>)をクリックします。この記号は属性の右にあります。
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/10332iF78BF52F1BF25376/image-dimensions/450x215?v=1.0" alt="Preduct Exclude Attributes.jpg" title="Preduct Exclude Attributes.jpg" />
-1.<strong>[Finish]</strong>をクリックします。
-<p class="note"><i class="fas fa-info-circle"></i>モデルを最初に追加するときは、続行するために利用規約を受け入れるよう求められます。契約を読み、同意する場合は<strong>[I accept the terms of use]</strong>をクリックします。</p></p>
+<ul>
+<li>選択する日付は、過去の日付にする必要があり、今日の日付より未来にある日付を選択することはできません。</li>
+<li>プロファイルがデータ収集をどの時点から開始するかを指定するために、さかのぼれる過去の日付を複数選択することもできます。</li>
+</ul></li>
+
+<li><p><strong>[Choose attributes to exclude]</strong>で、<strong>[Use all available attributes]</strong>または<strong>[Select attributes to exclude]</strong>を選択します。
+デフォルトのオプションは<strong>[Use all available attributes]</strong>（推奨）です。</p></li>
+
+<li><p><strong>[Select attributes to exclude]</strong>を選択した場合、ドロップダウンリストを使用し、モデルの結果から除外する1つ以上の属性を選択します。</p></li>
+
+<li><p>複数の属性を除外する場合、必要なだけプラス記号(<strong>+</strong>)を複数回クリックし、除外ごとにドロップダウンリストから別の属性を選択します。</p></li>
+
+<li><p>以前に選択した属性を一覧から削除するには、マイナス記号(<strong>-</strong>)をクリックします。この記号は属性の右にあります。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/10332iF78BF52F1BF25376/image-dimensions/450x215?v=1.0" alt="Preduct Exclude Attributes.jpg" title="Preduct Exclude Attributes.jpg" /></p></li>
+
+<li><p><strong>[Finish]</strong>をクリックします。
+<p class="note"><i class="fas fa-info-circle"></i>モデルを最初に追加するときは、続行するために利用規約を受け入れるよう求められます。契約を読み、同意する場合は<strong>[I accept the terms of use]</strong>をクリックします。</p></p></li>
+</ol>
 
 <p>新しいモデルは_[Version 1]<em>と表示され、そのステータスは</em>[Requires Publish]_になります。
 モデルの各バージョンには、作成した順に、連続番号が自動的に割り当てられます。</p>
@@ -534,7 +550,7 @@ _[Add Model]_ダイアログが表示されます。
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
-    <span><p>最終更新日 ::  2022年August月29日
+    <span><p>最終更新日 ::  2022年September月23日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
     </p>
@@ -543,9 +559,6 @@ _[Add Model]_ダイアログが表示されます。
      <em>ご意見有難うございます。</em>
   </span>
 </div>
-
-            
-
 
           </div>
         </div>
@@ -602,7 +615,7 @@ _[Add Model]_ダイアログが表示されます。
 </ul>
 
 </div>
-<div  class="docsmenu mobilemenu dn pl5">
+<div  class="docsmenu mobilemenu dn pl5 vh-100" style="overflow-y:scroll;padding-top: 150px;">
     
 
 <ul class="list dib ph0 ma0 scrolling-touch tc">
@@ -875,19 +888,35 @@ const translations = {
     },
   },
 };
-var filter_sections = [
+var default_sections = [
   "JAVASCRIPT",
   "GETTING STARTED WEB",
   "ANDROID KOTLIN",
   "IOS SWIFT",
   "GETTING STARTED"
 ];
-var section = $('header a')
-if(section && section.length == 1) {
-  var sect = section.text().trim();
-  filter_sections = [sect];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+var local_sections = new Set(ls_sections);
+var cur_section = $('header a');
+if(cur_section && cur_section.length == 1) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 5) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
 }
-var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
 var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);

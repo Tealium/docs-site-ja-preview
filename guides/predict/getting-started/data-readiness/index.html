@@ -455,16 +455,18 @@ Tealium AudienceStream CDPの実装を確認し、現在の社内データに�
 
 <p>以下の手順で、Tealium Predictを追加する目的で、データの基盤を準備するためにお客様とそのチームが実行することのできる一連のアクションについて説明します。マシンラーニングモデルから最適な結果を確実に得られるように、推奨されるアクションを実行するための全般的なガイドラインとして、これらの手順を使用することができます。</p>
 
-<p>1.<strong>監査</strong>
-データレイヤーとAudienceStreamの属性を監査します。データの品質、ボリューム、成熟度を検討し、カスタマーデータの品質と完全性を改善するために、必要に応じてさまざまな調整を加えます。
-1.<strong>定義と連携</strong>
-デジタルデータに関する戦略を定義し、連携を進めます。データの基盤とインフラストラクチャはベンダー中立であることが望ましく、いずれか1社のベンダーに依存することなく、社内の&rdquo;テクノロジースタック&rdquo;全体の能力を強化する目的で使用できることが求められます。
-1.<strong>Data Governanceのプラクティス</strong>
-データガバナンスのプラクティスの確認、定義、実装を行います。コンプライアンスは継続的に進化しているので、定期的な間隔でコンプライアンスの問題を再検討し、データの長期的な正常性と存続可能性を確認します。
-1.<strong>理解とエンリッチメント</strong>
-この時点ではまだ、イベントデータインフラストラクチャはマシンラーニングのインテリジェンスを獲得していません。AudienceStreamによって自動的に生成されるインサイトの品質を改善するために、受信するイベントデータのエンリッチメントと編成を実施します。実装の他のコンポーネントがマシンラーニング機能を搭載しているかどうかにかかわりなく、この手順を使用して、実装全体でマシンラーニングによるインサイトをすぐに有効にすることができます。
-1.<strong>オーケストレーション</strong>
-インフラストラクチャを定義し、ビジネスがデータを収集する手法の中にデータインサイトを作り込んだ後、それらのインサイトのオーケストレーションを実施し、実装に統合済みの各種ツールを使用してアクションを推進することができます。カスタマーエンゲージメントチャネル全体にデータインサイトが自動的かつリアルタイムに流れるように、独自のビジネスルールを追加実装することもできます。</p>
+<ol>
+<li><strong>監査</strong>
+データレイヤーとAudienceStreamの属性を監査します。データの品質、ボリューム、成熟度を検討し、カスタマーデータの品質と完全性を改善するために、必要に応じてさまざまな調整を加えます。</li>
+<li><strong>定義と連携</strong>
+デジタルデータに関する戦略を定義し、連携を進めます。データの基盤とインフラストラクチャはベンダー中立であることが望ましく、いずれか1社のベンダーに依存することなく、社内の&rdquo;テクノロジースタック&rdquo;全体の能力を強化する目的で使用できることが求められます。</li>
+<li><strong>Data Governanceのプラクティス</strong>
+データガバナンスのプラクティスの確認、定義、実装を行います。コンプライアンスは継続的に進化しているので、定期的な間隔でコンプライアンスの問題を再検討し、データの長期的な正常性と存続可能性を確認します。</li>
+<li><strong>理解とエンリッチメント</strong>
+この時点ではまだ、イベントデータインフラストラクチャはマシンラーニングのインテリジェンスを獲得していません。AudienceStreamによって自動的に生成されるインサイトの品質を改善するために、受信するイベントデータのエンリッチメントと編成を実施します。実装の他のコンポーネントがマシンラーニング機能を搭載しているかどうかにかかわりなく、この手順を使用して、実装全体でマシンラーニングによるインサイトをすぐに有効にすることができます。</li>
+<li><strong>オーケストレーション</strong>
+インフラストラクチャを定義し、ビジネスがデータを収集する手法の中にデータインサイトを作り込んだ後、それらのインサイトのオーケストレーションを実施し、実装に統合済みの各種ツールを使用してアクションを推進することができます。カスタマーエンゲージメントチャネル全体にデータインサイトが自動的かつリアルタイムに流れるように、独自のビジネスルールを追加実装することもできます。</li>
+</ol>
 
 <h2 id="ベストプラクティス">ベストプラクティス</h2>
 
@@ -526,7 +528,7 @@ Tealium AudienceStream CDPの実装を確認し、現在の社内データに�
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
-    <span><p>最終更新日 ::  2022年August月29日
+    <span><p>最終更新日 ::  2022年September月23日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
     </p>
@@ -535,9 +537,6 @@ Tealium AudienceStream CDPの実装を確認し、現在の社内データに�
      <em>ご意見有難うございます。</em>
   </span>
 </div>
-
-            
-
 
           </div>
         </div>
@@ -595,7 +594,7 @@ Tealium AudienceStream CDPの実装を確認し、現在の社内データに�
 </ul>
 
 </div>
-<div  class="docsmenu mobilemenu dn pl5">
+<div  class="docsmenu mobilemenu dn pl5 vh-100" style="overflow-y:scroll;padding-top: 150px;">
     
 
 <ul class="list dib ph0 ma0 scrolling-touch tc">
@@ -868,19 +867,35 @@ const translations = {
     },
   },
 };
-var filter_sections = [
+var default_sections = [
   "JAVASCRIPT",
   "GETTING STARTED WEB",
   "ANDROID KOTLIN",
   "IOS SWIFT",
   "GETTING STARTED"
 ];
-var section = $('header a')
-if(section && section.length == 1) {
-  var sect = section.text().trim();
-  filter_sections = [sect];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+var local_sections = new Set(ls_sections);
+var cur_section = $('header a');
+if(cur_section && cur_section.length == 1) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 5) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
 }
-var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
 var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);

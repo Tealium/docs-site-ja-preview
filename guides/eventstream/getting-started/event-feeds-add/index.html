@@ -426,16 +426,21 @@ var utag_data = {
 
 <p>イベントフィードを作成するには、以下の手順を使用します。</p>
 
-<p>1.<strong>EventStream &gt; Live Events</strong>に移動し、<strong>+[Add Event Feed]</strong>をクリックします。[Create Event Feed]ダイアログが表示されます。
-2.<strong>[Title]</strong>、<strong>[Notes]</strong>、および<strong>[Labels]</strong>を設定します。ここでは<strong>[Event Data Storage]</strong>を無視します。これを設定するには、アカウントが、<a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-DataAccess/ta-p/15611">DataAccess</a>に対して有効になっている必要があります。
-3.フィードの条件を設定します。
-    *   ドロップダウンメニューからイベント属性を選択します。
-    *   演算子を選択します。
-    *   別の属性を選択するか、[Custom Value]を選択して、値を入力します。
-    <img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8153iC0A9CFCE01C8EA64/image-size/large?v=1.0&amp;px=999" alt="イベントのキャプチャ" />
-    *   追加のAND/OR条件ロジックに対して、これを繰り返します。
-4.<strong>[Save]</strong>をクリックします。
-5.アカウントを保存して公開します。</p>
+<ol>
+<li><strong>EventStream &gt; Live Events</strong>に移動し、<strong>+[Add Event Feed]</strong>をクリックします。[Create Event Feed]ダイアログが表示されます。</li>
+<li><strong>[Title]</strong>、<strong>[Notes]</strong>、および<strong>[Labels]</strong>を設定します。ここでは<strong>[Event Data Storage]</strong>を無視します。これを設定するには、アカウントが、<a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-DataAccess/ta-p/15611">DataAccess</a>に対して有効になっている必要があります。</li>
+<li>フィードの条件を設定します。
+
+<ul>
+<li>ドロップダウンメニューからイベント属性を選択します。</li>
+<li>演算子を選択します。</li>
+<li>別の属性を選択するか、[Custom Value]を選択して、値を入力します。
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8153iC0A9CFCE01C8EA64/image-size/large?v=1.0&amp;px=999" alt="イベントのキャプチャ" /></li>
+<li>追加のAND/OR条件ロジックに対して、これを繰り返します。</li>
+</ul></li>
+<li><strong>[Save]</strong>をクリックします。</li>
+<li>アカウントを保存して公開します。</li>
+</ol>
 
 <h2 id="live-eventsへの再アクセス">Live Eventsへの再アクセス</h2>
 
@@ -505,7 +510,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea></p>
-    <span><p>最終更新日 ::  2022年August月29日
+    <span><p>最終更新日 ::  2022年September月23日
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">フィードバックを送信</button></span>
     </p>
@@ -514,9 +519,6 @@ var utag_data = {
      <em>ご意見有難うございます。</em>
   </span>
 </div>
-
-            
-
 
           </div>
         </div>
@@ -566,7 +568,7 @@ var utag_data = {
 </ul>
 
 </div>
-<div  class="docsmenu mobilemenu dn pl5">
+<div  class="docsmenu mobilemenu dn pl5 vh-100" style="overflow-y:scroll;padding-top: 150px;">
     
 
 <ul class="list dib ph0 ma0 scrolling-touch tc">
@@ -839,19 +841,35 @@ const translations = {
     },
   },
 };
-var filter_sections = [
+var default_sections = [
   "JAVASCRIPT",
   "GETTING STARTED WEB",
   "ANDROID KOTLIN",
   "IOS SWIFT",
   "GETTING STARTED"
 ];
-var section = $('header a')
-if(section && section.length == 1) {
-  var sect = section.text().trim();
-  filter_sections = [sect];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+var local_sections = new Set(ls_sections);
+var cur_section = $('header a');
+if(cur_section && cur_section.length == 1) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 5) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
 }
-var hier_filters = filter_sections.map(s => "hierarchy.lvl0:"+s);
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
 var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);
