@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/ilp4lxb.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     
+    <title>Adobe Experience Platform Web SDK タグのセットアップガイド | Client-side-tags | Tealium開発者ドキュメントプレビュー</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+     <meta name="generator" content="Hugo 0.98.0" />
+
+      
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      
+
+    <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
+
+  </head>
+  <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
+      
+        
+<script>
+var utag_data = {
+    site_section  : "client-side-tags",
+    reading_time  : "3",
+    site_language : "ja",
+    tealium_event : "page_view"
+}
+</script>
+
+<script>
+ (function(a,b,c,d){
+    a="//tags.tiqcdn.com/utag/tealium/docs/qa/utag.js";
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+  })();
+</script>
+
+      
+
+    
+<nav class="w-100 sticky-t bg-primary-color-light bb b--light-gray dpn" role="navigation">
+
+  <div class="flex-ns flex-wrap items-center justify-start mw9">
+
+    <div class="lh-solid ml0-ns mr0 mr4-l mv3 pl15 dib db-ns">
+      <a href="https://docs-preview.tealium.co.jp"><img src="/images/icons/tealium-documentation-logo-color.svg" class="v-mid dib" width="186" height="31"></a>
+    </div>
+    
+    <div class="dib ml3 mr4 mv3 pl15"><div id="docsearch">
+</div>
+</div><ul class="list ma0 pa0 dn dib-ns">
+      </ul>
+
+    <ul class="list ma0 pa0 dn dib-ns">
+      <li class="f5 dib">
+         <i class="fa fa-globe" style="color: rgba(255, 255, 255, .6)" aria-hidden="true"></i>
+      </li>
+      <li class="f5 dib mr4"><a href="https://docs.tealium.com/" class="dim link mid-gray">English</a>
+</li>
+    </ul>
+
+  </div>
+
+</nav>
+
+    
+    <main role="main" class="content-with-sidebar pb0-ns">
+      
+
+<div class="w-100 pr4">
+<div class="flex">
+
+    
+      <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-ns sticky-l pt3 pl125" style="width:280px;">
+<nav class="side-nav f6" role="navigation">
+  <ul class="list pa0 mt0 mb1">
+  
+    <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>家</a></li>
+  
+  </ul>
+  <ul class="list pa0"><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-client-side-tags">リリースノート</a>
+      </li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/client-side-tags/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">クライアントサイド タグ</span></a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/6sense/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".6sense-tag">6sense</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/adition-tagging-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".adition-tagging-tag">Adition（タグ付け）</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/admarketplace-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".admarketplace-tag">adMarketplaceタグ設定ガイド</a>
+      </li><li data-level="1" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/adobe-experience-platform-web-sdk-tag/" class="db link pr2 pv2 bg-secondary primary-color" data-target=".adobe-experience-platform-web-sdk-tag">Adobe Experience Platform Web SDK</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/adobe-target-using-global-mbox-with-utagsyncjs/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".adobe-target-using-global-mbox-with-utagsyncjs">Adobe TargetをGlobal mboxとutag.sync.jsを使用して設定する</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/adobe-test-target-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".adobe-test-amp-target-tag-basic-configuration">Adobe Test &amp; Target</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/adroll-smart-pixel-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".adroll-smart-pixel-tag">AdRoll Smart Pixel</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/akamai-mpulse-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".akamai-mpulse-tag">Akamai mPulse</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/amazon-advertising-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".amazon-advertising-tag">Amazon Advertising</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/anura-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".anura-tag">Anuraタグ設定ガイド タグ管理</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/audienceone-discovery-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audienceone-discovery-tag">AudienceOne Discovery</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/avo-web-inspector-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".avo-web-inspector-tag">Avo Webインスペクター</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/bidtellect-conversion-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".bidtellect-conversion-tag">Bidtellect変換</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/bing-ads-microsoft-adcenter-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".bing-ads-microsoft-adcenter-tag">Bing Ads - Microsoft adCenter</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/bluekai-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".bluekai-tag">BlueKai</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/catchpoint-real-user-monitoring-rum-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".catchpoint-real-user-monitoring-rum-tag">Catchpointリアルユーザーモニタリング（RUM）</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/cj-affiliate-mobile-application-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".cj-affiliate-mobile-application-tag">CJアフィリエイトモバイルアプリケーション</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/clicktale-carmel-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".clicktale-carmel-tag">Clicktale Carmel</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/comscore-mobile-js-tracking-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".comscore-mobile-js-tracking-tag">comScore Mobile JS トラッキング</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/connexity-pixel/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".connexity-pixel">Connexityピクセル設定ガイド</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/contentsquare-mobile-remote-command-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".contentsquare-mobile-remote-command-tag">ContentSquare Mobile Remote Command</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/coveo-usage-analytics-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".coveo-usage-analytics-tag">Coveo使用分析</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/criteo-adblock-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".criteo-adblock-tag">Criteo Adblock</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/criteo-cookie-matching-service-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".criteo-cookie-matching-service-tag-setup-guide">Criteo Cookie Matching Service</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/dun-amp-bradstreet-web-visitor-id-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".dun-amp-bradstreet-web-visitor-id-tag">Dun &amp; Bradstreet Web Visitor ID</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/eloqua-tag-set-up-guide/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eloqua-tag-set-up-guide">Eloqua</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/emarketeer-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".emarketeer-tag">Emarketeer</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/facebook-pixel-legacy/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".facebook-pixel-legacy">Facebook Pixelセットアップガイド（レガシー）</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/flashtalking-onetag-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".flashtalking-onetag-tag">Flashtalking OneTag</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/foresee-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".foresee-tag">Foresee</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/google-ads-conversion-tracking-and-remarketing-gtagjs-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".google-ads-conversion-tracking-and-remarketing-gtagjs-tag">Google Adsのコンバージョン追跡とリマーケティング（gtag.js）</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/google-ads-remarketing-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".google-ads-remarketing-tag">Google Adsリマーケティング</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/google-analytics-gtagjs-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".google-analytics-gtagjs-tag">Google Analytics（gtag.js）</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/google-publisher-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".google-publisher-tag">Google Publisherタグの設定ガイドとマッピング</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/google-universal-analytics-cross-domain-tracking/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".setting-up-google-universal-analytics-cross-domain-tracking">Google Universal Analytics クロスドメイン トラッキングの設定</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/google-universal-analytics-tag-enhanced-e-commerce/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".google-universal-analytics-tag-enhanced-e-commerce">Google Universal Analyticsタグの拡張Eコマース</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/ibm-ubx-cookie-matching-service-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ibm-ubx-cookie-matching-service-tag">IBM UBX Cookie Matching Service</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/intelliad-cookie-matching-service-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".intelliad-cookie-matching-service-tag">intelliAd Cookie Matching Service</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/knotch-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".knotch-tag">Knotch</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/kochava-mobile-remote-command-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".kochava-mobile-remote-command-tag">Kochavaモバイルリモートコマンド</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/mapp-intelligence-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".mapp-intelligence-tag">Mapp Intelligence</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/mediamind-burstingpipe-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".mediamind-burstingpipe-tag">MediaMind (BurstingPipe)</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/microsoft-advertising-uet-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".microsoft-advertising-uet-tag">Microsoft Advertising UETタグ設定ガイド</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/neustar-pageadvisor-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-pageadvisor-tag">Neustar PageAdvisor</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/nextag-roi-tracker-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".nextag-roi-tracker-tag">Nextag ROIトラッカー</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/optimizely-synchronous-implementation/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".optimizely-synchronous-implementation">Optimizely 同期実装</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/partnerize-event-tracker-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".partnerize-event-tracker-tag-setup-guide">Partnerizeイベントトラッカー</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/paypal-shopping-analytics-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".paypal-shopping-analytics-tag">PayPalショッピングアナリティクス</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/pinterest-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".pinterest-tag">Pinterest</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/pixibo-fyf-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".pixibo-fyf-tag">Pixibo FYF</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/pixibo-conversion-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".pixibo-conversion-tag">Pixibo変換</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/reddit-pixel-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".reddit-pixel-tag">Reddit Pixel</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/right-media-yieldmanager-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".right-media-yieldmanager-tag">Right Media (Yieldmanager)</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/rokt-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".rokt-tag">Rokt</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/rtb-house-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".rtb-house-tarargeting-tag-setup-guide">RTB House リターゲティング</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/sailthru-personalization-engine-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".sailthru-personalization-engine-tag">Sailthruパーソナライゼーションエンジン</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/sas-ci-360/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".sas-customer-intelligenge-360-tag">SASカスタマーインテリジェンス360</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/shopmessage-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".shopmessage-tag">ShopMessage</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/shopzilla-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".shopzilla-tag">Shopzillaタグ設定ガイド</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/simpli-fi/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".simpli-fi-tag">Simpli.fi</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/sovendus-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".sovendus-tag">Sovendus</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/splunk-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".splunk-tag">Splunkタグ</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/stirista-vig-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".stirista-vig-tag">Stirista VIG</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/tapad-cookie-matching-service-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".tapad-cookie-matching-service-tag-setup-guide">TAPAD Cookie Matching Service</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/tead-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".tead-tag">Tead</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/the-trade-desk-universal-pixel-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".trade-desk-universal-pixel-setup-guide-for-tealium-iq">The Trade Desk Universal Pixel</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/tradedoubler-conversion-tracking-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".tradedoubler-conversion-tracking-tag">TradeDoubler コンバージョントラッキング</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/wootric-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".wootric-tag">Wootric</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/xandr-universal-pixel-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".xandr-universal-pixel-tag">Xandr Universal Pixel</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/yahoo-id-cookie-sync-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".yahoo-id-cookie-sync-tag">Yahoo ID Cookie Sync</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/piano-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".piano-tag">ピアノ</a>
+      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/floodlight-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".floodlight-tag">フラッドライト</a>
+      </li></ul>
+</nav>
+</div>
+    
+
+    <article id="main-content" class="order-1 overflow-auto max-vh-100 pt4 ph4 mid-gray mt0-ns w-100" style="flex:1;scroll-padding-top:96px;">
+      <div class="documentation-copy ph4">
+        <header class="flex-none w-100"><nav id="breadcrumb">
+<ul class="nav">
+
+    
+    
+  
+  <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">ホーム</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/client-side-tags/">Client-side-tags</a></li>
+  
+
+  
+  
+
+</ul>
+</nav>
+
+<h1 class="lh-title mt30 mb3">Adobe Experience Platform Web SDK タグのセットアップガイド</h1>
+</header>
+
+<div class="mv2 mid-gray fn w-100">
+  
+
+  
+    <p class="f4 fw3 lh-copy">
+      この記事では、Adobe Experience Platform Web SDK タグのセットアップ方法について説明します。
+    </p>
+  
+</div>
+
+<div class="prose nested-links" id="prose">
+  <p>Adobe Experience Platform Web SDK（Adobe Alloy）は、Adobe Experience Cloudの顧客がAdobe Experience Platform Edge Networkを介してExperience Cloudのさまざまなサービスとやり取りするためのクライアントサイドのJavaScriptライブラリです。</p>
+<h2 id="タグのヒント">タグのヒント</h2>
+<ul>
+<li>マッピングを使用して標準の設定値を上書きし、カスタムパラメータを設定します。</li>
+<li>複数のインスタンスを設定する場合は、各インスタンスに一意の<strong>Datastream ID</strong>と<strong>Org ID</strong>を指定する必要があります。複数の値をコンマで区切って指定します。</li>
+</ul>
+<h2 id="動作原理">動作原理</h2>
+<p>マッピング先はドット表記で表されます。最終的なAPIペイロードは、タグ内のドット表記に基づいてネストされた一連のJSONオブジェクトで構成されます。</p>
+<p>Adobe Experience Platform Web SDKタグには、使用しているAdobeアプリケーションに固有の以下のマッピングが含まれており、XDMデータマッピングと非XDMデータマッピングが含まれています。XDMデータは、Adobe Experience Platform内で作成したスキーマと一致するコンテンツと構造を持つオブジェクトです。</p>
+<ul>
+<li>XDMイベントトリガー：特定の<code>eventType</code>値でイベントをトリガーするために使用します。</li>
+<li>イベント固有のパラメータ：特定のイベントのXDMおよび非XDM属性をマッピングするために使用します。</li>
+<li>Analytics XDMデータ：XDMオブジェクトに渡すデータをマッピングするために使用します。</li>
+<li>Targetデータ：Targetプロファイルを更新するための非XDM属性をデータオブジェクトにマッピングするために使用します。</li>
+</ul>
+<p>AdobeにXDMおよび非XDMデータを送信する方法の詳細については、Adobeのドキュメントの<a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html">Track Events</a>を参照してください。</p>
+<h3 id="イベントの例">イベントの例</h3>
+<p>Adobe Experience Platform Web SDKイベントを構成するには、イベントにマッピングされる変数を選択し、トリガーを指定します。変数が特定の値と等しい場合にイベントがトリガーされ、選択したイベント名が<code>eventType</code>として渡されます。</p>
+<h4 id="ユースケースxdmイベントトリガーを使用した購入イベント">ユースケース：XDMイベントトリガーを使用した購入イベント</h4>
+<p>購入イベントを設定するには、次の手順を実行します。</p>
+<ol>
+<li>Adobe Experience Platform Web SDKタグの<strong>Data Mappings</strong>画面に移動します。</li>
+<li>変数のドロップダウンリストから<code>tealium_event</code>を選択し、<strong>Select a Destination</strong>をクリックします。</li>
+<li><strong>Category</strong>セクションで<strong>XDM Event Triggers</strong>を選択します。</li>
+<li><strong>When mapped variable equals</strong>フィールドを<strong>Purchase</strong>に設定します。これは、<code>tealium_event</code>が購入イベントをトリガーするために等しい必要がある値です。</li>
+<li><strong>Trigger event</strong>ドロップダウンリストで<strong>Purchases</strong>（<strong>sendEvent: Commerce Events</strong>セクションの<code>commerce.purchases</code>）を選択します。これは、<code>tealium_event</code>が購入イベントと等しい場合にトリガーされるイベントです。</li>
+</ol>
+<figure><a class="slb" href="/images/client-side-tags/adobe-experience-web-sdk-mappings-example.png"><img src="/images/client-side-tags/adobe-experience-web-sdk-mappings-example.png"
+         alt="adobe experience web sdk mappings example"
+         title="adobe experience web sdk mappings example"/>
+    </a>
+</figure>
+<h4 id="ユースケースイベント固有のパラメータを使用した購入イベント">ユースケース：イベント固有のパラメータを使用した購入イベント</h4>
+<p>既存のE-Commerce拡張マッピングに含まれていない購入イベントにデータを送信する必要がある場合は、<strong>イベント固有のパラメータ</strong>を使用します。リストから属性を選択するか、カスタムな宛先を入力します。指定されたイベントと属性に対して特定のドット表記を使用することを確認してください。</p>
+<p>次の例では、購入イベントと一緒に<code>purchaseOrderNumber</code>をXDMデータとして渡します。</p>
+<ol>
+<li>Adobe Experience Platform Web SDKタグの<strong>Data Mappings</strong>画面に移動します。</li>
+<li>変数のドロップダウンリストから<code>po_number</code>（または関連するクライアント固有のデータレイヤー要素）を選択し、<strong>Select a Destination</strong>をクリックします。</li>
+<li><strong>Category</strong>セクションで<strong>Event-specific Parameters</strong>を選択します。</li>
+<li><code>purchaseOrderNumber</code>はデフォルトの宛先の1つではないため、<strong>Custom Parameter</strong>を入力する必要があります。<strong>Parameter</strong>ドロップダウンから<strong>Custom</strong>を選択し、宛先の完全なドット表記パス<code>commerce.purchases.xdm.commerce.order.purchaseOrderNumber</code>を入力します。</li>
+<li><strong>For event</strong>ドロップダウンリストでイベント<strong>Purchases</strong>を選択します。</li>
+<li>パラメータを追加するには、<strong>Add</strong>をクリックします。</li>
+</ol>
+<h4 id="ユースケース非xdmデータadobe-targetデータ">ユースケース：非XDMデータ/Adobe Targetデータ</h4>
+<p>非XDM、またはTargetデータは、イベントマッピングを使用して設定することもできます。このユースケースでは、Adobe Targetで使用するために<code>product_brand</code>も送信します。</p>
+<ol>
+<li>Adobe Experience Platform Web SDKタグの<strong>Data Mappings</strong>画面に移動します。</li>
+<li>変数のドロップダウンリストから<code>product_brand</code>を選択し、<strong>Select a Destination</strong>をクリックします。</li>
+<li><strong>Category</strong>セクションで<strong>Target Data</strong>を選択します。</li>
+<li>マッピング先として<code>entity.brand</code>を選択します。</li>
+<li>Adobe Web SDKに送信される購入イベントには、ペイロードに<code>data.__adobe.target.entity.brand</code>が含まれます。</li>
+</ol>
+<p>以下の例は、E-Commerce拡張からのいくつかのデフォルトのマッピングを含むAdobe Web SDKの呼び出し結果を示しています。この例では、Adobeのドット表記が<code>commerce.purchases.xdm.commerce.order.purchaseOrderNumber</code>のネストされたオブジェクトに分割される方法が示されています。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">alloy</span>(<span style="color:#e6db74">&#34;sendEvent&#34;</span>,{
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;xdm&#34;</span><span style="color:#f92672">:</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;commerce&#34;</span><span style="color:#f92672">:</span>{
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;order&#34;</span><span style="color:#f92672">:</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;purchaseID&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;123456789&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;currencyCode&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;USD&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;priceTotal&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">39.98</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;purchaseOrderNumer&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;A1234&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;productListItems&#34;</span><span style="color:#f92672">:</span>[
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;SKU&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;HT105&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;The Big Floppy Hat&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;priceTotal&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">29.99</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;quantity&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;data&#34;</span><span style="color:#f92672">:</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">__adobe</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">target</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;entity.brand&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Acme&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h2 id="adobe-targetでのフリッカーの管理">Adobe Targetでのフリッカーの管理</h2>
+<p>Adobe Experience Platform Web SDKを非同期で読み込むと、以前に読み込まれたコンテンツがAdobe Targetによって更新されるため、コンテンツのフリッカーが発生する場合があります。フリッカーを最小限に抑えるために、Adobeではプリヒディングスニペットの追加を推奨しています。<a href="/iq-tag-management/extensions/extensions-list/javascript-code-basic-extension/">JavaScript拡張機能</a>を使用して、このスニペットを<code>utag.sync.js</code>テンプレートに追加します。</p>
+<p><code>utag.sync.js</code>についての詳細については、Adobeのドキュメントの<a href="/iq-tag-management/getting-started/install/utag-sync/">How <code>utag.sync.js</code> works</a>を参照してください。</p>
+<p>プリヒディングスニペットについての詳細については、Adobeのドキュメントの<a href="https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html">Manage Flicker</a>を参照してください。</p>
+<h3 id="cookie管理ソリューションを使用した場合の空白ページエラー">Cookie管理ソリューションを使用した場合の空白ページエラー</h3>
+<p>Cookie管理ソリューション（CMS）を使用して、ユーザーがさまざまなCookieカテゴリに同意するまでタグがトリガーされないようにすると、プリヒディングスニペットが読み込まれ、タイムアウトするまで（3〜7秒）空白のページが表示されます。この動作の理由は、ユーザーが同意するまでAdobe Experience Platform Web SDKタグを読み込むことができないためです。</p>
+<p>解決策は、同意が与えられたかどうかを確認し、同意に基づいてプリヒディングスニペットをトリガーするかどうかを決定することです。</p>
+<p>Tealium外部のカスタムCMSを使用している場合は、同意のチェックをそのCMSプラットフォームを介して管理します。</p>
+<p>Tealium JavaScript拡張機能を使用している場合は、関数がトリガーされるのは同意Cookieに特定の値が含まれている場合のみになるようにロジックを更新します。この値は、AEP Web SDKタグが属するCookieカテゴリ（たとえば、機能のCookieカテゴリ）に対するユーザーの同意を表す特定の値を含む必要があります。</p>
+<h4 id="例">例</h4>
+<p>この例では、CMSが<code>mycms_cookie</code>という名前のCookieを設定し、ユーザーが機能のCookieを受け入れた場合は値<code>functional:1</code>、すべてのCookieを受け入れた場合は値<code>all:1</code>を含むとします。</p>
+<p>次のコードは、これらの値をチェックしてプリヒディングスニペットをトリガーするためのものです。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>この例には、構成に合わせて変更する必要のあるコードの行にコメントがあります。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#f92672">!</span><span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>,<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">n</span>,<span style="color:#a6e22e">t</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">a</span>) <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//Cookieが存在するかどうかをチェックし、存在する場合はその値を取得します。mycms_cookieの部分は、CMSのCookieの実際の名前に置き換えてください。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cms_cookie_value</span> <span style="color:#f92672">=</span> (document.<span style="color:#a6e22e">cookie</span>.<span style="color:#a6e22e">match</span>(<span style="color:#e6db74">/^(?:.*;)?\s*mycms_cookie\s*=\s*([^;]+)(?:.*)?$/</span>)<span style="color:#f92672">||</span>[,<span style="color:#66d9ef">null</span>])[<span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">cms_cookie_value</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//受け入れられた値を配列に追加します。以下の例では、Cookieの値にはall:1またはfunctional:1が含まれている必要があります。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">accepted_values</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;all:1&#39;</span>,<span style="color:#e6db74">&#39;functional:1&#39;</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;<span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">accepted_values</span>.<span style="color:#a6e22e">length</span>;<span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">cms_cookie_value</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">accepted_values</span>[<span style="color:#a6e22e">i</span>])){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">head</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">x</span>){
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">o</span><span style="color:#f92672">=</span><span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;style&#34;</span>);
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">o</span>.<span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alloy-prehiding&#34;</span>;
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">o</span>.<span style="color:#a6e22e">innerText</span><span style="color:#f92672">=</span><span style="color:#a6e22e">n</span>;
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">o</span>);
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){<span style="color:#a6e22e">o</span>.<span style="color:#a6e22e">parentNode</span><span style="color:#f92672">&amp;&amp;</span><span style="color:#a6e22e">o</span>.<span style="color:#a6e22e">parentNode</span>.<span style="color:#a6e22e">removeChild</span>(<span style="color:#a6e22e">o</span>)},<span style="color:#a6e22e">t</span>);
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(document, document.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;adobe_authoring_enabled&#34;</span>) <span style="color:#f92672">!==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;body { opacity: 0 !important }&#34;</span>, <span style="color:#ae81ff">3000</span>);
+</span></span></code></pre></div><p><code>&quot;body { opacity: 0 !important }&quot;</code>のコードを対象とする要素（例：特定の<code>div</code>）に更新します。そうしない場合、コードのデフォルトの動作はコンテンツの全体を非表示にすることです。</p>
+<h2 id="adobe-analyticsの移行ガイド">Adobe Analyticsの移行ガイド</h2>
+<p>Adobe Analyticsタグは、Adobe Experience Platform Web SDKタグに置き換えられたレガシータグです。Adobe Experience Platform Web SDKタグは、Experience Data Model（XDM）をAdobe Analytics形式に変換してデータをAdobe Analyticsに送信します。</p>
+<p>Adobe Experience Platform Web SDKタグは、レガシーの変数、プロパティ、およびイベントをサポートしています。</p>
+<h3 id="コードの比較">コードの比較</h3>
+<p>次の例は、Adobe AnalyticsとAdobe Experience Platform Web SDKの呼び出しの構造的な違いを示しています。</p>
+<h4 id="adobe-analytics">Adobe Analytics</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// AppMeasurementライブラリを読み込む
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AppMeasurement</span>();
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// レポートスイートIDを設定する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">account</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example-rsid&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ページ名を設定する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">pageName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ホームページ&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 必要に応じて他の変数を設定する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">prop1</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;value1&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">eVar1</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;value2&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">hellow</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;value3&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// データをAdobe Analyticsサーバーに送信する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s_code</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">t</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">s_code</span>) document.<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">s_code</span>);
+</span></span></code></pre></div><h4 id="adobe-experience-platform-web-sdk">Adobe Experience Platform Web SDK</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>window.<span style="color:#a6e22e">alloy</span>(<span style="color:#e6db74">&#34;sendEvent&#34;</span>, {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// イベントのタイプを設定する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;viewStart&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Adobe Analyticsのデータを設定する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">xdm</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">web</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">webPageDetails</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#75715e">// ページ名を設定する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;ホームページ&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">_experience</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">analytics</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">customDimensions</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">props</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">prop1</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;value1&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">eVars</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">eVar1</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;value2&#34;</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 必要に応じて他の変数を設定する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">hellow</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;value3&#34;</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  });
+</span></span></code></pre></div><h3 id="adobe-analyticsタグをtealium-toolsを使用して移行する">Adobe AnalyticsタグをTealium Toolsを使用して移行する</h3>
+<p>Adobe Experience Platform Web SDK Migratorツールを使用すると、既存のAdobe Analytics AppMeasurementタグをAdobe Experience Platform Web SDKタグに移行できます。</p>
+<p>Migratorツールを使用する前に、次の制限事項に注意してください。</p>
+<ul>
+<li>このツールはdoPluginsや拡張機能を移行しません。構成でdoPluginsや拡張機能を使用している場合は、これらを手動で移行する必要があります（詳細については、Adobeのドキュメントの<a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#modifying-events-globally">Migrate events globally</a>セクションを参照してください）。</li>
+<li><code>link_name</code>および<code>link_trackvars</code>変数はサポートされていません。</li>
+<li><code>products</code>変数は、Adobeの仕様に従ってマッピングする前に、異なる属性に分割する必要があります。詳細については、Adobeのドキュメントの<a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en">products</a>を参照してください。</li>
+<li>ツールで自動的に移行されないイベントや属性は、空のマッピングになります。これらの空の属性を手動でマッピングするには、<a href="#adobe-analytics%E3%82%BF%E3%82%B0%E3%82%92%E6%89%8B%E5%8B%95%E3%81%A7%E7%A7%BB%E8%A1%8C%E3%81%99%E3%82%8B">Adobe Analyticsタグを手動で移行する</a>ガイドを使用します。</li>
+</ul>
+<p>Tealium Toolsを使用してAdobe Analyticsタグを移行するには、次の手順を実行します。</p>
+<ol>
+<li>カスタムツールを追加するために、Tealium ToolsにAdobe Experience Platform Web SDK Migratorを追加します。カスタムツールの追加方法の詳細については、<a href="/iq-tag-management/tealium-tools/browser-extension/#add-a-custom-tool">Manage Custom Tools</a>を参照してください。</li>
+<li><strong>iQ Tag Management &gt; Tags</strong>に移動し、Adobe Experience Platform Web SDK Migratorツールを起動します。</li>
+<li>移行の一環として既存のAdobe Analyticsタグを無効にするには、<strong>Disable existing tag</strong>を選択します。</li>
+<li>移行のスコープを選択します。
+<ul>
+<li>すべてのAppMeasurementタグ</li>
+<li>すべてのアクティブなAppMeasurementタグ</li>
+<li>特定のAppMeasurementタグ（移行するタグのタグUIDを追加する必要があります）</li>
+</ul>
+</li>
+<li><strong>Start</strong>をクリックします。<br>
+Migratorツールは、既存のAdobe Analytics AppMeasurementタグを自動的にAdobe Experience Platform Web SDKタグに移行します。</li>
+<li>プロファイルを保存して公開します。</li>
+</ol>
+<p>構成でdoPluginsや拡張機能を使用している場合は、これらを手動で移行する必要があります（以下を参照）。</p>
+<h3 id="adobe-analyticsタグを手動で移行する">Adobe Analyticsタグを手動で移行する</h3>
+<p>Adobe AnalyticsタグからAdobe Experience Platform Web SDKタグに手動で移行するには、次の手順を実行します。</p>
+<p>この移行ガイドでは、Adobe Analyticsタグの次のデータマッピングを使用します。</p>
+<figure><a class="slb" href="/images/client-side-tags/adobe-analytics-migration-example1.png"><img src="/images/client-side-tags/adobe-analytics-migration-example1.png"
+         alt="Adobe Analytics migration example data mappings"
+         title="Adobe Analytics migration example data mappings"/>
+    </a>
+</figure>
+<figure><a class="slb" href="/images/client-side-tags/adobe-analytics-migration-example2.png"><img src="/images/client-side-tags/adobe-analytics-migration-example2.png"
+         alt="Additional Adobe Analytics migration example data mappings"
+         title="Additional Adobe Analytics migration example data mappings"/>
+    </a>
+</figure>
+<ol>
+<li>タグマーケットプレースに移動して、新しいAdobe Experience Platform Web SDKタグを追加します。詳細については、<a href="/iq-tag-management/tags/about/">About tags</a>を参照してください。</li>
+<li>Tealiumで次のタグ設定を構成します：
+<ul>
+<li><strong>Tag Version</strong>：適切なタグバージョンを選択します。デフォルトは最新バージョンです。</li>
+<li><strong>Instance Name</strong>：SDKの名前空間です。デフォルトは<code>alloy</code>です。</li>
+<li><strong>Org ID</strong>：Adobeが割り当てたExperience Cloud組織IDです。たとえば、<code>XXX@AdobeOrg</code>です。</li>
+<li><strong>Edge Domain</strong>：Adobeサービスとのやり取りに使用されるドメインです。マッピングしたファーストパーティドメイン（CNAMEを使用）をAdobeが提供するドメインにマッピングした場合は、デフォルトの設定を更新します。</li>
+<li><strong>Datastream ID</strong>：Adobeが割り当てたデータストリームIDで、SDKを適切なアカウントと構成にリンクします。<code>edgeConfigId</code>とも呼ばれます。</li>
+<li><strong>Debug Enabled</strong>：デバッグメッセージをブラウザのJavaScriptコンソールに表示するかどうかを設定します。</li>
+<li><strong>Edge Base Path</strong>：Adobeアカウントで構成されたものです。デフォルトは<code>ee</code>です。</li>
+<li><strong>Auto Pageview Tracking</strong>：すべてのページビューに対して自動的に<code>web.webpagedetails.pageViews</code>イベントを発火します。</li>
+<li><strong>Auto Purchase Tracking</strong>：注文IDが存在する場合に自動的に<code>commerce.purchases</code>イベントを発火します。</li>
+</ul>
+</li>
+</ol>
+<h2 id="ロードルール">ロードルール</h2>
+<p>タグをすべてのページで読み込むか、タグの読み込み条件を設定します。詳細については、<a href="/iq-tag-management/load-rules/about/">About load rules</a>を参照してください。</p>
+<h2 id="データマッピング">データマッピング</h2>
+<p>マッピングは、データレイヤーの変数からベンダータグの対応する宛先変数にデータを送信するプロセスです。詳細については、<a href="/iq-tag-management/data-mappings/about/">About data mappings</a>を参照してください。</p>
+<p>利用可能なカテゴリは次のとおりです：</p>
+<h3 id="標準">標準</h3>
+<table>
+<thead>
+<tr>
+<th>変数</th>
+<th>タイプ</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>library_version</code></td>
+<td>文字列</td>
+<td>タグバージョン</td>
+</tr>
+<tr>
+<td><code>context</code></td>
+<td>配列</td>
+<td>コンテキスト</td>
+</tr>
+<tr>
+<td><code>debugEnabled</code></td>
+<td>ブール値</td>
+<td>デバッグが有効化されているかどうか</td>
+</tr>
+<tr>
+<td><code>decisionScopes</code></td>
+<td>配列</td>
+<td>デシジョンスコープ</td>
+</tr>
+<tr>
+<td><code>defaultConsent</code></td>
+<td>文字列</td>
+<td>デフォルトの同意</td>
+</tr>
+<tr>
+<td><code>downloadLinkQualifier</code></td>
+<td>文字列</td>
+<td>ダウンロードリンクの修飾子</td>
+</tr>
+<tr>
+<td><code>edgeConfigId</code></td>
+<td>文字列</td>
+<td>データストリームID</td>
+</tr>
+<tr>
+<td><code>edgeDomain</code></td>
+<td>文字列</td>
+<td>エッジドメイン</td>
+</tr>
+<tr>
+<td><code>edgeBasePath</code></td>
+<td>文字列</td>
+<td>エッジベースパス</td>
+</tr>
+<tr>
+<td><code>auto_page_tracking</code></td>
+<td>ブール値</td>
+<td>自動ページトラッキング</td>
+</tr>
+<tr>
+<td><code>auto_purchase_tracking</code></td>
+<td>ブール値</td>
+<td>自動購入トラッキング</td>
+</tr>
+<tr>
+<td><code>event_type</code></td>
+<td>文字列</td>
+<td>イベントタイプ</td>
+</tr>
+<tr>
+<td><code>errorsEnabled</code></td>
+<td>ブール値</td>
+<td>エラーが有効化されているかどうか</td>
+</tr>
+<tr>
+<td><code>hasHidingSnippet</code></td>
+<td>ブール値</td>
+<td>Adobe Targetのプリヒディングスニペット</td>
+</tr>
+<tr>
+<td><code>instanceName</code></td>
+<td>文字列</td>
+<td>インスタンス名</td>
+</tr>
+<tr>
+<td><code>orgId</code></td>
+<td>文字列</td>
+<td>組織ID</td>
+</tr>
+<tr>
+<td><code>renderDecisions</code></td>
+<td>ブール値</td>
+<td>レンダリングの決定</td>
+</tr>
+<tr>
+<td><code>documentUnloading</code></td>
+<td>ブール値</td>
+<td>ドキュメントのアンロード</td>
+</tr>
+<tr>
+<td><code>custom.##</code></td>
+<td>-</td>
+<td>カスタムデータ</td>
+</tr>
+<tr>
+<td><code>commandCallback</code></td>
+<td>関数</td>
+<td>commandCallback関数</td>
+</tr>
+</tbody>
+</table>
+<h3 id="データ収集">データ収集</h3>
+<table>
+<thead>
+<tr>
+<th>変数</th>
+<th>タイプ</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>clickCollectionEnabled</code></td>
+<td>ブール値</td>
+<td>クリックコレクションが有効化されているかどうか</td>
+</tr>
+<tr>
+<td><code>onBeforeEventSend</code></td>
+<td>関数</td>
+<td>onBeforeEventSend</td>
+</tr>
+<tr>
+<td><code>onBeforeLinkClickSend</code></td>
+<td>関数</td>
+<td>onBeforeLinkClickSend</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-コマース">E-コマース</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">変数</th>
+<th>タイプ</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>purchaseID</code>（<code>_corder</code>を上書き）</td>
+<td>文字列</td>
+<td style="text-align:left">注文ID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>priceTotal</code>（<code>_ctotal</code>を上書き）</td>
+<td>文字列</td>
+<td style="text-align:left">注文合計</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>currencyCode</code>（<code>_ccurrency</code>を上書き）</td>
+<td>文字列</td>
+<td style="text-align:left">通貨</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>product.name</code>（<code>_cprodname</code>を上書き）</td>
+<td>配列</td>
+<td style="text-align:left">名前のリスト</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>product.SKU</code>（<code>_csku</code>を上書き）</td>
+<td>配列</td>
+<td style="text-align:left">SKUのリスト</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>product.quantity</code>（<code>_cquan</code>を上書き）</td>
+<td>配列</td>
+<td style="text-align:left">数量のリスト</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>product.priceTotal</code>（<code>_cprice</code>を上書き）</td>
+<td>配列</td>
+<td style="text-align:left">価格のリスト</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>product.lineItemId</code>（<code>_ccat</code>を上書き）</td>
+<td>配列</td>
+<td style="text-align:left">ラインアイテムIDのリスト</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>payment.transactionID</code></td>
+<td>配列</td>
+<td style="text-align:left">支払いトランザクションID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>payment.paymentAmount</code></td>
+<td>配列</td>
+<td style="text-align:left">支払い金額</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>payment.paymentType</code></td>
+<td>配列</td>
+<td style="text-align:left">支払いタイプ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>payment.currencyCode</code></td>
+<td>配列</td>
+<td style="text-align:left">支払い通貨コード</td>
+</tr>
+</tbody>
+</table>
+<h3 id="プライバシーオプション">プライバシーオプション</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">変数</th>
+<th>タイプ</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>defaultConsent</code></td>
+<td>文字列</td>
+<td style="text-align:left">デフォルトの同意</td>
+</tr>
+</tbody>
+</table>
+<h3 id="パーソナライゼーションオプション">パーソナライゼーションオプション</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">変数</th>
+<th>タイプ</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>prehidingStyle</code></td>
+<td>文字列</td>
+<td style="text-align:left">プリヒディングスタイル</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>targetMigrationEnabled</code></td>
+<td>ブール値</td>
+<td style="text-align:left">Target移行が有効化されているかどうか</td>
+</tr>
+</tbody>
+</table>
+<h3 id="オーディエンスオプション">オーディエンスオプション</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">変数</th>
+<th>タイプ</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>cookieDestinationsEnabled</code></td>
+<td>ブール値</td>
+<td style="text-align:left">Cookie宛先が有効化されているかどうか</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>urlDestinationsEnabled</code></td>
+<td>ブール値</td>
+<td style="text-align:left">URL宛先が有効化されているかどうか</td>
+</tr>
+</tbody>
+</table>
+<h3 id="idオプション">IDオプション</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">変数</th>
+<th>タイプ</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+</table>
+
+</div>
+
+<div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
+
+  
+  <a href="/client-side-tags/connexity-pixel/"
+    class="inline-flex items-center-ns ba b--black-10 br3 pa3">
+    <section class="tl pr3">
+      <div>Connexityピクセル設定ガイド</div>
+    </section>
+    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"Connexityピクセル設定ガイド"</title>
+      <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+    </svg>
+  </a>
+  
+  
+</div><div class="di mr3">
+  
+  
+  <a href="/client-side-tags/emarketeer-tag/"
+    class="inline-flex items-center-ns ba b--black-10 br3 pa3">
+    <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"Emarketeer "</title>
+      <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+    </svg>
+   <section class="tr pl3">
+      <div>Emarketeer</div>
+    </section>
+  </a>
+  
+
+</div></div>
+
+
+
+        <div class="bt-l b--moon-gray pv3 cb">
+          <div id="feedback_form" class="dpn">
+  <div id="feedback_buttons">
+	  <p class="di f5 pr2">このページはお役にたちましたでしょうか？</p>
+		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9593 5.91859C12.0445 6.23734 11.6882 6.55684 11.6882 6.55684C11.6882 6.55684 11.9552 7.05934 11.9293 7.53747C11.9061 7.97172 11.59 8.38572 11.59 8.38572C11.59 8.38572 11.7272 9.00709 11.5933 9.43197C11.4355 9.93184 11.0023 10.2476 11.0023 10.2476C11.0023 10.2476 10.9858 10.8026 10.7083 11.1618C10.4308 11.5211 9.89197 11.6846 9.89197 11.6846C9.89197 11.6846 9.11984 11.9996 8.25847 12.0225C7.26734 12.0487 6.16897 11.7825 6.16897 11.7825C6.16897 11.7825 5.66384 11.5338 5.04997 11.4063C4.33297 11.2578 3.49109 11.2275 3.49109 11.2275V6.55722C3.49109 6.55722 3.92309 6.50247 4.20472 6.10609C4.48934 5.70559 4.61197 5.07897 4.87709 4.57272C5.20484 3.94759 5.64659 3.47209 5.64659 3.42184C5.64659 3.36109 6.36209 2.81772 6.77797 2.04372C7.25572 1.15497 7.34497 0.0577174 7.34497 0.0577174C7.34497 0.0577174 7.89284 -0.0562825 8.27309 0.279342C8.72009 0.673842 8.81459 1.52734 8.81459 1.52734C8.81459 1.52734 8.70734 2.43784 8.39459 3.29284C8.16472 3.92134 7.89997 4.56484 7.89997 4.56484C7.89997 4.56484 8.01734 4.94434 8.54909 4.97059C8.97434 4.99159 9.63022 4.81759 10.1245 4.76172C10.7638 4.68972 11.1985 4.72797 11.1985 4.72797C11.1985 4.72797 11.8157 5.38234 11.9593 5.91859ZM-0.00390625 6.23022L2.73959 6.09972L2.80484 11.5867L0.387969 11.5541L-0.00390625 6.23022Z" fill="currentColor"/>
+</svg>
+はい</button>
+	  <button enabled id="feedback_no" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.84642 0.22244C5.84642 0.22244 6.35117 0.471065 6.96467 0.59819C7.68129 0.74669 8.52242 0.77669 8.52242 0.77669V5.44394C8.52242 5.44394 8.09079 5.49832 7.80917 5.89469C7.52492 6.29482 7.40229 6.92144 7.13717 7.42694C6.80979 8.05132 6.36804 8.52682 6.36804 8.57669C6.36804 8.63744 5.65329 9.18044 5.23742 9.95369C4.76004 10.8421 4.67079 11.9382 4.67079 11.9382C4.67079 11.9382 4.12329 12.0522 3.74304 11.7166C3.29642 11.3224 3.20192 10.4693 3.20192 10.4693C3.20192 10.4693 3.30917 9.55919 3.62154 8.70494C3.85104 8.07682 4.11579 7.43369 4.11579 7.43369C4.11579 7.43369 3.99842 7.05457 3.46704 7.02832C3.04217 7.00732 2.38667 7.18132 1.89279 7.23682C1.25379 7.30882 0.819541 7.27057 0.819541 7.27057C0.819541 7.27057 0.202666 6.61694 0.0590409 6.08069C-0.0260841 5.76232 0.330166 5.44282 0.330166 5.44282C0.330166 5.44282 0.0635409 4.94069 0.0890409 4.46294C0.112291 4.02907 0.428041 3.61507 0.428041 3.61507C0.428041 3.61507 0.290791 2.99407 0.424666 2.56994C0.582541 2.07044 1.01529 1.75507 1.01529 1.75507C1.01529 1.75507 1.03179 1.20044 1.30892 0.84119C1.58642 0.482315 2.12492 0.318815 2.12492 0.318815C2.12492 0.318815 2.89667 0.00381546 3.75729 -0.0186845C4.74767 -0.0449345 5.84529 0.22094 5.84529 0.22094L5.84642 0.22244ZM11.6229 0.450815L12.0148 5.77057L9.27354 5.90107L9.20829 0.41819L11.6229 0.450815Z" fill="currentColor"/>
+</svg>
+いいえ</button>
+  </div>
+	<div id="feedback_comment" style="display: none;">
+		<textarea id="feedback_textarea" class="ba b--light-gray bg-primary-color-light pa2 br3" type="text" placeholder="ページの改善にご協力ください。" rows="4" cols="60"></textarea><button id="feedback_submit" class="db ba b--light-gray bg-primary-color-light f5 ph3 pv2 br2 dib tc mv3 link primary-color-dark">フィードバックを送信</button>
+  </div>
+  <div id="feedback_thank_you" style="display: none;">
+     <p class="i">ご意見有難うございます。</p>
+  </div>
+</div>
+
+        </div>
+        <div class="bt-l b--moon-gray pt3 f6">
+          <p>最終更新日 ::  2023年September月6日
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
+      
+
+
+
+  <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
+      <p class="b ttu">このページで</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグのヒント</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">動作原理</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">イベントの例</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#adobe-target">Adobe Targetでのフリッカーの管理</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#cookie">Cookie管理ソリューションを使用した場合の空白ページエラー</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#adobe-analytics">Adobe Analyticsの移行ガイド</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">コードの比較</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#adobe-analytics">Adobe AnalyticsタグをTealium Toolsを使用して移行する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#adobe-analytics">Adobe Analyticsタグを手動で移行する</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ロードルール</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データマッピング</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">標準</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データ収集</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-">E-コマース</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">プライバシーオプション</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">パーソナライゼーションオプション</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">オーディエンスオプション</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#id">IDオプション</a></li>
+              </nav>
+  </aside></nav>
+
+</div>
+</div>
+    
+
+    </main>
+
+    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    </div>
+
+    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+<div class="globalmenu mobilemenu dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ホーム
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/iq-tag-management/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          iQ Tag Management
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/introduction/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          EventStream API Hub
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/introduction/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          AudienceStream CDP
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/server-side/functions/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          機能
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/server-side/data-connect/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          データコネクト
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/predict/getting-started/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Predict ML
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/server-side/data-storage/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          DataAccess
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/client-side-tags/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          クライアントサイド タグ
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/server-side-connectors/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          サーバーサイド コネクタ
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/platforms/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          プラットフォーム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/api/getting-started/auth/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          API
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/administration/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          管理
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          テクノロジーパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          早期アクセス
+        </a>
+    </li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+</div>
+
+
+<div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
+    <ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</ul>
+
+</div>
+
+
+
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Site</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Section</button>
+
+</div>
+</div>
+</footer>
+
+    <script src="/dist/js/app.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://kit.fontawesome.com/59194dc628.js" crossorigin="anonymous"></script>
+
+
+    
+      
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+const translations = {
+  button: {
+    buttonText: 'ドキュメントの検索',
+    buttonAriaLabel: 'ドキュメントの検索',
+  },
+  modal: {
+    searchBox: {
+      resetButtonTitle: 'クエリを消去',
+      resetButtonAriaLabel: 'クエリを消去',
+      cancelButtonText: 'キャンセル',
+      cancelButtonAriaLabel: 'キャンセル',
+    },
+    startScreen: {
+      recentSearchesTitle: '最近',
+      noRecentSearchesText: '最近の検索はありません',
+      saveRecentSearchButtonTitle: 'この検索を保存',
+      removeRecentSearchButtonTitle: 'この検索を履歴から削除',
+      favoriteSearchesTitle: 'お気に入り',
+      removeFavoriteSearchButtonTitle: 'このクエリをお気に入りから削除',
+    },
+    errorScreen: {
+      titleText: '結果を取得できません',
+      helpText: 'ネットワーク接続を確認してください',
+    },
+    footer: {
+      selectText: '選択する',
+      selectKeyAriaLabel: 'キーを入力してください',
+      navigateText: 'ナビゲートする',
+      navigateUpKeyAriaLabel: '上',
+      navigateDownKeyAriaLabel: '下',
+      closeText: '閉じる',
+      closeKeyAriaLabel: 'エスケープキー',
+      searchByText: '次で検索：',
+    },
+    noResultsScreen: {
+      noResultsText: '次の結果はありません：',
+      suggestedQueryText: '次で検索してみてください：',
+      reportMissingResultsText: 'このクエリで結果が返ってくるはずですか?',
+      reportMissingResultsLinkText: '連絡願います',
+    },
+  },
+};
+var default_sections = [
+];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+if(ls_sections.indexOf("JAVASCRIPT") != -1) {
+  ls_sections = [];
+  localStorage.setItem("tealdocs_sections", JSON.stringify(default_sections));
+}
+var local_sections = new Set(ls_sections);
+var cur_section = $('#breadcrumb ul li:nth-child(n+2)');
+if(cur_section && cur_section.length) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 10) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
+}
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
+var opt_filters = [];
+if(hier_filters.length) {
+  opt_filters.push(hier_filters);
+}
+const transformItems = function(hits) {
+  hits.map(hit => {
+    if (hit.url.indexOf('#breadcrumb') > 0) {
+      hit.url = hit.url.replace('#breadcrumb', '');
+    }
+  });
+  return hits;
+};
+docsearch({
+  container: '#docsearch',
+  appId: '2V5C0M31GH',
+  apiKey: '32b47c4ec1ccc76fbe18808c48f9d8b6',
+  indexName: 'tealium_jp',
+  placeholder: 'ドキュメントの検索',
+  translations: translations,
+  searchParameters: {
+    "hitsPerPage": 50,
+    "analytics": false ,
+    "analyticsTags": ["site"]
+  },
+  insights: true,
+  debug: true ,
+  transformItems
+});
+</script>
+
+    
+
+  </body>
+</html>
