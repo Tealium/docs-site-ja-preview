@@ -67,6 +67,78 @@
                 href="https://docs-preview.tealium.co.jp/platforms/ruby/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/introduction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/introduction/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/introduction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/introduction/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/tutorial/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/tutorial/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/tutorial/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/tutorial/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88/</loc>
     <lastmod>2024-01-26T10:31:58-08:00</lastmod>
     <xhtml:link
@@ -263,6 +335,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/events/triggers-and-frequency/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side/functions/about/</loc>
@@ -1577,6 +1661,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side/attributes/data-layer-enrichment/tealium-collect-dle/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/tealium-collect/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/tealium-collect/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/tealium-collect/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side/data-connect/manage-data-connect-integrations/tealium-connect-data-source/</loc>
@@ -6600,6 +6696,54 @@
                 href="https://docs-preview.tealium.co.jp/server-side/connectors/frequency-capping/example/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/data-sources/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/data-sources/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/data-sources/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/attributes/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/attributes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/attributes/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/data-sources-add-a-data-source/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/data-sources-add-a-data-source/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/data-sources-add-a-data-source/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/data-sources-install-and-test/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/data-sources-install-and-test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/data-sources-install-and-test/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side/data-sources/data-sources-for-iq-tag-management/</loc>
     <lastmod>2024-02-02T12:05:39-08:00</lastmod>
     <xhtml:link
@@ -6611,6 +6755,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side/data-sources/data-sources-for-iq-tag-management/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/attributes-enrichments/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/attributes-enrichments/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/attributes-enrichments/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/getting-started/approaches/</loc>
@@ -6659,6 +6815,30 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/predict/strategy/prepare-your-data/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/attributes-offline-data-omnichannel/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/attributes-offline-data-omnichannel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/attributes-offline-data-omnichannel/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/attributes-badges/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/attributes-badges/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/attributes-badges/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/labels/about/</loc>
@@ -6882,8 +7062,44 @@
                 href="https://docs-preview.tealium.co.jp/server-side/consent/event-specs/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-stitching/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-stitching/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-stitching/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/getting-started/about-models/</loc>
     <lastmod>2022-08-29T10:49:59-07:00</lastmod>
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/live-events/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/live-events/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/live-events/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-stitching-visitor-id/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-stitching-visitor-id/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-stitching-visitor-id/"
+                />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/getting-started/adding-a-model/</loc>
     <lastmod>2022-09-23T14:29:45-07:00</lastmod>
@@ -6899,6 +7115,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/predict/training-models/add-a-model/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-id-part-1/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-part-1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-id-part-1/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/predict/training-models/review-your-model/</loc>
@@ -6943,6 +7171,18 @@
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/consent-management/global-privacy-control/about/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-id-discovery/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-discovery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-id-discovery/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/consent-management/global-privacy-control/client-side-support-gpc/</loc>
     <lastmod>2024-01-30T15:26:23-08:00</lastmod>
     <xhtml:link
@@ -6954,6 +7194,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/consent-management/global-privacy-control/client-side-support-gpc/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-id-part-2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-part-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/visitor-id-part-2/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/consent-management/global-privacy-control/</loc>
@@ -7177,6 +7429,66 @@
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/labels/manage/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/order-of-operations/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/order-of-operations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/order-of-operations/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-specifications/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/event-specifications/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-specifications/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/audiences/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/audiences/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/audiences/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-specifications-add-a-spec/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/event-specifications-add-a-spec/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-specifications-add-a-spec/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-specifications-data-quality/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/event-specifications-data-quality/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-specifications-data-quality/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/getting-started/evaluating-the-trained-version/</loc>
     <lastmod>2022-08-29T10:49:59-07:00</lastmod>
   </url><url>
@@ -7358,6 +7670,42 @@
                 href="https://docs-preview.tealium.co.jp/platforms/getting-started-mobile/consent-management/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-feeds/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/event-feeds/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-feeds/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/connectors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/connectors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/connectors/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-feeds-add-a-feed/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/event-feeds-add-a-feed/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/event-feeds-add-a-feed/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/predict/deploy/deploy-a-model/</loc>
     <lastmod>2024-02-01T11:20:12-08:00</lastmod>
     <xhtml:link
@@ -7382,6 +7730,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/predict/deploy/undeploy-a-model/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/connectors-add-a-connector/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/connectors-add-a-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/connectors-add-a-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/predict/deploy/deployed-model-health/</loc>
@@ -7507,6 +7867,30 @@
                 href="https://docs-preview.tealium.co.jp/platforms/javascript/data-layer-object/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/connectors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/connectors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/connectors/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/trace/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/trace/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/trace/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/save-publish/about-saving/</loc>
     <lastmod>2024-01-27T08:54:40-08:00</lastmod>
     <xhtml:link
@@ -7518,6 +7902,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/save-publish/about-saving/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/connectors-add-a-connector/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/connectors-add-a-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/connectors-add-a-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/getting-started/audience-considerations/</loc>
@@ -7534,6 +7930,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/predict/audiences/audience-considerations/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/trace-test-with-trace/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/trace-test-with-trace/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/trace-test-with-trace/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/save-publish/about-publishing/</loc>
@@ -7757,6 +8165,18 @@
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/administration/security/password-policy/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/trace/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/trace/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/trace/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/platforms/getting-started-mobile/media/</loc>
     <lastmod>2024-01-31T19:38:39-08:00</lastmod>
     <xhtml:link
@@ -7768,6 +8188,30 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/platforms/getting-started-mobile/media/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/saving-and-publishing/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/saving-and-publishing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/saving-and-publishing/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/trace-test-with-trace/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/trace-test-with-trace/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/trace-test-with-trace/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/guides/predict/getting-started/model-retraining-recommendations/</loc>
@@ -7881,6 +8325,30 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/getting-started/install/load-utag-china/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/next-steps/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/next-steps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/next-steps/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/saving-and-publishing/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/saving-and-publishing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/saving-and-publishing/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/administration/security/session-timeout/</loc>
@@ -8058,6 +8526,18 @@
                 href="https://docs-preview.tealium.co.jp/platforms/ios-swift/install/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/intro-cdh/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/intro-cdh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/intro-cdh/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/platforms/getting-started-mobile/hosted-data-layer/</loc>
     <lastmod>2024-01-31T19:38:39-08:00</lastmod>
     <xhtml:link
@@ -8134,6 +8614,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/labels/resource-locks/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/next-steps/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/next-steps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/next-steps/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/platforms/getting-started-mobile/adobe-visitor-service/</loc>
@@ -12034,6 +12526,18 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/early-access/about/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/audiencestream-install-options-for-web/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/audiencestream-install-options-for-web/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/audiencestream-install-options-for-web/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side/attributes/data-types/boolean/</loc>
