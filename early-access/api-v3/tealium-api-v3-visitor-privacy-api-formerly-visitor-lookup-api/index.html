@@ -179,7 +179,7 @@ var utag_data = {
   <p>このAPIを使用すると、特定の訪問者に関する既知のデータを取得したり、訪問者レコードを削除したり、削除リクエストのステータスを確認したりすることができます。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>この記事では、Tealium v3 APIの使用方法について説明します。<a href="/api/getting-started/auth/">以前のTealium v2 API</a>も引き続き利用できますが、将来的には非推奨となります。</p>
 <h2 id="動作原理">動作原理</h2>
-<p>訪問者の検索は、アカウントからの<a href="">訪問者ID</a>属性に基づいて行われます。</p>
+<p>訪問者の検索は、アカウントからの<a href="/server-side/visitor-stitching/visitor-id-attribute/">訪問者ID</a>属性に基づいて行われます。</p>
 <h3 id="制限と使用目的">制限と使用目的</h3>
 <p>Visitor Privacy APIは、GDPRやCCPAなどの規制要件を満たすために設計されており、高いボリュームの使用には適していません。このAPIへの接続は、常に1つ（1）のみ開いていることを推奨します。1日あたりのAPI呼び出し回数が1000回を超えると予想される場合は、アカウントマネージャーに連絡してください。</p>
 <h2 id="レート制限">レート制限</h2>
@@ -268,7 +268,7 @@ var utag_data = {
 <ul>
 <li><code>attributeId</code>
 <ul>
-<li>アカウントからの<a href="">訪問者ID属性</a>を表す数値ID。</li>
+<li>アカウントからの<a href="/server-side/visitor-stitching/visitor-id-attribute/">訪問者ID属性</a>を表す数値ID。</li>
 </ul>
 </li>
 <li><code>attributeValue</code>
@@ -349,7 +349,7 @@ var utag_data = {
 </span></span></code></pre></div><p>このコマンドでは、次のパラメータを使用します。</p>
 <ul>
 <li><code>attributeId</code><br>
-アカウントからの<a href="">訪問者ID属性</a>を表す数値ID。</li>
+アカウントからの<a href="/server-side/visitor-stitching/visitor-id-attribute/">訪問者ID属性</a>を表す数値ID。</li>
 <li><code>attributeValue</code><br>
 検索する値。</li>
 </ul>

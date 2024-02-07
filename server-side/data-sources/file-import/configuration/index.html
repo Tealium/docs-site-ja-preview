@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>ファイルインポート設定 | データソース | Tealium開発者ドキュメントプレビュー</title>
+    <title>ファイルインポート設定 | ファイルのインポート | Tealium開発者ドキュメントプレビュー</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -175,6 +175,32 @@ var utag_data = {
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 primary-color expanded " data-target=".data-sources">データソース</a>
         <ul class="pl2  data-sources desktopmenu animated fadeIn list "><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/data-sources/about-data-sources/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-data-sources">データソースについて</a>
+      </li><li class="relative w-100 fw8 f5  active">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 primary-color expanded " data-target=".file-import">ファイルのインポート</a>
+        <ul class="pl2 bl b--primary bw1 file-import desktopmenu animated fadeIn list "><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-file-import">ファイルのインポートについて</a>
+      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/prepare-a-csv-file/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-prepare-csv-file-for-import">CSVファイルのインポート準備</a>
+      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/visitor-identification/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-file-import-visitor-identification">ファイルインポートデータソースを使用した訪問者の識別</a>
+      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/encryption-and-compression/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-encryption-and-compression-file-import">暗号化と圧縮</a>
+      </li><li data-level="4" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/configuration/" class="db link pr2 pv2 bg-secondary primary-color" data-target=".server-side-configure-file-import">ファイルインポート設定</a>
+      </li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".file-transfer-service">ファイル転送サービスの設定</a>
+        <ul class="pl2  file-transfer-service desktopmenu animated fadeIn list  dn"><li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/upload-files/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-upload-files">サービスにファイルをアップロードする</a>
+      </li><li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/cyberduck/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-configure-cyberduck">Cyberduck</a>
+      </li><li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/aws-cli/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-amazon-command-line-interface">Amazon CLI</a>
+      </li><li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/s3-bucket/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-s3-bucket">S3バケット</a>
+      </li><li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/view-import-status/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-view-import-status">インポートステータスの表示</a>
+      </li></ul>
+      </li></ul>
       </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/data-sources/create-data-source/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".">データソースを作成する</a>
       </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -424,6 +450,25 @@ var utag_data = {
         <a href="/server-side/audiences/release-notes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-audiences">リリースノート</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".visitor-stitching">ビジターのステッチング</a>
+        <ul class="pl2  visitor-stitching desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/visitor-stitching/about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".about-visitor-stitching">ビジタースティッチングについて</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/visitor-stitching/anonymous-user-visitor-id-attributes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".anonymous-user-visitor-id-attributes">匿名ID、ユーザー識別子、訪問者ID属性</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/visitor-stitching/visitor-id-attribute/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".visitor-id-attribute">ビジターID属性</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/visitor-stitching/diagram/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".visitor-stitching-example">訪問者のステッチング例</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/visitor-stitching/guidelines/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".visitor-stitching-guidelines">ビジターステッチングのガイドライン</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/visitor-stitching/create-a-visitor-id-attribute/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".create-visitor-id-attribute">訪問者ID属性を作成する</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/visitor-stitching/%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".visitor-stitching-scenarios">訪問者のステッチングシナリオ</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/visitor-stitching/tapid/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tapid-cookies">TAPIDクッキーについて</a>
+      </li></ul>
+      </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".functions">関数</a>
         <ul class="pl2  functions desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/functions/about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-functions">関数について</a>
@@ -558,6 +603,15 @@ var utag_data = {
         <a href="/server-side/consent/release-notes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-server-side-consent">リリースノート</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".ss-save-publish">保存して公開</a>
+        <ul class="pl2  ss-save-publish desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/save-publish/about-save-publish/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ss-about-save-publish">変更を保存して公開する</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/save-publish/test/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ss-test-publish">テストについて</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/save-publish/with-tealium-iq/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ss-save-notes">Tealium iQとの統合</a>
+      </li></ul>
+      </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".ss-labels">ラベル</a>
         <ul class="pl2  ss-labels desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/labels/about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ss-about-labels">ラベルについて</a>
@@ -566,11 +620,15 @@ var utag_data = {
       </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/labels/use/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ss-use-labels">ラベルの使用</a>
       </li></ul>
-      </li></ul></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/server-side/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">file-import</span></a>
-        <ul data-level="1" class=" desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/server-side/data-sources/file-import/about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-file-import">ファイルのインポートについて</a>
-      </li><li data-level="2" class="selected relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/server-side/data-sources/file-import/configuration/" class="db link pr2 pv2 bg-secondary primary-color" data-target=".server-side-configure-file-import">ファイルインポート設定</a>
+      </li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".ss-tealium-tools">ティリウムツール</a>
+        <ul class="pl2  ss-tealium-tools desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/tealium-tools/optimizely-helper/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".">Optimizelyヘルパー</a>
+      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/tealium-tools/mobile-qr-trace/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".">モバイルQRトレース</a>
+      </li></ul>
+      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/server-side/release-notes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-release-notes">リリースノート</a>
       </li></ul></li></ul>
 </nav>
 </div>
@@ -581,6 +639,7 @@ var utag_data = {
         <header class="flex-none w-100"><nav id="breadcrumb">
 <ul class="nav">
 
+    
     
     
     
@@ -595,7 +654,12 @@ var utag_data = {
 
   
   
-  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/data-sources/">データソース</a></li>
+  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/data-sources/">データソース</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl3"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/data-sources/file-import/">ファイルのインポート</a></li>
   
 
   
@@ -619,7 +683,7 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <p class="tip"><i class="fa fa-info-circle"></i>始める前に、設定プロセス中にアップロードするためのサンプルCSVファイル（1,000列未満）を作成してください。このサンプルファイルは、列マッピングを自動的に検出するために使用されます。</p>
-<p class="tip"><i class="fa fa-info-circle"></i>正しくインポートするためには、CSVファイルが正しくフォーマットされている必要があります。ファイル形式についての情報は、<a href="">インポート用のCSVファイルを準備する</a>を参照してください。</p>
+<p class="tip"><i class="fa fa-info-circle"></i>正しくインポートするためには、CSVファイルが正しくフォーマットされている必要があります。ファイル形式についての情報は、<a href="/server-side/data-sources/file-import/prepare-a-csv-file/">インポート用のCSVファイルを準備する</a>を参照してください。</p>
 <h2 id="1-ファイルインポートデータソースを追加する">1. ファイルインポートデータソースを追加する</h2>
 <ol>
 <li><strong>Sources &gt; Data Sources</strong>に移動します。</li>
@@ -661,7 +725,7 @@ var utag_data = {
 </ol>
 <h2 id="4-訪問者id属性をマッピングする">4. 訪問者ID属性をマッピングする</h2>
 <p>ファイルデータをAudienceStreamで使用するには、データを訪問者ID属性にマッピングします。訪問者IDを表すマッピングされたイベント属性を選択し、それを対応する訪問者ID属性にマッピングします。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>AudienceStreamのVisitor ID Mappingはデフォルトで有効になっています。Visitor ID Mappingを無効にすると、訪問者のステッチングにエラーが発生する可能性があります。AudienceStreamのVisitor ID Mappingについての詳細は、<a href="">File Import Data Sourceを使用した訪問者識別</a>を参照してください。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>AudienceStreamのVisitor ID Mappingはデフォルトで有効になっています。Visitor ID Mappingを無効にすると、訪問者のステッチングにエラーが発生する可能性があります。AudienceStreamのVisitor ID Mappingについての詳細は、<a href="/server-side/data-sources/file-import/visitor-identification/">File Import Data Sourceを使用した訪問者識別</a>を参照してください。</p>
 <h2 id="5-ファイル転送サービスを設定する">5. ファイル転送サービスを設定する</h2>
 <p class="tip"><i class="fa fa-info-circle"></i>自分のファイル転送サービスを使用する場合は、進行する前に接続詳細を準備しておいてください。</p>
 <p>既存のファイルサービス設定を選択するか、新しいものを作成します。</p>
@@ -684,7 +748,7 @@ var utag_data = {
 </li>
 <li>
 <p>（オプション）ファイルの安全な処理を確保するために、PGP暗号化を使用してファイルを暗号化します。ファイルが暗号化されている場合は、<strong>Encryption</strong>形式として<strong>PGP</strong>を選択します。<p class="note"><i class="fa fa-exclamation-triangle"></i>圧縮と暗号化の両方を行うファイルを処理する場合、ファイルはまず圧縮され、次に暗号化される必要があります。以前にマッピングされたファイルの新しいバージョンは、元のファイルと同じ暗号化と圧縮の方法を使用する必要があります。<br>
-File Importの圧縮についての詳細は、<a href="">File Import Data Sourcesの暗号化と圧縮</a>を参照してください。</p></p>
+File Importの圧縮についての詳細は、<a href="/server-side/data-sources/file-import/encryption-and-compression/">File Import Data Sourcesの暗号化と圧縮</a>を参照してください。</p></p>
 </li>
 <li>
 <p><strong>Enable File Service Processing</strong>セクションで、File Importのサービス処理を有効または無効にするためのトグルを使用します。</p>
@@ -725,38 +789,23 @@ File Importの圧縮についての詳細は、<a href="">File Import Data Sourc
 <li><strong>Finish</strong>をクリックして設定画面を終了します。新しいデータソースは現在、<strong>Data Sources Dashboard</strong>にリストされています。</li>
 <li><strong>Save/Publish</strong>をクリックして変更を保存し、公開します。</li>
 </ol>
-<p class="tip"><i class="fa fa-info-circle"></i>インポート活動のステータスを確認するには、データソースを展開し、<strong>Status</strong>タブをクリックして<strong>Data Sources Dashboard</strong>に移動します。詳細については、<a href="">インポートステータスの表示</a>を参照してください。</p>
+<p class="tip"><i class="fa fa-info-circle"></i>インポート活動のステータスを確認するには、データソースを展開し、<strong>Status</strong>タブをクリックして<strong>Data Sources Dashboard</strong>に移動します。詳細については、<a href="/server-side/data-sources/file-import/file-transfer-service/view-import-status/">インポートステータスの表示</a>を参照してください。</p>
 <h2 id="ファイルインポートデータソース設定の編集">ファイルインポートデータソース設定の編集</h2>
 <p>ファイルインポートデータソース設定を変更するには、<strong>Data Sources Dashboard</strong>に移動し、変更したい設定の隣にある編集アイコンをクリックします。<strong>Data Sources Settings</strong>画面から、列マッピング、訪問者IDマッピング、およびファイルサービス設定を編集することができます。</p>
 
 </div>
 
-<div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
-
-  
-  <a href="/server-side/data-sources/create-data-source/"
-    class="inline-flex items-center-ns ba b--black-10 br3 pa3">
-    <section class="tl pr3">
-      <div>データソースを作成する</div>
-    </section>
-    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"データソースを作成する"</title>
-      <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
-    </svg>
-  </a>
+<div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="di mr3">
   
   
-</div><div class="di mr3">
-  
-  
-  <a href="/server-side/data-sources/about-data-sources/"
+  <a href="/server-side/data-sources/file-import/encryption-and-compression/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"データソースについて "</title>
+      <title>"暗号化と圧縮 "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>データソースについて</div>
+      <div>暗号化と圧縮</div>
     </section>
   </a>
   
@@ -1048,6 +1097,12 @@ File Importの圧縮についての詳細は、<a href="">File Import Data Sourc
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.co.jp/server-side/visitor-stitching/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          ビジターのステッチング
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.co.jp/server-side/functions/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           関数
       </a>
@@ -1072,22 +1127,26 @@ File Importの圧縮についての詳細は、<a href="">File Import Data Sourc
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.co.jp/server-side/save-publish/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          保存して公開
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.co.jp/server-side/labels/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           ラベル
       </a>
       </li>
       
-      
-  
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.co.jp/server-side/data-sources/file-import/about/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          ファイルのインポートについて
+      <a href="https://docs-preview.tealium.co.jp/server-side/tealium-tools/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          ティリウムツール
       </a>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.co.jp/server-side/data-sources/file-import/configuration/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          ファイルインポート設定
+      <a href="https://docs-preview.tealium.co.jp/server-side/release-notes/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          リリースノート
       </a>
       </li>
       
