@@ -158,6 +158,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/release-notes/</loc>
+    <lastmod>2024-03-20T09:06:52-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/release-notes/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side/data-sources/file-import/file-transfer-service/upload-files/</loc>
     <lastmod>2024-02-06T15:43:13-08:00</lastmod>
     <xhtml:link
@@ -8742,7 +8755,7 @@
     <lastmod>2022-08-29T10:49:59-07:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/troubleshooting/page-performance/</loc>
-    <lastmod>2024-01-30T15:26:23-08:00</lastmod>
+    <lastmod>2024-02-06T16:18:17-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -10944,6 +10957,97 @@
                 href="https://docs-preview.tealium.co.jp/platforms/ios-swift/release-notes/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/campaign-monitor-connector/</loc>
+    <lastmod>2023-12-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/campaign-monitor-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/campaign-monitor-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/nextdoor-connector/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/nextdoor-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/nextdoor-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/connector-insights-google-ads-customer-match/</loc>
+    <lastmod>2023-11-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/connector-insights-google-ads-customer-match/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/connector-insights-google-ads-customer-match/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/connector-insights-twitter-custom-audiences/</loc>
+    <lastmod>2023-11-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/connector-insights-twitter-custom-audiences/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/connector-insights-twitter-custom-audiences/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/movable-ink-connector/</loc>
+    <lastmod>2024-08-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/movable-ink-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/movable-ink-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-ads-audience-management-connector/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amazon-ads-audience-management-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-ads-audience-management-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-ads-conversions-connector/</loc>
+    <lastmod>2023-08-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amazon-ads-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-ads-conversions-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/avo-web-inspector-tag/</loc>
     <lastmod>2023-06-28T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -10970,6 +11074,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mailgun-connector/</loc>
+    <lastmod>2023-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/mailgun-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/mailgun-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/talonone-cam/</loc>
+    <lastmod>2023-05-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/talonone-cam/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/talonone-cam/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/early-access/spotify-conversions-connector-alpha/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -10983,6 +11113,19 @@
                 href="https://docs-preview.tealium.co.jp/early-access/spotify-conversions-connector-alpha/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/line-audiences-connector/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/line-audiences-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/line-audiences-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/rtb-house-tag/</loc>
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -10994,6 +11137,58 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/rtb-house-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/fullstory-user-api-connector/</loc>
+    <lastmod>2023-03-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/fullstory-user-api-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/fullstory-user-api-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/industries/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href=""
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/industries/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pulsepoint-npi-list-connector/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/pulsepoint-npi-list-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/pulsepoint-npi-list-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/industries/tealium-for-pharma/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/yahoo-id-cookie-sync-tag/</loc>
@@ -11022,19 +11217,6 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/6sense/"
                 />
   </url><url>
-    <loc>https://docs-preview.tealium.co.jp/industries/</loc>
-    <lastmod>2024-02-05T15:10:31-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href=""
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/industries/"
-                />
-  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/neustar-pageadvisor-tag/</loc>
     <lastmod>2023-08-08T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11049,7 +11231,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/</loc>
-    <lastmod>2024-02-05T15:10:31-08:00</lastmod>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -11072,6 +11254,45 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/bidtellect-conversion-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-customer-match/</loc>
+    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/microsoft-customer-match/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-customer-match/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/linkedin-conversions-connector/</loc>
+    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/linkedin-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/linkedin-conversions-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-dv-360-customer-match-connector/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-dv-360-customer-match-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-dv-360-customer-match-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/tech-partners/google-analytics-4-measurement-protocol-connector-integration-guide/</loc>
@@ -11100,6 +11321,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/sas-ci-360/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pinterest-conversions/</loc>
+    <lastmod>2024-03-19T18:05:19-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/pinterest-conversions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/pinterest-conversions/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/insider-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/insider-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/insider-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/partnerize-event-tracker-tag/</loc>
     <lastmod>2022-12-16T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11111,6 +11358,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/partnerize-event-tracker-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-sa360-enhanced-conversions-connector/</loc>
+    <lastmod>2023-09-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-sa360-enhanced-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-sa360-enhanced-conversions-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/flashtalking-user-segments-connector/</loc>
+    <lastmod>2022-12-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/flashtalking-user-segments-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/flashtalking-user-segments-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-test-target-tag/</loc>
@@ -11126,6 +11399,84 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-test-target-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/clicksend-connector/</loc>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/clicksend-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/clicksend-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-audiences-connector-setup-guide/</loc>
+    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/tiktok-audiences-connector-setup-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-audiences-connector-setup-guide/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-audiences-tealium-provided-credentials-connector/</loc>
+    <lastmod>2023-08-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/tiktok-audiences-tealium-provided-credentials-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-audiences-tealium-provided-credentials-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-interaction-studio-connector-setup-guide/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesforce-interaction-studio-connector-setup-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-interaction-studio-connector-setup-guide/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/yahoo-japan-ads-api-connector-setup-guide/</loc>
+    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/yahoo-japan-ads-api-connector-setup-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/yahoo-japan-ads-api-connector-setup-guide/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/talonone-webhook-connector/</loc>
+    <lastmod>2022-10-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/talonone-webhook-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/talonone-webhook-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/mapp-intelligence-tag/</loc>
     <lastmod>2022-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11137,6 +11488,136 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/mapp-intelligence-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amobee-connector-setup-guide/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amobee-connector-setup-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amobee-connector-setup-guide/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/coveo-connector/</loc>
+    <lastmod>2022-09-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/coveo-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/coveo-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/whatsapp-business-connector/</loc>
+    <lastmod>2022-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/whatsapp-business-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/whatsapp-business-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/awin-conversions-connector/</loc>
+    <lastmod>2022-10-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/awin-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/awin-conversions-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/linkedin-matched-audiences-connector-setup-guide/</loc>
+    <lastmod>2022-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/linkedin-matched-audiences-connector-setup-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/linkedin-matched-audiences-connector-setup-guide/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/cj-tracking-api-connector/</loc>
+    <lastmod>2022-09-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/cj-tracking-api-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/cj-tracking-api-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/yahoo-conversions-connector/</loc>
+    <lastmod>2022-09-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/yahoo-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/yahoo-conversions-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/yahoo-datax-connector/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/yahoo-datax-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/yahoo-datax-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adform-segments-connector/</loc>
+    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adform-segments-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adform-segments-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/at-internet-piano-analytics-connector/</loc>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/at-internet-piano-analytics-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/at-internet-piano-analytics-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/cj-affiliate-mobile-application-tag/</loc>
@@ -11165,6 +11646,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/criteo-cookie-matching-service-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-enhanced-conversions-for-web-connector/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-ads-enhanced-conversions-for-web-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-enhanced-conversions-for-web-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/twitter-conversions-connector/</loc>
+    <lastmod>2022-09-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/twitter-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/twitter-conversions-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/paypal-shopping-analytics-tag/</loc>
     <lastmod>2022-05-31T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11176,6 +11683,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/paypal-shopping-analytics-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/amazon-advertising-tag/</loc>
@@ -11191,6 +11711,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/amazon-advertising-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/basis-technologies-dsp-connector/</loc>
+    <lastmod>2022-06-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/basis-technologies-dsp-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/basis-technologies-dsp-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/coveo-usage-analytics-tag/</loc>
     <lastmod>2022-05-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11202,6 +11735,71 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/coveo-usage-analytics-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/trbo-connector/</loc>
+    <lastmod>2022-05-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/trbo-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/trbo-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pega-webhook-connector/</loc>
+    <lastmod>2022-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/pega-webhook-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/pega-webhook-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pegasystems-connector/</loc>
+    <lastmod>2022-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/pegasystems-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/pegasystems-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/epsilon-event-api-connector/</loc>
+    <lastmod>2022-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/epsilon-event-api-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/epsilon-event-api-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/selligent-marketing-cloud-connector/</loc>
+    <lastmod>2022-09-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/selligent-marketing-cloud-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/selligent-marketing-cloud-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/rokt-tag/</loc>
@@ -11217,6 +11815,136 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/rokt-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-advertising-dsp-connector/</loc>
+    <lastmod>2022-09-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amazon-advertising-dsp-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-advertising-dsp-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/connector-insights-facebook-custom-audiences/</loc>
+    <lastmod>2022-03-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/connector-insights-facebook-custom-audiences/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/connector-insights-facebook-custom-audiences/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mediamath-connector/</loc>
+    <lastmod>2022-09-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/mediamath-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/mediamath-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-analytics-4-measurement-protocol-connector/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-analytics-4-measurement-protocol-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-analytics-4-measurement-protocol-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/aws-kinesis-streams-tealium-provided-credentials-connector/</loc>
+    <lastmod>2023-04-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/aws-kinesis-streams-tealium-provided-credentials-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/aws-kinesis-streams-tealium-provided-credentials-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/rokt-events-connector/</loc>
+    <lastmod>2022-04-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/rokt-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/rokt-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-events-connector/</loc>
+    <lastmod>2023-10-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/tiktok-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/acoustic-campaign-connector/</loc>
+    <lastmod>2022-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/acoustic-campaign-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/acoustic-campaign-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/iterable-connector/</loc>
+    <lastmod>2022-07-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/iterable-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/iterable-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/airship-connector/</loc>
+    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/airship-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/airship-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/microsoft-advertising-uet-tag/</loc>
     <lastmod>2021-12-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11228,6 +11956,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/microsoft-advertising-uet-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amplitude-connector/</loc>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amplitude-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amplitude-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/contentsquare-mobile-remote-command-tag/</loc>
@@ -11243,6 +11984,71 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/contentsquare-mobile-remote-command-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/kochava-connector/</loc>
+    <lastmod>2022-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/kochava-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/kochava-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/criteo-connector/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/criteo-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/criteo-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/connector-insights-facebook-event-match-quality/</loc>
+    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/connector-insights-facebook-event-match-quality/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/connector-insights-facebook-event-match-quality/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adjust-events-api-connector/</loc>
+    <lastmod>2021-12-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adjust-events-api-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adjust-events-api-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sendgrid-connector/</loc>
+    <lastmod>2021-11-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sendgrid-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sendgrid-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/emarketeer-tag/</loc>
     <lastmod>2021-10-08T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11254,6 +12060,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/emarketeer-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/twilio-connector/</loc>
+    <lastmod>2021-11-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/twilio-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/twilio-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-customer-match-connector/</loc>
+    <lastmod>2024-03-19T18:05:19-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-ads-customer-match-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-customer-match-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-experience-platform-web-sdk-tag/</loc>
@@ -11282,6 +12114,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/connexity-pixel/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pinterest-audiences-connector/</loc>
+    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/pinterest-audiences-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/pinterest-audiences-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-pinpoint-connector/</loc>
+    <lastmod>2021-11-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amazon-pinpoint-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-pinpoint-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/reddit-pixel-tag/</loc>
     <lastmod>2021-07-16T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11295,6 +12153,71 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/reddit-pixel-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/splunk-connector/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/splunk-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/splunk-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/qualtrics-xm-directory-connector/</loc>
+    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/qualtrics-xm-directory-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/qualtrics-xm-directory-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/zoho-crm-connector/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/zoho-crm-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/zoho-crm-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/kayak-conversion-tracking-connector/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/kayak-conversion-tracking-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/kayak-conversion-tracking-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/snapchat-conversions-connector/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/snapchat-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/snapchat-conversions-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/kochava-mobile-remote-command-tag/</loc>
     <lastmod>2021-10-08T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11306,6 +12229,110 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/kochava-mobile-remote-command-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-dmp-connector/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesforce-dmp-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-dmp-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/impact-page-loads-connector/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/impact-page-loads-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/impact-page-loads-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/quantcast-audiences-connector/</loc>
+    <lastmod>2023-09-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/quantcast-audiences-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/quantcast-audiences-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-enhanced-conversions-legacy-connector/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-ads-enhanced-conversions-legacy-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-enhanced-conversions-legacy-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/acoustic-transact-connector/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/acoustic-transact-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/acoustic-transact-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/braze-connector/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/braze-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/braze-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/insightly-crm-connector/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/insightly-crm-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/insightly-crm-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-eventbridge-connector/</loc>
+    <lastmod>2022-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amazon-eventbridge-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-eventbridge-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/sovendus-tag/</loc>
@@ -11347,6 +12374,45 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/xandr-universal-pixel-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/leanplum-connector/</loc>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/leanplum-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/leanplum-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tune-in-app-events-connector/</loc>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/tune-in-app-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/tune-in-app-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/heap-connector/</loc>
+    <lastmod>2021-03-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/heap-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/heap-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-analytics-gtagjs-tag/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11358,6 +12424,45 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/google-analytics-gtagjs-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/agillic-recipients-connector/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/agillic-recipients-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/agillic-recipients-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-display-video-360-connector/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-display-video-360-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-display-video-360-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/dialogtech-connector/</loc>
+    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/dialogtech-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/dialogtech-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/bluekai-tag/</loc>
@@ -11373,6 +12478,318 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/bluekai-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/snapchat-audience-match-connector/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/snapchat-audience-match-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/snapchat-audience-match-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-standard-objects-connector/</loc>
+    <lastmod>2020-11-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesforce-standard-objects-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-standard-objects-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/facebook-app-events-connector/</loc>
+    <lastmod>2021-10-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/facebook-app-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-app-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/zendesk-connector/</loc>
+    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/zendesk-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/zendesk-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/ytel-connector/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/ytel-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/ytel-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/responsys-marketing-cloud-connector/</loc>
+    <lastmod>2021-08-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/responsys-marketing-cloud-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/responsys-marketing-cloud-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/twitter-campaigns-connector/</loc>
+    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/twitter-campaigns-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/twitter-campaigns-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/dmd-connector/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/dmd-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/dmd-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/doceree-connector/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/doceree-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/doceree-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/veeva-crm-connector/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/veeva-crm-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/veeva-crm-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sailthru-connector/</loc>
+    <lastmod>2021-06-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sailthru-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sailthru-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sendwithus-connector/</loc>
+    <lastmod>2020-07-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sendwithus-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sendwithus-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/new-relic-mobile-connector/</loc>
+    <lastmod>2020-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/new-relic-mobile-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/new-relic-mobile-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/new-relic-browser-connector/</loc>
+    <lastmod>2020-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/new-relic-browser-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/new-relic-browser-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/replyai-connector/</loc>
+    <lastmod>2020-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/replyai-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/replyai-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/fullstory-connector/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/fullstory-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/fullstory-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/facebook-connector-series/</loc>
+    <lastmod>2020-08-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/facebook-connector-series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-connector-series/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/appcues-connector/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/appcues-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/appcues-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/campayn-connector/</loc>
+    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/campayn-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/campayn-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/closeio-connector/</loc>
+    <lastmod>2020-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/closeio-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/closeio-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-conversions-connector/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-ads-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-conversions-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/swrve-app-events-connector/</loc>
+    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/swrve-app-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/swrve-app-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/klaviyo-connector/</loc>
+    <lastmod>2023-03-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/klaviyo-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/klaviyo-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/impact-conversions-connector/</loc>
+    <lastmod>2023-05-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/impact-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/impact-conversions-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/adition-tagging-tag/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11384,6 +12801,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/adition-tagging-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adition-tagging-connector/</loc>
+    <lastmod>2020-11-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adition-tagging-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adition-tagging-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/oracle-infinity-analytics-connector/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/oracle-infinity-analytics-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/oracle-infinity-analytics-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/pixibo-fyf-tag/</loc>
@@ -11477,6 +12920,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/tapad-cookie-matching-service-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-email-studio-oauth2-exacttarget-connector/</loc>
+    <lastmod>2022-06-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesforce-email-studio-oauth2-exacttarget-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-email-studio-oauth2-exacttarget-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/optimizely-events-connector/</loc>
+    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/optimizely-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/optimizely-events-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/shopmessage-tag/</loc>
     <lastmod>2019-12-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11490,6 +12959,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/shopmessage-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-campaign-classic-batch-connector/</loc>
+    <lastmod>2022-06-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adobe-campaign-classic-batch-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adobe-campaign-classic-batch-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/dun-amp-bradstreet-web-visitor-id-tag/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11501,6 +12983,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/dun-amp-bradstreet-web-visitor-id-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/the-trade-desk-offline-conversion-connector/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/the-trade-desk-offline-conversion-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/the-trade-desk-offline-conversion-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amplitude-connector-setup-guide-deprecated/</loc>
+    <lastmod>2022-01-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amplitude-connector-setup-guide-deprecated/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amplitude-connector-setup-guide-deprecated/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-ads-conversion-tracking-and-remarketing-gtagjs-tag/</loc>
@@ -11581,6 +13089,45 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/eloqua-tag-set-up-guide/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/everflow-conversion-tracking-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/everflow-conversion-tracking-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/everflow-conversion-tracking-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/branch-events-connector/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/branch-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/branch-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-journey-builder-with-oauth-connector/</loc>
+    <lastmod>2020-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesforce-journey-builder-with-oauth-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-journey-builder-with-oauth-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/anura-tag/</loc>
     <lastmod>2019-08-09T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11592,6 +13139,1059 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/anura-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/appsflyer-app-events-connector/</loc>
+    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/appsflyer-app-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/appsflyer-app-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/emailicious-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/emailicious-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/emailicious-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/ispot-tv-conversion-tracking-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/ispot-tv-conversion-tracking-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/ispot-tv-conversion-tracking-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/klenty-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/klenty-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/klenty-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mailrelay-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/mailrelay-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/mailrelay-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/retently-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/retently-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/retently-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/smartsurvey-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/smartsurvey-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/smartsurvey-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tamber-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/tamber-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/tamber-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/userlist-connector/</loc>
+    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/userlist-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/userlist-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/chameleon-connector/</loc>
+    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/chameleon-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/chameleon-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/twitter-custom-audiences-connector/</loc>
+    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/twitter-custom-audiences-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/twitter-custom-audiences-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/domo-json-webhook-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/domo-json-webhook-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/domo-json-webhook-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-campaign-standard-connector/</loc>
+    <lastmod>2022-11-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adobe-campaign-standard-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adobe-campaign-standard-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/apsis-connector/</loc>
+    <lastmod>2022-09-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/apsis-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/apsis-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mixmax-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/mixmax-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/mixmax-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/moengage-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/moengage-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/moengage-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/ontraport-connector/</loc>
+    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/ontraport-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/ontraport-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sarbacane-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sarbacane-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sarbacane-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sendpulse-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sendpulse-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sendpulse-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-adwords-customer-match-connector/</loc>
+    <lastmod>2022-05-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-adwords-customer-match-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-adwords-customer-match-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/activecampaign-connector/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/activecampaign-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/activecampaign-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/enchant-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/enchant-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/enchant-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/infobip-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/infobip-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/infobip-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/leadsquared-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/leadsquared-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/leadsquared-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mocean-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/mocean-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/mocean-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/criteo-audience-match-connector/</loc>
+    <lastmod>2021-11-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/criteo-audience-match-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/criteo-audience-match-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/facebook-conversions-connector/</loc>
+    <lastmod>2022-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/facebook-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-conversions-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/cordial-connector/</loc>
+    <lastmod>2022-05-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/cordial-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/cordial-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adestra-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adestra-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adestra-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/eloqua-custom-object-bulk-connector/</loc>
+    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/eloqua-custom-object-bulk-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/eloqua-custom-object-bulk-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/dialogone-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/dialogone-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/dialogone-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/clickatell-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/clickatell-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/clickatell-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/discord-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/discord-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/discord-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/kiip-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/kiip-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/kiip-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/madvertise-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/madvertise-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/madvertise-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/onesignal-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/onesignal-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/onesignal-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pipedrive-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/pipedrive-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/pipedrive-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pushcrew-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/pushcrew-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/pushcrew-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sendlane-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sendlane-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sendlane-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sendx-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sendx-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sendx-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/singular-events-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/singular-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/singular-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tvsquared-connector/</loc>
+    <lastmod>2020-05-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/tvsquared-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/tvsquared-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/hubspot-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/hubspot-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/hubspot-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/iterable-connector-deprecated/</loc>
+    <lastmod>2022-01-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/iterable-connector-deprecated/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/iterable-connector-deprecated/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/facebook-offline-conversions-connector/</loc>
+    <lastmod>2021-10-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/facebook-offline-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-offline-conversions-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/insightly-connector-deprecated/</loc>
+    <lastmod>2021-01-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/insightly-connector-deprecated/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/insightly-connector-deprecated/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/postmark-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/postmark-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/postmark-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sendicate-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sendicate-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sendicate-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sendinblue-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sendinblue-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sendinblue-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-analytics-user-deletion-connector/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-analytics-user-deletion-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-analytics-user-deletion-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/delighted-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/delighted-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/delighted-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/freshsales-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/freshsales-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/freshsales-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/friendbuy-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/friendbuy-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/friendbuy-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mailerlite-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/mailerlite-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/mailerlite-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/optimizely-events-connector-legacy/</loc>
+    <lastmod>2020-08-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/optimizely-events-connector-legacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/optimizely-events-connector-legacy/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/referralcandy-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/referralcandy-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/referralcandy-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesmachine-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesmachine-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesmachine-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/woopra-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/woopra-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/woopra-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/ambassador-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/ambassador-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/ambassador-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/sparkpost-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/sparkpost-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/sparkpost-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/doubleclick-ad-exchange-connector/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/doubleclick-ad-exchange-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/doubleclick-ad-exchange-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ad-manager-360-connector/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-ad-manager-360-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-ad-manager-360-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/dotdigital-connector/</loc>
+    <lastmod>2020-10-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/dotdigital-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/dotdigital-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/slack-connector/</loc>
+    <lastmod>2022-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/slack-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/slack-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/the-trade-desk-first-party-data-connector/</loc>
+    <lastmod>2022-08-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/the-trade-desk-first-party-data-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/the-trade-desk-first-party-data-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/the-trade-desk-in-app-events-connector/</loc>
+    <lastmod>2020-10-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/the-trade-desk-in-app-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/the-trade-desk-in-app-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/optimizely-dcp-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/optimizely-dcp-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/optimizely-dcp-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mixpanel-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/mixpanel-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/mixpanel-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/webtrekk-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/webtrekk-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/webtrekk-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-target-connector/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adobe-target-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adobe-target-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/lithium-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/lithium-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/lithium-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adform-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adform-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adform-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/centro-dsp-connector-setup-guide-deprecated/</loc>
+    <lastmod>2022-06-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/centro-dsp-connector-setup-guide-deprecated/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/centro-dsp-connector-setup-guide-deprecated/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/freshdesk-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/freshdesk-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/freshdesk-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/persistiq-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/persistiq-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/persistiq-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/oracle-bluekai-mobile-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/oracle-bluekai-mobile-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/oracle-bluekai-mobile-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-firehose-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amazon-firehose-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-firehose-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-campaign-manager-360-floodlight-connector/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-campaign-manager-360-floodlight-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-campaign-manager-360-floodlight-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/xiti-by-at-internet-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/xiti-by-at-internet-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/xiti-by-at-internet-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-audience-studio-connector/</loc>
+    <lastmod>2022-04-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesforce-audience-studio-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-audience-studio-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/smartfocus-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/smartfocus-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/smartfocus-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/piano-tag/</loc>
@@ -11607,6 +14207,188 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/piano-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/silverpop-engage-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/silverpop-engage-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/silverpop-engage-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/monetate-personalization-engine-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/monetate-personalization-engine-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/monetate-personalization-engine-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-analytics-connector/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-analytics-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-analytics-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/facebook-messenger-connector/</loc>
+    <lastmod>2021-10-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/facebook-messenger-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-messenger-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/listrak-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/listrak-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/listrak-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/experian-marketing-suite-connector/</loc>
+    <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/experian-marketing-suite-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/experian-marketing-suite-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-analytics-connector/</loc>
+    <lastmod>2021-09-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adobe-analytics-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adobe-analytics-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/eloqua-connector/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/eloqua-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/eloqua-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/bronto-ecommerce-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/bronto-ecommerce-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/bronto-ecommerce-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-azure-event-hubs-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/microsoft-azure-event-hubs-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-azure-event-hubs-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/new-relic-mobile-crash-tracking-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/new-relic-mobile-crash-tracking-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/new-relic-mobile-crash-tracking-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/acoustic-exchange-connector/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/acoustic-exchange-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/acoustic-exchange-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/firebase-cloud-messaging-connector/</loc>
+    <lastmod>2023-04-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/firebase-cloud-messaging-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/firebase-cloud-messaging-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-audience-manager-dcs-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adobe-audience-manager-dcs-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adobe-audience-manager-dcs-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/foresee-tag/</loc>
     <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11618,6 +14400,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/foresee-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-journey-builder-connector-deprecated/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesforce-journey-builder-connector-deprecated/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-journey-builder-connector-deprecated/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/line-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/line-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/line-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/wootric-tag/</loc>
@@ -11633,6 +14441,123 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/wootric-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pardot-connector/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/pardot-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/pardot-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-aws-sqs-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/amazon-aws-sqs-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-aws-sqs-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/aws-kinesis-streams-connector/</loc>
+    <lastmod>2023-04-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/aws-kinesis-streams-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/aws-kinesis-streams-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-cloud-pubsub-connector-service-account/</loc>
+    <lastmod>2022-10-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-cloud-pubsub-connector-service-account/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-cloud-pubsub-connector-service-account/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/emarsys-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/emarsys-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/emarsys-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-azure-service-bus-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/microsoft-azure-service-bus-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-azure-service-bus-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-campaign-connector/</loc>
+    <lastmod>2022-06-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adobe-campaign-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adobe-campaign-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/intelliad-connector/</loc>
+    <lastmod>2017-06-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/intelliad-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/intelliad-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/localytics-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/localytics-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/localytics-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/the-trade-desk-universal-pixel-tag/</loc>
     <lastmod>2018-06-26T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11644,6 +14569,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/the-trade-desk-universal-pixel-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-sheets-connector/</loc>
+    <lastmod>2022-06-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-sheets-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-sheets-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/xandr-connector-legacy/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/xandr-connector-legacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/xandr-connector-legacy/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/criteo-adblock-tag/</loc>
@@ -11659,6 +14610,45 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/criteo-adblock-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-email-studio-connector-legacy/</loc>
+    <lastmod>2022-06-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesforce-email-studio-connector-legacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-email-studio-connector-legacy/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mailchimp-connector/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/mailchimp-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/mailchimp-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tealium-for-salesforce/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/tealium-for-salesforce/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/tealium-for-salesforce/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/pinterest-tag/</loc>
     <lastmod>2019-10-30T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11670,6 +14660,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/pinterest-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/audiencestore-connector/</loc>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/audiencestore-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/audiencestore-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-target-using-global-mbox-with-utagsyncjs/</loc>
@@ -11698,6 +14701,19 @@
                 href="https://docs-preview.tealium.co.jp/tech-partners/ibm-websphere-commerce-integration-guide/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mandrill-connector/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/mandrill-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/mandrill-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/optimizely-synchronous-implementation/</loc>
     <lastmod>2016-07-08T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11709,6 +14725,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/optimizely-synchronous-implementation/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/cheetah-digital-connector/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/cheetah-digital-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/cheetah-digital-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-ads-remarketing-tag/</loc>
@@ -11748,6 +14777,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-cross-domain-tracking/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-connector/</loc>
+    <lastmod>2020-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/salesforce-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/responsys-connector-soap-api/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/responsys-connector-soap-api/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/responsys-connector-soap-api/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-publisher-tag/</loc>
@@ -11800,6 +14855,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/rc-tags/ss_connectors/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/webhook-connector-setup-guide/</loc>
+    <lastmod>2022-06-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/webhook-connector-setup-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/webhook-connector-setup-guide/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/facebook-audiences-connector/</loc>
+    <lastmod>2022-03-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/facebook-audiences-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-audiences-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-tag-enhanced-e-commerce/</loc>
@@ -11945,6 +15026,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/tradedoubler-conversion-tracking-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-campaign-standard-oauth-connector/</loc>
+    <lastmod>2024-03-20T09:06:52-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adobe-campaign-standard-oauth-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adobe-campaign-standard-oauth-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-aep-connector/</loc>
+    <lastmod>2024-03-20T09:06:52-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/adobe-aep-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/adobe-aep-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/extensions/extensions-list/adobe-target-extension/</loc>
     <lastmod>2024-01-30T15:26:23-08:00</lastmod>
     <xhtml:link
@@ -11969,6 +15076,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/extensions/extensions-list/adobe-target-content-modification-extension/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/algolia-insights-connector/</loc>
+    <lastmod>2024-03-19T18:05:19-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/algolia-insights-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/algolia-insights-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/platforms/xamarin-v1/api/</loc>
@@ -12088,6 +15208,19 @@
                 href="https://docs-preview.tealium.co.jp/tech-partners/integrating-audiencestream-and-optimizely-full-stack/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/avo-inspector-connector/</loc>
+    <lastmod>2024-03-19T18:05:19-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/avo-inspector-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/avo-inspector-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/comscore-mobile-js-tracking-tag/</loc>
     <lastmod>2024-01-25T15:06:48-08:00</lastmod>
     <xhtml:link
@@ -12099,6 +15232,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/comscore-mobile-js-tracking-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/confluent-kafka-connect-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/confluent-kafka-connect-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/confluent-kafka-connect-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/rc-tags/da_audiencedb/</loc>
@@ -12244,6 +15390,19 @@
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/extensions/extensions-list/e-commerce-extension/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/facebook-audiences-customer-provided-credentials-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/facebook-audiences-customer-provided-credentials-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-audiences-customer-provided-credentials-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/rc-tags/first_party_domains/</loc>
     <lastmod>2024-01-30T15:26:23-08:00</lastmod>
     <xhtml:link
@@ -12268,6 +15427,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/flashtalking-onetag-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-store-sales-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/google-ads-store-sales-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-store-sales-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/tech-partners/google-sa360-enhanced-conversions-implementation-guide/</loc>
@@ -12517,6 +15689,58 @@
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/extensions/extensions-list/flatten-json-objects-extension/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/launchdarkly-metric-import-api-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/launchdarkly-metric-import-api-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/launchdarkly-metric-import-api-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/marketo-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/marketo-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/marketo-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-bing-ads-offline-conversions-connector/</loc>
+    <lastmod>2024-03-20T09:06:52-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/microsoft-bing-ads-offline-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-bing-ads-offline-conversions-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-dynamics-365-connector/</loc>
+    <lastmod>2024-03-19T08:31:18-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/microsoft-dynamics-365-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-dynamics-365-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/rc-tags/ml_models/</loc>
     <lastmod>2024-02-01T11:20:12-08:00</lastmod>
     <xhtml:link
@@ -12569,6 +15793,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side/tealium-tools/optimizely-helper/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pendo-engage-api-connector/</loc>
+    <lastmod>2024-03-19T08:31:18-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/pendo-engage-api-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/pendo-engage-api-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/early-access/platform-permissions/pii-account-roles/</loc>
     <lastmod>2024-01-22T17:22:46-08:00</lastmod>
     <xhtml:link
@@ -12580,6 +15817,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/early-access/platform-permissions/pii-account-roles/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/reddit-conversions-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/reddit-conversions-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/reddit-conversions-connector/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/simpli-fi/</loc>
@@ -12907,6 +16157,32 @@
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/extensions/extensions-list/tealium-events-extension/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/the-trade-desk-third-party-data-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/the-trade-desk-third-party-data-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/the-trade-desk-third-party-data-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-offline-events-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/tiktok-offline-events-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-offline-events-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/extensions/extensions-list/usercentrics-extension/</loc>
     <lastmod>2024-01-30T15:26:23-08:00</lastmod>
     <xhtml:link
@@ -13037,6 +16313,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side/connectors/webhook-connectors/vendor-examples/webhook-salesforce-predictive-intelligence-api/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/xandr-instant-audience-connector/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/xandr-instant-audience-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/xandr-instant-audience-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/events/event-types/youtube-event/</loc>
     <lastmod>2024-01-31T08:07:40-08:00</lastmod>
     <xhtml:link
@@ -13087,6 +16376,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/</loc>
+    <lastmod>2024-03-20T09:06:52-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/audiencestream-install-options-for-web/</loc>
@@ -13295,6 +16597,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/extensions/extensions-list/content-modification-extension/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/smart-digital/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/smart-digital/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/smart-digital/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/events/event-types/scroll-event/</loc>
@@ -13763,6 +17078,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/tealium-tools/environment-switcher/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/server-side-connectors/recent/</loc>
+    <lastmod>2024-03-20T09:12:08-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/server-side-connectors/recent/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/server-side-connectors/recent/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/extensions/extensions-list/lower-casing-extension/</loc>
