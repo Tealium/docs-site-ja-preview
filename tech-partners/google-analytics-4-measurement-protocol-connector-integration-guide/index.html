@@ -291,7 +291,7 @@ var utag_data = {
 <li>イベントの送信</li>
 <li>Firebase イベントの送信</li>
 </ul>
-<p>図に表示されているダイアグラムに表示されている Google Analytics 4 タグの追加の設定の詳細については、<a href="">Google Analytics 4 (GA4) タグのセットアップガイド</a> を参照してください。</p>
+<p>図に表示されているダイアグラムに表示されている Google Analytics 4 タグの追加の設定の詳細については、<a href="/client-side-tags/google-analytics-4-ga4-tag/">Google Analytics 4 (GA4) タグのセットアップガイド</a> を参照してください。</p>
 <h3 id="考慮事項">考慮事項</h3>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Google Analytics 4 コネクタの Google Analytics Measurement Protocol は、クライアントサイドのタグソリューションの完全な代替ではありません。</p>
 <h3 id="制限事項">制限事項</h3>
@@ -317,7 +317,7 @@ var utag_data = {
 <pre tabindex="0"><code>https://google-analytics.com/debug/mp/collect?
 </code></pre><p>Tealium Measurement Protocol コネクタは、イベントデータの検証プロセスを表示する Trace 中にこのエンドポイントを使用します。</p>
 <h3 id="推奨事項と設定の詳細">推奨事項と設定の詳細</h3>
-<p>上記の制限事項を回避し、すべてのデータ要件を完全にカバーするためには、Tealium iQ タグ管理で <a href="">Google Analytics 4 タグ</a> を実装します。タグをすべてのページで読み込むように設定し、<strong>Send Page View</strong> を <code>false</code> に設定します。さらに、Google Analytics Cookie Matching Service タグを追加して、Google <code>clientId</code> を <code>utag_main__ga</code> クッキー値として自動的に追加します。</p>
+<p>上記の制限事項を回避し、すべてのデータ要件を完全にカバーするためには、Tealium iQ タグ管理で <a href="/client-side-tags/google-analytics-4-ga4-tag/">Google Analytics 4 タグ</a> を実装します。タグをすべてのページで読み込むように設定し、<strong>Send Page View</strong> を <code>false</code> に設定します。さらに、Google Analytics Cookie Matching Service タグを追加して、Google <code>clientId</code> を <code>utag_main__ga</code> クッキー値として自動的に追加します。</p>
 <p>その後、Google Analytics コネクタで Google の自動収集イベント以外の必要なイベントを設定できます。</p>
 <p>Google Analytics 4 タグは、<code>order_id</code> が存在する場合に自動的に購入イベントをトリガーします。E-commerce 拡張マッピングを介して購入を追跡する場合は、<a href="/iq-tag-management/extensions/extensions-list/set-data-values-extension/">Set Data Values</a> 拡張を Google Analytics 4 にスコープを設定して <code>_corder</code> 属性をクリアするように構成します。</p>
 <figure><a class="slb" href="/images/server-side-connectors/googleanalytics4measurementprotocolsetdatavalues.png"><img src="/images/server-side-connectors/googleanalytics4measurementprotocolsetdatavalues.png"
@@ -326,7 +326,7 @@ var utag_data = {
     </a>
 </figure>
 <p>Tealium は、クライアントサイドの実装をサポートしてウェブクライアントの統合をより良く対応するだけでなく、Tealium の EventStream を介してモバイルやオフラインイベントをサポートするため、両方のソリューションと組み合わせたアプローチを作成することができます。</p>
-<p>クライアントサイドタグの設定の詳細については、<a href="">Google Analytics 4 (GA4) タグのセットアップガイド</a> を参照してください。</p>
+<p>クライアントサイドタグの設定の詳細については、<a href="/client-side-tags/google-analytics-4-ga4-tag/">Google Analytics 4 (GA4) タグのセットアップガイド</a> を参照してください。</p>
 <h3 id="必要条件">必要条件</h3>
 <table>
 <thead>
@@ -499,7 +499,7 @@ var utag_data = {
 <tbody>
 <tr>
 <td>クライアント ID</td>
-<td>必須。クライアントの一意の識別子。<br><br>この識別子は、Google Analytics 4 タグによって設定されたクライアント ID を使用する必要があります。詳細については、<a href="">Google Analytics 4 (GA4) タグのセットアップガイド</a> を参照してください。</td>
+<td>必須。クライアントの一意の識別子。<br><br>この識別子は、Google Analytics 4 タグによって設定されたクライアント ID を使用する必要があります。詳細については、<a href="/client-side-tags/google-analytics-4-ga4-tag/">Google Analytics 4 (GA4) タグのセットアップガイド</a> を参照してください。</td>
 </tr>
 <tr>
 <td>測定 ID のオーバーライド</td>

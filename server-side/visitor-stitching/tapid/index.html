@@ -678,7 +678,7 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <h2 id="動作原理">動作原理</h2>
 <p>TAPIDはHTTP専用のブラウザクッキーです。元々はクロスドメインの識別を容易にするために設計され、Tealiumのサーバーサイド製品（例：AudienceStream）で使用される<a href="/server-side/visitor-stitching/anonymous-user-visitor-id-attributes/#anonymous-id">匿名ID</a>を保存します。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>訪問者のコンピュータにTAPIDクッキーが<a href="">Collectタグ</a>のターゲットドメインに設定されていない場合、ドメインはCollectタグのペイロードに基づいてTAPIDクッキーを生成します。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>訪問者のコンピュータにTAPIDクッキーが<a href="/client-side-tags/tealium-collect-tag/">Collectタグ</a>のターゲットドメインに設定されていない場合、ドメインはCollectタグのペイロードに基づいてTAPIDクッキーを生成します。</p>
 <p>TAPIDクッキーの値は、ユーザーの訪問者IDに設定されます。この値は通常、クライアントデバイスから取得されます。TAPIDは、ユーザーのデバイスが訪れたアカウントとプロファイルの値を、次の形式で連結された値のリストとして保存します。</p>
 <pre tabindex="0"><code>account-1/profile-1&gt;visitor_id_value-1|account-2/profile-2&gt;visitor_id_value-2
 </code></pre><p>TAPIDは通常、サードパーティのクッキーですが、<a href="/iq-tag-management/administration/first-party-domains/about/">ファーストパーティドメイン</a>ではファーストパーティのクッキーになることもあります。</p>
@@ -717,7 +717,7 @@ var utag_data = {
 <p>APIリクエストには、TAPIDクッキーの値を変更するための3つのパラメータが含まれています。これらのパラメータは、現在の受信APIリクエストに関連するTAPID内のアカウントとプロファイルの値のみに影響します。他のアカウントとプロファイルの値は変更されません。</p>
 <p>パラメータは次のエンドポイントに対してサポートされています。</p>
 <ul>
-<li><code>i.gif</code> - <a href="">Tealium Collectタグ</a></li>
+<li><code>i.gif</code> - <a href="/client-side-tags/tealium-collect-tag/">Tealium Collectタグ</a></li>
 <li><code>/event</code> - <a href="/platforms/http-api/endpoint/#visitor-switching">HTTP API</a></li>
 <li><code>vdata</code> - <a href="/server-side/data-sources/vdata-endpoint/">Visitor Data Enrichment</a></li>
 </ul>

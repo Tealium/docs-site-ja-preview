@@ -10970,6 +10970,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/campaign-monitor-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/true-fit-integration-tag/</loc>
+    <lastmod>2023-12-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/true-fit-integration-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/true-fit-integration-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/nextdoor-connector/</loc>
     <lastmod>2023-11-14T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11022,6 +11035,58 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/movable-ink-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/monita-tag/</loc>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/monita-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/monita-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/industries/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href=""
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/industries/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/neustar-idmp-site-activity-tag/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/neustar-idmp-site-activity-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/neustar-idmp-site-activity-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/</loc>
+    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/industries/tealium-identity-partners/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-ads-audience-management-connector/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11048,6 +11113,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-ads-conversions-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-cloud-retail-tag/</loc>
+    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-cloud-retail-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-cloud-retail-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/avo-web-inspector-tag/</loc>
     <lastmod>2023-06-28T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11061,17 +11139,17 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/avo-web-inspector-tag/"
                 />
   </url><url>
-    <loc>https://docs-preview.tealium.co.jp/client-side-tags/</loc>
-    <lastmod>2024-01-26T10:31:58-08:00</lastmod>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/nextdoor-conversion-pixel-tag/</loc>
+    <lastmod>2023-06-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://docs-preview.tealium.com/client-side-tags/"
+                href="https://docs-preview.tealium.com/client-side-tags/nextdoor-conversion-pixel-tag/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/client-side-tags/"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/nextdoor-conversion-pixel-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mailgun-connector/</loc>
@@ -11085,6 +11163,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/mailgun-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/fullstory-remote-command-tag/</loc>
+    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/fullstory-remote-command-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/fullstory-remote-command-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/boostai-tag/</loc>
+    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/boostai-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/boostai-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/talonone-cam/</loc>
@@ -11113,6 +11217,45 @@
                 href="https://docs-preview.tealium.co.jp/early-access/spotify-conversions-connector-alpha/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/appdynamics-tag/</loc>
+    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/appdynamics-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/appdynamics-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/medallia-digital-tag/</loc>
+    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/medallia-digital-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/medallia-digital-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/nano-tag/</loc>
+    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/nano-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/nano-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/line-audiences-connector/</loc>
     <lastmod>2023-04-27T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11124,6 +11267,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/line-audiences-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/fullcontact-customer-recognition/</loc>
+    <lastmod>2023-04-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/fullcontact-customer-recognition/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/fullcontact-customer-recognition/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/amperity-tag/</loc>
+    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/amperity-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/amperity-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/rtb-house-tag/</loc>
@@ -11139,6 +11308,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/rtb-house-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/uim-tag/</loc>
+    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/uim-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/uim-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/fullstory-user-api-connector/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11152,17 +11334,17 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/fullstory-user-api-connector/"
                 />
   </url><url>
-    <loc>https://docs-preview.tealium.co.jp/industries/</loc>
-    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/bidtellect-universal-pixel-tag/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href=""
+                href="https://docs-preview.tealium.com/client-side-tags/bidtellect-universal-pixel-tag/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/industries/"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/bidtellect-universal-pixel-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pulsepoint-npi-list-connector/</loc>
@@ -11179,7 +11361,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/</loc>
-    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -11217,6 +11399,45 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/6sense/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/appsflyer-mobile-remote-command-tag/</loc>
+    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/appsflyer-mobile-remote-command-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/appsflyer-mobile-remote-command-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/matomo-tag/</loc>
+    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/matomo-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/matomo-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/neustar-fabrick-id-tag/</loc>
+    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/neustar-fabrick-id-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/neustar-fabrick-id-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/neustar-pageadvisor-tag/</loc>
     <lastmod>2023-08-08T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11230,17 +11451,17 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/neustar-pageadvisor-tag/"
                 />
   </url><url>
-    <loc>https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/</loc>
-    <lastmod>2024-03-19T13:11:14-07:00</lastmod>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/neustar-real-user-measurement-tag/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://docs-preview.tealium.com/industries/tealium-identity-partners/"
+                href="https://docs-preview.tealium.com/client-side-tags/neustar-real-user-measurement-tag/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/neustar-real-user-measurement-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/bidtellect-conversion-tag/</loc>
@@ -11267,6 +11488,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/microsoft-customer-match/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-target/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adobe-target/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-target/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/linkedin-conversions-connector/</loc>
@@ -11308,6 +11542,32 @@
                 href="https://docs-preview.tealium.co.jp/tech-partners/google-analytics-4-measurement-protocol-connector-integration-guide/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/acuityads-universal-pixel-tag/</loc>
+    <lastmod>2023-02-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/acuityads-universal-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/acuityads-universal-pixel-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/podsights-pixel/</loc>
+    <lastmod>2023-02-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/podsights-pixel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/podsights-pixel/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/sas-ci-360/</loc>
     <lastmod>2023-02-09T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11319,6 +11579,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/sas-ci-360/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/zeta-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/zeta-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/zeta-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pinterest-conversions/</loc>
@@ -11360,6 +11633,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/partnerize-event-tracker-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/skyglue/</loc>
+    <lastmod>2022-12-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/skyglue/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/skyglue/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-ad-manager-360-audience-pixel-tag/</loc>
+    <lastmod>2022-12-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-ad-manager-360-audience-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-ad-manager-360-audience-pixel-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-sa360-enhanced-conversions-connector/</loc>
     <lastmod>2023-09-12T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11386,6 +11685,32 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/flashtalking-user-segments-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/crimtan-tag/</loc>
+    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/crimtan-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/crimtan-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/neustar-platformone-conversion-tag/</loc>
+    <lastmod>2022-11-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/neustar-platformone-conversion-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/neustar-platformone-conversion-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-test-target-tag/</loc>
     <lastmod>2022-11-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11399,6 +11724,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-test-target-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/yandex-metrica-tag/</loc>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/yandex-metrica-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/yandex-metrica-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/clicksend-connector/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11410,6 +11748,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/clicksend-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/ipsos-iris-tag-setup-guide/</loc>
+    <lastmod>2022-11-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/ipsos-iris-tag-setup-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/ipsos-iris-tag-setup-guide/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-audiences-connector-setup-guide/</loc>
@@ -11451,6 +11802,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-interaction-studio-connector-setup-guide/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/line-tag-setup-guide/</loc>
+    <lastmod>2022-10-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/line-tag-setup-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/line-tag-setup-guide/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/yahoo-japan-ads-api-connector-setup-guide/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11490,6 +11854,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/mapp-intelligence-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/userway-tag/</loc>
+    <lastmod>2022-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/userway-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/userway-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amobee-connector-setup-guide/</loc>
     <lastmod>2022-10-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11501,6 +11878,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/amobee-connector-setup-guide/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/richrelevance-tag/</loc>
+    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/richrelevance-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/richrelevance-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/coveo-connector/</loc>
@@ -11516,6 +11906,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/coveo-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/rockerbox-tag/</loc>
+    <lastmod>2022-09-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/rockerbox-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/rockerbox-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/whatsapp-business-connector/</loc>
     <lastmod>2022-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11527,6 +11930,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/whatsapp-business-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/at-internet-piano-analytics-tag/</loc>
+    <lastmod>2022-10-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/at-internet-piano-analytics-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/at-internet-piano-analytics-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/awin-conversions-connector/</loc>
@@ -11553,6 +11969,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/linkedin-matched-audiences-connector-setup-guide/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/twitter-pixel-tag/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/twitter-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/twitter-pixel-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/cj-tracking-api-connector/</loc>
@@ -11594,6 +12023,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/yahoo-datax-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-ad-manager-conversion-tag/</loc>
+    <lastmod>2022-07-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-ad-manager-conversion-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-ad-manager-conversion-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adform-segments-connector/</loc>
     <lastmod>2022-08-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11605,6 +12047,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/adform-segments-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/acxiom-real-identity-rtag/</loc>
+    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/acxiom-real-identity-rtag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/acxiom-real-identity-rtag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/at-internet-piano-analytics-connector/</loc>
@@ -11683,6 +12138,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/paypal-shopping-analytics-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/merkle-merkury-tag/</loc>
+    <lastmod>2022-05-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/merkle-merkury-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/merkle-merkury-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/</loc>
@@ -11776,6 +12244,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/pegasystems-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/epsilon-partner-sync-web-service-tag/</loc>
+    <lastmod>2022-04-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/epsilon-partner-sync-web-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/epsilon-partner-sync-web-service-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/epsilon-event-api-connector/</loc>
     <lastmod>2022-11-16T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11815,6 +12296,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/rokt-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/schema-app-tag/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/schema-app-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/schema-app-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-advertising-dsp-connector/</loc>
     <lastmod>2022-09-08T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11839,6 +12333,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/connector-insights-facebook-custom-audiences/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/epsilon-universal-site-tag/</loc>
+    <lastmod>2022-10-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/epsilon-universal-site-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/epsilon-universal-site-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/mediamath-connector/</loc>
@@ -11880,6 +12387,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/aws-kinesis-streams-tealium-provided-credentials-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/salsify-tag/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/salsify-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/salsify-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/rokt-events-connector/</loc>
     <lastmod>2022-04-14T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11893,6 +12413,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/rokt-events-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/movable-ink-da-vinci-signal-tag/</loc>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/movable-ink-da-vinci-signal-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/movable-ink-da-vinci-signal-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-events-connector/</loc>
     <lastmod>2023-10-16T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11904,6 +12437,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/tiktok-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/kochava-tag/</loc>
+    <lastmod>2022-01-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/kochava-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/kochava-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/acoustic-campaign-connector/</loc>
@@ -11932,6 +12478,58 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/iterable-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-media-analytics-3x-sdk-tag/</loc>
+    <lastmod>2021-12-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adobe-media-analytics-3x-sdk-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-media-analytics-3x-sdk-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/appsflyer-web-sdk-tag/</loc>
+    <lastmod>2021-12-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/appsflyer-web-sdk-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/appsflyer-web-sdk-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/appsflyer-smart-banner-sdk-tag/</loc>
+    <lastmod>2021-12-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/appsflyer-smart-banner-sdk-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/appsflyer-smart-banner-sdk-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/liveperson/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/liveperson/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/liveperson/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/airship-connector/</loc>
     <lastmod>2022-01-20T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11958,6 +12556,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/microsoft-advertising-uet-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/pushengage-tag/</loc>
+    <lastmod>2021-12-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/pushengage-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/pushengage-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amplitude-connector/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11969,6 +12580,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/amplitude-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/branchio-tag/</loc>
+    <lastmod>2021-12-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/branchio-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/branchio-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/contentsquare-mobile-remote-command-tag/</loc>
@@ -11995,6 +12619,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/kochava-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/branch-mobile-remote-command-tag/</loc>
+    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/branch-mobile-remote-command-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/branch-mobile-remote-command-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/criteo-connector/</loc>
@@ -12049,6 +12686,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/sendgrid-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/amobee-pixel-tag/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/amobee-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/amobee-pixel-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/emarketeer-tag/</loc>
     <lastmod>2021-10-08T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12060,6 +12710,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/emarketeer-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/tiktok-pixel-tag/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/tiktok-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/tiktok-pixel-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/twilio-connector/</loc>
@@ -12101,6 +12764,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-experience-platform-web-sdk-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/linkedin-insight-tag/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/linkedin-insight-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/linkedin-insight-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/mntn-smarter-pixel-tag/</loc>
+    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/mntn-smarter-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/mntn-smarter-pixel-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/connexity-pixel/</loc>
     <lastmod>2021-09-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12127,6 +12816,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/pinterest-audiences-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/lytics-tag/</loc>
+    <lastmod>2021-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/lytics-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/lytics-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-pinpoint-connector/</loc>
     <lastmod>2021-11-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12138,6 +12840,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-pinpoint-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/oracle-cx-tag/</loc>
+    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/oracle-cx-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/oracle-cx-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/reddit-pixel-tag/</loc>
@@ -12153,6 +12868,45 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/reddit-pixel-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/acton-tag/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/acton-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/acton-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adlucent-tag/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adlucent-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adlucent-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-consent-mode-tag-beta/</loc>
+    <lastmod>2022-06-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-consent-mode-tag-beta/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-consent-mode-tag-beta/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/splunk-connector/</loc>
     <lastmod>2021-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12166,6 +12920,58 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/splunk-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/yahoo-dot-tag/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/yahoo-dot-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/yahoo-dot-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/cim-gemiusprism-tag/</loc>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/cim-gemiusprism-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/cim-gemiusprism-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/perimeterx-bot-defender-tag/</loc>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/perimeterx-bot-defender-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/perimeterx-bot-defender-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/kayak-tag-connector/</loc>
+    <lastmod>2021-07-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/kayak-tag-connector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/kayak-tag-connector/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/qualtrics-xm-directory-connector/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12177,6 +12983,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/qualtrics-xm-directory-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/quantcast-cookie-matching-service-tag/</loc>
+    <lastmod>2021-07-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/quantcast-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/quantcast-cookie-matching-service-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/zoho-crm-connector/</loc>
@@ -12231,6 +13050,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/kochava-mobile-remote-command-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/maxymiser-async-tag/</loc>
+    <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/maxymiser-async-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/maxymiser-async-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adjust-mobile-remote-command-tag/</loc>
+    <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adjust-mobile-remote-command-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adjust-mobile-remote-command-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-dmp-connector/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12257,6 +13102,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/impact-page-loads-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/amobee-cooking-matching-service-tag/</loc>
+    <lastmod>2021-04-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/amobee-cooking-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/amobee-cooking-matching-service-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/quantcast-audiences-connector/</loc>
     <lastmod>2023-09-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12268,6 +13126,58 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/quantcast-audiences-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-analytics-4-ga4-tag/</loc>
+    <lastmod>2022-09-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-analytics-4-ga4-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-analytics-4-ga4-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/exactag-tag/</loc>
+    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/exactag-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/exactag-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/yahoo-japan-site-general-tag/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/yahoo-japan-site-general-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/yahoo-japan-site-general-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/criteo-onetag-tag/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/criteo-onetag-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/criteo-onetag-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-enhanced-conversions-legacy-connector/</loc>
@@ -12322,6 +13232,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/insightly-crm-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/firebase-remote-command-tag/</loc>
+    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/firebase-remote-command-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/firebase-remote-command-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/amazon-eventbridge-connector/</loc>
     <lastmod>2022-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12333,6 +13256,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-eventbridge-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/smartassistant-11-tag/</loc>
+    <lastmod>2020-11-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/smartassistant-11-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/smartassistant-11-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/bazaarvoice-pixel-tag/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/bazaarvoice-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/bazaarvoice-pixel-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/sovendus-tag/</loc>
@@ -12413,6 +13362,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/heap-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/pulsepoint-hcp365-tag/</loc>
+    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/pulsepoint-hcp365-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/pulsepoint-hcp365-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-analytics-gtagjs-tag/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12424,6 +13386,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/google-analytics-gtagjs-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/cheetah-digital-tag/</loc>
+    <lastmod>2022-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/cheetah-digital-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/cheetah-digital-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/agillic-recipients-connector/</loc>
@@ -12491,6 +13466,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/snapchat-audience-match-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/sitecatalyst-tag/</loc>
+    <lastmod>2016-07-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/sitecatalyst-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/sitecatalyst-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-standard-objects-connector/</loc>
     <lastmod>2020-11-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12543,6 +13531,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/ytel-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/pardot-tag/</loc>
+    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/pardot-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/pardot-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/responsys-marketing-cloud-connector/</loc>
     <lastmod>2021-08-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12567,6 +13568,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/twitter-campaigns-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/aim-xr-website-tag/</loc>
+    <lastmod>2023-08-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/aim-xr-website-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/aim-xr-website-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/dmd-connector/</loc>
@@ -12686,6 +13700,32 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/fullstory-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/hotjar-tag/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/hotjar-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/hotjar-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/facebook-app-analytics-tag/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/facebook-app-analytics-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/facebook-app-analytics-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/facebook-connector-series/</loc>
     <lastmod>2020-08-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12790,6 +13830,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/impact-conversions-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adition-track-tag/</loc>
+    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adition-track-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adition-track-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/adition-tagging-tag/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12829,6 +13882,32 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/oracle-infinity-analytics-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/bold360-formerly-boldchat-tag/</loc>
+    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/bold360-formerly-boldchat-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/bold360-formerly-boldchat-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/flashtalking-cookie-matching-service-tag/</loc>
+    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/flashtalking-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/flashtalking-cookie-matching-service-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/pixibo-fyf-tag/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12855,6 +13934,84 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/pixibo-conversion-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/taboola-pixel-tag/</loc>
+    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/taboola-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/taboola-pixel-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/fullstory-tag/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/fullstory-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/fullstory-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/braze-mobile-remote-command-tag/</loc>
+    <lastmod>2022-09-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/braze-mobile-remote-command-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/braze-mobile-remote-command-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/iadvize-tag/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/iadvize-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/iadvize-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/sizmek-cookie-matching-service-tag/</loc>
+    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/sizmek-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/sizmek-cookie-matching-service-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/facebook-pixel-tag/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/facebook-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/facebook-pixel-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/adroll-smart-pixel-tag/</loc>
     <lastmod>2020-04-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12868,6 +14025,84 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/adroll-smart-pixel-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/piwik-pro-tag/</loc>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/piwik-pro-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/piwik-pro-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/alphonso-website-tag/</loc>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/alphonso-website-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/alphonso-website-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/digilant-tag/</loc>
+    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/digilant-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/digilant-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/uplift-tag/</loc>
+    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/uplift-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/uplift-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/rakuten-advertising-tag/</loc>
+    <lastmod>2021-04-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/rakuten-advertising-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/rakuten-advertising-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adition-cookie-matching-tag/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adition-cookie-matching-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adition-cookie-matching-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/audienceone-discovery-tag/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12879,6 +14114,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/audienceone-discovery-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/basis-technologies-cookie-matching-service-tag/</loc>
+    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/basis-technologies-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/basis-technologies-cookie-matching-service-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/dataxu-cookie-matching-service-tag/</loc>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/dataxu-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/dataxu-cookie-matching-service-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/ibm-ubx-cookie-matching-service-tag/</loc>
@@ -12907,6 +14168,71 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/intelliad-cookie-matching-service-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/krux-cookie-matching-service-tag/</loc>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/krux-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/krux-cookie-matching-service-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/mixpanel-tag/</loc>
+    <lastmod>2022-06-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/mixpanel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/mixpanel-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/apprl-tag/</loc>
+    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/apprl-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/apprl-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/mediamath-cookie-matching-service-tag/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/mediamath-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/mediamath-cookie-matching-service-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/rubicon-cookie-matching-service-tag/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/rubicon-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/rubicon-cookie-matching-service-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/tapad-cookie-matching-service-tag/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -12918,6 +14244,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/tapad-cookie-matching-service-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/contentsquare-ux-analytics-tag/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/contentsquare-ux-analytics-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/contentsquare-ux-analytics-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-email-studio-oauth2-exacttarget-connector/</loc>
@@ -12944,6 +14283,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/optimizely-events-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/rtoaster-tag/</loc>
+    <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/rtoaster-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/rtoaster-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/shopmessage-tag/</loc>
@@ -12985,6 +14337,58 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/dun-amp-bradstreet-web-visitor-id-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-audience-manager-tag/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adobe-audience-manager-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-audience-manager-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/ispot-tv-cookie-matching-service-tag/</loc>
+    <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/ispot-tv-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/ispot-tv-cookie-matching-service-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/quicklizard-tag/</loc>
+    <lastmod>2019-12-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/quicklizard-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/quicklizard-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/dynamic-yield-tag/</loc>
+    <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/dynamic-yield-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/dynamic-yield-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/the-trade-desk-offline-conversion-connector/</loc>
     <lastmod>2021-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -13011,6 +14415,45 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/amplitude-connector-setup-guide-deprecated/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/genesys-chat-widget-tag/</loc>
+    <lastmod>2019-11-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/genesys-chat-widget-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/genesys-chat-widget-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/firebase-remote-command-order-event-example/</loc>
+    <lastmod>2019-12-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/firebase-remote-command-order-event-example/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/firebase-remote-command-order-event-example/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/amplitude-tag/</loc>
+    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/amplitude-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/amplitude-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-ads-conversion-tracking-and-remarketing-gtagjs-tag/</loc>
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -13022,6 +14465,58 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/google-ads-conversion-tracking-and-remarketing-gtagjs-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/pepperjam-tag/</loc>
+    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/pepperjam-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/pepperjam-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/at-internet-smarttag/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/at-internet-smarttag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/at-internet-smarttag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/liveramp-realtime-identity-link-pixel-tag/</loc>
+    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/liveramp-realtime-identity-link-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/liveramp-realtime-identity-link-pixel-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/facebook-buttons-tag/</loc>
+    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/facebook-buttons-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/facebook-buttons-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/sailthru-personalization-engine-tag/</loc>
@@ -13050,6 +14545,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/catchpoint-real-user-monitoring-rum-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/intent-media-advertiser-pixel-tag/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/intent-media-advertiser-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/intent-media-advertiser-pixel-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/knotch-tag/</loc>
     <lastmod>2019-10-29T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -13061,6 +14569,84 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/knotch-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/quantcast-easy-tag-for-advertise/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/quantcast-easy-tag-for-advertise/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/quantcast-easy-tag-for-advertise/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/quantcast-easy-tag-for-measure/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/quantcast-easy-tag-for-measure/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/quantcast-easy-tag-for-measure/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/glassbox-detector-tag/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/glassbox-detector-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/glassbox-detector-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/yext-conversion-tag/</loc>
+    <lastmod>2019-11-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/yext-conversion-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/yext-conversion-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/invocajs-web-integration-tag/</loc>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/invocajs-web-integration-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/invocajs-web-integration-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/snap-pixel-tag/</loc>
+    <lastmod>2023-06-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/snap-pixel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/snap-pixel-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/tead-tag/</loc>
@@ -13076,6 +14662,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/tead-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/teads-advertiser-tag/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/teads-advertiser-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/teads-advertiser-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/eloqua-tag-set-up-guide/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -13087,6 +14686,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/eloqua-tag-set-up-guide/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/quora-tag/</loc>
+    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/quora-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/quora-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/everflow-conversion-tracking-connector/</loc>
@@ -13102,6 +14714,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/everflow-conversion-tracking-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/airship-web-notify-tag/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/airship-web-notify-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/airship-web-notify-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/branch-events-connector/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -13115,6 +14740,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/branch-events-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/observepoint-data-layer-validator-tag/</loc>
+    <lastmod>2019-09-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/observepoint-data-layer-validator-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/observepoint-data-layer-validator-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-journey-builder-with-oauth-connector/</loc>
     <lastmod>2020-11-06T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -13126,6 +14764,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-journey-builder-with-oauth-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/beamer-tag/</loc>
+    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/beamer-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/beamer-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/anura-tag/</loc>
@@ -14168,6 +15819,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/xiti-by-at-internet-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/the-trade-desk-cookie-matching-service-tag/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/the-trade-desk-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/the-trade-desk-cookie-matching-service-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-audience-studio-connector/</loc>
     <lastmod>2022-04-12T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14192,6 +15856,45 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/smartfocus-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/liveintent-tag/</loc>
+    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/liveintent-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/liveintent-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/yellowhammer-tag/</loc>
+    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/yellowhammer-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/yellowhammer-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/zaius-tag/</loc>
+    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/zaius-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/zaius-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/piano-tag/</loc>
@@ -14246,6 +15949,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/google-analytics-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/bloomreach-tag/</loc>
+    <lastmod>2022-04-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/bloomreach-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/bloomreach-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/facebook-messenger-connector/</loc>
     <lastmod>2021-10-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14257,6 +15973,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-messenger-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/floodlight-gtagjs-tag/</loc>
+    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/floodlight-gtagjs-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/floodlight-gtagjs-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/listrak-connector/</loc>
@@ -14376,6 +16105,58 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/firebase-cloud-messaging-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/braze-web-sdk-tag/</loc>
+    <lastmod>2022-09-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/braze-web-sdk-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/braze-web-sdk-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/monetate-tag/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/monetate-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/monetate-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/maropost-tag/</loc>
+    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/maropost-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/maropost-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/snowplow-tag/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/snowplow-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/snowplow-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-audience-manager-dcs-connector/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14428,6 +16209,32 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/line-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/cubed-attribution-tag/</loc>
+    <lastmod>2017-09-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/cubed-attribution-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/cubed-attribution-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/topmailru-tag/</loc>
+    <lastmod>2023-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/topmailru-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/topmailru-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/wootric-tag/</loc>
     <lastmod>2017-09-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14439,6 +16246,71 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/wootric-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/pebblepost-tag/</loc>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/pebblepost-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/pebblepost-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/distribute-travel-tag/</loc>
+    <lastmod>2017-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/distribute-travel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/distribute-travel-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/nielsen-digital-content-ratings-dcr-page-measurement-tag/</loc>
+    <lastmod>2017-08-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/nielsen-digital-content-ratings-dcr-page-measurement-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/nielsen-digital-content-ratings-dcr-page-measurement-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/awin-tag/</loc>
+    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/awin-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/awin-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/agilone-webtag-tag/</loc>
+    <lastmod>2017-08-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/agilone-webtag-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/agilone-webtag-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/pardot-connector/</loc>
@@ -14467,6 +16339,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/amazon-aws-sqs-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/cortex-search-abandon-tag/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/cortex-search-abandon-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/cortex-search-abandon-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/aws-kinesis-streams-connector/</loc>
     <lastmod>2023-04-20T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14491,6 +16376,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/google-cloud-pubsub-connector-service-account/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/simility-tag/</loc>
+    <lastmod>2017-07-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/simility-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/simility-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/emarsys-connector/</loc>
@@ -14571,6 +16469,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/the-trade-desk-universal-pixel-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-experience-cloud-id-service-tag/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adobe-experience-cloud-id-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-experience-cloud-id-service-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-sheets-connector/</loc>
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14597,6 +16508,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/xandr-connector-legacy/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/extole-tag/</loc>
+    <lastmod>2023-09-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/extole-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/extole-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/criteo-adblock-tag/</loc>
     <lastmod>2017-04-19T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14608,6 +16532,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/criteo-adblock-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/heap-tag/</loc>
+    <lastmod>2017-02-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/heap-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/heap-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-email-studio-connector-legacy/</loc>
@@ -14636,6 +16573,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/mailchimp-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-heartbeat-tag/</loc>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adobe-heartbeat-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-heartbeat-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/tealium-for-salesforce/</loc>
     <lastmod>2024-03-19T13:11:14-07:00</lastmod>
     <xhtml:link
@@ -14662,6 +16612,110 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/pinterest-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/mybuys-tag/</loc>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/mybuys-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/mybuys-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/twitter-universal-website-tag/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/twitter-universal-website-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/twitter-universal-website-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/sitecatalyst-firing-multiple-events-and-event-serialization/</loc>
+    <lastmod>2016-08-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/sitecatalyst-firing-multiple-events-and-event-serialization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/sitecatalyst-firing-multiple-events-and-event-serialization/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/facebook-dynamic-ads-tag/</loc>
+    <lastmod>2018-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/facebook-dynamic-ads-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/facebook-dynamic-ads-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/facebook-conversions-tag-deprecated/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/facebook-conversions-tag-deprecated/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/facebook-conversions-tag-deprecated/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/webtrekk-tag/</loc>
+    <lastmod>2019-12-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/webtrekk-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/webtrekk-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-event-tracking/</loc>
+    <lastmod>2023-07-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-universal-analytics-event-tracking/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-event-tracking/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/hybris-integration/</loc>
+    <lastmod>2016-05-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/hybris-integration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/hybris-integration/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/audiencestore-connector/</loc>
     <lastmod>2023-09-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14675,6 +16729,32 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/audiencestore-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/setting-up-advertising-features-in-google-analytics-for-ios-and-android/</loc>
+    <lastmod>2016-11-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/setting-up-advertising-features-in-google-analytics-for-ios-and-android/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/setting-up-advertising-features-in-google-analytics-for-ios-and-android/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-appmeasurement-for-js-tag/</loc>
+    <lastmod>2022-08-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adobe-appmeasurement-for-js-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-appmeasurement-for-js-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-target-using-global-mbox-with-utagsyncjs/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14686,6 +16766,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-target-using-global-mbox-with-utagsyncjs/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-test-target-series/</loc>
+    <lastmod>2017-11-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adobe-test-target-series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-test-target-series/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-analytics-series/</loc>
+    <lastmod>2023-07-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-analytics-series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-analytics-series/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/tech-partners/ibm-websphere-commerce-integration-guide/</loc>
@@ -14727,6 +16833,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/optimizely-synchronous-implementation/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/flicker-free-test-and-target/</loc>
+    <lastmod>2016-04-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/flicker-free-test-and-target/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/flicker-free-test-and-target/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/cheetah-digital-connector/</loc>
     <lastmod>2020-11-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14738,6 +16857,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/cheetah-digital-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/optimizely-asynchronous-tag/</loc>
+    <lastmod>2016-04-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/optimizely-asynchronous-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/optimizely-asynchronous-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-ads-remarketing-tag/</loc>
@@ -14766,6 +16898,45 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/floodlight-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/webtrends-tag/</loc>
+    <lastmod>2016-05-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/webtrends-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/webtrends-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/cj-affiliate-formerly-commission-junction-tag/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/cj-affiliate-formerly-commission-junction-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/cj-affiliate-formerly-commission-junction-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/microsoft-advertising-universal-event-tracking-uet-tag/</loc>
+    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/microsoft-advertising-universal-event-tracking-uet-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/microsoft-advertising-universal-event-tracking-uet-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-cross-domain-tracking/</loc>
     <lastmod>2023-07-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14779,6 +16950,45 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-cross-domain-tracking/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-analyticsjs-tag/</loc>
+    <lastmod>2023-07-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-universal-analytics-analyticsjs-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-analyticsjs-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-tag-advanced-mapping/</loc>
+    <lastmod>2023-07-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-universal-analytics-tag-advanced-mapping/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-tag-advanced-mapping/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/optimizely-series/</loc>
+    <lastmod>2016-07-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/optimizely-series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/optimizely-series/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-connector/</loc>
     <lastmod>2020-11-06T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14790,6 +17000,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/salesforce-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/tealium-collect-tag/</loc>
+    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/tealium-collect-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/tealium-collect-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/responsys-connector-soap-api/</loc>
@@ -14829,6 +17052,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/facebook-pixel-legacy/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/tealium-seo-json-ld-tag/</loc>
+    <lastmod>2018-11-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/tealium-seo-json-ld-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/tealium-seo-json-ld-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/rc-tags/</loc>
@@ -14883,6 +17119,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-audiences-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adobe-analytics-sitecatalyst-tag-legacy/</loc>
+    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adobe-analytics-sitecatalyst-tag-legacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adobe-analytics-sitecatalyst-tag-legacy/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-universal-analytics-tag-enhanced-e-commerce/</loc>
     <lastmod>2023-07-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14922,6 +17171,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/splunk-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/acoustic-digital-analytics-tag/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/acoustic-digital-analytics-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/acoustic-digital-analytics-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/adform-tag/</loc>
+    <lastmod>2020-01-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/adform-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/adform-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/admarketplace-tag/</loc>
     <lastmod>2016-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14933,6 +17208,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/admarketplace-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/advertisingcom-dynamic-retargeter-tag/</loc>
+    <lastmod>2016-05-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/advertisingcom-dynamic-retargeter-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/advertisingcom-dynamic-retargeter-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/akamai-mpulse-tag/</loc>
@@ -14948,6 +17236,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/akamai-mpulse-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/channeladvisor-tag/</loc>
+    <lastmod>2016-04-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/channeladvisor-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/channeladvisor-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/chartbeat-tag/</loc>
+    <lastmod>2016-04-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/chartbeat-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/chartbeat-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/clicktale-carmel-tag/</loc>
     <lastmod>2022-09-08T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14959,6 +17273,110 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/clicktale-carmel-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/commission-factory-au-tag/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/commission-factory-au-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/commission-factory-au-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/convertro-tag-basic-configuration/</loc>
+    <lastmod>2015-03-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/convertro-tag-basic-configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/convertro-tag-basic-configuration/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/crazy-egg-tag/</loc>
+    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/crazy-egg-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/crazy-egg-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-ad-manager-spotlight-tag/</loc>
+    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-ad-manager-spotlight-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-ad-manager-spotlight-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/kenshoo-conversion-tag/</loc>
+    <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/kenshoo-conversion-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/kenshoo-conversion-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/linkshare-tag/</loc>
+    <lastmod>2016-08-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/linkshare-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/linkshare-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/marin-software-tag/</loc>
+    <lastmod>2016-08-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/marin-software-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/marin-software-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/mediamath-tag-basic-configuration/</loc>
+    <lastmod>2017-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/mediamath-tag-basic-configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/mediamath-tag-basic-configuration/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/mediamind-burstingpipe-tag/</loc>
@@ -14987,6 +17405,32 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/nextag-roi-tracker-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/optimizely-sync-tag/</loc>
+    <lastmod>2016-07-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/optimizely-sync-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/optimizely-sync-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/pricegrabber-tag/</loc>
+    <lastmod>2016-04-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/pricegrabber-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/pricegrabber-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/right-media-yieldmanager-tag/</loc>
     <lastmod>2015-03-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -15013,6 +17457,19 @@
                 href="https://docs-preview.tealium.co.jp/client-side-tags/shopzilla-tag/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/tealium-currency-converter-tag/</loc>
+    <lastmod>2018-10-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/tealium-currency-converter-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/tealium-currency-converter-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/tradedoubler-conversion-tracking-tag/</loc>
     <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -15024,6 +17481,97 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/tradedoubler-conversion-tracking-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/zanox-tag/</loc>
+    <lastmod>2015-03-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/zanox-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/zanox-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/acoustic-digital-analytics-cheatsheet/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/acoustic-digital-analytics-cheatsheet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/acoustic-digital-analytics-cheatsheet/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/channel-intelligence-tag/</loc>
+    <lastmod>2015-03-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/channel-intelligence-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/channel-intelligence-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/rocket-fuel-tag/</loc>
+    <lastmod>2015-12-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/rocket-fuel-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/rocket-fuel-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/x-plus-one-tag/</loc>
+    <lastmod>2015-03-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/x-plus-one-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/x-plus-one-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/tribal-fusion-tag/</loc>
+    <lastmod>2016-04-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/tribal-fusion-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/tribal-fusion-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/configuring-multiple-floodlight-tags/</loc>
+    <lastmod>2022-07-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/configuring-multiple-floodlight-tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/configuring-multiple-floodlight-tags/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/adobe-campaign-standard-oauth-connector/</loc>
@@ -15089,6 +17637,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/algolia-insights-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/amazon-ads-server-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/amazon-ads-server-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/amazon-ads-server-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/amazon-advertising-cookie-matching-service-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/amazon-advertising-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/amazon-advertising-cookie-matching-service-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/platforms/xamarin-v1/api/</loc>
@@ -15219,6 +17793,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/avo-inspector-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/comscore-digital-analytix-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/comscore-digital-analytix-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/comscore-digital-analytix-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/comscore-mobile-js-tracking-tag/</loc>
@@ -15403,6 +17990,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/facebook-audiences-customer-provided-credentials-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/fathom-analytics-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/fathom-analytics-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/fathom-analytics-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/rc-tags/first_party_domains/</loc>
     <lastmod>2024-01-30T15:26:23-08:00</lastmod>
     <xhtml:link
@@ -15427,6 +18027,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/client-side-tags/flashtalking-onetag-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-cookie-matching-admgr-dv360/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-cookie-matching-admgr-dv360/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-cookie-matching-admgr-dv360/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/google-cookie-matching-service/</loc>
+    <lastmod>2024-03-20T11:40:37-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/google-cookie-matching-service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/google-cookie-matching-service/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/google-ads-store-sales-connector/</loc>
@@ -15702,6 +18328,19 @@
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/launchdarkly-metric-import-api-connector/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/logicad-tag/</loc>
+    <lastmod>2024-03-20T11:40:37-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/logicad-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/logicad-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/marketo-connector/</loc>
     <lastmod>2024-03-19T13:11:14-07:00</lastmod>
     <xhtml:link
@@ -15780,6 +18419,32 @@
                 href="https://docs-preview.tealium.co.jp/predict/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/mouseflow-tag/</loc>
+    <lastmod>2024-03-20T11:40:37-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/mouseflow-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/mouseflow-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/namogoo-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/namogoo-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/namogoo-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side/tealium-tools/optimizely-helper/</loc>
     <lastmod>2024-02-06T15:43:13-08:00</lastmod>
     <xhtml:link
@@ -15830,6 +18495,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/reddit-conversions-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/salesforce-marketing-cloud-exacttarget/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/salesforce-marketing-cloud-exacttarget/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/salesforce-marketing-cloud-exacttarget/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/session-ai-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/session-ai-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/session-ai-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/client-side-tags/simpli-fi/</loc>
@@ -16313,6 +19004,32 @@
                 href="https://docs-preview.tealium.co.jp/server-side/connectors/webhook-connectors/vendor-examples/webhook-salesforce-predictive-intelligence-api/"
                 />
   </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/wunderkind-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/wunderkind-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/wunderkind-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/xandr-cookie-matching-service-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/xandr-cookie-matching-service-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/xandr-cookie-matching-service-tag/"
+                />
+  </url><url>
     <loc>https://docs-preview.tealium.co.jp/server-side-connectors/xandr-instant-audience-connector/</loc>
     <lastmod>2024-03-19T13:11:14-07:00</lastmod>
     <xhtml:link
@@ -16324,6 +19041,32 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/xandr-instant-audience-connector/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/xandr-seller-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/xandr-seller-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/xandr-seller-tag/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/xandr-tag/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/xandr-tag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/xandr-tag/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/events/event-types/youtube-event/</loc>
@@ -16545,6 +19288,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/iq-tag-management/tealium-tools/build/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/events/event-types/click-event/</loc>
@@ -17091,6 +19847,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://docs-preview.tealium.co.jp/server-side-connectors/recent/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.co.jp/client-side-tags/recent/</loc>
+    <lastmod>2024-03-21T08:57:57-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/client-side-tags/recent/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/client-side-tags/recent/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.co.jp/iq-tag-management/extensions/extensions-list/lower-casing-extension/</loc>

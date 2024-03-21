@@ -685,7 +685,7 @@ var utag_data = {
   <p class="note"><i class="fa fa-exclamation-triangle"></i>EventDBをアカウント内の適切なプロファイルで有効にするには、アカウントマネージャーに連絡してください。EventDBに保存される属性の設定方法については、<a href="/server-side/data-storage/audiencedb-eventdb/configure/">AudienceDBとEventDBの設定</a>を参照してください。</p>
 <p>EventDBが有効になると、スキーマのビューには、EventStreamでフィルタリングされたストリームに適用したタイトルが含まれます：</p>
 <ol>
-<li><a href="">Tealium Collectタグ</a>（または他のCollectライブラリ）がイベントデータをCustomer Data Hubに送信し、TealiumのAmazon S3バケットでキャプチャされます。この段階では、データはフラット化されたJSONです。</li>
+<li><a href="/client-side-tags/tealium-collect-tag/">Tealium Collectタグ</a>（または他のCollectライブラリ）がイベントデータをCustomer Data Hubに送信し、TealiumのAmazon S3バケットでキャプチャされます。この段階では、データはフラット化されたJSONです。</li>
 <li>S3バケットが100 MB（非圧縮）に達するか、1時間が経過すると、いずれか早い方が先に来た場合、データは圧縮され、Redshiftの準備が整います。</li>
 <li>データが圧縮された後、それはあなたのアカウントのためのRedshiftデータベースにコピーされ、インポートされます。</li>
 </ol>

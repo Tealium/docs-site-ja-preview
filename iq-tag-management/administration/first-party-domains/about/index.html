@@ -641,7 +641,7 @@ var utag_data = {
 <p><code>tags.tiqcdn.com</code>サブドメインに対してファーストパーティドメインを設定すると、TealiumはDNSデータベースに追加する必要があるCNAMEレコードを提供します。CNAMEレコードは、一つのドメイン名を別のドメイン名にマッピングするエイリアスです。例えば、<code>www.example.com</code>というウェブサイトの場合、Tealiumは<code>tags.example.com</code>に対するCNAMEレコードを提供し、そのレコードはTealiumのCDNを指してiQ Tag Managementのファイルを提供します。</p>
 <p><code>collect.tealiumiq.com</code>サブドメインに対しては、TealiumはDNS設定に追加する必要があるAレコードを提供します。Aレコードは、サブドメイン名をドメインのIPアドレスにマッピングします。ファーストパーティドメインに設定された各サブドメインに対して、2つのIPアドレスがAレコードとして提供されます。これらの2つのAレコードは、DNSサーバーの負荷分散に使用されます。</p>
 <p>DNS設定の更新についての詳細は、<a href="/iq-tag-management/administration/first-party-domains/update-endpoints/">エンドポイント設定の更新</a>を参照してください。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>ファーストパーティドメインを使用する場合は、最新バージョンの<a href="">Tealium Collectタグ</a>を使用していることを確認してください。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>ファーストパーティドメインを使用する場合は、最新バージョンの<a href="/client-side-tags/tealium-collect-tag/">Tealium Collectタグ</a>を使用していることを確認してください。</p>
 <h3 id="ドメイン証明書の管理">ドメイン証明書の管理</h3>
 <p>ファーストパーティドメインの設定の重要な部分は、SSL/TLS証明書の管理です。これらの証明書は公開鍵証明書で、指定されたドメインを所有していることを確認し、HTTPS経由でウェブサイトの暗号化を検証します。Tealiumは証明書の管理を行うことができ、これには証明書の有効期限が切れる前の自動更新が含まれます。また、自分で証明書をインポートして管理することもできます。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>自分で証明書を管理する場合、証明書が期限切れになる前に更新する責任があります。</p>
