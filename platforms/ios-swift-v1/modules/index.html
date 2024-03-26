@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -356,7 +356,7 @@ var utag_data = {
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p>Tealium Swiftライブラリはモジュール型アーキテクチャを基に設計されています。モジュールは存在する場合は自動的にインスタンス化され、その設定は<code>TealiumConfig</code>インスタンスから取得します。</p>
+  <p>Tealium Swiftライブラリはモジュール型アーキテクチャを基に設計されています。モジュールは存在する場合は自動的にインスタンス化され、その構成は<code>TealiumConfig</code>インスタンスから取得します。</p>
 <p>すべてのモジュールは<code>TealiumCore</code>に依存しています。これは、任意のモジュールをインストールすると<code>TealiumCore</code>もインストールされることを意味します。</p>
 <h2 id="モジュールリスト">モジュールリスト</h2>
 <p>以下にモジュールを自動インスタンス化が行われる内部順序（優先順位）でリスト化しています。</p>
@@ -415,7 +415,7 @@ var utag_data = {
 <tr>
 <td><a href="/platforms/ios-swift-v1/module-list/datasource/">DataSource</a></td>
 <td><code>datasource</code></td>
-<td>データソースIDのための追加の設定初期化オプションを追加。Swift 1.8.0+でCoreに含まれています。</td>
+<td>データソースIDのための追加の構成初期化オプションを追加。Swift 1.8.0+でCoreに含まれています。</td>
 <td>iOS, macOS, tvOS, watchOS</td>
 </tr>
 <tr>
@@ -475,7 +475,7 @@ var utag_data = {
 <tr>
 <td><a href="/platforms/ios-swift-v1/module-list/remote-commands/">RemoteCommands</a></td>
 <td><code>remotecommands</code></td>
-<td><code>URLScheme</code>、<code>UIWebView</code>、または<code>TagManagement</code>を介した設定可能なリモートコードブロックの実行を許可</td>
+<td><code>URLScheme</code>、<code>UIWebView</code>、または<code>TagManagement</code>を介した構成可能なリモートコードブロックの実行を許可</td>
 <td>iOS</td>
 </tr>
 <tr>
@@ -535,7 +535,7 @@ var utag_data = {
 <h3 id="carthage">Carthage</h3>
 <p>Carthageでインストールする場合、必要なモジュールを明示的にインポートする必要があります。すべてのモジュールをインポートすることも可能で、前述のようにモジュールリストを使用しますが、必要なモジュールのみをインポートするとアプリが軽量化されます。特定のモジュールを含める/除外する方法については、<a href="/platforms/ios-swift/install/#carthage">Carthageでのインストール</a>を参照してください。</p>
 <h2 id="モジュールの無効化">モジュールの無効化</h2>
-<p>Tealium Swift SDKのバージョン1.6.5以前では、CocoaPodsまたはCarthageを使用していて不要なモジュールを無効化する唯一の方法は、<a href="/platforms/ios-swift/api/tealium-config/">TealiumConfig</a>オブジェクトを使用して有効/無効のモジュールの配列（ホワイトリスト/ブラックリスト）を設定することでした。このシナリオでは、すべてのコードが最終的なアプリバンドルにコンパイルされましたが、無効化されたモジュールは非活性化されました。</p>
+<p>Tealium Swift SDKのバージョン1.6.5以前では、CocoaPodsまたはCarthageを使用していて不要なモジュールを無効化する唯一の方法は、<a href="/platforms/ios-swift/api/tealium-config/">TealiumConfig</a>オブジェクトを使用して有効/無効のモジュールの配列（ホワイトリスト/ブラックリスト）を構成することでした。このシナリオでは、すべてのコードが最終的なアプリバンドルにコンパイルされましたが、無効化されたモジュールは非活性化されました。</p>
 <p>この方法はまだサポートされていますが、アプリバンドルにコードを少なくコンパイルすることによるパフォーマンス向上を享受するために、以下の他の方法に移行することをお勧めします。<code>TealiumConfig</code>オブジェクト上でモジュールリストを有効にし、同時に不要なモジュールを削除します。モジュールを有効化しようとするが、そのコードがアプリバンドルに存在しない場合、それは何の不都合も引き起こさず、単に何の効果もありません。</p>
 <p>以下の例は、自動トラッキングモジュールをブラックリストに登録します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> modulesList = TealiumModulesList(isWhitelist: <span style="color:#66d9ef">false</span>, moduleNames: [<span style="color:#e6db74">&#34;autotracking&#34;</span>])
@@ -600,7 +600,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -756,6 +756,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -764,8 +780,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

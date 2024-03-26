@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -303,7 +303,7 @@ var utag_data = {
       </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
         <a href="/platforms/ruby/api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ruby-api">APIリファレンス</a>
       </li></ul>
-      </li><li data-level="1" class="selected relative w-100 hover-accent-color-light fw4 f5  active ind2">
+      </li><li data-level="1" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/platforms/release-notes/" class="db link pr2 pv2 bg-secondary primary-color" data-target=".platforms-release-notes">リリースノート</a>
       </li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">ios-objective-c-module-list</span>
         <ul data-level="1" class=" desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
@@ -373,30 +373,30 @@ var utag_data = {
 <li>同じサイトで複数のiQプロファイルを実行している場合は、次の手順を完了してください。これにより、サイト上のすべての<code>utag.js</code>インスタンスが新しいクッキーの動作を同時に使用し、競合や互換性の問題を防ぐことができます。
 <ol>
 <li>すべての<code>utag.js</code>テンプレートを最新バージョンに更新してください。</li>
-<li>各プロファイルの<a href="/platforms/javascript/settings/#split_cookie"><code>split_cookie</code></a>オーバーライドを<code>false</code>に設定して、レガシーのクッキーの動作を使用し、トランジションの期間中にサイト上でまだ実行されている古いバージョンのutag.jsとの互換性を維持してください。</li>
-<li>すべての<code>utag.js</code>テンプレートが更新され、レガシーのクッキーの動作を維持するために<code>split_cookie</code>オーバーライドが設定されている場合、すべてのプロファイルからクッキーオーバーライドを同時に削除できます。</li>
+<li>各プロファイルの<a href="/platforms/javascript/settings/#split_cookie"><code>split_cookie</code></a>オーバーライドを<code>false</code>に構成して、レガシーのクッキーの動作を使用し、トランジションの期間中にサイト上でまだ実行されている古いバージョンのutag.jsとの互換性を維持してください。</li>
+<li>すべての<code>utag.js</code>テンプレートが更新され、レガシーのクッキーの動作を維持するために<code>split_cookie</code>オーバーライドが構成されている場合、すべてのプロファイルからクッキーオーバーライドを同時に削除できます。</li>
 </ol>
 </li>
 </ul>
 <h2 id="2023年9月">2023年9月</h2>
 <h3 id="451">4.51</h3>
 <ul>
-<li><code>utag.js</code>バージョン4.50で特定のブラウザとタイムゾーン/地域設定を使用した場合のクッキーの有効期限の問題を修正しました。</li>
+<li><code>utag.js</code>バージョン4.50で特定のブラウザとタイムゾーン/地域構成を使用した場合のクッキーの有効期限の問題を修正しました。</li>
 </ul>
 <h3 id="450">4.50</h3>
 <p>バージョン4.50では、<code>utag.js</code>によって書き込まれるクッキーについての透明性と制御が向上しています。</p>
 <p>以前は、マルチバリュークッキー（マルチクッキー）の使用を推奨していました。しかし、データプライバシーの監査などの透明性とシンプルさへの要求の増加により、推奨事項を見直しました。現在は、<code>utag.js</code>のデフォルトの動作として、スタンドアロンのクッキーの使用を推奨しています。</p>
 <p>このリリースには、以下の更新が含まれています。</p>
 <ul>
-<li>単一のマルチバリュークッキーではなく、別々の<code>utag_main</code>クッキーを書き込みます。複数の値を単一のクッキーに格納する従来の動作を使用するには、<a href="/platforms/javascript/settings/#split_cookie"><code>split_cookie</code></a>を<code>false</code>に設定してください。</li>
-<li><code>utag_main_v_id</code>の責任を<code>utag.js</code>からTealium Collectタグに移動します。<code>utag.js</code>が<code>utag_main_v_id</code>クッキーを設定するようにするには、<a href="/platforms/javascript/settings/#always_set_v_id"><code>always_set_v_id</code></a>を<code>true</code>に設定してください。</li>
-<li>同意管理クッキーの<code>id</code>要素を追加して、同意のログを記録します。このクッキーが最初に設定されると、見つかったすべての<code>utag_main_v_id</code>の値と一致しますが、その後は変更されません。この動作は、ユーザーとログのイベントの間のリンクを維持することを優先しますが、すべての場合で一致が保証されるわけではありません。</li>
+<li>単一のマルチバリュークッキーではなく、別々の<code>utag_main</code>クッキーを書き込みます。複数の値を単一のクッキーに格納する従来の動作を使用するには、<a href="/platforms/javascript/settings/#split_cookie"><code>split_cookie</code></a>を<code>false</code>に構成してください。</li>
+<li><code>utag_main_v_id</code>の責任を<code>utag.js</code>からTealium Collectタグに移動します。<code>utag.js</code>が<code>utag_main_v_id</code>クッキーを構成するようにするには、<a href="/platforms/javascript/settings/#always_set_v_id"><code>always_set_v_id</code></a>を<code>true</code>に構成してください。</li>
+<li>同意管理クッキーの<code>id</code>要素を追加して、同意のログを記録します。このクッキーが最初に構成されると、見つかったすべての<code>utag_main_v_id</code>の値と一致しますが、その後は変更されません。この動作は、ユーザーとログのイベントの間のリンクを維持することを優先しますが、すべての場合で一致が保証されるわけではありません。</li>
 <li>関連する<a href="/iq-tag-management/templates/about/">テンプレート</a>を更新することで簡単にアップグレードできます。</li>
-<li>以下のutag設定を追加しました：
+<li>以下のutag構成を追加しました：
 <ul>
-<li><a href="/platforms/javascript/settings/#split_cookie"><code>split_cookie</code></a> - レガシーの単一のマルチバリュークッキーを使用するには<code>false</code>に設定します。</li>
-<li><a href="/platforms/javascript/settings/#split_cookie_allowlist"><code>split_cookie_allowlist</code></a> - <code>utag_main</code>名前空間を使用して設定できるクッキー名の配列を指定します。</li>
-<li><a href="/platforms/javascript/settings/#always_set_v_id"><code>always_set_v_id</code></a> - <code>utag.js</code>が<code>utag_main_v_id</code>クッキーまたは<code>utag_main</code>の<code>v_id</code>コンポーネントを設定するように強制します。</li>
+<li><a href="/platforms/javascript/settings/#split_cookie"><code>split_cookie</code></a> - レガシーの単一のマルチバリュークッキーを使用するには<code>false</code>に構成します。</li>
+<li><a href="/platforms/javascript/settings/#split_cookie_allowlist"><code>split_cookie_allowlist</code></a> - <code>utag_main</code>名前空間を使用して構成できるクッキー名の配列を指定します。</li>
+<li><a href="/platforms/javascript/settings/#always_set_v_id"><code>always_set_v_id</code></a> - <code>utag.js</code>が<code>utag_main_v_id</code>クッキーまたは<code>utag_main</code>の<code>v_id</code>コンポーネントを構成するように強制します。</li>
 </ul>
 </li>
 <li>以下のテンプレートを更新しました：
@@ -410,7 +410,7 @@ var utag_data = {
 </ul>
 </li>
 </ul>
-<p>utag 4.50以降の透明性向上のための新しい設定の詳細については、<a href="https://tealium.com/blog/customer-experience/enhancing-cookie-transparency-with-utag-4-51-a-comprehensive-introduction/">utag 4.51によるクッキーの透明性の向上</a>を参照してください。</p>
+<p>utag 4.50以降の透明性向上のための新しい構成の詳細については、<a href="https://tealium.com/blog/customer-experience/enhancing-cookie-transparency-with-utag-4-51-a-comprehensive-introduction/">utag 4.51によるクッキーの透明性の向上</a>を参照してください。</p>
         
         </div>
 
@@ -584,6 +584,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -592,8 +608,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

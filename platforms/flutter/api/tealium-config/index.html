@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -356,7 +356,7 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      メインのTealiumクラスの設定オプションを設定するためのクラスです。個々のモジュールは、有効になっている場合、<code>TealiumConfig</code>クラスの拡張を提供します。
+      メインのTealiumクラスの構成オプションを構成するためのクラスです。個々のモジュールは、有効になっている場合、<code>TealiumConfig</code>クラスの拡張を提供します。
     </p>
   
 </div>
@@ -383,13 +383,13 @@ var utag_data = {
 <tr>
 <td><code>collectors</code></td>
 <td><code>List&lt;Collectors&gt;</code></td>
-<td>(必須) Tealiumライブラリを初期化するための<a href="#collectors"><code>Collectors</code></a>のリストを設定します</td>
+<td>(必須) Tealiumライブラリを初期化するための<a href="#collectors"><code>Collectors</code></a>のリストを構成します</td>
 <td><code>[Collectors.AppData]</code></td>
 </tr>
 <tr>
 <td><code>consentExpiry</code></td>
 <td><a href="#consentexpiry"><code>ConsentExpiry</code></a></td>
-<td>ユーザーの同意設定の有効期限を設定します（デフォルトはポリシーに依存します）</td>
+<td>ユーザーの同意構成の有効期限を構成します（デフォルトはポリシーに依存します）</td>
 <td><code>ConsentExpiry(90, TimeUnit.DAYS)</code></td>
 </tr>
 <tr>
@@ -401,13 +401,13 @@ var utag_data = {
 <tr>
 <td><code>consentPolicy</code></td>
 <td><a href="#consentpolicy"><code>ConsentPolicy</code></a></td>
-<td>同意ポリシー（CCPAやGDPRなど）を設定します。このプロパティが設定されている場合のみ、Consent Managerが有効になります</td>
+<td>同意ポリシー（CCPAやGDPRなど）を構成します。このプロパティが構成されている場合のみ、Consent Managerが有効になります</td>
 <td><code>ConsentPolicy.GDPR</code></td>
 </tr>
 <tr>
 <td><code>customVisitorId</code></td>
 <td><code>String</code></td>
-<td>カスタムビジターIDを設定します</td>
+<td>カスタムビジターIDを構成します</td>
 <td><code>ALK2398LSDKJ3289SLKJ3298SLKJ3</code></td>
 </tr>
 <tr>
@@ -425,7 +425,7 @@ var utag_data = {
 <tr>
 <td><code>dispatchers</code></td>
 <td><code>Dispatchers[]</code></td>
-<td>(必須) Tealiumライブラリを初期化するための<a href="#dispatchers"><code>Dispatchers</code></a>のリストを設定します</td>
+<td>(必須) Tealiumライブラリを初期化するための<a href="#dispatchers"><code>Dispatchers</code></a>のリストを構成します</td>
 <td><code>[Dispatchers.Collect]</code></td>
 </tr>
 <tr>
@@ -443,7 +443,7 @@ var utag_data = {
 <tr>
 <td><code>logLevel</code></td>
 <td><a href="#loglevel"><code>LogLevel</code></a>`</td>
-<td>ログレベルプロパティを設定し、ログに記録する情報の量を制御します（デフォルト：無音）</td>
+<td>ログレベルプロパティを構成し、ログに記録する情報の量を制御します（デフォルト：無音）</td>
 <td><code>LogLevel.DEV</code></td>
 </tr>
 <tr>
@@ -473,7 +473,7 @@ var utag_data = {
 <tr>
 <td><code>overrideLibrarySettingsURL</code></td>
 <td><code>String</code></td>
-<td>パブリッシュ設定URLを上書きします</td>
+<td>パブリッシュ構成URLを上書きします</td>
 <td><code>https://example.com/mobile.html</code></td>
 </tr>
 <tr>
@@ -503,7 +503,7 @@ var utag_data = {
 <tr>
 <td><code>useRemoteLibrarySettings</code></td>
 <td><code>Boolean</code></td>
-<td><a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルパブリッシュ設定</a>を有効または無効にします（デフォルト：有効）iQタグ管理でモバイルパブリッシュ設定を設定するか、機能を無効にします</td>
+<td><a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルパブリッシュ構成</a>を有効または無効にします（デフォルト：有効）iQタグ管理でモバイルパブリッシュ構成を構成するか、機能を無効にします</td>
 <td><code>false</code></td>
 </tr>
 <tr>
@@ -545,7 +545,7 @@ var utag_data = {
 </table>
 <p>これらのモジュールは、<a href="/platforms/flutter/api/tealium-config/"><code>TealiumConfig</code></a>の<code>collectors</code>プロパティを使用して有効または無効にします。</p>
 <h3 id="consentexpiry"><code>ConsentExpiry</code></h3>
-<p>ユーザーの同意設定の有効期限を定義します。</p>
+<p>ユーザーの同意構成の有効期限を定義します。</p>
 <table>
 <thead>
 <tr>
@@ -647,7 +647,7 @@ var utag_data = {
 </table>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>少なくとも1つのディスパッチャーが必要です。ディスパッチャーが指定されていない場合、トラッキングは行われません。</p>
 <h3 id="expiry"><code>Expiry</code></h3>
-<p>有効期限を設定するプロパティの有効期限を定義します。</p>
+<p>有効期限を構成するプロパティの有効期限を定義します。</p>
 <p>例：</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Expiry.session
 </code></pre><p>以下の有効期限オプションが利用可能です：</p>
@@ -674,7 +674,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="loglevel"><code>LogLevel</code></h3>
-<p><code>logLevel</code>プロパティを設定し、ログに記録する情報の量を制御します。</p>
+<p><code>logLevel</code>プロパティを構成し、ログに記録する情報の量を制御します。</p>
 <p>以下のログレベルが利用可能です：</p>
 <table>
 <thead>
@@ -790,7 +790,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -945,6 +945,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -953,8 +969,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

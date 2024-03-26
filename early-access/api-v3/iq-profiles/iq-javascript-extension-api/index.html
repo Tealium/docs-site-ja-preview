@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -189,7 +189,7 @@ var utag_data = {
 <p>iQ Profilesは、iQ Tag Managementアカウントプロファイルからデータを取得し、基本的なJavaScriptコード拡張を更新するためにJSONオブジェクトを使用します。これにより、カスタムコードデプロイメントプロセスを使用してiQ Tag Managementプロファイルを管理することができます。</p>
 <p>iQプロファイルオブジェクトでコンポーネントを作成、更新、削除するには、<code>PATCH</code>メソッドを使用します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>PATCH /v3/tiq/accounts/<span style="color:#f92672">{</span>ACCOUNT<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>PROFILE<span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>PATCHメソッドを使用すると、プロファイルの設定をプログラムで変更し、保存または保存として行います。APIを使用して変更を行った後は、アプリケーションにログインして公開する必要があります。</p>
+</span></span></code></pre></div><p>PATCHメソッドを使用すると、プロファイルの構成をプログラムで変更し、ストレージまたはストレージとして行います。APIを使用して変更を行った後は、アプリケーションにログインして公開する必要があります。</p>
 <h3 id="curlリクエストの例">cURLリクエストの例</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl --location --request PATCH <span style="color:#e6db74">&#39;https://platform.tealiumapis.com/v3/tiq/accounts/{ACCOUNT}/profiles/{PROFILE}&#39;</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--header <span style="color:#e6db74">&#39;Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUx...MiJ9&#39;</span> <span style="color:#ae81ff">\
@@ -214,13 +214,13 @@ var utag_data = {
 <td><code>versionTitle</code></td>
 <td>文字列</td>
 <td>オプション</td>
-<td>保存されたバージョンのタイトル。<br> <code>saveType</code>が<code>saveAs</code>に設定されている場合のデフォルト：<code>API | {TIMESTAMP}</code><br> <code>saveType</code>が<code>save</code>に設定されている場合のデフォルト：既存のバージョンタイトル。</td>
+<td>ストレージされたバージョンのタイトル。<br> <code>saveType</code>が<code>saveAs</code>に構成されている場合のデフォルト：<code>API | {TIMESTAMP}</code><br> <code>saveType</code>が<code>save</code>に構成されている場合のデフォルト：既存のバージョンタイトル。</td>
 </tr>
 <tr>
 <td><code>saveType</code></td>
 <td>文字列</td>
 <td>オプション</td>
-<td>PATCHリクエストで実行する保存のタイプ：<code>save</code>または<code>saveAs</code>。デフォルトは<code>saveAs</code>です。</td>
+<td>PATCHリクエストで実行するストレージのタイプ：<code>save</code>または<code>saveAs</code>。デフォルトは<code>saveAs</code>です。</td>
 </tr>
 <tr>
 <td><code>notes</code></td>
@@ -292,7 +292,7 @@ var utag_data = {
 <td><code>value.selectedTargets</code></td>
 <td>Map&lt;string, Boolean&gt;</td>
 <td>オプション</td>
-<td>コンポーネントを公開する環境のオブジェクト：<br> <code>{   &quot;prod&quot; : true|false,   &quot;qa&quot; : true|false,   &quot;dev&quot; : true|false }</code> デフォルト：すべての環境が<code>true</code>に設定されています。</td>
+<td>コンポーネントを公開する環境のオブジェクト：<br> <code>{   &quot;prod&quot; : true|false,   &quot;qa&quot; : true|false,   &quot;dev&quot; : true|false }</code> デフォルト：すべての環境が<code>true</code>に構成されています。</td>
 </tr>
 <tr>
 <td><code>value.conditions</code></td>
@@ -541,7 +541,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月22日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -701,6 +701,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -709,8 +725,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

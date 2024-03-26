@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -397,11 +397,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>setAllCategories()</code></td>
-<td>すべてのカテゴリを、同意または拒否のいずれかの、同一の同意状態に設定し、(オプションとして) Collect API を呼び出して、同意をトラッキングします</td>
+<td>すべてのカテゴリを、同意または拒否のいずれかの、同一の同意状態に構成し、(オプションとして) Collect API を呼び出して、同意をトラッキングします</td>
 </tr>
 <tr>
 <td><code>setConsentValue()</code></td>
-<td>同意 Cookie 値を有効または無効に設定します</td>
+<td>同意 Cookie 値を有効または無効に構成します</td>
 </tr>
 <tr>
 <td><code>setCookie()</code></td>
@@ -409,19 +409,19 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>setCookieValue()</code></td>
-<td>同意 Cookie の個別値を設定します</td>
+<td>同意 Cookie の個別値を構成します</td>
 </tr>
 <tr>
 <td><code>setPreferencesFromList()</code></td>
-<td>同意状態を、カテゴリのリスト用に <code>allowed</code> に設定します</td>
+<td>同意状態を、カテゴリのリスト用に <code>allowed</code> に構成します</td>
 </tr>
 <tr>
 <td><code>setPreferencesValues()</code></td>
-<td>カテゴリのオブジェクトからの Cookie 値と、その同意状態を設定します</td>
+<td>カテゴリのオブジェクトからの Cookie 値と、その同意状態を構成します</td>
 </tr>
 <tr>
 <td><code>showConsentPreferences()</code></td>
-<td>設定マネージャーのポップアップを表示します</td>
+<td>構成マネージャーのポップアップを表示します</td>
 </tr>
 <tr>
 <td><code>showExplicitConsent()</code></td>
@@ -434,7 +434,7 @@ var utag_data = {
 </tbody>
 </table>
 <h2 id="utaggdprgetcategories"><code>utag.gdpr.getCategories()</code></h2>
-<p>タグのグルーピングのために利用可能なコンプライアンス カテゴリのリストによって <code>Array</code> を返します。パラメータが提供されない場合は、すべてのカテゴリが返されます。パラメータとしての <code>true</code> または <code>1</code> を、Tealium Consent Preference Manager (同意設定マネージャー) インターフェイスでの、リターン有効 (アクティブ) カテゴリーのみに返します。</p>
+<p>タグのグルーピングのために利用可能なコンプライアンス カテゴリのリストによって <code>Array</code> を返します。パラメータが提供されない場合は、すべてのカテゴリが返されます。パラメータとしての <code>true</code> または <code>1</code> を、Tealium Consent Preference Manager (同意構成マネージャー) インターフェイスでの、リターン有効 (アクティブ) カテゴリーのみに返します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">getCategories</span>(<span style="color:#a6e22e">onlyEnabledCats</span>)
 </span></span></code></pre></div><table>
 <thead>
@@ -448,7 +448,7 @@ var utag_data = {
 <tr>
 <td><code>onlyEnabledCats</code></td>
 <td><code>Boolean</code></td>
-<td>(オプション) <code>true</code> または <code>1</code> に設定して、有効な (アクティブな) カテゴリを返します</td>
+<td>(オプション) <code>true</code> または <code>1</code> に構成して、有効な (アクティブな) カテゴリを返します</td>
 </tr>
 </tbody>
 </table>
@@ -559,7 +559,7 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">getCategories</span>(<span style="color:#66d9ef">true</span>)
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Returns: {&#34;consent&#34;:&#34;true&#34;,&#34;ts&#34;:&#34;1587026030058&#34;}
 </span></span></span></code></pre></div><h2 id="utaggdprgetlanguage"><code>utag.gdpr.getLanguage()</code></h2>
-<p>同意マネージャーのコンテンツを表示するための言語による <code>String</code> を返します。言語の優先順位は、データレイヤーに設定されたもの、ブラウザからの言語、または、デフォルト言語です。</p>
+<p>同意マネージャーのコンテンツを表示するための言語による <code>String</code> を返します。言語の優先順位は、データレイヤーに構成されたもの、ブラウザからの言語、または、デフォルト言語です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">getLanguage</span>()
 </span></span></code></pre></div><p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">getLanguage</span>()
@@ -571,7 +571,7 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">getSelectedCategories</span>()
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Returns: [&#34;analytics&#34;, &#34;personalization&#34;]
 </span></span></span></code></pre></div><h2 id="utaggdprsetallcategories"><code>utag.gdpr.setAllCategories()</code></h2>
-<p>すべてのカテゴリを、同意または拒否のいずれかの、同一の同意状態に設定し、(オプションとして) Collect API を呼び出して、同意をトラッキングします。</p>
+<p>すべてのカテゴリを、同意または拒否のいずれかの、同一の同意状態に構成し、(オプションとして) Collect API を呼び出して、同意をトラッキングします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setAllCategories</span>(<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">noCollect</span>)
 </span></span></code></pre></div><table>
 <thead>
@@ -585,12 +585,12 @@ var utag_data = {
 <tr>
 <td><code>state</code></td>
 <td><code>Boolean</code></td>
-<td><code>true</code> に設定して、すべてのカテゴリへの同意を許可し、 <code>false</code> に設定して、同意を拒絶します</td>
+<td><code>true</code> に構成して、すべてのカテゴリへの同意を許可し、 <code>false</code> に構成して、同意を拒絶します</td>
 </tr>
 <tr>
 <td><code>noCollect</code></td>
 <td><code>Boolean</code></td>
-<td>(オプション) <code>true</code> に設定して、同意をトラッキングするための Collect API へのコールをトリガーしないようにします</td>
+<td>(オプション) <code>true</code> に構成して、同意をトラッキングするための Collect API へのコールをトリガーしないようにします</td>
 </tr>
 </tbody>
 </table>
@@ -599,7 +599,7 @@ var utag_data = {
 </span></span></code></pre></div><p>次の例は、すべての同意カテゴリへの同意を拒否し、同意をトラッキングするために Collect API を呼び出します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setAllCategories</span>(<span style="color:#66d9ef">false</span>)
 </span></span></code></pre></div><h2 id="utaggdprsetconsentvalue"><code>utag.gdpr.setConsentValue()</code></h2>
-<p>同意 Cookie 値を有効または無効に設定します。この関数は、また、同意のタイムスタンプを更新し、Collect API へのトラッキング コールを生成し、キューに登録されたタグをリプレイします <code>utag.gdpr.queue</code>。</p>
+<p>同意 Cookie 値を有効または無効に構成します。この関数は、また、同意のタイムスタンプを更新し、Collect API へのトラッキング コールを生成し、キューに登録されたタグをリプレイします <code>utag.gdpr.queue</code>。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>これによっても、個別のカテゴリの定数値は変更されません。定数値は、関連の API コール (<code>setPreferencesFromList()</code> または <code>setPreferencesValues()</code>) を用いて無効化する必要があります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setConsentValue</span>(<span style="color:#a6e22e">_response</span>)
 </span></span></code></pre></div><table>
@@ -614,13 +614,13 @@ var utag_data = {
 <tr>
 <td><code>_response</code></td>
 <td><code>Boolean</code></td>
-<td>同意を有効にするには、 <code>true</code> に設定し、同意を無効にするには <code>false</code> に設定します</td>
+<td>同意を有効にするには、 <code>true</code> に構成し、同意を無効にするには <code>false</code> に構成します</td>
 </tr>
 </tbody>
 </table>
-<p>以下の例では、値 <code>&quot;consent:true&quot;</code> を有する Cookie を設定し、タイムスタンプを更新します。</p>
+<p>以下の例では、値 <code>&quot;consent:true&quot;</code> を有する Cookie を構成し、タイムスタンプを更新します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setConsentValue</span>(<span style="color:#66d9ef">true</span>)
-</span></span></code></pre></div><p>以下の例では、値 <code>&quot;consent:false&quot;</code> を有する Cookie を設定し、タイムスタンプを更新します。</p>
+</span></span></code></pre></div><p>以下の例では、値 <code>&quot;consent:false&quot;</code> を有する Cookie を構成し、タイムスタンプを更新します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setConsentValue</span>(<span style="color:#ae81ff">0</span>)
 </span></span></code></pre></div><h2 id="utaggdprsetcookie"><code>utag.gdpr.setCookie()</code></h2>
 <p>Cookie オブジェクトに直接送信する内部関数。これは、同意状態、タイムスタンプ、および部分的同意に関するさまざまなカテゴリを表すためのオブジェクトを使用します。これは、正しい Cookie 名および有効期限を自動的に使用します。</p>
@@ -638,7 +638,7 @@ var utag_data = {
 <tr>
 <td><code>cookieData</code></td>
 <td><code>Object</code></td>
-<td>同意 Cookie に保存されるデータを表すキー値のリスト</td>
+<td>同意 Cookie にストレージされるデータを表すキー値のリスト</td>
 </tr>
 </tbody>
 </table>
@@ -647,7 +647,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setCookie</span>(<span style="color:#a6e22e">object</span>)
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Sets the cookie to: c6:1%7Cc1:0%7Cc2:0%7Cts:1587133526482%7Cconsent:false%7Cc3:0%7Cc4:0%7Cc5:0%7Cc7:0%7Cc8:0%7Cc9:0%7Cc10:0%7Cc11:0%7Cc12:0%7Cc13:0%7Cc14:0%7Cc15:0
 </span></span></span></code></pre></div><h2 id="utaggdprsetcookievalue"><code>utag.gdpr.setCookieValue()</code></h2>
-<p>同意 Cookie の個別値を設定します。</p>
+<p>同意 Cookie の個別値を構成します。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>この関数は、他の比較的高いレベルの関数 (<code>setConsentValue()</code>など) によって用いられます。このメソッドは、慎重に使用します。使用は、比較的高いレベルの関数では当初のニーズが満たせない場合に限ります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setCookieValue</span>(<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>);
 </span></span></code></pre></div><table>
@@ -662,21 +662,21 @@ var utag_data = {
 <tr>
 <td><code>key</code></td>
 <td><code>String</code></td>
-<td><code>consent</code>、 <code>ts</code> 、または、 <code>c</code> 値表現によって指定されるカテゴリのいずれか (Analytics 用の c1 または Affiliates 用の c2) のうちの、いずれかに設定された Cookie で用いられるキー</td>
+<td><code>consent</code>、 <code>ts</code> 、または、 <code>c</code> 値表現によって指定されるカテゴリのいずれか (Analytics 用の c1 または Affiliates 用の c2) のうちの、いずれかに構成された Cookie で用いられるキー</td>
 </tr>
 <tr>
 <td><code>value</code></td>
 <td><code>String</code></td>
-<td>Cookie キーを設定するための値</td>
+<td>Cookie キーを構成するための値</td>
 </tr>
 </tbody>
 </table>
-<p>次の例では、同意 Cookie を <code>&quot;consent:false&quot;</code>に設定します。</p>
+<p>次の例では、同意 Cookie を <code>&quot;consent:false&quot;</code>に構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setCookieValue</span>(<span style="color:#e6db74">&#34;consent&#34;</span>, <span style="color:#66d9ef">false</span>);
-</span></span></code></pre></div><p>次の例では、同意 Cookie を <code>&quot;c1:0&quot;</code>に設定します。</p>
+</span></span></code></pre></div><p>次の例では、同意 Cookie を <code>&quot;c1:0&quot;</code>に構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setCookieValue</span>(<span style="color:#e6db74">&#34;c1&#34;</span>, <span style="color:#ae81ff">0</span>);
 </span></span></code></pre></div><h2 id="utaggdprsetpreferencesfromlist"><code>utag.gdpr.setPreferencesFromList()</code></h2>
-<p>同意状態を、パラメータで渡されたカテゴリのリスト用に <code>allowed</code> に設定します。リストの一部でないカテゴリの同意状態が <code>declined</code> に設定されます。これは、部分的同意用に用いられます。この関数は、 <code>setPreferencesValues()</code> 関数に依存しており、 <code>getSelectedCategories()</code>のリバース機能を提供します。</p>
+<p>同意状態を、パラメータで渡されたカテゴリのリスト用に <code>allowed</code> に構成します。リストの一部でないカテゴリの同意状態が <code>declined</code> に構成されます。これは、部分的同意用に用いられます。この関数は、 <code>setPreferencesValues()</code> 関数に依存しており、 <code>getSelectedCategories()</code>のリバース機能を提供します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setPreferencesFromList</span>(<span style="color:#a6e22e">list</span>)
 </span></span></code></pre></div><table>
 <thead>
@@ -701,7 +701,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">getCategories</span>(<span style="color:#66d9ef">true</span>)
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//[&#34;analytics&#34;, &#34;affiliates&#34;, &#34;personalization&#34;]
 </span></span></span></code></pre></div><h2 id="utaggdprsetpreferencesvalues"><code>utag.gdpr.setPreferencesValues()</code></h2>
-<p>カテゴリのオブジェクトからの Cookie 設定値と、その同意状態を設定します。この関数は、主に、 <code>setPreferencesFromList()</code> 関数によって呼び出されます。この関数は、キュー <code>utag.gdpr.queue</code>に登録されているタグをリプレイします。</p>
+<p>カテゴリのオブジェクトからの Cookie 構成値と、その同意状態を構成します。この関数は、主に、 <code>setPreferencesFromList()</code> 関数によって呼び出されます。この関数は、キュー <code>utag.gdpr.queue</code>に登録されているタグをリプレイします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setPreferencesValues</span>(<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">noCollect</span>)
 </span></span></code></pre></div><table>
 <thead>
@@ -720,16 +720,16 @@ var utag_data = {
 <tr>
 <td><code>noCollect</code></td>
 <td><code>Boolean</code></td>
-<td>(オプション) <code>true</code> に設定して、同意をトラッキングするための Collect API へのコールをトリガーしないようにします</td>
+<td>(オプション) <code>true</code> に構成して、同意をトラッキングするための Collect API へのコールをトリガーしないようにします</td>
 </tr>
 </tbody>
 </table>
-<p>次の例では、Cookie 値を設定します。</p>
+<p>次の例では、Cookie 値を構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">Var</span> <span style="color:#a6e22e">cats</span> <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;analytics&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;1&#34;</span>,<span style="color:#e6db74">&#34;affiliates&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;0&#34;</span>,<span style="color:#e6db74">&#34;personalization&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;0&#34;</span>}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">setPreferencesValues</span>(<span style="color:#a6e22e">cats</span>)
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Sets cookie to c6:1%7Cc1:0%7Cc2:0%7Cts:1587135590035%7Cconsent:true
 </span></span></span></code></pre></div><h2 id="utaggdprshowconsentpreferences"><code>utag.gdpr.showConsentPreferences()</code></h2>
-<p>同意設定のポップアップを表示します。この関数は、ページのカスタマイズで定義される、CSS、HTML および Javascript を注入します。これは、明示的同意 javascript リスナーによって、または、ユーザーがその設定を変更するページのいずれかのポイントから、呼び出されます。</p>
+<p>同意構成のポップアップを表示します。この関数は、ページのカスタマイズで定義される、CSS、HTML および Javascript を注入します。これは、明示的同意 javascript リスナーによって、または、ユーザーがその構成を変更するページのいずれかのポイントから、呼び出されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">showConsentPreferences</span>(<span style="color:#a6e22e">_lang</span>)
 </span></span></code></pre></div><table>
 <thead>
@@ -747,12 +747,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>以下の例は、デフォルト言語での、またはデータレイヤーで設定した言語での同意を表示しています。</p>
+<p>以下の例は、デフォルト言語での、またはデータレイヤーで構成した言語での同意を表示しています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">showConsentPreferences</span>()
 </span></span></code></pre></div><p>次の例では、フランス語での同意を表示しています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">showConsentPreferences</span>(<span style="color:#e6db74">&#34;fr-fr&#34;</span>)
 </span></span></code></pre></div><h2 id="utaggdprshowexplicitconsent"><code>utag.gdpr.showExplicitConsent()</code></h2>
-<p>明示的同意のポップアップを表示します。この関数は、ページのカスタマイズで定義される、CSS、HTML および Javascript を注入します。明示的同意が設定されたときは、DOM READY イベント時に Tealium ユニバーサル タグ <code>utag.js</code> によってネイティブに呼び出されます。</p>
+<p>明示的同意のポップアップを表示します。この関数は、ページのカスタマイズで定義される、CSS、HTML および Javascript を注入します。明示的同意が構成されたときは、DOM READY イベント時に Tealium ユニバーサル タグ <code>utag.js</code> によってネイティブに呼び出されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">showExplicitConsent</span>(<span style="color:#a6e22e">_lang</span>)
 </span></span></code></pre></div><table>
 <thead>
@@ -770,7 +770,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>以下の例は、デフォルト言語での、またはデータレイヤーで設定した言語での明示的同意を表示しています。</p>
+<p>以下の例は、デフォルト言語での、またはデータレイヤーで構成した言語での明示的同意を表示しています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">showExplicitConsent</span>()
 </span></span></code></pre></div><p>次の例では、フランス語での明示的同意を表示しています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">showExplicitConsent</span>(<span style="color:#e6db74">&#34;fr-fr&#34;</span>)
@@ -834,7 +834,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2022年August月29日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -995,6 +995,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1003,8 +1019,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

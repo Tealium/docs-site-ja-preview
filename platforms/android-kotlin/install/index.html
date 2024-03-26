@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -418,7 +418,7 @@ var utag_data = {
 </span></span></code></pre></div></li>
 </ol>
 <h2 id="初期化">初期化</h2>
-<p>Tealiumを初期化するには、<a href="/platforms/android-kotlin/api/tealium-config/"><code>TealiumConfig</code></a>インスタンスを設定し、それを<a href="/platforms/android-kotlin/api/tealium/"><code>Tealium</code></a>インスタンスに渡します。Tealium Kotlinライブラリは、アプリのグローバルアプリケーションクラスの <code>onCreate()</code> メソッド内で初期化することをお勧めします。</p>
+<p>Tealiumを初期化するには、<a href="/platforms/android-kotlin/api/tealium-config/"><code>TealiumConfig</code></a>インスタンスを構成し、それを<a href="/platforms/android-kotlin/api/tealium/"><code>Tealium</code></a>インスタンスに渡します。Tealium Kotlinライブラリは、アプリのグローバルアプリケーションクラスの <code>onCreate()</code> メソッド内で初期化することをお勧めします。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i><a href="/platforms/android-kotlin/api/tealium/#class-tealium"><code>Tealium</code></a>インスタンスをトラッキングヘルパークラスを使用して管理します。これにより、Tealium Kotlinライブラリへの単一のエントリーポイントが提供され、将来のアップグレードが簡素化されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">TealiumHelper</span> {
 </span></span><span style="display:flex;"><span>
@@ -429,31 +429,31 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                      application,
 </span></span><span style="display:flex;"><span>                      <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>                      <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>                      Environment.DEV,
+</span></span><span style="display:flex;"><span>                      <span style="color:#a6e22e">Environment</span>.DEV,
 </span></span><span style="display:flex;"><span>                      dataSourceId = <span style="color:#e6db74">&#34;DATASOURCE_ID&#34;</span>,  <span style="color:#75715e">//optional
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                      modules = mutableSetOf(VisitorService),
-</span></span><span style="display:flex;"><span>                      dispatchers = mutableSetOf(Dispatchers.Collect)
+</span></span><span style="display:flex;"><span>                      dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.Collect)
 </span></span><span style="display:flex;"><span>                    )
-</span></span><span style="display:flex;"><span>    tealium = Tealium.create(<span style="color:#e6db74">&#34;tealium_instance&#34;</span>, tealiumConfig)
+</span></span><span style="display:flex;"><span>    tealium = <span style="color:#a6e22e">Tealium</span>.create(<span style="color:#e6db74">&#34;tealium_instance&#34;</span>, tealiumConfig)
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="ディスパッチャー">ディスパッチャー</h2>
 <p>データをTealiumエコシステムに送信するには、次のディスパッチャーから選択します：</p>
 <ul>
 <li><strong>Tag Management</strong> <br>
-<a href="/platforms/android-kotlin/module-list/tag-management/">TagManagement Dispatcher</a>を追加して、Tealium iQ Tag Managementを使用し、そのタグ管理設定ロジックを利用します。</li>
+<a href="/platforms/android-kotlin/module-list/tag-management/">TagManagement Dispatcher</a>を追加して、Tealium iQ Tag Managementを使用し、そのタグ管理構成ロジックを利用します。</li>
 <li><strong>Collect</strong><br>
 <a href="/platforms/android-kotlin/module-list/collect/">Collect Dispatcher</a>を追加して、Tealium Customer Data Hubのサーバーサイドソリューションを使用します。</li>
 </ul>
 <h2 id="ログレベル">ログレベル</h2>
-<p>ログレベルは <code>TealiumConfig</code> インスタンスから環境に設定されます。</p>
-<p>異なるログレベルを使用するには、<a href="/platforms/android-kotlin/api/tealium-config/#loglevel"><code>logLevel</code></a>プロパティを設定します：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>config.logLevel = LogLevel.DEV <span style="color:#75715e">// or LogLevel.QA, LogLevel.PROD
+<p>ログレベルは <code>TealiumConfig</code> インスタンスから環境に構成されます。</p>
+<p>異なるログレベルを使用するには、<a href="/platforms/android-kotlin/api/tealium-config/#loglevel"><code>logLevel</code></a>プロパティを構成します：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>config.logLevel = <span style="color:#a6e22e">LogLevel</span>.DEV <span style="color:#75715e">// or LogLevel.QA, LogLevel.PROD
 </span></span></span></code></pre></div><h2 id="クッキー">クッキー</h2>
 <p>クッキーはデフォルトでwebviewで有効になっています。</p>
 <h2 id="イベントバッチング">イベントバッチング</h2>
-<p>イベントバッチングは、<code>TealiumConfig</code> インスタンス上でローカルに設定するか、または<a href="/iq-tag-management/profiles/creating-a-mobile-profile/">Mobile Publish Settings</a>を使用してリモートで設定できます。バッチサイズを1より大きい値に設定すると有効になります。イベントは、キュー内のイベント数がバッチサイズと等しいときにディスパッチされます。</p>
-<p>以下に、ローカルでバッチングを設定するときの可能なオプションを示します：</p>
+<p>イベントバッチングは、<code>TealiumConfig</code> インスタンス上でローカルに構成するか、または<a href="/iq-tag-management/profiles/creating-a-mobile-profile/">Mobile Publish Settings</a>を使用してリモートで構成できます。バッチサイズを1より大きい値に構成すると有効になります。イベントは、キュー内のイベント数がバッチサイズと等しいときにディスパッチされます。</p>
+<p>以下に、ローカルでバッチングを構成するときの可能なオプションを示します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">TealiumHelper</span> {
 </span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">lateinit</span> <span style="color:#66d9ef">var</span> tealium: Tealium
 </span></span><span style="display:flex;"><span>
@@ -462,14 +462,14 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                batching = Batching(
 </span></span><span style="display:flex;"><span>                    batchSize = <span style="color:#ae81ff">10</span>,             <span style="color:#75715e">// send in batches of 10 (default: 1)
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                    maxQueueSize = <span style="color:#ae81ff">1000</span>,        <span style="color:#75715e">// maximum of 1000 queued events (default: 100)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                    expiration = TimeUnit.DAYS  <span style="color:#75715e">// queue for a maxumum of 5 days (default: 86400)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                    expiration = <span style="color:#a6e22e">TimeUnit</span>.DAYS  <span style="color:#75715e">// queue for a maxumum of 5 days (default: 86400)
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        .toSeconds(<span style="color:#ae81ff">5</span>).toInt()     
 </span></span><span style="display:flex;"><span>                )
 </span></span><span style="display:flex;"><span>            )
 </span></span><span style="display:flex;"><span>      }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="javaからの移行">Javaからの移行</h2>
-<p><a href="https://github.com/Tealium/tealium-android">Java library</a>からKotlinライブラリに移行するとき、以下の保存データが自動的に移行されます：</p>
+<p><a href="https://github.com/Tealium/tealium-android">Java library</a>からKotlinライブラリに移行するとき、以下のストレージデータが自動的に移行されます：</p>
 <ul>
 <li>Consent Preferences</li>
 <li>Lifecycle data</li>
@@ -532,7 +532,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -693,6 +693,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -701,8 +717,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

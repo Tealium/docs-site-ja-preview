@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -358,9 +358,9 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <h2 id="イベントビューのトラッキング">イベント/ビューのトラッキング</h2>
 <p><a href="/platforms/node/api/#track"><code>track()</code></a>メソッドは、次の例に示すように、すべてのイベントとページビューをトラッキングします。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">track</span>(<span style="color:#e6db74">&#34;EVENT_NAME&#34;</span>, {<span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;VALUE&#34;</span>}); 
-</span></span></code></pre></div><h2 id="訪問者のトラッキング">訪問者のトラッキング</h2>
-<p>アプリケーションでユーザーアクティビティをトラッキングしていて、イベントを訪問者に関連付ける場合には、次の例に示すように、データオブジェクト内の<code>tealium_visitor_id</code>属性をインクルードします。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">track</span>(<span style="color:#e6db74">&#34;EVENT_NAME&#34;</span>, {<span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;VALUE&#34;</span>});<span style="color:#960050;background-color:#1e0010"> </span>
+</span></span></code></pre></div><h2 id="訪問のトラッキング">訪問のトラッキング</h2>
+<p>アプリケーションでユーザーアクティビティをトラッキングしていて、イベントを訪問に関連付ける場合には、次の例に示すように、データオブジェクト内の<code>tealium_visitor_id</code>属性をインクルードします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">myVisitorId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">myVisitorIdFunction</span>();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">track</span>(<span style="color:#e6db74">&#34;page_view&#34;</span>, {
@@ -443,7 +443,7 @@ var utag_data = {
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">イベント/ビューのトラッキング</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問者のトラッキング</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問のトラッキング</a></li>
               </nav>
   </aside></nav>
 
@@ -577,6 +577,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -585,8 +601,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

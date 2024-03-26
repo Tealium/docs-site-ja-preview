@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -468,7 +468,7 @@ var utag_data = {
 <p><a href="https://github.com/tealium/tealium-ios-braze-remote-command">Tealium iOS Brazeリモートコマンド</a>レポジトリをクローンして、<code>Sources</code>フォルダ内のファイルをプロジェクトにドラッグします。</p>
 </li>
 <li>
-<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に設定します</p>
+<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に構成します</p>
 </li>
 </ol>
 <h2 id="初期化">初期化</h2>
@@ -483,8 +483,8 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// New code to add the Braze Remote Command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> brazeRemoteCommand = BrazeRemoteCommand(application,
 </span></span><span style="display:flex;"><span>                            <span style="color:#66d9ef">true</span>,
@@ -492,7 +492,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                            <span style="color:#66d9ef">true</span>,
 </span></span><span style="display:flex;"><span>                            inAppMessageBlacklist)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Optional: Set config options that may not be supported yet by the Tag in Tealium IQ
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//              or simply to override settings locally.
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    brazeRemoteCommand.registerConfigOverride { builder <span style="color:#f92672">-&gt;</span>
@@ -512,8 +512,8 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands, Dispatchers.TagManagement));
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands, <span style="color:#a6e22e">Dispatchers</span>.TagManagement));
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// New code to add the Braze Remote Command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> brazeRemoteCommand = BrazeRemoteCommand(application,
 </span></span><span style="display:flex;"><span>                            <span style="color:#66d9ef">true</span>,
@@ -521,7 +521,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                            <span style="color:#66d9ef">true</span>,
 </span></span><span style="display:flex;"><span>                            inAppMessageBlacklist)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Optional: Set config options that may not be supported yet by the Tag in Tealium IQ
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//              or simply to override settings locally.
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    brazeRemoteCommand.registerConfigOverride { builder <span style="color:#f92672">-&gt;</span>
@@ -791,7 +791,7 @@ var utag_data = {
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Braze SDKはTealium SDKとともにインストールされているため、対応するタグ構成があれば任意のネイティブBraze機能をトリガーしてください。</p>
 <h3 id="sdkのセットアップ">SDKのセットアップ</h3>
 <h4 id="初期化-1">初期化</h4>
-<p>Braze SDKは起動時に自動的に初期化されます。Braze APIキーはタグ構成で設定されます。</p>
+<p>Braze SDKは起動時に自動的に初期化されます。Braze APIキーはタグ構成で構成されます。</p>
 <table>
 <thead>
 <tr>
@@ -808,7 +808,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>起動オプションの設定には、以下のマッピングが使用されます。</p>
+<p>起動オプションの構成には、以下のマッピングが使用されます。</p>
 <table>
 <thead>
 <tr>
@@ -821,7 +821,7 @@ var utag_data = {
 <tr>
 <td><code>custom_endpoint</code></td>
 <td><code>String</code></td>
-<td>カスタムAPIエンドポイントを設定します。<code>sdk.api.braze.eu</code>の形式で送信されます</td>
+<td>カスタムAPIエンドポイントを構成します。<code>sdk.api.braze.eu</code>の形式で送信されます</td>
 </tr>
 <tr>
 <td><code>device_options</code></td>
@@ -841,12 +841,12 @@ var utag_data = {
 <tr>
 <td><code>flush_interval</code></td>
 <td><code>Double</code></td>
-<td>データフラッシュ間隔（秒単位）を設定します。値はNSTimeIntervalsに変換され、<code>1.0</code>より大きくなければなりません</td>
+<td>データフラッシュ間隔（秒単位）を構成します。値はNSTimeIntervalsに変換され、<code>1.0</code>より大きくなければなりません</td>
 </tr>
 <tr>
 <td><code>push_story_identifier</code></td>
 <td><code>String</code></td>
-<td>このキーは、Push Story Notification Content拡張機能のアプリグループ名を表す文字列値に設定されます。</td>
+<td>このキーは、Push Story Notification Content拡張機能のアプリグループ名を表す文字列値に構成されます。</td>
 </tr>
 <tr>
 <td><code>request_processing_policy</code></td>
@@ -968,7 +968,7 @@ var utag_data = {
 <tbody>
 <tr>
 <td>userattribute</td>
-<td><code>ABKUser/AppboyUser</code>オブジェクトのフィールドを設定します</td>
+<td><code>ABKUser/AppboyUser</code>オブジェクトのフィールドを構成します</td>
 </tr>
 </tbody>
 </table>
@@ -1031,7 +1031,7 @@ var utag_data = {
 </li>
 <li><a href="https://www.braze.com/docs/api/endpoints/user_data/?redirected=true#user-attributes-object-specification">Braze開発者ガイド：ユーザーデータAPI</a></li>
 </ul>
-<h4 id="カスタム属性の設定">カスタム属性の設定</h4>
+<h4 id="カスタム属性の構成">カスタム属性の構成</h4>
 <table>
 <thead>
 <tr>
@@ -1070,7 +1070,7 @@ var utag_data = {
 </ul>
 </li>
 </ul>
-<h4 id="カスタム属性の設定解除">カスタム属性の設定解除</h4>
+<h4 id="カスタム属性の構成解除">カスタム属性の構成解除</h4>
 <table>
 <thead>
 <tr>
@@ -1146,7 +1146,7 @@ var utag_data = {
 </ul>
 </li>
 </ul>
-<h4 id="カスタム配列属性の設定">カスタム配列属性の設定</h4>
+<h4 id="カスタム配列属性の構成">カスタム配列属性の構成</h4>
 <table>
 <thead>
 <tr>
@@ -1550,7 +1550,7 @@ var utag_data = {
 </li>
 </ul>
 <h3 id="位置追跡">位置追跡</h3>
-<h4 id="最後に認識されたユーザーの位置を設定">最後に認識されたユーザーの位置を設定</h4>
+<h4 id="最後に認識されたユーザーの位置を構成">最後に認識されたユーザーの位置を構成</h4>
 <table>
 <thead>
 <tr>
@@ -1723,7 +1723,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1890,6 +1890,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1898,8 +1914,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

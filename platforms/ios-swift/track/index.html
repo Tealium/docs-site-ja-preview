@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -369,7 +369,7 @@ var utag_data = {
 </span></span></code></pre></div><h2 id="タイムドイベント">タイムドイベント</h2>
 <p><a href="/platforms/getting-started-mobile/timed-events/">タイムドイベント</a>は、イベントの持続時間または2つのイベント間の持続時間を測定します。タイムドイベントは自動的にまたは手動でトリガーされます。</p>
 <h3 id="自動トリガー">自動トリガー</h3>
-<p><a href="/platforms/ios-swift/api/tealium-config/#timedeventtriggers"><code>timedEventTriggers</code></a>を<code>TimedEventTrigger</code>オブジェクトのリストに設定することで、イベント間の持続時間を自動的に追跡します。開始と停止のイベント名を指定します。</p>
+<p><a href="/platforms/ios-swift/api/tealium-config/#timedeventtriggers"><code>timedEventTriggers</code></a>を<code>TimedEventTrigger</code>オブジェクトのリストに構成することで、イベント間の持続時間を自動的に追跡します。開始と停止のイベント名を指定します。</p>
 <p>以下は、自動トリガーでタイムドイベントを追跡する例です：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.timedEventTriggers = [TimedEventTrigger(
 </span></span><span style="display:flex;"><span>    start: <span style="color:#e6db74">&#34;cart_add&#34;</span>,
@@ -397,7 +397,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="トレースの離脱">トレースの離脱</h3>
-<p>トレースは、<a href="/platforms/ios-swift/api/tealium/#leavetrace"><code>leaveTrace()</code></a>メソッドが呼び出され、以前に参加したトレースを離脱し、訪問者セッションを終了するまで、アプリセッションの期間中アクティブになります。</p>
+<p>トレースは、<a href="/platforms/ios-swift/api/tealium/#leavetrace"><code>leaveTrace()</code></a>メソッドが呼び出され、以前に参加したトレースを離脱し、訪問セッションを終了するまで、アプリセッションの期間中アクティブになります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TealiumHelper</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> tealium: Tealium?
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ...</span>
@@ -407,8 +407,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// ...</span>
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>&ldquo;End of Visit&quot;で実行するように設定されたコネクタアクションは、セッションが期限切れになるまで実行されません。</p>
-<p>トレースを離脱する際に訪問者セッションを保持するには、以下の例のようにオプションの引数<code>false</code>を渡します：</p>
+</span></span></code></pre></div><p>&ldquo;End of Visit&quot;で実行するように構成されたコネクタアクションは、セッションが期限切れになるまで実行されません。</p>
+<p>トレースを離脱する際に訪問セッションを保持するには、以下の例のようにオプションの引数<code>false</code>を渡します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.leaveTrace(killVisitorSession: <span style="color:#66d9ef">false</span>)
 </span></span></code></pre></div>
 </div>
@@ -470,7 +470,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -625,6 +625,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -633,8 +649,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

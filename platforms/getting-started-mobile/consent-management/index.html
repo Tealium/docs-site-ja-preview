@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -359,7 +359,7 @@ var utag_data = {
   <p>Tealiumの同意管理は、モバイルアプリに同意とデータプライバシーのサポートを追加します。また、ユーザーに同意を求め、その選択を保持し、トラッキングの動作全体でその選択を尊重する機能も追加します。</p>
 <p>同意マネージャの動作は、アプリユーザーの地域に基づいた同意ポリシーによって制御されます。</p>
 <h2 id="同意ポリシー">同意ポリシー</h2>
-<p>Tealiumの同意マネージャは、複数の規制要件をサポートするように設計されており、新たに出現するものに対応することも可能です。これらのポリシーは、初期化時に<code>TealiumConfig</code>の<code>consentPolicy</code>プロパティを設定することで設定されます。</p>
+<p>Tealiumの同意マネージャは、複数の規制要件をサポートするように設計されており、新たに出現するものに対応することも可能です。これらのポリシーは、初期化時に<code>TealiumConfig</code>の<code>consentPolicy</code>プロパティを構成することで構成されます。</p>
 <h3 id="gdpr">GDPR</h3>
 <p>Tealium iQタグ管理とEventStreamは、デフォルトのポリシーとして一般データ保護規則（GDPR）をサポートしています。</p>
 <table>
@@ -371,8 +371,8 @@ var utag_data = {
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>未設定</strong> (デフォルト)</td>
-<td style="text-align:left">同意ステータスが設定されるまで、トラッキングコールはローカルにキューイングされます。</td>
+<td style="text-align:left"><strong>未構成</strong> (デフォルト)</td>
+<td style="text-align:left">同意ステータスが構成されるまで、トラッキングコールはローカルにキューイングされます。</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>同意</strong></td>
@@ -395,27 +395,27 @@ var utag_data = {
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>未設定</strong> (デフォルト)</td>
-<td style="text-align:left">トラッキングコールが送信されます。<br><a href="#data-layer"><code>do_not_sell</code></a>フラグは<code>false</code>に設定されます。<br>タグは影響を受けません。</td>
+<td style="text-align:left"><strong>未構成</strong> (デフォルト)</td>
+<td style="text-align:left">トラッキングコールが送信されます。<br><a href="#data-layer"><code>do_not_sell</code></a>フラグは<code>false</code>に構成されます。<br>タグは影響を受けません。</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>同意</strong></td>
-<td style="text-align:left">トラッキングコールが送信されます。<br><a href="#data-layer"><code>do_not_sell</code></a>フラグは<code>false</code>に設定されます。<br>タグは影響を受けません。</td>
+<td style="text-align:left">トラッキングコールが送信されます。<br><a href="#data-layer"><code>do_not_sell</code></a>フラグは<code>false</code>に構成されます。<br>タグは影響を受けません。</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>拒否</strong></td>
-<td style="text-align:left">トラッキングコールが送信されます。<br><a href="#data-layer"><code>do_not_sell</code></a>フラグは<code>true</code>に設定されます。<br><a href="/iq-tag-management/consent-management/privacy-banner-and-popup/manage/">CCPA同意マネージャ</a>の「影響を受けるタグ」セクションで設定されたタグはトリガーされません。</td>
+<td style="text-align:left">トラッキングコールが送信されます。<br><a href="#data-layer"><code>do_not_sell</code></a>フラグは<code>true</code>に構成されます。<br><a href="/iq-tag-management/consent-management/privacy-banner-and-popup/manage/">CCPA同意マネージャ</a>の「影響を受けるタグ」セクションで構成されたタグはトリガーされません。</td>
 </tr>
 </tbody>
 </table>
 <h2 id="利用可能なアクション">利用可能なアクション</h2>
 <p>以下のアクションは、同意管理モジュールで利用可能です。</p>
 <ul>
-<li>同意ステータスの設定</li>
-<li>ユーザーの同意カテゴリの設定</li>
-<li>ユーザーの同意設定のリセット</li>
-<li>同意ログの有効化の設定</li>
-<li>同意ポリシーの設定</li>
+<li>同意ステータスの構成</li>
+<li>ユーザーの同意カテゴリの構成</li>
+<li>ユーザーの同意構成のリセット</li>
+<li>同意ログの有効化の構成</li>
+<li>同意ポリシーの構成</li>
 <li>同意ポリシーの取得</li>
 </ul>
 <h2 id="サポートされているプラットフォーム">サポートされているプラットフォーム</h2>
@@ -458,7 +458,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>do_not_sell</code></td>
-<td>CCPA同意ポリシーがアクティブな場合のみ設定</td>
+<td>CCPA同意ポリシーがアクティブな場合のみ構成</td>
 <td><code>true</code>または<code>false</code></td>
 </tr>
 </tbody>
@@ -523,7 +523,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -676,6 +676,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -684,8 +700,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

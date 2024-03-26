@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -386,7 +386,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#visitorservicerefreshinterval"><code>visitorServiceRefreshInterval</code></a></td>
-<td>SDKが自動的に最新のVisitorProfileを取得するまでの最小時間間隔を設定する<code>TealiumConfig</code>オプション</td>
+<td>SDKが自動的に最新のVisitorProfileを取得するまでの最小時間間隔を構成する<code>TealiumConfig</code>オプション</td>
 </tr>
 </tbody>
 </table>
@@ -398,7 +398,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">overrideVisitorServiceUrl</span> <span style="color:#f92672">=</span> url
 </span></span></code></pre></div><h3 id="overridevisitorserviceprofile"><code>overrideVisitorServiceProfile</code></h3>
 <p><code>TealiumConfig</code>オブジェクトの拡張プロパティ。VisitorServiceモジュールがプロジェクトに含まれている場合にのみ利用可能です。</p>
-<p>VisitorServiceモジュールがVisitorProfileオブジェクトを取得するために使用するTealiumのプロファイル名を上書きします。デフォルトでは、VisitorServiceモジュールは<code>TealiumConfig</code>で設定されたプロファイル名を使用します。</p>
+<p>VisitorServiceモジュールがVisitorProfileオブジェクトを取得するために使用するTealiumのプロファイル名を上書きします。デフォルトでは、VisitorServiceモジュールは<code>TealiumConfig</code>で構成されたプロファイル名を使用します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...)</span>
 </span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">overrideVisitorServiceProfile</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;main&#34;</span>
 </span></span></code></pre></div><h3 id="requestvisitorprofile"><code>requestVisitorProfile</code></h3>
@@ -408,10 +408,10 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">visitorService</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">requestVisitorProfile</span><span style="color:#f92672">()</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="visitorservicerefreshinterval"><code>visitorServiceRefreshInterval</code></h3>
-<p>VisitorProfileデータの更新間隔を秒単位で設定します。<code>requestVisitorProfile()</code>への呼び出しはこの設定を無視します。</p>
+<p>VisitorProfileデータの更新間隔を秒単位で構成します。<code>requestVisitorProfile()</code>への呼び出しはこの構成を無視します。</p>
 <p>デフォルト: 300 (5分)</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...)</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">visitorServiceRefreshInterval</span> <span style="color:#f92672">=</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">MINUTES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">toSeconds</span><span style="color:#f92672">(</span>30<span style="color:#f92672">)</span> <span style="color:#75715e">// 30分
+</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">visitorServiceRefreshInterval</span> <span style="color:#f92672">=</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">MINUTES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">toSeconds</span><span style="color:#f92672">(</span><span style="color:#ae81ff">30</span><span style="color:#f92672">)</span> <span style="color:#75715e">// 30分
 </span></span></span></code></pre></div><h2 id="インターフェース-visitorupdatedlistener">インターフェース: <code>VisitorUpdatedListener</code></h2>
 <p><code>VisitorUpdatedListener</code>はリスナークラスです。更新があるたびにVisitorProfileの最新バージョンを受け取るために登録します。実装する必要があるメソッドは1つだけです：<a href="#onVisitorUpdated"><code>onVisitorUpdated(visitorProfile: VisitorProfile)</code></a>。</p>
 <h3 id="onvisitorupdated"><code>onVisitorUpdated</code></h3>
@@ -469,7 +469,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -623,6 +623,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -631,8 +647,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

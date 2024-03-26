@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -185,7 +185,7 @@ var utag_data = {
 <li>スプレッドシートに、2番目の列に<strong>Profile</strong>とラベルを付けます。</li>
 <li>最初のアカウントをクリックします。</li>
 <li><strong>Edit/View User Settings</strong>をクリックします。ダイアログボックスには、アカウントと各プロファイルのユーザーの権限（Full、Partial、None）が表示されます。</li>
-<li>スプレッドシートに、この情報を含む3つの新しい列を作成し、後でManage AccountとManage Usersの管理者ロールを設定するときに使用する列名をメモします：<br>
+<li>スプレッドシートに、この情報を含む3つの新しい列を作成し、後でManage AccountとManage Usersの管理者ロールを構成するときに使用する列名をメモします：<br>
 <ul>
 <li><strong>Account</strong></li>
 <li><strong>Profiles</strong></li>
@@ -205,8 +205,8 @@ var utag_data = {
 <li>QA環境への公開</li>
 <li>Prod環境への公開</li>
 <li>タグテンプレートの管理</li>
-<li>既存のバージョンの保存</li>
-<li>新しいバージョンとして保存</li>
+<li>既存のバージョンのストレージ</li>
+<li>新しいバージョンとしてストレージ</li>
 <li>Dev/Custom環境への昇格</li>
 <li>QA環境への昇格</li>
 <li>Prod環境への昇格</li>
@@ -229,8 +229,8 @@ var utag_data = {
 <ul>
 <li><strong>No Access</strong> - プロファイルにアクセスできません。</li>
 <li><strong>Reader</strong> - プロファイルへの読み取り専用アクセス。</li>
-<li><strong>Editor</strong> - プロファイルを編集し保存できますが、公開はできません。</li>
-<li><strong>Publisher</strong> - Editorに加えて、プロファイルを保存し公開できます。また、すべてのサーバーサイドの製品と機能にフルアクセスがあります。</li>
+<li><strong>Editor</strong> - プロファイルを編集しストレージできますが、公開はできません。</li>
+<li><strong>Publisher</strong> - Editorに加えて、プロファイルをストレージし公開できます。また、すべてのサーバーサイドの製品と機能にフルアクセスがあります。</li>
 </ul>
 </li>
 <li><strong>Close</strong>をクリックします。</li>
@@ -257,7 +257,7 @@ var utag_data = {
 <li><strong>Manage &amp; View</strong> – ユーザーはPIIデータを表示、編集、管理することができます。</li>
 </ul>
 <p>スプレッドシートに、ユーザーがPIIに対してアクセスなし、Viewアクセス、またはManage &amp; Viewアクセスを持つべきかをメモします。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>EAとEEAでは、PII権限はグループによって管理されていました。GAでは、PII権限の管理がグループベースの管理からユーザーベースの管理に移行しました。EAとEEAでグループに設定されたPII権限は、自動的にユーザーベースのPII権限に移行します。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>EAとEEAでは、PII権限はグループによって管理されていました。GAでは、PII権限の管理がグループベースの管理からユーザーベースの管理に移行しました。EAとEEAでグループに構成されたPII権限は、自動的にユーザーベースのPII権限に移行します。</p>
 <h3 id="製品と機能のニーズ">製品と機能のニーズ</h3>
 <p>製品アクセス権限は、ユーザーがアクセスできるTealiumの製品と機能を指定します。</p>
 <p>製品アクセ</p>
@@ -321,7 +321,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -476,6 +476,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -484,8 +500,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

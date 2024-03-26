@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -490,23 +490,23 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// take action
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="設定オプション">設定オプション</h2>
-<p>TealiumConfigオブジェクトを作成する際に、以下の設定を使用してビジタープロファイルを取得するためのURLを設定します：</p>
+</span></span></code></pre></div><h2 id="構成オプション">構成オプション</h2>
+<p>TealiumConfigオブジェクトを作成する際に、以下の構成を使用してビジタープロファイルを取得するためのURLを構成します：</p>
 <h3 id="ビジターサービスurlの上書き">ビジターサービスURLの上書き</h3>
-<p>ビジタープロファイルの更新を取得する際に使用するURLを設定します。</p>
+<p>ビジタープロファイルの更新を取得する際に使用するURLを構成します。</p>
 <p>参照：<a href="/platforms/android-kotlin/api/visitor-service/#overridevisitorserviceurl"><code>TealiumConfig.overrideVisitorServiceUrl</code></a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...)</span>
 </span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">overrideVisitorServiceUrl</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://your.preferred.visitor-service.com&#34;</span>
 </span></span></code></pre></div><p>デフォルト：<code>https://visitor-service.tealiumiq.com/{ACCOUNT_NAME}/{PROFILE_NAME}/{VISITOR_ID}</code></p>
 <h3 id="ビジターサービスプロファイルの上書き">ビジターサービスプロファイルの上書き</h3>
-<p>ビジタープロファイルの更新を取得する際に使用するTealiumプロファイルを設定します。参照：<a href="/platforms/android-kotlin/api/visitor-service/#overridevisitorserviceprofile"><code>TealiumConfig.overrideVisitorServiceProfile</code></a>.</p>
+<p>ビジタープロファイルの更新を取得する際に使用するTealiumプロファイルを構成します。参照：<a href="/platforms/android-kotlin/api/visitor-service/#overridevisitorserviceprofile"><code>TealiumConfig.overrideVisitorServiceProfile</code></a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...)</span>
 </span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">overrideVisitorServiceProfile</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;someOtherTealiumProfile&#34;</span>
 </span></span></code></pre></div><h3 id="ビジタープロファイルの更新間隔">ビジタープロファイルの更新間隔</h3>
-<p>最新のVisitorProfileデータを取得するための呼び出し間隔（秒）を設定します。参照：<a href="/platforms/android-kotlin/api/visitor-service/#visitorservicerefreshinterval"><code>TealiumConfig.visitorServiceRefreshInterval</code></a>.</p>
+<p>最新のVisitorProfileデータを取得するための呼び出し間隔（秒）を構成します。参照：<a href="/platforms/android-kotlin/api/visitor-service/#visitorservicerefreshinterval"><code>TealiumConfig.visitorServiceRefreshInterval</code></a>.</p>
 <p>デフォルト：300（5分）</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...)</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">visitorServiceRefreshInterval</span> <span style="color:#f92672">=</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">MINUTES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">toSeconds</span><span style="color:#f92672">(</span>30<span style="color:#f92672">)</span> <span style="color:#75715e">// 30 minutes
+</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">visitorServiceRefreshInterval</span> <span style="color:#f92672">=</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">MINUTES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">toSeconds</span><span style="color:#f92672">(</span><span style="color:#ae81ff">30</span><span style="color:#f92672">)</span> <span style="color:#75715e">// 30 minutes
 </span></span></span></code></pre></div><h2 id="apiリファレンス">APIリファレンス</h2>
 <p>ビジターサービスモジュールで使用されるメソッドのリファレンスについては、Tealium SDK for Android APIの<a href="/platforms/android-kotlin/api/visitor-service/"><code>VisitorService</code></a>クラスを参照してください。</p>
 
@@ -554,7 +554,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -573,7 +573,7 @@ var utag_data = {
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#maven">Maven</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">手動</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ビジタープロファイルデータ</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定オプション</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成オプション</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ビジターサービスURLの上書き</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ビジターサービスプロファイルの上書き</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ビジタープロファイルの更新間隔</a></li>
@@ -711,6 +711,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -719,8 +735,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

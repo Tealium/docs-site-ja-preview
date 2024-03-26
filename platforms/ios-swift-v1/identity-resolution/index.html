@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -357,19 +357,19 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="それはどのように動作するのか">それはどのように動作するのか</h2>
-<p>Tealium Swiftライブラリは、<a href="/platforms/ios-swift-v1/api/tealium/#getvisitorid"><code>getVisitorId()</code></a>メソッドで初めて起動されると、ランダムで一意の永続的な訪問者IDを生成します。この値は、各トラッキングイベントに<code>tealium_visitor_id</code>属性として含まれます。この値はTealium AudienceStreamで使用される主要な訪問者IDです。必要に応じて、永続的なデータストレージに追加することで、二次的な訪問者ID属性を含めることができます。</p>
-<p>AudienceStreamを使用している場合、これがこの訪問者に関連付けられた主要な第一者訪問者IDになります。必要に応じて、追加の既知の訪問者IDを提供し、それらをトラッキング呼び出しの変数として送信することができます。</p>
-<p>AudienceStreamで訪問者IDを設定する方法について<a href="/server-side/getting-started/audiencestream-cdp/visitor-stitching-visitor-id/">詳しく学ぶ</a>。</p>
+<p>Tealium Swiftライブラリは、<a href="/platforms/ios-swift-v1/api/tealium/#getvisitorid"><code>getVisitorId()</code></a>メソッドで初めて起動されると、ランダムで一意の永続的な訪問IDを生成します。この値は、各トラッキングイベントに<code>tealium_visitor_id</code>属性として含まれます。この値はTealium AudienceStreamで使用される主要な訪問IDです。必要に応じて、永続的なデータストレージに追加することで、二次的な訪問ID属性を含めることができます。</p>
+<p>AudienceStreamを使用している場合、これがこの訪問に関連付けられた主要な第一者訪問IDになります。必要に応じて、追加の既知の訪問IDを提供し、それらをトラッキング呼び出しの変数として送信することができます。</p>
+<p>AudienceStreamで訪問IDを構成する方法について<a href="/server-side/getting-started/audiencestream-cdp/visitor-stitching-visitor-id/">詳しく学ぶ</a>。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TealiumHelper</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> tealium: Tealium?
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ...</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// 必要に応じてTealiumの第一者訪問者IDを取得する</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// 必要に応じてTealiumの第一者訪問IDを取得する</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">getVisitorId</span>() -&gt; String? {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">self</span>.tealium?.visitorId
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// 既知の訪問者ID（例えばメールアドレスなど）を永続的なデータストアに追加する</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// 既知の訪問ID（例えばメールアドレスなど）を永続的なデータストアに追加する</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">setKnownVisitorId</span>(<span style="color:#66d9ef">_</span> id: String) {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">self</span>.tealium?.persistentData()?.addPersistentData([<span style="color:#e6db74">&#34;customer_id&#34;</span>: id])
 </span></span><span style="display:flex;"><span>	}
@@ -435,7 +435,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -583,6 +583,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -591,8 +607,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

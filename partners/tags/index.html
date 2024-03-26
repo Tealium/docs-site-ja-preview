@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -152,9 +152,9 @@ var utag_data = {
 <p>タグの内部的な動作はほとんどのユーザーからは見えないため、ユーザーはポイントアンドクリック方式のセットアップオプションに集中できます。その一方で、Tealiumユーザーはタグを実行するコードにアクセスし、JavaScriptで快適に操作できます。</p>
 <p>タグは次の3か所で管理されます。</p>
 <ul>
-<li><strong>設定</strong>
-タグの設定は、タグのインスタンスごとに1回だけ設定されます。通常、ページごとの違いはありません。
-<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Tags/ta-p/5016">タグ設定の詳細については、こちらを参照してください</a>。</li>
+<li><strong>構成</strong>
+タグの構成は、タグのインスタンスごとに1回だけ構成されます。通常、ページごとの違いはありません。
+<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Tags/ta-p/5016">タグ構成の詳細については、こちらを参照してください</a>。</li>
 <li><strong>タグ配信ルール</strong>
 タグ配信ルールは、ページまたはイベントにタグを読み込むタイミングを決定します。タグ配信ルールの条件は、データレイヤーの値に基づきます。
 <a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Load-Rules/ta-p/5098">タグ配信ルールの詳細については、こちらを参照してください</a>。</li>
@@ -174,7 +174,7 @@ var utag_data = {
 <h3 id="標準">標準</h3>
 <p>ほとんどすべてのタグで、同じ形式に従って、JavaScriptファイルを読み込み、コードの初期化を行い、ページから動的データを収集して、タグをトリガーしています。この標準フレームワークの適用範囲は、静的パラメータを使用する最も単純な画像ピクセルから、ページのタイプごとに異なるコードを実行してページから動的データを収集する複雑なJavaScriptライブラリにまで及びます。</p>
 <h3 id="cookie照合">Cookie照合</h3>
-<p>Cookie照合タグの目的は、特殊なリクエストを使用して、Tealiumとシステムの間で訪問者IDを同期することです。これにより、システムの一意の訪問者IDをTealiumのサーバー側プラットフォームと共有し、Tealiumの訪問者IDを受け取ることができます。このタイプの統合は、_標準タグへの追加として_使用されます。</p>
+<p>Cookie照合タグの目的は、特殊なリクエストを使用して、Tealiumとシステムの間で訪問IDを同期することです。これにより、システムの一意の訪問IDをTealiumのサーバー側プラットフォームと共有し、Tealiumの訪問IDを受け取ることができます。このタイプの統合は、_標準タグへの追加として_使用されます。</p>
 <h4 id="例">例</h4>
 <p>次の例は、Cookie照合リクエストを示しています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>GET https://sync.example-dsp.net/get-userId?
@@ -182,7 +182,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>tealium_account=my_account&amp;
 </span></span><span style="display:flex;"><span>tealium_profile=main&amp;
 </span></span><span style="display:flex;"><span>tealium_datasource=abc123
-</span></span></code></pre></div><p>このリクエストはブラウザを起点とし、Tealiumの訪問者IDをシステムに送信します。結果として、システムの訪問者IDとTealiumの訪問者IDがTealiumに返されます。これは、Tealiumが照合テーブルをホスティングしていることを示します（推奨）。Tealiumへの最後のリクエストには、Tealiumから提供されたすべての変数と、一致したベンダーのIDが含まれます。</p>
+</span></span></code></pre></div><p>このリクエストはブラウザを起点とし、Tealiumの訪問IDをシステムに送信します。結果として、システムの訪問IDとTealiumの訪問IDがTealiumに返されます。これは、Tealiumが照合テーブルをホスティングしていることを示します（推奨）。Tealiumへの最後のリクエストには、Tealiumから提供されたすべての変数と、一致したベンダーのIDが含まれます。</p>
 <p>以下は、Tealiumに戻るリダイレクトの例です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>GET https://collect.tealiumiq.com/vdata?
 </span></span><span style="display:flex;"><span>dsp_uid=4595-23423442&amp;
@@ -277,7 +277,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2022年August月29日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -433,6 +433,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -441,8 +457,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

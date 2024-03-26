@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -357,11 +357,11 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="カスタムデータ">カスタムデータ</h2>
-<p>すべてのイベントで一般的なデータレイヤーの値が必要な場合がよくあります。これらの値をすべてのトラッキングコールに追加する必要がないようにするために、<code>tealium.dataLayer</code>メソッドを使用して、すべてのトラッキングコールに適用されるデータレイヤーの値を永続化します。値が保存されると、自動的にすべてのトラッキングイベントに含まれます。</p>
+<p>すべてのイベントで一般的なデータレイヤーの値が必要な場合がよくあります。これらの値をすべてのトラッキングコールに追加する必要がないようにするために、<code>tealium.dataLayer</code>メソッドを使用して、すべてのトラッキングコールに適用されるデータレイヤーの値を永続化します。値がストレージされると、自動的にすべてのトラッキングイベントに含まれます。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i><code>tealium.dataLayer</code>が提供するメソッドは、カスタムの値を読み書きすることができますが、<a href="#module-data">モジュールデータ</a>にはアクセスできません。</p>
-<h3 id="値の設定と取得">値の設定と取得</h3>
-<p>データレイヤーの値を設定、取得、削除するためのいくつかのユーティリティメソッドがあります。カスタムのデータレイヤーの値を設定および取得するためのメソッドは型付きですが、データレイヤーに格納されている変数の型がわからない場合は、型指定されていないメソッドを使用することもできます。</p>
-<p>たとえば、文字列の値を設定するには、<a href="/platforms/android-kotlin/api/data-layer/#putstring"><code>putString()</code></a>を呼び出します:</p>
+<h3 id="値の構成と取得">値の構成と取得</h3>
+<p>データレイヤーの値を構成、取得、削除するためのいくつかのユーティリティメソッドがあります。カスタムのデータレイヤーの値を構成および取得するためのメソッドは型付きですが、データレイヤーに格納されている変数の型がわからない場合は、型指定されていないメソッドを使用することもできます。</p>
+<p>たとえば、文字列の値を構成するには、<a href="/platforms/android-kotlin/api/data-layer/#putstring"><code>putString()</code></a>を呼び出します:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;my_string&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;my_string_value&#34;</span><span style="color:#f92672">)</span>
 </span></span></code></pre></div><p>型が指定されていない場合は、<a href="/platforms/android-kotlin/api/data-layer/#get"><code>get()</code></a>を呼び出して値を取得します:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;my_string&#34;</span><span style="color:#f92672">)</span>
@@ -381,14 +381,14 @@ var utag_data = {
 <li><code>Array&lt;Long&gt;</code></li>
 <li><code>Array&lt;Double&gt;</code></li>
 </ul>
-<p>長い数値の値を設定するには、<a href="/platforms/android-kotlin/api/data-layer/#putlong"><code>putLong()</code></a>を呼び出します:</p>
+<p>長い数値の値を構成するには、<a href="/platforms/android-kotlin/api/data-layer/#putlong"><code>putLong()</code></a>を呼び出します:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val launchTime <span style="color:#f92672">=</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">currentTimeMillis</span><span style="color:#f92672">()</span>
 </span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putLong</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;launch_time&#34;</span><span style="color:#f92672">,</span> launchTime<span style="color:#f92672">)</span>
-</span></span></code></pre></div><p>文字列の配列を設定するには、<a href="/platforms/android-kotlin/api/data-layer/#putstringarray"><code>putStringArray()</code></a>を呼び出します:</p>
+</span></span></code></pre></div><p>文字列の配列を構成するには、<a href="/platforms/android-kotlin/api/data-layer/#putstringarray"><code>putStringArray()</code></a>を呼び出します:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val lastThreeProductsViewed <span style="color:#f92672">=</span> arrayOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SKU-1&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;SKU-2&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;SKU-3&#34;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putStringArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;last_three_products&#34;</span><span style="color:#f92672">,</span> lastThreeProductsViewed<span style="color:#f92672">)</span>
 </span></span></code></pre></div><h3 id="データの有効期限">データの有効期限</h3>
-<p>データレイヤーの値には有効期限があり、有効期限が切れるとデータレイヤーから削除されます。カスタムのデータレイヤーの値を設定する際に、値の有効期間をオプションで設定することができます。デフォルトの有効期間は現在のセッションです。</p>
+<p>データレイヤーの値には有効期限があり、有効期限が切れるとデータレイヤーから削除されます。カスタムのデータレイヤーの値を構成する際に、値の有効期間をオプションで構成することができます。デフォルトの有効期間は現在のセッションです。</p>
 <p>次の有効期限のタイプが利用できます:</p>
 <table>
 <thead>
@@ -418,18 +418,18 @@ var utag_data = {
 </table>
 <h4 id="セッションデータ">セッションデータ</h4>
 <p>セッションデータの値はセッションの間永続化されます。セッションは、一定の時間枠内でのユーザーのアクティビティによって決定されます。セッションは、ユーザーの非アクティビティが30分続いた後に終了します。</p>
-<p>たとえば、期限切れにならない値を設定するには:</p>
+<p>たとえば、期限切れにならない値を構成するには:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val userId <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;my_id&#34;</span>
 </span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;user_id&#34;</span><span style="color:#f92672">,</span> userId<span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><p>現在のセッションの終了時に値が期限切れになるように明示的に設定するには (デフォルトの動作):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val sessionProductViews <span style="color:#f92672">=</span> 10
+</span></span></code></pre></div><p>現在のセッションの終了時に値が期限切れになるように明示的に構成するには (デフォルトの動作):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val sessionProductViews <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
 </span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;product_views&#34;</span><span style="color:#f92672">,</span> sessionProductViews<span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">SESSION</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><p>1日後に値が期限切れになるように設定するには:</p>
+</span></span></code></pre></div><p>1日後に値が期限切れになるように構成するには:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val frequentVisitor <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getBoolean</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;frequent_visitor&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">?:</span> <span style="color:#66d9ef">false</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putBoolean</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;frequent_visitor&#34;</span><span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>        frequentVisitor<span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>        Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">afterTimeUnit</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">DAYS</span><span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>        Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">afterTimeUnit</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">DAYS</span><span style="color:#f92672">))</span>
 </span></span></code></pre></div><h3 id="例">例</h3>
 <p>使用可能なすべてのメソッドの完全なリストについては、<a href="/platforms/android-kotlin/api/data-layer/">Class: DataLayer</a>を参照してください。</p>
 <p>データレイヤーに変数が含まれているかどうかを確認するには、<a href="/platforms/android-kotlin/api/data-layer/#contains"><code>contains()</code></a>を呼び出します:</p>
@@ -890,7 +890,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>location_accuracy</code></td>
-<td>位置情報モジュールの精度設定</td>
+<td>位置情報モジュールの精度構成</td>
 <td><code>high</code>, <code>low</code></td>
 </tr>
 <tr>
@@ -1104,7 +1104,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1119,7 +1119,7 @@ var utag_data = {
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">カスタムデータ</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">値の設定と取得</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">値の構成と取得</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データの型</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データの有効期限</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">例</a></li>
@@ -1268,6 +1268,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1276,8 +1292,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

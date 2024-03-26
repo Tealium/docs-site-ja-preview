@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -363,7 +363,7 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="使用法">使用法</h2>
-<p>属性モジュールは、トラッキングコールごとにユーザーがリセット可能な広告識別子（IDFA）を追加し、オプションでApple Search Ads APIを実装して属性情報を収集します。<a href="https://developer.apple.com/documentation/iad/setting_up_apple_search_ads_attribution">Apple Search Adsの属性設定</a>について詳しくはこちらをご覧ください。</p>
+<p>属性モジュールは、トラッキングコールごとにユーザーがリセット可能な広告識別子（IDFA）を追加し、オプションでApple Search Ads APIを実装して属性情報を収集します。<a href="https://developer.apple.com/documentation/iad/setting_up_apple_search_ads_attribution">Apple Search Adsの属性構成</a>について詳しくはこちらをご覧ください。</p>
 <p>バージョン2.1.1以降では、属性モジュールには<code>SKAdNetwork</code>のサポートも含まれ、ディスパッチペイロードに<code>ATTransparency.AuthorizationStatus</code>が追加されます。</p>
 <p>このモジュールの使用は任意です。機能について詳しく読んで必要かどうかを判断してください。なぜなら、追加の依存関係が導入されるため、アプリを提出する際にAppleにIDFAの使用理由を説明する必要があります。IDFAの使用を宣言しない場合、Appleはアプリを拒否します。<a href="https://developer.apple.com/app-store/review/rejections/">IDFAの使用と拒否について詳しくはこちらをご覧ください</a>。</p>
 <p>以下のプラットフォームがサポートされています：</p>
@@ -385,7 +385,7 @@ var utag_data = {
 <ol>
 <li>Xcodeプロジェクトで、「ファイル」&gt;「Swift Packages」&gt;「パッケージの依存関係を追加」を選択します。</li>
 <li>リポジトリのURLを入力します：<code>https://github.com/tealium/tealium-swift</code></li>
-<li>バージョンルールを設定します。通常は、「次のメジャーバージョンまで」が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットしてください。</li>
+<li>バージョンルールを構成します。通常は、「次のメジャーバージョンまで」が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットしてください。</li>
 <li>Xcodeプロジェクトの各アプリのターゲットの<strong>Frameworks &gt; Libraries &amp; Embedded Content</strong>の下にあるリストから<code>Attribution</code>モジュールを選択して追加します。</li>
 </ol>
 <p>iOS向けの<a href="/platforms/ios-swift/install/#swift-package-manager-recommended">Swift Package Managerのインストールについて詳しくはこちらをご覧ください</a>。</p>
@@ -397,7 +397,7 @@ var utag_data = {
 <p>Carthageを使用してAttributionモジュールをインストールするには、次の手順に従います：</p>
 <ol>
 <li>
-<p>Xcodeのアプリのターゲットの一般設定ページに移動します。</p>
+<p>Xcodeのアプリのターゲットの一般構成ページに移動します。</p>
 </li>
 <li>
 <p><strong>埋め込みバイナリ</strong>セクションに次のフレームワークを追加します：</p>
@@ -417,7 +417,7 @@ var utag_data = {
 <p>属性モジュールが有効になっている場合、ユーザーのトラッキング許可ステータスは自動的にディスパッチペイロードに<code>device_tracking_authorization</code>として追加され、値は<a href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus"><code>ATTrackingManager.AuthorizationStatus</code></a>列挙型の文字列表現です。</p>
 <p>該当する場合は、<code>ATTrackingManager.requestTrackingAuthorization</code>を別途呼び出してください。<a href="https://community.tealiumiq.com/t5/TLC-Blog/What-Do-Apple-s-IDFA-Changes-Mean-for-Tealium/ba-p/33770#toc-hId-1331108563">Tealium SDKを有効にするためのトラッキング許可のリクエストについて詳しくはこちらをご覧ください</a>。</p>
 <h3 id="skadnetwork">SKAdNetwork</h3>
-<p><code>config.skAdAttributionEnabled</code>が<code>true</code>に設定されている場合、Tealiumは起動時に自動的に<code>SKAdNetwork.registerAppForAdNetworkAttribution()</code>を呼び出します。これにより、広告ネットワークはアプリのインストールを匿名で検証できます。<code>config.skAdConversionKeys</code>辞書が定義されている場合、指定されたイベントで<code>SKAdNetwork.updateConversionValue()</code>が自動的に呼び出され、指定されたコンバージョンキーの値が送信されます。</p>
+<p><code>config.skAdAttributionEnabled</code>が<code>true</code>に構成されている場合、Tealiumは起動時に自動的に<code>SKAdNetwork.registerAppForAdNetworkAttribution()</code>を呼び出します。これにより、広告ネットワークはアプリのインストールを匿名で検証できます。<code>config.skAdConversionKeys</code>辞書が定義されている場合、指定されたイベントで<code>SKAdNetwork.updateConversionValue()</code>が自動的に呼び出され、指定されたコンバージョンキーの値が送信されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.skAdConversionKeys = [<span style="color:#e6db74">&#34;EVENT_NAME&#34;</span>: <span style="color:#e6db74">&#34;DATA_LAYER_VARIABLE&#34;</span>]
 </span></span></code></pre></div><p>コンバージョン値は、<code>0</code>から<code>63</code>の間の値を持つ<code>Int</code>でなければなりません。コンバージョン値が小数の場合は、コンバージョンイベントを呼び出す前に整数に変換する必要があります。</p>
 <p>例：</p>
@@ -431,7 +431,7 @@ var utag_data = {
     </a><figcaption><p>Skad Custom</p>
         </figcaption>
 </figure>
-<p>ユーザーがアプリ内またはモバイルウェブブラウザ内の広告をクリックすると、App Storeが起動し、ユーザーは広告キャンペーンの製品画面に移動します。iOS 14.5以降、広告主はカスタムのビュースルー広告またはStoreKitでレンダリングされた広告を表示するオプションを選択できます。ユーザーが広告されたアプリをインストールすると、デバイスは保留中のインストール検証を保存します。ユーザーがアプリを起動すると、デバイスはインストール検証のポストバックを広告ネットワークに送信します。</p>
+<p>ユーザーがアプリ内またはモバイルウェブブラウザ内の広告をクリックすると、App Storeが起動し、ユーザーは広告キャンペーンの製品画面に移動します。iOS 14.5以降、広告主はカスタムのビュースルー広告またはStoreKitでレンダリングされた広告を表示するオプションを選択できます。ユーザーが広告されたアプリをインストールすると、デバイスは保留中のインストール検証をストレージします。ユーザーがアプリを起動すると、デバイスはインストール検証のポストバックを広告ネットワークに送信します。</p>
 <p>通知はAppleによって署名され、キャンペーンIDを含みますが、ユーザーやデバイス固有のデータは含まれません。ポストバックには、コンバージョン値とソースアプリのIDが含まれる場合があります。これは、Appleが値の提供がAppleのプライバシーの基準を満たすと判断した場合です。</p>
 <p><a href="https://developer.apple.com/documentation/storekit/skadnetwork">広告によるアプリのインストールについて詳しくはこちらをご覧ください</a>。</p>
 <h4 id="tealiumの役割">Tealiumの役割</h4>
@@ -442,7 +442,7 @@ var utag_data = {
 <li>広告されたアプリ</li>
 </ol>
 <p>Tealiumは<code>SKAdNetwork</code>への呼び出しをラップします。<code>TealiumAttribution</code>モジュールと構成フラグが有効になっている場合、アプリの起動時に<code>SKAdNetwork.registerAppForAdNetworkAttribution()</code>が呼び出されます。</p>
-<p>さらに、<a href="/platforms/ios-swift/api/tealium-config/#skadconversionkeys"><code>skAdConversionKeys</code></a>を定義している場合、<code>SKAdNetwork.updateConversionValue(_:)</code>メソッドが呼び出され、指定されたコンバージョン値が渡されます。Tealiumを使用すると、既に設定されているトラッキングを介して<code>SKAdNetwork</code>への呼び出しを管理できます。</p>
+<p>さらに、<a href="/platforms/ios-swift/api/tealium-config/#skadconversionkeys"><code>skAdConversionKeys</code></a>を定義している場合、<code>SKAdNetwork.updateConversionValue(_:)</code>メソッドが呼び出され、指定されたコンバージョン値が渡されます。Tealiumを使用すると、既に構成されているトラッキングを介して<code>SKAdNetwork</code>への呼び出しを管理できます。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>ユーザーにトラッキングの許可をリクエストし、適切なキーを<code>.plist</code>ファイルに追加する必要がある場合があります。</p>
 <p>次の図は、Tealiumが<code>SKAdNetwork</code>と連携する方法を示しています：</p>
 <figure><a class="slb" href="/images/platforms/ios/skad-tealium-custom.png"><img src="/images/platforms/ios/skad-tealium-custom.png" width="750" height="400"/>
@@ -453,10 +453,10 @@ var utag_data = {
 <p><code>SKAdNetwork</code>への呼び出しを検証する方法については、<a href="https://developer.apple.com/documentation/storekit/skadnetwork/verifying_an_install_validation_postback">インストール検証ポストバックの検証</a>を参照してください。</p>
 <h2 id="search-ads-api">Search Ads API</h2>
 <p>Apple Search Ads APIを使用するには、<a href="/platforms/ios-swift/api/tealium-config/#tealiumconfig"><code>TealiumConfig</code></a>オブジェクトの<a href="/platforms/ios-swift/api/tealium-config/#searchadsenabled"><code>searchAdsEnabled</code></a>プロパティを有効にします。次に、<a href="https://developer.apple.com/documentation/iad/setting_up_apple_search_ads_attribution">iAd</a>フレームワークを使用して、属性オブジェクトを含む<a href="https://developer.apple.com/documentation/iad/adclient/1614620-requestattributiondetails">属性辞書を取得</a>します。Tealiumライブラリはアプリの起動時にこれを行いますが、情報がタイムリーに取得されない場合があります。情報は通常、起動イベント中にAppleから受け取った後にデータレイヤーに追加されます。</p>
-<p>場合によっては、起動後にいくつかのイベントが発生する場合があります。これらの変数はアプリのライフサイクル中に1度だけAppleのサーバーから取得され、永続変数として保存されるため、将来のアプリの起動時に利用できるようになります。</p>
+<p>場合によっては、起動後にいくつかのイベントが発生する場合があります。これらの変数はアプリのライフサイクル中に1度だけAppleのサーバーから取得され、永続変数としてストレージされるため、将来のアプリの起動時に利用できるようになります。</p>
 <h2 id="データレイヤー">データレイヤー</h2>
 <p>モジュールが有効な場合、各トラッキングコールと共に次の変数が送信されます：</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i><code>ad_</code>で始まる変数は、<a href="#search-ads-api">Search Ads</a>が有効になっている場合にのみ設定されます。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i><code>ad_</code>で始まる変数は、<a href="#search-ads-api">Search Ads</a>が有効になっている場合にのみ構成されます。</p>
 <table>
 <thead>
 <tr>
@@ -628,7 +628,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -787,6 +787,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -795,8 +811,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

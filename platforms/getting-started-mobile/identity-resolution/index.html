@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -357,7 +357,7 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="匿名id">匿名ID</h2>
-<p>Tealiumライブラリは、最初に起動されたときに一意の永続的な匿名IDを生成し、それを <code>tealium.visitorId</code> に保存します。この値は、追跡された各イベントに <code>tealium_visitor_id</code> 属性として含まれます。</p>
+<p>Tealiumライブラリは、最初に起動されたときに一意の永続的な匿名IDを生成し、それを <code>tealium.visitorId</code> にストレージします。この値は、追跡された各イベントに <code>tealium_visitor_id</code> 属性として含まれます。</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -384,7 +384,7 @@ var utag_data = {
 </div>
 </div>
 
-<p>Tealium AudienceStreamを使用している場合、<code>visitorId</code> は訪問者に関連付けられた匿名IDです。<a href="/server-side/visitor-stitching/anonymous-user-visitor-id-attributes/">AudienceStreamの匿名ID</a>について詳しく学びましょう。</p>
+<p>Tealium AudienceStreamを使用している場合、<code>visitorId</code> は訪問に関連付けられた匿名IDです。<a href="/server-side/visitor-stitching/anonymous-user-visitor-id-attributes/">AudienceStreamの匿名ID</a>について詳しく学びましょう。</p>
 <h2 id="匿名idのリセット">匿名IDのリセット</h2>
 <p>必要に応じて、このメソッドを呼び出すことで現在の <code>visitorId</code> をリセットできます：</p>
 <pre tabindex="0"><code>tealium.resetVisitorId()
@@ -409,13 +409,13 @@ var utag_data = {
 </div>
 </div>
 
-<h2 id="訪問者の切り替え">訪問者の切り替え</h2>
-<p>アプリが複数のユーザーをサポートしている場合、AudienceStream CDPプロファイルを分けて、間違ったユーザーにターゲットメッセージや広告を送信するのを避けることが重要です。有効にすると、Tealium SDKの訪問者切り替え機能は自動的にアプリのユーザー変更を監視し、新しいユーザーが検出されるたびに <code>tealium_visitor_id</code> をリセットします。</p>
-<p>この機能を有効にするには、訪問者の識別キーを <code>TealiumConfig</code> インスタンスに渡す必要があります。このキーは、新しい訪問者がログインしたかどうかを判断するためにSDKが監視するデータレイヤー項目を指定します。新しい訪問者が検出されると、新しい訪問者IDが割り当てられ、データレイヤーに挿入され、訪問者の切り替え時点から生成されるイベントに影響を与えます。</p>
-<p>AudienceStreamで各ユーザーに割り当てられる訪問者IDの数を減らすために（パフォーマンス上の理由で推奨）、SDKが以前にログインしたユーザーへの切り替えを検出した場合、そのユーザーの元の訪問者IDが使用されます。この機能をサポートするために、<code>tealium_visitor_id</code> とカスタムデータレイヤーキーの値はデバイス上にローカルに保存されます。</p>
+<h2 id="訪問の切り替え">訪問の切り替え</h2>
+<p>アプリが複数のユーザーをサポートしている場合、AudienceStream CDPプロファイルを分けて、間違ったユーザーにターゲットメッセージや広告を送信するのを避けることが重要です。有効にすると、Tealium SDKの訪問切り替え機能は自動的にアプリのユーザー変更を監視し、新しいユーザーが検出されるたびに <code>tealium_visitor_id</code> をリセットします。</p>
+<p>この機能を有効にするには、訪問の識別キーを <code>TealiumConfig</code> インスタンスに渡す必要があります。このキーは、新しい訪問がログインしたかどうかを判断するためにSDKが監視するデータレイヤー項目を指定します。新しい訪問が検出されると、新しい訪問IDが割り当てられ、データレイヤーに挿入され、訪問の切り替え時点から生成されるイベントに影響を与えます。</p>
+<p>AudienceStreamで各ユーザーに割り当てられる訪問IDの数を減らすために（パフォーマンス上の理由で推奨）、SDKが以前にログインしたユーザーへの切り替えを検出した場合、そのユーザーの元の訪問IDが使用されます。この機能をサポートするために、<code>tealium_visitor_id</code> とカスタムデータレイヤーキーの値はデバイス上にローカルにストレージされます。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>IDは常に <code>SHA-256</code> アルゴリズムでハッシュ化されます。ハッシュ化されたIDは比較目的のみで使用されます。個人データをハッシュ化解除する方法はありませんし、ハッシュ化された値はデバイスから送信されることはありません。</p>
-<h3 id="設定">設定</h3>
-<p>訪問者の切り替えは、アプリユーザーを識別するキーの名前をデータレイヤーに渡すことで有効になります：</p>
+<h3 id="構成">構成</h3>
+<p>訪問の切り替えは、アプリユーザーを識別するキーの名前をデータレイヤーに渡すことで有効になります：</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -430,19 +430,19 @@ var utag_data = {
 </div>
 </div>
 
-<p>訪問者の識別キーが設定されると、ユーザーの既知のID（この場合は <code>customer_id</code>）が変更されるたびに、SDKはデータレイヤー内の現在の <code>tealium_visitor_id</code> を変更します。顧客IDがすでに存在する場合、<code>tealium_visitor_id</code> はこの訪問者の既存の顧客IDに設定されます。しかし、顧客IDが存在しない場合、新しい <code>tealium_visitor_id</code> が生成されます。</p>
-<h3 id="保存された識別子の削除">保存された識別子の削除</h3>
-<p>ユーザーの削除リクエストに準じるなど、一部のケースでは、ユーザーのデバイスからすべての保存された識別子を削除する必要があるかもしれません。これを行うには：</p>
+<p>訪問の識別キーが構成されると、ユーザーの既知のID（この場合は <code>customer_id</code>）が変更されるたびに、SDKはデータレイヤー内の現在の <code>tealium_visitor_id</code> を変更します。顧客IDがすでに存在する場合、<code>tealium_visitor_id</code> はこの訪問の既存の顧客IDに構成されます。しかし、顧客IDが存在しない場合、新しい <code>tealium_visitor_id</code> が生成されます。</p>
+<h3 id="ストレージされた識別子の削除">ストレージされた識別子の削除</h3>
+<p>ユーザーの削除リクエストに準じるなど、一部のケースでは、ユーザーのデバイスからすべてのストレージされた識別子を削除する必要があるかもしれません。これを行うには：</p>
 <pre tabindex="0"><code>tealium.clearStoredVisitorIds()
-</code></pre><p><code>visitorIdentityKey</code> が <code>TealiumConfig</code> インスタンスに存在し、<code>dataLayer</code> が訪問者識別子を含んでいる場合、訪問者IDのストレージは現在の識別子と新しい <code>tealium_visitor_id</code> で自動的に再生成されます。</p>
-<p>すべての以前に保存された識別子をクリアした後、現在の訪問者の <code>tealium_visitor_id</code> は新しい識別子にリセットされます。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>これは絶対に必要な場合にのみ実行することを強く推奨します。なぜなら、保存されたIDを定期的にクリアすると、機能が意図した通りに動作しなくなり、AudienceStreamの設定に問題が生じる可能性があるからです。</p>
+</code></pre><p><code>visitorIdentityKey</code> が <code>TealiumConfig</code> インスタンスに存在し、<code>dataLayer</code> が訪問識別子を含んでいる場合、訪問IDのストレージは現在の識別子と新しい <code>tealium_visitor_id</code> で自動的に再生成されます。</p>
+<p>すべての以前にストレージされた識別子をクリアした後、現在の訪問の <code>tealium_visitor_id</code> は新しい識別子にリセットされます。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>これは絶対に必要な場合にのみ実行することを強く推奨します。なぜなら、ストレージされたIDを定期的にクリアすると、機能が意図した通りに動作しなくなり、AudienceStreamの構成に問題が生じる可能性があるからです。</p>
 <h2 id="匿名idの変更をリッスンする">匿名IDの変更をリッスンする</h2>
 <p>Tealiumインスタンスは、<code>onVisitorId</code> にサブスクライブできる観測可能なプロパティを提供します。以下のインスタンスで現在の <code>tealium_visitor_id</code> とともにサブスクリプションが呼び出されます：</p>
 <ul>
 <li>アプリの起動時。</li>
 <li><code>resetVisitorId</code> が呼び出された後に <code>tealium_visitor_id</code> が変更されたとき。</li>
-<li>SDKがデータレイヤー内のvisitorIdentityKeyに基づいて訪問者の変更を自動的に検出したとき。</li>
+<li>SDKがデータレイヤー内のvisitorIdentityKeyに基づいて訪問の変更を自動的に検出したとき。</li>
 </ul>
 
 </div>
@@ -504,7 +504,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -521,9 +521,9 @@ var utag_data = {
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">匿名ID</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">匿名IDのリセット</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユーザー識別子</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問者の切り替え</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">保存された識別子の削除</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問の切り替え</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ストレージされた識別子の削除</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">匿名IDの変更をリッスンする</a></li>
               </nav>
   </aside></nav>
@@ -658,6 +658,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -666,8 +682,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

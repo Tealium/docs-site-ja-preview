@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -400,7 +400,7 @@ var utag_data = {
 <ol>
 <li>Xcode プロジェクトで、次のように選択します: <strong>[File] &gt; [Add Package&hellip;]&gt; [Add Package Dependency]</strong></li>
 <li>レポジトリの URL として「https://github.com/tealium/tealium-ios-adjust-remote-command」と入力します</li>
-<li>バージョンルールを設定します。通常は <code>Up to next major</code> が推奨されます。現在の <code>TealiumAdjust</code> バージョンがリストに表示されない場合は、Swift パッケージ キャッシュをリセットします。</li>
+<li>バージョンルールを構成します。通常は <code>Up to next major</code> が推奨されます。現在の <code>TealiumAdjust</code> バージョンがリストに表示されない場合は、Swift パッケージ キャッシュをリセットします。</li>
 <li>インストールする <code>TealiumAdjust</code> モジュールを選択し、モジュールをインストールするアプリ ターゲットを選択します。</li>
 <li>Tealium Swift ライブラリからの追加のモジュールを使用しようとしている場合は、 <a href="/platforms/ios-swift/install/#swift-package-manager-recommended">Swift Package Managerの手順</a> に従って、これを追加します。</li>
 </ol>
@@ -490,7 +490,7 @@ var utag_data = {
 <p><a href="https://github.com/tealium/tealium-ios-adjust-remote-command">Tealium iOS Adjust リモート コマンド</a> レポジトリをクローンして、 <code>Sources</code> フォルダ内のファイルをプロジェクトにドラッグします。</p>
 </li>
 <li>
-<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に設定します</p>
+<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に構成します</p>
 </li>
 </ol>
 <h3 id="手動android">手動（Android）</h3>
@@ -530,9 +530,9 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// New code to add the Adjust Remote Command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">val</span> adjustRemoteCommand = AdjustRemoteCommand(application)
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// register the command
@@ -546,9 +546,9 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// New code to add the Adjust Remote Command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">val</span> adjustRemoteCommand = AdjustRemoteCommand(application)
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// register the command
@@ -789,7 +789,7 @@ var utag_data = {
 <p class="note"><i class="fa fa-exclamation-triangle"></i>* <code>AppTrackingTransparency.framework</code>の一部として iOS でのみサポートされます。詳細については <a href="https://help.adjust.com/en/article/app-tracking-transparency-att-framework">Adjust iOS SKAdNetwork 統合</a> に関するガイドを参照してください。</p>
 <h3 id="sdkのセットアップ">SDKのセットアップ</h3>
 <h4 id="初期化-1">初期化</h4>
-<p>Adjust SDKは起動時に自動的に初期化されます。Adjust API キーはタグ構成で設定されます。</p>
+<p>Adjust SDKは起動時に自動的に初期化されます。Adjust API キーはタグ構成で構成されます。</p>
 <table>
 <thead>
 <tr>
@@ -809,7 +809,7 @@ var utag_data = {
 <li><a href="https://github.com/adjust/ios_sdk/blob/master/README.md#sdk-integrate">iOS</a></li>
 <li><a href="https://github.com/adjust/android_sdk/blob/master/README.md#qs-integrate-sdk">Android</a></li>
 </ul>
-<p>Adjust リモート コマンド タグで利用できる構成オプションはいくつかあります。以下のいずれかが起動時に設定された場合は、 <code>initialize()</code> メソッドの実行中に送信されます。</p>
+<p>Adjust リモート コマンド タグで利用できる構成オプションはいくつかあります。以下のいずれかが起動時に構成された場合は、 <code>initialize()</code> メソッドの実行中に送信されます。</p>
 <h5 id="構成オプション">構成オプション</h5>
 <table>
 <thead>
@@ -1037,7 +1037,7 @@ var utag_data = {
 <li><a href="https://github.com/adjust/android_sdk/blob/master/README.md#subscription-tracking">Android</a></li>
 </ul>
 <h3 id="トラッキング許可のリクエスト-ios">トラッキング許可のリクエスト (iOS)</h3>
-<p>Adjust SDK は、ユーザーに対してトラッキング許可を自動的にリクエストします。完了を設定するには、 <code>Adjust.trackingAuthorizationCompletion()</code> メソッドを使用して、次に、リモート コマンドを追加します。</p>
+<p>Adjust SDK は、ユーザーに対してトラッキング許可を自動的にリクエストします。完了を構成するには、 <code>Adjust.trackingAuthorizationCompletion()</code> メソッドを使用して、次に、リモート コマンドを追加します。</p>
 <p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium = Tealium(config: config) { <span style="color:#66d9ef">_</span> <span style="color:#66d9ef">in</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> remoteCommands = <span style="color:#66d9ef">self</span>.tealium?.remoteCommands <span style="color:#66d9ef">else</span> {
@@ -1166,7 +1166,7 @@ var utag_data = {
 <li><a href="https://github.com/adjust/ios_sdk#ad-revenue-tracking">iOS</a></li>
 <li><a href="https://github.com/adjust/android_sdk/blob/master/README.md#ad-revenue-tracking">Android</a></li>
 </ul>
-<h4 id="プッシュ-トークンの設定">プッシュ トークンの設定</h4>
+<h4 id="プッシュ-トークンの構成">プッシュ トークンの構成</h4>
 <table>
 <thead>
 <tr>
@@ -1195,12 +1195,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>Adjust 追加のAPI: プッシュ トークンの設定</p>
+<p>Adjust 追加のAPI: プッシュ トークンの構成</p>
 <ul>
 <li><a href="https://github.com/adjust/ios_sdk#ad-revenue-tracking">iOS</a></li>
 <li><a href="setPushToken">Android</a></li>
 </ul>
-<h4 id="有効化の設定">有効化の設定</h4>
+<h4 id="有効化の構成">有効化の構成</h4>
 <table>
 <thead>
 <tr>
@@ -1234,7 +1234,7 @@ var utag_data = {
 <li><a href="https://github.com/adjust/android_sdk/blob/master/README.md#disable-tracking">iOS</a></li>
 <li><a href="https://github.com/adjust/ios_sdk#disable-tracking">Android</a></li>
 </ul>
-<h4 id="オフライン-モードの設定">オフライン モードの設定</h4>
+<h4 id="オフライン-モードの構成">オフライン モードの構成</h4>
 <table>
 <thead>
 <tr>
@@ -1263,7 +1263,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>Adjust 追加のAPI: オフライン モードの設定</p>
+<p>Adjust 追加のAPI: オフライン モードの構成</p>
 <ul>
 <li><a href="https://github.com/adjust/android_sdk/blob/master/README.md#offline-mode">iOS</a></li>
 <li><a href="https://github.com/adjust/ios_sdk#offline-mode">Android</a></li>
@@ -1553,7 +1553,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1717,6 +1717,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1725,8 +1741,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

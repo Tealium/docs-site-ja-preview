@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -392,9 +392,9 @@ var utag_data = {
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> mediaContent: MediaContent = MediaContent(
 </span></span><span style="display:flex;"><span>  name = <span style="color:#e6db74">&#34;Tealium Customer Data Hubとは？&#34;</span>,
-</span></span><span style="display:flex;"><span>  trackingType = TrackingType.MILESTONE,
-</span></span><span style="display:flex;"><span>  streamType = StreamType.DVOD,
-</span></span><span style="display:flex;"><span>  mediaType = MediaType.VIDEO,
+</span></span><span style="display:flex;"><span>  trackingType = <span style="color:#a6e22e">TrackingType</span>.MILESTONE,
+</span></span><span style="display:flex;"><span>  streamType = <span style="color:#a6e22e">StreamType</span>.DVOD,
+</span></span><span style="display:flex;"><span>  mediaType = <span style="color:#a6e22e">MediaType</span>.VIDEO,
 </span></span><span style="display:flex;"><span>  qoe = QoE(<span style="color:#ae81ff">1500</span>),
 </span></span><span style="display:flex;"><span>  duration = <span style="color:#ae81ff">130</span>
 </span></span><span style="display:flex;"><span>)
@@ -416,7 +416,7 @@ var utag_data = {
 
 <h3 id="trackingtype"><code>TrackingType</code></h3>
 <p>トラッキングタイプは、Tealiumイベントとしてトラッキングするメディアイベントを決定します（<a href="#tracking-type-overview">トラッキングタイプの概要</a>を参照）。</p>
-<p><code>TrackingType</code>を設定するために、次の定数のいずれかを使用します。</p>
+<p><code>TrackingType</code>を構成するために、次の定数のいずれかを使用します。</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -500,7 +500,7 @@ var utag_data = {
 </div>
 
 <h3 id="streamtype"><code>StreamType</code></h3>
-<p><code>StreamType</code>を設定するために、次の定数のいずれかを使用します。</p>
+<p><code>StreamType</code>を構成するために、次の定数のいずれかを使用します。</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -668,25 +668,25 @@ var utag_data = {
 </div>
 
 <h3 id="state"><code>State</code></h3>
-<p>プレーヤーの状態トラッキングは、再生中のビデオプレーヤーのモード（フルスクリーンモード、クローズドキャプション、ミュートボリュームなど）をキャプチャします。プレーヤーの状態は、データレイヤー変数<code>media_player_state</code>に設定されます。</p>
+<p>プレーヤーの状態トラッキングは、再生中のビデオプレーヤーのモード（フルスクリーンモード、クローズドキャプション、ミュートボリュームなど）をキャプチャします。プレーヤーの状態は、データレイヤー変数<code>media_player_state</code>に構成されます。</p>
 <p>プレーヤーの状態の変更をトラッキングする例：</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
-  <p><a href="/platforms/android-kotlin/api/media/#updateplayerstate"><code>updatePlayerState()</code></a>メソッドを呼び出して、状態値を設定します。</p>
+  <p><a href="/platforms/android-kotlin/api/media/#updateplayerstate"><code>updatePlayerState()</code></a>メソッドを呼び出して、状態値を構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>updatePlayerState(STATE_CONSTANT_VALUE)
 </span></span></code></pre></div>
 </div>
 <div class="tab-pane" data-lang="iOS" title="iOS">
-  <p><a href="/platforms/ios-swift/api/media-session/#playerstate"><code>playerState</code></a>変数を設定することで、状態値を設定します。</p>
+  <p><a href="/platforms/ios-swift/api/media-session/#playerstate"><code>playerState</code></a>変数を構成することで、状態値を構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>mediaSession.playerState = STATE_CONSTANT_VALUE
 </span></span></code></pre></div>
 </div>
 </div>
 </div>
 
-<p><code>State</code>を設定するために、次の定数のいずれかを使用します。</p>
+<p><code>State</code>を構成するために、次の定数のいずれかを使用します。</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -758,18 +758,18 @@ var utag_data = {
 </div>
 
 <h3 id="エクスペリエンスの品質">エクスペリエンスの品質</h3>
-<p>メディアセッションのエクスペリエンスの品質は、秒単位のビットレートで設定されます。メディア再生中に現在のビットレート値が利用可能な場合は、<code>qoe</code>変数として<code>MediaContent</code>オブジェクトの初期化時に提供します。品質の設定は、<code>media_bitrate_change</code> tealiumイベントをトリガーします。</p>
+<p>メディアセッションのエクスペリエンスの品質は、秒単位のビットレートで構成されます。メディア再生中に現在のビットレート値が利用可能な場合は、<code>qoe</code>変数として<code>MediaContent</code>オブジェクトの初期化時に提供します。品質の構成は、<code>media_bitrate_change</code> tealiumイベントをトリガーします。</p>
 <p>エクスペリエンスの品質をトラッキングする例：</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
-  <p><a href="/platforms/android-kotlin/api/media/#updateqoe"><code>updateQOE()</code></a>メソッドを呼び出して、エクスペリエンスの品質ビットレート値を設定します。</p>
+  <p><a href="/platforms/android-kotlin/api/media/#updateqoe"><code>updateQOE()</code></a>メソッドを呼び出して、エクスペリエンスの品質ビットレート値を構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>media<span style="color:#f92672">?.</span>updateQOE(BITRATE_VALUE)
 </span></span></code></pre></div>
 </div>
 <div class="tab-pane" data-lang="iOS" title="iOS">
-  <p><a href="/platforms/ios-swift/api/media-session/#bitrate"><code>bitrate</code></a>変数を設定することで、エクスペリエンスの品質ビットレート値を設定します。</p>
+  <p><a href="/platforms/ios-swift/api/media-session/#bitrate"><code>bitrate</code></a>変数を構成することで、エクスペリエンスの品質ビットレート値を構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>mediaSession.bitrate = BITRATE_VALUE
 </span></span></code></pre></div>
 </div>
@@ -777,10 +777,10 @@ var utag_data = {
 </div>
 
 <h3 id="メタデータ">メタデータ</h3>
-<p>メタデータは、オブジェクトに関する追加情報を設定するパラメータです。メタデータをオブジェクトに渡すと、それらのキーと値のペアがデータレイヤーにも設定されます。次のオブジェクトはメタデータを受け入れます：<code>MediaContent</code>、<code>Chapter</code>、<code>QoE</code>。</p>
-<p>メタデータは複数のオブジェクトに設定できるため、データレイヤーの競合するメタデータキーを解決するために、複数のオブジェクトからのメタデータがオブジェクトの階層構造を使用してデータレイヤーにマージされます：<code>MediaContent</code> &gt; <code>Chapter</code> &gt; <code>QoE</code>。</p>
-<p>たとえば、<code>MediaContent</code>と<code>Chapter</code>の両方で<code>feed_type</code>を設定した場合、最終的なデータレイヤーでは、<code>Chapter</code>のメタデータの値が<code>MediaContent</code>のメタデータの値を上書きします。</p>
-<p>メタデータを設定する例：</p>
+<p>メタデータは、オブジェクトに関する追加情報を構成するパラメータです。メタデータをオブジェクトに渡すと、それらのキーと値のペアがデータレイヤーにも構成されます。次のオブジェクトはメタデータを受け入れます：<code>MediaContent</code>、<code>Chapter</code>、<code>QoE</code>。</p>
+<p>メタデータは複数のオブジェクトに構成できるため、データレイヤーの競合するメタデータキーを解決するために、複数のオブジェクトからのメタデータがオブジェクトの階層構造を使用してデータレイヤーにマージされます：<code>MediaContent</code> &gt; <code>Chapter</code> &gt; <code>QoE</code>。</p>
+<p>たとえば、<code>MediaContent</code>と<code>Chapter</code>の両方で<code>feed_type</code>を構成した場合、最終的なデータレイヤーでは、<code>Chapter</code>のメタデータの値が<code>MediaContent</code>のメタデータの値を上書きします。</p>
+<p>メタデータを構成する例：</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -969,7 +969,7 @@ var utag_data = {
 </li>
 </ul>
 <h3 id="インターバルイベント">インターバルイベント</h3>
-<p>インターバルトラッキングを使用して、メディアプレーヤーの状態を定期的にトラッキングします。このタイプを使用すると、<code>ping()</code>メソッドが10秒ごとに呼び出され、コンテンツが再生されているかどうかを確認し、データレイヤーの<code>tealium_event</code>を<code>media_interval</code>に設定します。</p>
+<p>インターバルトラッキングを使用して、メディアプレーヤーの状態を定期的にトラッキングします。このタイプを使用すると、<code>ping()</code>メソッドが10秒ごとに呼び出され、コンテンツが再生されているかどうかを確認し、データレイヤーの<code>tealium_event</code>を<code>media_interval</code>に構成します。</p>
 <p>トラッキングされるイベントは次のとおりです。</p>
 <ul>
 <li>セッションイベント：
@@ -992,7 +992,7 @@ var utag_data = {
 </li>
 </ul>
 <h3 id="マイルストーンイベント">マイルストーンイベント</h3>
-<p>マイルストーントラッキングを使用して、コンテンツの再生率が達成されたときにトラッキングします。各マイルストーンのパーセンテージが達成されるたびに、<code>sendMilestone()</code>メソッドが自動的に呼び出され、データレイヤーの<code>tealium_event</code>が<code>media_milestone</code>に設定されます。</p>
+<p>マイルストーントラッキングを使用して、コンテンツの再生率が達成されたときにトラッキングします。各マイルストーンのパーセンテージが達成されるたびに、<code>sendMilestone()</code>メソッドが自動的に呼び出され、データレイヤーの<code>tealium_event</code>が<code>media_milestone</code>に構成されます。</p>
 <p>トラッキングされるイベントは次のとおりです。</p>
 <ul>
 <li>マイルストーンイベント：
@@ -1235,7 +1235,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1400,6 +1400,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1408,8 +1424,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

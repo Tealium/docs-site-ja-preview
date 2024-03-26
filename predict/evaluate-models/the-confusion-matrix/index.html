@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -179,7 +179,7 @@ var utag_data = {
 
   
   
-  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">MLを予測する</a>&nbsp;>&nbsp;</li>
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">Predict ML</a>&nbsp;>&nbsp;</li>
   
 
   
@@ -207,14 +207,14 @@ var utag_data = {
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p>混同行列は、訓練済みモデルを評価するための主要なツールです。モデルの作成や再訓練時に自動的に実行される訓練とテストのプロセス中、Tealium Predictは訓練日範囲中の訪問者を「真」または「偽」の2つのグループに「分類」しようとします。これらの2つのグループは、ユーザーがモデルの目標属性（例えば、購入したか、メールリストに登録したかなど）を示す行動を実際に行ったかどうかを反映しています。</p>
+  <p>混同行列は、訓練済みモデルを評価するための主要なツールです。モデルの作成や再訓練時に自動的に実行される訓練とテストのプロセス中、Tealium Predictは訓練日範囲中の訪問を「真」または「偽」の2つのグループに「分類」しようとします。これらの2つのグループは、ユーザーがモデルの目標属性（例えば、購入したか、メールリストに登録したかなど）を示す行動を実際に行ったかどうかを反映しています。</p>
 <p>訓練済みモデルの混同行列にアクセスするには、<strong>モデルダッシュボード &gt; モデル詳細を表示 &gt; 訓練 &gt; 訓練詳細を表示</strong>に移動します。混同行列を使用すると、真または偽の予測値と真または偽の実際の値を比較することで、これらの予測の精度を簡単に確認することができます。以下の説明にあるように、4つの可能なシナリオがあります。</p>
 <figure><a class="slb" href="/images/predict/predictv2-confusion-matrix.png"><img src="/images/predict/predictv2-confusion-matrix.png"
          alt="predictV2_confusion_matrix.png"
          title="predictV2_confusion_matrix.png"/>
     </a>
 </figure>
-<p>この比較は、モデルが過去のデータ（訓練日範囲）で訓練することにより可能になります。モデルがデプロイされると、シナリオが変わります。デプロイされたモデルが今日特定の訪問者に対して予測を行い、予測時間枠が「次の10日間」である場合、値が真または偽として返るかどうかを判断するためには最大10日間結果が利用できません。</p>
+<p>この比較は、モデルが過去のデータ（訓練日範囲）で訓練することにより可能になります。モデルがデプロイされると、シナリオが変わります。デプロイされたモデルが今日特定の訪問に対して予測を行い、予測時間枠が「次の10日間」である場合、値が真または偽として返るかどうかを判断するためには最大10日間結果が利用できません。</p>
 <h2 id="混同行列の象限">混同行列の象限</h2>
 <p>以下のリストは、混同行列の4つの象限を説明しています：</p>
 <ul>
@@ -298,7 +298,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -446,6 +446,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -454,8 +470,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -170,15 +170,15 @@ var utag_data = {
 <li>同一のニーズとロールを持つユーザーのグループのための権限グループを作成します。</li>
 <li>ユーザーを適切な権限グループに追加します。</li>
 <li>ユーザーに対して、プラットフォームの権限システムのテストを行う予定であることを警告し、フィードバックを求めます。</li>
-<li><a href="/administration/permissions-system-migration-guide/permissions-enforcement/">Permissions Enforcement</a>のスイッチを<strong>ON</strong>に設定します。</li>
+<li><a href="/administration/permissions-system-migration-guide/permissions-enforcement/">Permissions Enforcement</a>のスイッチを<strong>ON</strong>に構成します。</li>
 <li>ユーザーからのフィードバックを収集し、必要な権限の変更を実施します。</li>
-<li>対処するのに時間がかかる権限とアクセスの問題が多すぎる場合は、<strong>Permissions Enforcement</strong>スイッチを<strong>OFF</strong>に設定して、再テストを行う前に計画、権限グループ、管理者ロールを見直すことができます。</li>
+<li>対処するのに時間がかかる権限とアクセスの問題が多すぎる場合は、<strong>Permissions Enforcement</strong>スイッチを<strong>OFF</strong>に構成して、再テストを行う前に計画、権限グループ、管理者ロールを見直すことができます。</li>
 </ol>
 <p>Permissions Enforcementについての詳細は、<a href="/administration/permissions-system-migration-guide/permissions-enforcement/">Permissions Enforcement</a>を参照してください。</p>
 <h3 id="デプロイメント戦略2---スタック可能な粒度の高い権限グループ">デプロイメント戦略2 - スタック可能な粒度の高い権限グループ</h3>
 <p>権限グループを作成するための別の可能な戦略は、複数の権限グループをスタックして各ユーザーのアクセスを構築することです。この戦略は、権限グループの加算性を利用して、複数のグループのメンバーであるユーザーがそれらの権限グループの最大のアクセスを継承します。この戦略では、ジョブロールやワークグループベースの権限グループではなく、リソースアクセス権限グループの複数のレイヤーを通じてユーザーを管理することができます。</p>
 <p>この方法の利点は、リソースの権限レベルによって権限グループを組織化しており、ユーザーのニーズが変わるときに権限グループからユーザーを追加したり削除したりすることができることです。</p>
-<p>この方法の欠点は、新しいユーザーが組織に参加したときや、ユーザーが職務責任を変更したり退職したりしたときに、多くの権限グループを管理する必要があることです。また、構築し、権限を設定するための権限グループの数が多く、設定とテストに多くの時間がかかります。</p>
+<p>この方法の欠点は、新しいユーザーが組織に参加したときや、ユーザーが職務責任を変更したり退職したりしたときに、多くの権限グループを管理する必要があることです。また、構築し、権限を構成するための権限グループの数が多く、構成とテストに多くの時間がかかります。</p>
 <p>例えば、3つのクライアントサイドプロファイルの公開を管理するための権限グループを作成する場合、9つの権限グループを作成する必要があります：</p>
 <ul>
 <li>プロファイル1、Devへの公開</li>
@@ -203,16 +203,16 @@ var utag_data = {
 <li>組織内のさまざまな役割（開発、QA、データマネージャー、アカウントマネージャーなど）に必要な製品機能へのアクセスをバンドルする権限グループを作成します。
 <ul>
 <li>ユーザーを適切な権限グループに追加します。</li>
-<li>必要に応じて各機能の<strong>表示</strong>、<strong>編集</strong>、<strong>削除</strong>の権利を設定します。</li>
-<li>必要に応じてサーバーサイドの公開権限を設定します。サーバーサイドの公開権限には、すべてのサーバーサイド製品と機能へのフルアクセスが含まれます。</li>
+<li>必要に応じて各機能の<strong>表示</strong>、<strong>編集</strong>、<strong>削除</strong>の権利を構成します。</li>
+<li>必要に応じてサーバーサイドの公開権限を構成します。サーバーサイドの公開権限には、すべてのサーバーサイド製品と機能へのフルアクセスが含まれます。</li>
 </ul>
 </li>
 <li>ユーザーを適切な権限グループに追加します。</li>
-<li>各ユーザーのPII権限を設定します。</li>
+<li>各ユーザーのPII権限を構成します。</li>
 <li>ユーザーに対して、プラットフォームの権限システムのテストを行う予定であることを警告し、フィードバックを求めます。</li>
-<li><strong>Permissions Enforcement</strong>スイッチを<strong>ON</strong>に設定します。</li>
+<li><strong>Permissions Enforcement</strong>スイッチを<strong>ON</strong>に構成します。</li>
 <li>ユーザーからのフィードバックを収集し、必要な権限の変更を実施します。</li>
-<li>対処するのに時間がかかる問題が多すぎる場合は、Permissions Enforcementスイッチを<strong>OFF</strong>に設定して、再テストを行う前に計画、権限グループ、管理者ロールを見直すことができます。</li>
+<li>対処するのに時間がかかる問題が多すぎる場合は、Permissions Enforcementスイッチを<strong>OFF</strong>に構成して、再テストを行う前に計画、権限グループ、管理者ロールを見直すことができます。</li>
 </ol>
 <p>Permissions Enforcementについての詳細は、<a href="/administration/permissions-system-migration-guide/permissions-enforcement/">Permissions Enforcement</a>を参照してください。</p>
 
@@ -275,7 +275,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -425,6 +425,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -433,8 +449,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

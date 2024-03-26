@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -382,7 +382,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>getUserConsentPreferences()</code></td>
-<td>現在のすべての同意設定を返します</td>
+<td>現在のすべての同意構成を返します</td>
 </tr>
 <tr>
 <td><code>getUserConsentStatus()</code></td>
@@ -394,19 +394,19 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>resetUserConsentPreferences()</code></td>
-<td>メモリと永続ストレージに現在保存されているすべての同意設定をクリアします</td>
+<td>メモリと永続ストレージに現在ストレージされているすべての同意構成をクリアします</td>
 </tr>
 <tr>
 <td><code>setUserConsentCategories()</code></td>
-<td>ユーザーの同意カテゴリを設定します</td>
+<td>ユーザーの同意カテゴリを構成します</td>
 </tr>
 <tr>
 <td><code>setUserConsentStatus()</code></td>
-<td>ユーザーの同意ステータスを設定します</td>
+<td>ユーザーの同意ステータスを構成します</td>
 </tr>
 <tr>
 <td><code>setUserConsentStatusWithCategories()</code></td>
-<td>同意ステータスとカテゴリを設定します</td>
+<td>同意ステータスとカテゴリを構成します</td>
 </tr>
 </tbody>
 </table>
@@ -447,7 +447,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="getuserconsentpreferences"><code>getUserConsentPreferences()</code></h3>
-<p>現在のすべての同意設定を返します。</p>
+<p>現在のすべての同意構成を返します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>getUserConsentPreferences()
 </span></span></code></pre></div><table>
 <thead>
@@ -459,7 +459,7 @@ var utag_data = {
 <tbody>
 <tr>
 <td><code>TealiumConsentUserPreferences</code></td>
-<td>現在のすべての同意設定</td>
+<td>現在のすべての同意構成</td>
 </tr>
 </tbody>
 </table>
@@ -484,10 +484,10 @@ var utag_data = {
 <p>すべての同意デリゲートを削除します。<code>TealiumConsentManagerModule</code>クラスによって作成された組み込みデリゲートは保持されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>removeAllConsentDelegates()
 </span></span></code></pre></div><h3 id="resetuserconsentpreferences"><code>resetUserConsentPreferences()</code></h3>
-<p>メモリと永続ストレージに現在保存されているすべての同意設定をクリアします。同意状態を&quot;unknown&quot;に戻し、カテゴリはありません。</p>
+<p>メモリと永続ストレージに現在ストレージされているすべての同意構成をクリアします。同意状態を&quot;unknown&quot;に戻し、カテゴリはありません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>resetUserConsentPreferences()
 </span></span></code></pre></div><h3 id="setuserconsentcategories"><code>setUserConsentCategories()</code></h3>
-<p>ユーザーの同意カテゴリを設定します。アプリの同意管理設定画面から呼び出すことを想定しています。同意ステータスを<code>.consented</code>に設定します。</p>
+<p>ユーザーの同意カテゴリを構成します。アプリの同意管理構成画面から呼び出すことを想定しています。同意ステータスを<code>.consented</code>に構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>setUserConsentCategories(categories)
 </span></span></code></pre></div><table>
 <thead>
@@ -505,11 +505,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>以下の例は、ユーザーの同意カテゴリを<code>[.analytics,.bigData]</code>に設定する方法を示しています：</p>
+<p>以下の例は、ユーザーの同意カテゴリを<code>[.analytics,.bigData]</code>に構成する方法を示しています：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.consentManager()?.setUserConsentCategories([.analytics,.bigData])
 </span></span></code></pre></div><h3 id="setuserconsentstatus"><code>setUserConsentStatus()</code></h3>
-<p>ユーザーの同意ステータスを設定します。ユーザーがトラッキングを有効または無効にするときに、アプリの同意管理設定画面から呼び出すことを想定しています。</p>
-<p>ステータスが<code>.consented</code>の場合、利用可能なすべての同意カテゴリを含むように同意カテゴリのリストを設定します。カテゴリを選択的に設定することはできません。</p>
+<p>ユーザーの同意ステータスを構成します。ユーザーがトラッキングを有効または無効にするときに、アプリの同意管理構成画面から呼び出すことを想定しています。</p>
+<p>ステータスが<code>.consented</code>の場合、利用可能なすべての同意カテゴリを含むように同意カテゴリのリストを構成します。カテゴリを選択的に構成することはできません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>setUserConsentStatus(status)
 </span></span></code></pre></div><table>
 <thead>
@@ -524,22 +524,22 @@ var utag_data = {
 <tr>
 <td><code>status</code></td>
 <td><code>TealiumConsentStatus</code></td>
-<td>設定する同意ステータス</td>
+<td>構成する同意ステータス</td>
 <td>[<code>.unknown</code>, <code>.consented</code>, <code>.notConsented</code>]</td>
 </tr>
 </tbody>
 </table>
-<p>以下の例は、ユーザーの同意ステータスを<code>.consented</code>に設定する方法を示しています：</p>
+<p>以下の例は、ユーザーの同意ステータスを<code>.consented</code>に構成する方法を示しています：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.consentManager()?.setUserConsentStatus(.consented)
 </span></span></code></pre></div><p>以下は、<code>TealiumConsentStatus</code> enumからのTealium同意ステータスの異なるタイプを定義しています。</p>
 <p><strong>.unknown</strong><br>
-<code>unknown</code>ステータスは、Consent Managerのデフォルト設定です。この状態では、Consent Managerは、肯定的な<code>consented</code>/<code>notConsented</code>ステータスが提供されるまで、イベントをローカルにキューに入れます。</p>
+<code>unknown</code>ステータスは、Consent Managerのデフォルト構成です。この状態では、Consent Managerは、肯定的な<code>consented</code>/<code>notConsented</code>ステータスが提供されるまで、イベントをローカルにキューに入れます。</p>
 <p><strong>.consented</strong><br>
-<code>consented</code>ステータスは、ユーザーがトラッキングに同意したときに設定されます。この状態では、Consent Managerはすべてのトラッキング呼び出しを通常通りに許可します。</p>
+<code>consented</code>ステータスは、ユーザーがトラッキングに同意したときに構成されます。この状態では、Consent Managerはすべてのトラッキング呼び出しを通常通りに許可します。</p>
 <p><strong>.notConsented</strong><br>
-<code>notConsented</code>ステータスは、ユーザーがトラッキングを拒否したときに設定されます。この状態では、Consent Managerはすべてのトラッキング呼び出しをドロップし、SDKによるさらなる処理を停止します。</p>
+<code>notConsented</code>ステータスは、ユーザーがトラッキングを拒否したときに構成されます。この状態では、Consent Managerはすべてのトラッキング呼び出しをドロップし、SDKによるさらなる処理を停止します。</p>
 <h3 id="setuserconsentstatuswithcategories"><code>setUserConsentStatusWithCategories()</code></h3>
-<p>同意ステータスとカテゴリを設定します。</p>
+<p>同意ステータスとカテゴリを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>setUserConsentStatusWithCategories(status, categories)
 </span></span></code></pre></div><table>
 <thead>
@@ -554,18 +554,18 @@ var utag_data = {
 <tr>
 <td><code>status</code></td>
 <td><code>TealiumConsentStatus?</code></td>
-<td>設定する同意ステータス</td>
+<td>構成する同意ステータス</td>
 <td>[<code>.unknown</code>, <code>.consented</code>, <code>.notConsented</code>]</td>
 </tr>
 <tr>
 <td><code>categories</code></td>
 <td><code>[TealiumConsentCategories]?</code></td>
-<td>設定する同意カテゴリ</td>
+<td>構成する同意カテゴリ</td>
 <td><code>[.analytics]</code></td>
 </tr>
 </tbody>
 </table>
-<p>以下の例は、ユーザーの同意ステータスを<code>.consented</code>に設定し、カテゴリを<code>.analytics</code>に設定する方法を示しています：</p>
+<p>以下の例は、ユーザーの同意ステータスを<code>.consented</code>に構成し、カテゴリを<code>.analytics</code>に構成する方法を示しています：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.consentManager()?.setUserConsentStatusWithCategories(status: .consented, categories: [.analytics])
 </span></span></code></pre></div>
 </div>
@@ -627,7 +627,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -784,6 +784,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -792,8 +808,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

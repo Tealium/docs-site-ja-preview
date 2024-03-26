@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -358,12 +358,12 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <p>イベントバッチングは、Tealium Collectモジュールの機能で、モバイルデバイスとTealiumとの間のデータ伝送を最適化するために、複数のイベントを1つのHTTPリクエストで送信します。イベントバッチングは、繰り返しのデータレイヤ変数を排除し、gzipで圧縮されたペイロードを受け入れるように最適化された専用のデータ収集エンドポイントと連携して動作します。</p>
 <h2 id="バッチ-vs-キュー">バッチ vs. キュー</h2>
-<p>イベントバッチングは、デバイスがネットワークを介してデータを送信する方法を指します。イベントキューは、デバイスがデータを一時的に保存してから送信する方法を指します。イベントバッチングは、複数のイベントを1つのネットワークリクエストにまとめます。これは、追跡された各イベントが自身のリクエストであるのとは対照的です。</p>
+<p>イベントバッチングは、デバイスがネットワークを介してデータを送信する方法を指します。イベントキューは、デバイスがデータを一時的にストレージしてから送信する方法を指します。イベントバッチングは、複数のイベントを1つのネットワークリクエストにまとめます。これは、追跡された各イベントが自身のリクエストであるのとは対照的です。</p>
 <p>デバイスは以下の条件でバッチングを使用します：</p>
 <ul>
 <li><strong>Publish Configuration &gt; Mobile Library Publishing &gt; Batching</strong>でバッチングが有効になっています。詳細については、<a href="/iq-tag-management/profiles/creating-a-mobile-profile/#batching">モバイルプロファイルの作成</a>を参照してください。</li>
-<li>デバイスが安定したインターネット接続を持っていません。デバイスは接続が利用可能になるまでイベントを保存します。</li>
-<li>ユーザーが<strong>Consent Manager</strong>で何も選択していません。デバイスはユーザーが<strong>Consent Manager</strong>の設定を選択するまでイベントを保存します。詳細については、<a href="/iq-tag-management/consent-management/about/">同意管理について</a>を参照してください。</li>
+<li>デバイスが安定したインターネット接続を持っていません。デバイスは接続が利用可能になるまでイベントをストレージします。</li>
+<li>ユーザーが<strong>Consent Manager</strong>で何も選択していません。デバイスはユーザーが<strong>Consent Manager</strong>の構成を選択するまでイベントをストレージします。詳細については、<a href="/iq-tag-management/consent-management/about/">同意管理について</a>を参照してください。</li>
 </ul>
 <p>デバイスのバッチ送信の挙動は、デバイス上のアプリの状態に依存します：</p>
 <ul>
@@ -394,7 +394,7 @@ var utag_data = {
 <h3 id="ペイロードの圧縮">ペイロードの圧縮</h3>
 <p>デバイスは、HTTPリクエストのサイズを最小限にするために、イベントバッチのペイロードをgzipで圧縮します。この圧縮により、各ネットワークリクエストのサイズが最大90%削減されます。</p>
 <h3 id="tealium-iqタグ管理のためのイベントバッチング">Tealium iQタグ管理のためのイベントバッチング</h3>
-<p><strong>Tag Management</strong>モジュールが使用されていて、イベントバッチングが有効になっている場合、デバイスはこれらのイベントを通常通りキューに入れ、それらをWKWebViewインスタンスに対する個別のJavaScript呼び出しとして送信します。デバイスは設定されたタグを個別にトリガーし、これによりデバイスから複数のリクエストが送信されます（バッチ内のイベントごとに1つ）。これにより、デバイスのバッテリー消費が減少します。なぜなら、デバイスのラジオがリアルタイムでイベントを送信するよりも頻繁に起動する必要がないからです。</p>
+<p><strong>Tag Management</strong>モジュールが使用されていて、イベントバッチングが有効になっている場合、デバイスはこれらのイベントを通常通りキューに入れ、それらをWKWebViewインスタンスに対する個別のJavaScript呼び出しとして送信します。デバイスは構成されたタグを個別にトリガーし、これによりデバイスから複数のリクエストが送信されます（バッチ内のイベントごとに1つ）。これにより、デバイスのバッテリー消費が減少します。なぜなら、デバイスのラジオがリアルタイムでイベントを送信するよりも頻繁に起動する必要がないからです。</p>
 <h2 id="サポートされているプラットフォーム">サポートされているプラットフォーム</h2>
 <p>以下のプラットフォームがイベントバッチングをサポートしています：</p>
 <ul>
@@ -461,7 +461,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -614,6 +614,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -622,8 +638,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

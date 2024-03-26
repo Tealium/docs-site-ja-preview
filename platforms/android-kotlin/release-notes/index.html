@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -369,7 +369,7 @@ var utag_data = {
 </li>
 <li>次のリスナーを追加しました：
 <ul>
-<li><code>VisitorIdUpdatedListener</code> - 既知のIDを切り替えたり、訪問者IDをリセットした結果として訪問者IDが更新されたときに通知します</li>
+<li><code>VisitorIdUpdatedListener</code> - 既知のIDを切り替えたり、訪問IDをリセットした結果として訪問IDが更新されたときに通知します</li>
 <li><code>DataLayerUpdatedListener</code> - データレイヤーのキー/値の更新を監視します</li>
 <li><code>onDataUpdated(String, Any)</code> - データレイヤーの値が更新されたときに通知します</li>
 <li><code>onDataRemoved(Set&lt;String&gt;)</code> - ユーザーの操作やデータの有効期限によって指定されたキーがデータレイヤーから削除されたときに通知します</li>
@@ -493,7 +493,7 @@ var utag_data = {
 <li>TimeCollector - <code>timestamp_epoch</code></li>
 </ul>
 </li>
-<li>DataLayerのパフォーマンスの改善、および <code>JSONArray</code> オブジェクトの保存のサポートの追加</li>
+<li>DataLayerのパフォーマンスの改善、および <code>JSONArray</code> オブジェクトのストレージのサポートの追加</li>
 <li>日付は標準でISO 8601形式でフォーマットされます</li>
 <li>Kotlin、Coroutines、Android Target Version、AGP 7、Java 11、MockK、Robolectricの依存関係の更新</li>
 <li>バグ修正：
@@ -528,7 +528,7 @@ var utag_data = {
 </li>
 <li>VisitorService 1.1.0
 <ul>
-<li>Visitorを更新する際に使用するTealiumプロファイル名をオーバーライドするための追加の設定オプション <code>config.overrideVisitorServiceProfile</code></li>
+<li>Visitorを更新する際に使用するTealiumプロファイル名をオーバーライドするための追加の構成オプション <code>config.overrideVisitorServiceProfile</code></li>
 <li>シリアル化/デシリアル化のパフォーマンスの改善</li>
 <li>Coreとの依存関係の更新</li>
 <li>バグ修正：
@@ -543,14 +543,14 @@ var utag_data = {
 <ul>
 <li>Core 1.2.8
 <ul>
-<li><a href="/platforms/android-kotlin/api/tealium-config/#loglevel"><code>TealiumConfig.logLevel</code></a> を追加し、環境から派生したログレベルを上書きするための設定を有効にします。</li>
+<li><a href="/platforms/android-kotlin/api/tealium-config/#loglevel"><code>TealiumConfig.logLevel</code></a> を追加し、環境から派生したログレベルを上書きするための構成を有効にします。</li>
 <li>各Consent Managerによってトリガーされたイベントのペイロードに <code>consent_last_updated</code> タイムスタンプを追加しました。</li>
 <li>ペイロードキーの定数を <code>Dispatch.Keys.XXX</code> に移行し、アクセスしやすくしました。</li>
 <li>バグ修正
 <ul>
 <li><code>app_name</code> は、非ローカライズバージョンのアプリラベルにフォールバックするようになりました。</li>
 <li>スレッドによって引き起こされるイベントルーターのクラッシュを修正しました。</li>
-<li><code>screen_title</code> はデフォルトで <code>TealiumView</code> のペイロードに再追加され、コンテキストデータで提供されない場合は <code>viewName</code> に設定されます。</li>
+<li><code>screen_title</code> はデフォルトで <code>TealiumView</code> のペイロードに再追加され、コンテキストデータで提供されない場合は <code>viewName</code> に構成されます。</li>
 <li><code>tealium-settings.json</code> をアセットとして読み込もうとする際の不要なログを削除しました。</li>
 <li>セッション中に複数のディープリンクが発生する場合、前のディープリンクパラメータは新しいパラメータが追加される前にデータレイヤーから削除されるようになりました。</li>
 </ul>
@@ -611,8 +611,8 @@ var utag_data = {
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>モジュール名も &ldquo;UPPER_SNAKE_CASE&rdquo; から &ldquo;PascalCase&rdquo; に変更されました。</p>
 <ul>
-<li><code>remoteApiEnabled</code> 設定オプションを追加し、RemoteCommandsおよびTagManagementモジュールを使用する場合に <code>remote_api</code> イベントを無効にすることを許可します。</li>
-<li><code>overrideCollectProfile</code> 設定オプションを追加し、イベントペイロードの <code>tealium_profile</code> の値を上書きして、イベントを <code>TealiumConfig</code> オブジェクトに設定されたものとは異なるTealiumプロファイルにルーティングすることを許可します。</li>
+<li><code>remoteApiEnabled</code> 構成オプションを追加し、RemoteCommandsおよびTagManagementモジュールを使用する場合に <code>remote_api</code> イベントを無効にすることを許可します。</li>
+<li><code>overrideCollectProfile</code> 構成オプションを追加し、イベントペイロードの <code>tealium_profile</code> の値を上書きして、イベントを <code>TealiumConfig</code> オブジェクトに構成されたものとは異なるTealiumプロファイルにルーティングすることを許可します。</li>
 <li><code>HttpRemoteCommand</code> を使用する場合に、<code>application/json</code> および <code>x-www-form-urlencoded</code> の両方のコンテンツタイプをサポートするように修正しました。</li>
 <li>特定のコレクションが正しくエンコードされない問題を修正しました。</li>
 </ul>
@@ -622,7 +622,7 @@ var utag_data = {
 <ul>
 <li>Core 1.2.3
 <ul>
-<li>同意管理：カスタム同意ポリシーを設定するオプションを追加しました。</li>
+<li>同意管理：カスタム同意ポリシーを構成するオプションを追加しました。</li>
 <li>DeviceCollectorモジュールに <code>device_language</code>、<code>os_name</code> を追加しました。</li>
 </ul>
 </li>
@@ -654,8 +654,8 @@ var utag_data = {
 <ul>
 <li>同意管理
 <ul>
-<li>同意の有効期限：提供された同意の有効期限を設定する機能を追加しました</li>
-<li><code>consentManagerEnabled</code> 設定プロパティを非推奨にし、有効なConsentPolicyを設定すると自動的にConsent Managerが有効になるようにしました</li>
+<li>同意の有効期限：提供された同意の有効期限を構成する機能を追加しました</li>
+<li><code>consentManagerEnabled</code> 構成プロパティを非推奨にし、有効なConsentPolicyを構成すると自動的にConsent Managerが有効になるようにしました</li>
 <li>バグ修正：間違った同意コレクターロジック</li>
 </ul>
 </li>
@@ -779,7 +779,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -949,6 +949,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -957,8 +973,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

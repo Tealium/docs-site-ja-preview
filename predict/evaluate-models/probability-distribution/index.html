@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -179,7 +179,7 @@ var utag_data = {
 
   
   
-  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">MLを予測する</a>&nbsp;>&nbsp;</li>
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">Predict ML</a>&nbsp;>&nbsp;</li>
   
 
   
@@ -213,12 +213,12 @@ var utag_data = {
          title="predictV2_probability_distribution.png"/>
     </a>
 </figure>
-<p>このチャートの2つの色付き曲線は、モデルがトレーニング中に行った真実と偽の予測の分布を表しています。モデルの訓練プロセスは歴史的なデータを使用し、各訪問者が目標とする行動を実際に行ったかどうかを知っているため、歴史的な訪問者に対する予測と実際の結果を比較してモデルをテストすることが可能です。この比較の目的は、訓練データセットの一部をテストサブセットとして確保することです。</p>
-<p>確率分布は、テストサブセット内の訪問者の予測値と実際の値を比較します。行動を行った（Trueクラス）訪問者はティール色の曲線の一部として表示され、行動を行わなかった（Falseクラス）訪問者はオレンジ色の曲線の一部となります。</p>
+<p>このチャートの2つの色付き曲線は、モデルがトレーニング中に行った真実と偽の予測の分布を表しています。モデルの訓練プロセスは歴史的なデータを使用し、各訪問が目標とする行動を実際に行ったかどうかを知っているため、歴史的な訪問に対する予測と実際の結果を比較してモデルをテストすることが可能です。この比較の目的は、訓練データセットの一部をテストサブセットとして確保することです。</p>
+<p>確率分布は、テストサブセット内の訪問の予測値と実際の値を比較します。行動を行った（Trueクラス）訪問はティール色の曲線の一部として表示され、行動を行わなかった（Falseクラス）訪問はオレンジ色の曲線の一部となります。</p>
 <h2 id="理想的な確率分布">理想的な確率分布</h2>
 <p>以下のリストは、理想的な確率分布の特性を説明しています：</p>
 <ul>
-<li>ティール色とオレンジ色の曲線で示されるTrueクラスとFalseクラスの間には明確な分離があります。これは、モデルが訪問者を容易かつ正確に分類できることを示しています。</li>
+<li>ティール色とオレンジ色の曲線で示されるTrueクラスとFalseクラスの間には明確な分離があります。これは、モデルが訪問を容易かつ正確に分類できることを示しています。</li>
 <li>各クラス（曲線）は予測値範囲の一部をカバーしています。Falseクラスは理想的には左側の下位範囲に焦点を当て、Trueクラスは右側の上位範囲に焦点を当てます。</li>
 </ul>
 
@@ -281,7 +281,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -429,6 +429,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -437,8 +453,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

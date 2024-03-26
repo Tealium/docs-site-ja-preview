@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -188,7 +188,7 @@ var utag_data = {
 <h2 id="動作方法">動作方法</h2>
 <p>iQ プロファイルオブジェクトのコンポーネントを作成、更新、削除するには、<code>PATCH</code> メソッドを使用します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>PATCH /v3/tiq/accounts/<span style="color:#f92672">{</span>ACCOUNT<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>PROFILE<span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>PATCH メソッドを使用すると、API を使用してプロファイルイベントをプログラムで変更し、保存または保存として使用することができます。API を使用して変更を行った後は、アプリケーションにログインして公開する必要があります。</p>
+</span></span></code></pre></div><p>PATCH メソッドを使用すると、API を使用してプロファイルイベントをプログラムで変更し、ストレージまたはストレージとして使用することができます。API を使用して変更を行った後は、アプリケーションにログインして公開する必要があります。</p>
 <h3 id="curl-リクエストの例">cURL リクエストの例</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl --location --request PATCH <span style="color:#e6db74">&#39;https://platform.tealiumapis.com/v3/tiq/accounts/{ACCOUNT}/profiles/{PROFILE}&#39;</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --header <span style="color:#e6db74">&#39;Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUx...MiJ9&#39;</span> <span style="color:#ae81ff">\
@@ -213,13 +213,13 @@ var utag_data = {
 <td><code>versionTitle</code></td>
 <td>文字列</td>
 <td>オプション</td>
-<td>保存されたバージョンのタイトル。<br><code>saveType</code> が <code>saveAs</code> の場合のデフォルト: <code>API | {TIMESTAMP}</code><br><code>saveType</code> が <code>save</code> の場合のデフォルト: 既存のバージョンのタイトル</td>
+<td>ストレージされたバージョンのタイトル。<br><code>saveType</code> が <code>saveAs</code> の場合のデフォルト: <code>API | {TIMESTAMP}</code><br><code>saveType</code> が <code>save</code> の場合のデフォルト: 既存のバージョンのタイトル</td>
 </tr>
 <tr>
 <td><code>saveType</code></td>
 <td>文字列</td>
 <td>オプション</td>
-<td>PATCH リクエストで実行する保存のタイプ: <code>save</code> または <code>saveAs</code>。デフォルトは <code>saveAs</code>。</td>
+<td>PATCH リクエストで実行するストレージのタイプ: <code>save</code> または <code>saveAs</code>。デフォルトは <code>saveAs</code>。</td>
 </tr>
 <tr>
 <td><code>notes</code></td>
@@ -279,7 +279,7 @@ var utag_data = {
 <td><code>value.type</code></td>
 <td>文字列</td>
 <td>必須</td>
-<td>トラッキングされるイベントのタイプ。トラッキングされるイベントのタイプ。 <ul><li><a href="/iq-tag-management/events/event-types/click-event/"><code>mouseEvents</code></a>- 次のユーザーアクションを含みます:<ul><li><code>click</code> - 訪問者がページ上でマウスをクリックしたとき。</li><li><code>mousedown</code> - 訪問者がマウスを下に動かしたとき。</li><li><code>mouseup</code> - 訪問者がマウスを上に動かしたとき。</li></ul><li><a href="/iq-tag-management/events/event-types/mouseover-event/"><code>mouseOver</code></a> - 訪問者がページ上の特定の要素にマウスを重ねたとき。</li><li> <a href="/iq-tag-management/events/event-types/form-submission-event/"><code>formSubmit</code></a> - 訪問者がページ上のフォームを送信したとき。</li><li><a href="/iq-tag-management/events/event-types/youtube-event/"><code>youtubeVideo</code></a> - 訪問者がページ上の埋め込み YouTube ビデオと対話したとき。</li><li><a href="/iq-tag-management/events/event-types/vimeo-event/"><code>vimeoVideo</code></a> - 訪問者がページ上の埋め込み Vimeo ビデオと対話したとき。</li><li><a href="/iq-tag-management/events/event-types/html5-video-event/"><code>html5Video</code></a> - 訪問者がページ上の埋め込み HTML5 ビデオと対話したとき。</li><li><a href="/iq-tag-management/events/event-types/page-view-event/"><code>pageView</code></a> - 訪問者がページを表示したとき。</li><li><a href="/iq-tag-management/events/event-types/scroll-event/"><code>scroll</code></a> - 訪問者がページを垂直または水平にスクロールしたとき。</li><li><a href="/iq-tag-management/events/event-types/element-visibility-event/"><code>elementVisibility</code></a> - ページが訪問者に画面要素を表示するとき。</li></li></ul></td>
+<td>トラッキングされるイベントのタイプ。トラッキングされるイベントのタイプ。 <ul><li><a href="/iq-tag-management/events/event-types/click-event/"><code>mouseEvents</code></a>- 次のユーザーアクションを含みます:<ul><li><code>click</code> - 訪問がページ上でマウスをクリックしたとき。</li><li><code>mousedown</code> - 訪問がマウスを下に動かしたとき。</li><li><code>mouseup</code> - 訪問がマウスを上に動かしたとき。</li></ul><li><a href="/iq-tag-management/events/event-types/mouseover-event/"><code>mouseOver</code></a> - 訪問がページ上の特定の要素にマウスを重ねたとき。</li><li> <a href="/iq-tag-management/events/event-types/form-submission-event/"><code>formSubmit</code></a> - 訪問がページ上のフォームを送信したとき。</li><li><a href="/iq-tag-management/events/event-types/youtube-event/"><code>youtubeVideo</code></a> - 訪問がページ上の埋め込み YouTube ビデオと対話したとき。</li><li><a href="/iq-tag-management/events/event-types/vimeo-event/"><code>vimeoVideo</code></a> - 訪問がページ上の埋め込み Vimeo ビデオと対話したとき。</li><li><a href="/iq-tag-management/events/event-types/html5-video-event/"><code>html5Video</code></a> - 訪問がページ上の埋め込み HTML5 ビデオと対話したとき。</li><li><a href="/iq-tag-management/events/event-types/page-view-event/"><code>pageView</code></a> - 訪問がページを表示したとき。</li><li><a href="/iq-tag-management/events/event-types/scroll-event/"><code>scroll</code></a> - 訪問がページを垂直または水平にスクロールしたとき。</li><li><a href="/iq-tag-management/events/event-types/element-visibility-event/"><code>elementVisibility</code></a> - ページが訪問に画面要素を表示するとき。</li></li></ul></td>
 </tr>
 <tr>
 <td><code>value.scope</code></td>
@@ -297,13 +297,13 @@ var utag_data = {
 <td><code>value.selectedTargets</code></td>
 <td>マップ &lt;string, Boolean&gt;</td>
 <td>オプション</td>
-<td>コンポーネントを公開する環境のオブジェクト: <br> <code>{   &quot;prod&quot; : true|false,   &quot;qa&quot; : true|false,   &quot;dev&quot; : true|false }</code> <br>デフォルト: すべての環境が <code>true</code> に設定されています。</td>
+<td>コンポーネントを公開する環境のオブジェクト: <br> <code>{   &quot;prod&quot; : true|false,   &quot;qa&quot; : true|false,   &quot;dev&quot; : true|false }</code> <br>デフォルト: すべての環境が <code>true</code> に構成されています。</td>
 </tr>
 <tr>
 <td><code>value.eventTriggers</code></td>
 <td>オブジェクト</td>
 <td>必須</td>
-<td>各イベントタイプに固有の設定。値は <code>&quot;object&quot;: &quot;[value.Type]&quot;</code> の形式であり、イベントの設定に続きます。</td>
+<td>各イベントタイプに固有の構成。値は <code>&quot;object&quot;: &quot;[value.Type]&quot;</code> の形式であり、イベントの構成に続きます。</td>
 </tr>
 <tr>
 <td><code>value.eventVariables</code></td>
@@ -621,7 +621,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月22日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -781,6 +781,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -789,8 +805,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

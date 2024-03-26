@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -355,7 +355,7 @@ var utag_data = {
   <p>このガイドでは、ウェブサイトのためのTealiumタグ管理ソリューションのインストール方法について説明します。このインストールには2つのコンポーネントが必要です：ユニバーサルタグ（<code>utag.js</code>）とユニバーサルデータオブジェクト（<code>utag_data</code>）。これらのコンポーネントをサイトのすべてのページにインストールしてください。</p>
 <h2 id="インストール">インストール</h2>
 <h3 id="ユニバーサルタグ">ユニバーサルタグ</h3>
-<p>ユニバーサルタグは、サイトでタグ管理の設定をロードするために必要な生成されたコードが含まれたJavaScriptファイルであり、<code>utag.js</code>と呼ばれます。</p>
+<p>ユニバーサルタグは、サイトでタグ管理の構成をロードするために必要な生成されたコードが含まれたJavaScriptファイルであり、<code>utag.js</code>と呼ばれます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Tealiumユニバーサルタグ --&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>,<span style="color:#a6e22e">c</span>,<span style="color:#a6e22e">d</span>) {
@@ -375,7 +375,7 @@ var utag_data = {
 <p>クライアントサイドの管理メニューで、<strong>Code Center</strong>をクリックします。<strong>Code Center</strong>ダイアログが表示されます。</p>
 </li>
 <li>
-<p>デフォルトの<strong>JavaScript Type</strong>を<strong>Asynchronous</strong>に設定したままにします（<a href="https://community.tealiumiq.com/t5/Getting-Started/Synchronous-vs-Asynchronous-JavaScript-sync-vs-async/ta-p/13490">同期 vs. 非同期のJavaScriptについて</a>を参照してください）。</p>
+<p>デフォルトの<strong>JavaScript Type</strong>を<strong>Asynchronous</strong>に構成したままにします（<a href="https://community.tealiumiq.com/t5/Getting-Started/Synchronous-vs-Asynchronous-JavaScript-sync-vs-async/ta-p/13490">同期 vs. 非同期のJavaScriptについて</a>を参照してください）。</p>
 </li>
 <li>
 <p><strong>Tealium Script</strong>タブで、コードスニペットを選択するために<strong>Select All</strong>をクリックします。</p>
@@ -383,10 +383,10 @@ var utag_data = {
 <li>
 <p>選択したユニバーサルタグコードをクリップボードにコピーします。</p>
 <figure><a class="slb" href="/images/platforms/getting-started-web/iq-code-center.png"><img src="/images/platforms/getting-started-web/iq-code-center.png"
-         alt="Code Center"
-         title="Code Center"/>
-    </a>
-</figure>
+             alt="Code Center"
+             title="Code Center"/>
+        </a>
+    </figure>
 </li>
 </ol>
 <h3 id="環境">環境</h3>
@@ -400,7 +400,7 @@ var utag_data = {
 </ul>
 <p><a href="">Code Centerを使用してインストールコードを取得する方法</a>について詳しく学びます。</p>
 <h3 id="コードの配置">コードの配置</h3>
-<p>ユニバーサルタグコードをサイトのすべてのページの<code>&lt;body&gt;</code>タグの直後に貼り付けてください。この位置は、最も多くのベンダーとの互換性があり、訪問者が次のページに移動する前にサードパーティのトラッキングが完了するため、最適です。</p>
+<p>ユニバーサルタグコードをサイトのすべてのページの<code>&lt;body&gt;</code>タグの直後に貼り付けてください。この位置は、最も多くのベンダーとの互換性があり、訪問が次のページに移動する前にサードパーティのトラッキングが完了するため、最適です。</p>
 <p>次の例は、コードの配置を示しています：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
 </span></span><span style="display:flex;"><span>  ...
@@ -418,7 +418,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
 </span></span></code></pre></div><p><a href="/iq-tag-management/getting-started/order-of-operations/">操作の順序</a>について詳しく学びます。</p>
 <h2 id="データレイヤー">データレイヤー</h2>
-<p>データレイヤーは、サイト全体で収集されるすべての変数と、トラッキングされる訪問者のインタラクションから構成される、Tealiumソリューションの基盤です。</p>
+<p>データレイヤーは、サイト全体で収集されるすべての変数と、トラッキングされる訪問のインタラクションから構成される、Tealiumソリューションの基盤です。</p>
 <p>ユニバーサルデータオブジェクト（UDO）は、<code>utag_data</code>というJavaScriptオブジェクトであり、サイトの動的データがTealiumタグに渡されます。このオブジェクトのプロパティは、ビジネスに固有の、プレーンでベンダーに中立的な用語を使用して名前が付けられます。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>データレイヤーオブジェクトをサイトのすべてのページにロードし、各ページタイプに必要な変数に基づいて動的にデータを追加し、ユニバーサルタグの前にロードする必要があります。</p>
 <p>次は、検索結果ページに表示される<code>utag_data</code>の宣言の例です：</p>
@@ -439,14 +439,14 @@ var utag_data = {
 </ul>
 <h2 id="トラッキング">トラッキング</h2>
 <h3 id="イベント">イベント</h3>
-<p><code>utag.link()</code>関数を使用して、非ページビュー、ページインタラクション、およびその他の動的なページイベントなどのイベントをトラッキングします。イベントトラッキングは、訪問者のページ内でのインタラクションに関する情報を収集します。</p>
+<p><code>utag.link()</code>関数を使用して、非ページビュー、ページインタラクション、およびその他の動的なページイベントなどのイベントをトラッキングします。イベントトラッキングは、訪問のページ内でのインタラクションに関する情報を収集します。</p>
 <p>Tealiumは、トラッキングされるイベントに名前を付けるためにデータレイヤー変数<a href="#tealium-event-variable"><code>tealium_event</code></a>を提供します。これは、ユーザーがボタンをクリックするなどのウェブサイトの要素とのインタラクション時にJavaScriptイベントリスナー内で使用されます。</p>
 <p>次の例は、ユーザーがソーシャルシェアボタンをクリックしたときにトラッキングする方法を示しています：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;share&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utag.link({&#39;tealium_event&#39;: &#39;social_share&#39;, &#39;social_network&#39;: &#39;LinkedIn&#39;});&#34;</span>&gt;Share&lt;/<span style="color:#f92672">a</span>&gt;
 </span></span></code></pre></div><p><a href="/platforms/javascript/track/#track-events">イベントのトラッキングについて詳しく学びます</a>。</p>
 <h3 id="ビュー">ビュー</h3>
-<p><code>utag.view()</code>関数は、自動的にすべてのページのロード時にトリガーされます。これは、ページビュー、仮想ページビュー、Ajaxページフロー、およびシングルページアプリケーションをトラッキングします。この関数を呼び出すことで、設定されたベンダータグ内の対応するページトラッキング機能がトリガーされます。</p>
-<p>次は、コンテンツサイトの例で、訪問者が「ジーンズ」を検索した場合のトラッキングです：</p>
+<p><code>utag.view()</code>関数は、自動的にすべてのページのロード時にトリガーされます。これは、ページビュー、仮想ページビュー、Ajaxページフロー、およびシングルページアプリケーションをトラッキングします。この関数を呼び出すことで、構成されたベンダータグ内の対応するページトラッキング機能がトリガーされます。</p>
+<p>次は、コンテンツサイトの例で、訪問が「ジーンズ」を検索した場合のトラッキングです：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">view</span>({
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tealium_event&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;search&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;search_keyword&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;jeans&#34;</span>,
@@ -466,7 +466,7 @@ var utag_data = {
 <li><a href="/platforms/javascript/single-page-applications/">シングルページアプリケーション</a></li>
 </ul>
 <h3 id="tealiumイベント変数">Tealiumイベント変数</h3>
-<p>トラッキングする各種のインタラクションを一意に識別するために、予約済みの変数<code>tealium_event</code>を使用します。この変数は、Tealium iQ内でロードルール、拡張機能、およびデータマッピングを設定するために参照されます。その他のイベントデータについては、任意の変数名を使用してください。</p>
+<p>トラッキングする各種のインタラクションを一意に識別するために、予約済みの変数<code>tealium_event</code>を使用します。この変数は、Tealium iQ内でロードルール、拡張機能、およびデータマッピングを構成するために参照されます。その他のイベントデータについては、任意の変数名を使用してください。</p>
 <p><code>suggested tealium_event</code>の値は、次のようなものですが、これに限定されません：</p>
 <table>
 <thead>
@@ -529,10 +529,10 @@ var utag_data = {
 <li>配列には、<code>[&quot;prodID1&quot;, &quot;prodID2&quot;, &quot;prodID3&quot;]</code>などのカンマ区切りの文字列を使用します。</li>
 </ul>
 <p><strong>ページタイプの識別子</strong></p>
-<p>サイトのすべてのページには、<code>page_type</code>という変数を含める必要があります。これは、ユーザーが表示しているページのタイプを判断するために使用され、ロードルール、拡張機能、およびデータマッピングの設定に役立ちます。</p>
+<p>サイトのすべてのページには、<code>page_type</code>という変数を含める必要があります。これは、ユーザーが表示しているページのタイプを判断するために使用され、ロードルール、拡張機能、およびデータマッピングの構成に役立ちます。</p>
 <p><strong>サードパーティのデータレイヤーオブジェクト</strong></p>
 <p>すでにW3Cデータオブジェクトや独自のカスタムオブジェクトなど、サイトに実装されているデータレイヤーオブジェクトを、利用可能な<a href="/iq-tag-management/data-layer/data-layer-converter/set-up-data-layer-converter/">データレイヤーコンバータ</a>のいずれかを使用してユニバーサルデータオブジェクト（UDO）<code>utag_data</code>に変換します。</p>
-<p><strong><code>utag_data</code>を<code>utag.js</code>の前に設定する</strong><br>
+<p><strong><code>utag_data</code>を<code>utag.js</code>の前に構成する</strong><br>
 ページコードでは、ユニバーサルデータオブジェクトをユニバーサルタグの前に宣言する必要があります。これにより、ユニバーサルタグがロードルール、拡張機能、およびタグを評価するために必要なデータレイヤー変数をすべて持っていることが保証されます。</p>
 <p><a href="/iq-tag-management/data-layer/best-practices/">データレイヤーのベストプラクティスについて詳しく学びます</a>。</p>
 <h2 id="テストと検証">テストと検証</h2>
@@ -546,7 +546,7 @@ var utag_data = {
 <p><code>utag.js</code>によって行われるトラッキングコールは、ツール内で表示および更新されます。</p>
 <p><a href="/iq-tag-management/troubleshooting/utag-debugger/">ユニバーサルタグデバッガーについて詳しく学びます</a>。</p>
 <h3 id="web-companion">Web Companion</h3>
-<p>Web Companionは、タグの設定を確認したり、サイト上のデータを検査したり、新しい設定を簡単かつ迅速に作成およびテストしたりするためのブラウザツールです。このツールを起動することで、<code>utag.js</code>ライブラリが正しくサイトにロードされていることがすばやく確認できます。</p>
+<p>Web Companionは、タグの構成を確認したり、サイト上のデータを検査したり、新しい構成を簡単かつ迅速に作成およびテストしたりするためのブラウザツールです。このツールを起動することで、<code>utag.js</code>ライブラリが正しくサイトにロードされていることがすばやく確認できます。</p>
 <figure><a class="slb" href="/images/platforms/javascript/web-companion.png"><img src="/images/platforms/javascript/web-companion.png" width="375" height="550"/>
     </a><figcaption><p>Web Companion</p>
         </figcaption>
@@ -554,12 +554,12 @@ var utag_data = {
 <p>詳細については、次を参照してください：</p>
 <ul>
 <li><a href="">Web Companion</a></li>
-<li><a href="/iq-tag-management/save-publish/publish-configuration/">公開設定のWeb Companion</a></li>
+<li><a href="/iq-tag-management/save-publish/publish-configuration/">公開構成のWeb Companion</a></li>
 <li><a href="/iq-tag-management/troubleshooting/switch-environoment/">環境を切り替える方法</a></li>
 </ul>
 <h3 id="ライブイベント">ライブイベント</h3>
 <p>Tealium EventStreamでは、ライブイベント機能を使用してリアルタイムで受信されるイベントを管理および検査します。データソースから送信されるイベントが正常に受信されているかを確認します。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>ライブイベントを使用するには、iQタグ管理の設定にTealium Collectタグを追加する必要があります。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>ライブイベントを使用するには、iQタグ管理の構成にTealium Collectタグを追加する必要があります。</p>
 <p>詳細については、次を参照してください：</p>
 <ul>
 <li><a href="/server-side/live-events-feeds/about-live-events/">ライブイベントとフィード</a></li>
@@ -596,7 +596,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -758,6 +758,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -766,8 +782,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

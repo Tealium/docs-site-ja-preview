@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -289,24 +321,24 @@ var utag_data = {
 <li>タイプ（<code>counter</code>または<code>sales</code>）</li>
 </ul>
 <h3 id="cm360にtealiumサービスアカウントをユーザーとして追加する">CM360にTealiumサービスアカウントをユーザーとして追加する</h3>
-<p><code>api@tealium.com</code>ユーザーをCM360アカウントに追加し、<strong>Insert</strong>および<strong>Update offline conversions</strong>の権限を付与します。そのユーザーがCM360アカウントに追加された後、EventStreamコネクタの設定で使用するために生成されたプロファイルIDをメモします。</p>
+<p><code>api@tealium.com</code>ユーザーをCM360アカウントに追加し、<strong>Insert</strong>および<strong>Update offline conversions</strong>の権限を付与します。そのユーザーがCM360アカウントに追加された後、EventStreamコネクタの構成で使用するために生成されたプロファイルIDをメモします。</p>
 <h2 id="要件---tealium-iqタグ">要件 - Tealium iQタグ</h2>
-<p>TiQ Floodlightタグの基本的な設定については、<a href="/client-side-tags/floodlight-gtagjs-tag/">Floodlight tag</a>を参照してください。</p>
-<p>上記でメモした設定値（広告主ID、アクティビティタグ文字列、グループタグ文字列、タイプ）を使用し、基本的なタグ設定でコンバージョンをトリガーするためのイベントマッピングとともに使用します。</p>
+<p>TiQ Floodlightタグの基本的な構成については、<a href="/client-side-tags/floodlight-gtagjs-tag/">Floodlight tag</a>を参照してください。</p>
+<p>上記でメモした構成値（広告主ID、アクティビティタグ文字列、グループタグ文字列、タイプ）を使用し、基本的なタグ構成でコンバージョンをトリガーするためのイベントマッピングとともに使用します。</p>
 <p>強化コンバージョン機能では、Googleに2つの追加値を渡す必要があります。次の値は、特定のコンバージョンイベントのクライアントサイドとAPI呼び出しの両方で一致する必要があります：</p>
 <ul>
 <li>マッチID（<code>match_id</code>）：クライアントサイドとAPIイベントのマッチングに使用される特定のコンバージョンのための一意の識別子。</li>
-<li>序数（<code>ord</code>）：ブラウザまたはアプリに最新バージョンのファイルをロードさせ、特定の訪問者のユニークなコンバージョン数を確保するためのキャッシュバスティング値。</li>
+<li>序数（<code>ord</code>）：ブラウザまたはアプリに最新バージョンのファイルをロードさせ、特定の訪問のユニークなコンバージョン数を確保するためのキャッシュバスティング値。</li>
 </ul>
 <p>Tealium iQライブラリが生成する<code>tealium_random</code>属性を使用します。これをTealium iQ Floodlightタグの両属性にマッピングします。</p>
 <h2 id="要件---tealium-eventstreamコネクタ">要件 - Tealium EventStreamコネクタ</h2>
 <p><a href="/server-side-connectors/google-sa360-enhanced-conversions-connector/">SA360 強化コンバージョンコネクタ</a>の実装手順は次のとおりです：</p>
-<h3 id="コネクタ設定">コネクタ設定</h3>
-<p>コネクタを追加した後、以下の設定を行います：</p>
+<h3 id="コネクタ構成">コネクタ構成</h3>
+<p>コネクタを追加した後、以下の構成を行います：</p>
 <p><strong>Floodlight Profile ID</strong>：これは、<code>api@tealium.com</code>ユーザーがアカウントに追加されたときにCM360で生成されたプロファイルIDです。</p>
 <h4 id="アクションソース">アクションソース</h4>
 <p><strong>Event Feed</strong>：関連するFloodlightコンバージョンのための<a href="">event feed</a>を作成し、このフィードをコネクタアクションのソースとして使用します。</p>
-<h4 id="アクション設定">アクション設定</h4>
+<h4 id="アクション構成">アクション構成</h4>
 <h6 id="コンバージョンデータ">コンバージョンデータ</h6>
 <p>以下のフィールドが必要です：</p>
 <ul>
@@ -390,7 +422,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -410,7 +442,7 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#cm360">CM360にTealiumサービスアカウントをユーザーとして追加する</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">要件 - Tealium iQタグ</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">要件 - Tealium EventStreamコネクタ</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">コネクタ設定</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">コネクタ構成</a></li>
               </nav>
   </aside></nav>
 
@@ -544,6 +576,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -552,8 +600,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

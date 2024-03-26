@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -383,9 +383,9 @@ var utag_data = {
 </ul>
 <p><a href="/iq-tag-management/consent-management/consent-preferences-dialog/manage/">同意カテゴリー</a>と<a href="/server-side/consent/event-specs/">同意イベント仕様</a>について詳しく学びましょう。</p>
 <h2 id="リモートapi呼び出し">リモートAPI呼び出し</h2>
-<p><strong>リモートAPI</strong>オプションがリモートコマンドにどのように影響するかは、リモートコマンドがJSON設定ファイルを使用して実装されているか、Tealium iQを経由して実装されているかによります。</p>
+<p><strong>リモートAPI</strong>オプションがリモートコマンドにどのように影響するかは、リモートコマンドがJSON構成ファイルを使用して実装されているか、Tealium iQを経由して実装されているかによります。</p>
 <h3 id="jsonリモートコマンド">JSONリモートコマンド</h3>
-<p><code>remote_api</code>呼び出しは、JSONファイルを使用して設定されたすべてのリモートコマンドをトリガーします。すべてのマッピングロジックが適用され、コマンドが実行されます。JSON設定ファイルを使用してベンダーSDKで同意を強制するには、Tealiumの同意イベントをサポートされているベンダーメソッドにマップします。</p>
+<p><code>remote_api</code>呼び出しは、JSONファイルを使用して構成されたすべてのリモートコマンドをトリガーします。すべてのマッピングロジックが適用され、コマンドが実行されます。JSON構成ファイルを使用してベンダーSDKで同意を強制するには、Tealiumの同意イベントをサポートされているベンダーメソッドにマップします。</p>
 <p>この例では、Brazeで、Tealiumの同意イベントがAndroidのベンダー同意メソッドにマップされています：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;commands&#34;</span>: {
@@ -393,9 +393,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;decline_consent&#34;</span>: <span style="color:#e6db74">&#34;disableSDK,wipeData&#34;</span>
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><a href="/platforms/remote-commands/vendor-integrations/#mappings">JSON設定マッピング</a>について詳しく学びましょう。</p>
+</span></span></code></pre></div><p><a href="/platforms/remote-commands/vendor-integrations/#mappings">JSON構成マッピング</a>について詳しく学びましょう。</p>
 <h3 id="リモートコマンドタグ">リモートコマンドタグ</h3>
-<p>同意イベントをリモートコマンドタグに送信するには、タグを<code>remote_api</code>イベントを期待するように設定する必要があります。デフォルトでは、タグは<code>view</code>と<code>link</code>呼び出しを期待するように設定されています。</p>
+<p>同意イベントをリモートコマンドタグに送信するには、タグを<code>remote_api</code>イベントを期待するように構成する必要があります。デフォルトでは、タグは<code>view</code>と<code>link</code>呼び出しを期待するように構成されています。</p>
 <p>タグを<code>remote_api</code>呼び出しを期待するように更新するには、次のようにイベントのリストを変更します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">u</span>.<span style="color:#a6e22e">ev</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">remote_api</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> }; <span style="color:#75715e">// remove &#34;view&#34; and &#34;link&#34; to avoid double-counting when remote_api is enabled
 </span></span></span></code></pre></div><p>次の例は、Braze Mobile Remote Commandタグでトラッキングを無効にする方法を示しています。<code>tealium_event</code>変数をBrazeコマンド<code>Disable Data Collection (disableSDK)</code>にマップします。
@@ -404,9 +404,9 @@ var utag_data = {
     </a><figcaption><p>リモートコマンドタグマッピング同意</p>
         </figcaption>
 </figure>
-<p>タグがどのイベントをリッスンするように設定されているかを確認する方法についての詳細は、<a href="https://support.tealiumiq.com/en/support/solutions/articles/36000363410-how-to-check-if-a-tag-will-fire-on-view-or-link-calls">タグが&rsquo;View&rsquo;または&rsquo;Link&rsquo; Callsで発火するかどうかを確認する方法</a>を参照してください。</p>
-<h2 id="ベンダー固有の同意設定">ベンダー固有の同意設定</h2>
-<p>各ベンダーSDKは同意を異なる方法で管理します。各ベンダーSDKの同意オプションの設定方法についての詳細は、<a href="/platforms/remote-commands/integrations/">リモートコマンド統合</a>のベンダー固有のリモートコマンドドキュメンテーションを参照してください。</p>
+<p>タグがどのイベントをリッスンするように構成されているかを確認する方法についての詳細は、<a href="https://support.tealiumiq.com/en/support/solutions/articles/36000363410-how-to-check-if-a-tag-will-fire-on-view-or-link-calls">タグが&rsquo;View&rsquo;または&rsquo;Link&rsquo; Callsで発火するかどうかを確認する方法</a>を参照してください。</p>
+<h2 id="ベンダー固有の同意構成">ベンダー固有の同意構成</h2>
+<p>各ベンダーSDKは同意を異なる方法で管理します。各ベンダーSDKの同意オプションの構成方法についての詳細は、<a href="/platforms/remote-commands/integrations/">リモートコマンド統合</a>のベンダー固有のリモートコマンドドキュメンテーションを参照してください。</p>
 
 </div>
 
@@ -467,7 +467,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -488,7 +488,7 @@ var utag_data = {
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">リモートAPI呼び出し</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#json">JSONリモートコマンド</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">リモートコマンドタグ</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ベンダー固有の同意設定</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ベンダー固有の同意構成</a></li>
               </nav>
   </aside></nav>
 
@@ -622,6 +622,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -630,8 +646,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

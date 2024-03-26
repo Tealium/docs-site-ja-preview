@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -265,7 +297,7 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      この記事では、iQタグ管理（TiQ）アカウントでClicktaleタグを設定する方法について説明します。
+      この記事では、iQタグ管理（TiQ）アカウントでClicktaleタグを構成する方法について説明します。
     </p>
   
 </div>
@@ -292,23 +324,23 @@ var utag_data = {
 <h3 id="不正行為">不正行為</h3>
 <ul>
 <li><strong>過度なペースト</strong><br>
-同一の訪問者セッション内で異常で潜在的に不正なペースト行動を特定する閾値が満たされたときにトリガーされます。不正の可能性は3つのレベルがあります：<strong>低</strong>、<strong>中</strong>、<strong>高</strong>。</li>
+同一の訪問セッション内で異常で潜在的に不正なペースト行動を特定する閾値が満たされたときにトリガーされます。不正の可能性は3つのレベルがあります：<strong>低</strong>、<strong>中</strong>、<strong>高</strong>。</li>
 <li><strong>過度なリロード</strong><br>
-同一の訪問者セッション内で異常で潜在的に不正なリロード行動を特定する閾値が満たされたときにトリガーされます。不正の可能性は3つのレベルがあります：<strong>低</strong>、<strong>中</strong>、<strong>高</strong>。</li>
+同一の訪問セッション内で異常で潜在的に不正なリロード行動を特定する閾値が満たされたときにトリガーされます。不正の可能性は3つのレベルがあります：<strong>低</strong>、<strong>中</strong>、<strong>高</strong>。</li>
 </ul>
 <h3 id="広告ブロック">広告ブロック</h3>
 <ul>
 <li><strong>Ad Blocker Signal</strong><br>
 特定のファイルがブロックされているかどうかを特定し、広告ブロッカーが存在することを特定します。</li>
 </ul>
-<p class="tip"><i class="fa fa-info-circle"></i>EventStreamイベント仕様とAudienceStream訪問者属性からの信号をオプションで使用することができます。</p>
+<p class="tip"><i class="fa fa-info-circle"></i>EventStreamイベント仕様とAudienceStream訪問属性からの信号をオプションで使用することができます。</p>
 <h2 id="タグのヒント">タグのヒント</h2>
 <ul>
-<li>注文IDが設定されるとコンバージョンが発生します。</li>
+<li>注文IDが構成されるとコンバージョンが発生します。</li>
 <li>Clicktale Replay LinkをUDHに送信するには、以下の手順を実行する必要があります：
 <ul>
 <li>再生リンクの生成を有効にするために、Clicktaleの担当者に連絡します。</li>
-<li>Send Replay Link設定を<strong>True</strong>に設定します。</li>
+<li>Send Replay Link構成を<strong>True</strong>に構成します。</li>
 </ul>
 </li>
 <li>Contentsquareタグは、ページ上でロードされるTealiumアカウントとプロファイルを自動的に検出し、再生リンクをそこに送信します。再生リンクを別のアカウントまたはプロファイルに送信するには、<code>tealium_account</code>と<code>tealium_profile</code>の目的地にそれぞれ希望するアカウントとプロファイルをマッピングしてデフォルトの値を上書きします。</li>
@@ -320,13 +352,13 @@ var utag_data = {
 </ul>
 </li>
 </ul>
-<h2 id="タグ設定">タグ設定</h2>
+<h2 id="タグ構成">タグ構成</h2>
 <p>まず、Tealiumのタグマーケットプレイスに移動し、Clicktale Carmelタグを追加します（<a href="https://community.tealiumiq.com/posts/572034">タグの追加方法</a>について詳しくはこちらをご覧ください）。</p>
-<p>タグを追加した後、Data Mappingsセクションで以下の設定を行います。</p>
+<p>タグを追加した後、Data Mappingsセクションで以下の構成を行います。</p>
 <h2 id="ロードルール">ロードルール</h2>
 <p><a href="https://community.tealiumiq.com/posts/572034">ロードルール</a>は、このタグのインスタンスをいつ、どこでロードするかを決定します。&lsquo;すべてのページでロード&rsquo;ルールはデフォルトのロードルールです。このタグを特定のページでロードするには、関連する条件を持つ新しいロードルールを作成します。</p>
 <ul>
-<li>訪問者のマウスの動きを追跡したいページでこのタグをロードします。</li>
+<li>訪問のマウスの動きを追跡したいページでこのタグをロードします。</li>
 </ul>
 <h2 id="データマッピング">データマッピング</h2>
 <p>マッピングは、<a href="/iq-tag-management/data-layer/data-layer-variables/">データレイヤー変数</a>からベンダータグの対応する宛先変数にデータを送信するプロセスです。変数をタグの宛先にマッピングする方法については、<a href="/iq-tag-management/data-mappings/manage/">データマッピング</a>を参照してください。</p>
@@ -346,11 +378,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>partition</code></td>
-<td><ul><li>パーティション。</li><li>データが送信されるパーティション。</li><li>サーバーパーティション値を動的に設定するために、この変数にマッピングします。</li></ul></td>
+<td><ul><li>パーティション。</li><li>データが送信されるパーティション。</li><li>サーバーパーティション値を動的に構成するために、この変数にマッピングします。</li></ul></td>
 </tr>
 <tr>
 <td><code>project_guid</code></td>
-<td><ul><li>プロジェクトGUID。</li><li>プロジェクトガイドフィールドを設定するために、この変数にマッピングします。</li></ul></td>
+<td><ul><li>プロジェクトGUID。</li><li>プロジェクトガイドフィールドを構成するために、この変数にマッピングします。</li></ul></td>
 </tr>
 <tr>
 <td><code>send_replay_link</code></td>
@@ -496,7 +528,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -515,7 +547,7 @@ var utag_data = {
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">不正行為</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">広告ブロック</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグのヒント</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグ設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグ構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ロードルール</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データマッピング</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">標準</a></li>
@@ -654,6 +686,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -662,8 +710,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

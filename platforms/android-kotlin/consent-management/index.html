@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -361,8 +361,8 @@ var utag_data = {
 <p><a href="/platforms/android-kotlin/api/tealium-config/#consentmanagerpolicy"><code>TealiumConfig</code></a>内で同意管理ポリシーを初期化します。その後、<a href="/platforms/android-kotlin/api/tealium/#consentmanager"><code>tealium.consentManager</code></a>でTealiumインスタンスを使用してユーザーの同意を管理します。</p>
 <p><a href="/platforms/getting-started-mobile/consent-management/">同意管理</a>と同意ポリシーについて詳しく学びましょう。</p>
 <h2 id="同意">同意</h2>
-<h3 id="ポリシーの設定">ポリシーの設定</h3>
-<p>初期化時に以下のいずれかの同意ポリシーを設定します：</p>
+<h3 id="ポリシーの構成">ポリシーの構成</h3>
+<p>初期化時に以下のいずれかの同意ポリシーを構成します：</p>
 <ul>
 <li><code>ConsentPolicy.GDPR</code></li>
 <li><code>ConsentPolicy.CCPA</code></li>
@@ -372,11 +372,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  consentManagerPolicy <span style="color:#f92672">=</span> ConsentPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">GDPR</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="同意の有効期限">同意の有効期限</h3>
-<p><a href="/platforms/android-kotlin/api/tealium-config/#consentexpiry"><code>consentExpiry</code></a>プロパティを使用して、同意選択の有効期限を設定します。</p>
-<p>以下の例では、同意管理ポリシーをGDPRに設定し、有効期限を90日に設定しています：</p>
+<p><a href="/platforms/android-kotlin/api/tealium-config/#consentexpiry"><code>consentExpiry</code></a>プロパティを使用して、同意選択の有効期限を構成します。</p>
+<p>以下の例では、同意管理ポリシーをGDPRに構成し、有効期限を90日に構成しています：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...).</span><span style="color:#a6e22e">apply</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>  consentManagerPolicy <span style="color:#f92672">=</span> ConsentPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">GDPR</span>
-</span></span><span style="display:flex;"><span>  consentExpiry <span style="color:#f92672">=</span> ConsentExpiry<span style="color:#f92672">(</span>90<span style="color:#f92672">,</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">DAYS</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  consentExpiry <span style="color:#f92672">=</span> ConsentExpiry<span style="color:#f92672">(</span><span style="color:#ae81ff">90</span><span style="color:#f92672">,</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">DAYS</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><p>同意が期限切れになったときにコールバックをトリガーするには、<a href="/platforms/android-kotlin/api/consent-manager/#onuserconsentpreferencesupdated"><code>onUserConsentPreferencesUpdated()</code></a>メソッドを使用して<code>ConsentStatus</code>が<code>UNKNOWN</code>になったときを確認します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>BuildConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">TEALIUM_INSTANCE</span><span style="color:#f92672">,</span> config<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
@@ -389,17 +389,17 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">})</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h3 id="全面的な同意の設定">全面的な同意の設定</h3>
-<p>全面的な同意を設定するには：</p>
+</span></span></code></pre></div><h3 id="全面的な同意の構成">全面的な同意の構成</h3>
+<p>全面的な同意を構成するには：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentStatus</span> <span style="color:#f92672">=</span> ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span>
-</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>全面的な同意を設定すると、暗黙的に同意カテゴリが利用可能な<a href="/platforms/android-kotlin/api/consent-category/#class-consentcategory"><code>ConsentCategory</code></a>タイプの全リストに設定されます。</p>
-<h3 id="カテゴリ別の部分的な同意の設定">カテゴリ別の部分的な同意の設定</h3>
-<p>部分的な同意を設定するには、同意カテゴリのサブセットを指定します。これにより、<a href="/platforms/android-kotlin/api/consent-manager/#userconsentstatus"><code>userConsentStatus</code></a>が<code>CONSENTED</code>に暗黙的に設定されます。</p>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>全面的な同意を構成すると、暗黙的に同意カテゴリが利用可能な<a href="/platforms/android-kotlin/api/consent-category/#class-consentcategory"><code>ConsentCategory</code></a>タイプの全リストに構成されます。</p>
+<h3 id="カテゴリ別の部分的な同意の構成">カテゴリ別の部分的な同意の構成</h3>
+<p>部分的な同意を構成するには、同意カテゴリのサブセットを指定します。これにより、<a href="/platforms/android-kotlin/api/consent-manager/#userconsentstatus"><code>userConsentStatus</code></a>が<code>CONSENTED</code>に暗黙的に構成されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentCategories</span> <span style="color:#f92672">=</span> setOf<span style="color:#f92672">(</span>ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">ANALYTICS</span><span style="color:#f92672">,</span> ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">EMAIL</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="同意の拒否の設定">同意の拒否の設定</h3>
-<p>同意を拒否するには、同意ステータスを設定します：</p>
+</span></span></code></pre></div><h3 id="同意の拒否の構成">同意の拒否の構成</h3>
+<p>同意を拒否するには、同意ステータスを構成します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentStatus</span> <span style="color:#f92672">=</span> ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">NOT_CONSENTED</span>
-</span></span></code></pre></div><p>あるいは、同意カテゴリを<code>null</code>に設定します。</p>
+</span></span></code></pre></div><p>あるいは、同意カテゴリを<code>null</code>に構成します。</p>
 <h2 id="カスタム同意">カスタム同意</h2>
 <p>あなたの組織の同意要件が、私たちの標準的な<a href="/glossary/#opt-in-model-consent">Opt-in</a>および<a href="/glossary/#opt-out-model-consent">Opt-out</a>同意管理ポリシーに含まれていない場合、カスタム同意ポリシーを作成します。</p>
 <ol>
@@ -453,27 +453,27 @@ var utag_data = {
 <tr>
 <td><code>consentLoggingEnabled</code></td>
 <td><code>Boolean</code></td>
-<td>同意の変更のログ記録が必要かどうかを設定します</td>
+<td>同意の変更のログ記録が必要かどうかを構成します</td>
 </tr>
 <tr>
 <td><code>consentLoggingEventName</code></td>
 <td><code>String</code></td>
-<td>同意の変更をログに記録するときに使用するイベント名（キー：<code>tealium_event</code>）を設定します</td>
+<td>同意の変更をログに記録するときに使用するイベント名（キー：<code>tealium_event</code>）を構成します</td>
 </tr>
 <tr>
 <td><code>defaultConsentExpiry</code>]</td>
 <td><code>ConsentExpiry</code></td>
-<td><code>ConsentManagementPolicy</code>のデフォルトの有効期限を設定します</td>
+<td><code>ConsentManagementPolicy</code>のデフォルトの有効期限を構成します</td>
 </tr>
 <tr>
 <td><code>cookieUpdateRequired</code></td>
 <td><code>Boolean</code></td>
-<td>TagManagementモジュールのwebview内のクッキーを更新するかどうかを設定します</td>
+<td>TagManagementモジュールのwebview内のクッキーを更新するかどうかを構成します</td>
 </tr>
 <tr>
 <td><code>cookieUpdateEventName</code></td>
 <td><code>String</code></td>
-<td><code>cookieUpdateRequired</code>が<code>true</code>に設定されているときに使用するイベント名を設定します</td>
+<td><code>cookieUpdateRequired</code>が<code>true</code>に構成されているときに使用するイベント名を構成します</td>
 </tr>
 <tr>
 <td><code>policyStatusInfo()</code></td>
@@ -592,7 +592,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -608,11 +608,11 @@ var utag_data = {
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">使用法</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">同意</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ポリシーの設定</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ポリシーの構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">同意の有効期限</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">全面的な同意の設定</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">カテゴリ別の部分的な同意の設定</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">同意の拒否の設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">全面的な同意の構成</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">カテゴリ別の部分的な同意の構成</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">同意の拒否の構成</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">カスタム同意</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">例</a></li>
               </nav>
@@ -748,6 +748,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -756,8 +772,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -369,7 +369,7 @@ var utag_data = {
 </span></span></code></pre></div><h2 id="タイムドイベント">タイムドイベント</h2>
 <p><a href="/platforms/getting-started-mobile/timed-events/">タイムドイベント</a>は、イベントの持続時間や2つのイベント間の持続時間を測定します。タイムドイベントは自動的にまたは手動でトリガーされます。</p>
 <h3 id="自動トリガー">自動トリガー</h3>
-<p><a href="/platforms/android-kotlin/api/tealium-config/#timedeventtriggers"><code>timedEventTriggers</code></a>を<code>EventTrigger</code>オブジェクトのリストに設定することで、イベント間の持続時間を自動的にトラッキングします。開始イベントと停止イベントの名前を指定します。</p>
+<p><a href="/platforms/android-kotlin/api/tealium-config/#timedeventtriggers"><code>timedEventTriggers</code></a>を<code>EventTrigger</code>オブジェクトのリストに構成することで、イベント間の持続時間を自動的にトラッキングします。開始イベントと停止イベントの名前を指定します。</p>
 <p>以下は、自動トリガーでタイムドイベントをトラッキングする例です：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>timedEventTriggers <span style="color:#f92672">=</span> mutableListOf<span style="color:#f92672">(</span>EventTrigger<span style="color:#f92672">.</span><span style="color:#a6e22e">forEventName</span><span style="color:#f92672">(</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;cart_add&#34;</span><span style="color:#f92672">,</span>
@@ -387,9 +387,9 @@ var utag_data = {
 <p>指定されたIDでトレースに参加するには、<a href="/platforms/android-kotlin/api/tealium/#jointrace"><code>joinTrace()</code></a>を呼び出します。Tealium Customer Data Hubの<a href="/server-side/connectors/trace/Manage/">Trace</a>機能について詳しくはこちらをご覧ください。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">]?.</span><span style="color:#a6e22e">joinTrace</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;TRACE_ID&#34;</span><span style="color:#f92672">)</span>
 </span></span></code></pre></div><h3 id="トレースの離脱">トレースの離脱</h3>
-<p>トレースはアプリセッションの期間中有効で、以前に参加したトレースを離脱し、訪問者セッションを終了するまで<a href="/platforms/android-kotlin/api/tealium/#leavetrace"><code>leaveTrace()</code></a>を呼び出すまで続きます。</p>
+<p>トレースはアプリセッションの期間中有効で、以前に参加したトレースを離脱し、訪問セッションを終了するまで<a href="/platforms/android-kotlin/api/tealium/#leavetrace"><code>leaveTrace()</code></a>を呼び出すまで続きます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">]?.</span><span style="color:#a6e22e">leaveTrace</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><p>訪問者セッションをリモートで終了するには、<a href="/platforms/android-kotlin/api/tealium/#endtracevisitorsession"><code>endTraceVisitorSession()</code></a>を使用します。これにより、SDKセッションは終了せず、セッションIDもリセットされません。</p>
+</span></span></code></pre></div><p>訪問セッションをリモートで終了するには、<a href="/platforms/android-kotlin/api/tealium/#endtracevisitorsession"><code>endTraceVisitorSession()</code></a>を使用します。これにより、SDKセッションは終了せず、セッションIDもリセットされません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">]?.</span><span style="color:#a6e22e">endTraceVisitorSession</span><span style="color:#f92672">()</span>
 </span></span></code></pre></div>
 </div>
@@ -451,7 +451,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -606,6 +606,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -614,8 +630,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

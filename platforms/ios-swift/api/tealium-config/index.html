@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -356,7 +356,7 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      メインのTealiumクラスの設定オプションを設定するためのクラスです。個々のモジュールは、有効になっている場合にのみ、TealiumConfigクラスの拡張機能を提供します。
+      メインのTealiumクラスの構成オプションを構成するためのクラスです。個々のモジュールは、有効になっている場合にのみ、TealiumConfigクラスの拡張機能を提供します。
     </p>
   
 </div>
@@ -378,19 +378,19 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#adobevisitorauthstate"><code>adobeVisitorAuthState</code></a></td>
-<td>訪問者の現在の認証状態を設定します。</td>
+<td>訪問の現在の認証状態を構成します。</td>
 </tr>
 <tr>
 <td><a href="#adobevisitorcustomvisitorid"><code>adobeVisitorCustomVisitorId</code></a></td>
-<td>Adobe ECIDに既知の訪問者IDを設定します。初期化時に既知の場合は、将来ECIDが変更された場合は、<code>linkECIDToKnownIdentifier</code>を呼び出して訪問者IDを更新します。</td>
+<td>Adobe ECIDに既知の訪問IDを構成します。初期化時に既知の場合は、将来ECIDが変更された場合は、<code>linkECIDToKnownIdentifier</code>を呼び出して訪問IDを更新します。</td>
 </tr>
 <tr>
 <td><a href="#adobevisitordataproviderid"><code>adobeVisitorDataProviderId</code></a></td>
-<td>Adobeから提供されるデータプロバイダIDを設定します。これは、ECIDを既知のIDにリンクする場合に必要です。</td>
+<td>Adobeから提供されるデータプロバイダIDを構成します。これは、ECIDを既知のIDにリンクする場合に必要です。</td>
 </tr>
 <tr>
 <td><a href="#adobevisitorexistingecid"><code>adobeVisitorExistingEcid</code></a></td>
-<td>以前のインストールからの既存のECIDを設定します。Adobe SDKなどの代わりに使用されます。新しいECIDを要求する代わりに、このプロパティを使用して既存のECIDを設定します。</td>
+<td>以前のインストールからの既存のECIDを構成します。Adobe SDKなどの代わりに使用されます。新しいECIDを要求する代わりに、このプロパティを使用して既存のECIDを構成します。</td>
 </tr>
 <tr>
 <td><a href="#adobevisitororgid"><code>adobeVisitorOrgId</code></a></td>
@@ -398,7 +398,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#adobevisitorretries"><code>adobeVisitorRetries</code></a></td>
-<td>リクエストが失敗した場合に、トラッキングコールがECIDなしで送信される前に許可される無効な訪問者IDのリトライ回数です。</td>
+<td>リクエストが失敗した場合に、トラッキングコールがECIDなしで送信される前に許可される無効な訪問IDのリトライ回数です。</td>
 </tr>
 <tr>
 <td><a href="#appDelegateProxyEnabled"><code>appDelegateProxyEnabled</code></a></td>
@@ -406,19 +406,19 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#autotrackingblocklistfilename"><code>autoTrackingBlocklistFilename</code></a></td>
-<td>ローカルのブロックリストファイルの名前を設定します。</td>
+<td>ローカルのブロックリストファイルの名前を構成します。</td>
 </tr>
 <tr>
 <td><a href="#autotrackingblocklisturl"><code>autoTrackingBlocklistURL</code></a></td>
-<td>リモートのブロックリストファイルのURLを設定します。</td>
+<td>リモートのブロックリストファイルのURLを構成します。</td>
 </tr>
 <tr>
 <td><a href="#autotrackingcollectordelegate"><code>autoTrackingCollectorDelegate</code></a></td>
-<td>自動的にトラッキングされるビューのために実行されるグローバルデリゲートを設定します。</td>
+<td>自動的にトラッキングされるビューのために実行されるグローバルデリゲートを構成します。</td>
 </tr>
 <tr>
 <td><a href="#batchingbypasskeys"><code>batchingBypassKeys</code></a></td>
-<td>バッチ処理がバイパスされるイベント名のリストを設定します（個別のイベントとして送信されます）</td>
+<td>バッチ処理がバイパスされるイベント名のリストを構成します（個別のイベントとして送信されます）</td>
 </tr>
 <tr>
 <td><a href="#batchingenabled"><code>batchingEnabled</code></a></td>
@@ -426,7 +426,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#batchsize"><code>batchSize</code></a></td>
-<td>1つのバッチリクエストに結合するイベントの数を設定します（最大：10）</td>
+<td>1つのバッチリクエストに結合するイベントの数を構成します（最大：10）</td>
 </tr>
 <tr>
 <td><a href="#connectivityrefreshenabled"><code>connectivityRefreshEnabled</code></a></td>
@@ -434,11 +434,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#connectivityrefreshinterval"><code>connectivityRefreshInterval</code></a></td>
-<td>デフォルトの接続更新間隔を秒単位で設定します</td>
+<td>デフォルトの接続更新間隔を秒単位で構成します</td>
 </tr>
 <tr>
 <td><a href="#consentexpiry"><code>consentExpiry</code></a></td>
-<td>ユーザーの同意選択の有効期限を設定します</td>
+<td>ユーザーの同意選択の有効期限を構成します</td>
 </tr>
 <tr>
 <td><a href="#consentloggingenabled"><code>consentLoggingEnabled</code></a></td>
@@ -446,7 +446,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#consentpolicy"><code>consentPolicy</code></a></td>
-<td><a href="/platforms/ios-swift/consent-management/#set-policy">同意ポリシー</a>を設定します（デフォルトはGDPR）</td>
+<td><a href="/platforms/ios-swift/consent-management/#set-policy">同意ポリシー</a>を構成します（デフォルトはGDPR）</td>
 </tr>
 <tr>
 <td><a href="#deeplinktrackingenabled"><code>deepLinkTrackingEnabled</code></a></td>
@@ -458,19 +458,19 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#diskstoragedirectory"><code>diskStorageDirectory</code></a></td>
-<td>ディスクストレージに使用するディレクトリを設定します。デフォルトは<code>.caches</code>です。</td>
+<td>ディスクストレージに使用するディレクトリを構成します。デフォルトは<code>.caches</code>です。</td>
 </tr>
 <tr>
 <td><a href="#dispatchafter"><code>dispatchAfter</code></a></td>
-<td>キューがフラッシュされるまでのイベント数を設定します</td>
+<td>キューがフラッシュされるまでのイベント数を構成します</td>
 </tr>
 <tr>
 <td><a href="#dispatchexpiration"><code>dispatchExpiration</code></a></td>
-<td>バッチの有効期限を日単位で設定します。デバイスがオフラインの場合、古いイベントは削除されます</td>
+<td>バッチの有効期限を日単位で構成します。デバイスがオフラインの場合、古いイベントは削除されます</td>
 </tr>
 <tr>
 <td><a href="#dispatchqueuelimit"><code>dispatchQueueLimit</code></a></td>
-<td>キューに格納されるイベントの最大数を設定します。この数に達し、キューがフラッシュされていない場合、最も古いイベントが削除されます。</td>
+<td>キューに格納されるイベントの最大数を構成します。この数に達し、キューがフラッシュされていない場合、最も古いイベントが削除されます。</td>
 </tr>
 <tr>
 <td><a href="#dispatchlisteners"><code>dispatchListeners</code></a></td>
@@ -486,11 +486,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#existingvisitorid"><code>existingVisitorId</code></a></td>
-<td>既存の訪問者IDを設定します。アプリ拡張機能の第一のIDとして使用されます</td>
+<td>既存の訪問IDを構成します。アプリ拡張機能の第一のIDとして使用されます</td>
 </tr>
 <tr>
 <td><a href="#geofencefilename"><code>geofenceFileName</code></a></td>
-<td>ローカルのジオフェンスJSONファイルアセットの名前を設定します。<em>ファイル拡張子は含めないでください。</em></td>
+<td>ローカルのジオフェンスJSONファイルアセットの名前を構成します。<em>ファイル拡張子は含めないでください。</em></td>
 </tr>
 <tr>
 <td><a href="#geofencetrackingenabled"><code>geofenceTrackingEnabled</code></a></td>
@@ -498,15 +498,15 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#geofenceurl"><code>geofenceUrl</code></a></td>
-<td>ホストされているJSONファイルのURLを設定します</td>
+<td>ホストされているJSONファイルのURLを構成します</td>
 </tr>
 <tr>
 <td><a href="#hosteddatalayerexpiry"><code>hostedDataLayerExpiry</code></a></td>
-<td>ホストされているデータレイヤーデータの有効期限を設定します</td>
+<td>ホストされているデータレイヤーデータの有効期限を構成します</td>
 </tr>
 <tr>
 <td><a href="#hosteddatalayerkeys"><code>hostedDataLayerKeys</code></a></td>
-<td>ホストされているデータレイヤーモジュールがデータレイヤーIDを検索するときに使用するイベントマッピングを設定します</td>
+<td>ホストされているデータレイヤーモジュールがデータレイヤーIDを検索するときに使用するイベントマッピングを構成します</td>
 </tr>
 <tr>
 <td><a href="#iscollectenabled"><code>isCollectEnabled</code></a></td>
@@ -514,19 +514,19 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#lifecycleautotrackingenabled"><code>lifecycleAutoTrackingEnabled</code></a></td>
-<td>ライフサイクルの自動トラッキングを有効または無効にします。デフォルトは<code>true</code>です。<code>false</code>に設定した場合、ライフサイクルの起動/スリープ/ウェイクイベントが必要な場合は、<code>LifecycleModule</code>のパブリックメソッドを使用して手動で呼び出す必要があります</td>
+<td>ライフサイクルの自動トラッキングを有効または無効にします。デフォルトは<code>true</code>です。<code>false</code>に構成した場合、ライフサイクルの起動/スリープ/ウェイクイベントが必要な場合は、<code>LifecycleModule</code>のパブリックメソッドを使用して手動で呼び出す必要があります</td>
 </tr>
 <tr>
 <td><a href="#logger"><code>logger</code></a></td>
-<td>現在の<code>TealiumLogger</code>を置き換える<code>TealiumLoggerProtocol</code>に準拠するカスタムロガーを設定します</td>
+<td>現在の<code>TealiumLogger</code>を置き換える<code>TealiumLoggerProtocol</code>に準拠するカスタムロガーを構成します</td>
 </tr>
 <tr>
 <td><a href="#loglevel"><code>logLevel</code></a></td>
-<td>ログレベルプロパティを設定します。これにより、ログに記録される情報の量が制御されます</td>
+<td>ログレベルプロパティを構成します。これにより、ログに記録される情報の量が制御されます</td>
 </tr>
 <tr>
 <td><a href="#logtype"><code>logType</code></a></td>
-<td>新しいログタイプを設定します</td>
+<td>新しいログタイプを構成します</td>
 </tr>
 <tr>
 <td><a href="#memoryreportingenabled"><code>memoryReportingEnabled</code></a></td>
@@ -534,11 +534,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#minimumfreediskspace"><code>minimumFreeDiskSpace</code></a></td>
-<td>ディスクストレージを有効にするための最小の空きディスク容量（メガバイト）を設定します</td>
+<td>ディスクストレージを有効にするための最小の空きディスク容量（メガバイト）を構成します</td>
 </tr>
 <tr>
 <td><a href="#minutesbetweenrefresh"><code>minutesBetweenRefresh</code></a></td>
-<td>パブリッシュ設定を取得する頻度を決定します</td>
+<td>パブリッシュ構成を取得する頻度を決定します</td>
 </tr>
 <tr>
 <td><a href="#onconsentexpiration"><code>onConsentExpiration</code></a></td>
@@ -566,11 +566,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#publishsettingsprofile"><code>publishSettingsProfile</code></a></td>
-<td>パブリッシュ設定プロファイルをオーバーライドします</td>
+<td>パブリッシュ構成プロファイルをオーバーライドします</td>
 </tr>
 <tr>
 <td><a href="#publishsettingsurl"><code>publishSettingsURL</code></a></td>
-<td>パブリッシュ設定URLをオーバーライドします</td>
+<td>パブリッシュ構成URLをオーバーライドします</td>
 </tr>
 <tr>
 <td><a href="#remoteapienabled"><code>remoteAPIEnabled</code></a></td>
@@ -586,7 +586,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#rootview"><code>rootView</code></a></td>
-<td><code>WKWebView</code>にアタッチする現在の<code>UIView</code>を設定します</td>
+<td><code>WKWebView</code>にアタッチする現在の<code>UIView</code>を構成します</td>
 </tr>
 <tr>
 <td><a href="#searchadsenabled"><code>searchAdsEnabled</code></a></td>
@@ -606,7 +606,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#shoulduseremotepublishsettings"><code>shouldUseRemotePublishSettings</code></a></td>
-<td>モバイルパブリッシュ設定（デフォルト：有効）を設定します</td>
+<td>モバイルパブリッシュ構成（デフォルト：有効）を構成します</td>
 </tr>
 <tr>
 <td><a href="#skadattributionenabled"><code>skAdAttributionEnabled</code></a></td>
@@ -654,53 +654,53 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>config.addRemoteCommand(remoteCommand)
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#endif</span>
 </span></span></code></pre></div><h3 id="adobevisitorauthstate"><code>adobeVisitorAuthState</code></h3>
-<p>訪問者の現在の認証状態を設定します。</p>
+<p>訪問の現在の認証状態を構成します。</p>
 <p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorAuthState = .authenticated
 </span></span><span style="display:flex;"><span>config.adobeVisitorAuthState = .loggedOut
 </span></span><span style="display:flex;"><span>config.adobeVisitorAuthState = .unknown
 </span></span></code></pre></div><h3 id="adobevisitorcustomvisitorid"><code>adobeVisitorCustomVisitorId</code></h3>
-<p>既知の訪問者IDをAdobe ECIDに設定します。初期化時に既知の場合は、将来ECIDが変更された場合は、<code>linkECIDToKnownIdentifier</code>を呼び出して訪問者IDを更新します。</p>
+<p>既知の訪問IDをAdobe ECIDに構成します。初期化時に既知の場合は、将来ECIDが変更された場合は、<code>linkECIDToKnownIdentifier</code>を呼び出して訪問IDを更新します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorCustomVisitorId = <span style="color:#e6db74">&#34;20381482060927465156359999806251989655&#34;</span>
 </span></span></code></pre></div><h3 id="adobevisitordataproviderid"><code>adobeVisitorDataProviderId</code></h3>
-<p>Adobeから提供されるデータプロバイダIDを設定します。これは、ECIDを既知のIDにリンクする場合に必要です。</p>
+<p>Adobeから提供されるデータプロバイダIDを構成します。これは、ECIDを既知のIDにリンクする場合に必要です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorDataProviderId = <span style="color:#e6db74">&#34;01&#34;</span>
 </span></span></code></pre></div><h3 id="adobevisitorexistingecid"><code>adobeVisitorExistingEcid</code></h3>
-<p>以前のインストールからの既存のECIDを設定します。Adobe SDKなどの代わりに使用されます。</p>
+<p>以前のインストールからの既存のECIDを構成します。Adobe SDKなどの代わりに使用されます。</p>
 <p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorExistingEcid = <span style="color:#e6db74">&#34;20381482060927465156359999806251989655&#34;</span>
 </span></span></code></pre></div><h3 id="adobevisitororgid"><code>adobeVisitorOrgId</code></h3>
-<p><code>@</code>を含むAdobe Org IDを含む文字列です。Org IDが提供されていない場合、モジュールは初期化されず、訪問者IDは取得されません。Adobe ECIDなしで通常のトラッキングコールが続行されます。</p>
+<p><code>@</code>を含むAdobe Org IDを含む文字列です。Org IDが提供されていない場合、モジュールは初期化されず、訪問IDは取得されません。Adobe ECIDなしで通常のトラッキングコールが続行されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorOrgId = STRING_VALUE
 </span></span></code></pre></div><p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorOrgId = <span style="color:#e6db74">&#34;1A2A111A111150AA0A110A12@AdobeOrg&#34;</span>
 </span></span></code></pre></div><h3 id="adobevisitorretries"><code>adobeVisitorRetries</code></h3>
-<p>リクエストが失敗した場合に、トラッキングコールがECIDなしで送信される前に許可される無効な訪問者IDのリトライ回数です。</p>
+<p>リクエストが失敗した場合に、トラッキングコールがECIDなしで送信される前に許可される無効な訪問IDのリトライ回数です。</p>
 <p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorRetries = <span style="color:#ae81ff">5</span>
 </span></span></code></pre></div><h3 id="appdelegateproxyenabled"><code>appDelegateProxyEnabled</code></h3>
-<p>Tealium AppDelegateプロキシを有効にして、自動的にディープリンクのトラッキングを開始し、ディープリンクからTealiumトレースセッションを開始します。このプロパティはデフォルトで有効になっており、<code>true</code>に設定されています。無効にするには、プロパティを<code>false</code>に設定します。</p>
+<p>Tealium AppDelegateプロキシを有効にして、自動的にディープリンクのトラッキングを開始し、ディープリンクからTealiumトレースセッションを開始します。このプロパティはデフォルトで有効になっており、<code>true</code>に構成されています。無効にするには、プロパティを<code>false</code>に構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.appDelegateProxyEnabled = <span style="color:#66d9ef">false</span>
 </span></span></code></pre></div><h3 id="autotrackingblocklistfilename"><code>autoTrackingBlocklistFilename</code></h3>
 <p><a href="/platforms/ios-swift/module-list/autotracking/#block-list">AutoTrackingモジュール</a>で使用します。</p>
-<p>自動トラッキングから除外するビューのリストを含むブロックリストファイルの名前を設定します。ファイルはAndroidの<code>assets</code>ディレクトリに存在する必要があります。</p>
+<p>自動トラッキングから除外するビューのリストを含むブロックリストファイルの名前を構成します。ファイルはAndroidの<code>assets</code>ディレクトリに存在する必要があります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.autoTrackingBlocklistFilename = <span style="color:#e6db74">&#34;autotracking-blocklist.json&#34;</span>
 </span></span></code></pre></div><h3 id="autotrackingblocklisturl"><code>autoTrackingBlocklistURL</code></h3>
 <p><a href="/platforms/ios-swift/module-list/autotracking/#block-list">AutoTrackingモジュール</a>で使用します。</p>
-<p>自動トラッキングから除外するビューのリストを含むJSON形式のブロックリストファイルのURLを設定します。</p>
+<p>自動トラッキングから除外するビューのリストを含むJSON形式のブロックリストファイルのURLを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.autoTrackingBlocklistUrl = <span style="color:#e6db74">&#34;https://example.com/autotracking-blocklist.json&#34;</span>
 </span></span></code></pre></div><h3 id="autotrackingcollectordelegate"><code>autoTrackingCollectorDelegate</code></h3>
 <p><a href="/platforms/ios-swift/module-list/autotracking/">AutoTrackingモジュール</a>で使用します。</p>
-<p><a href="/platforms/ios-swift/module-list/autotracking/">AutoTrackingモジュール</a>でトラッキングされるビューに対して実行されるグローバルデリゲートを設定します。特定のビューに含まれるデータをカスタマイズするために、このデリゲートを編集します。</p>
+<p><a href="/platforms/ios-swift/module-list/autotracking/">AutoTrackingモジュール</a>でトラッキングされるビューに対して実行されるグローバルデリゲートを構成します。特定のビューに含まれるデータをカスタマイズするために、このデリゲートを編集します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.autoTrackingCollectorDelegate = myCollectorDelegate
 </span></span></code></pre></div><h3 id="batchingbypasskeys"><code>batchingBypassKeys</code></h3>
-<p>バッチ処理がバイパスされるイベント名のリストを設定します（個別のイベントとして送信されます）。</p>
+<p>バッチ処理がバイパスされるイベント名のリストを構成します（個別のイベントとして送信されます）。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.batchingBypassKeys = [<span style="color:#e6db74">&#34;home_screen&#34;</span>]
 </span></span></code></pre></div><h3 id="batchingenabled"><code>batchingEnabled</code></h3>
 <p>イベントのバッチ処理を有効または無効にします。デフォルトは無効です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.batchingEnabled = <span style="color:#66d9ef">true</span>
 </span></span></code></pre></div><h3 id="batchsize"><code>batchSize</code></h3>
-<p>1つのバッチリクエストに結合するイベントの数を設定します。最大は10です。</p>
+<p>1つのバッチリクエストに結合するイベントの数を構成します。最大は10です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.batchSize = <span style="color:#ae81ff">8</span>
 </span></span></code></pre></div><h3 id="collectors"><code>Collectors</code></h3>
 <p>Collectorsは、デバイスから補足情報を収集し、Tealium Customer Data Hubにデータレイヤーに追加するモジュールです。一部のCollectorsはコアライブラリに含まれており、他のものはオプションとして別のモジュールとしてインストールされます。</p>
@@ -742,27 +742,27 @@ var utag_data = {
 <p>有効になっている場合（デフォルト）、接続モジュールは指定された間隔で接続をチェックします（<code>setConnectivityRefreshInterval</code>で制御されます）。キューに入れられたディスパッチは、接続が再開されるとすぐに送信されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.connectivityRefreshEnabled = <span style="color:#66d9ef">true</span>
 </span></span></code></pre></div><h3 id="connectivityrefreshinterval"><code>connectivityRefreshInterval</code></h3>
-<p>デフォルトの接続更新間隔を秒単位で設定します。設定されていない場合、デフォルトは30秒です。</p>
+<p>デフォルトの接続更新間隔を秒単位で構成します。構成されていない場合、デフォルトは30秒です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.connectivityRefreshInterval = <span style="color:#ae81ff">30</span>
 </span></span></code></pre></div><h3 id="consentexpiry"><code>consentExpiry</code></h3>
-<p>ユーザーの同意選択の有効期限を設定します。Tealiumの初期化時にこのプロパティを設定します。同意選択のデフォルトの有効期限は次のとおりです。</p>
+<p>ユーザーの同意選択の有効期限を構成します。Tealiumの初期化時にこのプロパティを構成します。同意選択のデフォルトの有効期限は次のとおりです。</p>
 <ul>
 <li>CCPA：395日</li>
 <li>GDPR：365日</li>
 </ul>
-<p>以下は、同意の有効期限を90日に設定する例です。</p>
+<p>以下は、同意の有効期限を90日に構成する例です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.consentExpiry = (<span style="color:#ae81ff">90</span>, .days)
 </span></span></code></pre></div><h3 id="consentloggingenabled"><code>consentLoggingEnabled</code></h3>
 <p><a href="/server-side/consent/event-specs/">同意ログ記録機能</a>を有効にします。これにより、同意ステータスの変更が監査目的でTealium Customer Data Hubに送信されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.consentLoggingEnabled = <span style="color:#66d9ef">true</span>
 </span></span></code></pre></div><h3 id="consentpolicy"><code>consentPolicy</code></h3>
-<p><a href="/platforms/ios-swift/consent-management/#set-policy">同意ポリシー</a>を設定します。このプロパティが設定されている場合にのみ、同意マネージャーが有効になります。</p>
+<p><a href="/platforms/ios-swift/consent-management/#set-policy">同意ポリシー</a>を構成します。このプロパティが構成されている場合にのみ、同意マネージャーが有効になります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.consentPolicy = .ccpa
 </span></span></code></pre></div><h3 id="deeplinktrackingenabled"><code>deepLinkTrackingEnabled</code></h3>
 <p>ディープリンクの自動トラッキングを有効または無効にします。デフォルトは有効です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.deepLinkTrackingEnabled = <span style="color:#66d9ef">true</span>
 </span></span></code></pre></div><h3 id="desiredaccuracy"><code>desiredAccuracy</code></h3>
-<p>アプリが受け取りたい位置データの精度を設定します。</p>
+<p>アプリが受け取りたい位置データの精度を構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.desiredAccuracy = .best
 </span></span></code></pre></div><p>利用可能な<code>desiredAccuracy</code>オプションは次のとおりです。</p>
 <table>
@@ -805,7 +805,7 @@ var utag_data = {
 </table>
 <p>Appleの<a href="https://developer.apple.com/documentation/corelocation/cllocationaccuracy">desired accuracy constants</a>について詳しく学びます。</p>
 <h3 id="diskstoragedirectory"><code>diskStorageDirectory</code></h3>
-<p>ディスクストレージに使用するディレクトリを設定します。デフォルトは<code>.caches</code>です。</p>
+<p>ディスクストレージに使用するディレクトリを構成します。デフォルトは<code>.caches</code>です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.diskStorageDirectory = .documents
 </span></span></code></pre></div><h3 id="dispatchlisteners"><code>dispatchListeners</code></h3>
 <p>トラッキングコールの直前にカスタムの<code>DispatchListener</code>を追加するオプションを提供します。</p>
@@ -817,19 +817,19 @@ var utag_data = {
 <p>イベント数が指定した数に達した後、キューを自動的にフラッシュします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.dispatchAfter = <span style="color:#ae81ff">20</span>
 </span></span></code></pre></div><h3 id="dispatchexpiration"><code>dispatchExpiration</code></h3>
-<p>バッチの有効期限を日単位で設定します。デバイスがオフラインの場合、古いイベントは削除されます。</p>
+<p>バッチの有効期限を日単位で構成します。デバイスがオフラインの場合、古いイベントは削除されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.dispatchExpiration = <span style="color:#ae81ff">5</span>
 </span></span></code></pre></div><h3 id="dispatchqueuelimit"><code>dispatchQueueLimit</code></h3>
-<p>キューに格納されるイベントの最大数を設定します。この数に達し、キューがフラッシュされていない場合、最も古いイベントが削除されます。</p>
+<p>キューに格納されるイベントの最大数を構成します。この数に達し、キューがフラッシュされていない場合、最も古いイベントが削除されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.dispatchQueueLimit = <span style="color:#ae81ff">50</span>
 </span></span></code></pre></div><h3 id="enablebackgroundlocation"><code>enableBackgroundLocation</code></h3>
 <p>アプリがバックグラウンドで実行されている間に位置情報の更新を有効にします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.enableBackgroundLocation = <span style="color:#66d9ef">true</span>
 </span></span></code></pre></div><h3 id="existingvisitorid"><code>existingVisitorId</code></h3>
-<p>既存の訪問者IDを設定します。アプリ拡張機能の第一のIDとして使用されます。</p>
+<p>既存の訪問IDを構成します。アプリ拡張機能の第一のIDとして使用されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.existingVisitorId = id
 </span></span></code></pre></div><h3 id="geofencefilename"><code>geofenceFileName</code></h3>
-<p>ローカルのジオフェンスJSONファイルアセットの名前を設定します。<em>ファイル拡張子は含めないでください。</em></p>
+<p>ローカルのジオフェンスJSONファイルアセットの名前を構成します。<em>ファイル拡張子は含めないでください。</em></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.geofenceFileName = &lt;String&gt;
 </span></span></code></pre></div><table>
 <thead>
@@ -867,7 +867,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="geofenceurl"><code>geofenceUrl</code></h3>
-<p>ホストされているJSONファイルのURLを設定します。</p>
+<p>ホストされているJSONファイルのURLを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.geofenceUrl = &lt;String (url)<span style="color:#f92672">&gt;</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -886,21 +886,21 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="hosteddatalayerexpiry"><code>hostedDataLayerExpiry</code></h3>
-<p>ホストされているデータレイヤーデータの有効期限を設定します。このプロパティが設定されていない場合、ホストされているデータレイヤーアイテムはデフォルトで7日間保持され、この期間が経過すると再ダウンロードされます。</p>
+<p>ホストされているデータレイヤーデータの有効期限を構成します。このプロパティが構成されていない場合、ホストされているデータレイヤーアイテムはデフォルトで7日間保持され、この期間が経過すると再ダウンロードされます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.hostedDataLayerExpiry = (<span style="color:#ae81ff">1</span>, unit: .minutes)
-</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>短い有効期間を設定すると、ネットワークリクエストが増えるため、モバイルデバイスのバッテリー寿命が短くなります。</p>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>短い有効期間を構成すると、ネットワークリクエストが増えるため、モバイルデバイスのバッテリー寿命が短くなります。</p>
 <h3 id="hosteddatalayerkeys"><code>hostedDataLayerKeys</code></h3>
-<p>ホストされているデータレイヤーモジュールがデータレイヤーIDを検索するときに使用するイベントマッピングを設定します。</p>
+<p>ホストされているデータレイヤーモジュールがデータレイヤーIDを検索するときに使用するイベントマッピングを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.hostedDataLayerKeys = [<span style="color:#e6db74">&#34;product_view&#34;</span> : <span style="color:#e6db74">&#34;product_id&#34;</span>]
 </span></span></code></pre></div><h3 id="iscollectenabled"><code>isCollectEnabled</code></h3>
 <p>Collectディスパッチャーを無効にするオプションを提供します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.isCollectEnabled = <span style="color:#66d9ef">false</span>
 </span></span></code></pre></div><h3 id="lifecycleautotrackingenabled"><code>lifecycleAutoTrackingEnabled</code></h3>
-<p>ライフサイクルの自動トラッキングを有効または無効にします。デフォルトは<code>true</code>です。<code>false</code>に設定した場合、ライフサイクルの起動/スリープ/ウェイクイベントが必要な場合は、<code>LifecycleModule</code>のパブリックメソッドを使用して手動で呼び出す必要があります。</p>
+<p>ライフサイクルの自動トラッキングを有効または無効にします。デフォルトは<code>true</code>です。<code>false</code>に構成した場合、ライフサイクルの起動/スリープ/ウェイクイベントが必要な場合は、<code>LifecycleModule</code>のパブリックメソッドを使用して手動で呼び出す必要があります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.lifecycleTrackingEnabled = <span style="color:#66d9ef">false</span>
 </span></span></code></pre></div><h3 id="logger"><code>logger</code></h3>
-<p>現在の<code>TealiumLogger</code>を置き換える<code>TealiumLoggerProtocol</code>に準拠するカスタムロガーを設定します。</p>
-<p>以下の例は、configオブジェクトにカスタムロガーを設定する方法を示しています。</p>
+<p>現在の<code>TealiumLogger</code>を置き換える<code>TealiumLoggerProtocol</code>に準拠するカスタムロガーを構成します。</p>
+<p>以下の例は、configオブジェクトにカスタムロガーを構成する方法を示しています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomLogger</span>: TealiumLoggerProtocol {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ... TealiumLoggerProtocolに準拠する</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// さらに独自のカスタムメソッドを追加します</span>
@@ -920,12 +920,12 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="loglevel"><code>logLevel</code></h3>
-<p>ログレベルプロパティを設定します。これにより、ログに記録される情報の量が制御されます。</p>
+<p>ログレベルプロパティを構成します。これにより、ログに記録される情報の量が制御されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.logLevel = .debug
 </span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>開発環境では、XcodeコンソールまたはMacのConsoleアプリで開発ログを表示できます。iOSデバイスに接続している場合は、Consoleアプリで本番ログを表示できます。</p>
 <h3 id="logtype"><code>logType</code></h3>
-<p>新しいログタイプを設定します。デフォルトは<code>.os</code>または<a href="https://developer.apple.com/documentation/os/oslog"><code>OSLog</code></a>です。</p>
-<p>以下の例は、ログレベルを<code>print</code>に設定する方法を示しています。</p>
+<p>新しいログタイプを構成します。デフォルトは<code>.os</code>または<a href="https://developer.apple.com/documentation/os/oslog"><code>OSLog</code></a>です。</p>
+<p>以下の例は、ログレベルを<code>print</code>に構成する方法を示しています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.logType = .print
 </span></span></code></pre></div><h3 id="memoryreportingenabled"><code>memoryReportingEnabled</code></h3>
 <p>デバイスデータモジュールでメモリレポートを有効または無効にします（デフォルトは無効）。</p>
@@ -992,7 +992,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1182,6 +1182,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1190,8 +1206,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -359,7 +359,7 @@ var utag_data = {
   <h2 id="仕組み">仕組み</h2>
 <p><code>b</code>変数は、データレイヤーを表す<code>utag.js</code>内のJavaScriptオブジェクトです。ページの読み込みやトラッキング呼び出し中に処理されるデータレイヤーオブジェクトを保持しています。</p>
 <p>Tealium iQでは、データレイヤー変数は通常、ドロップダウンリストを使用して参照されますが、<code>b</code>変数を使用してJavaScriptコード内で参照することもできます。</p>
-<p>例えば、<strong>Set Data Values</strong>拡張の一般的な使用例は、変数がまだ設定されていない場合にデフォルト値を設定することです。拡張は次のようになるかもしれません：</p>
+<p>例えば、<strong>Set Data Values</strong>拡張の一般的な使用例は、変数がまだ構成されていない場合にデフォルト値を構成することです。拡張は次のようになるかもしれません：</p>
 <figure><a class="slb" href="/images/platforms/javascript/b-object-extension-example.png"><img src="/images/platforms/javascript/b-object-extension-example.png"/>
     </a>
 </figure>
@@ -408,7 +408,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">view</span>({ <span style="color:#a6e22e">tealium_event</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;cart_add&#34;</span> })
 </span></span></code></pre></div><p>この例では、<code>b['page_type']</code>が定義されていないことに注意が必要です（<code>utag_data</code>で定義されていても）これは、トラッキング呼び出しで渡されたデータオブジェクトの一部ではないからです。</p>
 <p>ページから他のタイプのデータレイヤー変数を参照するには、<a href="#usage">使用法</a>を参照してください。</p>
-<p class="tip"><i class="fa fa-info-circle"></i>トラッキング呼び出しで<code>utag_data</code>の変数を含めるには、<a href="/iq-tag-management/save-publish/publish-configuration/">公開設定の基本変数設定</a>を使用してください。</p>
+<p class="tip"><i class="fa fa-info-circle"></i>トラッキング呼び出しで<code>utag_data</code>の変数を含めるには、<a href="/iq-tag-management/save-publish/publish-configuration/">公開構成の基本変数構成</a>を使用してください。</p>
 <h3 id="タグスコープの拡張">タグスコープの拡張</h3>
 <p>特定のタグにスコープされた拡張では、<code>b</code>オブジェクトはデータレイヤーオブジェクトのローカルコピーです。これは、<code>b</code>オブジェクトの値を他のタグに影響を与えずに変更できることを意味します。</p>
 <p>これらの例では、データレイヤー変数<code>order_id</code>がJavaScript Code拡張を使用して各タグでカスタマイズされています。各拡張では、<code>b</code>は<code>order_id</code>の同じ値から始まります：</p>
@@ -524,7 +524,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -677,6 +677,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -685,8 +701,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

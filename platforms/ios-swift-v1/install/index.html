@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -371,13 +371,13 @@ var utag_data = {
 <h2 id="インストール">インストール</h2>
 <p>Tealium iOSライブラリはモジュールに分割されています。リソースの使用量を減らすために、必要なモジュールのみをインストールすることをお勧めします。iOSで利用可能なモジュールについては、<a href="/platforms/ios-swift-v1/modules/">詳細をご覧ください</a>。</p>
 <p>Swift Package Manager、CocoaPods、またはCarthageを使用してTealium for iOSライブラリをインストールします。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>同意管理が不要な場合は、同意管理モジュールを除外または無効にしてください。<a href="/platforms/ios-swift-v1/consent-management/">同意管理</a>モジュールはデフォルトで有効になっており、最初はトラッキング呼び出しが送信されないようになっています。トラッキング呼び出しを許可するには、同意ステータスを<code>.consented</code>に設定してください。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>同意管理が不要な場合は、同意管理モジュールを除外または無効にしてください。<a href="/platforms/ios-swift-v1/consent-management/">同意管理</a>モジュールはデフォルトで有効になっており、最初はトラッキング呼び出しが送信されないようになっています。トラッキング呼び出しを許可するには、同意ステータスを<code>.consented</code>に構成してください。</p>
 <h3 id="swift-package-manager推奨">Swift Package Manager（推奨）</h3>
 <p>バージョン1.9.0以上でサポートされているSwift Package Managerは、Tealium Swiftライブラリをインストールするための推奨される最も簡単な方法です。</p>
 <ol>
 <li>Xcodeプロジェクトで、<strong>ファイル &gt; パッケージの追加&hellip; &gt; パッケージの依存関係を追加</strong>を選択します。</li>
 <li>リポジトリのURL <code>https://github.com/tealium/tealium-swift</code> を入力します。</li>
-<li>バージョンルールを設定します。通常は<code>Up to next major</code>が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットしてください。</li>
+<li>バージョンルールを構成します。通常は<code>Up to next major</code>が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットしてください。</li>
 <li>インストールするモジュールを選択し、モジュールをインストールするアプリのターゲットを選択します。</li>
 </ol>
 <p>プロジェクトに複数のアプリターゲットがあり、複数のアプリターゲットでTealium Swiftライブラリが必要な場合は、<strong>Frameworks、Libraries、およびEmbedded Content</strong>セクションに手動で追加する必要があります。</p>
@@ -530,7 +530,7 @@ var utag_data = {
 </span></span></code></pre></div></li>
 <li>
 <p>必要なフレームワークをXcodeプロジェクトの<strong>General &gt; Embedded Binaries</strong>セクションにドラッグします。</p>
-   <p class="note"><i class="fa fa-exclamation-triangle"></i>Tealiumフレームワークがプロジェクト設定のEmbedded Binariesセクションに追加されていることを確認してください。そうでないと、アプリが起動時にクラッシュします。</p>
+   <p class="note"><i class="fa fa-exclamation-triangle"></i>Tealiumフレームワークがプロジェクト構成のEmbedded Binariesセクションに追加されていることを確認してください。そうでないと、アプリが起動時にクラッシュします。</p>
 </li>
 <li>
 <p>アプリを提出する際に問題が発生しないようにするために、Carthageの<a href="https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos">Getting Started</a>ドキュメントにリストされている手順に従って、関連するビルドフェーズスクリプトを追加します。</p>
@@ -579,9 +579,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>		}
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>バージョン1.9.0以上では、モバイルパブリッシュ設定がデフォルトで有効になっており、使用しない場合は無効にする必要があります。iQ Tag Managementでモバイルパブリッシュ設定を構成するか、<code>config.shouldUseRemotePublishSettings = false</code>を使用して無効にしてください。</p>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>バージョン1.9.0以上では、モバイルパブリッシュ構成がデフォルトで有効になっており、使用しない場合は無効にする必要があります。iQ Tag Managementでモバイルパブリッシュ構成を構成するか、<code>config.shouldUseRemotePublishSettings = false</code>を使用して無効にしてください。</p>
 <h2 id="ログレベル">ログレベル</h2>
-<p>ログレベルを設定するには、<a href="/platforms/ios-swift-v1/api/tealium-config/#setloglevel"><code>setLogLevel()</code></a>メソッドを使用して、<code>TealiumConfig</code>インスタンスに次のいずれかの値を指定します。</p>
+<p>ログレベルを構成するには、<a href="/platforms/ios-swift-v1/api/tealium-config/#setloglevel"><code>setLogLevel()</code></a>メソッドを使用して、<code>TealiumConfig</code>インスタンスに次のいずれかの値を指定します。</p>
 <ul>
 <li><code>none</code></li>
 <li><code>.errors</code></li>
@@ -591,8 +591,8 @@ var utag_data = {
 <p>デバッグ目的であれば、<code>.verbose</code>が推奨されます。次の例に示すようにします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.setLogLevel(.verbose)
 </span></span></code></pre></div><h2 id="イベントバッチング">イベントバッチング</h2>
-<p>バージョン1.9.0以前では、Tealium Swiftライブラリは<a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルパブリッシュ設定</a>を使用していませんでした。そのため、SDKの初期化時にイベントバッチングを有効にして設定する必要があります。バージョン1.9.0以降では、モバイルパブリッシュ設定のサポートが提供され、イベントバッチングをリモートで設定できるようになりました。</p>
-<p>次の例では、イベントバッチングを有効にし、バッチサイズとキューサイズを設定しています。</p>
+<p>バージョン1.9.0以前では、Tealium Swiftライブラリは<a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルパブリッシュ構成</a>を使用していませんでした。そのため、SDKの初期化時にイベントバッチングを有効にして構成する必要があります。バージョン1.9.0以降では、モバイルパブリッシュ構成のサポートが提供され、イベントバッチングをリモートで構成できるようになりました。</p>
+<p>次の例では、イベントバッチングを有効にし、バッチサイズとキューサイズを構成しています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumDispatchQueue</span> <span style="color:#75715e">// event batching optionsを使用するために必要</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">class</span> <span style="color:#a6e22e">TealiumHelper</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> tealium: Tealium?
@@ -626,25 +626,25 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="/platforms/ios-swift-v1/api/tealium-config/#batchsize"><code>batchSize</code></a></td>
-<td>1つのバッチリクエストに結合するイベントの数を設定します（最大：10）。</td>
+<td>1つのバッチリクエストに結合するイベントの数を構成します（最大：10）。</td>
 </tr>
 <tr>
 <td><a href="/platforms/ios-swift-v1/api/tealium-config/#dispatchafter"><code>dispatchAfter</code></a></td>
-<td>キューがフラッシュされるまでのイベント数を設定します。</td>
+<td>キューがフラッシュされるまでのイベント数を構成します。</td>
 </tr>
 <tr>
 <td><a href="/platforms/ios-swift-v1/api/tealium-config/#dispatchexpiration"><code>dispatchExpiration</code></a></td>
-<td>バッチの有効期限を日数で設定します。デバイスが長期間オフラインの場合、この期限を超えたイベントは削除されます。</td>
+<td>バッチの有効期限を日数で構成します。デバイスが長期間オフラインの場合、この期限を超えたイベントは削除されます。</td>
 </tr>
 <tr>
 <td><a href="/platforms/ios-swift-v1/api/tealium-config/#dispatchqueuelimit"><code>dispatchQueueLimit</code></a></td>
-<td>キューに格納できる最大イベント数を設定します。この数に達し、キューがフラッシュされていない場合、最も古いイベントが削除されます。</td>
+<td>キューに格納できる最大イベント数を構成します。この数に達し、キューがフラッシュされていない場合、最も古いイベントが削除されます。</td>
 </tr>
 </tbody>
 </table>
 <h3 id="タグ管理">タグ管理</h3>
 <p>タグ管理とイベントバッチングが有効になっている場合、トラッキング呼び出しは個別のJavaScript呼び出しとして非表示のWebビューに送信されます。</p>
-<p>設定されたタグは個別にトリガされ、イベントごとに複数のリクエストがデバイスから送信されます。これにより、リアルタイムのイベントを送信するよりもデバイスのパフォーマンスが向上します。</p>
+<p>構成されたタグは個別にトリガされ、イベントごとに複数のリクエストがデバイスから送信されます。これにより、リアルタイムのイベントを送信するよりもデバイスのパフォーマンスが向上します。</p>
 <h3 id="tealium-collect">Tealium Collect</h3>
 <p>このエンドポイントは現在、Tealium SDKによって生成されたバッチデータのみを、独自のバッチ形式で受け入れています。</p>
 
@@ -707,7 +707,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -865,6 +865,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -873,8 +889,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

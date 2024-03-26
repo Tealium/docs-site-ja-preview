@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -172,14 +172,14 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      Visitor Profile APIは、顧客データハブからの訪問者プロファイルレコードのクエリに使用されます。特定の訪問者に関する既知のデータを取得して、ウェブサイトの初回訪問者向けのパーソナライゼーションを向上させます。
+      Visitor Profile APIは、顧客データハブからの訪問プロファイルレコードのクエリに使用されます。特定の訪問に関する既知のデータを取得して、ウェブサイトの初回訪問向けのパーソナライゼーションを向上させます。
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
   <h2 id="動作原理">動作原理</h2>
-<p>訪問者の検索は、アカウントからの<a href="/server-side/visitor-stitching/visitor-id-attribute/">Visitor ID</a>属性に基づいて行われます。</p>
+<p>訪問の検索は、アカウントからの<a href="/server-side/visitor-stitching/visitor-id-attribute/">Visitor ID</a>属性に基づいて行われます。</p>
 <h2 id="レート制限">レート制限</h2>
 <p>Visitor Profile APIのデフォルトのレート制限は、1秒あたり150リクエストです。より高いレート制限が必要な場合は、Tealiumのアカウントマネージャーに連絡してください。</p>
 <h2 id="許可要件">許可要件</h2>
@@ -187,8 +187,8 @@ var utag_data = {
 <h2 id="認証">認証</h2>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>ベアラートークンはすべてのAPI呼び出しの認証に使用され、APIキーは認証呼び出しでのみ使用されます。ベアラートークンに加えて、認証応答には後続のサーバーサイドAPI呼び出しで使用する必要があるリージョン固有のホスト名も含まれます。</p>
 <p>APIキーからベアラートークンを生成する方法については、<a href="/early-access/api-v3/tealium-api-v3-getting-started-early-access/">Tealium API V3 入門</a>ガイドを参照してください。</p>
-<h2 id="訪問者フィールド">訪問者フィールド</h2>
-<p>訪問者は、以下のフィールドを含むJSONオブジェクトとして返されます：</p>
+<h2 id="訪問フィールド">訪問フィールド</h2>
+<p>訪問は、以下のフィールドを含むJSONオブジェクトとして返されます：</p>
 <table>
 <thead>
 <tr>
@@ -201,12 +201,12 @@ var utag_data = {
 <tr>
 <td><code>live</code></td>
 <td>ブール値</td>
-<td>訪問者が現在ライブセッションにいる場合は<code>true</code>に設定されます。</td>
+<td>訪問が現在ライブセッションにいる場合は<code>true</code>に構成されます。</td>
 </tr>
 <tr>
 <td><code>visitor</code></td>
 <td>オブジェクト</td>
-<td>各属性データ型のサブオブジェクトを持つ訪問者オブジェクト：<ul><li>訪問者ID：<code>secondary_ids : { }</code></li><li> 数値/数値の配列：<br> <code>&quot;metrics&quot; : { }</code><br> <code>&quot;metric_lists&quot; : { }</code></li><li>文字列/文字列の配列/文字列のセット: <br><code>&quot;properties&quot; : { }</code><br> <code>&quot;property_lists&quot; : { }</code><br> <code>&quot;property_sets&quot; : { }</code><br> <code>&quot;audiences&quot; : { }</code></li><li>ブール値/ブール値の配列:<br> <code>&quot;flags&quot; : { }</code><br> <code>&quot;flag_lists&quot; : { }</code></li><li>日付: <code>&quot;dates&quot; : { }</code></li><li>バッジ: <code>&quot;badges&quot; : { }</code></li><li>集計: <code>&quot;metric_sets&quot; : { }</code></li><li>タイムライン: <code>&quot;sequences&quot; : { }</code></li><li>ファネル: <code>&quot;funnels&quot; : { }</code></li></ul></td>
+<td>各属性データ型のサブオブジェクトを持つ訪問オブジェクト：<ul><li>訪問ID：<code>secondary_ids : { }</code></li><li> 数値/数値の配列：<br> <code>&quot;metrics&quot; : { }</code><br> <code>&quot;metric_lists&quot; : { }</code></li><li>文字列/文字列の配列/文字列のセット: <br><code>&quot;properties&quot; : { }</code><br> <code>&quot;property_lists&quot; : { }</code><br> <code>&quot;property_sets&quot; : { }</code><br> <code>&quot;audiences&quot; : { }</code></li><li>ブール値/ブール値の配列:<br> <code>&quot;flags&quot; : { }</code><br> <code>&quot;flag_lists&quot; : { }</code></li><li>日付: <code>&quot;dates&quot; : { }</code></li><li>バッジ: <code>&quot;badges&quot; : { }</code></li><li>集計: <code>&quot;metric_sets&quot; : { }</code></li><li>タイムライン: <code>&quot;sequences&quot; : { }</code></li><li>ファネル: <code>&quot;funnels&quot; : { }</code></li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -238,7 +238,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;利用したオペレーティングシステムの累計（お気に入り）&#34;</span>: <span style="color:#e6db74">&#34;Mac OS X&#34;</span>
 </span></span><span style="display:flex;"><span>        },
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;flags&#34;</span>: {
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;再訪問者&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;再訪問&#34;</span>: <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>        },
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;funnels&#34;</span>: {
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;fake_funnel&#34;</span>: {
@@ -316,8 +316,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="訪問者の取得">訪問者の取得</h2>
-<p>次のGETコマンドを使用して、訪問者レコードを取得します：</p>
+</span></span></code></pre></div><h2 id="訪問の取得">訪問の取得</h2>
+<p>次のGETコマンドを使用して、訪問レコードを取得します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GET /v3/customer/visitor/accounts/<span style="color:#f92672">{</span>account<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>profile<span style="color:#f92672">}</span>?attributeId<span style="color:#f92672">={</span>attributeId<span style="color:#f92672">}</span>&amp;attributeValue<span style="color:#f92672">={</span>attributeValue<span style="color:#f92672">}</span>&amp;prettyName<span style="color:#f92672">={</span>prettyName<span style="color:#f92672">}</span>&amp;responseFilters<span style="color:#f92672">=[</span><span style="color:#e6db74">&#34;{attributeId}&#34;</span>, <span style="color:#e6db74">&#34;{attributeId}&#34;</span><span style="color:#f92672">]</span>
 </span></span></code></pre></div><p>このコマンドでは、次のパラメータを使用します：</p>
 <ul>
@@ -346,17 +346,17 @@ var utag_data = {
 <ul>
 <li>リクエストのデータソースを示すJSON文字列配列として渡される値です。デフォルトは<code>[&quot;live&quot;, &quot;historical&quot;]</code>です。
 <ul>
-<li><code>[&quot;live&quot;]</code> – ウェブサイトに関する現在の訪問者についてのライブデータを取得します。</li>
+<li><code>[&quot;live&quot;]</code> – ウェブサイトに関する現在の訪問についてのライブデータを取得します。</li>
 <li><code>[&quot;historical&quot;]</code> — 30分の待機期間後に完了した訪問に関するウェブサイトの過去のデータを取得します。</li>
-<li><code>[&quot;live&quot;, &quot;historical&quot;]</code> — APIはライブ訪問者データを取得しようとします。ライブ訪問者データが利用できない場合、APIは過去の訪問者データを取得します。</li>
-<li><code>[&quot;historical&quot;, &quot;live&quot;]</code> — APIは過去の訪問者データを取得しようとします。過去のデータが利用できない場合、APIはライブ訪問者データを取得します。</li>
+<li><code>[&quot;live&quot;, &quot;historical&quot;]</code> — APIはライブ訪問データを取得しようとします。ライブ訪問データが利用できない場合、APIは過去の訪問データを取得します。</li>
+<li><code>[&quot;historical&quot;, &quot;live&quot;]</code> — APIは過去の訪問データを取得しようとします。過去のデータが利用できない場合、APIはライブ訪問データを取得します。</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><code>responseFilters</code>
 <ul>
-<li>訪問者データをフィルタリングするためのIDのJSON配列です。設定しない場合、APIはすべての訪問者データを返します。設定された場合、<code>responseFilters</code>に含まれる<code>attributeId</code>の値が応答で返されます。</li>
+<li>訪問データをフィルタリングするためのIDのJSON配列です。構成しない場合、APIはすべての訪問データを返します。構成された場合、<code>responseFilters</code>に含まれる<code>attributeId</code>の値が応答で返されます。</li>
 <li>APIが一度に返すことができる<code>attributeId</code>の最大数は150です。150を超える<code>attributeId</code>の値を提供する場合、APIは最初の150のIDのみを返します。</li>
 <li>例：<code>responseFilters=[&quot;5051&quot;, &quot;5016&quot;]</code></li>
 </ul>
@@ -368,7 +368,7 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>GET <span style="color:#e6db74">&#39;https://us-east-1-platform.tealiumapis.com/v3/customer/visitor/accounts/my_account/profiles/profileinuseast?attributeId=5013&amp;attributeValue=liveOnly&amp;searchPriority=[&#34;live&#34;, &#34;historical&#34;]&amp;responseFilters=[&#34;5051&#34;, &#34;5016&#34;]&#39;</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--header <span style="color:#e6db74">&#39;Authorization: Bearer fakeToken&#39;</span>
 </span></span></code></pre></div><h3 id="応答の例-1">応答の例</h3>
-<p>応答の形式については、例の訪問者オブジェクトを参照してください。</p>
+<p>応答の形式については、例の訪問オブジェクトを参照してください。</p>
 <h3 id="エラーメッセージ">エラーメッセージ</h3>
 <p>このエンドポイントの潜在的なエラーメッセージは次のとおりです：</p>
 <table>
@@ -393,9 +393,9 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<h2 id="過去の訪問者の取得">過去の訪問者の取得</h2>
-<p>GET Historical Visitorメソッドは、より高速な応答時間を実現するために、過去の訪問者のみを検索します。</p>
-<p>次のGETコマンドを使用して、過去の訪問者レコードを取得します：</p>
+<h2 id="過去の訪問の取得">過去の訪問の取得</h2>
+<p>GET Historical Visitorメソッドは、より高速な応答時間を実現するために、過去の訪問のみを検索します。</p>
+<p>次のGETコマンドを使用して、過去の訪問レコードを取得します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GET /v3/customer/visitor/historical/accounts/<span style="color:#f92672">{</span>account<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>profile<span style="color:#f92672">}</span>?attributeId<span style="color:#f92672">={</span>attributeId<span style="color:#f92672">}</span>&amp;attributeValue<span style="color:#f92672">={</span>attributeValue<span style="color:#f92672">}</span>&amp;prettyName<span style="color:#f92672">={</span>prettyName<span style="color:#f92672">}</span>&amp;responseFilters<span style="color:#f92672">=[</span><span style="color:#e6db74">&#34;{attributeId}&#34;</span>, <span style="color:#e6db74">&#34;{attributeId}&#34;</span><span style="color:#f92672">]</span>
 </span></span></code></pre></div><p>このコマンドでは、次のパラメータを使用します：</p>
 <ul>
@@ -416,7 +416,7 @@ var utag_data = {
 </li>
 <li><code>responseFilters</code>
 <ul>
-<li>訪問者データをフィルタリングするためのIDのJSON配列です。設定しない場合、APIはすべての訪問者データを返します。設定された場合、<code>responseFilters</code>に含まれる<code>attributeId</code>の値が応答で返されます。APIが一度に返すことができる<code>attributeId</code>の最大数は150です。150を超える<code>attributeId</code>の値を提供する場合、APIは最初の150のIDのみを返します。</li>
+<li>訪問データをフィルタリングするためのIDのJSON配列です。構成しない場合、APIはすべての訪問データを返します。構成された場合、<code>responseFilters</code>に含まれる<code>attributeId</code>の値が応答で返されます。APIが一度に返すことができる<code>attributeId</code>の最大数は150です。150を超える<code>attributeId</code>の値を提供する場合、APIは最初の150のIDのみを返します。</li>
 </ul>
 </li>
 </ul>
@@ -426,7 +426,7 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>GET <span style="color:#e6db74">&#39;https://us-east-1-platform.tealiumapis.com/v3/customer/visitor/historical/accounts/my_account/profiles/profileinuseast?attributeId=5013&amp;attributeValue=liveOnly&amp;responseFilters=[&#34;5051&#34;, &#34;5016&#34;]&#39;</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--header <span style="color:#e6db74">&#39;Authorization: Bearer fakeToken&#39;</span>
 </span></span></code></pre></div><h3 id="応答の例-2">応答の例</h3>
-<p>応答の形式については、例の訪問者オブジェクトを参照してください。</p>
+<p>応答の形式については、例の訪問オブジェクトを参照してください。</p>
 <h3 id="エラーメッセージ-1">エラーメッセージ</h3>
 <p>このエンドポイントの潜在的なエラーメッセージは次のとおりです：</p>
 <table>
@@ -511,7 +511,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月22日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -529,13 +529,13 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">レート制限</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">許可要件</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">認証</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問者フィールド</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問フィールド</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">応答の例</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問者の取得</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問の取得</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#curl">cURLリクエストの例</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">応答の例</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">エラーメッセージ</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">過去の訪問者の取得</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">過去の訪問の取得</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#curl">cURLリクエストの例</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">応答の例</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">エラーメッセージ</a></li>
@@ -672,6 +672,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -680,8 +696,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

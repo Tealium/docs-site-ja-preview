@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -382,7 +382,7 @@ var utag_data = {
 <ol>
 <li>Xcodeプロジェクトで、<strong>File &gt; Swift Packages &gt; Add Package Dependency</strong>を選択します。</li>
 <li>リポジトリのURLを入力します：<code>https://github.com/tealium/tealium-swift</code></li>
-<li>バージョンルールを設定します。通常、<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
+<li>バージョンルールを構成します。通常、<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
 <li>インストールするモジュールのリストからRemoteCommandsモジュールを選択し、Xcodeプロジェクトの各アプリターゲットに追加します。<strong>Frameworks &gt; Libraries &amp; Embedded Content</strong>の下にあります。</li>
 </ol>
 <p><a href="/platforms/ios-swift/install/#swift-package-manager-recommended">SPMによるiOSのインストール</a>について詳しく学びましょう。</p>
@@ -394,7 +394,7 @@ var utag_data = {
 <p>CarthageでRemoteCommandsモジュールをインストールするには、以下の手順を実行します：</p>
 <ol>
 <li>
-<p>Xcodeでアプリターゲットの一般設定ページに移動します。</p>
+<p>Xcodeでアプリターゲットの一般構成ページに移動します。</p>
 </li>
 <li>
 <p>次のフレームワークを<strong>Embedded Binaries</strong>セクションに追加します：</p>
@@ -407,16 +407,16 @@ var utag_data = {
 </ol>
 <p><a href="/platforms/ios-swift/install/#carthage">iOSのCarthageによるインストール</a>について詳しく学びましょう。</p>
 <h2 id="リモートコマンドのオプション">リモートコマンドのオプション</h2>
-<p>リモートコマンドには2つの設定オプションがあります：</p>
+<p>リモートコマンドには2つの構成オプションがあります：</p>
 <ul>
 <li><strong>JSONファイル</strong><br>
-ベンダーの設定、データマッピング、イベントトリガーを含むJSONファイル。ローカルにロードするか、リモートでホストすることができます。</li>
+ベンダーの構成、データマッピング、イベントトリガーを含むJSONファイル。ローカルにロードするか、リモートでホストすることができます。</li>
 <li><strong>リモートコマンドタグ</strong><br>
-ベンダーのAPIの設定オプションを提供するiQタグ管理のタグ（Tag Managementモジュールと共に使用）。</li>
+ベンダーのAPIの構成オプションを提供するiQタグ管理のタグ（Tag Managementモジュールと共に使用）。</li>
 </ul>
 <p><a href="/platforms/remote-commands/integrations/">リモートコマンドベンダー統合のリスト</a>を参照してください。</p>
 <h3 id="例">例</h3>
-<p>リモートコマンドタグは、Tealium iQタグ管理、アプリ内のJSONファイル、またはリモートサーバー上のJSONファイルを介して設定可能です。リモートコマンドが設定され、モジュールがアプリにインストールされたら、初期化に以下の行を追加します：</p>
+<p>リモートコマンドタグは、Tealium iQタグ管理、アプリ内のJSONファイル、またはリモートサーバー上のJSONファイルを介して構成可能です。リモートコマンドが構成され、モジュールがアプリにインストールされたら、初期化に以下の行を追加します：</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -489,7 +489,7 @@ var utag_data = {
 </div>
 </div>
 
-<p>JSONファイルが設定され、アプリに追加されたかサーバーにホストされた後、異なる<a href="/platforms/remote-commands/how-it-works/#load-options">JSONロードオプション</a>について学びましょう。</p>
+<p>JSONファイルが構成され、アプリに追加されたかサーバーにホストされた後、異なる<a href="/platforms/remote-commands/how-it-works/#load-options">JSONロードオプション</a>について学びましょう。</p>
 <h2 id="データレイヤー">データレイヤー</h2>
 <p>このモジュールによって追加の変数は導入されません。</p>
 <h2 id="apiリファレンス">APIリファレンス</h2>
@@ -658,7 +658,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -820,6 +820,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -828,8 +844,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

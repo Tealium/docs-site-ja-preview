@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -357,12 +357,12 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="web">Web</h2>
-<p>Tealium iQタグ管理は、ベンダータグの設定とビジネスロジックを<code>utag.js</code>という静的JavaScriptに保存するクライアントサイドソリューションです。訪問者があなたのサイトを閲覧すると、このファイルがブラウザ（クライアントサイド）でロードされ、どのベンダータグをロードし、データをどのように送信するかを決定します。これらのファイルがブラウザによって取得されると、ネットワークトラフィックとページパフォーマンスを最適化するために、次のページビューに対してキャッシュされます。</p>
+<p>Tealium iQタグ管理は、ベンダータグの構成とビジネスロジックを<code>utag.js</code>という静的JavaScriptにストレージするクライアントサイドソリューションです。訪問があなたのサイトを閲覧すると、このファイルがブラウザ（クライアントサイド）でロードされ、どのベンダータグをロードし、データをどのように送信するかを決定します。これらのファイルがブラウザによって取得されると、ネットワークトラフィックとページパフォーマンスを最適化するために、次のページビューに対してキャッシュされます。</p>
 <p><a href="/iq-tag-management/getting-started/how-tealium-iq-works/">how iQ Tag Management works</a>について詳しく学びましょう。</p>
 <h2 id="モバイル">モバイル</h2>
-<p>iQタグ管理では、モバイルアプリのタグと設定を管理するために、iOSとAndroidのそれぞれに対して別々の<a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルプロファイル</a>を使用します。モバイルプロファイルは<code>mobile.html</code>というファイルを生成し、以下のTealiumのパスに公開します：</p>
+<p>iQタグ管理では、モバイルアプリのタグと構成を管理するために、iOSとAndroidのそれぞれに対して別々の<a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルプロファイル</a>を使用します。モバイルプロファイルは<code>mobile.html</code>というファイルを生成し、以下のTealiumのパスに公開します：</p>
 <p><code>http://tags.tiqcdn.com/utag/ACCOUNT/PROFILE/ENVIRONMENT/mobile.html</code></p>
-<p>Tealiumをモバイルアプリに追加すると、クライアントサイドソリューションは隠されたwebviewを使用して<code>mobile.html</code>をロードします。これはモバイルデバイスに最適化されています。このページには、Tealium SDKの動作を制御する設定が含まれており、<code>utag.js</code>をロードしてタグ設定を実行します。</p>
+<p>Tealiumをモバイルアプリに追加すると、クライアントサイドソリューションは隠されたwebviewを使用して<code>mobile.html</code>をロードします。これはモバイルデバイスに最適化されています。このページには、Tealium SDKの動作を制御する構成が含まれており、<code>utag.js</code>をロードしてタグ構成を実行します。</p>
 <p><code>mobile.html</code>のサンプル内容：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--tealium tag management - mobile.webview ut4.0.201905291649, Copyright 2019 Tealium.com Inc. All Rights Reserved.--&gt;</span>
@@ -391,8 +391,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//tags.tiqcdn.com/utag/ACCOUNT/PROFILE/ENVIRONMENT/utag.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
-</span></span></code></pre></div><p>このクライアントサイドソリューションにより、従来のタグ管理ワークフローに従ってアプリにタグをデプロイし、トラッキング行動に関連するモバイル設定を調整することができます。</p>
-<p>以下の図は、訪問者がモバイルアプリを使用する際に、iQタグ管理がベンダータグ設定をロードする方法を示しています。この例では、Tealium SDKがトラッキングされた購入イベントを隠されたwebview内のJavaScriptトラッキングコールに変換する方法を示しています。ベンダータグは隠されたwebview内で実行され、トラッキングデータはアプリ（クライアントサイド）から直接ベンダーに送信されます。</p>
+</span></span></code></pre></div><p>このクライアントサイドソリューションにより、従来のタグ管理ワークフローに従ってアプリにタグをデプロイし、トラッキング行動に関連するモバイル構成を調整することができます。</p>
+<p>以下の図は、訪問がモバイルアプリを使用する際に、iQタグ管理がベンダータグ構成をロードする方法を示しています。この例では、Tealium SDKがトラッキングされた購入イベントを隠されたwebview内のJavaScriptトラッキングコールに変換する方法を示しています。ベンダータグは隠されたwebview内で実行され、トラッキングデータはアプリ（クライアントサイド）から直接ベンダーに送信されます。</p>
 <figure><a class="slb" href="/images/platforms/getting-started-mobile/tag_management_data_flow_diagram.png"><img src="/images/platforms/getting-started-mobile/tag_management_data_flow_diagram.png" width="325" height="500"/>
     </a><figcaption><p>タグ管理データフローダイアグラム</p>
         </figcaption>
@@ -420,9 +420,9 @@ var utag_data = {
 <h3 id="iqタグ管理のみ">iQタグ管理のみ</h3>
 <p>あなたはiQタグ管理のみを購読しており、Tealium EventStreamにはアクセスできません。</p>
 <h3 id="複雑な分析">複雑な分析</h3>
-<p>複雑な分析の実装を行っており、必要なデータレイヤーを追加するリソースがないか、またはデプロイするための時間が短い場合。クライアントサイドのタグ管理ソリューションを使用して拡張を実行することで、分析のニーズに合わせて組み込みのデータレイヤーを操作し、ネイティブアプリの高価な開発時間をiQタグ管理の迅速な設定作業にオフロードすることができます。</p>
+<p>複雑な分析の実装を行っており、必要なデータレイヤーを追加するリソースがないか、またはデプロイするための時間が短い場合。クライアントサイドのタグ管理ソリューションを使用して拡張を実行することで、分析のニーズに合わせて組み込みのデータレイヤーを操作し、ネイティブアプリの高価な開発時間をiQタグ管理の迅速な構成作業にオフロードすることができます。</p>
 <h3 id="必要なベンダーsdk">必要なベンダーSDK</h3>
-<p>Firebase、プッシュ通知、コンテンツの変更、またはアトリビューションフィンガープリンティングなど、サードパーティのベンダーSDKからモバイル特有の機能が必要な場合。クライアントサイドソリューションは、隠されたwebview内からネイティブコードブロックをトリガーし、iQタグ管理内で設定する方法である<a href="/platforms/remote-commands/">remote commands</a>を提供します。</p>
+<p>Firebase、プッシュ通知、コンテンツの変更、またはアトリビューションフィンガープリンティングなど、サードパーティのベンダーSDKからモバイル特有の機能が必要な場合。クライアントサイドソリューションは、隠されたwebview内からネイティブコードブロックをトリガーし、iQタグ管理内で構成する方法である<a href="/platforms/remote-commands/">remote commands</a>を提供します。</p>
 <h2 id="サポートされているライブラリ">サポートされているライブラリ</h2>
 <p>以下のプラットフォームは、タグ管理クライアントサイドソリューションをサポートしています：</p>
 <ul>
@@ -495,7 +495,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -652,6 +652,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -660,8 +676,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

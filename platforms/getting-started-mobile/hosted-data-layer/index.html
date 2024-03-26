@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -363,26 +363,26 @@ var utag_data = {
 <li><a href="/platforms/ios-swift/">iOS (Swift v2.x)</a></li>
 </ul>
 <h2 id="仕組み">仕組み</h2>
-<p>ホストされたデータレイヤーは、モバイルアプリの動的データレイヤーを補完するため、またはJSON設定ファイルをホストするために、静的にホストされたデータの使用を容易にします。モバイルアプリで実装されたデータレイヤーは、リアルタイムの情報を取得するのに役立ちますが、オフラインシステムからの追加の有益な情報を含めるのは難しい場合があります。ホストされたデータレイヤーは、静的なデータをTealiumにアップロードする便利なメカニズムを提供し、これによりモバイルアプリがデータを豊かにしたり、JSONファイルを使用するアプリケーションを動かしたりすることができます。</p>
-<p>Tealium for mobileは、特定のデータレイヤーアイテムをリモートで保存し、アプリにダウンロードさせるホストされたデータレイヤーをサポートしています。この機能は、データレイヤーの属性がネイティブコードで利用できないが、あなたの組織から利用可能にできる任意のシナリオで役立ちます。例えば、あなたのeコマースシステムは<code>product_is_in_stock</code>や<code>product_has_free_shipping</code>のような商品属性を持っているかもしれませんが、これらはネイティブコードで簡単にアクセスすることができず、ホストされたデータレイヤーファイルとしてアップロードすることができます。</p>
+<p>ホストされたデータレイヤーは、モバイルアプリの動的データレイヤーを補完するため、またはJSON構成ファイルをホストするために、静的にホストされたデータの使用を容易にします。モバイルアプリで実装されたデータレイヤーは、リアルタイムの情報を取得するのに役立ちますが、オフラインシステムからの追加の有益な情報を含めるのは難しい場合があります。ホストされたデータレイヤーは、静的なデータをTealiumにアップロードする便利なメカニズムを提供し、これによりモバイルアプリがデータを豊かにしたり、JSONファイルを使用するアプリケーションを動かしたりすることができます。</p>
+<p>Tealium for mobileは、特定のデータレイヤーアイテムをリモートでストレージし、アプリにダウンロードさせるホストされたデータレイヤーをサポートしています。この機能は、データレイヤーの属性がネイティブコードで利用できないが、あなたの組織から利用可能にできる任意のシナリオで役立ちます。例えば、あなたのeコマースシステムは<code>product_is_in_stock</code>や<code>product_has_free_shipping</code>のような商品属性を持っているかもしれませんが、これらはネイティブコードで簡単にアクセスすることができず、ホストされたデータレイヤーファイルとしてアップロードすることができます。</p>
 <p>_ルックアップ変数_は、データレイヤーが対応するホストされたデータレイヤーオブジェクトを取得するために使用する変数を識別します。ホストされたデータレイヤーのデータアイテムはデフォルトで7日間保持され、期限が切れた後に再ダウンロードされます。</p>
 <p>追加情報：</p>
 <ul>
 <li><a href="/iq-tag-management/data-layer/hosted-data-layer/use-case-supplementing-product-data/">ホストされたデータレイヤーについて</a></li>
 <li><a href="/api/hosted-data-layer/about/">ホストされたデータレイヤーAPI</a></li>
 </ul>
-<h2 id="設定">設定</h2>
-<p>Tealiumライブラリを初期化する前に、ホストされたデータレイヤーのキー（ルックアップ変数）を識別し、以下のプロパティを設定します。キー値は、ホストされたデータレイヤーモジュールがデータレイヤーIDを取得するために使用されます。</p>
+<h2 id="構成">構成</h2>
+<p>Tealiumライブラリを初期化する前に、ホストされたデータレイヤーのキー（ルックアップ変数）を識別し、以下のプロパティを構成します。キー値は、ホストされたデータレイヤーモジュールがデータレイヤーIDを取得するために使用されます。</p>
 <ul>
 <li>Android: <a href="/platforms/android-kotlin/api/tealium-config/#hosteddatalayereventmappings"><code>hostedDataLayerEventMappings</code></a></li>
 <li>Swift: <a href="/platforms/ios-swift/api/tealium-config/#hosteddatalayerkeys"><code>hostedDataLayerKeys</code></a></li>
 </ul>
-<p>デフォルトでは、ホストされたデータレイヤーのデータは7日間保持され、期限が切れた後に再ダウンロードされます。以下のプロパティを設定することで、ホストされたデータレイヤーのデータの有効期限を設定できます。</p>
+<p>デフォルトでは、ホストされたデータレイヤーのデータは7日間保持され、期限が切れた後に再ダウンロードされます。以下のプロパティを構成することで、ホストされたデータレイヤーのデータの有効期限を構成できます。</p>
 <ul>
 <li>Android: <a href="/platforms/android-kotlin/api/tealium-config/#hosteddatalayermaxcachetimeminutes"><code>hostedDataLayerMaxCacheTimeMinutes</code></a></li>
 <li>Swift: <a href="/platforms/ios-swift/api/tealium-config/#hosteddatalayerexpiry"><code>hostedDataLayerExpiry</code></a></li>
 </ul>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>有効期限を短く設定すると、ネットワークリクエストが増えるため、モバイルデバイスのバッテリー寿命が短くなります。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>有効期限を短く構成すると、ネットワークリクエストが増えるため、モバイルデバイスのバッテリー寿命が短くなります。</p>
 <h2 id="ユースケース製品データの補完">ユースケース：製品データの補完</h2>
 <p>シナリオ：</p>
 <ul>
@@ -488,7 +488,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -504,7 +504,7 @@ var utag_data = {
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">サポートされているプラットフォーム</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユースケース：製品データの補完</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">トラブルシューティング</a></li>
               </nav>
@@ -640,6 +640,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -648,8 +664,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

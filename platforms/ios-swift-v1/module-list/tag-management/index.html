@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -382,7 +382,7 @@ var utag_data = {
 <p>CarthageでTagManagementモジュールをインストールするには、次の手順に従います：</p>
 <ol>
 <li>
-<p>Xcodeでアプリターゲットの一般設定ページに移動します。</p>
+<p>Xcodeでアプリターゲットの一般構成ページに移動します。</p>
 </li>
 <li>
 <p>次のフレームワークを<strong>Embedded Binaries</strong>セクションに追加します：</p>
@@ -428,8 +428,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Do any additional setup after loading the view.</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>完全な例については、サンプルアプリ<a href="https://github.com/Tealium/tealium-swift/tree/master/samples/Swift-WKWebView">Swift-WKWebView</a>をご覧ください。</p>
-<p><code>WKWebView</code>と<code>UIWebView</code>は、クッキーを保存するために異なる方法（<code>WKHTTPCookieStore</code>と<code>HTTPCookieStorage</code>）を使用するため、モジュールはWKWebViewが初めて起動されたときにクッキーを自動的に同期します。<code>HTTPCookieStorage</code>のクッキーは削除されませんが、最終的に自己満了します。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i><a href="/platforms/ios-swift-v1/api/tealium-config/#shouldaddcookieobserver"><code>shouldAddCookieObserver</code></a>メソッドを使用すると、クッキーの同期中に自分のクッキーオブザーバーを使用できます。これには、クッキーを設定した後にメインスレッドでクッキーを取得するためのクッキーオブザーバーが必要です。この問題は<code>WKWebView</code>のバグによって引き起こされ、自分のオブザーバーが呼び出されるのを防ぎます。</p>
+<p><code>WKWebView</code>と<code>UIWebView</code>は、クッキーをストレージするために異なる方法（<code>WKHTTPCookieStore</code>と<code>HTTPCookieStorage</code>）を使用するため、モジュールはWKWebViewが初めて起動されたときにクッキーを自動的に同期します。<code>HTTPCookieStorage</code>のクッキーは削除されませんが、最終的に自己満了します。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i><a href="/platforms/ios-swift-v1/api/tealium-config/#shouldaddcookieobserver"><code>shouldAddCookieObserver</code></a>メソッドを使用すると、クッキーの同期中に自分のクッキーオブザーバーを使用できます。これには、クッキーを構成した後にメインスレッドでクッキーを取得するためのクッキーオブザーバーが必要です。この問題は<code>WKWebView</code>のバグによって引き起こされ、自分のオブザーバーが呼び出されるのを防ぎます。</p>
 
 </div>
 
@@ -490,7 +490,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -646,6 +646,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -654,8 +670,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

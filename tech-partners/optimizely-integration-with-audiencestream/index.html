@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -272,7 +304,7 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="必要条件">必要条件</h2>
-<p><strong>Tealium Collectタグのデータエンリッチメント</strong>を<strong>頻繁</strong>に設定します。詳細については、<a href="/client-side-tags/tealium-collect-tag/">Tealium Collect設定ガイド</a>を参照してください。</p>
+<p><strong>Tealium Collectタグのデータエンリッチメント</strong>を<strong>頻繁</strong>に構成します。詳細については、<a href="/client-side-tags/tealium-collect-tag/">Tealium Collect構成ガイド</a>を参照してください。</p>
 <p>統合が完了すると、オーディエンスは自動的にデータレイヤーエンリッチメントを介してOptimizelyに送信されます。</p>
 <h2 id="optimizely-classicとaudiencestreamの統合">Optimizely ClassicとAudienceStreamの統合</h2>
 <p>Optimizely ClassicとAudienceStreamを統合するには2つのステップがあります：</p>
@@ -282,7 +314,7 @@ var utag_data = {
 </ol>
 <h3 id="あなたのサイトにutagsyncjsを追加する">あなたのサイトにutag.sync.jsを追加する</h3>
 <p>Optimizelyを使用する必要があるすべてのHTMLページに<code>utag.sync.js</code>を含める必要があります。一貫性を保つために、すべてのページにそれを含めることをお勧めします。</p>
-<p><code>utag.sync.js</code>の設定方法の詳細については、<a href="/iq-tag-management/getting-started/install/utag-sync/">utag.sync.jsスクリプトの使用</a>を参照してください。</p>
+<p><code>utag.sync.js</code>の構成方法の詳細については、<a href="/iq-tag-management/getting-started/install/utag-sync/">utag.sync.jsスクリプトの使用</a>を参照してください。</p>
 <h3 id="audiencestreamとoptimizelyの接続">AudienceStreamとOptimizelyの接続</h3>
 <p>Optimizelyでオーディエンスを使用するには、AudienceStreamとOptimizelyを接続し、次にオーディエンスをOptimizelyプロジェクトにマッピングする必要があります。これらのタスクを完了するためにTealiumツール：Optimizely Helperを使用します。</p>
 <p>詳細については、<a href="/server-side/tealium-tools/optimizely-helper/">Tealiumツール：Optimizely Helper</a>を参照してください。</p>
@@ -290,21 +322,21 @@ var utag_data = {
 <p>Optimizelyダッシュボードを使用して、Optimizely XとAudienceStreamを統合します。</p>
 <ol>
 <li>AudienceStreamでオーディエンスを作成した後、Optimizelyにログインし、<strong>統合</strong>をクリックします。</li>
-<li>Tealiumを<strong>オン</strong>に設定します。</li>
+<li>Tealiumを<strong>オン</strong>に構成します。</li>
 <li>あなたのTealiumアカウントIDを入力します。</li>
 <li><strong>概要</strong>タブを選択し、次に<strong>オーディエンス</strong>をクリックします。</li>
 <li>条件の下で、<strong>Tealium</strong>をクリックします。</li>
 <li><strong>Tealium Audience</strong>または<strong>Tealium Badge</strong>をドラッグして、Tealiumオーディエンスに基づいたOptimizely Audience条件を作成します。<br>
 <figure><a class="slb" href="/images/tech-partners/createaudience1.png"><img src="/images/tech-partners/createaudience1.png"
-         alt="Create Audience"
-         title="Create Audience" width="600" height="511"/>
-    </a>
-</figure><br>
+             alt="Create Audience"
+             title="Create Audience" width="600" height="511"/>
+        </a>
+    </figure><br>
 <figure><a class="slb" href="/images/tech-partners/createaudience2.png"><img src="/images/tech-partners/createaudience2.png"
-         alt="Create Audience2"
-         title="Create Audience2" width="550" height="560"/>
-    </a>
-</figure></li>
+             alt="Create Audience2"
+             title="Create Audience2" width="550" height="560"/>
+        </a>
+    </figure></li>
 <li><strong>Save Audience</strong>をクリックします。</li>
 </ol>
 <h2 id="オーディエンスベースの実験を作成する">オーディエンスベースの実験を作成する</h2>
@@ -312,8 +344,8 @@ var utag_data = {
 <p>実験の新しいターゲットオーディエンスを選択するには：</p>
 <ol>
 <li>新しい実験を作成するか、既存の実験を編集し、<strong>オーディエンス</strong>をクリックします。</li>
-<li><strong>保存されたオーディエンスを追加する</strong>をクリックし、ターゲットとするオーディエンスを選択します。</li>
-<li>実験を保存します。</li>
+<li><strong>ストレージされたオーディエンスを追加する</strong>をクリックし、ターゲットとするオーディエンスを選択します。</li>
+<li>実験をストレージします。</li>
 </ol>
 
 </div>
@@ -375,7 +407,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -528,6 +560,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -536,8 +584,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

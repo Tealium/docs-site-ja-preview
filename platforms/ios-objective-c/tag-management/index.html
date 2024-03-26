@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -368,7 +368,7 @@ var utag_data = {
 <p>Tealiumの<code>WKWebView</code>についてより詳しく知るために、<a href="https://github.com/Tealium/tealium-ios/tree/master/Samples/iOS_WKWebView%2BTealium_Objc">WKWebViewサンプル</a>を探索してみてください。</p>
 <h3 id="使用法">使用法</h3>
 <p><code>WKWebView</code>は、レンダリングされない場合でも<code>UIView</code>にアタッチする必要があります。これを実現するために、Tealium SDKは非レンダリングの<code>WKWebView</code>を<code>rootViewController.view</code>にアタッチしようとします。これは、ウィンドウの<code>rootViewController</code>が<code>UIViewController</code>のサブクラスまたはAppleのコンテナビューコントローラ(<code>UINavigationController</code>または<code>UITabBarController</code>)の一つである場合の最も一般的なシナリオです。</p>
-<p>アプリが複雑なビュー階層を持っている場合は、<code>viewDidLoad</code>、<code>viewWillAppear:</code>、または<code>viewDidAppear:</code>で<code>TEALConfiguration</code>インスタンスにアタッチするビューを設定します。</p>
+<p>アプリが複雑なビュー階層を持っている場合は、<code>viewDidLoad</code>、<code>viewWillAppear:</code>、または<code>viewDidAppear:</code>で<code>TEALConfiguration</code>インスタンスにアタッチするビューを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>TEALConfiguration <span style="color:#f92672">*</span>tealConfig <span style="color:#f92672">=</span> [TEALConfiguration configurationWithAccount:<span style="color:#e6db74">@&#34;ACCOUNT&#34;</span>
 </span></span><span style="display:flex;"><span>                                              profile:<span style="color:#e6db74">@&#34;PROFILE&#34;</span>
 </span></span><span style="display:flex;"><span>                                              environment:<span style="color:#e6db74">@&#34;ENVIRONMENT&#34;</span>
@@ -407,7 +407,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>datasource</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">(オプション) データソースキー (ない場合は<code>null</code>に設定)</td>
+<td style="text-align:left">(オプション) データソースキー (ない場合は<code>null</code>に構成)</td>
 <td style="text-align:left"><code>&quot;abc123&quot;</code></td>
 </tr>
 </tbody>
@@ -438,7 +438,7 @@ var utag_data = {
 </span></span></code></pre></div><p>ビューは<code>WKWebView</code>を初期化するために一度だけ使用されます。</p>
 <h2 id="tealiumconfig"><code>TealiumConfig</code></h2>
 <h3 id="wkprocesspool"><code>WKProcessPool</code></h3>
-<p>アプリで<code>WKWebView</code>ウェブビューを使用する場合は、シングルトンの<code>WKProcessPool</code>インスタンスを作成し、Tealiumをインスタンス化する前に設定します。これにより、アプリがTealium Tag Managementウェブビュー以外のウェブビューを含む場合のクッキー同期問題も防ぎます。</p>
+<p>アプリで<code>WKWebView</code>ウェブビューを使用する場合は、シングルトンの<code>WKProcessPool</code>インスタンスを作成し、Tealiumをインスタンス化する前に構成します。これにより、アプリがTealium Tag Managementウェブビュー以外のウェブビューを含む場合のクッキー同期問題も防ぎます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>WKProcessPool <span style="color:#f92672">*</span>wkProcessPool <span style="color:#f92672">=</span> [[WKProcessPool alloc] init];
 </span></span></code></pre></div><p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>_configuration <span style="color:#f92672">=</span> [TEALConfiguration configurationWithAccount:<span style="color:#e6db74">@&#34;ACCOUNT&#34;</span> profile:<span style="color:#e6db74">@&#34;PROFILE&#34;</span> environment:<span style="color:#e6db74">@&#34;ENV&#34;</span>];
@@ -446,7 +446,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>self.tealium <span style="color:#f92672">=</span> [Tealium newInstanceForKey:<span style="color:#e6db74">@&#34;INSTANCE_KEY&#34;</span> configuration:_configuration];
 </span></span></code></pre></div><h3 id="wkwebviewconfiguration"><code>WKWebviewConfiguration</code></h3>
-<p>カスタムの<code>WKWebviewConfiguration</code>オブジェクトを渡すことを許可し、これはTealium Tag Managementウェブビューによって使用されます。<code>webviewProcessPool</code>オプションの代わりにこのオプションを使用する場合は、カスタマイズ可能な<code>WKWebviewConfiguration</code>の<code>processPool</code>プロパティを通じてシングルトンの<code>WKProcessPool</code>を設定します。</p>
+<p>カスタムの<code>WKWebviewConfiguration</code>オブジェクトを渡すことを許可し、これはTealium Tag Managementウェブビューによって使用されます。<code>webviewProcessPool</code>オプションの代わりにこのオプションを使用する場合は、カスタマイズ可能な<code>WKWebviewConfiguration</code>の<code>processPool</code>プロパティを通じてシングルトンの<code>WKProcessPool</code>を構成します。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i><code>WKWebView</code>に対する将来のAPI変更が必要になる場合、このオプションを使用することを推奨します。</p>
 <p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>_configuration <span style="color:#f92672">=</span> [TEALConfiguration configurationWithAccount:<span style="color:#e6db74">@&#34;ACCOUNT&#34;</span> profile:<span style="color:#e6db74">@&#34;PROFILE&#34;</span> environment:<span style="color:#e6db74">@&#34;ENV&#34;</span>];
@@ -516,7 +516,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -669,6 +669,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -677,8 +693,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

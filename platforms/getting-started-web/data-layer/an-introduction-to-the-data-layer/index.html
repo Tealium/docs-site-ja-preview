@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -364,7 +364,7 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <h2 id="データレイヤーとは何ですか">データレイヤーとは何ですか？</h2>
 <p>データレイヤーは、デジタルプロパティから流れる顧客インタラクションの追跡のための仕様です。この追跡された活動は、デスクトップやモバイルのウェブサイト、モバイルアプリ、接続されたデバイス、オフラインのソースなど、多くのソースから来ています。データレイヤーは、サードパーティのベンダーソリューションを動かし、データ駆動の取り組みの基盤となります。</p>
-<p>データレイヤーの定義は、訪問者の最も重要な活動、いわゆる_イベント_を特定することから始まります。イベントには、ページビューやサイト検索、ログイン、購入、または重要なビジネス決定に情報を提供する顧客の行動などが含まれます。各イベントには、_イベント属性_と呼ばれる文脈情報が含まれています。データレイヤーは、これらのイベントとそれに対応する属性のリストで構成されています。</p>
+<p>データレイヤーの定義は、訪問の最も重要な活動、いわゆる_イベント_を特定することから始まります。イベントには、ページビューやサイト検索、ログイン、購入、または重要なビジネス決定に情報を提供する顧客の行動などが含まれます。各イベントには、_イベント属性_と呼ばれる文脈情報が含まれています。データレイヤーは、これらのイベントとそれに対応する属性のリストで構成されています。</p>
 <p>Tealiumのデータレイヤーは、追跡するイベントを識別するために<code>tealium_event</code>という変数を使用します。自分自身のイベント名を定義することもできますが、<a href="/platforms/getting-started-web/data-layer/definitions/">標準のイベントセット</a>があるので、それを使って始めることができます。</p>
 <p>以下に、多くのデータレイヤー定義に共通するイベントの例をいくつか示します：</p>
 <h3 id="例">例</h3>
@@ -468,7 +468,7 @@ var utag_data = {
 ウェブサイトやモバイルアプリへの増分変更のための絶え間ない要求を排除することで、開発者の時間とお金を節約します。</li>
 </ul>
 <h2 id="それはどのように機能しますか">それはどのように機能しますか？</h2>
-<p>データレイヤーが定義された後、それをあなたのデジタルプロパティ全体にインストールします。各プラットフォームのインストールガイドをフォローして、データレイヤーの仕様が一貫して遵守されることを確認します。このデータは、タグベンダーの設定やキャンペーン戦略で使用されます。</p>
+<p>データレイヤーが定義された後、それをあなたのデジタルプロパティ全体にインストールします。各プラットフォームのインストールガイドをフォローして、データレイヤーの仕様が一貫して遵守されることを確認します。このデータは、タグベンダーの構成やキャンペーン戦略で使用されます。</p>
 <p>私たちは、シンプルで理解しやすい命名規則を推奨します。いくつかの例を以下に示します：</p>
 <table>
 <thead>
@@ -491,12 +491,12 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>customer_id</code></td>
-<td>訪問者の一意のID。</td>
+<td>訪問の一意のID。</td>
 <td><code>0123456789</code></td>
 </tr>
 <tr>
 <td><code>customer_zip</code></td>
-<td>訪問者の郵便番号。</td>
+<td>訪問の郵便番号。</td>
 <td><code>92101</code></td>
 </tr>
 </tbody>
@@ -573,7 +573,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -724,6 +724,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -732,8 +748,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

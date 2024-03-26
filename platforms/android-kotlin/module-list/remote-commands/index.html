@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -404,16 +404,16 @@ var utag_data = {
 </span></span></code></pre></div></li>
 </ol>
 <h2 id="リモートコマンドのオプション">リモートコマンドのオプション</h2>
-<p>リモートコマンドには2つの設定オプションがあります：</p>
+<p>リモートコマンドには2つの構成オプションがあります：</p>
 <ul>
 <li><strong>JSONファイル</strong><br>
-ベンダーの設定、データマッピング、イベントトリガーを含むJSONファイル。ローカルにロードするか、リモートでホストすることができます。</li>
+ベンダーの構成、データマッピング、イベントトリガーを含むJSONファイル。ローカルにロードするか、リモートでホストすることができます。</li>
 <li><strong>リモートコマンドタグ</strong><br>
-ベンダーのAPIの設定オプションを提供するiQタグ管理のタグ（Tag Managementモジュールと共に使用）。</li>
+ベンダーのAPIの構成オプションを提供するiQタグ管理のタグ（Tag Managementモジュールと共に使用）。</li>
 </ul>
 <p><a href="/platforms/remote-commands/integrations/">リモートコマンドベンダー統合のリスト</a>を参照してください。</p>
 <h3 id="例">例</h3>
-<p>リモートコマンドタグは、Tealium iQタグ管理、アプリ内のJSONファイル、またはリモートサーバー上のJSONファイルを介して設定可能です。リモートコマンドが設定され、モジュールがインストールされたら、初期化に次の行を追加します：</p>
+<p>リモートコマンドタグは、Tealium iQタグ管理、アプリ内のJSONファイル、またはリモートサーバー上のJSONファイルを介して構成可能です。リモートコマンドが構成され、モジュールがインストールされたら、初期化に次の行を追加します：</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -421,9 +421,9 @@ var utag_data = {
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">val</span> remoteCommands = RemoteCommand(<span style="color:#66d9ef">this</span>);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// register the command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  remoteCommands<span style="color:#f92672">?.</span>add(remoteCommands);
@@ -434,9 +434,9 @@ var utag_data = {
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">val</span> remoteCommands = RemoteCommand(<span style="color:#66d9ef">this</span>);
 </span></span><span style="display:flex;"><span>  remoteCommands<span style="color:#f92672">?.</span>add(remoteCommands, filename = <span style="color:#e6db74">&#34;FILENAME.json&#34;</span>);
 </span></span><span style="display:flex;"><span>}
@@ -446,9 +446,9 @@ var utag_data = {
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">val</span> remoteCommands = RemoteCommand(<span style="color:#66d9ef">this</span>);
 </span></span><span style="display:flex;"><span>  remoteCommands<span style="color:#f92672">?.</span>add(remoteCommands, remoteUrl = <span style="color:#e6db74">&#34;https://tags.tiqcdn.com/dle/ACCOUNT/PROFILE/FILENAME.json&#34;</span>);
 </span></span><span style="display:flex;"><span>}
@@ -457,7 +457,7 @@ var utag_data = {
 </div>
 </div>
 
-<p>JSONファイルが設定され、アプリに追加されたかサーバーにホストされた後、さまざまな<a href="/platforms/remote-commands/how-it-works/#load-options">JSONロードオプション</a>について学びましょう。</p>
+<p>JSONファイルが構成され、アプリに追加されたかサーバーにホストされた後、さまざまな<a href="/platforms/remote-commands/how-it-works/#load-options">JSONロードオプション</a>について学びましょう。</p>
 <h2 id="データレイヤー">データレイヤー</h2>
 <p>このモジュールによって追加の変数は導入されません。</p>
 <h2 id="apiリファレンス">APIリファレンス</h2>
@@ -465,7 +465,7 @@ var utag_data = {
 <p>新しいリモートコマンドオブジェクトを作成し、<code>add</code>コマンドに渡す準備をします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> remoteCommand = <span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">RemoteCommand</span>(<span style="color:#e6db74">&#34;commandName&#34;</span>, <span style="color:#e6db74">&#34;description&#34;</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onInvoke</span>(response: Response) {
-</span></span><span style="display:flex;"><span>        Logger.dev(BuildConfig.TAG, <span style="color:#e6db74">&#34;ResponsePayload for webView RemoteCommand </span><span style="color:#e6db74">${response.requestPayload}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Logger</span>.dev(<span style="color:#a6e22e">BuildConfig</span>.TAG, <span style="color:#e6db74">&#34;ResponsePayload for webView RemoteCommand </span><span style="color:#e6db74">${response.requestPayload}</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><table>
@@ -491,27 +491,27 @@ var utag_data = {
 </table>
 <h3 id="add"><code>add()</code></h3>
 <p>指定したリモートコマンドをTealiumに登録し、後でトリガーできるようにします。新しいリモートコマンドを追加する前にTealiumを初期化する必要があります。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = Tealium.create(instanceName, config) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(instanceName, config) {
 </span></span><span style="display:flex;"><span>    remoteCommands<span style="color:#f92672">?.</span>add(remoteCommand)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>以下は使用例です：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> remoteCommand = <span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">RemoteCommand</span>(<span style="color:#e6db74">&#34;sample&#34;</span>, <span style="color:#e6db74">&#34;testing RCs&#34;</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onInvoke</span>(response: Response) {
-</span></span><span style="display:flex;"><span>        Logger.dev(BuildConfig.TAG, <span style="color:#e6db74">&#34;ResponsePayload for webView RemoteCommand </span><span style="color:#e6db74">${response.requestPayload}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Logger</span>.dev(<span style="color:#a6e22e">BuildConfig</span>.TAG, <span style="color:#e6db74">&#34;ResponsePayload for webView RemoteCommand </span><span style="color:#e6db74">${response.requestPayload}</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = Tealium.create(instanceName, config) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(instanceName, config) {
 </span></span><span style="display:flex;"><span>    remoteCommands<span style="color:#f92672">?.</span>add(remoteCommand)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="remove"><code>remove()</code></h3>
 <p>以前に登録したリモートコマンドを削除し、再度トリガーされるのを防ぎます。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = Tealium.create(instanceName, config) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(instanceName, config) {
 </span></span><span style="display:flex;"><span>   remoteCommands<span style="color:#f92672">?.</span>remove(<span style="color:#e6db74">&#34;commandName&#34;</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="removeall"><code>removeAll</code></h3>
 <p>以前に登録したすべてのリモートコマンドを削除します。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = Tealium.create(instanceName, config) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(instanceName, config) {
 </span></span><span style="display:flex;"><span>    remoteCommands<span style="color:#f92672">?.</span>removeAll()
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div>
@@ -574,7 +574,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -733,6 +733,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -741,8 +757,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

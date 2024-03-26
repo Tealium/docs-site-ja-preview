@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -375,7 +375,7 @@ var utag_data = {
 </ol>
 <h2 id="初期化">初期化</h2>
 <p>クラッシュレポーターモジュールの明示的な初期化は必要ありません。</p>
-<p>以下の例に示すように、設定オブジェクトで<code>isCrashReporterEnabled</code>パラメータが設定されている場合、コアのTealiumプラグインによってインスタンス化されます：</p>
+<p>以下の例に示すように、構成オブジェクトで<code>isCrashReporterEnabled</code>パラメータが構成されている場合、コアのTealiumプラグインによってインスタンス化されます：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">tealiumInit</span>(<span style="color:#a6e22e">account</span>, <span style="color:#a6e22e">profile</span>, <span style="color:#a6e22e">environment</span>, <span style="color:#a6e22e">instance</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">init</span>({
 </span></span><span style="display:flex;"><span>       <span style="color:#a6e22e">account</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">account</span>,
@@ -389,7 +389,7 @@ var utag_data = {
 </span></span></code></pre></div><h2 id="テスト">テスト</h2>
 <p>JavaScript APIは、強制的にクラッシュをトリガーするメソッドを公開しています。プロダクションでの誤ってクラッシュをトリガーすることを避けるため、このメソッドは次の条件が満たされている場合にのみ動作するようにハードコーディングされています：</p>
 <ul>
-<li>環境が<code>dev</code>に設定されている</li>
+<li>環境が<code>dev</code>に構成されている</li>
 <li>クラッシュレポーターモジュールがインストールされている</li>
 <li>クラッシュレポーターモジュールが正常に初期化されている</li>
 <li>データレイヤーに<code>forceCrash</code>変数が存在する</li>
@@ -404,7 +404,7 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cordova plugin rm tealium-cordova-crashreporter
 </span></span></code></pre></div></li>
 <li>
-<p>メインのTealiumプラグインを初期化する際の設定オブジェクトから<code>isCrashReporterEnabled</code>フラグを削除します。</p>
+<p>メインのTealiumプラグインを初期化する際の構成オブジェクトから<code>isCrashReporterEnabled</code>フラグを削除します。</p>
 </li>
 </ol>
 
@@ -618,6 +618,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -626,8 +642,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -467,7 +467,7 @@ var utag_data = {
 <p><a href="https://github.com/tealium/tealium-ios-appsflyer-remote-command">Tealium iOS AppsFlyerリモートコマンド</a>レポジトリをクローンして、<code>Sources</code>フォルダ内のファイルをプロジェクトにドラッグします。</p>
 </li>
 <li>
-<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に設定します</p>
+<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に構成します</p>
 </li>
 </ol>
 <h3 id="手動android">手動（Android）</h3>
@@ -507,9 +507,9 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// New code to add the AppsFlyer Remote Command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">val</span> appsFlyerRemoteCommand = AppsFlyerRemoteCommand(application,
 </span></span><span style="display:flex;"><span>                                      appsFlyerDevKey = devKey)
@@ -524,9 +524,9 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// New code to add the AppsFlyer Remote Command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">val</span> appsFlyer = AppsFlyerRemoteCommand(application,
 </span></span><span style="display:flex;"><span>                                      appsFlyerDevKey = devKey)
@@ -893,7 +893,7 @@ var utag_data = {
 <p class="note"><i class="fa fa-exclamation-triangle"></i>AppsFlyer SDKはTealium SDKとともにインストールされるので、対応するタグ構成があれば任意のネイティブAppsFlyer機能をトリガーできます。</p>
 <h3 id="sdkのセットアップ">SDKのセットアップ</h3>
 <h4 id="初期化-1">初期化</h4>
-<p>AppsFlyer SDKは起動時に自動的に初期化されます。AppsFlyer APIキーはタグ構成で設定されます。</p>
+<p>AppsFlyer SDKは起動時に自動的に初期化されます。AppsFlyer APIキーはタグ構成で構成されます。</p>
 <table>
 <thead>
 <tr>
@@ -912,7 +912,7 @@ var utag_data = {
 <ul>
 <li><a href="https://support.appsflyer.com/hc/en-us/articles/207032066#integration-33-initializing-the-sdk">iOS</a></li>
 </ul>
-<p>AppsFlyer リモート コマンド タグで構成できる構成オプションはいくつかあります。以下のいずれかが起動時に設定された場合は、初期化メソッドの実行中に送信されます。</p>
+<p>AppsFlyer リモート コマンド タグで構成できる構成オプションはいくつかあります。以下のいずれかが起動時に構成された場合は、初期化メソッドの実行中に送信されます。</p>
 <h5 id="構成オプション">構成オプション</h5>
 <table>
 <thead>
@@ -1021,7 +1021,7 @@ var utag_data = {
 <li><a href="https://github.com/AppsFlyerSDK/AppsFlyerFramework/blob/19ab52e9133ae86626c013e8cf0ed34aaf3721f0/iOS/AppsFlyerLib.framework/Versions/A/Headers/AppsFlyerTracker.h#L443">iOS</a></li>
 </ul>
 <h3 id="その他のオプション">その他のオプション</h3>
-<h4 id="ホストの設定">ホストの設定</h4>
+<h4 id="ホストの構成">ホストの構成</h4>
 <table>
 <thead>
 <tr>
@@ -1054,11 +1054,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>AppsFlyer APIリファレンス：ホストの設定</p>
+<p>AppsFlyer APIリファレンス：ホストの構成</p>
 <ul>
 <li><a href="https://github.com/AppsFlyerSDK/AppsFlyerFramework/blob/19ab52e9133ae86626c013e8cf0ed34aaf3721f0/iOS/AppsFlyerLib.framework/Versions/A/Headers/AppsFlyerTracker.h#L534">iOS</a></li>
 </ul>
-<h4 id="ユーザーのeメールの設定">ユーザーのEメールの設定</h4>
+<h4 id="ユーザーのeメールの構成">ユーザーのEメールの構成</h4>
 <table>
 <thead>
 <tr>
@@ -1118,11 +1118,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>AppsFlyer APIリファレンス：ユーザーのEメールの設定</p>
+<p>AppsFlyer APIリファレンス：ユーザーのEメールの構成</p>
 <ul>
 <li><a href="https://github.com/AppsFlyerSDK/AppsFlyerFramework/blob/19ab52e9133ae86626c013e8cf0ed34aaf3721f0/iOS/AppsFlyerLib.framework/Versions/A/Headers/AppsFlyerTracker.h#L361">iOS</a></li>
 </ul>
-<h4 id="通貨コードの設定">通貨コードの設定</h4>
+<h4 id="通貨コードの構成">通貨コードの構成</h4>
 <table>
 <thead>
 <tr>
@@ -1151,11 +1151,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>AppsFlyer APIリファレンス：通貨コードの設定</p>
+<p>AppsFlyer APIリファレンス：通貨コードの構成</p>
 <ul>
 <li><a href="https://support.appsflyer.com/hc/en-us/articles/207032066#api-reference-currencycode">iOS</a></li>
 </ul>
-<h4 id="顧客idの設定">顧客IDの設定</h4>
+<h4 id="顧客idの構成">顧客IDの構成</h4>
 <table>
 <thead>
 <tr>
@@ -1185,7 +1185,7 @@ var utag_data = {
 </tbody>
 </table>
 <ul>
-<li>AppsFlyer追加のAPI：顧客IDの設定</li>
+<li>AppsFlyer追加のAPI：顧客IDの構成</li>
 <li><a href="https://support.appsflyer.com/hc/en-us/articles/207032066#additional-apis-set-customer-user-id">iOS</a></li>
 <li><a href="https://support.appsflyer.com/hc/en-us/articles/207032126-Android-SDK-integration-for-developers#api-reference-setcustomeruserid">Android</a></li>
 </ul>
@@ -1263,13 +1263,13 @@ var utag_data = {
 <div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
 
   
-  <a href="/platforms/remote-commands/integrations/branch/"
+  <a href="/platforms/remote-commands/integrations/airship/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Branch</div>
+      <div>エアシップ</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Branch"</title>
+      <title>"エアシップ"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -1317,7 +1317,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1481,6 +1481,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1489,8 +1505,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

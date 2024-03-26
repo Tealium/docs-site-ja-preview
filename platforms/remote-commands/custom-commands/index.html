@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -368,7 +368,7 @@ var utag_data = {
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>ビルド時にネイティブアプリでリモートコマンドを定義します。カスタムリモートコマンドタグは、デバイス上で事前に定義されたコードのみを実行します。</p>
 <h3 id="ネイティブコード">ネイティブコード</h3>
-<p>ネイティブコードでは、<code>add()</code>関数がリモートコマンドハンドラを登録します。コールバック関数<code>response</code>は<code>response.payload</code>でペイロードにアクセスします。以下の例では、参照されているペイロード変数は、iQタグ管理で設定されたデータレイヤー変数と一致しています。</p>
+<p>ネイティブコードでは、<code>add()</code>関数がリモートコマンドハンドラを登録します。コールバック関数<code>response</code>は<code>response.payload</code>でペイロードにアクセスします。以下の例では、参照されているペイロード変数は、iQタグ管理で構成されたデータレイヤー変数と一致しています。</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -388,10 +388,10 @@ var utag_data = {
 <div class="tab-pane" data-lang="Android (Kotlin)" title="Android (Kotlin)">
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> remoteCommand = <span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">RemoteCommand</span>(<span style="color:#e6db74">&#34;sample&#34;</span>, <span style="color:#e6db74">&#34;testing RCs&#34;</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onInvoke</span>(response: Response) {
-</span></span><span style="display:flex;"><span>        Logger.dev(BuildConfig.TAG, <span style="color:#e6db74">&#34;ResponsePayload for webView RemoteCommand </span><span style="color:#e6db74">${response.requestPayload}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Logger</span>.dev(<span style="color:#a6e22e">BuildConfig</span>.TAG, <span style="color:#e6db74">&#34;ResponsePayload for webView RemoteCommand </span><span style="color:#e6db74">${response.requestPayload}</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = Tealium.create(instanceName, config) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(instanceName, config) {
 </span></span><span style="display:flex;"><span>    remoteCommands<span style="color:#f92672">?.</span>add(webViewRemoteCommand)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div>
@@ -409,13 +409,13 @@ var utag_data = {
 <ol>
 <li>ユーザーに調査を促すネイティブコードを作成し、メッセージとURLをメソッドパラメータとして渡します（レンダリングされていないWebビューから）。</li>
 <li>Tealium APIでコードブロックをリモートコマンドとして登録します。</li>
-<li>iQタグ管理でカスタムリモートコマンドタグを追加し、コマンドIDをネイティブコードで登録した同じコマンドに設定します。</li>
-<li><code>survey_title</code>や<code>survey_url</code>などの特定の変数をアプリに戻すためのデータマッピングを設定します。</li>
+<li>iQタグ管理でカスタムリモートコマンドタグを追加し、コマンドIDをネイティブコードで登録した同じコマンドに構成します。</li>
+<li><code>survey_title</code>や<code>survey_url</code>などの特定の変数をアプリに戻すためのデータマッピングを構成します。</li>
 <li>ネイティブコードで、レスポンスペイロードで戻された変数を使用してユーザーに調査を表示します。</li>
 </ol>
-<p>これらの手順を完了すると、iQタグ管理の拡張機能を使用して調査のタイトル、URL、ロジックを設定できるようになり、アプリを再デプロイすることなく行うことができます。</p>
+<p>これらの手順を完了すると、iQタグ管理の拡張機能を使用して調査のタイトル、URL、ロジックを構成できるようになり、アプリを再デプロイすることなく行うことができます。</p>
 <h3 id="リモートコマンドタグ">リモートコマンドタグ</h3>
-<p>iQタグ管理では、リモートコマンドがカスタムリモートコマンドタグのインスタンスとして設定され、以下の設定が行われます：</p>
+<p>iQタグ管理では、リモートコマンドがカスタムリモートコマンドタグのインスタンスとして構成され、以下の構成が行われます：</p>
 <ul>
 <li><strong>コマンドID</strong><br>
 コマンドの名前（ネイティブメソッド<code>addRemoteCommandID</code>で使用される同じ名前）。</li>
@@ -430,7 +430,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    title: <span style="color:#e6db74">&#34;My Screen&#34;</span>,
 </span></span><span style="display:flex;"><span>    data: [<span style="color:#e6db74">&#34;tealium_event&#34;</span>: <span style="color:#e6db74">&#34;my_event&#34;</span>, <span style="color:#e6db74">&#34;my_variable&#34;</span>: <span style="color:#e6db74">&#34;my_value&#34;</span>]
 </span></span><span style="display:flex;"><span>);
-</span></span></code></pre></div><p>タグの設定は以下のように定義されます：</p>
+</span></span></code></pre></div><p>タグの構成は以下のように定義されます：</p>
 <ul>
 <li><strong>コマンドID</strong><br>
 <code>myRemoteCommand</code></li>
@@ -439,7 +439,7 @@ var utag_data = {
 <li><strong>マップされた変数</strong><br>
 <code>my_variable -&gt; myVariable</code></li>
 </ul>
-<p>以下のスクリーンショットは、iQタグ管理で設定された例を示しています。</p>
+<p>以下のスクリーンショットは、iQタグ管理で構成された例を示しています。</p>
 <figure><a class="slb" href="/images/platforms/remote-commands/tag-example.png"><img src="/images/platforms/remote-commands/tag-example.png" width="450" height="700"/>
     </a><figcaption><p>タグの例</p>
         </figcaption>
@@ -504,7 +504,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -656,6 +656,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -664,8 +680,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -358,7 +358,7 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <p>各モバイルコンポーネントはデータレイヤーに変数を追加します。以下のセクションでは、各モジュールのすべての変数をリストします。</p>
 <p>すべての値は文字列に変換されます。ただし、必要に応じてiQ拡張機能やTealium EventStreamの機能を使用して、数値を数値型に戻すことができます。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>すべての自動追跡イベントは属性を設定します: <code>autotracked=&quot;true&quot;</code></p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>すべての自動追跡イベントは属性を構成します: <code>autotracked=&quot;true&quot;</code></p>
 <h2 id="アプリデータ">アプリデータ</h2>
 <p>ホストアプリケーションのプロパティ。</p>
 <table>
@@ -448,7 +448,7 @@ var utag_data = {
 </tbody>
 </table>
 <h2 id="同意管理">同意管理</h2>
-<p>同意トラッキングの設定に関する情報を提供します。</p>
+<p>同意トラッキングの構成に関する情報を提供します。</p>
 <table>
 <thead>
 <tr>
@@ -548,7 +548,7 @@ var utag_data = {
 </tbody>
 </table>
 <h2 id="ライフサイクルイベント">ライフサイクルイベント</h2>
-<p>次のアプリケーションライフサイクルイベントの自動トラッキングを提供します：起動、覚醒、スリープ。</p>
+<p>次のアプリケーションライフサイクルイベントの自動トラッキングを提供します：起動、スリープ解除、スリープ。</p>
 <table>
 <thead>
 <tr>
@@ -604,31 +604,31 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>lifecycle_ isfirstlaunch</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">起動が最初のものである場合は<code>&quot;true&quot;</code>（それ以外の場合は未設定）</td>
+<td style="text-align:left">起動が最初のものである場合は<code>&quot;true&quot;</code>（それ以外の場合は未構成）</td>
 <td style="text-align:left"><code>&quot;true&quot;</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>lifecycle_ isfirstlaunchupdate</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">検出されたアプリバージョンの更新後の最初の起動である場合は<code>&quot;true&quot;</code>（それ以外の場合は未設定）</td>
+<td style="text-align:left">検出されたアプリバージョンの更新後の最初の起動である場合は<code>&quot;true&quot;</code>（それ以外の場合は未構成）</td>
 <td style="text-align:left"><code>&quot;true&quot;</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>lifecycle_ isfirstwakemonth</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">起動イベントが現在の月の最初のものである場合は<code>&quot;true&quot;</code>（それ以外の場合は未設定）</td>
+<td style="text-align:left">起動イベントが現在の月の最初のものである場合は<code>&quot;true&quot;</code>（それ以外の場合は未構成）</td>
 <td style="text-align:left"><code>&quot;true&quot;</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>lifecycle_ isfirstwaketoday </code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">起動/覚醒イベントが現在の日の最初のものである場合は<code>&quot;true&quot;</code>（それ以外の場合は未設定）</td>
+<td style="text-align:left">起動/スリープ解除イベントが現在の日の最初のものである場合は<code>&quot;true&quot;</code>（それ以外の場合は未構成）</td>
 <td style="text-align:left"><code>&quot;true&quot;</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>lifecycle_ lastlaunchdate </code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">前回記録された起動のGMTタイムスタンプ（ISO-8601形式のズールータイム）（最初のセッション内では未設定）</td>
+<td style="text-align:left">前回記録された起動のGMTタイムスタンプ（ISO-8601形式のズールータイム）（最初のセッション内では未構成）</td>
 <td style="text-align:left"><code>&quot;2013-07-11T17:55:04Z&quot;</code></td>
 </tr>
 <tr>
@@ -640,7 +640,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>lifecycle_ lastwakedate </code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">前回記録された覚醒イベントのGMTタイムスタンプ（ISO-8601形式のズールータイム）</td>
+<td style="text-align:left">前回記録されたスリープ解除イベントのGMTタイムスタンプ（ISO-8601形式のズールータイム）</td>
 <td style="text-align:left"><code>&quot;2013-07-11T17:55:04Z&quot;</code></td>
 </tr>
 <tr>
@@ -652,13 +652,13 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>lifecycle_ priorsecondsawake</code></td>
 <td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left">起動イベント中にのみ設定されます。覚醒とスリープの間にアプリケーションが覚醒していた全秒数。これらの覚醒とスリープの合計は、起動イベントまで続きます。</td>
+<td style="text-align:left">起動イベント中にのみ構成されます。スリープ解除とスリープの間にアプリケーションがスリープ解除していた全秒数。これらのスリープ解除とスリープの合計は、起動イベントまで続きます。</td>
 <td style="text-align:left"><code>148</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>lifecycle_ secondsawake </code></td>
 <td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left">スリープイベント中にのみ設定されます。最新の覚醒からスリープイベントまでのアプリケーションが覚醒していた全秒数。</td>
+<td style="text-align:left">スリープイベント中にのみ構成されます。最新のスリープ解除からスリープイベントまでのアプリケーションがスリープ解除していた全秒数。</td>
 <td style="text-align:left"><code>480</code></td>
 </tr>
 <tr>
@@ -676,7 +676,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>lifecycle_ totalsecondsawake </code></td>
 <td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left">アプリケーションが覚醒していた秒数の合計。アプリケーションが削除されて再インストールされるとリセットされます。</td>
+<td style="text-align:left">アプリケーションがスリープ解除していた秒数の合計。アプリケーションが削除されて再インストールされるとリセットされます。</td>
 <td style="text-align:left"><code>800</code></td>
 </tr>
 <tr>
@@ -694,7 +694,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>lifecycle_ totalwakecount </code></td>
 <td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left">起動と覚醒の合計回数。アプリケーションが削除されて再インストールされるとリセットされます。</td>
+<td style="text-align:left">起動とスリープ解除の合計回数。アプリケーションが削除されて再インストールされるとリセットされます。</td>
 <td style="text-align:left"><code>7</code></td>
 </tr>
 <tr>
@@ -706,20 +706,20 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>lifecycle_ updatelaunchdate</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">アプリバージョンの更新が検出された後の最初の起動/覚醒のGMTタイムスタンプ。ISO8601形式のズールータイム。</td>
+<td style="text-align:left">アプリバージョンの更新が検出された後の最初の起動/スリープ解除のGMTタイムスタンプ。ISO8601形式のズールータイム。</td>
 <td style="text-align:left"><code>&quot;2016-05-16T16:32:04Z&quot;</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>lifecycle_ wakecount</code></td>
 <td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left">このアプリケーションバージョンの起動と覚醒の合計回数。新しいホストアプリケーションバージョンが検出されるとリセットされます。</td>
+<td style="text-align:left">このアプリケーションバージョンの起動とスリープ解除の合計回数。新しいホストアプリケーションバージョンが検出されるとリセットされます。</td>
 <td style="text-align:left"><code>34</code></td>
 </tr>
 </tbody>
 </table>
 <h2 id="オフラインキューイング">オフラインキューイング</h2>
-<p>例えば、デバイスが一時的にネットワーク接続を失ったときに、後で配信するためのイベントディスパッチデータを保存します。</p>
-<p>以下のイベント属性をキューに入れたディスパッチデータ内に設定します：</p>
+<p>例えば、デバイスが一時的にネットワーク接続を失ったときに、後で配信するためのイベントディスパッチデータをストレージします。</p>
+<p>以下のイベント属性をキューに入れたディスパッチデータ内に構成します：</p>
 <table>
 <thead>
 <tr>
@@ -735,7 +735,7 @@ var utag_data = {
 </tbody>
 </table>
 <h2 id="タグ管理">タグ管理</h2>
-<p>Tealium iQタグ管理で設定されたベンダータグを非表示のwebviewで実行します。</p>
+<p>Tealium iQタグ管理で構成されたベンダータグを非表示のwebviewで実行します。</p>
 <table>
 <thead>
 <tr>
@@ -765,7 +765,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>tealium_event</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">イベントのタイトル。Tealiumが提供するトラックコールの&rsquo;title&rsquo;引数によって値が設定されます。一意である必要はありません。</td>
+<td style="text-align:left">イベントのタイトル。Tealiumが提供するトラックコールの&rsquo;title&rsquo;引数によって値が構成されます。一意である必要はありません。</td>
 <td style="text-align:left"><code>&quot;button_tapped&quot;</code></td>
 </tr>
 <tr>
@@ -819,7 +819,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>tealium_visitor_id</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">ユーザーを区別する一意のアプリ-デバイス訪問者ID。Collectサービスに必要です。</td>
+<td style="text-align:left">ユーザーを区別する一意のアプリ-デバイス訪問ID。Collectサービスに必要です。</td>
 <td style="text-align:left">(32文字の英数字)</td>
 </tr>
 <tr>
@@ -890,7 +890,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1046,6 +1046,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1054,8 +1070,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

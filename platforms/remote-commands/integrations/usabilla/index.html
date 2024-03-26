@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -400,7 +400,7 @@ var utag_data = {
 <ol>
 <li>Xcode プロジェクトで、次のように選択します: <strong>[File] &gt; [Add Package&hellip;]&gt; [Add Package Dependency]</strong>。</li>
 <li>レポジトリの URL として「https://github.com/tealium/tealium-ios-usabilla-remote-command」と入力します。</li>
-<li>バージョンルールを設定します。通常は <code>Up to next major</code> が推奨されます。現在の <code>TealiumUsabilla</code> バージョンがリストに表示されない場合は、Swift パッケージ キャッシュをリセットします。</li>
+<li>バージョンルールを構成します。通常は <code>Up to next major</code> が推奨されます。現在の <code>TealiumUsabilla</code> バージョンがリストに表示されない場合は、Swift パッケージ キャッシュをリセットします。</li>
 <li>インストールする <code>TealiumUsabilla</code> モジュールを選択し、モジュールをインストールするアプリ ターゲットを選択します。</li>
 </ol>
 <p>プロジェクトにアプリ ターゲットが複数あり、複数のアプリ ターゲットで <code>TealiumUsabilla</code> モジュールが必要な場合は、 <strong>[Frameworks, Libraries, and Embedded Content] (フレームワーク、ライブラリ、埋め込みコンテンツ)</strong> セクションにそれらを手動で追加する必要があります。</p>
@@ -488,7 +488,7 @@ var utag_data = {
 <p>ディスパッチャーとして <code>Dispatchers.RemoteCommands</code> を追加します</p>
 </li>
 <li>
-<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に設定します</p>
+<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に構成します</p>
 </li>
 </ol>
 <h2 id="初期化">初期化</h2>
@@ -503,11 +503,11 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> usabilla = UsabillaRemoteCommand(TEALIUM_MAIN, config);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>  remoteCommands<span style="color:#f92672">?.</span>add(usabilla, filename = <span style="color:#e6db74">&#34;usabilla.json&#34;</span>);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Usabilla SDKで使用可能な追加（オプション）の<a href="https://github.com/usabilla/usabilla-u4a-android-sdk#initialization">初期化パラメータ</a>は次のとおりです。</p>
@@ -534,11 +534,11 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> usabilla = UsabillaRemoteCommand(TEALIUM_MAIN, config);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>  remoteCommands<span style="color:#f92672">?.</span>add(usabilla);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Usabilla SDKで使用可能な追加（オプション）の<a href="https://github.com/usabilla/usabilla-u4a-android-sdk#initialization">初期化パラメータ</a>は次のとおりです。</p>
@@ -728,7 +728,7 @@ var utag_data = {
 <p class="tip"><i class="fa fa-info-circle"></i>Usabilla SDKはTealium SDKと統合されているので、対応するタグ構成があれば任意のネイティブUsabilla機能をトリガーできます。</p>
 <h3 id="sdkのセットアップ">SDKのセットアップ</h3>
 <h4 id="初期化-1">初期化</h4>
-<p>Usabilla SDKは起動時に自動的に初期化されます。Usabilla APIキーはタグ構成で設定されます。</p>
+<p>Usabilla SDKは起動時に自動的に初期化されます。Usabilla APIキーはタグ構成で構成されます。</p>
 <table>
 <thead>
 <tr>
@@ -816,7 +816,7 @@ var utag_data = {
 <li><a href="https://github.com/usabilla/usabilla-u4a-ios-swift-sdk#campaign-toggling">iOS</a></li>
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>キャンペーン切り替えはAndroidでは使用できません</p>
-<h3 id="ターゲット設定オプション">ターゲット設定オプション</h3>
+<h3 id="ターゲット構成オプション">ターゲット構成オプション</h3>
 <h4 id="イベントの送信">イベントの送信</h4>
 <table>
 <thead>
@@ -846,12 +846,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>Usabilla Developer Guide：ターゲット設定オプション</p>
+<p>Usabilla Developer Guide：ターゲット構成オプション</p>
 <ul>
 <li><a href="https://github.com/usabilla/usabilla-u4a-ios-swift-sdk#targeting-options">iOS</a></li>
 <li><a href="https://github.com/usabilla/usabilla-u4a-android-sdk#targeting-options">Android</a></li>
 </ul>
-<h3 id="カスタム変数の設定">カスタム変数の設定</h3>
+<h3 id="カスタム変数の構成">カスタム変数の構成</h3>
 <table>
 <thead>
 <tr>
@@ -880,7 +880,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>Usabilla Developer Guide：カスタム変数の設定</p>
+<p>Usabilla Developer Guide：カスタム変数の構成</p>
 <ul>
 <li><a href="https://github.com/usabilla/usabilla-u4a-ios-swift-sdk#custom-variables">iOS</a></li>
 <li><a href="https://github.com/usabilla/usabilla-u4a-android-sdk#custom-variables">Android</a></li>
@@ -1041,14 +1041,14 @@ var utag_data = {
 <div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="di mr3">
   
   
-  <a href="/platforms/remote-commands/integrations/kochava/"
+  <a href="/platforms/remote-commands/integrations/skadnetwork/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Kochava "</title>
+      <title>"SKAdNetwork "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>Kochava</div>
+      <div>SKAdNetwork</div>
     </section>
   </a>
   
@@ -1080,7 +1080,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1107,8 +1107,8 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">トラッキング</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">サポートされているメソッド</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#sdk">SDKのセットアップ</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ターゲット設定オプション</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">カスタム変数の設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ターゲット構成オプション</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">カスタム変数の構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">フォーム</a></li>
               </nav>
   </aside></nav>
@@ -1243,6 +1243,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1251,8 +1267,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

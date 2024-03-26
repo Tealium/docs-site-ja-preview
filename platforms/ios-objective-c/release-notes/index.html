@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -369,14 +369,14 @@ var utag_data = {
 <h2 id="581-2021年6月">5.8.1 (2021年6月)</h2>
 <p><strong>高影響の変更</strong></p>
 <ul>
-<li>Tealium Tag Managementのwebviewがクッキー同期の問題を避けるために使用する<code>TealiumConfig</code>オブジェクトに<code>WKProcessPool</code>インスタンスを設定するオプションを追加しました。</li>
+<li>Tealium Tag Managementのwebviewがクッキー同期の問題を避けるために使用する<code>TealiumConfig</code>オブジェクトに<code>WKProcessPool</code>インスタンスを構成するオプションを追加しました。</li>
 </ul>
 <h2 id="580-2021年2月">5.8.0 (2021年2月)</h2>
 <p><strong>中影響の変更</strong></p>
 <ul>
 <li>モバイルセッションタイマーを正しくするために、<code>platform</code>変数の値を小文字にしました。以前は、セッションはウェブと同様に（一貫した活動の30分）測定されていました。<code>platform</code>変数を小文字にすることで、Customer Data Hubは受信データをモバイルセッションと認識し、セッションの長さが2分に短縮されます。</li>
 </ul>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>大文字小文字を区別する<code>platform</code>値（<code>iOS</code> vs <code>ios</code>など）をチェックするLoadまたはAttribute Rulesが設定されている場合は、ロードルールを更新してください。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>大文字小文字を区別する<code>platform</code>値（<code>iOS</code> vs <code>ios</code>など）をチェックするLoadまたはAttribute Rulesが構成されている場合は、ロードルールを更新してください。</p>
 <p><strong>低影響の変更</strong></p>
 <ul>
 <li>ビルド警告を解決し、非推奨のAPIを更新しました。</li>
@@ -386,7 +386,7 @@ var utag_data = {
 <ul>
 <li>utag.js内のセッションカウントロジックの代わりにネイティブセッションカウントをサポートしました。これにより、セッションカウントがより正確になり、バックグラウンド活動が新しいセッションをトリガーするというエッジケースが修正され、予想以上にセッションカウントが増える問題が解決しました。</li>
 </ul>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>⚠️ 重要 ⚠️ モバイルパブリッシュ設定でTag Managementが有効になっている場合、関連するアカウント内のmobile.htmlテンプレートも更新する必要があります。このアクションが実行されない場合、Tealiumに重複したセッションが記録されます。テンプレートの更新方法については、<a href="/iq-tag-management/templates/about/">こちら</a>をご覧ください。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>⚠️ 重要 ⚠️ モバイルパブリッシュ構成でTag Managementが有効になっている場合、関連するアカウント内のmobile.htmlテンプレートも更新する必要があります。このアクションが実行されない場合、Tealiumに重複したセッションが記録されます。テンプレートの更新方法については、<a href="/iq-tag-management/templates/about/">こちら</a>をご覧ください。</p>
 <h2 id="566-2020年1月">5.6.6 (2020年1月)</h2>
 <p><strong>低影響の変更</strong></p>
 <ul>
@@ -421,7 +421,7 @@ var utag_data = {
 <h2 id="560-2019年10月">5.6.0 (2019年10月)</h2>
 <p><strong>高影響の変更</strong></p>
 <ul>
-<li><code>UIWebView</code>を完全に削除し、AppleがiOS 8.0以降で<code>UIWebView</code>を非推奨としているため、<code>WKWebView</code>のみをサポートするようにしました。訪問者のセッションと分析履歴が維持されるように、便宜上<code>UIWebView</code>のサポートを続けていました。しかし、ITMS-90809: Deprecated API Usage - Appleは<code>UIWebView</code>APIを使用するアプリの提出を停止します。<code>UIWebView</code>については、<a href="https://developer.apple.com/documentation/uikit/uiwebview">こちら</a>をご覧ください。<code>UIWebView</code>で使用されていたクッキーを<code>WKWebView</code>に移行する<a href="https://developer.apple.com/documentation/webkit/wkhttpcookiestore">WKHTTPCookieStore</a>を用意しています。これにより、ユーザーID/訪問者クッキーは新しい実装にシームレスに移行します。</li>
+<li><code>UIWebView</code>を完全に削除し、AppleがiOS 8.0以降で<code>UIWebView</code>を非推奨としているため、<code>WKWebView</code>のみをサポートするようにしました。訪問のセッションと分析履歴が維持されるように、便宜上<code>UIWebView</code>のサポートを続けていました。しかし、ITMS-90809: Deprecated API Usage - Appleは<code>UIWebView</code>APIを使用するアプリの提出を停止します。<code>UIWebView</code>については、<a href="https://developer.apple.com/documentation/uikit/uiwebview">こちら</a>をご覧ください。<code>UIWebView</code>で使用されていたクッキーを<code>WKWebView</code>に移行する<a href="https://developer.apple.com/documentation/webkit/wkhttpcookiestore">WKHTTPCookieStore</a>を用意しています。これにより、ユーザーID/訪問クッキーは新しい実装にシームレスに移行します。</li>
 </ul>
 <p><strong>中影響の変更</strong></p>
 <ul>
@@ -435,7 +435,7 @@ var utag_data = {
 <h2 id="553-2019年7月">5.5.3 (2019年7月)</h2>
 <p><strong>高影響の変更</strong></p>
 <ul>
-<li><code>WKWebView</code>の<code>UIView</code>自動検出ロジックが改善され、複雑なビュー階層を持つほとんどのケースをカバーできるようになりました。これにより、webview設定で手動で<code>UIView</code>インスタンスを渡す必要がなくなりました。あなた自身のアプリでの検証が必要です。プッシュ通知から起動されるビューを含む、アプリのさまざまな画面でトラッキングコールがアプリから出ていることを確認してください。</li>
+<li><code>WKWebView</code>の<code>UIView</code>自動検出ロジックが改善され、複雑なビュー階層を持つほとんどのケースをカバーできるようになりました。これにより、webview構成で手動で<code>UIView</code>インスタンスを渡す必要がなくなりました。あなた自身のアプリでの検証が必要です。プッシュ通知から起動されるビューを含む、アプリのさまざまな画面でトラッキングコールがアプリから出ていることを確認してください。</li>
 </ul>
 <h2 id="552-2019年7月">5.5.2 (2019年7月)</h2>
 <p><strong>低影響の変更</strong></p>
@@ -460,7 +460,7 @@ var utag_data = {
 <p><strong>5.xで追加された機能</strong></p>
 <ul>
 <li>Collect、Compact、Fullライブラリが1つのライブラリに統合されました</li>
-<li>リモートで設定可能なディスパッチサービス</li>
+<li>リモートで構成可能なディスパッチサービス</li>
 <li>マルチインスタンスサポート</li>
 <li>ディスパッチを監視または編集するためのデリゲート</li>
 </ul>
@@ -493,8 +493,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// 注意：イベントまたはビューのタイトルは必須ですが、dataSourcesは引き続きオプションです
 </span></span></span></code></pre></div><p>さらに、<code>useHttps</code>オプションはiOS 9（2015年9月）以降では不要となりました。Appleは、すべてのURL通信に対してHTTPSとTLS 1.2+のサポートを必須としています（アプリ開発者が明示的に上書きしない限り）。</p>
 <p><a href="https://developer.apple.com/library/content/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html" title="HTTPS and TLS Support requirement.">Appleの公式ドキュメンテーション（App Transport Securityセクション）</a>を参照してください。</p>
-<p><strong>Tealium iQ Tag Management設定の違い</strong></p>
-<p>バージョン5.xでは、新しい<a href="/partners/">リモート設定オプション</a>が利用可能です。アカウントが以前に4.xを使用していた場合は、以下の手順を実行します：</p>
+<p><strong>Tealium iQ Tag Management構成の違い</strong></p>
+<p>バージョン5.xでは、新しい<a href="/partners/">リモート構成オプション</a>が利用可能です。アカウントが以前に4.xを使用していた場合は、以下の手順を実行します：</p>
 <ol>
 <li>
 <p>Tealium iQで<strong>Save/Publish</strong>をクリックし、次に**Configure Publish Settings&hellip;**をクリックします。</p>
@@ -509,7 +509,7 @@ var utag_data = {
 <p><strong>Add</strong>をクリックし、次に<strong>Save</strong>をクリックします。</p>
 </li>
 <li>
-<p>任意の公開詳細を入力し、更新された設定を公開します。</p>
+<p>任意の公開詳細を入力し、更新された構成を公開します。</p>
 </li>
 </ol>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Tag Managementはデフォルトで_無効_になっています。ネイティブモバイルアプリケーションからタグを実行するために有効にします。Tag Managementが有効になっている場合、重複したリクエストを送信しないようにCollectをオフにします。CollectタグはTealium iQで追加できます。</p>
@@ -558,7 +558,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -723,6 +723,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -731,8 +747,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

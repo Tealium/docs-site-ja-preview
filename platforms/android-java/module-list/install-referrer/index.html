@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -445,8 +445,8 @@ utm_term=test_term&amp;
 utm_content=test_content&amp;
 utm_campaign=test_name
 </code></pre><h2 id="追加の検討事項">追加の検討事項</h2>
-<p><strong>保存されたリファラーの削除</strong>
-保存されたインストールリファラー文字列を削除するには、Tealiumライブラリに用意されている標準メソッドを呼び出して、永続的または揮発性ストレージから変数を削除します。変数のキー名は、<code>InstallReferrerReceiver</code>クラスによって公開されます。次の例では、保存されたインストールリファラーが永続性データと揮発性データの両方から削除されます。変数が存在しない場合、このコードは何も行わず、エラーも発生しません。</p>
+<p><strong>ストレージされたリファラーの削除</strong>
+ストレージされたインストールリファラー文字列を削除するには、Tealiumライブラリに用意されている標準メソッドを呼び出して、永続的または揮発性ストレージから変数を削除します。変数のキー名は、<code>InstallReferrerReceiver</code>クラスによって公開されます。次の例では、ストレージされたインストールリファラーが永続性データと揮発性データの両方から削除されます。変数が存在しない場合、このコードは何も行わず、エラーも発生しません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// remove from persistent data store
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>instance<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataSources</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getPersistentDataSources</span><span style="color:#f92672">().</span><span style="color:#a6e22e">edit</span><span style="color:#f92672">().</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>InstallReferrerReceiver<span style="color:#f92672">.</span><span style="color:#a6e22e">KEYNAME</span><span style="color:#f92672">).</span><span style="color:#a6e22e">apply</span><span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span>
@@ -700,6 +700,22 @@ utm_campaign=test_name
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -708,8 +724,24 @@ utm_campaign=test_name
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

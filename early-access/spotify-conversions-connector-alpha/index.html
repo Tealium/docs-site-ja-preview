@@ -6,12 +6,12 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Spotify Conversionsコネクタ設定ガイド（アルファ） | アーリーアクセス | Tealium開発者ドキュメントプレビュー</title>
+    <title>Spotify Conversionsコネクタ構成ガイド（アルファ） | アーリーアクセス | Tealium開発者ドキュメントプレビュー</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -158,7 +158,7 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Spotify Conversionsコネクタ設定ガイド（アルファ）</h1>
+<h1 class="lh-title mt30 mb3">Spotify Conversionsコネクタ構成ガイド（アルファ）</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -166,7 +166,7 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      この記事では、Spotify Conversionsコネクタの設定方法について説明します。
+      この記事では、Spotify Conversionsコネクタの構成方法について説明します。
     </p>
   
 </div>
@@ -212,9 +212,9 @@ var utag_data = {
 </ul>
 <p>Spotifyは、初期のアルファ版では<strong>購入</strong>イベントのみを使用することを推奨しています。</p>
 <p>Spotify Conversion APIは、マッチング識別子としてメールアドレスのみをサポートしています。TealiumはSHA256ハッシングを適用する機能を提供しています。また、APIで使用するためにすでにハッシュ化された値をマッピングすることもできます。</p>
-<h2 id="設定の構成">設定の構成</h2>
+<h2 id="構成の構成">構成の構成</h2>
 <p><strong>コネクタマーケットプレイス</strong>に移動し、新しいコネクタを追加します。コネクタの追加方法については、<a href="/server-side/connectors/about/">コネクタ概要</a>の記事を参照してください。</p>
-<p>コネクタを追加したら、以下の設定を構成します：</p>
+<p>コネクタを追加したら、以下の構成を構成します：</p>
 <ul>
 <li><strong>コンバージョントラッカーID</strong>：必須。
 <ul>
@@ -229,10 +229,10 @@ var utag_data = {
 </li>
 </ul>
 <p>パートナーがConversions APIを使用し始める前に、Spotifyに連絡してConversion Tracker IDを広告主/広告アカウントにリンクする必要があります。</p>
-<p>コネクタの設定が完了したら、<strong>完了</strong>をクリックします。</p>
-<h2 id="アクション設定--パラメータとオプション">アクション設定 — パラメータとオプション</h2>
-<p><strong>続行</strong>をクリックしてコネクタアクションを設定します。アクションの名前を入力し、ドロップダウンメニューからアクションタイプを選択します。</p>
-<p>次のセクションでは、各アクションのパラメータとオプションの設定方法について説明します。</p>
+<p>コネクタの構成が完了したら、<strong>完了</strong>をクリックします。</p>
+<h2 id="アクション構成--パラメータとオプション">アクション構成 — パラメータとオプション</h2>
+<p><strong>続行</strong>をクリックしてコネクタアクションを構成します。アクションの名前を入力し、ドロップダウンメニューからアクションタイプを選択します。</p>
+<p>次のセクションでは、各アクションのパラメータとオプションの構成方法について説明します。</p>
 <h3 id="アクション--コンバージョンイベントの送信">アクション — コンバージョンイベントの送信</h3>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>コネクタのアルファリリース中、Spotifyは<strong>購入</strong>イベントのみを使用することを推奨しています。</p>
 <h4 id="パラメータ">パラメータ</h4>
@@ -298,7 +298,7 @@ var utag_data = {
 </tr>
 <tr>
 <td>ターゲティングのオプトアウト</td>
-<td>このイベントをリターゲティングに使用しないことを示すフラグ。<code>true</code>に設定されている場合、イベントは帰属のみに使用します。</td>
+<td>このイベントをリターゲティングに使用しないことを示すフラグ。<code>true</code>に構成されている場合、イベントは帰属のみに使用します。</td>
 </tr>
 </tbody>
 </table>
@@ -364,8 +364,8 @@ var utag_data = {
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#api">API情報</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">コネクタアクション</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定の構成</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">アクション設定 — パラメータとオプション</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成の構成</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">アクション構成 — パラメータとオプション</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">アクション — コンバージョンイベントの送信</a></li>
               </nav>
   </aside></nav>
@@ -500,6 +500,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -508,8 +524,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

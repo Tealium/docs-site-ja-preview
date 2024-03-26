@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -182,11 +182,11 @@ var utag_data = {
 <p class="note"><i class="fa fa-exclamation-triangle"></i>プラットフォームの権限は、拡張早期アクセス（EEA）で提供されており、一部の顧客のみが利用できます。この機能を試してみたい場合や、EAからEEAに移行する必要がある場合は、Tealiumのサポート担当者にお問い合わせください。</p>
 <p>拡張早期アクセスの改善点の詳細については、<a href="/administration/about-permissions/">プラットフォームの権限について</a>を参照してください。</p>
 <h2 id="動作方法">動作方法</h2>
-<p>プラットフォームの権限機能には、アカウントの役割権限とグループの権限の2つのカテゴリがあります。アカウントの役割権限は、ユーザーにグループ、ユーザー、プライバシー、および製品の設定を管理する権限を与えるために割り当てられます。グループの権限は、ユーザーがPIIデータにアクセスできるかどうか、ユーザーがアクセスできるTealiumの領域と機能、およびユーザーがアクセスできるプロファイルを制御します。ユーザーは1つ以上のグループに割り当てられ、グループに関連付けられた権限とアクセスを持ちます。</p>
-<p>必要なグループを作成し、アカウントの役割権限をユーザーに割り当てた後、アカウントの権限設定を強制するために<strong>権限の強制</strong>をオンにします。</p>
+<p>プラットフォームの権限機能には、アカウントの役割権限とグループの権限の2つのカテゴリがあります。アカウントの役割権限は、ユーザーにグループ、ユーザー、プライバシー、および製品の構成を管理する権限を与えるために割り当てられます。グループの権限は、ユーザーがPIIデータにアクセスできるかどうか、ユーザーがアクセスできるTealiumの領域と機能、およびユーザーがアクセスできるプロファイルを制御します。ユーザーは1つ以上のグループに割り当てられ、グループに関連付けられた権限とアクセスを持ちます。</p>
+<p>必要なグループを作成し、アカウントの役割権限をユーザーに割り当てた後、アカウントの権限構成を強制するために<strong>権限の強制</strong>をオンにします。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>権限の強制をオンにする前に、ユーザーがグループに追加され、ユーザーがユーザー、グループ、およびPIIの権限を管理するための管理者役割の権限が割り当てられていることを確認してください。グループにユーザーを割り当てるか、ユーザーに管理者役割を割り当てる前に権限の強制をオンにすると、アカウントへのアクセスが失われる可能性があります。</p>
 <h3 id="アカウントの役割権限">アカウントの役割権限</h3>
-<p>アカウントの役割権限は、管理タスク（設定、新しいユーザーの追加など）を実行するユーザー向けのものであり、これらのユーザーがプラットフォームの権限を管理できるようにします。ユーザーには複数のアカウントの役割権限を割り当てることができます。</p>
+<p>アカウントの役割権限は、管理タスク（構成、新しいユーザーの追加など）を実行するユーザー向けのものであり、これらのユーザーがプラットフォームの権限を管理できるようにします。ユーザーには複数のアカウントの役割権限を割り当てることができます。</p>
 <p>ユーザーが実行できる管理タスクを指定する3つのレベルのアカウントの役割権限があります。</p>
 <ul>
 <li>
@@ -201,13 +201,13 @@ var utag_data = {
 <li>
 <p><strong>プライバシー管理者</strong>: <strong>ユーザー管理者</strong>の権限が必要です。ユーザーは以下の機能にアクセスできます:</p>
 <ul>
-<li>PIIの表示と管理: グループのPII権限を設定し、データソース、コネクタ、属性、エンリッチメント、ルールを設定および管理できます。</li>
+<li>PIIの表示と管理: グループのPII権限を構成し、データソース、コネクタ、属性、エンリッチメント、ルールを構成および管理できます。</li>
 <li>タグマーケットプレイスポリシー: タグマーケットプレイスポリシーを更新できます。</li>
 <li>コンセント管理: コンセント管理を使用するすべてのプロファイルに適用される、グローバルな同意パラメータと言語を管理できます。</li>
 </ul>
 </li>
 <li>
-<p><strong>テクニカル管理者</strong>: ユーザーはFirst-Partyドメインなどのアカウントの設定機能にアクセスできます。</p>
+<p><strong>テクニカル管理者</strong>: ユーザーはFirst-Partyドメインなどのアカウントの構成機能にアクセスできます。</p>
 </li>
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>管理者ユーザーがグループと権限を管理できるようにするには、<strong>権限の強制</strong>をオンにする前にアカウントの役割権限をユーザーに割り当てる必要があります。</p>
@@ -242,7 +242,7 @@ var utag_data = {
 <li>Server-Side (Others)</li>
 </ul>
 <p>グループに割り当てることができる機能権限は、グループに割り当てられた製品権限によって異なります。以下の表に示すように、製品権限によって割り当てられる機能権限が異なります。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>表示と編集</strong>または<strong>表示、編集、削除</strong>の権限を持つユーザーは、<strong>保存</strong>の権限も持っています。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>表示と編集</strong>または<strong>表示、編集、削除</strong>の権限を持つユーザーは、<strong>ストレージ</strong>の権限も持っています。</p>
 <table>
 <thead>
 <tr>
@@ -259,7 +259,7 @@ var utag_data = {
 </tr>
 <tr>
 <td>AudienceStream</td>
-<td><ul><li>オーディエンス</li><li>オーディエンスコネクタ</li><li>訪問者/訪問属性</li></ul></td>
+<td><ul><li>オーディエンス</li><li>オーディエンスコネクタ</li><li>訪問/訪問属性</li></ul></td>
 <td><ul><li>アクセスなし</li><li>表示</li><li>表示と編集</li><li>表示、編集、削除</li></ul></td>
 </tr>
 <tr>
@@ -299,12 +299,12 @@ var utag_data = {
 </tr>
 <tr>
 <td>Server-Side Tools</td>
-<td><ul><li>ルールの管理</li><li>訪問者の削除</li><li>訪問者の検索</li></ul></td>
+<td><ul><li>ルールの管理</li><li>訪問の削除</li><li>訪問の検索</li></ul></td>
 <td><ul><li>アクセスなし</li><li>表示</li><li>表示と編集</li><li>表示、編集、削除</li></ul></td>
 </tr>
 <tr>
 <td>Server-Side Tools</td>
-<td><ul><li>訪問者プロファイルサンプラー</li></ul></td>
+<td><ul><li>訪問プロファイルサンプラー</li></ul></td>
 <td><ul><li>アクセスなし</li><li>表示</li></ul></td>
 </tr>
 <tr>
@@ -323,7 +323,7 @@ var utag_data = {
 <li>ユーザーが機能の編集権限を持たない場合、その機能のページには編集ボタンが表示されません。</li>
 </ul>
 <h2 id="権限の強制とpii権限の管理">権限の強制とPII権限の管理</h2>
-<p>必要なグループを作成し、ユーザーとプロファイルをグループに割り当て、アカウントの役割権限をユーザーに割り当てた後、アカウントのすべての割り当てられたグループとプロファイルの権限設定を強制するために<strong>権限の強制</strong>をオンにします。元の権限設定に戻すには、機能を<strong>OFF</strong>に切り替えます。</p>
+<p>必要なグループを作成し、ユーザーとプロファイルをグループに割り当て、アカウントの役割権限をユーザーに割り当てた後、アカウントのすべての割り当てられたグループとプロファイルの権限構成を強制するために<strong>権限の強制</strong>をオンにします。元の権限構成に戻すには、機能を<strong>OFF</strong>に切り替えます。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i><strong>権限の強制</strong>をオンにする前に、ユーザーがグループに追加され、アカウントの役割権限がユーザーに割り当てられていることを確認してください。ユーザーがユーザー、グループ、およびPIIの権限を管理するための管理者役割の権限が割り当てられていることを確認してください。</p>
 <h3 id="プラットフォームの権限をオンにする">プラットフォームの権限をオンにする</h3>
 <ol>
@@ -375,7 +375,7 @@ var utag_data = {
 <li>このグループがサーバーサイドの変更を公開できる必要がある場合は、<strong>公開を有効にする</strong>を選択します。</li>
 <li>選択した製品の機能権限を選択し、<strong>次へ</strong>をクリックします。</li>
 <li>このグループにアクセスできるアカウントプロファイルを選択し、<strong>次へ</strong>をクリックします。</li>
-<li>このグループに追加する各ユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>保存</strong>をクリックします。</li>
+<li>このグループに追加する各ユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>ストレージ</strong>をクリックします。</li>
 </ol>
 <h3 id="既存のグループを複製する">既存のグループを複製する</h3>
 <p>既存のグループを複製して新しいグループを作成し、新しいグループの権限とアクセスを変更することができます。次の手順でグループを複製します。</p>
@@ -385,16 +385,16 @@ var utag_data = {
 <li><strong>グループの種類</strong>で<strong>既存のグループを複製</strong>を選択します。</li>
 <li>複製するグループを選択します。</li>
 <li>複製するグループの名前を入力し、<strong>次へ</strong>をクリックします。</li>
-<li>グループに追加するユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>保存</strong>をクリックします。</li>
+<li>グループに追加するユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>ストレージ</strong>をクリックします。</li>
 </ol>
 <h3 id="グループにユーザーを追加する">グループにユーザーを追加する</h3>
-<p>既存のユーザーをグループに追加することができます。新しいユーザーの追加方法については、<a href="">サーバーサイドのユーザー権限の管理について</a>を参照してください。ユーザーリストからユーザーをグループに追加する方法については、<a href="#user-add-remove-groups">ユーザーの追加または削除</a>を参照してください。</p>
+<p>既存のユーザーをグループに追加することができます。新しいユーザーの追加方法については、<a href="/server-side/administration/user-permissions/about/">サーバーサイドのユーザー権限の管理について</a>を参照してください。ユーザーリストからユーザーをグループに追加する方法については、<a href="#user-add-remove-groups">ユーザーの追加または削除</a>を参照してください。</p>
 <p>次の手順で既存のユーザーをグループに追加します。</p>
 <ol>
 <li>管理メニューで<strong>権限の管理</strong>をクリックします。</li>
 <li>編集したいグループをクリックします。</li>
 <li><strong>+ ユーザーを追加</strong>をクリックします。</li>
-<li>追加するユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>保存</strong>をクリックします。</li>
+<li>追加するユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>ストレージ</strong>をクリックします。</li>
 </ol>
 <p>複数のグループにユーザーを追加するには、各グループに対してこれらの手順を繰り返します。</p>
 <h3 id="グループの機能権限を変更する">グループの機能権限を変更する</h3>
@@ -405,7 +405,7 @@ var utag_data = {
 <li><strong>機能</strong>タブをクリックします。</li>
 <li><strong>PII権限</strong>を選択または選択解除します。</li>
 <li>必要に応じて製品アクセスと機能アクセスを変更します。</li>
-<li><strong>保存</strong>をクリックします。</li>
+<li><strong>ストレージ</strong>をクリックします。</li>
 </ol>
 <h3 id="グループにプロファイルを追加または削除する">グループにプロファイルを追加または削除する</h3>
 <p>グループにプロファイルを追加または削除するには、次の手順を使用します。</p>
@@ -415,10 +415,10 @@ var utag_data = {
 <li><strong>プロファイル</strong>タブをクリックします。</li>
 <li>プロファイルを削除するには、次の手順に従います:</li>
 <li>プロファイルメニューをクリックし、<strong>削除</strong>を選択します。</li>
-<li>確認ダイアログで<strong>削除</strong>をクリックし、<strong>保存</strong>をクリックします。</li>
+<li>確認ダイアログで<strong>削除</strong>をクリックし、<strong>ストレージ</strong>をクリックします。</li>
 <li>プロファイルを追加するには、次の手順に従います:</li>
 <li><strong>+ プロファイルを追加</strong>をクリックします。</li>
-<li>プロファイルを選択し、<strong>保存</strong>をクリックします。</li>
+<li>プロファイルを選択し、<strong>ストレージ</strong>をクリックします。</li>
 </ol>
 <h3 id="グループを表示する">グループを表示する</h3>
 <p>アカウントのグループを表示するには、次の手順を使用します。</p>
@@ -464,14 +464,14 @@ var utag_data = {
 <li><strong>グループ</strong>タブをクリックします。</li>
 <li>グループを追加するには、次の手順に従います:</li>
 <li><strong>+ グループを追加</strong>をクリックします。</li>
-<li><strong>グループを追加</strong>画面で、1つ以上のグループを選択し、<strong>保存</strong>をクリックします。</li>
+<li><strong>グループを追加</strong>画面で、1つ以上のグループを選択し、<strong>ストレージ</strong>をクリックします。</li>
 <li>グループを削除するには、次の手順に従います:</li>
 <li>グループメニューをクリックし、<strong>削除</strong>をクリックします。</li>
-<li>確認ダイアログで<strong>削除</strong>をクリックし、<strong>保存</strong>をクリックします。</li>
-<li><strong>グループの詳細</strong>画面で、<strong>保存</strong>をクリックしてグループへの変更を保存します。</li>
+<li>確認ダイアログで<strong>削除</strong>をクリックし、<strong>ストレージ</strong>をクリックします。</li>
+<li><strong>グループの詳細</strong>画面で、<strong>ストレージ</strong>をクリックしてグループへの変更をストレージします。</li>
 </ol>
 <h2 id="ユーザーにアカウントの役割権限を割り当てる">ユーザーにアカウントの役割権限を割り当てる</h2>
-<p>アカウントの役割権限は既存のユーザーに追加することができます。新しいユーザーの追加方法については、<a href="">サーバーサイドのユーザー権限の管理について</a>を参照してください。</p>
+<p>アカウントの役割権限は既存のユーザーに追加することができます。新しいユーザーの追加方法については、<a href="/server-side/administration/user-permissions/about/">サーバーサイドのユーザー権限の管理について</a>を参照してください。</p>
 <p>アカウントの役割権限をユーザーに割り当てるには、次の手順を使用します。</p>
 <ol>
 <li>管理メニューで<strong>権限の管理</strong>をクリックします。</li>
@@ -487,7 +487,7 @@ var utag_data = {
          title="admin-roles-user-details.png"/>
     </a>
 </figure></li>
-<li>1つ以上の<strong>アカウントの役割権限</strong>を選択し、<strong>保存</strong>をクリックします。</li>
+<li>1つ以上の<strong>アカウントの役割権限</strong>を選択し、<strong>ストレージ</strong>をクリックします。</li>
 </ol>
 
 </div>
@@ -534,7 +534,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月22日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -700,6 +700,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -708,8 +724,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

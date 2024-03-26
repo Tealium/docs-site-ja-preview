@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -277,17 +309,17 @@ var utag_data = {
 <li>Tealium EventStream API HubまたはTealium AudienceStream CDPアカウント</li>
 </ul>
 <h2 id="仕組み">仕組み</h2>
-<p>Digiohは、Digiohのフォーム送信データをイベントとしてTealiumアカウントに送信する統合を提供しています。統合は1つ以上のボックスに割り当てられ、追加のメタデータフィールドを送信することができます。Digiohでは、これらのイベントの名前（<code>tealium_event</code>として送信）を設定し、Tealiumの属性名をDigiohのフォームフィールド名にマッピングします。</p>
+<p>Digiohは、Digiohのフォーム送信データをイベントとしてTealiumアカウントに送信する統合を提供しています。統合は1つ以上のボックスに割り当てられ、追加のメタデータフィールドを送信することができます。Digiohでは、これらのイベントの名前（<code>tealium_event</code>として送信）を構成し、Tealiumの属性名をDigiohのフォームフィールド名にマッピングします。</p>
 <p>Tealiumでは、HTTP APIデータソースと予想されるイベントのイベント仕様を作成します。</p>
-<h2 id="tealiumの設定">Tealiumの設定</h2>
-<p>Digiohからイベントを受信するためのアカウントの設定には2つの部分があります：データソースとイベント仕様です。DigiohでTealium統合を追加する前に、TealiumでHTTP APIデータソースのインスタンスを作成します。これにより、Digiohの設定で使用するデータソースキーが生成されます。</p>
+<h2 id="tealiumの構成">Tealiumの構成</h2>
+<p>Digiohからイベントを受信するためのアカウントの構成には2つの部分があります：データソースとイベント仕様です。DigiohでTealium統合を追加する前に、TealiumでHTTP APIデータソースのインスタンスを作成します。これにより、Digiohの構成で使用するデータソースキーが生成されます。</p>
 <h3 id="データソース">データソース</h3>
-<p>Digioh統合で使用するデータソースを追加するには、<strong>HTTP API</strong>データソースのインスタンスを追加します。完了したら、そのデータソースで生成されたデータソースキーをコピーし、Digiohの設定で静的フィールドマッピングに使用します。</p>
+<p>Digioh統合で使用するデータソースを追加するには、<strong>HTTP API</strong>データソースのインスタンスを追加します。完了したら、そのデータソースで生成されたデータソースキーをコピーし、Digiohの構成で静的フィールドマッピングに使用します。</p>
 <p><a href="/server-side/data-sources/about-data-sources/">データソースへの接続</a>について詳しく学びましょう。</p>
 <h3 id="イベント仕様">イベント仕様</h3>
-<p>Digiohのイベント名とその必須およびオプションの属性を定義するイベント仕様を作成します。イベント仕様の名前は、Digiohの設定で<strong>イベント</strong>パラメータに使用します。</p>
+<p>Digiohのイベント名とその必須およびオプションの属性を定義するイベント仕様を作成します。イベント仕様の名前は、Digiohの構成で<strong>イベント</strong>パラメータに使用します。</p>
 <p><a href="/server-side/event-specifications/about/">イベント仕様</a>について詳しく学びましょう。</p>
-<h2 id="digiohの設定">Digiohの設定</h2>
+<h2 id="digiohの構成">Digiohの構成</h2>
 <p>DigiohアカウントにTealium統合を追加するには、次の手順を実行します：</p>
 <ol>
 <li>
@@ -314,9 +346,9 @@ var utag_data = {
 <ol>
 <li><strong>フィールド名</strong>に<code>tealium_datasource</code>を入力します。</li>
 <li><strong>フィールド値</strong>で<strong>静的</strong>を選択し、Tealiumで作成したデータソースキーを入力します。</li>
-<li><strong>フィールドマッピングを保存</strong>をクリックします。</li>
+<li><strong>フィールドマッピングをストレージ</strong>をクリックします。</li>
 </ol>
-<p>Digiohでは、イベントに含める追加のフォームフィールドが許可されています。<strong>フィールドマッピング</strong>設定を使用して、Digiohのフィールドと対応するTealiumの属性名を選択します。例えば、<code>[PHONE]</code>を<code>customer_phone</code>にマッピングするかもしれません。</p>
+<p>Digiohでは、イベントに含める追加のフォームフィールドが許可されています。<strong>フィールドマッピング</strong>構成を使用して、Digiohのフィールドと対応するTealiumの属性名を選択します。例えば、<code>[PHONE]</code>を<code>customer_phone</code>にマッピングするかもしれません。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Digiohのフィールド<code>[EMAIL]</code>は自動的にTealiumの属性<code>email</code>にマッピングされますが、このマッピングを編集することができます。</p>
 <p>以下は標準フィールドのリストです：</p>
 <ul>
@@ -400,7 +432,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -416,10 +448,10 @@ var utag_data = {
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">前提条件</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium">Tealiumの設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium">Tealiumの構成</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データソース</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">イベント仕様</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#digioh">Digiohの設定</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#digioh">Digiohの構成</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">フィールドマッピング</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ベンダーのドキュメンテーション</a></li>
               </nav>
@@ -555,6 +587,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -563,8 +611,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -517,7 +517,7 @@ var utag_data = {
 <tr>
 <td><code>Unknown file prefix, unable to parse file</code></td>
 <td>指定されたプレフィックス（<code>name</code>）のファイルが見つかりませんでした。ファイルが存在しないか、プレフィックスに誤字がある可能性があります。</td>
-<td>ファイルを再アップロードし、<a href="/server-side/data-sources/file-import/configuration/">ファイルインポートサービスの設定</a>でファイルプレフィックスをダブルチェックしてください。エラーが解消しない場合は、Tealiumのアカウントマネージャに連絡してください。</td>
+<td>ファイルを再アップロードし、<a href="/server-side/data-sources/file-import/configuration/">ファイルインポートサービスの構成</a>でファイルプレフィックスをダブルチェックしてください。エラーが解消しない場合は、Tealiumのアカウントマネージャに連絡してください。</td>
 </tr>
 <tr>
 <td><code>DBObject of size {###} is over Max BSON size {###}</code></td>
@@ -526,17 +526,17 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>Failed to download (FTP, SFTP, S3) file</code></td>
-<td>サービス資格情報にエラーがあるため、ファイルをダウンロードできませんでした。<a href="/server-side/data-sources/file-import/configuration/">ファイルインポートサービスの設定</a>を参照してください。</td>
+<td>サービス資格情報にエラーがあるため、ファイルをダウンロードできませんでした。<a href="/server-side/data-sources/file-import/configuration/">ファイルインポートサービスの構成</a>を参照してください。</td>
 <td>FTP/SFTPの場合は、ホスト名、ユーザー名、パスワードをダブルチェックしてください。S3/Tealium S3の場合は、アクセス/シークレットキーとバケット/プレフィックスをダブルチェックしてください。</td>
 </tr>
 <tr>
 <td><code>Invalid connection type</code><br> – <strong>または</strong> – <br> <code>Could not find required (FTP, SFTP, S3) configuration parameters for definition</code></td>
-<td><a href="/server-side/data-sources/file-import/configuration/">ファイルインポートサービスの設定</a>のサービス資格情報が認証できませんでした</td>
+<td><a href="/server-side/data-sources/file-import/configuration/">ファイルインポートサービスの構成</a>のサービス資格情報が認証できませんでした</td>
 <td>FTP/SFTPの場合は、ホスト名、ユーザー名、パスワードをダブルチェックしてください。S3/Tealium S3の場合は、アクセス/シークレットキーとバケット/プレフィックスをダブルチェックしてください。</td>
 </tr>
 </tbody>
 </table>
-<h3 id="設定および定義エラー">設定および定義エラー</h3>
+<h3 id="構成および定義エラー">構成および定義エラー</h3>
 <p>次の表は、ファイルインポートの<a href="/server-side/data-sources/file-import/configuration/">列マッピング画面</a>での不正な列マッピングによるエラーを説明し、その意味と解決策を提供しています。</p>
 <table>
 <thead>
@@ -559,7 +559,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>Secondary visitor ID column= {column_name_here} does not exist in the file, unable to continue</code></td>
-<td>訪問者IDフィールドにマップされた列ヘッダーがファイルに存在しません。これは、誤字の可能性があるか、ヘッダーが定義されていないためです。</td>
+<td>訪問IDフィールドにマップされた列ヘッダーがファイルに存在しません。これは、誤字の可能性があるか、ヘッダーが定義されていないためです。</td>
 <td>提供された列ヘッダーがファイルの列ヘッダーと一致することを確認してください。</td>
 </tr>
 <tr>
@@ -635,7 +635,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月22日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -664,7 +664,7 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">エラーメッセージ</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#omnichannel">Omnichannelファイルエラー</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">処理およびダウンロードエラー</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定および定義エラー</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成および定義エラー</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">内部サーバーエラー</a></li>
               </nav>
   </aside></nav>
@@ -799,6 +799,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -807,8 +823,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

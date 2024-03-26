@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -179,7 +179,7 @@ var utag_data = {
 
   
   
-  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">MLを予測する</a>&nbsp;>&nbsp;</li>
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">Predict ML</a>&nbsp;>&nbsp;</li>
   
 
   
@@ -209,15 +209,15 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <h2 id="閾値の選択">閾値の選択</h2>
 <p>モデルがデプロイされ、予測を行っている後、一般的な次のステップは、予測を使用して1つ以上のオーディエンスを作成することです。Tealium AudienceStreamの出力属性の予測値は、定義された範囲（0 - 1）の10進数です。典型的なアプローチは、オーディエンスに含めたい予測範囲の部分を定義するために、1つ以上の閾値またはカットオフポイントを選択することです。</p>
-<p>例えば、モデルが次の3日間での購入可能性を予測している場合、最も購入可能性が高い訪問者だけのオーディエンスを作成したいかもしれません。これを達成するために、閾値を0.8と定義するルールを使用してオーディエンスを作成することができます。このシナリオでは、オーディエンスは0.8以上の値を持つ訪問者のみを含みます。</p>
+<p>例えば、モデルが次の3日間での購入可能性を予測している場合、最も購入可能性が高い訪問だけのオーディエンスを作成したいかもしれません。これを達成するために、閾値を0.8と定義するルールを使用してオーディエンスを作成することができます。このシナリオでは、オーディエンスは0.8以上の値を持つ訪問のみを含みます。</p>
 <p>すべてのオーディエンスに対して客観的に正しい閾値は存在せず、異なるオーディエンスは異なるビジネス目標を果たし、通常は異なるターゲット行動や異なるデータセットのモデル間で大きな変動があります。</p>
 <h2 id="感度と特異度">感度と特異度</h2>
 <p>最適な閾値を選択するためには、比較的高いまたは低い閾値を選択することの潜在的なトレードオフを考慮してください。例えば、精度が低い大規模なオーディエンスとなるか、精度が高い小規模なオーディエンスとなるかのトレードオフです。統計用語では、これは_感度_と_特異度_の間のトレードオフとして知られています。</p>
 <ul>
 <li><strong>感度</strong><br>
-感度は真陽性率を表し、モデルが購入する訪問者全員を正確に識別する能力を示します（モデルが予測している行動として購入を使用）。</li>
+感度は真陽性率を表し、モデルが購入する訪問全員を正確に識別する能力を示します（モデルが予測している行動として購入を使用）。</li>
 <li><strong>特異度</strong><br>
-特異度はモデルが偽の値をどの程度正確に識別するかを決定します。特異度は、モデルが各利用可能なカテゴリの真陰性を予測する能力を評価する指標です。真陰性率は、モデルが購入しない訪問者全員を正確に識別する能力を示します（モデルが予測している行動として購入を使用）。</li>
+特異度はモデルが偽の値をどの程度正確に識別するかを決定します。特異度は、モデルが各利用可能なカテゴリの真陰性を予測する能力を評価する指標です。真陰性率は、モデルが購入しない訪問全員を正確に識別する能力を示します（モデルが予測している行動として購入を使用）。</li>
 </ul>
 
 </div>
@@ -264,7 +264,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -413,6 +413,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -421,8 +437,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

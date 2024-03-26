@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -369,14 +369,14 @@ var utag_data = {
 <p>例えば、<code>https://example.com/?campaign_code=SUMMER</code>は次のようになります：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">deep_link_url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://example.com/?campaign_code=SUMMER&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">deep_link_param_campaign_code</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SUMMER&#34;</span>
-</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>ディープリンクのデータレイヤー属性はセッション中のみ保存されます。</p>
-<h2 id="設定">設定</h2>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>ディープリンクのデータレイヤー属性はセッション中のみストレージされます。</p>
+<h2 id="構成">構成</h2>
 <h3 id="android-kotlin">Android Kotlin</h3>
 <p>Tealium for Android (Kotlin)では、ディープリンクのトラッキングが自動的に有効化されています。</p>
-<p>ディープリンクの自動トラッキングを無効にするには、<a href="/platforms/android-kotlin/api/tealium-config/#deeplinktrackingenabled"><code>deepLinkTrackingEnabled</code></a>プロパティを<code>false</code>に設定します。</p>
+<p>ディープリンクの自動トラッキングを無効にするには、<a href="/platforms/android-kotlin/api/tealium-config/#deeplinktrackingenabled"><code>deepLinkTrackingEnabled</code></a>プロパティを<code>false</code>に構成します。</p>
 <h3 id="swift-v2x">Swift v2.x</h3>
 <p>Tealium for iOS (Swift v2.x)では、ディープリンクのトラッキングが自動的に有効化されています。</p>
-<p>ディープリンクの自動トラッキングを無効にするには、<code>info.plist</code>キー<code>TealiumAutotrackingDeepLinkEnabled</code>を<code>false</code>に設定します。</p>
+<p>ディープリンクの自動トラッキングを無効にするには、<code>info.plist</code>キー<code>TealiumAutotrackingDeepLinkEnabled</code>を<code>false</code>に構成します。</p>
 <h3 id="swift-v1x">Swift v1.x</h3>
 <p>Tealium for iOS (Swift v1.x)では、ディープリンクを有効にするためにアプリの<code>AppDelegate</code>クラスにコードを1行追加する必要があります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">application</span>(<span style="color:#66d9ef">_</span> app: UIApplication,
@@ -499,7 +499,7 @@ var utag_data = {
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">サポートされているプラットフォーム</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#android-kotlin">Android Kotlin</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#swift-v2x">Swift v2.x</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#swift-v1x">Swift v1.x</a></li>
@@ -637,6 +637,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -645,8 +661,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

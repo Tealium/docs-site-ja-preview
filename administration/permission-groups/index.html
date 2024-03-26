@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -167,7 +167,7 @@ var utag_data = {
          title="Products and Features exmaple"/>
     </a>
 </figure>
-<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>表示＆編集</strong>または<strong>表示、編集＆削除</strong>の権限を持つユーザーは、プロファイルへの変更を<strong>保存</strong>する権限も持っています。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>表示＆編集</strong>または<strong>表示、編集＆削除</strong>の権限を持つユーザーは、プロファイルへの変更を<strong>ストレージ</strong>する権限も持っています。</p>
 <p>インターフェースはユーザーの権限に基づいて変更されます：</p>
 <ul>
 <li>ユーザーが製品にアクセス権を持っていない場合、その製品はナビゲーションに表示されません。</li>
@@ -188,16 +188,16 @@ var utag_data = {
 <li>ビジター/ビジット属性</li>
 </ul>
 <h4 id="複数の製品の機能への権限">複数の製品の機能への権限</h4>
-<p>機能や製品に対してユーザーを<strong>アクセスなし</strong>に設定する際には注意が必要です。ユーザーの機能へのアクセスを無効にすると、そのユーザーはその機能やそれに依存する他の機能にアクセスできなくなります。例えば：</p>
+<p>機能や製品に対してユーザーを<strong>アクセスなし</strong>に構成する際には注意が必要です。ユーザーの機能へのアクセスを無効にすると、そのユーザーはその機能やそれに依存する他の機能にアクセスできなくなります。例えば：</p>
 <ul>
-<li>ユーザーをAudienceStreamの<strong>アクセスなし</strong>に設定すると、そのユーザーはAudienceStreamコネクタでアクションを起こすためのオーディエンスを選択することができません。</li>
-<li>ユーザーをサーバーサイドのラベルの<strong>アクセスなし</strong>に設定すると、ユーザーはサーバーサイドでラベルを見ることができません。彼らはまだラベルが付いているコネクタや他の要素にアクセスすることができますが、ラベル自体を見たり編集したりすることはできません。</li>
+<li>ユーザーをAudienceStreamの<strong>アクセスなし</strong>に構成すると、そのユーザーはAudienceStreamコネクタでアクションを起こすためのオーディエンスを選択することができません。</li>
+<li>ユーザーをサーバーサイドのラベルの<strong>アクセスなし</strong>に構成すると、ユーザーはサーバーサイドでラベルを見ることができません。彼らはまだラベルが付いているコネクタや他の要素にアクセスすることができますが、ラベル自体を見たり編集したりすることはできません。</li>
 </ul>
 <h3 id="公開権限">公開権限</h3>
 <p>権限グループは、クライアントサイドとサーバーサイドの公開権限も管理します。</p>
 <ul>
-<li>クライアントサイドでは、<strong>Dev/Customへの公開</strong>、<strong>QAへの公開</strong>、<strong>Prodへの公開</strong>の機能権限で公開権を設定します。</li>
-<li>サーバーサイドでは、権限グループの<strong>グループ権限</strong>タブで公開権を設定します。</li>
+<li>クライアントサイドでは、<strong>Dev/Customへの公開</strong>、<strong>QAへの公開</strong>、<strong>Prodへの公開</strong>の機能権限で公開権を構成します。</li>
+<li>サーバーサイドでは、権限グループの<strong>グループ権限</strong>タブで公開権を構成します。</li>
 </ul>
 <p>権限グループは、アクセスを許可したプロファイルに対して公開権を持っています。</p>
 <p>覚えておいてください、権限グループには、サーバーサイドのプロファイルの公開権も付与することができます。サーバーサイドの公開権を持つ権限グループのメンバーは、すべてのサーバーサイドの製品と機能に対して完全なアクセス権を持っています。</p>
@@ -221,25 +221,25 @@ var utag_data = {
 </ul>
 <h3 id="権限グループの作成">権限グループの作成</h3>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>権限グループを作成または編集するには、アカウント管理者またはユーザー管理者の役割が必要です。プロファイルに権限グループを追加するには、アカウント管理者またはプロファイル管理者の役割が必要です。</p>
-<p>権限グループを作成し、各製品機能のアクセスレベルを設定し、ユーザーをアカウントと権限グループに招待するには：</p>
+<p>権限グループを作成し、各製品機能のアクセスレベルを構成し、ユーザーをアカウントと権限グループに招待するには：</p>
 <ol>
 <li>管理メニューから、<strong>権限の管理</strong>をクリックします。<strong>権限の管理</strong>画面が表示されます。</li>
 <li><strong>+ 新規グループ</strong>をクリックします。<strong>新規権限グループ</strong>のスライドアウトが表示されます。</li>
 <li><strong>名前</strong>ボックスに、権限グループの名前を入力します。</li>
 <li>権限グループが最初に何を含むかを選択します：
 <ul>
-<li><strong>空のグループ</strong> - 既存の設定なしで権限グループを開始します。</li>
+<li><strong>空のグループ</strong> - 既存の構成なしで権限グループを開始します。</li>
 <li><strong>既存のグループを複製</strong> - 選択した権限グループと同じ権限、プロファイル、ユーザーを持つ新しい権限グループを開始します。</li>
 </ul>
 </li>
-<li><strong>次へ</strong>をクリックします。<strong>アカウント権限の設定</strong>のスライドアウトが表示されます。</li>
+<li><strong>次へ</strong>をクリックします。<strong>アカウント権限の構成</strong>のスライドアウトが表示されます。</li>
 <li>グループにプロファイルの変更を公開する権限を付与したい場合は、<strong>サーバーサイド</strong>の下で<strong>公開</strong>を選択します。サーバーサイドの公開権限には、すべてのサーバーサイドの製品と機能への完全なアクセスが含まれていることを覚えておいてください。</li>
 <li>権限グループがアクセスする製品を選択します。</li>
 <li><strong>次へ</strong>をクリックします。<strong>機能権限</strong>のスライドアウトが表示されます。</li>
 <li><strong>機能権限</strong>の下で、各製品機能のアクセスレベルを選択します。
 <ul>
 <li>一部の機能は複数の製品に表示されます。例えば、コネクタへのアクセスなどです。機能のアクセスレベルは、それがどの製品に表示されているかに関係なく、その機能に適用されます。</li>
-<li>製品機能の<strong>編集</strong>アクセスには、プロファイルへの変更の保存機能が含まれます。</li>
+<li>製品機能の<strong>編集</strong>アクセスには、プロファイルへの変更のストレージ機能が含まれます。</li>
 </ul>
 </li>
 <li><strong>次へ</strong>をクリックします。<strong>プロファイル</strong>のスライドアウトが表示されます。</li>
@@ -261,9 +261,9 @@ var utag_data = {
 <li>編集したい権限グループをクリックします。権限グループの詳細が表示されます。</li>
 <li>編集したい情報を選択します：
 <ul>
-<li><strong>グループの権限</strong>：製品機能の権限グループのアクセスレベルを設定します。</li>
+<li><strong>グループの権限</strong>：製品機能の権限グループのアクセスレベルを構成します。</li>
 <li><strong>ユーザー</strong>：権限グループからユーザーを追加または削除します。</li>
-<li><strong>プロファイル</strong>：権限グループからプロファイルを追加または削除し、そのプロファイルの権限グループのアクセスレベルを設定します。</li>
+<li><strong>プロファイル</strong>：権限グループからプロファイルを追加または削除し、そのプロファイルの権限グループのアクセスレベルを構成します。</li>
 </ul>
 </li>
 </ol>
@@ -337,7 +337,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -493,6 +493,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -501,8 +517,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

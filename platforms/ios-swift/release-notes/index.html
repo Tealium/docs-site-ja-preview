@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -363,7 +363,7 @@ var utag_data = {
 <h2 id="21002023年5月">2.10.0（2023年5月）</h2>
 <p><strong>低影響の変更</strong></p>
 <ul>
-<li>Tealiumインスタンスで<code>getTagManagementWebView</code>メソッドを追加し、クライアントが<code>isInspectable</code>フラグを設定し、XCode 14.3+でデバッグできるようにしました。</li>
+<li>Tealiumインスタンスで<code>getTagManagementWebView</code>メソッドを追加し、クライアントが<code>isInspectable</code>フラグを構成し、XCode 14.3+でデバッグできるようにしました。</li>
 <li><code>TealiumConfig</code>オブジェクト内の<code>WKWebViewConfiguration</code>を比較する際に発生する可能性のあるクラッシュを修正しました。</li>
 <li>いくつかの内部ファイルが意図せずにバックアップされ、異なるデバイスで再利用される可能性のあるエッジケースを修正しました。</li>
 </ul>
@@ -371,12 +371,12 @@ var utag_data = {
 <p><strong>低影響の変更</strong></p>
 <ul>
 <li>大容量のデータレイヤーの場合の起動パフォーマンスを改善しました。</li>
-<li>一部の内部モジュールでパブリッシュ設定が正しく更新されないバグを修正しました。</li>
+<li>一部の内部モジュールでパブリッシュ構成が正しく更新されないバグを修正しました。</li>
 </ul>
 <h2 id="2912023年2月">2.9.1（2023年2月）</h2>
 <p><strong>低影響の変更</strong></p>
 <ul>
-<li>JSONリモートコマンドの複合キーのオーバーライドを導入し、デフォルトの区切り文字（<code>,</code>と<code>:</code>）を新しい設定キー（<code>keys_separation_delimiter</code>と<code>keys_equality_delimiter</code>）で置き換えるためのオーバーライドを追加しました。</li>
+<li>JSONリモートコマンドの複合キーのオーバーライドを導入し、デフォルトの区切り文字（<code>,</code>と<code>:</code>）を新しい構成キー（<code>keys_separation_delimiter</code>と<code>keys_equality_delimiter</code>）で置き換えるためのオーバーライドを追加しました。</li>
 <li>ライブラリを更新する際にTealium内部ファイルがリセットされる可能性のあるバグを修正しました。</li>
 </ul>
 <h2 id="2902023年1月">2.9.0（2023年1月）</h2>
@@ -403,11 +403,11 @@ var utag_data = {
 <p><strong>低影響の変更</strong></p>
 <ul>
 <li>タグ管理モジュールのコードとスレッドセキュリティを改善しました。</li>
-<li>VisitorServiceの<a href="/platforms/ios-swift/module-list/visitor-service/#requestvisitorprofile"><code>requestVisitorProfile</code></a>は、<code>visitorServiceRefresh</code>設定キーで設定されたタイムアウトをスキップするようになりました。</li>
+<li>VisitorServiceの<a href="/platforms/ios-swift/module-list/visitor-service/#requestvisitorprofile"><code>requestVisitorProfile</code></a>は、<code>visitorServiceRefresh</code>構成キーで構成されたタイムアウトをスキップするようになりました。</li>
 <li><code>Tealium</code>クラスの<a href="/platforms/ios-swift/api/tealium/#onvisitorid"><code>onVisitorId</code></a>の変更を通知するためのオブザーバブルを追加し、<code>resetVisitorId</code>が呼び出された場合や自動的に新しいビジターに切り替わった場合に新しいIDを通知します。</li>
-<li>新しいビジタースイッチングAPIのための<a href="/platforms/ios-swift/api/tealium-config/#visitoridentitykey"><code>visitorIdentityKey</code></a>設定キーを追加しました。</li>
+<li>新しいビジタースイッチングAPIのための<a href="/platforms/ios-swift/api/tealium-config/#visitoridentitykey"><code>visitorIdentityKey</code></a>構成キーを追加しました。</li>
 <li><code>app_uuid</code>ストレージをデータレイヤーに移行し、必要に応じてアプリケーションが削除できるようにしました。</li>
-<li><code>Tealium</code>クラスに<a href="/platforms/ios-swift/api/tealium/#clearstoredvisitorids"><code>clearStoredVisitorIds</code></a>メソッドを追加し、現在のおよび以前のIDのすべての保存されたビジターIDを削除し、現在の<code>visitorId</code>をリセットします。</li>
+<li><code>Tealium</code>クラスに<a href="/platforms/ios-swift/api/tealium/#clearstoredvisitorids"><code>clearStoredVisitorIds</code></a>メソッドを追加し、現在のおよび以前のIDのすべてのストレージされたビジターIDを削除し、現在の<code>visitorId</code>をリセットします。</li>
 <li><code>AdobeVisitorService</code>モジュールの<a href="/platforms/ios-swift/api/tealium/#decorateurl"><code>decorateUrl</code></a>メソッドを追加し、URLにAdobeクエリパラメータを追加します。</li>
 </ul>
 <p><strong>新機能</strong></p>
@@ -427,7 +427,7 @@ var utag_data = {
 </ul>
 <p><strong>新機能</strong></p>
 <ul>
-<li>カスタムサーバーサイドの同意のカスタム強制をサポートするために、<a href="/platforms/ios-swift/api/tealium-config/#overrideconsentcategorieskey"><code>overrideConsentCategoriesKey</code></a>設定オプションを追加しました。</li>
+<li>カスタムサーバーサイドの同意のカスタム強制をサポートするために、<a href="/platforms/ios-swift/api/tealium-config/#overrideconsentcategorieskey"><code>overrideConsentCategoriesKey</code></a>構成オプションを追加しました。</li>
 </ul>
 <h2 id="2652022年5月">2.6.5（2022年5月）</h2>
 <p><strong>低影響の変更</strong></p>
@@ -437,8 +437,8 @@ var utag_data = {
 <h2 id="2642022年5月">2.6.4（2022年5月）</h2>
 <p><strong>低影響の変更</strong></p>
 <ul>
-<li>ビジタープロファイルの<code>visitorId</code>の保存と更新のロジックを改善しました。</li>
-<li>アプリがバックグラウンドで実行されている場合に位置情報の更新を有効にするための設定フラグ<a href="/platforms/ios-swift/api/tealium-config/#enablebackgroundlocation"><code>enableBackgroundLocation</code></a>を追加しました。</li>
+<li>ビジタープロファイルの<code>visitorId</code>のストレージと更新のロジックを改善しました。</li>
+<li>アプリがバックグラウンドで実行されている場合に位置情報の更新を有効にするための構成フラグ<a href="/platforms/ios-swift/api/tealium-config/#enablebackgroundlocation"><code>enableBackgroundLocation</code></a>を追加しました。</li>
 <li>キューに追加されたトラッキングイベントの有効期限として-1を受け入れるように<a href="/platforms/ios-swift/api/tealium-config/#dispatchexpiration"><code>dispatchExpiration</code></a>ロジックを修正しました。</li>
 <li>ビルドエラーを解決するために、ビルド済みフレームワークでのCatalystのサポートを削除しました。</li>
 <li>リモートコマンドの名前とバージョンのトラッキングを修正しました。</li>
@@ -446,7 +446,7 @@ var utag_data = {
 <h2 id="2632022年3月">2.6.3（2022年3月）</h2>
 <p><strong>低影響の変更</strong></p>
 <ul>
-<li>パブリッシュ設定が複数回取得される可能性のあるバグを修正しました。</li>
+<li>パブリッシュ構成が複数回取得される可能性のあるバグを修正しました。</li>
 <li><code>untilRestart</code>の有効期限を持つ<code>dataLayer</code>変数が削除されないバグを修正しました。</li>
 <li>次のLocationモジュールは、それぞれのゲッターに置き換えられました：
 <ul>
@@ -504,7 +504,7 @@ var utag_data = {
 </ul>
 <p><strong>低影響の変更</strong></p>
 <ul>
-<li>設定内の<code>visitorServiceDelegate</code>と<code>webViewDelegates</code>を弱参照に変更し、メモリリークの可能性を回避しました。</li>
+<li>構成内の<code>visitorServiceDelegate</code>と<code>webViewDelegates</code>を弱参照に変更し、メモリリークの可能性を回避しました。</li>
 <li>同じ<code>commandId</code>を持つ2つのリモートコマンドが衝突する可能性を回避するためのチェックを追加しました。</li>
 <li>ディープリンクが自動的に検出され、リファラが存在する場合、または<code>Tealium.handleDeepLink(_:referrer:)</code>に渡された場合に追加される新しいキー<code>deep_link_referrer_app</code>と<code>deep_link_referrer_url</code>を追加しました。</li>
 <li>ディープリンクのクエリパラメータの処理を改善し、同じセッション中に複数のディープリンクを受け取った場合に古いクエリパラメータを削除するようにしました。</li>
@@ -521,7 +521,7 @@ var utag_data = {
 <li><code>device_logical_resolution</code>をデータレイヤーに追加しました。</li>
 <li>Tealium管理のジオフェンスとアプリケーションのジオフェンスの競合を回避しました。</li>
 <li>Tealiumの初期化が完了する前にDeepLinkを処理できるようにしました。</li>
-<li>設定の<code>loggerType</code>を変更しても、カスタムロガーの正しいロガーインスタンスに反映されないバグを修正しました。</li>
+<li>構成の<code>loggerType</code>を変更しても、カスタムロガーの正しいロガーインスタンスに反映されないバグを修正しました。</li>
 <li>データレイヤーに渡される<a href="https://developer.apple.com/documentation/foundation/date"><code>Date</code></a>オブジェクトは、<code>ISO8601</code>形式の文字列に変換されます。</li>
 </ul>
 <h2 id="2432021年9月">2.4.3（2021年9月）</h2>
@@ -563,7 +563,7 @@ var utag_data = {
 <h2 id="2312021年5月">2.3.1（2021年5月）</h2>
 <p><strong>低影響の変更</strong></p>
 <ul>
-<li>カスタムエンドポイントを設定するオプションを追加し、Collectモジュールで使用するための<code>WKProcessPool</code>インスタンスを設定できるようにしました。</li>
+<li>カスタムエンドポイントを構成するオプションを追加し、Collectモジュールで使用するための<code>WKProcessPool</code>インスタンスを構成できるようにしました。</li>
 <li><code>call_type</code>の値を小文字に変更して、モバイルセッションタイマーを修正しました。以前は、セッションはWebと同様に測定されていました（一貫したアクティビティの30分）。<code>platform</code>変数の小文字化により、Customer Data Hubは受信データをモバイルセッションとして認識し、セッションの長さが2分に短縮されます。</li>
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>大文字と小文字を区別する<code>platform</code>の値をチェックしているロードルールがある場合は、ロードルールを更新して<code>ios</code>ではなく<code>iOS</code>をチェックするようにしてください。</p>
@@ -628,7 +628,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -799,6 +799,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -807,8 +823,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -265,7 +297,7 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      この記事では、Tealium iQタグ管理アカウントにObservePointタグを設定し、TealiumのオーディエンスとバッジをObservePointに送信するように設定することで、TealiumとObservePointを最大限に活用する方法について説明します。
+      この記事では、Tealium iQタグ管理アカウントにObservePointタグを構成し、TealiumのオーディエンスとバッジをObservePointに送信するように構成することで、TealiumとObservePointを最大限に活用する方法について説明します。
     </p>
   
 </div>
@@ -291,7 +323,7 @@ var utag_data = {
 <ul>
 <li>データ収集から始めて、Tealium iQタグ管理を使用して、標準化されたベンダー非依存のデータレイヤーを使用して、他の統合システムと並行してObservePointのデプロイメントと関連データを管理できます。</li>
 <li>Tealium Customer Data Platform (CDP)は、このデータ収集インフラストラクチャをデータソースとして使用して、包括的な顧客プロファイルを作成します。</li>
-<li>これらの顧客プロファイルは、ビジネスルールで設定され、統合ベンダーとのアクションをトリガーします。</li>
+<li>これらの顧客プロファイルは、ビジネスルールで構成され、統合ベンダーとのアクションをトリガーします。</li>
 </ul>
 <p>ObservePointのWebAssuranceとAppAssurance製品を使用すると、データ収集技術を大規模にテストし、検証して、データの正確性を確保できます。</p>
 <ul>
@@ -300,15 +332,15 @@ var utag_data = {
 <li>Strala technologiesの取得により - Touchpoints、JourneyStream、Prism - ObservePointはさらに、データを事前に標準化し、オンラインとオフラインの顧客タッチポイントを収集し統一し、成長とROIの向上を促進する正確で実行可能な洞察を生成するのに役立ちます。</li>
 </ul>
 <p>詳細については、<a href="https://tealium.com/technology-partner/observepoint/%20">Tealium + ObservePointパートナーシップ概要</a>をご覧ください。</p>
-<h2 id="統合設定">統合設定</h2>
-<p>以下のセクションには、成功した実装のための特定のTealium + ObservePoint設定手順についての追加情報が含まれています。</p>
+<h2 id="統合構成">統合構成</h2>
+<p>以下のセクションには、成功した実装のための特定のTealium + ObservePoint構成手順についての追加情報が含まれています。</p>
 <h3 id="tealiumのテストにリモートファイルマッピングを使用する">Tealiumのテストにリモートファイルマッピングを使用する</h3>
 <p>ObservePoint Remote File Mappingを使用すると、大規模なテストを簡単に実行できます。リモートファイルマッピングを使用すると、タグ管理の変更を本番環境に公開した場合にデータ品質がどのように影響を受けるかを確認できます。これは、Tealium（または他のタグマネージャー）の実装に変更を加え、本番環境に公開することをためらっている場合に便利です。</p>
 <p>詳細については、<a href="https://observepoint.helpscoutdocs.com/article/335-using-remote-file-mapping-to-test-tealium">Tealiumのテストにリモートファイルマッピングを使用する</a>をご覧ください。</p>
 <h3 id="tealiumデータオブジェクトの確認">Tealiumデータオブジェクトの確認</h3>
 <p>Tealiumとの統合により、相互の顧客は、utag.linkおよびutag.click関数内のデータオブジェクト（またはbオブジェクト）を確認できます。例えば、e-commerceのAdd to Basketインタラクションで&rsquo;size&rsquo;オプションを正しく送信していることをテストしたい場合などです。</p>
 <ul>
-<li>Tealium ObservePointタグの設定について学ぶには、<a href="/client-side-tags/observepoint-data-layer-validator-tag/">ObservePoint Data Layer Validator Tag Setup Guide</a>をご覧ください。</li>
+<li>Tealium ObservePointタグの構成について学ぶには、<a href="/client-side-tags/observepoint-data-layer-validator-tag/">ObservePoint Data Layer Validator Tag Setup Guide</a>をご覧ください。</li>
 <li>ObservePointで結果を見つける方法について詳しく学ぶには、<a href="https://observepoint.helpscoutdocs.com/article/338-checking-tealium-data-objects">Tealium Data Objectsの確認</a>をご覧ください。</li>
 </ul>
 <h2 id="tealium-observepointトリガー">Tealium ObservePointトリガー</h2>
@@ -375,7 +407,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -391,7 +423,7 @@ var utag_data = {
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">前提条件</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">統合設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">統合構成</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium">Tealiumのテストにリモートファイルマッピングを使用する</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium">Tealiumデータオブジェクトの確認</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium-observepoint">Tealium ObservePointトリガー</a></li>
@@ -528,6 +560,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -536,8 +584,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

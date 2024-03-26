@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -363,10 +363,10 @@ var utag_data = {
 <li><a href="/platforms/ios-swift/">iOS (Swift v2.x)</a></li>
 </ul>
 <h2 id="仕組み">仕組み</h2>
-<p>タイムドイベントは、イベントの持続時間や2つのイベント間の時間を測定し、自動または手動のトリガーで設定します。タイムドイベントが完了すると、タイムドイベントの名前とタイミングの詳細を持つ<code>timed_event</code>という名前のイベントをTealium EventStreamに送信します。</p>
+<p>タイムドイベントは、イベントの持続時間や2つのイベント間の時間を測定し、自動または手動のトリガーで構成します。タイムドイベントが完了すると、タイムドイベントの名前とタイミングの詳細を持つ<code>timed_event</code>という名前のイベントをTealium EventStreamに送信します。</p>
 <p>すでにアプリで追跡されているTealiumイベント間の持続時間を測定するために自動トリガーを使用します。指定した開始イベントが発生すると自動的にタイムドイベントがトリガーされ、指定した停止イベントが発生すると停止します。</p>
 <p>Tealiumで追跡されていないイベントや、複雑なイベントのシーケンスを含むイベント間の持続時間を測定するために手動トリガーを使用します。タイムドイベントは、カスタムロジックに基づいてアプリコードでタイムドイベントを開始および停止することで手動でトリガーされます。</p>
-<p>各タイムドイベントには、イベント属性<code>timed_event_name</code>に設定された名前があります。タイムドイベントが終了した後にイベント名を再利用することは可能ですが、同時に複数のタイムドイベントが同じ名前を使用することはできません。</p>
+<p>各タイムドイベントには、イベント属性<code>timed_event_name</code>に構成された名前があります。タイムドイベントが終了した後にイベント名を再利用することは可能ですが、同時に複数のタイムドイベントが同じ名前を使用することはできません。</p>
 <p>タイムドイベントは永続的ではなく、イベントが終了する前にアプリが終了すると破棄されます。</p>
 <p>タイムドイベントの使用方法を学びましょう：</p>
 <ul>
@@ -374,13 +374,13 @@ var utag_data = {
 <li><a href="/platforms/ios-swift/track/#timed-events">iOS (Swift v2.x)</a></li>
 </ul>
 <h3 id="自動トリガー">自動トリガー</h3>
-<p>自動トリガーでタイムドイベントを追跡するには、開始と停止のTealiumイベント名を指定します。これらのイベントはすでにアプリで追跡されている必要があります。自動タイムドイベントの名前は、開始と停止のイベント名を二つのコロン(<code>::</code>)で結合して生成されます。例えば、<code>cart_add</code>イベントと<code>purchase</code>イベントの間の持続時間を追跡するために自動トリガーを設定すると、イベント属性<code>timed_event_name</code>は<code>cart_add::purchase</code>に設定されます。</p>
+<p>自動トリガーでタイムドイベントを追跡するには、開始と停止のTealiumイベント名を指定します。これらのイベントはすでにアプリで追跡されている必要があります。自動タイムドイベントの名前は、開始と停止のイベント名を二つのコロン(<code>::</code>)で結合して生成されます。例えば、<code>cart_add</code>イベントと<code>purchase</code>イベントの間の持続時間を追跡するために自動トリガーを構成すると、イベント属性<code>timed_event_name</code>は<code>cart_add::purchase</code>に構成されます。</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(<span style="color:#960050;background-color:#1e0010">…</span>).apply {
-</span></span><span style="display:flex;"><span>   timedEventTriggers = mutableListOf(EventTrigger.forEventName(
+</span></span><span style="display:flex;"><span>   timedEventTriggers = mutableListOf(<span style="color:#a6e22e">EventTrigger</span>.forEventName(
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;cart_add&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;purchase&#34;</span>))
 </span></span><span style="display:flex;"><span>}
@@ -405,7 +405,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;timed_event_duration&#34;</span>: <span style="color:#e6db74">&#34;1102&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="手動トリガー">手動トリガー</h3>
-<p>手動トリガーでタイムドイベントを追跡するには、タイムドイベントの名前を指定し、アプリコードでタイムドイベントを手動で開始および停止します。例えば、ユーザーが製品を閲覧する時間を手動で追跡するには、製品画面がロードされたときにタイムドイベントを開始し、ユーザーが製品画面を離れたときにタイムドイベントを停止します。タイムドイベントに使用する名前は、イベント属性<code>timed_event_name</code>の値に設定されます。</p>
+<p>手動トリガーでタイムドイベントを追跡するには、タイムドイベントの名前を指定し、アプリコードでタイムドイベントを手動で開始および停止します。例えば、ユーザーが製品を閲覧する時間を手動で追跡するには、製品画面がロードされたときにタイムドイベントを開始し、ユーザーが製品画面を離れたときにタイムドイベントを停止します。タイムドイベントに使用する名前は、イベント属性<code>timed_event_name</code>の値に構成されます。</p>
 <p>手動でタイムドイベントを開始する：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.startTimedEvent(name: <span style="color:#e6db74">&#34;TimeSpentViewingProduct&#34;</span>)
 </span></span></code></pre></div><p>手動でタイムドイベントを停止する：</p>
@@ -524,7 +524,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -676,6 +676,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -684,8 +700,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

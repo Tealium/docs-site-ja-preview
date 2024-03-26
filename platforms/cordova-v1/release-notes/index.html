@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -378,7 +378,7 @@ var utag_data = {
 </span></span></code></pre></div><h2 id="110">1.1.0</h2>
 <p>1.1.0リリースでは、一部のAPIの動作が変更されました。アップグレード後に以下の項目をテストしてください：</p>
 <ul>
-<li>以前に<code>addVolatile</code>および<code>addPersistent</code>メソッドを使用していた場合、前述の指定されたデータタイプのみを保存していることを確認してください。</li>
+<li>以前に<code>addVolatile</code>および<code>addPersistent</code>メソッドを使用していた場合、前述の指定されたデータタイプのみをストレージしていることを確認してください。</li>
 <li>iOSのパフォーマンスを向上させるために、プラグインは初期化メソッドを除いて、ほとんどのコードをバックグラウンドスレッドで実行するようになりました。問題はGitHubの問題ページで報告してください。</li>
 <li>すべてのライフサイクルイベントで以前に送信されていた変数<code>cordova_lifecycle</code>は、現在削除されています。この変数がまだ必要な場合は、Tealium iQのSet Data Values拡張機能を使用して、ルール<code>if lifecycle_type is populated</code>を作成し、その変数をすべてのライフサイクルイベントに追加して再度作成します。</li>
 <li>iOSでは、ライフサイクルのスリープイベントは、ユーザーがアプリをバックグラウンドに置くか、アプリを完全に閉じ始めるとすぐに追跡されるようになりました。これは、ユーザーがホームボタンを2回押してアプリが実行中のタスクスイッチャーを表示すると、スリープイベントが生成されることを意味します。ユーザーがアクションをキャンセルしてアプリに戻ると、対応するウェイクイベントが生成されます。以前は、スリープイベントはユーザーがアプリをバックグラウンドに完全に移動させた後（ホームボタンを1回押すか、別のアプリに切り替える）にのみ作成されました。この動作はAndroidの既存の動作と一致します。ただし、これにより分析ツールに記録されるスリープイベントの数が増える可能性がありますが、数値は技術的により正確です。</li>
@@ -428,7 +428,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -581,6 +581,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -589,8 +605,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

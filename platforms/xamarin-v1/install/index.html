@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -396,7 +396,7 @@ var utag_data = {
 <li><code>Tealium.Platform.Lifecycle.Droid.dll</code></li>
 </ul>
 <h2 id="インストール">インストール</h2>
-<p>Xamarin向けTealiumライブラリをインストールするには、まず、プロジェクトが適切なライブラリを参照していることを確認します。追加設定が不要で、スレッドセーフなTealiumインスタンスの管理に対応した、<code>TealiumInstanceManager</code>クラスを使用することをお勧めします。</p>
+<p>Xamarin向けTealiumライブラリをインストールするには、まず、プロジェクトが適切なライブラリを参照していることを確認します。追加構成が不要で、スレッドセーフなTealiumインスタンスの管理に対応した、<code>TealiumInstanceManager</code>クラスを使用することをお勧めします。</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -476,7 +476,7 @@ var utag_data = {
 <p><code>TealiumConfig</code>クラスにはオーバーロードされたコンストラクタがあり、そこでオプションのパラメータを指定することによって、Tealium Mobile SDKのより高度な機能の有効と無効を切り替えられるようになっています。すべてのお客様がこれらの機能を必要とするわけではないため、これらのパラメータは任意となっています。</p>
 <h3 id="リモートコマンド">リモートコマンド</h3>
 <p>モバイル内のイベントの大部分は、データ収集サーバーに送信されてコネクタで処理されるか、タグ管理ウェブ ビューで処理されてベンダ ータグをトリガーします。リモート コマンドは、 <code>IRemoteCommand</code> インターフェイスを通じてネイティブコードをトリガーする追加の柔軟性を提供します。</p>
-<p>以下のサンプルコードでは、コマンドID（<code>TealiumConsts.REMOTE_COMMAND_ID</code>に設定）を出力しています。この例を使用することで、このセットアップに必要な関連TagBridge Custom Commandタグで構成されているとおり、データの完全なペイロードにアクセスすることもできます。</p>
+<p>以下のサンプルコードでは、コマンドID（<code>TealiumConsts.REMOTE_COMMAND_ID</code>に構成）を出力しています。この例を使用することで、このセットアップに必要な関連TagBridge Custom Commandタグで構成されているとおり、データの完全なペイロードにアクセスすることもできます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> List&lt;IRemoteCommand&gt; SetupRemoteCommands()
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> command = <span style="color:#66d9ef">new</span> DelegateRemoteCommand(TealiumConsts.REMOTE_COMMAND_ID, <span style="color:#e6db74">&#34;Test command &#34;</span> + TealiumConsts.REMOTE_COMMAND_ID) {
@@ -516,7 +516,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>SettingsPublishedDelegateEventListener()</code></td>
-<td>取得した一連の公開設定に更新があったときに呼び出されます</td>
+<td>取得した一連の公開構成に更新があったときに呼び出されます</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +613,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2022年August月29日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -769,6 +769,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -777,8 +793,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

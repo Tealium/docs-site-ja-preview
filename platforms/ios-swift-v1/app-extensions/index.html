@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -364,15 +364,15 @@ var utag_data = {
 <p>すでにTealiumがインストールされているiOSプロジェクトにwatchOSターゲットを追加する場合は、必要なモジュール、<code>TealiumHelper</code>をWatch Extensionターゲットに追加し、必要なトラッキングコールを行います。Tag Managementモジュールは<code>WKWebView</code>への依存性のため、watchOSではサポートされていません。CollectモジュールはwatchOSでのデータ収集の唯一のサポートされている方法です。</p>
 <p>あるいは、<code>WatchConnectivty</code>フレームワークの<code>WCSession</code> APIを使用して、トラッキングコールを送信するたびにホストiOSアプリにメッセージを送信することもできます。これにより、Tag Managementモジュールを使用している場合にイベントを追跡することができますが、独立したwatchOSアプリではオプションになりません。</p>
 <h2 id="アプリ拡張のvisitor-id">アプリ拡張のVisitor ID</h2>
-<p>アプリ拡張は、ホストiOSアプリ（利用可能な場合）とは共有されない独自のサンドボックス化されたデータストレージを持っています。そのため、デフォルトでは、アプリが初めて起動されたときに新しい永続的な訪問者IDが生成されます。</p>
-<p>iOSアプリ、Todayウィジェット、watchOS拡張があるときに、同じ訪問者に対して3つの異なる訪問者IDが生成される問題が発生します。これは、訪問者のステッチングを使用しており、アプリユーザーの既知の訪問者IDがすでにある場合には問題ではありません。アプリとその拡張機能間で訪問者IDを同期させることでこの状況を避けます。これは、Tealiumを初期化するときにアプリ拡張の<code>TealiumConfig</code>オブジェクトに現在のTealiumの第一者訪問者IDを渡すことで行われます。IDは保存され、アプリの将来の起動時に再生成されることなく使用されます。</p>
+<p>アプリ拡張は、ホストiOSアプリ（利用可能な場合）とは共有されない独自のサンドボックス化されたデータストレージを持っています。そのため、デフォルトでは、アプリが初めて起動されたときに新しい永続的な訪問IDが生成されます。</p>
+<p>iOSアプリ、Todayウィジェット、watchOS拡張があるときに、同じ訪問に対して3つの異なる訪問IDが生成される問題が発生します。これは、訪問のスティッチングを使用しており、アプリユーザーの既知の訪問IDがすでにある場合には問題ではありません。アプリとその拡張機能間で訪問IDを同期させることでこの状況を避けます。これは、Tealiumを初期化するときにアプリ拡張の<code>TealiumConfig</code>オブジェクトに現在のTealiumの第一者訪問IDを渡すことで行われます。IDはストレージされ、アプリの将来の起動時に再生成されることなく使用されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TealiumHelper</span> {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> tealium: Tealium?
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ...</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// iOSアプリのTealium Swiftライブラリから現在の訪問者IDを返す</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// iOSアプリのTealium Swiftライブラリから現在の訪問IDを返す</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">getVisitorId</span>() -&gt; String? {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">self</span>.tealium.visitorId
 </span></span><span style="display:flex;"><span>	}
@@ -390,8 +390,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>あるいは、訪問者IDを中央で生成し、初期化時にそれぞれのTealiumインスタンスに渡します。UUIDの使用を推奨します。</p>
-<p class="tip"><i class="fa fa-info-circle"></i>あなたの第一者訪問者IDとして、単純なID（例えばメールアドレス）を使用しないでください。</p>
+</span></span></code></pre></div><p>あるいは、訪問IDを中央で生成し、初期化時にそれぞれのTealiumインスタンスに渡します。UUIDの使用を推奨します。</p>
+<p class="tip"><i class="fa fa-info-circle"></i>あなたの第一者訪問IDとして、単純なID（例えばメールアドレス）を使用しないでください。</p>
 
 </div>
 
@@ -452,7 +452,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -602,6 +602,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -610,8 +626,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

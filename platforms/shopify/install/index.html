@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -358,11 +358,11 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <h2 id="仕組み">仕組み</h2>
 <p>TealiumをShopifyで使用するには、ShopifyテーマをカスタマイズしてTealium Shopify統合でTealiumコードを使用する必要があります。Tealiumコードはユニバーサルデータオブジェクト（UDO）を提供し、サイトの各ページで必要なTealiumアセットをロードします。</p>
-<p>注文ステータスページのコードスニペットは、チェックアウトの「ありがとうございます」ページにも表示されます。このコードスニペットは、コンバージョントラッキングのためのUDOを提供します。注文ステータスページは注文後に再訪問される可能性があるため、Tealium iQタグ管理でロジックを設定して、コンバージョンを2回トラックしないようにすることを推奨します。</p>
+<p>注文ステータスページのコードスニペットは、チェックアウトの「ありがとうございます」ページにも表示されます。このコードスニペットは、コンバージョントラッキングのためのUDOを提供します。注文ステータスページは注文後に再訪問される可能性があるため、Tealium iQタグ管理でロジックを構成して、コンバージョンを2回トラックしないようにすることを推奨します。</p>
 <p><code>checkout.liquid</code>ファイルにはShopify Plusの顧客のみがアクセスでき、チェックアウトファネル全体で<code>utag.js</code>をロードします。この統合は現在、チェックアウトファネルをサポートしていません。ただし、他のページで使用されているパターンに従って、独自の<code>checkout.liquid</code>を実装することができます。</p>
-<h2 id="設定手順">設定手順</h2>
-<h3 id="設定">設定</h3>
-<p>以下のJSONオブジェクトを、Shopifyテーマの<a href="https://help.shopify.com/themes/development/theme-editor/settings-schema">Config/settings_schema.json</a>ファイルに含まれるJSON配列にコピーします。これにより、テーマにTealium固有の設定が可能になります。</p>
+<h2 id="構成手順">構成手順</h2>
+<h3 id="構成">構成</h3>
+<p>以下のJSONオブジェクトを、Shopifyテーマの<a href="https://help.shopify.com/themes/development/theme-editor/settings-schema">Config/settings_schema.json</a>ファイルに含まれるJSON配列にコピーします。これにより、テーマにTealium固有の構成が可能になります。</p>
 <pre tabindex="0"><code>{
   &#34;name&#34;: &#34;Tealium&#34;,
   &#34;settings&#34;: [
@@ -397,7 +397,7 @@ var utag_data = {
     }
   ]
 }
-</code></pre><p>テーマをカスタマイズする際に、<strong>General Settings</strong>タブでTealium固有の設定を編集します。</p>
+</code></pre><p>テーマをカスタマイズする際に、<strong>General Settings</strong>タブでTealium固有の構成を編集します。</p>
 <h3 id="スニペット">スニペット</h3>
 <p><a href="https://github.com/Tealium/integration-shopify">このGitHubリポジトリ</a>の<strong>Snippets</strong>フォルダからファイルを取り出し、Shopifyテーマの<strong>Snippetsフォルダ</strong>にドロップします。これらのファイルには、各種ページタイプのUDO実装が含まれています。</p>
 <p>詳細については、Shopifyの<a href="https://help.shopify.com/themes/development/templates#snippets">テーマスニペット</a>のドキュメンテーションを参照してください。</p>
@@ -422,7 +422,7 @@ var utag_data = {
   }
 &lt;/script&gt;
 </code></pre><h3 id="注文ステータス">注文ステータス</h3>
-<p>他のページとは異なり、注文ステータスページは管理設定にアクセスできないため、Tealiumアカウント情報を再設定する必要があります。<strong>Order processing</strong>セクションの<strong>Additional scripts</strong>ボックスに設定を定義します。これは、<a href="https://help.shopify.com/themes/customization/order-status">Shopifyのドキュメンテーション</a>で説明されています：</p>
+<p>他のページとは異なり、注文ステータスページは管理構成にアクセスできないため、Tealiumアカウント情報を再構成する必要があります。<strong>Order processing</strong>セクションの<strong>Additional scripts</strong>ボックスに構成を定義します。これは、<a href="https://help.shopify.com/themes/customization/order-status">Shopifyのドキュメンテーション</a>で説明されています：</p>
 <ol>
 <li>Shopify管理画面から、<strong>Settings</strong>をクリックし、次に<strong>Checkout</strong>をクリックします。</li>
 <li>Order processingセクションの下部近くで、<strong>Additional content &amp; scripts</strong>を見つけます。</li>
@@ -483,8 +483,8 @@ var utag_data = {
 &lt;!-- Please configure your Tealium account information for the order confirmation page. --&gt;
 {% endif %}
 </code></pre><ol start="4">
-<li><code>tealium_enabled</code>を<code>true</code>に設定します。</li>
-<li><code>tealium_account</code>、<code>tealium_profile</code>、<code>tealium_environment</code>変数を設定で設定したものと一致するように設定します。</li>
+<li><code>tealium_enabled</code>を<code>true</code>に構成します。</li>
+<li><code>tealium_account</code>、<code>tealium_profile</code>、<code>tealium_environment</code>変数を構成で構成したものと一致するように構成します。</li>
 </ol>
 <h2 id="リリースノート">リリースノート</h2>
 <h4 id="102">1.0.2</h4>
@@ -499,7 +499,7 @@ var utag_data = {
 </ul>
 <h4 id="100-初回リリース">1.0.0 初回リリース</h4>
 <ul>
-<li>Tealiumを統合するためにShopifyテーマをカスタマイズするために必要なすべてのスニペットと設定。</li>
+<li>Tealiumを統合するためにShopifyテーマをカスタマイズするために必要なすべてのスニペットと構成。</li>
 <li>テーマのカスタマイズに関する指示。</li>
 </ul>
 <h2 id="ライセンス">ライセンス</h2>
@@ -534,7 +534,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -549,8 +549,8 @@ var utag_data = {
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定手順</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成手順</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">スニペット</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">テンプレート</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">注文ステータス</a></li>
@@ -689,6 +689,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -697,8 +713,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

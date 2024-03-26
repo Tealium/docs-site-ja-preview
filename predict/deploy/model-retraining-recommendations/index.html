@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -179,7 +179,7 @@ var utag_data = {
 
   
   
-  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">MLを予測する</a>&nbsp;>&nbsp;</li>
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">Predict ML</a>&nbsp;>&nbsp;</li>
   
 
   
@@ -224,18 +224,18 @@ var utag_data = {
 <p>モデルが訓練された後にF1スコアが低く、急速に劣化する場合、以下の問題の一つまたは両方が存在する可能性があります：</p>
 <ul>
 <li><strong>データの不一致</strong><br>
-訪問者の行動が訓練に使用された時間枠内で変化または不一致している可能性があります。</li>
+訪問の行動が訓練に使用された時間枠内で変化または不一致している可能性があります。</li>
 <li><strong>データの不完全性</strong><br>
-訪問者の行動のより完全なビューには、追加の訪問者属性が必要かもしれません。</li>
+訪問の行動のより完全なビューには、追加の訪問属性が必要かもしれません。</li>
 </ul>
 <h3 id="再訓練の頻度">再訓練の頻度</h3>
 <p>モデルの再訓練の必要性はTealium Predict製品に特有のものではなく、機械学習全般に関連しています。再訓練の頻度はあなたのデータに依存し、ビジネス間で大きく異なります。一般的に、訓練日範囲が長いほど、モデルはよりゆっくりと劣化します。モデルの品質があなたの組織が許容できる予定のスコア以下に劣化したときに通常は再訓練が必要となります。</p>
 <h3 id="再訓練と削除">再訓練と削除</h3>
-<p>モデルを削除する前に再訓練を検討してください。モデルを削除すると、訓練履歴が失われます。再訓練すると、各訓練は時間枠、除外される属性、時間経過とともに追加されるデータの点で異なる設定を持つことができます。その後、バージョン（個々の訓練）間の違いを確認して、どのバージョンをデプロイするかを決定できます。</p>
+<p>モデルを削除する前に再訓練を検討してください。モデルを削除すると、訓練履歴が失われます。再訓練すると、各訓練は時間枠、除外される属性、時間経過とともに追加されるデータの点で異なる構成を持つことができます。その後、バージョン（個々の訓練）間の違いを確認して、どのバージョンをデプロイするかを決定できます。</p>
 <h2 id="モデル訓練への外部からの影響">モデル訓練への外部からの影響</h2>
-<p>世界、ビジネス、訪問者の行動が急速に変化すると、通常は数ヶ月かかるモデルが予想以上に急速に劣化することがあります。以下の外部問題がモデル訓練と結果に影響を及ぼす可能性があります。</p>
+<p>世界、ビジネス、訪問の行動が急速に変化すると、通常は数ヶ月かかるモデルが予想以上に急速に劣化することがあります。以下の外部問題がモデル訓練と結果に影響を及ぼす可能性があります。</p>
 <h3 id="グローバルな問題">グローバルな問題</h3>
-<p>市場に影響を及ぼすグローバルな問題、例えば2020年のCOVID-19パンデミックは、ある程度モデルに影響を及ぼします。このような問題は訪問者の行動の明確なイメージを得ることを難しくすることがありますが、新しいバージョンを再訓練し、手動での再調整を何度も行う手間をかけずにシームレスにデプロイすることは容易です。</p>
+<p>市場に影響を及ぼすグローバルな問題、例えば2020年のCOVID-19パンデミックは、ある程度モデルに影響を及ぼします。このような問題は訪問の行動の明確なイメージを得ることを難しくすることがありますが、新しいバージョンを再訓練し、手動での再調整を何度も行う手間をかけずにシームレスにデプロイすることは容易です。</p>
 <h3 id="マーケティングキャンペーン">マーケティングキャンペーン</h3>
 <p>モデルは時々、他の活動、例えば広告キャンペーン、大きな祝日、季節外れの暑さ、大規模な暴動、政治的な動揺と同時に訓練されます。</p>
 <p>活動が停止したり、もはや適用されなくなったりすると、現在のモデルは訓練中に機能したほどうまく機能しないかもしれません。モデルの再訓練に加えて、これらのイベントを表す属性をモデルに含めることができます。</p>
@@ -301,7 +301,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -460,6 +460,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -468,8 +484,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

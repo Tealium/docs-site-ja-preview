@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -418,7 +418,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//Standard Tealium instance
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">createInstance</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">,</span> config<span style="color:#f92672">);</span>
 </span></span></code></pre></div><h2 id="トラッキングされるイベント">トラッキングされるイベント</h2>
-<p>Crash Reporterモジュールを初期化した後は、モジュールによってクラッシュデータが自動的にキャプチャされます。スレッドが突然終了した場合は、 <code>.uncaughtExceptionHandler()</code> が呼び出され、クラッシュ情報がディスクに保存されます。次回起動時に、保存されたクラッシュ情報が他のイベントとともにディスパッチされます。</p>
+<p>Crash Reporterモジュールを初期化した後は、モジュールによってクラッシュデータが自動的にキャプチャされます。スレッドが突然終了した場合は、 <code>.uncaughtExceptionHandler()</code> が呼び出され、クラッシュ情報がディスクにストレージされます。次回起動時に、ストレージされたクラッシュ情報が他のイベントとともにディスパッチされます。</p>
 <p>クラッシュイベントは<code>tealium_event=&quot;crash&quot;</code>としてトラッキングされます。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Crash Reporterは単一インスタンスコールです。チェーンハンドラーは現在サポートされていません。</p>
 <h2 id="データレイヤー">データレイヤー</h2>
@@ -687,6 +687,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -695,8 +711,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

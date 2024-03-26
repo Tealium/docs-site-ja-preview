@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -185,26 +185,26 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="仕組み">仕組み</h2>
-<p>iQプロファイルは、iQタグ管理設定をプログラムで利用できるAPIエンドポイントです。このエンドポイントを使用して、タグ、拡張機能、ロードルール、イベント、変数などの特定の設定コンポーネントを取得し、限定的なコンポーネントの追加、編集、削除を行います。</p>
+<p>iQプロファイルは、iQタグ管理構成をプログラムで利用できるAPIエンドポイントです。このエンドポイントを使用して、タグ、拡張機能、ロードルール、イベント、変数などの特定の構成コンポーネントを取得し、限定的なコンポーネントの追加、編集、削除を行います。</p>
 <p>このAPIを使用して、プロファイルのバージョンと変更履歴にアクセスし、独自のSDLCを統合します。</p>
 <p>iQプロファイルは現在、以下の2つのリクエストをサポートしています：</p>
 <ul>
 <li><strong>GET</strong><br>
 iQタグ管理アカウントプロファイルに関する特定の内容を返します。これには、ロードルール、タグ、<!-- tag templates,--> イベント、拡張機能、変数、バージョンIDが含まれます。</li>
 <li><strong>PATCH</strong><br>
-設定コンポーネントの限定的なサブセットに対して作成、更新、削除操作を実行します。この方法を使用すると、プロファイルの新しい保存バージョンが生成されます。</li>
+構成コンポーネントの限定的なサブセットに対して作成、更新、削除操作を実行します。この方法を使用すると、プロファイルの新しいストレージバージョンが生成されます。</li>
 </ul>
 <h2 id="同時ユーザーとapiユーザー">同時ユーザーとAPIユーザー</h2>
 <p>プロファイルを更新する際、iQプロファイルは同時ユーザーをスキャンし、同時変更に対する保護のためにAPIユーザーのプロファイルをロックします。別のユーザーが同じプロファイルを表示している場合や、プロファイルが更新されたばかり（15秒以内）の場合、PATCHメソッドはエラーを受け取ります。</p>
-<h2 id="保存バージョニング公開">保存、バージョニング、公開</h2>
+<h2 id="ストレージバージョニング公開">ストレージ、バージョニング、公開</h2>
 <p>PATCHリクエストを使用してプロファイルを更新すると、アプリケーションに新しいバージョンまたは更新バージョンが作成されます。APIから生成されたバージョンとアプリケーションで作成されたバージョンを区別するために、APIはバージョン名を<code>API | {TIMESTAMP}</code>の形式でフォーマットします。</p>
-<p>成功したPATCH呼び出し後にこのプロファイルを公開するには、アプリケーションにログインし、パッチ後のプロファイルの最新の保存バージョンに移動して公開します。</p>
+<p>成功したPATCH呼び出し後にこのプロファイルを公開するには、アプリケーションにログインし、パッチ後のプロファイルの最新のストレージバージョンに移動して公開します。</p>
 <h2 id="権限要件">権限要件</h2>
 <ul>
 <li><strong>GETプロファイル</strong><br>
-保存および新規バージョンとして保存の権限</li>
+ストレージおよび新規バージョンとしてストレージの権限</li>
 <li><strong>PATCHプロファイル</strong><br>
-既存のバージョンを保存または新規バージョンとして保存の権限</li>
+既存のバージョンをストレージまたは新規バージョンとしてストレージの権限</li>
 </ul>
 <h2 id="認証">認証</h2>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>ベアラートークンは、すべてのAPI呼び出しを認証するために使用され、APIキーではありません。APIキーは認証呼び出しでのみ使用されます。ベアラートークンに加えて、認証応答には、後続のサーバーサイドAPI呼び出しで使用する必要がある地域固有のホスト名が含まれます。</p>
@@ -254,7 +254,7 @@ iQタグ管理アカウントプロファイルに関する特定の内容を返
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月22日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -270,7 +270,7 @@ iQタグ管理アカウントプロファイルに関する特定の内容を返
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">同時ユーザーとAPIユーザー</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">保存、バージョニング、公開</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ストレージ、バージョニング、公開</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">権限要件</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">認証</a></li>
               </nav>
@@ -406,6 +406,22 @@ iQタグ管理アカウントプロファイルに関する特定の内容を返
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -414,8 +430,24 @@ iQタグ管理アカウントプロファイルに関する特定の内容を返
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

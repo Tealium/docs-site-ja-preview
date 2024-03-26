@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -265,7 +297,7 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      この記事では、Tealium iQタグ管理アカウントでContentsquare UX Analyticsタグを設定し、Tealiumのオーディエンスと訪問者バッジのContentsquareへの送信を有効にすることで、TealiumとContentsquareを最大限に活用する方法について説明します。
+      この記事では、Tealium iQタグ管理アカウントでContentsquare UX Analyticsタグを構成し、Tealiumのオーディエンスと訪問バッジのContentsquareへの送信を有効にすることで、TealiumとContentsquareを最大限に活用する方法について説明します。
     </p>
   
 </div>
@@ -290,30 +322,30 @@ var utag_data = {
 <h2 id="仕組み">仕組み</h2>
 <p>Contentsquareは、ブランドがユニークな行動洞察に基づいて行動し、ユーザーエクスペリエンスを測定可能な利点に変えることを可能にします。Contentsquareは、地域や業界を超えたデジタル行動の大規模なデータセットに基づいてベンチマークと予測スコアリングを提供し、収益の増加、ロイヤルティの向上、イノベーションの推進に利用できるインテリジェントなビジュアライゼーションと推奨事項を毎日作成します。</p>
 <p>詳細については、<a href="https://contentsquare.com/">contentsquare.com</a>をご覧ください。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>以前は、詐欺と広告ブロックのトリガーがContentsquareタグの設定として利用可能でした。これらの設定は現在、タグに組み込まれ、デフォルトで有効になっています。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>以前は、詐欺と広告ブロックのトリガーがContentsquareタグの構成として利用可能でした。これらの構成は現在、タグに組み込まれ、デフォルトで有効になっています。</p>
 <h3 id="詐欺">詐欺</h3>
 <ul>
 <li><strong>過度なペースト</strong>
-同一の訪問者セッション内で異常で潜在的に詐欺的なペースト行動を特定する閾値が満たされたときにトリガーします。詐欺の可能性は3つのレベルがあります：<strong>低</strong>、<strong>中</strong>、および<strong>高</strong>。</li>
+同一の訪問セッション内で異常で潜在的に詐欺的なペースト行動を特定する閾値が満たされたときにトリガーします。詐欺の可能性は3つのレベルがあります：<strong>低</strong>、<strong>中</strong>、および<strong>高</strong>。</li>
 <li><strong>過度なリロード</strong>
-同一の訪問者セッション内で異常で潜在的に詐欺的なリロード行動を特定する閾値が満たされたときにトリガーします。詐欺の可能性は3つのレベルがあります：<strong>低</strong>、<strong>中</strong>、および<strong>高</strong>。</li>
+同一の訪問セッション内で異常で潜在的に詐欺的なリロード行動を特定する閾値が満たされたときにトリガーします。詐欺の可能性は3つのレベルがあります：<strong>低</strong>、<strong>中</strong>、および<strong>高</strong>。</li>
 </ul>
 <h3 id="広告ブロック">広告ブロック</h3>
 <ul>
 <li><strong>Ad Blocker Signal</strong>
 特定のファイルがブロックされたとき、またはそれが発生したときを特定します。これは、広告ブロッカーが存在することを示しています。</li>
 </ul>
-<p class="tip"><i class="fa fa-info-circle"></i>EventStreamイベント仕様とAudienceStream訪問者属性からの信号をオプションで使用できます。</p>
+<p class="tip"><i class="fa fa-info-circle"></i>EventStreamイベント仕様とAudienceStream訪問属性からの信号をオプションで使用できます。</p>
 <h2 id="タグのヒント">タグのヒント</h2>
 <ul>
 <li>
-<p>注文IDが設定されるとコンバージョンが発生します。</p>
+<p>注文IDが構成されるとコンバージョンが発生します。</p>
 </li>
 <li>
 <p>Contentsquareリプレイリンクをサーバーサイド属性として利用可能にするには：</p>
 <ul>
 <li>リプレイリンクの生成を有効にするために、Contentsquareの担当者に連絡します。</li>
-<li><strong>Send Replay Link</strong>を<strong>True</strong>に設定します。</li>
+<li><strong>Send Replay Link</strong>を<strong>True</strong>に構成します。</li>
 </ul>
 </li>
 <li>
@@ -324,32 +356,32 @@ var utag_data = {
 <ul>
 <li>このデータの受信を有効にするために、Contentsquareの担当者に連絡します。</li>
 <li>Contentsquareにバッジを送信するには、マッピングツールボックスの<strong>Badges</strong>タブに移動し、バッジがContentsquareシステムで識別される名前を入力します。</li>
-<li>すべてのオーディエンスをContentsquareに送信するには、<strong>Send All Audiences</strong>を<strong>True</strong>に設定します。</li>
+<li>すべてのオーディエンスをContentsquareに送信するには、<strong>Send All Audiences</strong>を<strong>True</strong>に構成します。</li>
 </ul>
 </li>
 </ul>
-<h2 id="タグ設定">タグ設定</h2>
+<h2 id="タグ構成">タグ構成</h2>
 <p>まず、Tealiumタグマーケットプレイスに移動し、Contentsquare UX User Analyticsタグを追加します（<a href="/iq-tag-management/tags/manage/">タグの追加方法</a>について詳しくはこちらをご覧ください）。</p>
-<p>参照：<a href="/client-side-tags/contentsquare-ux-analytics-tag/">Contentsquare UX User Analyticsタグ設定ガイド</a></p>
-<p>タグを追加した後、<strong>Data Mappings</strong>セクションに移動して、追加のマッピングを設定します。</p>
+<p>参照：<a href="/client-side-tags/contentsquare-ux-analytics-tag/">Contentsquare UX User Analyticsタグ構成ガイド</a></p>
+<p>タグを追加した後、<strong>Data Mappings</strong>セクションに移動して、追加のマッピングを構成します。</p>
 <h2 id="ロードルール">ロードルール</h2>
 <p><a href="https://community.tealiumiq.com/posts/572034">ロードルール</a>は、このタグのインスタンスをいつ、どこでロードするかを決定します。&lsquo;すべてのページでロード&rsquo;ルールはデフォルトのロードルールです。</p>
-<p>このタグを特定のページでロードするには、関連する条件で新しいロードルールを作成し、訪問者のマウスの動きを追跡したいページでContentsquareタグをロードします。</p>
+<p>このタグを特定のページでロードするには、関連する条件で新しいロードルールを作成し、訪問のマウスの動きを追跡したいページでContentsquareタグをロードします。</p>
 <h2 id="拡張機能">拡張機能</h2>
-<p>データレイヤーで<code>tealium_datasource</code>を設定する必要があります。これにより、Contentsquareがサーバーサイドでデータを送信できます。</p>
+<p>データレイヤーで<code>tealium_datasource</code>を構成する必要があります。これにより、Contentsquareがサーバーサイドでデータを送信できます。</p>
 <ol>
 <li><strong>Server-Side &gt; Data Sources</strong>に移動します。</li>
 <li>HTTP APIデータソースを追加します。</li>
-<li>名前を&quot;Contentsquare Server-Side Events&quot;に設定します。</li>
+<li>名前を&quot;Contentsquare Server-Side Events&quot;に構成します。</li>
 </ol>
 <p>終了したら、データソースキーをメモします。iQタグ管理では、この値を変数<code>tealium_datasource</code>に割り当てるために拡張機能を使用します。</p>
-<p>Tealium Universal Tag（utag.js）バージョン4.41以前を実行している場合は、次の変数も設定する必要があります：</p>
+<p>Tealium Universal Tag（utag.js）バージョン4.41以前を実行している場合は、次の変数も構成する必要があります：</p>
 <ul>
 <li><code>tealium_account</code></li>
 <li><code>tealium_profile</code></li>
 <li><code>tealium_visitor_id</code></li>
 </ul>
-<p>これらの変数はバージョン4.42+で自動的に設定されます。</p>
+<p>これらの変数はバージョン4.42+で自動的に構成されます。</p>
 <h2 id="データマッピング">データマッピング</h2>
 <p>マッピングは、<a href="/iq-tag-management/data-layer/data-layer-variables/">データレイヤー変数</a>からベンダータグの対応する宛先変数にデータを送信するプロセスです。変数をタグ宛先にマッピングする方法については、<a href="/iq-tag-management/data-mappings/manage/">Data Mappings</a>を参照してください。</p>
 <p>利用可能なカテゴリーは次のとおりです：</p>
@@ -368,7 +400,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>id_project</code></td>
-<td><ul><li>プロジェクトに特定のプロジェクトタグID。</li><li>プロジェクトガイドフィールドを設定するためにこの変数にマッピングします。</li></ul></td>
+<td><ul><li>プロジェクトに特定のプロジェクトタグID。</li><li>プロジェクトガイドフィールドを構成するためにこの変数にマッピングします。</li></ul></td>
 </tr>
 <tr>
 <td><code>base_url</code></td>
@@ -518,7 +550,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -537,7 +569,7 @@ var utag_data = {
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">詐欺</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">広告ブロック</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグのヒント</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグ設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグ構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ロードルール</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">拡張機能</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データマッピング</a></li>
@@ -677,6 +709,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -685,8 +733,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

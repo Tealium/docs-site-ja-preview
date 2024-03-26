@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -363,7 +363,7 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="クラス-visitorprofile">クラス: <code>VisitorProfile</code></h2>
-<p>VisitorProfileクラスは、Tealium Customer Data Hubからの現在の訪問者プロファイルに関連するすべてのデータを含んでいます。以下のドキュメントは、Kotlinの<code>VisitorProfile</code>モジュールの一般的に使用されるメソッドとプロパティをまとめたものです。</p>
+<p>VisitorProfileクラスは、Tealium Customer Data Hubからの現在の訪問プロファイルに関連するすべてのデータを含んでいます。以下のドキュメントは、Kotlinの<code>VisitorProfile</code>モジュールの一般的に使用されるメソッドとプロパティをまとめたものです。</p>
 <table>
 <thead>
 <tr>
@@ -422,94 +422,94 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#totaleventcount"><code>totalEventCount</code></a></td>
-<td>この訪問者プロファイルの総イベント数を表すプロパティ</td>
+<td>この訪問プロファイルの総イベント数を表すプロパティ</td>
 </tr>
 </tbody>
 </table>
 <h3 id="arraysofbooleans"><code>arraysOfBooleans</code></h3>
-<p>訪問者プロファイルに現在設定されているブール値の配列属性へのアクセスを提供します。マップの<code>key</code>はブール値の配列属性識別子で、<code>value</code>は値を含む<code>List&lt;Boolean&gt;</code>です。</p>
+<p>訪問プロファイルに現在構成されているブール値の配列属性へのアクセスを提供します。マップの<code>key</code>はブール値の配列属性識別子で、<code>value</code>は値を含む<code>List&lt;Boolean&gt;</code>です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">arraysOfBooleans</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    it<span style="color:#f92672">.</span><span style="color:#a6e22e">forEach</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="arraysofnumbers"><code>arraysOfNumbers</code></h3>
-<p>訪問者プロファイルに現在設定されている数値の配列属性へのアクセスを提供します。マップの<code>key</code>は数値の配列属性識別子で、<code>value</code>は値を含む<code>List&lt;Double&gt;</code>です。</p>
+<p>訪問プロファイルに現在構成されている数値の配列属性へのアクセスを提供します。マップの<code>key</code>は数値の配列属性識別子で、<code>value</code>は値を含む<code>List&lt;Double&gt;</code>です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">arraysOfNumbers</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    it<span style="color:#f92672">.</span><span style="color:#a6e22e">forEach</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="arraysofstrings"><code>arraysOfStrings</code></h3>
-<p>訪問者プロファイルに現在設定されている文字列の配列属性へのアクセスを提供します。マップの<code>key</code>は文字列の配列属性識別子で、<code>value</code>は値を含む<code>List&lt;String&gt;</code>です。</p>
+<p>訪問プロファイルに現在構成されている文字列の配列属性へのアクセスを提供します。マップの<code>key</code>は文字列の配列属性識別子で、<code>value</code>は値を含む<code>List&lt;String&gt;</code>です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">arraysOfStrings</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    it<span style="color:#f92672">.</span><span style="color:#a6e22e">forEach</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="audiences"><code>audiences</code></h3>
-<p>訪問者が現在所属しているオーディエンスへのアクセスを提供します。マップの<code>key</code>はオーディエンス識別子で、<code>value</code>はオーディエンスの名前です。</p>
+<p>訪問が現在所属しているオーディエンスへのアクセスを提供します。マップの<code>key</code>はオーディエンス識別子で、<code>value</code>はオーディエンスの名前です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">audiences</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">forEach</span> <span style="color:#f92672">{</span> entry <span style="color:#f92672">-&gt;</span>
 </span></span><span style="display:flex;"><span>    Log<span style="color:#f92672">.</span><span style="color:#a6e22e">d</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;VisitorService&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;In audience: ${entry.value}&#34;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="badges"><code>badges</code></h3>
-<p>訪問者に現在割り当てられているバッジへのアクセスを提供します。マップの<code>key</code>はバッジ属性識別子で、<code>value</code>はバッジが割り当てられているかどうかを示す<code>Boolean</code>です。</p>
+<p>訪問に現在割り当てられているバッジへのアクセスを提供します。マップの<code>key</code>はバッジ属性識別子で、<code>value</code>はバッジが割り当てられているかどうかを示す<code>Boolean</code>です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">badges</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>it<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="booleans"><code>booleans</code></h3>
-<p>訪問者プロファイルに現在設定されているブール属性へのアクセスを提供します。マップの<code>key</code>はブール属性識別子で、<code>value</code>は属性の<code>Boolean</code>値です。</p>
+<p>訪問プロファイルに現在構成されているブール属性へのアクセスを提供します。マップの<code>key</code>はブール属性識別子で、<code>value</code>は属性の<code>Boolean</code>値です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">booleans</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>it<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="currentvisit"><code>currentVisit</code></h3>
-<p>訪問スコープの属性の最新の値を含む<a href="/platforms/android-kotlin/api/current-visit/"><code>CurrentVisit</code></a>オブジェクトを返します。これは、<code>VisitorProfile</code>オブジェクト直接に利用可能な訪問者スコープのものとは対照的です。</p>
+<p>訪問スコープの属性の最新の値を含む<a href="/platforms/android-kotlin/api/current-visit/"><code>CurrentVisit</code></a>オブジェクトを返します。これは、<code>VisitorProfile</code>オブジェクト直接に利用可能な訪問スコープのものとは対照的です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">currentVisit</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span> visit <span style="color:#f92672">-&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>visit<span style="color:#f92672">.</span><span style="color:#a6e22e">totalEventCount</span> <span style="color:#f92672">&gt;</span> 10<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>visit<span style="color:#f92672">.</span><span style="color:#a6e22e">totalEventCount</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="dates"><code>dates</code></h3>
-<p>訪問者プロファイルに現在設定されている日付属性へのアクセスを提供します。マップの<code>key</code>は日付属性識別子で、<code>value</code>はタイムスタンプを表す<code>Long</code>です。</p>
+<p>訪問プロファイルに現在構成されている日付属性へのアクセスを提供します。マップの<code>key</code>は日付属性識別子で、<code>value</code>はタイムスタンプを表す<code>Long</code>です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">dates</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>it <span style="color:#f92672">&gt;</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">currentTimeMillis</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="numbers"><code>numbers</code></h3>
-<p>訪問者プロファイルに現在設定されている数値属性へのアクセスを提供します。マップの<code>key</code>は数値属性識別子で、<code>value</code>は属性の<code>Double</code>値です。</p>
+<p>訪問プロファイルに現在構成されている数値属性へのアクセスを提供します。マップの<code>key</code>は数値属性識別子で、<code>value</code>は属性の<code>Double</code>値です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">numbers</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>it <span style="color:#f92672">&gt;</span> 100<span style="color:#f92672">.</span><span style="color:#a6e22e">0</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>it <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">100.0</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="setsofstrings"><code>setsOfStrings</code></h3>
-<p>訪問者プロファイルに現在設定されている文字列のセット属性へのアクセスを提供します。マップの<code>key</code>は文字列のセット属性識別子で、<code>value</code>は値を含む<code>Set&lt;String&gt;</code>です。</p>
+<p>訪問プロファイルに現在構成されている文字列のセット属性へのアクセスを提供します。マップの<code>key</code>は文字列のセット属性識別子で、<code>value</code>は値を含む<code>Set&lt;String&gt;</code>です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">setsOfStrings</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    it<span style="color:#f92672">.</span><span style="color:#a6e22e">forEach</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="strings"><code>strings</code></h3>
-<p>訪問者プロファイルに現在設定されている文字列属性へのアクセスを提供します。マップの<code>key</code>は文字列属性識別子で、<code>value</code>は属性の<code>String</code>値です。</p>
+<p>訪問プロファイルに現在構成されている文字列属性へのアクセスを提供します。マップの<code>key</code>は文字列属性識別子で、<code>value</code>は属性の<code>String</code>値です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">strings</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>it <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Some String Value&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="tallies"><code>tallies</code></h3>
-<p>訪問者プロファイルに現在設定されているタリー属性へのアクセスを提供します。マップの<code>key</code>はタリー属性識別子で、<code>value</code>は属性の<code>Map&lt;String, Double&gt;</code>値です。</p>
+<p>訪問プロファイルに現在構成されている集計属性へのアクセスを提供します。マップの<code>key</code>は集計属性識別子で、<code>value</code>は属性の<code>Map&lt;String, Double&gt;</code>値です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">tallies</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;5120&#34;</span><span style="color:#f92672">)?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span> tallies <span style="color:#f92672">-&gt;</span>
 </span></span><span style="display:flex;"><span>    val highestTally <span style="color:#f92672">=</span> tallies<span style="color:#f92672">.</span><span style="color:#a6e22e">maxBy</span> <span style="color:#f92672">{</span> it<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span> <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="totaleventcount"><code>totalEventCount</code></h3>
-<p>この訪問者の総イベント数を<code>Int</code>で返します。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">totalEventCount</span> <span style="color:#f92672">&gt;</span> 100<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<p>この訪問の総イベント数を<code>Int</code>で返します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">totalEventCount</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// アクションを実行
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
 </span></span></code></pre></div>
@@ -572,7 +572,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -733,6 +733,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -741,8 +757,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

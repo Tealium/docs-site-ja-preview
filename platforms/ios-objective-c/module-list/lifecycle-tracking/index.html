@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -408,7 +408,7 @@ var utag_data = {
 </table>
 <p>これらの値は<code>lifecycle_type</code>変数で示されます。</p>
 <h3 id="自動トラッキング">自動トラッキング</h3>
-<p>ライフサイクル追跡モジュールを設定して、標準の<code>UIApplication</code>通知を自動的にリッスンし、<code>launch</code>、<code>wake</code>、<code>sleep</code>イベントを自動的にトリガーします。</p>
+<p>ライフサイクル追跡モジュールを構成して、標準の<code>UIApplication</code>通知を自動的にリッスンし、<code>launch</code>、<code>wake</code>、<code>sleep</code>イベントを自動的にトリガーします。</p>
 <p>ライフサイクル追跡を削除するには、<code>TealiumIOSLifecycle.framework</code>をプロジェクトからアンリンクまたは削除します。</p>
 <p><strong>起動イベント</strong><br>
 <code>UIApplicationDidFinishLaunchingNotification</code>の検出時に生成されます。</p>
@@ -417,7 +417,7 @@ var utag_data = {
 <p><strong>ウェイクイベント</strong><br>
 <code>UIApplicationWillEnterForegroundNotification</code>の検出時に生成されます。</p>
 <h3 id="手動トラッキング">手動トラッキング</h3>
-<p>特定のライフサイクルパラダイムや非標準的なライフサイクル追跡に利用可能です。手動でライフサイクルイベントを追跡するには、<code>setLifecycleAutotrackingIsEnabled</code>を<code>NO</code>に設定してライフサイクルの自動追跡を無効にします。</p>
+<p>特定のライフサイクルパラダイムや非標準的なライフサイクル追跡に利用可能です。手動でライフサイクルイベントを追跡するには、<code>setLifecycleAutotrackingIsEnabled</code>を<code>NO</code>に構成してライフサイクルの自動追跡を無効にします。</p>
 <p><strong>起動イベント</strong><br>
 <code>launch</code>イベントを手動で追跡するには、以下を呼び出します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[[Tealium instanceForKey:<span style="color:#e6db74">@&#34;(uniqueInstanceId)&#34;</span>] launch];
@@ -809,6 +809,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -817,8 +833,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

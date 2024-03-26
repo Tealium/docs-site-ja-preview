@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -384,7 +384,7 @@ var utag_data = {
 <p>Carthageを使用してVisitorServiceモジュールをインストールするには、次の手順に従ってください：</p>
 <ol>
 <li>
-<p>Xcodeのアプリのターゲットの一般設定ページに移動します。</p>
+<p>Xcodeのアプリのターゲットの一般構成ページに移動します。</p>
 </li>
 <li>
 <p><strong>埋め込みバイナリ</strong>セクションに次のフレームワークを追加します：</p>
@@ -901,7 +901,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h4 id="talliesおよびtallyvalue"><code>tallies</code>および<code>tallyValue</code></h4>
-<p>カスタムサブスクリプトを使用すると、IDでタリーをクエリし、IDでタリー値をクエリできます。</p>
+<p>カスタムサブスクリプトを使用すると、IDで集計をクエリし、IDで集計値をクエリできます。</p>
 <table>
 <thead>
 <tr>
@@ -914,19 +914,19 @@ var utag_data = {
 <tbody>
 <tr>
 <td><code>profile.tallies</code></td>
-<td>ビジタープロファイル内のすべてのタリーを返します。</td>
+<td>ビジタープロファイル内のすべての集計を返します。</td>
 <td><code>[Tally]</code></td>
 <td><code>[Tally(id: &quot;2983&quot;, value: [TallyValue(key: &quot;red shirts category&quot;, count: 4.0), TallyValue(key: &quot;green shirts category&quot;, count: 2.0)]), Tally(id: &quot;5643&quot;, value: [TallyValue(key: &quot;girls&quot;, count: 3.0), TallyValue(key: &quot;womens&quot;, count: 1.0)]</code>]</td>
 </tr>
 <tr>
 <td><code>profile.tallies[tally: &quot;1399&quot;]</code></td>
-<td>IDでタリーを返します。</td>
+<td>IDで集計を返します。</td>
 <td><code>[TallyValue]</code></td>
 <td><code>[TallyValue(key: &quot;girls&quot;, count: 3.0), TallyValue(key: &quot;womens&quot;, count: 1.0)]</code></td>
 </tr>
 <tr>
 <td><code>profile.tallies[tally: &quot;1399&quot;, key: &quot;womens&quot;]</code></td>
-<td>IDでタリーを返します。</td>
+<td>IDで集計を返します。</td>
 <td><code>Double</code></td>
 <td><code>3.0</code></td>
 </tr>
@@ -936,12 +936,12 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">profileDidUpdate</span>(profile: TealiumVisitorProfile?) {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> profile = profile <span style="color:#66d9ef">else</span> { <span style="color:#66d9ef">return</span> }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// タリー全体を返す</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 集計全体を返す</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> tally = profile.tallies?[<span style="color:#e6db74">&#34;1399&#34;</span>] {
 </span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Tally id 5377: </span><span style="color:#e6db74">\(</span>tally<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// タリーIDと値のキーを使用してタリー値を返す</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 集計IDと値のキーを使用して集計値を返す</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> tallyValue = profile.tallies?[tally: <span style="color:#e6db74">&#34;5381&#34;</span>, key: <span style="color:#e6db74">&#34;red shirts&#34;</span>]{
 </span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Tally value for id 5381 and key &#39;red shirts&#39;: </span><span style="color:#e6db74">\(</span>tallyValue<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>        }
@@ -973,7 +973,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h4 id="requestvisitorprofile"><code>requestVisitorProfile()</code></h4>
 <p>このメソッドは、ビジターサービスに即座にリクエストを送信して現在のプロファイルを取得します。プロファイルが前回の取得以降に更新されている場合、<code>profileDidUpdate</code>デリゲートメソッドが呼び出されます。</p>
-<p>このメソッドは、トラッキングリクエストが送信されるたびに自動的に呼び出されます（ビジタープロファイルの更新間隔が<code>0</code>に設定されている場合）。更新間隔の値がより高い場合は、次のスケジュールされた更新を待たずにプロファイルを即座に取得するためにこのメソッドを呼び出すことができます。</p>
+<p>このメソッドは、トラッキングリクエストが送信されるたびに自動的に呼び出されます（ビジタープロファイルの更新間隔が<code>0</code>に構成されている場合）。更新間隔の値がより高い場合は、次のスケジュールされた更新を待たずにプロファイルを即座に取得するためにこのメソッドを呼び出すことができます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">self</span>.tealium?.visitorService()?.requestVisitorProfile()
 </span></span></code></pre></div><p>使用例：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">track</span>(title: String, data: [String: Any]?) {
@@ -1068,7 +1068,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="クラス-tealiumconfig">クラス: <code>TealiumConfig</code></h3>
 <h4 id="setvisitorservicerefresh"><code>setVisitorServiceRefresh()</code></h4>
-<p>ビジタープロファイルの取得頻度を設定できます。この設定のデフォルト値は5分です。頻度を調整するためにこのメソッドを使用します。すべてのトラッキングコールに<code>requestVisitorProfile</code>メソッドを追加しても、この値を<code>0</code>に設定しない限り、プロファイルは毎回取得されません。</p>
+<p>ビジタープロファイルの取得頻度を構成できます。この構成のデフォルト値は5分です。頻度を調整するためにこのメソッドを使用します。すべてのトラッキングコールに<code>requestVisitorProfile</code>メソッドを追加しても、この値を<code>0</code>に構成しない限り、プロファイルは毎回取得されません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> config = TealiumConfig(...)
 </span></span><span style="display:flex;"><span>config.setVisitorServiceRefresh(<span style="color:#ae81ff">3</span>)
 </span></span></code></pre></div><table>
@@ -1180,7 +1180,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1337,6 +1337,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1345,8 +1361,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

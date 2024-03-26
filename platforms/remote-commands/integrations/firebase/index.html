@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -400,7 +400,7 @@ var utag_data = {
 <ol>
 <li>Xcode プロジェクトで、次のように選択します: <strong>[File] &gt; [Add Package&hellip;]&gt; [Add Package Dependency]</strong>。</li>
 <li>レポジトリの URL として「https://github.com/tealium/tealium-ios-firebase-remote-command」と入力します。</li>
-<li>バージョンルールを設定します。通常は <code>Up to next major</code> が推奨されます。現在の <code>TealiumFirebase</code> バージョンがリストに表示されない場合は、Swift パッケージ キャッシュをリセットします。</li>
+<li>バージョンルールを構成します。通常は <code>Up to next major</code> が推奨されます。現在の <code>TealiumFirebase</code> バージョンがリストに表示されない場合は、Swift パッケージ キャッシュをリセットします。</li>
 <li>インストールする <code>TealiumFirebase</code> モジュールを選択し、モジュールをインストールするアプリ ターゲットを選択します。</li>
 </ol>
 <p>プロジェクトにアプリ ターゲットが複数あり、複数のアプリ ターゲットで <code>TealiumFirebase</code> モジュールが必要な場合は、 <strong>[Frameworks, Libraries, and Embedded Content] (フレームワーク、ライブラリ、埋め込みコンテンツ)</strong> セクションにそれらを手動で追加する必要があります。</p>
@@ -483,7 +483,7 @@ var utag_data = {
 <p><a href="https://github.com/tealium/tealium-ios-firebase-remote-command">Tealium iOS Firebaseリモートコマンド</a>レポジトリをクローンして、<code>Sources</code>フォルダ内のファイルをプロジェクトにドラッグします。</p>
 </li>
 <li>
-<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に設定します</p>
+<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に構成します</p>
 </li>
 </ol>
 <h2 id="初期化">初期化</h2>
@@ -498,9 +498,9 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> firebase = FirebaseRemoteCommand(application);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// register the command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  remoteCommands<span style="color:#f92672">?.</span>add(firebase, filename = <span style="color:#e6db74">&#34;firebase.json&#34;</span>);
@@ -512,9 +512,9 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> firebase = FirebaseRemoteCommand(application);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// register the command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  remoteCommands<span style="color:#f92672">?.</span>add(firebase);
@@ -681,7 +681,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="トラッキング">トラッキング</h2>
 <p>アプリとの基本的なインタラクションによってトリガーされたイベントは自動的にトラッキングされます。Firebaseによって自動的に収集されるイベントの詳細については、<a href="https://support.google.com/firebase/answer/6317485?hl=en">こちら</a>を参照してください。</p>
-<p>Firebaseモバイルリモートコマンドタグの設定については、<a href="https://community.tealiumiq.com/t5/Tags/Firebase-Mobile-Remote-Command-Tag-Setup-Guide/ta-p/30310">こちら</a>を参照してください。</p>
+<p>Firebaseモバイルリモートコマンドタグの構成については、<a href="https://community.tealiumiq.com/t5/Tags/Firebase-Mobile-Remote-Command-Tag-Setup-Guide/ta-p/30310">こちら</a>を参照してください。</p>
 <h2 id="google-analytics-および-tealium-consent">Google Analytics および Tealium Consent</h2>
 <p>Google Analytics for Firebase は、アプリ利用とユーザー エンゲージメントについてのインサイトを提供するアプリ測定ソリューションです。これは、Firebase の機能全般を統合し、Firebase SDK を使用して定義された 500 以下の区別されたイベントの無制限のレポートを提供します。</p>
 <p>利用可能な公開 API がないことから、Firebase にデータを渡すには、Android または iOS 向けの Firebase ネイティブ SDK を使用します。Tealium の Firebase リモート コマンドは、Firebase SDK に呼び出すことができます。既存のデータレイヤーおよびトラッキング コールを使用すれば、アプリが Android Play Store または Apple App Store にリリースされた後であっても、Firebase SDK の動作は変更可能です。</p>
@@ -698,18 +698,18 @@ Tealium iQ Tag Manger および同意管理が有効になっていれば、Teal
 <p><strong>Google が Firebase SDK を更新した場合はどうなるか?</strong></p>
 <p>API の大きな変更がないと想定すれば、Firebase SDK を更新するのが安全です。Tealium は、API 機能に対する Firebase 更新をプロアクティブにチェックし、Firebase リモート コマンドに必要な更新を行います。</p>
 <p><strong>Firebase SDK は、デフォルトで、トラッキング イベントを自動的に送信します。クライアントが同意する前に停止する方法</strong></p>
-<p>Firebase SDK で、設定 <code>firebase_analytics_collection_enabled</code> を <code>false</code> に設定します (デフォルト: <code>true</code>)。 ユーザーの同意が完了したときには、Firebase リモート コマンドを使用して、 <code>true</code> に戻す変更が可能です。 </p>
+<p>Firebase SDK で、構成 <code>firebase_analytics_collection_enabled</code> を <code>false</code> に構成します (デフォルト: <code>true</code>)。 ユーザーの同意が完了したときには、Firebase リモート コマンドを使用して、 <code>true</code> に戻す変更が可能です。 </p>
 <p>以下の手順では、ユーザー ジャーニーの概要を示します。</p>
 <ol>
 <li>ユーザーがアプリを開きます</li>
-<li>Firebase が [not collect] (収集しない) (<code>setAnalyticsCollectionEnabled(false)</code>) に設定されています</li>
+<li>Firebase が [not collect] (収集しない) (<code>setAnalyticsCollectionEnabled(false)</code>) に構成されています</li>
 <li>ユーザーが同意についてインタラクションを行い、同意イベントが Tealium に送信されます</li>
-<li>Tealium がメッセージを Firebase SDK に送信し、[collect] (収集する) (<code>firebase_analytics_enabled = true</code>) に設定します</li>
+<li>Tealium がメッセージを Firebase SDK に送信し、[collect] (収集する) (<code>firebase_analytics_enabled = true</code>) に構成します</li>
 <li>ユーザー クリックが Google Analytics にてトラッキングされます</li>
 </ol>
 <p><strong>アプリ内で付与された同意についての確認方法</strong></p>
 <p>API リクエストを Tealium SDK に送信して、ユーザーが特定のカテゴリに同意しているかどうかを確認できます。 アプリが実行中であれば、いつでもクライアントは、このリクエストができます。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>Tealium は同意を保存しません。アプリ内で保持されます。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Tealium は同意をストレージしません。アプリ内で保持されます。</p>
 <p><strong>API を Tealium SDK に使用して、個別のタグをオフにすることができるか?</strong></p>
 <p>いいえ、できません。同意のオプトインとオプトアウトは、カテゴリ レベルでなされます。 </p>
 
@@ -772,7 +772,7 @@ Tealium iQ Tag Manger および同意管理が有効になっていれば、Teal
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -933,6 +933,22 @@ Tealium iQ Tag Manger および同意管理が有効になっていれば、Teal
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -941,8 +957,24 @@ Tealium iQ Tag Manger および同意管理が有効になっていれば、Teal
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

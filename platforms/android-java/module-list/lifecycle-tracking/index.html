@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -405,7 +405,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>      implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium.lifecycle-1.1.4&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h2 id="自動トラッキングされるイベント">自動トラッキングされるイベント</h2>
-<p>このモジュールは、<code>lifecycle_type</code>変数によって設定される以下のライフサイクルイベントをトラッキングします。</p>
+<p>このモジュールは、<code>lifecycle_type</code>変数によって構成される以下のライフサイクルイベントをトラッキングします。</p>
 <table>
 <thead>
 <tr>
@@ -439,7 +439,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Standard Tealium instance
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">createInstance</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">,</span> config<span style="color:#f92672">);</span>
 </span></span></code></pre></div><h2 id="手動でトラッキングされるイベント">手動でトラッキングされるイベント</h2>
-<p>特定のライフサイクルパラダイムおよび通常とは異なるライフサイクルトラッキングに使用できます。ほとんどの実装には、この方法は推奨しません。手動のライフサイクルトラッキングを許可するには、ライフサイクル初期化コードを更新し、<code>isAutoTracking</code>を<code>false</code>に設定します。</p>
+<p>特定のライフサイクルパラダイムおよび通常とは異なるライフサイクルトラッキングに使用できます。ほとんどの実装には、この方法は推奨しません。手動のライフサイクルトラッキングを許可するには、ライフサイクル初期化コードを更新し、<code>isAutoTracking</code>を<code>false</code>に構成します。</p>
 <p><code>launch</code>イベントを手動でトラッキングするには、<code>trackLaunchEvent()</code>メソッドを呼び出します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>LifeCycle lifeCycle <span style="color:#f92672">=</span> LifeCycle<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">(</span>TEALIUM_INSTANCE_ID<span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>
@@ -473,7 +473,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    lifeCycle<span style="color:#f92672">.</span><span style="color:#a6e22e">trackWakeEvent</span><span style="color:#f92672">(</span>data<span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>Tealiumおよび付随するLifeCycle Multitonは、Tealium iQの公開設定からリモートで終了できます。インスタンスでメソッドを呼び出す場合は、Nullチェックを実行してください。</p>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>Tealiumおよび付随するLifeCycle Multitonは、Tealium iQの公開構成からリモートで終了できます。インスタンスでメソッドを呼び出す場合は、Nullチェックを実行してください。</p>
 <h2 id="クラッシュ検知">クラッシュ検知</h2>
 <p><code>wake</code>イベントに続いて<code>launch</code>イベントが発生する場合、またはその逆の場合も、アプリケーションが正常に<code>sleep</code>しなかったためクラッシュが発生したことを示します。Tealiumライブラリのシャットダウンにより上記のような連続イベントが発生した場合は、クラッシュイベントとは見なされません。</p>
 <p>クラッシュイベントが検知されると、<code>launch</code>または<code>wake</code>イベントデータに<code>lifecycle_diddetectcrash</code>変数が追加されます。</p>
@@ -882,6 +882,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -890,8 +906,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

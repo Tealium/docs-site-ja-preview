@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -386,8 +386,8 @@ php bin/magento cache:flush
 <pre tabindex="0"><code>php bin/magento maintenance:disable
 </code></pre></li>
 </ol>
-<h2 id="設定">設定</h2>
-<p>Magento 2を設定するには、次の手順を実行します：</p>
+<h2 id="構成">構成</h2>
+<p>Magento 2を構成するには、次の手順を実行します：</p>
 <ol>
 <li>管理パネルで、<strong>Stores &gt; Configuration &gt; Tealium &gt; Tag Management</strong>に移動します。</li>
 <li>拡張機能を有効にし、Tealium iQアカウント、プロファイル、環境を入力します。</li>
@@ -395,7 +395,7 @@ php bin/magento cache:flush
 <li>平文の顧客メールアドレスを許可するには、<strong>Allow plain text customer email</strong>ドロップダウンリストで<strong>No</strong>を選択します。 それ以外の場合、メールアドレスはSHA-256ハッシュを使用して暗号化されます。</li>
 </ol>
 <h2 id="テスト">テスト</h2>
-<p>TealiumとMagentoの設定が正しく連携して動作していることを確認するために、次のテストを使用します：</p>
+<p>TealiumとMagentoの構成が正しく連携して動作していることを確認するために、次のテストを使用します：</p>
 <ul>
 <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/code-sniffer/">Code Sniffer</a></li>
 <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/installation-and-varnish-tests/">Installation and Varnish Tests</a></li>
@@ -404,8 +404,8 @@ php bin/magento cache:flush
 <h2 id="リリースノート">リリースノート</h2>
 <h4 id="320">3.2.0</h4>
 <ul>
-<li>任意のFPD（First-Party Domain）設定。詳細については、<a href="/iq-tag-management/administration/first-party-domains/manage/">Manage First-Party Domains</a>を参照してください。</li>
-<li>メールハッシング：<strong>Yes</strong>に設定すると、<code>customer_email</code>パラメータのメールアドレスにSHA256()が適用されます。</li>
+<li>任意のFPD（First-Party Domain）構成。詳細については、<a href="/iq-tag-management/administration/first-party-domains/manage/">Manage First-Party Domains</a>を参照してください。</li>
+<li>メールハッシング：<strong>Yes</strong>に構成すると、<code>customer_email</code>パラメータのメールアドレスにSHA256()が適用されます。</li>
 <li>拡張機能の<code>etc</code>ディレクトリ（<code>public_html/integration-magento/etc</code>）の<code>csp_whitelist.xml</code>ファイルを更新しました。</li>
 <li>Magento 2.4.6のCSP（Content Security Policy）の更新</li>
 <li>バグ修正</li>
@@ -433,7 +433,7 @@ php bin/magento cache:flush
 <h4 id="101">1.0.1</h4>
 <ul>
 <li>Magento拡張機能を介してデプロイされるデフォルトのUDO（ページソースのutag_data JSONオブジェクト）は、Tealium iQ TMS Data Layerバンドルと一致します</li>
-<li>管理パネルでアカウント情報を設定します</li>
+<li>管理パネルでアカウント情報を構成します</li>
 <li>UDOを拡張し、カスタマイズします</li>
 </ul>
 
@@ -466,7 +466,7 @@ php bin/magento cache:flush
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -483,7 +483,7 @@ php bin/magento cache:flush
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">必要条件</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">インストール</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">テスト</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">リリースノート</a></li>
               </nav>
@@ -619,6 +619,22 @@ php bin/magento cache:flush
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -627,8 +643,24 @@ php bin/magento cache:flush
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

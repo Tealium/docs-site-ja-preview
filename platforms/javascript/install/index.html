@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -416,12 +416,12 @@ var utag_data = {
 <p>Tealiumをサイトにインストールするためのコードを見つけて取得するには：</p>
 <ol>
 <li>クライアントサイドの管理メニューで、<strong>Code Center</strong>をクリックします。<strong>Code Center</strong>ダイアログが表示されます。</li>
-<li>デフォルトの<strong>Javascript Type</strong>を<a href="https://community.tealiumiq.com/t5/Getting-Started/Synchronous-vs-Asynchronous-JavaScript-sync-vs-async/ta-p/13490"><strong>Asynchronous</strong></a>（推奨）に設定したままにします。</li>
+<li>デフォルトの<strong>Javascript Type</strong>を<a href="https://community.tealiumiq.com/t5/Getting-Started/Synchronous-vs-Asynchronous-JavaScript-sync-vs-async/ta-p/13490"><strong>Asynchronous</strong></a>（推奨）に構成したままにします。</li>
 <li><strong>Tealium Script</strong>タブで、<strong>Select All</strong>ボタンをクリックしてコードスニペットを選択します。</li>
 <li>選択したユニバーサルタグコードをクリップボードにコピーします。</li>
 </ol>
 <h3 id="コードの配置">コードの配置</h3>
-<p>ユニバーサルタグコードをウェブサイトのすべてのページの開始<code>&lt;body&gt;</code>タグの直後に貼り付けます。この位置付けは、最大数のベンダーとの互換性を提供し、訪問者が次のページに移動する前にサードパーティのトラッキングを完了させます。</p>
+<p>ユニバーサルタグコードをウェブサイトのすべてのページの開始<code>&lt;body&gt;</code>タグの直後に貼り付けます。この位置付けは、最大数のベンダーとの互換性を提供し、訪問が次のページに移動する前にサードパーティのトラッキングを完了させます。</p>
 <p>以下の例はコードの配置を示しています：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- code --&gt;</span>
@@ -442,7 +442,7 @@ var utag_data = {
 <p><code>utag.js</code>によって行われたトラッキングコールは、ナビゲートするかページ内のイベントをトリガーするとツールに表示され、更新されます。</p>
 <p><a href="/iq-tag-management/troubleshooting/utag-debugger/">詳しく学ぶ</a> ユニバーサルタグデバッガーのインストールと使用方法について。</p>
 <h3 id="web-companion">Web Companion</h3>
-<p>Web Companionは、タグの設定を確認し、サイト上のデータを検査し、新しい設定を素早く簡単に作成してテストすることができるブラウザツールです。このツールを起動すると、<code>utag.js</code>ライブラリがサイト上で正しくロードされていることをすばやく確認できます。</p>
+<p>Web Companionは、タグの構成を確認し、サイト上のデータを検査し、新しい構成を素早く簡単に作成してテストすることができるブラウザツールです。このツールを起動すると、<code>utag.js</code>ライブラリがサイト上で正しくロードされていることをすばやく確認できます。</p>
 <figure><a class="slb" href="/images/platforms/javascript/web-companion.png"><img src="/images/platforms/javascript/web-companion.png" width="375" height="550"/>
     </a><figcaption><p>Web Companion</p>
         </figcaption>
@@ -452,14 +452,14 @@ var utag_data = {
 <p><strong>ターゲット環境（デフォルトでは無効）</strong> <br>
 ページコードで検出された環境はオレンジで囲まれています。現在表示されている環境は青で強調表示されています。環境を変更するには、ロードしたいターゲット環境をクリックし、<strong>Refresh Page</strong>をクリックします。</p>
 <ul>
-<li>この機能を有効にするには、<a href="/iq-tag-management/save-publish/publish-configuration/">公開設定のWeb Companion設定</a>をオンにします。</li>
+<li>この機能を有効にするには、<a href="/iq-tag-management/save-publish/publish-configuration/">公開構成のWeb Companion構成</a>をオンにします。</li>
 <li><a href="/iq-tag-management/troubleshooting/switch-environoment/">環境の切り替え</a>の他の方法について学びます。</li>
 </ul>
 <p><strong>Tags &amp; Extensions Tabs</strong>  <br>
 このタブには、どのタグがロードされ、リクエストが正常に送信されたかが表示されます。成功したExtensionsも表示されます。</p>
 <p><strong>Timers</strong><br>
 各Tealium JavaScriptライブラリのロード時間と送信時間がタブの下部に表示されます。</p>
-<p><strong>変更の保存</strong><br>
+<p><strong>変更のストレージ</strong><br>
 Web Companionを通じてプロファイルに適用された変更は、ブックマークレットの下部にキューイングされ、<strong>Save&hellip;<strong>ボタンをクリックするまでコミットされません。変更をコミットしたくない場合は、適切な変更の隣にある</strong>X</strong>ボタンをクリックして、その変更をキューから削除することもできます。</p>
 <p><a href="">詳しく学ぶ</a> Web Companionのインストールと使用方法について。</p>
 
@@ -522,7 +522,7 @@ Web Companionを通じてプロファイルに適用された変更は、ブッ�
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -677,6 +677,22 @@ Web Companionを通じてプロファイルに適用された変更は、ブッ�
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -685,8 +701,24 @@ Web Companionを通じてプロファイルに適用された変更は、ブッ�
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

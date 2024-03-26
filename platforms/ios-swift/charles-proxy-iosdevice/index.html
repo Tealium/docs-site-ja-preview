@@ -6,12 +6,12 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Charlesを使ってiOSデバイスのプロキシを設定する | iOS（Swift）用Tealium | Tealium開発者ドキュメントプレビュー</title>
+    <title>Charlesを使ってiOSデバイスのプロキシを構成する | iOS（Swift）用Tealium | Tealium開発者ドキュメントプレビュー</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -342,7 +342,7 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Charlesを使ってiOSデバイスのプロキシを設定する</h1>
+<h1 class="lh-title mt30 mb3">Charlesを使ってiOSデバイスのプロキシを構成する</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -350,14 +350,14 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      このガイドでは、Charlesを使用してiOSデバイスからのHTTPトラフィックをプロキシするための設定手順を説明します。このガイドはCharlesのバージョン3.10以降に適用されます。
+      このガイドでは、Charlesを使用してiOSデバイスからのHTTPトラフィックをプロキシするための構成手順を説明します。このガイドはCharlesのバージョン3.10以降に適用されます。
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <h2 id="charlesの設定">Charlesの設定</h2>
-<p>Charlesを設定するには:</p>
+  <h2 id="charlesの構成">Charlesの構成</h2>
+<p>Charlesを構成するには:</p>
 <ol>
 <li><strong>Proxy &gt; Proxy Settings&hellip;</strong> メニューを開きます。</li>
 <li><strong>Proxies</strong> タブをクリックし、<strong>HTTP Proxy Port</strong> フィールドに <code>8888</code> を入力します。<br>
@@ -387,8 +387,8 @@ var utag_data = {
 </figure></li>
 <li>証明書を取得するためのIPアドレスとURLをメモします。例: <code>10.0.2.158</code> と <code>http://charlesproxy.com/getssl</code></li>
 </ol>
-<h2 id="iosデバイスの設定">iOSデバイスの設定</h2>
-<p>iOSデバイスを設定するには:</p>
+<h2 id="iosデバイスの構成">iOSデバイスの構成</h2>
+<p>iOSデバイスを構成するには:</p>
 <ol>
 <li><strong>Settings &gt; Wi-Fi</strong> に移動し、コンピュータと同じWi-Fiネットワークに接続します。</li>
 <li>アクティブなWi-Fiネットワークの詳細を選択し、<strong>HTTP Proxy</strong> セクションで <strong>Manual</strong> モードを選択します。</li>
@@ -398,7 +398,7 @@ var utag_data = {
          title="Server and port fields"/>
     </a>
 </figure></li>
-<li>iOSデバイスでプロキシ設定を保存すると、コンピュータ上のCharlesから接続を許可するように求めるアラートが表示されます。<strong>Allow</strong> をクリックします。<br>
+<li>iOSデバイスでプロキシ構成をストレージすると、コンピュータ上のCharlesから接続を許可するように求めるアラートが表示されます。<strong>Allow</strong> をクリックします。<br>
 <figure><a class="slb" href="/images/platforms/ios-swift/charles-proxy/charles-proxy-iosdevice5.jpeg"><img src="/images/platforms/ios-swift/charles-proxy/charles-proxy-iosdevice5.jpeg"
          alt="Connection attempt dialog - Allow"
          title="Connection attempt dialog - Allow"/>
@@ -478,7 +478,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -492,8 +492,8 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#charles">Charlesの設定</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#ios">iOSデバイスの設定</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#charles">Charlesの構成</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#ios">iOSデバイスの構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#charles-ssl">Charles SSL証明書のインストール</a></li>
               </nav>
   </aside></nav>
@@ -628,6 +628,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -636,8 +652,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

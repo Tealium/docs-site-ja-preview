@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -401,12 +401,12 @@ var utag_data = {
 </span></span></code></pre></div></li>
 </ol>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Collect Dispatcherは主要なTealium Kotlin SDKに依存しているため、<a href="/platforms/android-kotlin/install/">インストール手順</a>に従ってこれも利用可能にすることを確認してください。</p>
-<h2 id="設定オプション">設定オプション</h2>
-<p>TealiumConfigオブジェクトを作成する際に、次の設定を使用して、Collect Dispatcherがデータを送信するURLを設定します：</p>
+<h2 id="構成オプション">構成オプション</h2>
+<p>TealiumConfigオブジェクトを作成する際に、次の構成を使用して、Collect Dispatcherがデータを送信するURLを構成します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(<span style="color:#f92672">..</span>.)
 </span></span><span style="display:flex;"><span>config.overrideCollectUrl = <span style="color:#e6db74">&#34;https://your.endpoint.com/event&#34;</span>
 </span></span><span style="display:flex;"><span>config.overrideCollectBatchUrl = <span style="color:#e6db74">&#34;https://your.endpoint.com/bulk-event&#34;</span>
-</span></span></code></pre></div><p>個々のイベントまたは<a href="/platforms/getting-started-mobile/event-batching/">バッチ処理されたイベント</a>が送信されるエンドポイントを設定します。</p>
+</span></span></code></pre></div><p>個々のイベントまたは<a href="/platforms/getting-started-mobile/event-batching/">バッチ処理されたイベント</a>が送信されるエンドポイントを構成します。</p>
 <p>CNAMEまたはデータセンター固有の要件を使用するデプロイメントの場合は、ドメインを上書きし、Tealiumが定義したエンドポイントを保持します。次の例では、個々のイベントは <code>https://cname.tealiumiq.com/event</code> に、バッチ処理されたイベントは <code>https://cname.tealiumiq.com/bulk-event</code> に行きます：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(<span style="color:#f92672">..</span>.)
 </span></span><span style="display:flex;"><span>config.overrideCollectDomain = <span style="color:#e6db74">&#34;cname.tealiumiq.com&#34;</span>
@@ -473,7 +473,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -491,7 +491,7 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">インストール</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#maven">Maven</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">手動</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定オプション</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成オプション</a></li>
               </nav>
   </aside></nav>
 
@@ -625,6 +625,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -633,8 +649,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

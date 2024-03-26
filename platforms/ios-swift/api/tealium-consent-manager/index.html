@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -378,15 +378,15 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#resetuserconsentpreferences"><code>resetUserConsentPreferences()</code></a></td>
-<td>メモリと永続ストレージに現在保存されているすべての同意設定をクリアします</td>
+<td>メモリと永続ストレージに現在ストレージされているすべての同意構成をクリアします</td>
 </tr>
 <tr>
 <td><a href="#userconsentstatus"><code>userConsentStatus</code></a></td>
-<td>ユーザーの同意ステータスを取得または設定します</td>
+<td>ユーザーの同意ステータスを取得または構成します</td>
 </tr>
 <tr>
 <td><a href="#userconsentcategories"><code>userConsentCategories</code></a></td>
-<td>ユーザーの同意カテゴリを取得または設定します</td>
+<td>ユーザーの同意カテゴリを取得または構成します</td>
 </tr>
 </tbody>
 </table>
@@ -396,7 +396,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>   <span style="color:#75715e">// 同意モーダルを表示</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="userconsentstatus"><code>userConsentStatus</code></h3>
-<p>現在の同意ステータスを取得または設定します。</p>
+<p>現在の同意ステータスを取得または構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> categories = tealium.consentManager?.userConsentStatus
 </span></span><span style="display:flex;"><span>tealium.consentManager?.userConsentStatus = .consented
 </span></span></code></pre></div><table>
@@ -414,10 +414,10 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="resetuserconsentpreferences"><code>resetUserConsentPreferences()</code></h3>
-<p>メモリと永続ストレージに現在保存されているすべての同意設定をクリアします。カテゴリなしの<code>&quot;unknown&quot;</code>同意状態に戻ります。</p>
+<p>メモリと永続ストレージに現在ストレージされているすべての同意構成をクリアします。カテゴリなしの<code>&quot;unknown&quot;</code>同意状態に戻ります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>resetUserConsentPreferences()
 </span></span></code></pre></div><h3 id="userconsentcategories"><code>userConsentCategories</code></h3>
-<p>現在のすべての同意カテゴリを取得または設定します。</p>
+<p>現在のすべての同意カテゴリを取得または構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> categories = tealium.consentManager?.userConsentCategories
 </span></span><span style="display:flex;"><span>tealium.consentManager?.userConsentCategories = [.cdp]
 </span></span></code></pre></div><table>
@@ -494,7 +494,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -646,6 +646,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -654,8 +670,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

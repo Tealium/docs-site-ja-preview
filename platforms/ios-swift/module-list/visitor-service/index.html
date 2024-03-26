@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -379,27 +379,27 @@ var utag_data = {
 <ol>
 <li>Xcodeプロジェクトで、「ファイル」&gt;「Swiftパッケージ」&gt;「パッケージの依存関係を追加」を選択します。</li>
 <li>リポジトリのURL <code>https://github.com/tealium/tealium-swift</code> を入力します。</li>
-<li>バージョンルールを設定します。通常は、「次のメジャーバージョンまで」が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットしてください。</li>
+<li>バージョンルールを構成します。通常は、「次のメジャーバージョンまで」が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットしてください。</li>
 <li>リストから<code>VisitorService</code>、<code>Core</code>、および<code>Collect</code>または<code>TagManagement</code>モジュールを選択し、Xcodeプロジェクトの各アプリターゲットに追加します。「フレームワーク」&gt;「ライブラリと埋め込みコンテンツ」の下にあります。</li>
 </ol>
 <h3 id="cocoapods">CocoaPods</h3>
 <p>CocoaPodsを使用してVisitorServiceモジュールをインストールするには、次のポッドをPodfileに追加します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/Core&#39;</span>
-</span></span><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/Collect&#39;</span> <span style="color:#e6db74">//</span>または <span style="color:#e6db74">&#39;tealium-swift/TagManagement&#39;</span>
+</span></span><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/Collect&#39;</span> <span style="color:#e6db74">//</span><span style="color:#960050;background-color:#1e0010">または</span> <span style="color:#e6db74">&#39;tealium-swift/TagManagement&#39;</span>
 </span></span><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/VisitorService&#39;</span>
 </span></span></code></pre></div><p><a href="/platforms/ios-swift/install/#cocoapods">iOS用のCocoaPodsのインストールについて詳しくはこちら</a>をご覧ください。</p>
 <h3 id="carthage">Carthage</h3>
 <p>Carthageを使用してVisitorServiceモジュールをインストールするには、次の手順に従います。</p>
 <ol>
 <li>
-<p>Xcodeのアプリターゲットの一般設定ページに移動します。</p>
+<p>Xcodeのアプリターゲットの一般構成ページに移動します。</p>
 </li>
 <li>
 <p>次のフレームワークを「埋め込みバイナリ」セクションに追加します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>TealiumVisitorService<span style="color:#f92672">.</span>framework
 </span></span></code></pre></div></li>
 <li>
-<p>VisitorServiceモジュールを設定するには、次の必須のインポートステートメントをプロジェクトに追加します。</p>
+<p>VisitorServiceモジュールを構成するには、次の必須のインポートステートメントをプロジェクトに追加します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumCore</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumCollect</span> <span style="color:#75715e">//またはimport TealiumTagManagement</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">import</span> <span style="color:#a6e22e">TealiumVisitorService</span>
@@ -883,19 +883,19 @@ var utag_data = {
 <tbody>
 <tr>
 <td><code>visitorProfile.tallies</code></td>
-<td>ビジタープロファイルのすべてのタリーを返します。</td>
+<td>ビジタープロファイルのすべての集計を返します。</td>
 <td><code>[String: [String: Double]]</code></td>
 <td><code>[&quot;2983&quot;: [&quot;red shirts category&quot;: 4.0, &quot;green shirts category&quot;: 2.0], &quot;5643&quot;: [&quot;girls&quot;: 3.0, &quot;womens&quot;: 1.0]]</code>]</td>
 </tr>
 <tr>
 <td><code>visitorProfile.tallies[&quot;1399&quot;]</code></td>
-<td>IDによってタリーを返します。</td>
+<td>IDによって集計を返します。</td>
 <td><code>[String: Double]</code></td>
 <td><code>[&quot;girls&quot;: 3.0, &quot;womens&quot;: 1.0]</code></td>
 </tr>
 <tr>
 <td><code>visitorProfile.tallies[&quot;1399&quot;][&quot;womens&quot;]</code></td>
-<td>IDによってタリーを返します。</td>
+<td>IDによって集計を返します。</td>
 <td><code>Double</code></td>
 <td><code>3.0</code></td>
 </tr>
@@ -903,12 +903,12 @@ var utag_data = {
 </table>
 <p>使用例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">didUpdate</span>(visitorProfile: TealiumVisitorProfile) {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// タリー全体を返す</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 集計全体を返す</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> tally = visitorProfile.tallies?[<span style="color:#e6db74">&#34;1399&#34;</span>] {
 </span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Tally id 5377: </span><span style="color:#e6db74">\(</span>tally<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// タリーIDと値のキーを使用してタリー値を返す</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 集計IDと値のキーを使用して集計値を返す</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> tally = visitorProfile.tallies?[<span style="color:#e6db74">&#34;5381&#34;</span>], <span style="color:#66d9ef">let</span> tallyValue = tally[<span style="color:#e6db74">&#34;red shirts&#34;</span>] {
 </span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Tally value for id 5381 and key &#39;red shirts&#39;: </span><span style="color:#e6db74">\(</span>tallyValue<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
@@ -949,7 +949,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>print(cachedProfileString)
 </span></span></code></pre></div><h4 id="requestvisitorprofile"><code>requestVisitorProfile()</code></h4>
 <p>ビジターサービスに即時リクエストを送信して、現在のビジタープロファイルを取得します。プロファイルが最後の取得以降に更新されている場合、<a href="#didupdate"><code>didUpdate()</code></a>デリゲートメソッドが呼び出されます。</p>
-<p>このメソッドは、トラッキングリクエストが送信されるたびに自動的に呼び出されます（ビジタープロファイルの更新間隔が<code>0</code>に設定されている場合）。更新間隔の値がより高い場合は、次のスケジュールされた更新を待たずにプロファイルを即座に取得するためにこのメソッドを呼び出すことができます。</p>
+<p>このメソッドは、トラッキングリクエストが送信されるたびに自動的に呼び出されます（ビジタープロファイルの更新間隔が<code>0</code>に構成されている場合）。更新間隔の値がより高い場合は、次のスケジュールされた更新を待たずにプロファイルを即座に取得するためにこのメソッドを呼び出すことができます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">self</span>.tealium?.visitorService?.requestVisitorProfile()
 </span></span></code></pre></div><p>使用例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">track</span>(title: String, data: [String: Any]?) {
@@ -999,7 +999,7 @@ var utag_data = {
 </tbody>
 </table>
 <h4 id="didupdate"><code>didUpdate()</code></h4>
-<p>プロファイルが更新されたときに更新されたビジタープロファイルを返すコールバックメソッドです。または、<a href="#requestvisitorprofile"><code>requestVisitorProfile()</code></a>メソッドが呼び出された場合です。これは、更新間隔の設定値に依存します。デフォルトでは、5分ごとに更新されます。</p>
+<p>プロファイルが更新されたときに更新されたビジタープロファイルを返すコールバックメソッドです。または、<a href="#requestvisitorprofile"><code>requestVisitorProfile()</code></a>メソッドが呼び出された場合です。これは、更新間隔の構成値に依存します。デフォルトでは、5分ごとに更新されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">didUpdate</span>(visitorProfile: TealiumVisitorProfile) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// プロファイルの属性に対してアクションを実行する</span>
 </span></span><span style="display:flex;"><span>    print(visitorProfile.audiences)
@@ -1033,7 +1033,7 @@ var utag_data = {
 <tbody>
 <tr>
 <td><a href="#visitorservicedelegate"><code>visitorServiceDelegate</code></a></td>
-<td><code>didUpdate</code>デリゲートメソッドを使用するためにデリゲートを設定します</td>
+<td><code>didUpdate</code>デリゲートメソッドを使用するためにデリゲートを構成します</td>
 </tr>
 <tr>
 <td><a href="#visitorserviceoverrideprofile"><code>visitorServiceOverrideProfile</code></a></td>
@@ -1045,12 +1045,12 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#visitorservicerefresh"><code>visitorServiceRefresh</code></a></td>
-<td>ビジタープロファイルの取得頻度を設定します</td>
+<td>ビジタープロファイルの取得頻度を構成します</td>
 </tr>
 </tbody>
 </table>
 <h4 id="visitorservicedelegate"><code>visitorServiceDelegate</code></h4>
-<p><code>didUpdate</code>デリゲートメソッドを使用するためにデリゲートを設定します。</p>
+<p><code>didUpdate</code>デリゲートメソッドを使用するためにデリゲートを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.visitorServiceDelegate = <span style="color:#66d9ef">self</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -1075,7 +1075,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                                 environment: <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>,
 </span></span><span style="display:flex;"><span>                                 datasource: <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>,
 </span></span><span style="display:flex;"><span>                                 optionalData: <span style="color:#66d9ef">nil</span>)
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium VisitorServiceモジュールの設定メソッド</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium VisitorServiceモジュールの構成メソッド</span>
 </span></span><span style="display:flex;"><span>      config.visitorServiceDelegate = <span style="color:#66d9ef">self</span>
 </span></span><span style="display:flex;"><span>  }
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">TealiumHelper</span>: VisitorServiceDelegate {
@@ -1100,7 +1100,7 @@ var utag_data = {
 <tbody>
 <tr>
 <td><code>String</code></td>
-<td>ビジタープロファイルを取得するためのAudience Streamプロファイルを設定します</td>
+<td>ビジタープロファイルを取得するためのAudience Streamプロファイルを構成します</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
 </tbody>
@@ -1112,7 +1112,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                                 environment: <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>,
 </span></span><span style="display:flex;"><span>                                 datasource: <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>,
 </span></span><span style="display:flex;"><span>                                 optionalData: <span style="color:#66d9ef">nil</span>)
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium Visitor Serviceモジュールの設定メソッド</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium Visitor Serviceモジュールの構成メソッド</span>
 </span></span><span style="display:flex;"><span>      config.visitorServiceOverrideProfile = <span style="color:#e6db74">&#34;main&#34;</span>
 </span></span><span style="display:flex;"><span>  }
 </span></span></code></pre></div><h4 id="visitorserviceoverrideurl"><code>visitorServiceOverrideURL</code></h4>
@@ -1129,7 +1129,7 @@ var utag_data = {
 <tbody>
 <tr>
 <td><code>String</code></td>
-<td>ビジタープロファイルを取得するためのURLを設定します</td>
+<td>ビジタープロファイルを取得するためのURLを構成します</td>
 <td><code>&quot;https://overridden-subdomain.yourdomain.com/&quot;</code></td>
 </tr>
 </tbody>
@@ -1141,11 +1141,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                                 environment: <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>,
 </span></span><span style="display:flex;"><span>                                 datasource: <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>,
 </span></span><span style="display:flex;"><span>                                 optionalData: <span style="color:#66d9ef">nil</span>)
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium Visitor Serviceモジュールの設定メソッド</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium Visitor Serviceモジュールの構成メソッド</span>
 </span></span><span style="display:flex;"><span>      config.visitorServiceOverrideURL = <span style="color:#e6db74">&#34;https://overridden-subdomain.yourdomain.com/&#34;</span>
 </span></span><span style="display:flex;"><span>  }
 </span></span></code></pre></div><h4 id="visitorservicerefresh"><code>visitorServiceRefresh</code></h4>
-<p>ビジタープロファイルの取得頻度を調整するためにこのプロパティを使用します。デフォルト値は5分です。<code>requestVisitorProfile()</code>メソッドをすべてのトラッキング呼び出しに追加しても、この値が<code>0</code>に設定されていない限り、プロファイルは毎回取得されません。</p>
+<p>ビジタープロファイルの取得頻度を調整するためにこのプロパティを使用します。デフォルト値は5分です。<code>requestVisitorProfile()</code>メソッドをすべてのトラッキング呼び出しに追加しても、この値が<code>0</code>に構成されていない限り、プロファイルは毎回取得されません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> config = TealiumConfig(...)
 </span></span><span style="display:flex;"><span>config.visitorServiceRefresh = .every(<span style="color:#ae81ff">3</span>, .seconds)
 </span></span></code></pre></div><p><code>RefreshInterval</code>のオプション: <code>seconds</code>、<code>minutes</code>、または<code>hours</code></p>
@@ -1172,7 +1172,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                                 environment: <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>,
 </span></span><span style="display:flex;"><span>                                 datasource: <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>,
 </span></span><span style="display:flex;"><span>                                 optionalData: <span style="color:#66d9ef">nil</span>)
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium Visitor Serviceモジュールの設定メソッド</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium Visitor Serviceモジュールの構成メソッド</span>
 </span></span><span style="display:flex;"><span>      config.visitorServiceRefresh = .every(<span style="color:#ae81ff">3</span>, .seconds)
 </span></span><span style="display:flex;"><span>  }
 </span></span></code></pre></div><h2 id="リリースノート">リリースノート</h2>
@@ -1239,7 +1239,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1398,6 +1398,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1406,8 +1422,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

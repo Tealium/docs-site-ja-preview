@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -359,9 +359,9 @@ var utag_data = {
   <h2 id="概要">概要</h2>
 <p>ハイブリッドアプリは、ネイティブコード（iOSの場合はObjective-C、Androidの場合はJavaなど）で書かれたコンポーネントと、HTMLとJavaScriptで書かれた1つ以上のWebビューコンポーネントを組み合わせたものです。一般的な使用例は、ネイティブコードのコンポーネントで商品の閲覧を行い、Webビューコンポーネントでチェックアウトや支払い処理を行うショッピングアプリです。</p>
 <h3 id="問題">問題</h3>
-<p>ハイブリッドアプリのアナリティクスベンダーにとっての共通の課題は、ネイティブコンポーネントとWebビューコンポーネントの間でセッションを追跡することです。ベンダーが両方のコンポーネントに統合されていても、訪問者はそれぞれに別々のセッション識別子が割り当てられ、ベンダーのレポートではセッション数が過大評価されます。</p>
+<p>ハイブリッドアプリのアナリティクスベンダーにとっての共通の課題は、ネイティブコンポーネントとWebビューコンポーネントの間でセッションを追跡することです。ベンダーが両方のコンポーネントに統合されていても、訪問はそれぞれに別々のセッション識別子が割り当てられ、ベンダーのレポートではセッション数が過大評価されます。</p>
 <p>この問題を解決するためには、ネイティブコードが読み込むWebビューのURLにクエリ文字列パラメータを追加して、これらのコンポーネント間で情報を共有する必要があります。このパラメータには、ネイティブコンポーネントとWebビューコンポーネントの両方で使用される共有セッションIDが含まれます。</p>
-<p>このセッションIDの開始と共有は、Tealium iQの設定とネイティブアプリのカスタムコードを使用して行われます。カスタムリモートコマンドタグは、非表示のWebビューとネイティブコードの間でセッションIDを共有するために使用され、それが可視なWebビューから読み込まれるウェブサイトに渡されます。</p>
+<p>このセッションIDの開始と共有は、Tealium iQの構成とネイティブアプリのカスタムコードを使用して行われます。カスタムリモートコマンドタグは、非表示のWebビューとネイティブコードの間でセッションIDを共有するために使用され、それが可視なWebビューから読み込まれるウェブサイトに渡されます。</p>
 <h3 id="解決策">解決策</h3>
 <p>この記事では、Google Analyticsを使用した解決策を示しますが、セッション管理をサポートする他のベンダーにも適用できます。Google Analyticsの解決策では、Tealium iQ SDKでセッションID（<code>clientId</code>）を取得し（非表示のWebビューで生成され、リモートコマンドを介してネイティブコードに渡される）、クエリ文字列パラメータを介してハイブリッドアプリのWebビューコンポーネントにセッションIDを渡し、Tealium iQを使用してセッションIDをWebビュー内のウェブサイトで実行されているGoogle Analyticsに戻します。この例では、主にAndroidに焦点を当てますが、iOSのプロセスも同じです。</p>
 <p>この解決策の要件は次のとおりです。</p>
@@ -375,7 +375,7 @@ var utag_data = {
 </ul>
 </li>
 <li>モバイルアプリ用のiQプロファイル<br>
-ネイティブアプリを管理するプロファイルには、次の設定が必要です。
+ネイティブアプリを管理するプロファイルには、次の構成が必要です。
 <ul>
 <li><strong>カスタムリモートコマンドタグ</strong> - 非表示のWebビューとネイティブアプリコードの間の通信を容易にするタグ。</li>
 <li><code>session_id</code> - カスタムリモートコマンドタグからネイティブコードに渡されるベンダーセッションIDを格納するUDO変数。</li>
@@ -392,7 +392,7 @@ var utag_data = {
 </ol>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>この記事では、Android/iOS v5.0以降のTealiumを使用していることを前提としており、アプリを再デプロイする必要があります。</p>
 <p>以下は、ハイブリッドアプリの各コンポーネントに対する解決策の概要です。</p>
-<table style="border: 1px solid rgb(237, 237, 237) !important"><thead><tr><td colspan="4" style="text-align: center;"><strong>ハイブリッドアプリ</strong></td></tr></thead><tbody><tr ><th style="border: 1px solid rgb(237, 237, 237) !important;vertical-align: top; text-align: center;text-transform:uppercase;" class="bg-secondary" colspan="2">ネイティブコード<br>コンポーネント</th><td rowspan="3" style="vertical-align: top; text-align: center;border: 1px solid rgb(237, 237, 237) !important">ネイティブコードがURLを読み込む際にクエリ文字列パラメータ<code>&session_id=SESSION</code>を追加します。<p>&nbsp;</p></td><th style="vertical-align: top; text-align: center;text-transform:uppercase;" class="bg-secondary">Webビュー<br>コンポーネント</th></tr><tr><td style="vertical-align: top; text-align: center;">iQモバイルプロファイル<br>(非表示のWebビューで実行)</td><td style="border: 1px solid rgb(237, 237, 237) !important;vertical-align: top; text-align: center;">ネイティブコード</td><td style="vertical-align: top; text-align: center;">ウェブサイト用iQプロファイル</td></tr><tr><td style="vertical-align: top;"><p>カスタムリモートコマンド<code>syncSessionId</code>コマンドの設定</p><p>ベンダーからセッションIDを取得するJavaScriptコード拡張</p><p>セッションIDを渡すための<code>utag.link()</code>の呼び出し</p></td><td style="vertical-align: top;border: 1px solid rgb(237, 237, 237) !important"><p>syncSessionIdを処理するカスタムコード</p><p>セッションID変数をWebビューに渡すカスタムコード</p></td><td style="vertical-align: top;"><p>WebビューURLのクエリ文字列変数<code>session_id</code></p><p><code>session_id</code>のデータマッピングを持つベンダータグ</p></td></tr></tbody></table>
+<table style="border: 1px solid rgb(237, 237, 237) !important"><thead><tr><td colspan="4" style="text-align: center;"><strong>ハイブリッドアプリ</strong></td></tr></thead><tbody><tr ><th style="border: 1px solid rgb(237, 237, 237) !important;vertical-align: top; text-align: center;text-transform:uppercase;" class="bg-secondary" colspan="2">ネイティブコード<br>コンポーネント</th><td rowspan="3" style="vertical-align: top; text-align: center;border: 1px solid rgb(237, 237, 237) !important">ネイティブコードがURLを読み込む際にクエリ文字列パラメータ<code>&session_id=SESSION</code>を追加します。<p>&nbsp;</p></td><th style="vertical-align: top; text-align: center;text-transform:uppercase;" class="bg-secondary">Webビュー<br>コンポーネント</th></tr><tr><td style="vertical-align: top; text-align: center;">iQモバイルプロファイル<br>(非表示のWebビューで実行)</td><td style="border: 1px solid rgb(237, 237, 237) !important;vertical-align: top; text-align: center;">ネイティブコード</td><td style="vertical-align: top; text-align: center;">ウェブサイト用iQプロファイル</td></tr><tr><td style="vertical-align: top;"><p>カスタムリモートコマンド<code>syncSessionId</code>コマンドの構成</p><p>ベンダーからセッションIDを取得するJavaScriptコード拡張</p><p>セッションIDを渡すための<code>utag.link()</code>の呼び出し</p></td><td style="vertical-align: top;border: 1px solid rgb(237, 237, 237) !important"><p>syncSessionIdを処理するカスタムコード</p><p>セッションID変数をWebビューに渡すカスタムコード</p></td><td style="vertical-align: top;"><p>WebビューURLのクエリ文字列変数<code>session_id</code></p><p><code>session_id</code>のデータマッピングを持つベンダータグ</p></td></tr></tbody></table>
 <h2 id="実装">実装</h2>
 <h3 id="リモートコマンドの追加ネイティブコード">リモートコマンドの追加（ネイティブコード）</h3>
 <p><code>addRemoteCommand</code>メソッドを使用して、カスタムリモートコマンドタグが利用するための新しいコマンドを定義します。これにより、非表示のTealium Webビューがネイティブコード環境のTealiumライブラリにデータを渡すことができます。</p>
@@ -411,7 +411,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onInvoke</span><span style="color:#f92672">(</span>Response response<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// レスポンスオブジェクトを取得
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        JSONObject resp <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span><span style="color:#a6e22e">getRequestPayload</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// レスポンスのキー&#34;sessionId&#34;の値をアプリケーションレベルの&#34;gaSessionId&#34;文字列変数に設定します
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// レスポンスのキー&#34;sessionId&#34;の値をアプリケーションレベルの&#34;gaSessionId&#34;文字列変数に構成します
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// これは、この共有変数をApplicationクラスで作成したことを前提としています。詳細については、サンプルアプリを参照してください。
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        DemoApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">sessionId</span> <span style="color:#f92672">=</span> resp<span style="color:#f92672">.</span><span style="color:#a6e22e">optString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sessionId&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
@@ -438,11 +438,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>[instanceHandle addRemoteCommandID:<span style="color:#e6db74">@&#34;syncSessionId&#34;</span>
 </span></span><span style="display:flex;"><span>   description:<span style="color:#e6db74">@&#34;セッションIDを同期します&#34;</span>
 </span></span><span style="display:flex;"><span>   targetQueue:dispatch_get_main_queue()
-</span></span><span style="display:flex;"><span> <span style="color:#75715e">// レスポンスはTealium iQで設定したマッピングから生成されます
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">// レスポンスはTealium iQで構成したマッピングから生成されます
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   responseBlock:<span style="color:#f92672">^</span>(TEALRemoteCommandResponse <span style="color:#f92672">*</span> _Nonnull response) {
 </span></span><span style="display:flex;"><span> <span style="color:#75715e">// レスポンスオブジェクトからセッションIDを取得します
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>       NSString <span style="color:#f92672">*</span>session_id <span style="color:#f92672">=</span> response.requestPayload[<span style="color:#e6db74">@&#34;sessionId&#34;</span>];
-</span></span><span style="display:flex;"><span> <span style="color:#75715e">/* セッションIDを取得したので、後でWebビューを作成する際にアクセスできる場所に保存します。詳細については、Androidのコードを参照してください */</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">/* セッションIDを取得したので、後でWebビューを作成する際にアクセスできる場所にストレージします。詳細については、Androidのコードを参照してください */</span>
 </span></span><span style="display:flex;"><span>}<span style="color:#960050;background-color:#1e0010">\</span>];
 </span></span></code></pre></div><h3 id="カスタムリモートコマンドタグの追加モバイルweb用のiqプロファイル">カスタムリモートコマンドタグの追加（モバイルWeb用のiQプロファイル）</h3>
 <p>iQモバイルプロファイルでは、カスタムリモートコマンドタグを使用して、ネイティブコードで定義したリモートコマンドをトリガーします。このタグにデータマッピングを追加すると、リモートコマンドがそのデータを受け取ります。</p>
@@ -453,7 +453,7 @@ var utag_data = {
 <figure><a class="slb" href="/images/platforms/remote-commands/sync-analytics1.jpg"><img src="/images/platforms/remote-commands/sync-analytics1.jpg"/>
     </a>
 </figure></li>
-<li><strong>コマンドID</strong>を<code>syncSessionId</code>（ネイティブコードで定義したリモートコマンドの名前）に設定します：<br>
+<li><strong>コマンドID</strong>を<code>syncSessionId</code>（ネイティブコードで定義したリモートコマンドの名前）に構成します：<br>
 <figure><a class="slb" href="/images/platforms/remote-commands/sync-analytics2.jpg"><img src="/images/platforms/remote-commands/sync-analytics2.jpg"/>
     </a>
 </figure></li>
@@ -464,10 +464,10 @@ var utag_data = {
 </ol>
 <h3 id="ベンダータグの追加モバイルアプリ用のiqプロファイル">ベンダータグの追加（モバイルアプリ用のiQプロファイル）</h3>
 <p>モバイルアプリのiQプロファイルでは、ベンダータグ（この例ではGoogle Analytics）を使用してセッションを開始し、<code>utag.link()</code>を呼び出してカスタムリモートコマンドタグにセッションIDの値を渡します。おそらく、ネイティブアプリのトラッキングの目的で既にこのタグをモバイルプロファイルに追加しているでしょう（多くの人気のあるアナリティクスタグはモバイル対応しています）。</p>
-<p>ベンダータグを追加して設定する手順は次のとおりです。</p>
+<p>ベンダータグを追加して構成する手順は次のとおりです。</p>
 <ol>
 <li>ベンダータグを追加します（まだ追加していない場合）。</li>
-<li>ベンダータグ（Google Analyticsの場合）にスコープが設定されたJavaScriptコード拡張を追加します。以下はその内容です。<code>UID</code>をカスタムリモートコマンドタグのUIDに置き換えてください。
+<li>ベンダータグ（Google Analyticsの場合）にスコープが構成されたJavaScriptコード拡張を追加します。以下はその内容です。<code>UID</code>をカスタムリモートコマンドタグのUIDに置き換えてください。
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>window.<span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>() {
 </span></span><span style="display:flex;"><span>     <span style="color:#75715e">// ベンダー固有: Google AnalyticsからセッションIDを取得
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">tracker</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">ga</span>.<span style="color:#a6e22e">getByName</span>(<span style="color:#e6db74">&#39;tealium_0&#39;</span>); <span style="color:#75715e">// ページ上にGAトラッカーが1つしかないことを前提としています
@@ -477,10 +477,10 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">1000</span>);
 </span></span></code></pre></div></li>
 </ol>
-<p>この拡張は1秒待機してタグが十分に読み込まれるのを待ち、ベンダーからセッションIDを取得します。その後、<code>utag.link()</code>を呼び出してカスタムリモートコマンドタグをトリガーし、パラメータとして<code>session_id</code>を渡します。その後、カスタムリモートコマンドタグはそのデータをリモートコマンド<code>syncSessionId</code>に渡し、ネイティブコードでそれを後で使用するために保存します。</p>
+<p>この拡張は1秒待機してタグが十分に読み込まれるのを待ち、ベンダーからセッションIDを取得します。その後、<code>utag.link()</code>を呼び出してカスタムリモートコマンドタグをトリガーし、パラメータとして<code>session_id</code>を渡します。その後、カスタムリモートコマンドタグはそのデータをリモートコマンド<code>syncSessionId</code>に渡し、ネイティブコードでそれを後で使用するためにストレージします。</p>
 <h3 id="ベンダータグの追加モバイルweb用のiqプロファイル">ベンダータグの追加（モバイルWeb用のiQプロファイル）</h3>
 <p>ハイブリッドアプリのWebビューコンポーネントで読み込まれるウェブサイト用のiQ Webプロファイル（Webプロファイル）では、セッションIDに使用されるクエリ文字列パラメータを検出し、その変数をベンダータグにマッピングします。</p>
-<p>セッションIDを同期するためにベンダータグを設定する手順は次のとおりです。</p>
+<p>セッションIDを同期するためにベンダータグを構成する手順は次のとおりです。</p>
 <ol>
 <li>ベンダータグを追加します（まだ追加していない場合）。</li>
 <li>クエリ文字列パラメータのタイプである<code>session_id</code>という名前の新しいデータレイヤー変数を追加します。</li>
@@ -547,7 +547,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -704,6 +704,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -712,8 +728,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -390,11 +390,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#setdatasourceid"><code>setDatasourceId()</code></a></td>
-<td>データソースキーを設定します</td>
+<td>データソースキーを構成します</td>
 </tr>
 <tr>
 <td><a href="#setforceoverrideloglevel"><code>setForceOverrideLogLevel()</code></a></td>
-<td>初期化時に特定のログレベルを強制するように設定します</td>
+<td>初期化時に特定のログレベルを強制するように構成します</td>
 </tr>
 <tr>
 <td><a href="#setoverridecollectdispatchprofile"><code>setOverrideCollectDispatchProfile()</code></a></td>
@@ -406,11 +406,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#setoverridevisitorservicedomain"><code>setOverrideVisitorServiceDomain()</code></a></td>
-<td>Tealium Collect訪問者サービスドメインをオーバーライドします</td>
+<td>Tealium Collect訪問サービスドメインをオーバーライドします</td>
 </tr>
 <tr>
 <td><a href="#setsecondsbeforebatchtimeout"><code>setSecondsBeforeBatchTimeout()</code></a></td>
-<td>バッチタイムアウトまでの秒数を設定します</td>
+<td>バッチタイムアウトまでの秒数を構成します</td>
 </tr>
 </tbody>
 </table>
@@ -421,7 +421,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>      account<span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>      profile<span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>      environment<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>Tealium <code>Config</code>インスタンスは、次のパラメータを使用して設定されます。</p>
+</span></span></code></pre></div><p>Tealium <code>Config</code>インスタンスは、次のパラメータを使用して構成されます。</p>
 <table>
 <thead>
 <tr>
@@ -488,7 +488,7 @@ var utag_data = {
 <p>Tealium iQ accountsアカウント用のセッション カウントを無効化します。Tealium JavaScript ファイルをセルフホストしている場合にこれを用います。デフォルトは <code>true</code>となっています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.sessionCountingEnabled = <span style="color:#66d9ef">false</span>
 </span></span></code></pre></div><h3 id="setdatasourceid"><code>setDatasourceId()</code></h3>
-<p>データソースキーを設定します。</p>
+<p>データソースキーを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setDataSourceId</span><span style="color:#f92672">(</span>dataSourceId<span style="color:#f92672">);</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -503,13 +503,13 @@ var utag_data = {
 <tr>
 <td><code>dataSourceId</code></td>
 <td><code>String</code></td>
-<td>データソースキー（ない場合は<code>null</code>に設定）</td>
+<td>データソースキー（ない場合は<code>null</code>に構成）</td>
 <td><code>&quot;abc123&quot;</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="setforceoverrideloglevel"><code>setForceOverrideLogLevel()</code></h3>
-<p>初期化時に特定のログレベルを強制するように設定します。メソッドチェーンの構成オブジェクトのインスタンスを返します。</p>
+<p>初期化時に特定のログレベルを強制するように構成します。メソッドチェーンの構成オブジェクトのインスタンスを返します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setForceOverrideLogLevel</span><span style="color:#f92672">(</span>forceOverrideLogLevel<span style="color:#f92672">);</span>
 </span></span></code></pre></div><p><code>forceOverrideLogLevel</code>には以下の<code>String</code>オプションを使用できます。</p>
 <table>
@@ -580,10 +580,10 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://collect.tealiumiq.com/event/
 </span></span></code></pre></div><p>イベントバッチ処理を使用するデフォルトのURLは次のとおりです。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://collect.tealiumiq.com/bulk-event/
-</span></span></code></pre></div><p>このメソッドは通常、カスタムホスト名を設定するため、または特定の地域のホスト名を設定するために使用されます。次の例では、Tealium CollectのベースURLが中央ヨーロッパ地域内に留まるように設定されます。</p>
+</span></span></code></pre></div><p>このメソッドは通常、カスタムホスト名を構成するため、または特定の地域のホスト名を構成するために使用されます。次の例では、Tealium CollectのベースURLが中央ヨーロッパ地域内に留まるように構成されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideCollectDispatchUrl</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;https://collect-eu-central-1.tealiumiq.com/event/&#34;</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><h3 id="setoverridevisitorservicedomain"><code>setOverrideVisitorServiceDomain()</code></h3>
-<p>データを別のドメインに送信するようにTealium Collectの訪問者サービスドメインをオーバーライドします。</p>
+<p>データを別のドメインに送信するようにTealium Collectの訪問サービスドメインをオーバーライドします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideVisitorServiceDomain</span><span style="color:#f92672">(</span>domain<span style="color:#f92672">);</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -597,12 +597,12 @@ var utag_data = {
 <tr>
 <td><code>domain</code></td>
 <td><code>String</code></td>
-<td>オーバーライドする訪問者サービスドメイン</td>
+<td>オーバーライドする訪問サービスドメイン</td>
 </tr>
 </tbody>
 </table>
 <h3 id="setsecondsbeforebatchtimeout"><code>setSecondsBeforeBatchTimeout()</code></h3>
-<p>バッチタイムアウトまでの秒数を設定します。タイムアウトに達する前にバッチサイズの制限に達しなかった場合、キューに入れられたイベントはディスパッチされます。</p>
+<p>バッチタイムアウトまでの秒数を構成します。タイムアウトに達する前にバッチサイズの制限に達しなかった場合、キューに入れられたイベントはディスパッチされます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setSecondsBeforeBatchTimeout</span><span style="color:#f92672">(</span>timeout<span style="color:#f92672">);</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -682,7 +682,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2022年August月29日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -840,6 +840,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -848,8 +864,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

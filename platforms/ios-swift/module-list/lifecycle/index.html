@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -373,7 +373,7 @@ var utag_data = {
 <li>macOS</li>
 </ul>
 <h2 id="要件">要件</h2>
-<p><code>UIKit</code>の依存関係がターゲットアプリに追加されている場合、それ以上の設定や実装は必要ありません。その他のプラットフォームビルド（watchOS、macOS）では、ライフサイクルモジュールの関数を手動でトリガーすることができます（<a href="/platforms/ios-swift/module-list/lifecycle/#api-reference">APIリファレンス</a>を参照）。</p>
+<p><code>UIKit</code>の依存関係がターゲットアプリに追加されている場合、それ以上の構成や実装は必要ありません。その他のプラットフォームビルド（watchOS、macOS）では、ライフサイクルモジュールの関数を手動でトリガーすることができます（<a href="/platforms/ios-swift/module-list/lifecycle/#api-reference">APIリファレンス</a>を参照）。</p>
 <h2 id="インストール">インストール</h2>
 <p>Swift Package Manager、CocoaPods、またはCarthageを使用してライフサイクルモジュールをインストールします。</p>
 <h3 id="swift-package-manager推奨">Swift Package Manager（推奨）</h3>
@@ -381,7 +381,7 @@ var utag_data = {
 <ol>
 <li>Xcodeプロジェクトで、<strong>File &gt; Swift Packages &gt; Add Package Dependency</strong>を選択します。</li>
 <li>リポジトリのURLを入力します：<code>https://github.com/tealium/tealium-swift</code></li>
-<li>バージョンルールを設定します。通常、<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
+<li>バージョンルールを構成します。通常、<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリのバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
 <li>インストールするモジュールのリストから<code>Lifecycle</code>モジュールを選択し、Xcodeプロジェクトの各アプリターゲットに追加します。<strong>Frameworks &gt; Libraries &amp; Embedded Content</strong>の下にあります。</li>
 </ol>
 <p><a href="/platforms/ios-swift/install/#swift-package-manager-recommended">iOS用のSwift Package Managerのインストール</a>について詳しくはこちらをご覧ください。</p>
@@ -393,7 +393,7 @@ var utag_data = {
 <p>Carthageでライフサイクルモジュールをインストールするには、以下の手順を実行します：</p>
 <ol>
 <li>
-<p>Xcodeでアプリターゲットの一般設定ページに移動します。</p>
+<p>Xcodeでアプリターゲットの一般構成ページに移動します。</p>
 </li>
 <li>
 <p>以下のフレームワークを<strong>Embedded Binaries</strong>セクションに追加します：</p>
@@ -405,7 +405,7 @@ var utag_data = {
 </span></span></code></pre></div></li>
 </ol>
 <p><a href="/platforms/ios-swift/install/#carthage">iOS用のCarthageのインストール</a>について詳しくはこちらをご覧ください。</p>
-<h2 id="設定">設定</h2>
+<h2 id="構成">構成</h2>
 <p>ライフサイクルモジュールをインスタンス化するには、SDKを初期化する際に<code>TealiumConfig</code>オブジェクトで指定する必要があります：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumCore</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumInAppPurchase</span>
@@ -578,7 +578,7 @@ var utag_data = {
 </table>
 <h2 id="クラッシュ検出">クラッシュ検出</h2>
 <p>ライフサイクルモジュールは基本的なクラッシュ検出を行いますが、クラッシュの原因についての詳細は収集しません。先行するスリープイベントなしにライフサイクルの起動イベントが見られるたびに、クラッシュを記録します。</p>
-<p>通常、アプリがユーザーによって閉じられると、OSからの通知がライフサイクルのスリープイベントをトリガーしますが、アプリがクラッシュすると、これが発生する時間がありません。したがって、スリープイベントは発生しません。クラッシュ後の次回の起動時に、<code>lifecycle_diddetectcrash</code>変数が<code>true</code>に設定され、<code>lifecycle_totalcrashcount</code>変数が1増加します。</p>
+<p>通常、アプリがユーザーによって閉じられると、OSからの通知がライフサイクルのスリープイベントをトリガーしますが、アプリがクラッシュすると、これが発生する時間がありません。したがって、スリープイベントは発生しません。クラッシュ後の次回の起動時に、<code>lifecycle_diddetectcrash</code>変数が<code>true</code>に構成され、<code>lifecycle_totalcrashcount</code>変数が1増加します。</p>
 <p>より高度なクラッシュ検出が必要な場合、Crash Reporterモジュールは各クラッシュの詳細とクラッシュの理由を提供します。現在、iOSのみでサポートされています。</p>
 <h2 id="apiリファレンス">APIリファレンス</h2>
 <p><code>UIKit</code>をサポートしていないプラットフォームを対象としている場合のみ、以下のAPIメソッドを使用する必要があります。</p>
@@ -664,7 +664,7 @@ let wakeCount = tealium?.lifecycle?.dictionary?[&#34;lifecycle_totalwakecount&#3
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -684,7 +684,7 @@ let wakeCount = tealium?.lifecycle?.dictionary?[&#34;lifecycle_totalwakecount&#3
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#swift-package-manager">Swift Package Manager（推奨）</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#cocoapods">CocoaPods</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#carthage">Carthage</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データレイヤー</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">クラッシュ検出</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#api">APIリファレンス</a></li>
@@ -825,6 +825,22 @@ let wakeCount = tealium?.lifecycle?.dictionary?[&#34;lifecycle_totalwakecount&#3
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -833,8 +849,24 @@ let wakeCount = tealium?.lifecycle?.dictionary?[&#34;lifecycle_totalwakecount&#3
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

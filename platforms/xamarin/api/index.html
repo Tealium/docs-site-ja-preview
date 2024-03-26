@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -429,10 +429,10 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  { <span style="color:#e6db74">&#34;user_language&#34;</span>, lang }
 </span></span><span style="display:flex;"><span>}, Expiry.Forever);
 </span></span></code></pre></div><h3 id="clearstoredvisitorids"><code>ClearStoredVisitorIds()</code></h3>
-<p>保存されている訪問者IDをクリアし、新しいIDを生成します。主に法的なコンプライアンスのために使用されます。</p>
-<p>データレイヤーに<code>visitorIdentityKey</code>というキーが含まれている場合、訪問者IDはそのキーに基づいて引き続き保存されます。</p>
+<p>ストレージされている訪問IDをクリアし、新しいIDを生成します。主に法的なコンプライアンスのために使用されます。</p>
+<p>データレイヤーに<code>visitorIdentityKey</code>というキーが含まれている場合、訪問IDはそのキーに基づいて引き続きストレージされます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.ClearStoredVisitorIds();
-</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>ストレージがクリアされた後に現在のアイデンティティと新しくリセットされた<code>visitorId</code>を保存しないようにするには、データレイヤーからアイデンティティキーを事前に削除する必要があります（<a href="#removefromdatalayer"><code>RemoveFromDataLayer()</code></a>を参照）。</p>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>ストレージがクリアされた後に現在のアイデンティティと新しくリセットされた<code>visitorId</code>をストレージしないようにするには、データレイヤーからアイデンティティキーを事前に削除する必要があります（<a href="#removefromdatalayer"><code>RemoveFromDataLayer()</code></a>を参照）。</p>
 <h3 id="consentcategory">ConsentCategory</h3>
 <p>同意カテゴリの値。<a href="#getconsentcategories"><code>GetConsentCategories</code></a>および<a href="#setconsentcategories"><code>SetConsentCategories</code></a>で使用します。</p>
 <p>同意カテゴリは次のとおりです。</p>
@@ -569,7 +569,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="getvisitorid"><code>GetVisitorId()</code></h3>
-<p>ユーザーの訪問者IDを取得し、コールバック関数の形式で返します。</p>
+<p>ユーザーの訪問IDを取得し、コールバック関数の形式で返します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">string?</span> visitorId = tealium.GetVisitorId();
 </span></span></code></pre></div><h3 id="jointrace"><code>JoinTrace()</code></h3>
 <p>指定したIDでトレースに参加します。Tealium Customer Data Hubの<a href="/server-side/connectors/trace/Manage/">トレース</a>機能について詳しくは、リンクを参照してください。</p>
@@ -593,10 +593,10 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="leavetrace"><code>LeaveTrace()</code></h3>
-<p>トレースは、<code>leaveTrace()</code>メソッドが呼び出されるまでアプリのセッションの間有効であり、以前に参加したトレースを終了し、訪問者セッションを終了します。</p>
+<p>トレースは、<code>leaveTrace()</code>メソッドが呼び出されるまでアプリのセッションの間有効であり、以前に参加したトレースを終了し、訪問セッションを終了します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.LeaveTrace();
 </span></span></code></pre></div><h3 id="removefromdatalayer"><code>RemoveFromDataLayer()</code></h3>
-<p><a href="#addtodatalayer"><code>AddToDataLayer()</code></a>を使用して以前に設定された永続データを削除します。</p>
+<p><a href="#addtodatalayer"><code>AddToDataLayer()</code></a>を使用して以前に構成された永続データを削除します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> RemoveFromDataLayer(ICollection&lt;<span style="color:#66d9ef">string</span>&gt; keys);
 </span></span></code></pre></div><table>
 <thead>
@@ -636,10 +636,10 @@ var utag_data = {
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.RemoveRemoteCommand(<span style="color:#e6db74">&#34;firebase&#34;</span>);
 </span></span></code></pre></div><h3 id="resetvisitorid"><code>ResetVisitorId()</code></h3>
-<p>訪問者IDをリセットし、新しいIDを生成します。</p>
+<p>訪問IDをリセットし、新しいIDを生成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.ResetVisitorId();
 </span></span></code></pre></div><h3 id="setconsentcategories"><code>SetConsentCategories()</code></h3>
-<p>ユーザーが同意したカテゴリのリストを設定します。<a href="#consentcategory"><code>ConsentCategory</code></a>と一緒に使用します。</p>
+<p>ユーザーが同意したカテゴリのリストを構成します。<a href="#consentcategory"><code>ConsentCategory</code></a>と一緒に使用します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> SetConsentCategories(List&lt;ConsentCategory&gt; categories);
 </span></span></code></pre></div><table>
 <thead>
@@ -663,7 +663,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    ConsentManager.ConsentCategory.Analytics
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><h3 id="setconsentexpirylistener"><code>SetConsentExpiryListener()</code></h3>
-<p>同意の有効期限が切れたときに実行するコールバックメソッドを設定します。</p>
+<p>同意の有効期限が切れたときに実行するコールバックメソッドを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> SetConsentExpiryListener(Action callback);
 </span></span></code></pre></div><table>
 <thead>
@@ -686,7 +686,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    System.Diagnostics.Debug.WriteLine(<span style="color:#e6db74">&#34;同意の有効期限が切れました&#34;</span>);
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><h3 id="setconsentstatus"><code>SetConsentStatus()</code></h3>
-<p>ユーザーの同意ステータスを設定します。デフォルト値は<code>.Unknown</code>です。</p>
+<p>ユーザーの同意ステータスを構成します。デフォルト値は<code>.Unknown</code>です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> SetConsentStatus(ConsentStatus status);
 </span></span></code></pre></div><table>
 <thead>
@@ -706,8 +706,8 @@ var utag_data = {
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.SetConsentStatus(ConsentManager.ConsentStatus.NotConsented);
 </span></span></code></pre></div><h3 id="setvisitorservicelistener"><code>SetVisitorServiceListener()</code></h3>
-<p>訪問者プロファイルが更新されたときに実行するコールバック関数を設定します。更新された<a href="#instance-ivisitorprofile"><code>VisitorProfile</code></a>はコールバック応答で提供されます。<a href="/platforms/xamarin/install/#config"><code>visitorServiceEnabled</code></a>が<code>true</code>に設定されている場合に使用します。</p>
-<p>Tealium AudienceStreamのライセンスを持っており、モバイルアプリケーションでユーザーエクスペリエンスを向上させるために訪問者プロファイルを使用したい場合にこの機能を使用します。</p>
+<p>訪問プロファイルが更新されたときに実行するコールバック関数を構成します。更新された<a href="#instance-ivisitorprofile"><code>VisitorProfile</code></a>はコールバック応答で提供されます。<a href="/platforms/xamarin/install/#config"><code>visitorServiceEnabled</code></a>が<code>true</code>に構成されている場合に使用します。</p>
+<p>Tealium AudienceStreamのライセンスを持っており、モバイルアプリケーションでユーザーエクスペリエンスを向上させるために訪問プロファイルを使用したい場合にこの機能を使用します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> SetVisitorServiceListener(Action callback);
 </span></span></code></pre></div><table>
 <thead>
@@ -721,14 +721,14 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>callback  </code></td>
 <td style="text-align:left"><code>Action</code></td>
-<td style="text-align:left">訪問者プロファイルが取得されたときに実行するコード</td>
+<td style="text-align:left">訪問プロファイルが取得されたときに実行するコード</td>
 </tr>
 </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.SetVisitorServiceListener((visitorProfile) =&gt;
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    System.Diagnostics.Debug.WriteLine(<span style="color:#e6db74">&#34;訪問者が更新されました&#34;</span>);
-</span></span><span style="display:flex;"><span>    System.Diagnostics.Debug.WriteLine(<span style="color:#e6db74">$&#34;訪問者: {visitorProfile}&#34;</span>);
+</span></span><span style="display:flex;"><span>    System.Diagnostics.Debug.WriteLine(<span style="color:#e6db74">&#34;訪問が更新されました&#34;</span>);
+</span></span><span style="display:flex;"><span>    System.Diagnostics.Debug.WriteLine(<span style="color:#e6db74">$&#34;訪問: {visitorProfile}&#34;</span>);
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><h3 id="terminateintance"><code>TerminateIntance()</code></h3>
 <p>Tealiumライブラリを無効にし、すべてのモジュール参照を削除します。</p>
@@ -799,19 +799,19 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>collectors</code></td>
 <td style="text-align:left"><code>Collectors[]</code></td>
-<td style="text-align:left">(必須) Tealiumライブラリを初期化するための<a href="#collectors"><code>Collectors</code></a>のリストを設定します</td>
+<td style="text-align:left">(必須) Tealiumライブラリを初期化するための<a href="#collectors"><code>Collectors</code></a>のリストを構成します</td>
 <td style="text-align:left"><code>[Collectors.AppData]</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>dispatchers</code></td>
 <td style="text-align:left"><code>Dispatchers[]</code></td>
-<td style="text-align:left">(必須) Tealiumライブラリを初期化するための<a href="#dispatchers"><code>Dispatchers</code></a>のリストを設定します</td>
+<td style="text-align:left">(必須) Tealiumライブラリを初期化するための<a href="#dispatchers"><code>Dispatchers</code></a>のリストを構成します</td>
 <td style="text-align:left"><code>[Dispatchers.Collect]</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>customVisitorId</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">カスタムの訪問者IDを設定します</td>
+<td style="text-align:left">カスタムの訪問IDを構成します</td>
 <td style="text-align:left"><code>&quot;ALK2398LSDKJ3289SLKJ3298SLKJ3&quot;</code></td>
 </tr>
 <tr>
@@ -841,7 +841,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>overrideLibrarySettingsURL</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">パブリッシュ設定URLをオーバーライドします。</td>
+<td style="text-align:left">パブリッシュ構成URLをオーバーライドします。</td>
 <td style="text-align:left"><code>&quot;https://custom-domain.com/mobile.html&quot;</code></td>
 </tr>
 <tr>
@@ -865,13 +865,13 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>loglevel</code></td>
 <td style="text-align:left"><a href="#loglevel"><code>LogLevel</code></a></td>
-<td style="text-align:left">ログレベルプロパティを設定し、ログに記録される情報量を制御します（デフォルト：silent）</td>
+<td style="text-align:left">ログレベルプロパティを構成し、ログに記録される情報量を制御します（デフォルト：silent）</td>
 <td style="text-align:left"><code>LogLevel.dev</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>consentExpiry</code></td>
 <td style="text-align:left"><a href="#consentexpiry"><code>ConsentExpiry</code></a></td>
-<td style="text-align:left">ユーザーの同意設定の有効期限を設定します（デフォルトはポリシーに依存します）</td>
+<td style="text-align:left">ユーザーの同意構成の有効期限を構成します（デフォルトはポリシーに依存します）</td>
 <td style="text-align:left"><code>ConsentExpiry(90, TimeUnit.days)</code></td>
 </tr>
 <tr>
@@ -883,7 +883,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>consentPolicy</code></td>
 <td style="text-align:left"><a href="#consentpolicy"><code>ConsentPolicy</code></a></td>
-<td style="text-align:left">同意ポリシーを設定します。例：CCPAまたはGDPR。このプロパティが設定されている場合、同意マネージャーが有効になります。</td>
+<td style="text-align:left">同意ポリシーを構成します。例：CCPAまたはGDPR。このプロパティが構成されている場合、同意マネージャーが有効になります。</td>
 <td style="text-align:left"><code>ConsentPolicy.gdpr</code></td>
 </tr>
 <tr>
@@ -895,19 +895,19 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>useRemoteLibrarySettings</code></td>
 <td style="text-align:left"><code>Boolean</code></td>
-<td style="text-align:left"><a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルパブリッシュ設定</a>を有効または無効にします（デフォルト：有効）。Tealium iQ Tag Managementでモバイルパブリッシュ設定を構成するか、機能を無効にします。</td>
+<td style="text-align:left"><a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルパブリッシュ構成</a>を有効または無効にします（デフォルト：有効）。Tealium iQ Tag Managementでモバイルパブリッシュ構成を構成するか、機能を無効にします。</td>
 <td style="text-align:left"><code>false</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>visitorServiceEnabled</code></td>
 <td style="text-align:left"><code>Boolean</code></td>
-<td style="text-align:left"><a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/manage-data-layer-enrichment-api/">データレイヤーエンリッチメントAPI</a>を使用して訪問者プロファイルを自動的に取得するかどうかを有効または無効にします（デフォルト：無効）</td>
+<td style="text-align:left"><a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/manage-data-layer-enrichment-api/">データレイヤーエンリッチメントAPI</a>を使用して訪問プロファイルを自動的に取得するかどうかを有効または無効にします（デフォルト：無効）</td>
 <td style="text-align:left"><code>true</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>remoteCommands</code></td>
 <td style="text-align:left"><code>RemoteCommand[]</code></td>
-<td style="text-align:left">インスタンスが準備完了のときに追加する<a href="#RemoteCommand">RemoteCommand</a>オブジェクトのリストを設定します</td>
+<td style="text-align:left">インスタンスが準備完了のときに追加する<a href="#RemoteCommand">RemoteCommand</a>オブジェクトのリストを構成します</td>
 <td style="text-align:left"><code>[{ id: &quot;hello-world&quot;, callback: (payload) =&gt; { console.log(&quot;hello-world: &quot; + JSON.stringify(payload)); } }]</code></td>
 </tr>
 <tr>
@@ -919,7 +919,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>visitorIdentityKey</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">訪問者の切り替えをサポートし、アプリの複数のユーザーを識別するための共有キーを指定するために使用します。</td>
+<td style="text-align:left">訪問の切り替えをサポートし、アプリの複数のユーザーを識別するための共有キーを指定するために使用します。</td>
 <td style="text-align:left"><code>user_profile_id</code></td>
 </tr>
 </tbody>
@@ -953,7 +953,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>これらのモジュールは、<a href="#class-tealiumconfig"><code>TealiumConfig</code></a>で設定された<code>Collectors</code>プロパティを使用して有効または無効にできます。</p>
+<p>これらのモジュールは、<a href="#class-tealiumconfig"><code>TealiumConfig</code></a>で構成された<code>Collectors</code>プロパティを使用して有効または無効にできます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>TealiumConfig tealConfig = <span style="color:#66d9ef">new</span> TealiumConfig(
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">new</span> List&lt;Collectors&gt; {
@@ -962,7 +962,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
 </span></span><span style="display:flex;"><span>);
 </span></span></code></pre></div><h3 id="consentexpiry">ConsentExpiry</h3>
-<p><a href="#class-tealiumconfig"><code>TealiumConfig</code></a>オブジェクトの同意設定の有効期限を設定します。</p>
+<p><a href="#class-tealiumconfig"><code>TealiumConfig</code></a>オブジェクトの同意構成の有効期限を構成します。</p>
 <table>
 <thead>
 <tr>
@@ -990,7 +990,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//...</span>
 </span></span><span style="display:flex;"><span>);
 </span></span></code></pre></div><h3 id="consentpolicy">ConsentPolicy</h3>
-<p><a href="#class-tealiumconfig"><code>TealiumConfig</code></a>オブジェクトで使用する同意ポリシーを設定します。同意ポリシーが設定されていない場合、同意マネージャーは無効になります。</p>
+<p><a href="#class-tealiumconfig"><code>TealiumConfig</code></a>オブジェクトで使用する同意ポリシーを構成します。同意ポリシーが構成されていない場合、同意マネージャーは無効になります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>TealiumConfig config = <span style="color:#66d9ef">new</span> TealiumConfig(
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//...</span>
 </span></span><span style="display:flex;"><span>  consentPolicy = ConsentPolicy.GDPR,
@@ -1002,7 +1002,7 @@ var utag_data = {
 <li><code>ConsentPolicy.CCPA</code></li>
 </ul>
 <h3 id="dispatchers">Dispatchers</h3>
-<p>ディスパッチャは、データをTealiumエンドポイントに送信するモジュールです。これらは<a href="#class-tealiumconfig"><code>TealiumConfig</code></a>オブジェクトに設定されます。</p>
+<p>ディスパッチャは、データをTealiumエンドポイントに送信するモジュールです。これらは<a href="#class-tealiumconfig"><code>TealiumConfig</code></a>オブジェクトに構成されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>TealiumConfig tealConfig = <span style="color:#66d9ef">new</span> TealiumConfig(
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">new</span> List&lt;Dispatchers&gt; {
@@ -1018,7 +1018,7 @@ var utag_data = {
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>少なくとも1つのディスパッチャが必要です。</p>
 <h3 id="loglevel">LogLevel</h3>
-<p>ログレベルプロパティを設定し、ログに記録される情報量を制御します。次の値のいずれかを設定します。</p>
+<p>ログレベルプロパティを構成し、ログに記録される情報量を制御します。次の値のいずれかを構成します。</p>
 <table>
 <thead>
 <tr>
@@ -1046,7 +1046,7 @@ var utag_data = {
 </tbody>
 </table>
 <h2 id="iremotecommand"><code>IRemoteCommand</code></h2>
-<p>設定済みのリモートコマンドを定義するインターフェース。</p>
+<p>構成済みのリモートコマンドを定義するインターフェース。</p>
 <table>
 <thead>
 <tr>
@@ -1075,7 +1075,7 @@ var utag_data = {
 </table>
 <h2 id="ivisitorprofile"><code>IVisitorProfile</code></h2>
 <p>（<a href="#class-tealiumconfig"><code>TealiumConfig.visitorServiceEnabled</code></a>で使用するため。）</p>
-<p>訪問者プロファイルオブジェクトには、訪問者サービスから返される訪問者属性が含まれています。<code>currentVisit</code>プロパティには、現在の訪問にスコープが限定された属性が含まれています。各属性の値は、サブスクリプトを使用してIDでアクセスします。属性が存在しない場合は、<code>null</code>が返されます。</p>
+<p>訪問プロファイルオブジェクトには、訪問サービスから返される訪問属性が含まれています。<code>currentVisit</code>プロパティには、現在の訪問にスコープが限定された属性が含まれています。各属性の値は、サブスクリプトを使用してIDでアクセスします。属性が存在しない場合は、<code>null</code>が返されます。</p>
 <table>
 <thead>
 <tr>
@@ -1275,7 +1275,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1454,6 +1454,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1462,8 +1478,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

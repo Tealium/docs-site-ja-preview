@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -408,7 +408,7 @@ var utag_data = {
 <p><strong>[Targets]<strong>で</strong>tealium-react-native</strong>ターゲットを選択して、**[Build Settings]**タブをクリックします。</p>
 </li>
 <li>
-<p><strong>[Apple Clang - Language - Modules]</strong> &gt; **[Allow Non-modular Includes In Framework Modules]**で次の設定を見つけて更新します。</p>
+<p><strong>[Apple Clang - Language - Modules]</strong> &gt; **[Allow Non-modular Includes In Framework Modules]**で次の構成を見つけて更新します。</p>
 </li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES <span style="color:#f92672">=</span> YES<span style="color:#f92672">;</span>
@@ -435,7 +435,7 @@ var utag_data = {
 <li>Tealiumコアライブラリの依存関係をプロジェクトモジュールの<code>build.gradle</code>ファイルに追加します。Tealiumライフサイクルの依存関係も追加します（必要な場合）。</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    compile <span style="color:#e6db74">&#39;com.tealium:library:5.5.2&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> compile <span style="color:#e6db74">&#39;com.tealium:library:5.5.2&#39;</span>
 </span></span><span style="display:flex;"><span>        compile <span style="color:#e6db74">&#39;com.tealium:lifecycle:1.1&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><p>ブリッジングロジックをコピーするには：</p>
@@ -702,6 +702,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -710,8 +726,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

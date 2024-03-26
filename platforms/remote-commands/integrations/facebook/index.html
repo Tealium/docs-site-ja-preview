@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -411,7 +411,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;string&gt;</span>[APP_ID]<span style="color:#f92672">&lt;/string&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;key&gt;</span>FacebookDisplayName<span style="color:#f92672">&lt;/key&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;string&gt;</span>[APP_NAME]<span style="color:#f92672">&lt;/string&gt;</span>
-</span></span></code></pre></div><p>詳細を見る：<a href="https://developers.facebook.com/docs/app-events/getting-started-app-events-ios/#plist-config">Facebook iOSの概要 - プロパティリストを設定する</a></p>
+</span></span></code></pre></div><p>詳細を見る：<a href="https://developers.facebook.com/docs/app-events/getting-started-app-events-ios/#plist-config">Facebook iOSの概要 - プロパティリストを構成する</a></p>
 <p><code>AppDelegate</code>コードを次のように更新します。</p>
 <ol>
 <li><code>FBSDKCoreKit</code>をインポートします</li>
@@ -457,7 +457,7 @@ var utag_data = {
 <ol>
 <li>Xcode プロジェクトで、次のように選択します: <strong>[File] &gt; [Add Package&hellip;]&gt; [Add Package Dependency]</strong>。</li>
 <li>レポジトリの URL として「https://github.com/tealium/tealium-ios-facebook-remote-command」と入力します。</li>
-<li>バージョンルールを設定します。通常は <code>Up to next major</code> が推奨されます。現在の <code>TealiumFacebook</code> バージョンがリストに表示されない場合は、Swift パッケージ キャッシュをリセットします。</li>
+<li>バージョンルールを構成します。通常は <code>Up to next major</code> が推奨されます。現在の <code>TealiumFacebook</code> バージョンがリストに表示されない場合は、Swift パッケージ キャッシュをリセットします。</li>
 <li>インストールする <code>TealiumFacebook</code> モジュールを選択し、モジュールをインストールするアプリ ターゲットを選択します。</li>
 </ol>
 <p>プロジェクトにアプリ ターゲットが複数あり、複数のアプリ ターゲットで <code>TealiumFacebook</code> モジュールが必要な場合は、 <strong>[Frameworks, Libraries, and Embedded Content] (フレームワーク、ライブラリ、組み込みコンテンツ)</strong> セクションにそれらを手動で追加する必要があります。</p>
@@ -545,7 +545,7 @@ var utag_data = {
 <p>ディスパッチャーとして <code>Dispatchers.RemoteCommands</code> を追加します</p>
 </li>
 <li>
-<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に設定します</p>
+<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に構成します</p>
 </li>
 </ol>
 <h3 id="手動android">手動（Android）</h3>
@@ -585,9 +585,9 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">val</span> facebook = FacebookRemoteCommand(<span style="color:#66d9ef">this</span>);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// register the command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  remoteCommands<span style="color:#f92672">?.</span>add(facebook, filename = <span style="color:#e6db74">&#34;facebook.json&#34;</span>);
@@ -599,9 +599,9 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">val</span> facebook = FacebookRemoteCommand(<span style="color:#66d9ef">this</span>);
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// register the command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  remoteCommands<span style="color:#f92672">?.</span>add(facebook);
@@ -947,8 +947,8 @@ var utag_data = {
 </tbody>
 </table>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Facebook SDKはTealium SDKとともにインストールされるので、対応するタグ構成があれば任意のネイティブFacebook機能をトリガーできます。</p>
-<h3 id="ユーザーの設定">ユーザーの設定</h3>
-<p>すべてのアプリイベントに関連付けるカスタムユーザーデータを設定します。すべてのユーザーデータはハッシュ化され、アプリケーションのこのインスタンスからのFacebookユーザーの照合に使用されます。ユーザーデータはアプリケーションのインスタンス間で保持されます。</p>
+<h3 id="ユーザーの構成">ユーザーの構成</h3>
+<p>すべてのアプリイベントに関連付けるカスタムユーザーデータを構成します。すべてのユーザーデータはハッシュ化され、アプリケーションのこのインスタンスからのFacebookユーザーの照合に使用されます。ユーザーデータはアプリケーションのインスタンス間で保持されます。</p>
 <table>
 <thead>
 <tr>
@@ -1435,7 +1435,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1463,7 +1463,7 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">プッシュ メッセージ トラッキング (iOS)</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">サポートされているメソッド</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">標準イベント名</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユーザーの設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユーザーの構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユーザー値の更新</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">製品アイテムの記録</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">購入記録</a></li>
@@ -1604,6 +1604,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1612,8 +1628,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

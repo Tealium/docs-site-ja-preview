@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -265,7 +297,7 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      この記事では、iQタグ管理のGoogle Adsコンバージョントラッキング＆リマーケティング（gtag.js）タグとEventStream API HubのGoogle Ads Enhanced Conversions for Webコネクタを設定することで、TealiumとGoogle Ads Enhanced Conversionを最大限に活用する方法について説明します。
+      この記事では、iQタグ管理のGoogle Adsコンバージョントラッキング＆リマーケティング（gtag.js）タグとEventStream API HubのGoogle Ads Enhanced Conversions for Webコネクタを構成することで、TealiumとGoogle Ads Enhanced Conversionを最大限に活用する方法について説明します。
     </p>
   
 </div>
@@ -398,23 +430,23 @@ var utag_data = {
 </tbody>
 </table>
 <h2 id="クライアントサイドのウェブサイトトラッキングタグ">クライアントサイドのウェブサイトトラッキングタグ</h2>
-<p>iQタグ管理でGoogle Adsコンバージョンとリマーケティングタグを設定するには、以下が必要です：</p>
+<p>iQタグ管理でGoogle Adsコンバージョンとリマーケティングタグを構成するには、以下が必要です：</p>
 <ul>
 <li>トラッキングするコンバージョンイベントを識別するロードルール。</li>
-<li>Google Adsのコンバージョン設定、特にコンバージョントラッキングIDとコンバージョンラベル。</li>
+<li>Google Adsのコンバージョン構成、特にコンバージョントラッキングIDとコンバージョンラベル。</li>
 </ul>
-<p>以下の手順は、<a href="/client-side-tags/google-ads-conversion-tracking-and-remarketing-gtagjs-tag/">Google Adsコンバージョントラッキング＆リマーケティング（gtag.js）タグ設定ガイド</a>で詳しく説明されています。</p>
-<h3 id="タグ設定">タグ設定</h3>
+<p>以下の手順は、<a href="/client-side-tags/google-ads-conversion-tracking-and-remarketing-gtagjs-tag/">Google Adsコンバージョントラッキング＆リマーケティング（gtag.js）タグ構成ガイド</a>で詳しく説明されています。</p>
+<h3 id="タグ構成">タグ構成</h3>
 <p>Tealiumの<a href="/iq-tag-management/tags/tag-marketplace/about/">tag marketplace</a>にアクセスし、Google Adsコンバージョン＆リマーケティング（<code>gtag.js</code>）タグを追加します。</p>
 <h3 id="ロードルール">ロードルール</h3>
-<p>コンバージョンイベントに一致するロードルールを設定します。これは、コンバージョンが発生するページまたはコンバージョンを表すイベントである可能性があります。</p>
+<p>コンバージョンイベントに一致するロードルールを構成します。これは、コンバージョンが発生するページまたはコンバージョンを表すイベントである可能性があります。</p>
 <p>ロードルールの例には以下のようなものがあります：</p>
 <ul>
 <li><strong>購入</strong> - <code>tealium_event EQUALS &quot;purchase&quot;</code></li>
 <li><strong>サインアップ</strong> - <code>tealium_event EQUALS &quot;newsletter_signup&quot;</code></li>
 </ul>
 <h3 id="データマッピング">データマッピング</h3>
-<p>タグを追加した後、<strong>Data Mappings</strong>セクションに移動して、追加のマッピングを設定します。</p>
+<p>タグを追加した後、<strong>Data Mappings</strong>セクションに移動して、追加のマッピングを構成します。</p>
 <p>E-Commerce拡張機能を使用している場合、以下のマッピングは自動的に行われます：</p>
 <ul>
 <li>注文小計/コンバージョン値</li>
@@ -422,16 +454,16 @@ var utag_data = {
 <li>注文ID/トランザクションID</li>
 </ul>
 <h2 id="サーバーサイドコネクタ">サーバーサイドコネクタ</h2>
-<p>EventStreamでGoogle Ads Enhanced Conversions for Webコネクタを設定するには、以下が必要です：</p>
+<p>EventStreamでGoogle Ads Enhanced Conversions for Webコネクタを構成するには、以下が必要です：</p>
 <ul>
 <li>トラッキングするコンバージョンイベントを識別するイベントフィード。</li>
-<li>Google Adsのコンバージョン設定。</li>
+<li>Google Adsのコンバージョン構成。</li>
 </ul>
-<p>以下の手順は、<a href="/server-side-connectors/google-ads-enhanced-conversions-for-web-connector/">Google Ads Enhanced Conversions for Webコネクタ設定ガイド</a>で詳しく説明されています。</p>
+<p>以下の手順は、<a href="/server-side-connectors/google-ads-enhanced-conversions-for-web-connector/">Google Ads Enhanced Conversions for Webコネクタ構成ガイド</a>で詳しく説明されています。</p>
 <h3 id="コネクタの追加">コネクタの追加</h3>
 <p>コネクタマーケットプレイスにアクセスし、Google Ads Enhanced Conversions for WebコネクタのEventStreamアクションを追加します。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>このコネクタを設定するには、Tealium Customer Data HubとGoogle Adsアカウント間の接続を確立しますので、コネクタを設定する前にGoogleアカウントにログインしておくと便利です。</p>
-<p>次に、以下を設定します：</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>このコネクタを構成するには、Tealium Customer Data HubとGoogle Adsアカウント間の接続を確立しますので、コネクタを構成する前にGoogleアカウントにログインしておくと便利です。</p>
+<p>次に、以下を構成します：</p>
 <ul>
 <li><strong>データソース</strong> - コンバージョンイベントが発生するウェブサイトを表すデータソースを選択します。</li>
 <li><strong>イベントフィード</strong> - トラッキングするコンバージョンイベントのみを含むフィードを選択します。</li>
@@ -468,7 +500,7 @@ Gclidはオプションで、帰属、レポーティング、入札には使用
 <h2 id="追加のリソース">追加のリソース</h2>
 <ul>
 <li><a href="https://tealium.com/google-integrations/">Better Together: Tealium + Google</a></li>
-<li><a href="https://youtu.be/4HZqnFeCb8E">Tealium + Google Enhanced Conversions設定の概要</a>（ビデオ）</li>
+<li><a href="https://youtu.be/4HZqnFeCb8E">Tealium + Google Enhanced Conversions構成の概要</a>（ビデオ）</li>
 <li><a href="https://support.google.com/google-ads/answer/9888656?hl=en&amp;ref_topic=3165803">Google Adsヘルプ：強化コンバージョン（ベータ版）について</a></li>
 </ul>
 
@@ -531,7 +563,7 @@ Gclidはオプションで、帰属、レポーティング、入札には使用
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -550,7 +582,7 @@ Gclidはオプションで、帰属、レポーティング、入札には使用
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">顧客データ</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">コンバージョンデータ</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">クライアントサイドのウェブサイトトラッキングタグ</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグ設定</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグ構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ロードルール</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データマッピング</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">サーバーサイドコネクタ</a></li>
@@ -691,6 +723,22 @@ Gclidはオプションで、帰属、レポーティング、入札には使用
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -699,8 +747,24 @@ Gclidはオプションで、帰属、レポーティング、入札には使用
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

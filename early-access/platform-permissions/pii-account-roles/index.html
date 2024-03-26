@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -178,10 +178,10 @@ var utag_data = {
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p class="note"><i class="fa fa-exclamation-triangle"></i>この機能は早期アクセスであり、一部の顧客のみ利用可能です。ただし、<a href="/administration/about-permissions/">プラットフォームの権限機能</a>に移行するプロセスが進行中であり、この機能はアクセス許可グループを介して製品や機能へのアクセスを管理し、プライバシー管理者の役割と個々のユーザー設定を介してPIIの権限を管理します。詳細については、<a href="/administration/about-permissions/">プラットフォームの権限</a>を参照してください。<br><br>すべてのアカウントが従来の権限からプラットフォームの権限に移行した後、この早期アクセス機能は廃止されます。</p>
+  <p class="note"><i class="fa fa-exclamation-triangle"></i>この機能は早期アクセスであり、一部の顧客のみ利用可能です。ただし、<a href="/administration/about-permissions/">プラットフォームの権限機能</a>に移行するプロセスが進行中であり、この機能はアクセス許可グループを介して製品や機能へのアクセスを管理し、プライバシー管理者の役割と個々のユーザー構成を介してPIIの権限を管理します。詳細については、<a href="/administration/about-permissions/">プラットフォームの権限</a>を参照してください。<br><br>すべてのアカウントが従来の権限からプラットフォームの権限に移行した後、この早期アクセス機能は廃止されます。</p>
 <h2 id="権限と制限されたデータについて">権限と制限されたデータについて</h2>
 <p>現在、サーバーサイドプラットフォームのすべての製品や機能（Live Events、Trace、Visitor Sampler、Visitor Lookup Toolなど）でPIIデータを表示することができます。一部のユーザーは、受信イベントデータの検証やデータのテストのためにPIIを表示する必要がありますが、すべてのユーザーがこのレベルの権限を必要とするわけではありません。必要以上に多くのユーザーがPIIデータを表示できる場合、プライベートな顧客データが表示すべきではないユーザーによって見られる可能性があり、ビジネスのリスクが発生します。</p>
-<p>属性の<strong>制限されたデータ</strong>プロパティは、データ供給チェーンを通じて機密データが流れる場所を制御しますが、それらの属性の値を表示できるユーザーを制限することはありません。</p>
+<p>属性の<strong>制限されたデータ</strong>プロパティは、データサプライチェーンを通じて機密データが流れる場所を制御しますが、それらの属性の値を表示できるユーザーを制限することはありません。</p>
 <p>さらに、サーバーサイド製品へのアクセスは、プロファイルレベルでのみ単一の役割（<strong>Reader</strong>、<strong>Editor</strong>、<strong>Publisher</strong>）で許可されます。PIIデータはまだアプリケーション全体で公開されており、ユーザーによるアクセス制限を行わない限り、ユーザーからは非表示にすることはできません。また、<strong>Editor</strong>の役割は、多くのアクティブなユーザーとさまざまな職務を持つ大企業の成長ニーズを満たすのに十分ではありません。</p>
 <h2 id="新機能">新機能</h2>
 <p>PIIの権限とサーバーサイドアカウントレベルの権限ロールは、ユーザーの権限を管理し、PIIデータにアクセスできるユーザーを制御するための簡単な方法を提供します。</p>
@@ -206,11 +206,11 @@ var utag_data = {
 <ul>
 <li>
 <p><strong>PII管理者</strong><br>
-この役割に割り当てられたユーザーは、イベント、訪問、または訪問者属性の<strong>制限されたデータ</strong>プロパティを設定できます。これらのユーザーは、<strong>PIIビューア</strong>の役割も追加で付与されていない限り、PIIデータの値を表示することはできません。</p>
+この役割に割り当てられたユーザーは、イベント、訪問、または訪問属性の<strong>制限されたデータ</strong>プロパティを構成できます。これらのユーザーは、<strong>PII閲覧者</strong>の役割も追加で付与されていない限り、PIIデータの値を表示することはできません。</p>
 </li>
 <li>
-<p><strong>PIIビューア</strong><br>
-この役割に割り当てられたユーザーは、プロファイルと製品のアクセスが許可されているエリア内でPIIデータの値を表示できます。これらのユーザーは、<strong>制限されたデータ</strong>プロパティを設定することはできませんが、<strong>PII管理者</strong>の権限が追加で付与されている場合は設定できます。<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>PIIビューア</strong>の役割がないユーザーは、アプリケーション内で制限されたデータの値を表示することはできません。</p></p>
+<p><strong>PII閲覧者</strong><br>
+この役割に割り当てられたユーザーは、プロファイルと製品のアクセスが許可されているエリア内でPIIデータの値を表示できます。これらのユーザーは、<strong>制限されたデータ</strong>プロパティを構成することはできませんが、<strong>PII管理者</strong>の権限が追加で付与されている場合は構成できます。<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>PII閲覧者</strong>の役割がないユーザーは、アプリケーション内で制限されたデータの値を表示することはできません。</p></p>
 </li>
 <li>
 <p><strong>構成管理者</strong><br>
@@ -240,17 +240,17 @@ var utag_data = {
 <ul>
 <li>アプリケーション内のPIIデータまたは制限されたデータをどこでも表示すること</li>
 <li>コネクタの作成</li>
-<li>属性の作成または編集、および<strong>制限されたデータ</strong>プロパティの設定</li>
+<li>属性の作成または編集、および<strong>制限されたデータ</strong>プロパティの構成</li>
 <li>コネクタのエラーログの詳細の表示やサンプルデータのダウンロード</li>
 <li>DataAccess製品またはDataAccessの機能の使用（有効な場合）</li>
 </ul>
 <h3 id="プロファイルの権限ロール">プロファイルの権限ロール</h3>
 <p>プロファイルの権限に変更はありません。PIIの権限はプロファイルの役割に追加され、補完されます。プロファイルレベルの権限ロールは、プロファイルレベルでのユーザーアクセス権に有効で適用されます。</p>
-<p>ユーザーの権限は、アカウント内の1つ以上のプロファイルに対して設定でき、次の4つの利用可能なロールのいずれかにアクセスを許可できます。</p>
+<p>ユーザーの権限は、アカウント内の1つ以上のプロファイルに対して構成でき、次の4つの利用可能なロールのいずれかにアクセスを許可できます。</p>
 <ul>
 <li><strong>アクセスなし</strong><br>
 ユーザーはプロファイルにアクセスできません。</li>
-<li><strong>ビューア</strong><br>
+<li><strong>閲覧者</strong><br>
 ユーザーには、アカウントレベルのロールで定義されたアクセスが許可されている製品のすべてのエリアに対する表示専用アクセスがあります。</li>
 <li><strong>エディタ</strong><br>
 ユーザーには、アカウントレベルのロールで定義されたアクセスが許可されている製品のエリアの編集アクセスがあります。</li>
@@ -258,16 +258,16 @@ var utag_data = {
 ユーザーには、アカウントレベルのロールで定義されたアクセスが許可されている製品のエリアの編集アクセスとプロファイルへの変更の公開権限があります。</li>
 </ul>
 <h3 id="マスクされたデータ">マスクされたデータ</h3>
-<p>マスクされたデータは、機密データが意図しない公開から保護される方法です。制限されたデータ属性は、実際の値の代わりにアスタリスク（****）の文字列としてプラットフォーム全体に表示されます。<strong>PIIビューア</strong>の権限ロールを持つユーザーのみが実際の値を表示できます。</p>
-<p>データはバックエンドでマスクされ、ユーザーインターフェースに渡される前に実際の値をブラウザの検査ツールを使用して表示することはできません。マスキング形式は設定できません。</p>
+<p>マスクされたデータは、機密データが意図しない公開から保護される方法です。制限されたデータ属性は、実際の値の代わりにアスタリスク（****）の文字列としてプラットフォーム全体に表示されます。<strong>PII閲覧者</strong>の権限ロールを持つユーザーのみが実際の値を表示できます。</p>
+<p>データはバックエンドでマスクされ、ユーザーインターフェースに渡される前に実際の値をブラウザの検査ツールを使用して表示することはできません。マスキング形式は構成できません。</p>
 <h2 id="アクティベーションとセットアップ">アクティベーションとセットアップ</h2>
 <p>このセクションでは、PIIの権限をアクティベートしてセットアップする手順について説明します。</p>
 <h3 id="ステップ1早期アクセスのリクエスト">ステップ1：早期アクセスのリクエスト</h3>
 <p>この機能へのアクセスをリクエストするには、カスタマーサクセスマネージャーにメッセージを送信してください。</p>
 <p>機能が有効になると、新機能の概要が表示されるインプロダクトのアナウンスが表示されます。機能の強制が有効になるまで、すべてのサーバーサイド画面に永続的なアラートバーが表示されます。</p>
-<h3 id="ステップ2ユーザーの権限を割り当てて設定する">ステップ2：ユーザーの権限を割り当てて設定する</h3>
-<p>機能が有効になったら、ユーザーの権限を設定し、ロールの強制を有効にすることができます。これにより、ユーザーアクセスを意図せずに中断することなく、ユーザーの権限を更新し、構成を再確認する時間が確保されます。</p>
-<p>ユーザーのアカウントレベルの権限を割り当てて設定するには、次の手順を実行します。</p>
+<h3 id="ステップ2ユーザーの権限を割り当てて構成する">ステップ2：ユーザーの権限を割り当てて構成する</h3>
+<p>機能が有効になったら、ユーザーの権限を構成し、ロールの強制を有効にすることができます。これにより、ユーザーアクセスを意図せずに中断することなく、ユーザーの権限を更新し、構成を再確認する時間が確保されます。</p>
+<p>ユーザーのアカウントレベルの権限を割り当てて構成するには、次の手順を実行します。</p>
 <ol>
 <li>管理メニューで<strong>ユーザーの管理</strong>をクリックします。</li>
 <li>更新するユーザーをクリックします。</li>
@@ -277,11 +277,11 @@ var utag_data = {
     </a>
 </figure></li>
 <li>ユーザーの役割を選択します。</li>
-<li><strong>保存</strong>をクリックします。<br>
+<li><strong>ストレージ</strong>をクリックします。<br>
 アカウント内のユーザーには影響しません。次のステップで強制が有効になるまでです。</li>
 </ol>
 <h3 id="ステップ3強制を有効にする">ステップ3：強制を有効にする</h3>
-<p>ユーザーの権限ロールを割り当て、適切な権限が設定されていることを確認したら、強制トグルをONの位置にクリックして強制を有効にします。</p>
+<p>ユーザーの権限ロールを割り当て、適切な権限が構成されていることを確認したら、強制トグルをONの位置にクリックして強制を有効にします。</p>
 <figure><a class="slb" href="/images/early-access/screen-shot-2021-06-27-at-10.14.03-pm.png"><img src="/images/early-access/screen-shot-2021-06-27-at-10.14.03-pm.png"
          alt="Screen Shot 2021-06-27 at 10.14.03 PM.png"
          title="Screen Shot 2021-06-27 at 10.14.03 PM.png"/>
@@ -289,12 +289,12 @@ var utag_data = {
 </figure>
 <p>強制は即座に有効になり、すべてのアカウントユーザーに適用されます。永続的なアラートバーは表示されず、アカウント内のユーザーは新しい権限によって制御されます。</p>
 <h3 id="強制の無効化">強制の無効化</h3>
-<p>新しい権限設定が期待どおりに機能しない場合、または権限を元に戻す必要がある場合は、<strong>PIIの権限の強制</strong>をオフに切り替えるだけです。これにより、すべてのユーザーの権限が強制を有効にする前のレベルに戻ります。</p>
-<p>新しいアカウントレベルの権限設定は維持されますが、強制はされません。アラートバーが再表示され（ユーザー管理者にのみ表示されます）、強制を有効にするまで永続的に表示されます。</p>
+<p>新しい権限構成が期待どおりに機能しない場合、または権限を元に戻す必要がある場合は、<strong>PIIの権限の強制</strong>をオフに切り替えるだけです。これにより、すべてのユーザーの権限が強制を有効にする前のレベルに戻ります。</p>
+<p>新しいアカウントレベルの権限構成は維持されますが、強制はされません。アラートバーが再表示され（ユーザー管理者にのみ表示されます）、強制を有効にするまで永続的に表示されます。</p>
 <h2 id="追加情報">追加情報</h2>
 <ul>
 <li><a href="/server-side/attributes/restricted-data/">制限されたデータについて</a></li>
-<li><a href="">サーバーサイドユーザーの権限管理について</a></li>
+<li><a href="/server-side/administration/user-permissions/about/">サーバーサイドユーザーの権限管理について</a></li>
 </ul>
 
 </div>
@@ -341,7 +341,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月22日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -363,7 +363,7 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">マスクされたデータ</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">アクティベーションとセットアップ</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ステップ1：早期アクセスのリクエスト</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ステップ2：ユーザーの権限を割り当てて設定する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ステップ2：ユーザーの権限を割り当てて構成する</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ステップ3：強制を有効にする</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">強制の無効化</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">追加情報</a></li>
@@ -500,6 +500,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -508,8 +524,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -368,12 +368,12 @@ var utag_data = {
 <tbody>
 <tr>
 <td><code>Config()</code></td>
-<td>Tealiumの設定コンストラクタ</td>
+<td>Tealiumの構成コンストラクタ</td>
 </tr>
 </tbody>
 </table>
 <h3 id="config"><code>Config()</code></h3>
-<p>Tealiumインスタンスを設定するためのコンストラクタ</p>
+<p>Tealiumインスタンスを構成するためのコンストラクタ</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Config tealConfig = <span style="color:#66d9ef">new</span> Config(account, profile, environment,
 </span></span><span style="display:flex;"><span>                               visitorID, modules, dataSourceKey,
 </span></span><span style="display:flex;"><span>                               overrideCollectUrl, optionalData, method);
@@ -432,7 +432,7 @@ var utag_data = {
 <tr>
 <td><code>optionalData</code></td>
 <td><code>Dictionary&lt;string, object&gt;</code></td>
-<td>(オプション) モジュール使用のためのキーと値のペアとしてのデータ (<code>null</code>可 - ほとんどの設定では不要)</td>
+<td>(オプション) モジュール使用のためのキーと値のペアとしてのデータ (<code>null</code>可 - ほとんどの構成では不要)</td>
 <td></td>
 </tr>
 <tr>
@@ -511,7 +511,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="killtracesession"><code>KillTraceSession()</code></h3>
-<p>トレースをキルします。サーバーでのトレース訪問者セッションを終了する特定のイベントを発行します。これは、Customer Data Hubでのセッション終了時の動作をテストするのに便利です。</p>
+<p>トレースをキルします。サーバーでのトレース訪問セッションを終了する特定のイベントを発行します。これは、Customer Data Hubでのセッション終了時の動作をテストするのに便利です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealiumObj.KillTraceSession();
 </span></span></code></pre></div><h3 id="leavetrace"><code>LeaveTrace()</code></h3>
 <p>トレースを離脱します。もしトレースに参加していた場合は。</p>
@@ -555,11 +555,11 @@ var utag_data = {
 <tr>
 <td><code>customData</code></td>
 <td><code>Dictionary&lt;string, object&gt;</code></td>
-<td>(オプション)  イベントデータをキーと値のペアとして (ない場合は<code>null</code>に設定)</td>
+<td>(オプション)  イベントデータをキーと値のペアとして (ない場合は<code>null</code>に構成)</td>
 </tr>
 <tr>
 <td><code>completion</code></td>
-<td><code>TrackCompletion</code> (ない場合は<code>null</code>に設定)</td>
+<td><code>TrackCompletion</code> (ない場合は<code>null</code>に構成)</td>
 <td>(オプション) トラック呼び出し後にトリガーする完了ブロック</td>
 </tr>
 </tbody>
@@ -652,7 +652,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -810,6 +810,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -818,8 +834,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

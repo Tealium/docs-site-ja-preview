@@ -1,0 +1,65 @@
+
+{
+    "kind": "term",
+    "name": "iq_events",
+    "count": 7,
+    "items": [
+
+    
+        {
+            "weight": "1",
+            "url": "https://docs-preview.tealium.co.jp/iq-tag-management/events/about/",
+            "title": "イベントについて",
+            "body":"<h2 id=\"仕組み\">仕組み</h2><p class=\"note\"><i class=\"fa fa-exclamation-triangle\"></i>イベントシステムは、JQuery拡張機能やYouTubeビデオトラッキングソリューションなどの以前のイベントトラッキングソリューションを置き換えます。</p><p>イベントリスナー、別名 <em>イベント</em> は、ページ上の特定の訪問のアクションを追跡する構成可能なJavaScriptリスナーです。</p><p>イベントリスナーは、訪問がページ上で特定のアクションを実行したとき、例えば要素をクリックしたり、ページをスクロールしたり、ビデオプレーヤーを使用したりするときに追跡します。訪問がアクションを実行すると、イベントリスナー変数を含むトラッキングコールがトリガーされます。</p><p>コードなしのイベントリスナーを使用すると、以下のことが可能になります：</p><ul><li>自分のユニークなニーズに合わせてイベントリスナーを構成します。</li><li>イベントリスナーがページ上でロードされるタイミングを決定するさまざまなスコープから選択します。</li><li>イベントリスナーをロードするページを決定するための高度なルールロジックを構成します。</li><li>トラッキングニーズに基づいて構成できるユニークなイベントトリガーを構成します。</li><li>イベントリスナーでページ上の特定の要素をターゲットにします。</li><li>アクションが発生したときに送信されるデータペイロードを構成します。</li></ul><h2 id=\"イベントの種類と変数\">イベントの種類と変数</h2><p>以下の種類のイベントがこの機能を通じて利用可能です：</p><ul><li><a href=\"/iq-tag-management/events/event-types/click-event/\"><strong>クリック</strong></a> - 訪問がページ上でマウスをクリックしたとき。</li><li><a href=\"/iq-tag-management/events/event-types/mouseover-event/\"><strong>マウスオーバー</strong></a> - 訪問がページ上の特定の要素にマウスをホバーしたとき。</li><li><a href=\"/iq-tag-management/events/event-types/form-submission-event/\"><strong>フォーム送信</strong></a> - 訪問がページ上のフォームを送信したとき。</li><li><a href=\"/iq-tag-management/events/event-types/youtube-event/\"><strong>YouTube</strong></a> - 訪問がページ上の埋め込みYouTubeビデオと対話したとき。</li><li><a href=\"/iq-tag-management/events/event-types/vimeo-event/\"><strong>Vimeo</strong></a> - 訪問がページ上の埋め込みVimeoビデオと対話したとき。</li><li><a href=\"/iq-tag-management/events/event-types/html5-video-event/\"><strong>HTML5ビデオ</strong></a> - 訪問がページ上の埋め込みHTML5ビデオと対話したとき。</li><li><a href=\"/iq-tag-management/events/event-types/page-view-event/\"><strong>ページビュー</strong></a> - 訪問がページを閲覧したとき。</li><li><a href=\"/iq-tag-management/events/event-types/scroll-event/\"><strong>スクロール</strong></a> - 訪問がページを縦または横にスクロールしたとき。</li><li><a href=\"/iq-tag-management/events/event-types/element-visibility-event/\"><strong>要素の可視性</strong></a> - ページが訪問にスクリーン要素を表示したとき。</li></ul><p>これらのイベントはそれぞれ特定のイベント（例えば、スクロールイベントの場合は<code>scroll</code>）に対応する<code>tealium_event</code>値で事前に構成されています。これらのイベントタイプの一部にはデフォルトで追加のイベント変数が含まれており、必要に応じてイベント変数をカスタマイズまたは追加できます。</p><p class=\"note\"><i class=\"fa fa-exclamation-triangle\"></i>詳細については、<a href=\"/iq-tag-management/getting-started/best-practices/#event-tracking\">ベストプラクティス - イベントトラッキング</a>を参照してください。</p>"
+        }  
+
+    , 
+        {
+            "weight": "1",
+            "url": "https://docs-preview.tealium.co.jp/iq-tag-management/events/manage-events/create-event/",
+            "title": "イベントの作成",
+            "body":"<p class=\"tip\"><i class=\"fa fa-info-circle\"></i>イベントは、<strong>イベント</strong>画面または展開した<strong>タグ詳細</strong>画面から管理します。</p><p>イベントリスナーの作成は3ステップで行います：イベントタイプの選択、イベントの構成、イベントルールの作成。</p><h2 id=\"ステップ1イベントタイプの選択\">ステップ1：イベントタイプの選択</h2><ol><li><strong>イベント</strong>に移動し、<strong>+ 新規イベント</strong>をクリックします。</li><li><strong>イベントタイプ</strong>ステップで、追跡したいイベントのタイプを選択します。</li><li><strong>次へ</strong>をクリックします。</li></ol><h2 id=\"ステップ2イベントリスナーの構成\">ステップ2：イベントリスナーの構成</h2><ol><li><strong>構成</strong>ステップで、イベントリスナーの<strong>名前</strong>を入力します。</li><li>（オプション）このイベントリスナーについての<strong>メモ</strong>を入力します。</li><li><strong>スコープ</strong>の下で、イベントリスナーの初期化コードがページ上で実行されるタイミングを決定するスコープをリストから選択します。<strong>DOM Ready</strong>スコープの使用を推奨します。</li><li><strong>トラッキングイベント</strong>の下で、リストからイベントリスナーのトラッキングイベントを選択します。このイベントリスナーにタグを登録する予定の場合、そのタグがサポートするトラッキングイベントを選択するか、イベントリスナーはそのタグと連携できません。<ul><li><strong>ビュー</strong> – 訪問がページを閲覧したときを追跡します。</li><li><strong>リンク</strong> – 訪問がページと対話するとき、例えばクリックやビデオスクロールなどを追跡します。</li><li><strong>カスタム</strong> – テキストボックスにカスタムトラッキングイベントを入力します（例：<code>video</code>）。</li></ul></li><li><strong>公開場所</strong>の下で、イベントの公開場所を選択します。</li><li><strong>エレメントセレクター</strong>ボックスに、ターゲットにしたいアイテムのエレメントID、クラス、またはセレクターを入力します。エレメントセレクターの決定方法についての詳細は、<a href=\"https://support.tealiumiq.com/en/support/solutions/articles/36000363465-how-to-determine-the-css-selector-of-an-element\">エレメントのCSSセレクターの決定方法</a>を参照してください。</li><li><strong>イベントトリガー</strong>の下で、このイベントのイベントトリガーを選択し、それらのトリガーの閾値を構成します。各イベントタイプのイベントトリガーについての詳細は、<a href=\"/iq-tag-management/events/event-types/\">イベントタイプ</a>のリストからドキュメンテーションを読んでください。</li><li><strong>トリガー頻度</strong>の下で、イベントリスナーがページ上でトリガーされるたびに追跡するか（<strong>常に</strong>）、イベントが初めてトリガーされたときだけ追跡するか（<strong>一度だけ</strong>）を選択します。</li><li>イベントリスナーのトリガー変数を構成します。これらはイベントリスナーのトラッキング呼び出しと共に送信される値です。既存のトリガー変数を編集するか、訪問のアクションと共に追加のデータを収集するために新しいものを追加することができます。イベントタイプのイベントトリガー変数についての詳細は、<a href=\"/iq-tag-management/events/event-types/\">イベントタイプ</a>のリストからドキュメンテーションを読んでください。</li><li>イベントリスナーの構成が完了したら、<strong>次へ</strong>をクリックします。</li></ol><h2 id=\"ステップ3ルールの作成\">ステップ3：ルールの作成</h2><ol><li><p><strong>ルール</strong>ダイアログで、ページが新しいイベントリスナーをロードするかどうかを決定するルールを構成します。ダイアログの左側には、ページがイベントリスナーをロードするためのロジックが表示されます。ダイアログの右側には、このイベントリスナーに再利用できるプロファイルの利用可能なルールすべてがリストされています。<figure><a class=\"slb\" href=\"/images/guides/iq/event-rules.png\"><img src=\"https://docs.tealium.com/images/guides/iq/event-rules.png\"         alt=\"Events - Rules.png\"         title=\"Events - Rules.png\"/>    </a></figure></p></li><li><p>新しいルールを作成するには、<strong>+ ルールを追加</strong>をクリックします。ルールの作成と構成方法については、<a href=\"/iq-tag-management/load-rules/about/\">ロードルール</a>を参照してください。</p></li><li><p>ダイアログの右側のリストからルールをドラッグアンドドロップして、イベントリスナーの論理条件を構築します。論理演算子とイベントとのロードルールについての詳細は、<a href=\"/iq-tag-management/events/rules/\">イベントルールの例</a>を参照してください。<p class=\"note\"><i class=\"fa fa-exclamation-triangle\"></i>ルールを選択しない場合、イベントリスナーはすべてのページでロードされ、リスニングします。これは訪問のパフォーマンス問題だけでなく、データ収集にも影響を与える可能性があります。</p></p></li><li><p>イベントのルールの配置が完了したら、<strong>ストレージ</strong>をクリックします。</p></li></ol><p>プロファイルに作業内容をストレージするには、<strong>ストレージ/公開</strong>をクリックします。</p><h2 id=\"イベントとタグ\">イベントとタグ</h2><p>イベントリスナーを作成した後、タグの<strong>ルールとイベント</strong>セクションでタグをイベントリスナーに登録できます。タグのロードルールとイベントリスナーの条件を組み合わせて、タグが発火するタイミングとタグエンドポイントに送信されるデータを正確に制御します。</p><p>タグとイベントリスナーについての詳細は、<a href=\"/iq-tag-management/events/subscribe-tags-to-events/subscribe/\">タグをイベントに登録する</a>を参照してください。</p><h2 id=\"イベントの複製\">イベントの複製</h2><p>イベントリスナーを複製して、プロファイルにそのコピーを作成します。例えば、複雑なルールセットを持つマウスオーバーイベントがあり、そのルールをページ上の別の要素に適用したい場合、そのイベントリスナーを複製し、複製したものの<strong>エレメントセレクター</strong>を新しいエレメントに変更します。</p><ol><li><strong>イベント</strong>画面から、複製したいイベントをクリックします。</li><li><strong>イベント詳細</strong>スライドアウトで、<strong>複製</strong>をクリックします。</li><li><strong>イベント</strong>ダッシュボードで複製イベントをクリックします。</li><li><strong>構成</strong>タブで、<strong>編集</strong>をクリックします。</li><li>イベントリスナーのための一意の名前を入力し、構成をカスタマイズします。</li></ol>"
+        }  
+
+    , 
+        {
+            "weight": "2",
+            "url": "https://docs-preview.tealium.co.jp/iq-tag-management/events/event-scope/",
+            "title": "イベントスコープ",
+            "body":"<p>イベントリスナーのスコープは、イベントの初期化コードがいつ実行されるかを決定します。イベントが複数回トリガーされる場合でも、初期化コードは一度だけ実行されます。</p><p>以下のスコープオプションが利用可能です：</p><ul><li><strong>DOM準備完了</strong> – <a href=\"https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded\">DOMContentLoadedブラウザイベント</a>で実行します。イベントリスナーは非同期にロードされ、ページのパフォーマンスと訪問の体験を最適化します。DOM準備完了のイベントリスナー、拡張機能、タグの正確な順序は保証できません。</li><li><strong>ロードルール後</strong> - ロードルールが評価された後に実行します。ロードルールは、各トラッキングコール後に再評価されます。</li></ul><p>標準的なサイトの実装にはデフォルトのスコープである<strong>DOM準備完了</strong>を、シングルページアプリケーション（SPA）には<strong>ロードルール後</strong>を使用することを推奨します。DOM準備完了は、訪問のブラウザがトラッキングのためのページ要素をすべてロードすることを保証しますが、SPAではDOMイベントリスナーが少なく、トラッキング可能な要素のビューが限定される可能性があります。SPAで<strong>ロードルール後</strong>を使用すると、イベントリスナーをページにロードするための基準が変更されたかどうかを確認するために、各イベント後にロードルールが再評価されます。</p><p>ほとんどの標準的な実装では、<strong>DOM準備完了</strong>スコープは<strong>ロードルール後</strong>の直後に順次発生しますが、このタイミングは保証されません。</p><p>イベント実行順序の詳細な概要については、<a href=\"/iq-tag-management/getting-started/order-of-operations/\">操作の順序</a>を参照してください。</p>"
+        }  
+
+    , 
+        {
+            "weight": "3",
+            "url": "https://docs-preview.tealium.co.jp/iq-tag-management/events/events-publish-locations/",
+            "title": "パブリッシュロケーション",
+            "body":"<p>次のパブリッシュロケーションは、すべてのイベントリスナーで利用可能です：</p><ul><li><strong>Dev</strong> - 開発（Dev）環境は、サンドボックス構成を目的とした非本番環境です。</li><li><strong>QA</strong> - 品質保証（QA）環境は、本番リリース前のテストを目的とした非本番環境です。</li><li><strong>Prod</strong> - 本番（Prod）環境は、ライブウェブサイトでロードするつもりの環境です。</li></ul><p>パブリッシュロケーションのチェックボックスを選択解除すると、そのロケーションにイベントリスナーは公開されません。例えば、<strong>Prod</strong>の選択を解除すると、<strong>Save</strong>ダイアログから<strong>Prod</strong>をパブリッシュターゲットとして選択しても、イベントリスナーはライブサイトにプッシュされません。この構成は、イベントリスナーが承認またはサイト訪問の準備が整う前に誤ってリリースされるのを防ぐのに役立ちます。</p>"
+        }  
+
+    , 
+        {
+            "weight": "5",
+            "url": "https://docs-preview.tealium.co.jp/iq-tag-management/events/subscribe-tags-to-events/subscribe/",
+            "title": "タグをイベントに登録する",
+            "body":"<p><strong>ルールとイベント</strong>セクションのタグで、タグをイベントに登録することができます。ロードルールとイベントルールを組み合わせて、タグがロードされるタイミングと、どのイベントを追跡するかを制御します。</p><ol><li><strong>タグ</strong>画面から、タグの詳細を展開し、<strong>ルールとイベント</strong>セクションで<strong>編集</strong>をクリックします。</li><li><strong>ルールとイベントの編集</strong>スライドアウトの右側で、<strong>イベント</strong>タブをクリックします。</li><li>イベントリスナーの論理条件を編集するには、ダイアログの右側のリストからイベントリスナーとルールをドラッグアンドドロップして左側に移動します。</li><li><strong>完了</strong>をクリックします。</li></ol><h2 id=\"タグとイベントの互換性\">タグとイベントの互換性</h2><p>イベントリスナーの追跡イベントと公開場所を、そのイベントを登録するタグと調整することが重要です。</p><ul><li>イベントリスナーが、登録されたタグがサポートしていない追跡呼び出しを使用する場合、イベントはトリガーされますが、タグは発火しません。</li><li>タグとイベントリスナーが異なる公開場所を使用する場合、タグまたはイベントリスナーは、開発者、テスター、またはサイト訪問に対して機能しない可能性があります。</li></ul>"
+        }  
+
+    , 
+        {
+            "weight": "5",
+            "url": "https://docs-preview.tealium.co.jp/iq-tag-management/events/triggers-and-frequency/",
+            "title": "イベントトリガーと頻度",
+            "body":"<p>イベントトリガーは、どのイベントを追跡し、どの追跡呼び出しを発火するかを決定します。トリガーは各イベントタイプによって異なります。</p><p>一部のイベントリスナーには、複数のトリガーやそれらのトリガーの閾値があります。例えば、スクロールイベントは、垂直および水平のスクロール方向、およびパーセンテージまたはピクセルによるスクロール長さのトリガーをサポートしています。</p><h2 id=\"トリガーの頻度\">トリガーの頻度</h2><p>トリガーの頻度は、イベントトリガーが追跡呼び出しを引き起こす回数を決定します。</p><p>トリガーの頻度のオプションは次のとおりです：</p><ul><li><strong>常に</strong> - イベントがトリガーされるたびに追跡呼び出しが発火します。</li><li><strong>一度だけ</strong> - 追跡呼び出しは最初のイベントがトリガーされた後にのみ発火します。その後のイベントのトリガーはすべて、ページが更新されるまで無視されます。</li></ul>"
+        }  
+
+    , 
+        {
+            "weight": "7",
+            "url": "https://docs-preview.tealium.co.jp/iq-tag-management/events/rules/",
+            "title": "イベントルール",
+            "body":"<p>ルールを使用して、イベントリスナーをロードするページを選択します。イベントは既存のロードルールを再利用することも、新しいルールを作成することもできます。</p><p>構成ダイアログでは、ルールのロジックを構成するためのドラッグアンドドロップインターフェースが提供されます。</p><h2 id=\"イベントを持つタグ\">イベントを持つタグ</h2><p>タグの<strong>ルールとイベント</strong>セクションで、タグをイベントに登録することができます。タグとイベントリスナーの条件を組み合わせることで、タグが発火するタイミングと、タグのエンドポイントに送信されるデータを正確に制御できます。</p><p>タグとイベントについての詳細は、<a href=\"/iq-tag-management/events/subscribe-tags-to-events/subscribe/\">タグをイベントに登録する</a>を参照してください。</p><p class=\"note\"><i class=\"fa fa-exclamation-triangle\"></i>イベントリスナーに対してルールを選択しない場合、イベントリスナーはすべてのページでロードされ、リスナーが有効になります。この状態は、訪問のパフォーマンス問題やデータ収集に影響を及ぼす可能性があります。イベントリスナーのアクションが発生すると予想されるページでのみイベントリスナーをロードし、そのアクションからデータを収集するようにすることをお勧めします。</p><h2 id=\"イベントとロードルール\">イベントとロードルール</h2><p>以下の論理演算子を使用してルールを作成します：</p><ul><li><strong>OR</strong> - ロードルールのいずれかが真であれば、イベントリスナーをロードします。</li><li><strong>AND</strong> - ロードルールのすべてが真であれば、イベントリスナーをロードします。</li><li><strong>AND NOT</strong> - <strong>AND NOT</strong>の前のロードルールが真で、<strong>AND NOT</strong>の後のロードルールが偽であれば、イベントリスナーをロードします。</li></ul><p>ロードルールをロジックボックスにドラッグアンドドロップすると、ダイアログは自動的に空の<strong>OR</strong>ロジックボックスを生成します。+ <strong>AND</strong>ボタンをクリックして、別のトップレベルのANDロジックボックスを生成します。</p><h3 id=\"and演算子\">AND演算子</h3><p>商品ページでイベントリスナーをロードし、訪問のカートが空である場合に条件を作成するには、<strong>商品ページ</strong>ロードルールと<strong>カートが空</strong>ロードルールを<strong>AND</strong>関係にドラッグします：</p><figure><a class=\"slb\" href=\"/images/guides/iq/event-and-rules.png\"><img src=\"https://docs.tealium.com/images/guides/iq/event-and-rules.png\"         alt=\"AND演算子\"         title=\"AND演算子\"/>    </a></figure><h3 id=\"or演算子\">OR演算子</h3><p>イベントリスナーを商品ページでロードするか、訪問のカートが空である場合にロードするように変更するには、<strong>カートが空</strong>ロードルールを<strong>OR</strong>ロジックボックスにドラッグします：</p><figure><a class=\"slb\" href=\"/images/guides/iq/event-or-rules.png\"><img src=\"https://docs.tealium.com/images/guides/iq/event-or-rules.png\"         alt=\"OR演算子\"         title=\"OR演算子\"/>    </a></figure><h3 id=\"and-not演算子\">AND NOT演算子</h3><p>イベントリスナーを商品ページでロードするか、訪問のカートが空でない場合にロードするように変更するには、<strong>カートが空</strong>ロードルールを<strong>AND NOT</strong>ロジックボックスにドラッグします：</p><figure><a class=\"slb\" href=\"/images/guides/iq/event-and-not-rules.png\"><img src=\"https://docs.tealium.com/images/guides/iq/event-and-not-rules.png\"         alt=\"AND NOT演算子\"         title=\"AND NOT演算子\"/>    </a></figure><h3 id=\"ネストされた演算子\">ネストされた演算子</h3><p>これらの条件の複数レベルでルールをネストすることで、ロードルールのための高度なロジックを作成できます。次の例では、視聴者が米国のサイトで商品ページまたは商品リストページを見ている場合、またはカートが空でなく、ホームページにいない場合にイベントリスナーをロードします。</p><figure><a class=\"slb\" href=\"/images/guides/iq/event-rules-advanced.png\"><img src=\"https://docs.tealium.com/images/guides/iq/event-rules-advanced.png\"/>    </a></figure>"
+        }  
+
+    ]
+}

@@ -6,12 +6,12 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Apple ConfiguratorとCharlesを設定してApple TVをプロキシする | iOS（Swift）用Tealium | Tealium開発者ドキュメントプレビュー</title>
+    <title>Apple ConfiguratorとCharlesを構成してApple TVをプロキシする | iOS（Swift）用Tealium | Tealium開発者ドキュメントプレビュー</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -342,7 +342,7 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Apple ConfiguratorとCharlesを設定してApple TVをプロキシする</h1>
+<h1 class="lh-title mt30 mb3">Apple ConfiguratorとCharlesを構成してApple TVをプロキシする</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -356,14 +356,14 @@ var utag_data = {
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p><a href="https://support.apple.com/en-us/HT202577">Configurator</a>は、Appleデバイスに設定プロファイルを追加するためのツールです。</p>
+  <p><a href="https://support.apple.com/en-us/HT202577">Configurator</a>は、Appleデバイスに構成プロファイルを追加するためのツールです。</p>
 <h2 id="前提条件">前提条件</h2>
 <ul>
-<li>プロファイルを設定するためのApple Configurator。</li>
+<li>プロファイルを構成するためのApple Configurator。</li>
 <li>Charles Proxyバージョン3.10以降。</li>
 </ul>
-<h2 id="charles-proxyの設定">Charles Proxyの設定</h2>
-<h3 id="charles-proxyの設定-1">Charles Proxyの設定</h3>
+<h2 id="charles-proxyの構成">Charles Proxyの構成</h2>
+<h3 id="charles-proxyの構成-1">Charles Proxyの構成</h3>
 <ol>
 <li><strong>Proxy &gt; Proxy Settings&hellip;</strong> メニューに移動します。</li>
 <li><strong>Proxies</strong>タブの<strong>HTTP Proxy Port</strong>フィールドに<code>8888</code>を入力します。<br>
@@ -381,7 +381,7 @@ var utag_data = {
 </figure></li>
 <li>**Help &gt; SSL Proxying &gt; Install Charles Root Certification a Mobile Device or Remote Browser&hellip;**に移動します。</li>
 </ol>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>ダイアログに表示されるIPアドレスは、後で<strong>Apple Configuratorの設定</strong>で使用します。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>ダイアログに表示されるIPアドレスは、後で<strong>Apple Configuratorの構成</strong>で使用します。</p>
 <p><figure><a class="slb" href="/images/platforms/ios-swift/charles-proxy/charles-proxy-iosdevice3.jpeg"><img src="/images/platforms/ios-swift/charles-proxy/charles-proxy-iosdevice3.jpeg"
          alt="SSL Proxying menu"
          title="SSL Proxying menu"/>
@@ -397,14 +397,14 @@ var utag_data = {
 <li><strong>Charles Proxy Custom Root Certificate</strong>チェックボックスを選択します。</li>
 <li><strong>File &gt; Export Items</strong>に移動し、証明書を<code>.cer</code>ファイルとしてローカルドライブの場所にエクスポートします。その場所をメモしておいてください。</li>
 </ol>
-<h2 id="apple-configuratorの設定">Apple Configuratorの設定</h2>
-<h3 id="apple-configuratorを使用して設定プロファイルを作成する">Apple Configuratorを使用して設定プロファイルを作成する</h3>
-<p>Apple Configuratorを使用して設定プロファイルを作成するには：</p>
+<h2 id="apple-configuratorの構成">Apple Configuratorの構成</h2>
+<h3 id="apple-configuratorを使用して構成プロファイルを作成する">Apple Configuratorを使用して構成プロファイルを作成する</h3>
+<p>Apple Configuratorを使用して構成プロファイルを作成するには：</p>
 <ol>
 <li><strong>Open &gt; New Profile</strong>に移動します。</li>
 <li>このプロファイルの名前と一意の識別子を入力します。</li>
 <li>左側のメニューから<strong>Global HTTP Proxy</strong>をクリックします。</li>
-<li><strong>Proxy Server and Port</strong>の下に、上記のCharles Proxyの設定ステップ5からのIPアドレスとポートを入力します。</li>
+<li><strong>Proxy Server and Port</strong>の下に、上記のCharles Proxyの構成ステップ5からのIPアドレスとポートを入力します。</li>
 </ol>
 <figure><a class="slb" href="/images/platforms/ios-swift/appleconfigurator1.jpeg"><img src="/images/platforms/ios-swift/appleconfigurator1.jpeg"
          alt="Apple Configurator - Global HTTP Proxy"
@@ -413,22 +413,22 @@ var utag_data = {
 </figure>
 <ol start="5">
 <li>左側のメニューから<strong>Certificates</strong>を選択し、<strong>Keychain Access</strong>を通じて以前にエクスポートした<code>.cer</code>ファイルを選択します。</li>
-<li><strong>File &gt; Save</strong>を選択してプロファイルをMacに保存します。ファイルの場所をメモしておいてください。</li>
+<li><strong>File &gt; Save</strong>を選択してプロファイルをMacにストレージします。ファイルの場所をメモしておいてください。</li>
 </ol>
-<h2 id="apple-tvの設定">Apple TVの設定</h2>
-<h3 id="apple-tvに設定プロファイルをインストールする">Apple TVに設定プロファイルをインストールする</h3>
+<h2 id="apple-tvの構成">Apple TVの構成</h2>
+<h3 id="apple-tvに構成プロファイルをインストールする">Apple TVに構成プロファイルをインストールする</h3>
 <ol>
 <li>Apple TVをUSB経由でMacに接続します。Apple TVはConfiguratorの<strong>All Devices</strong>の下に表示されます。</li>
 <li>Apple TVを選択し、上部メニューの<strong>Add</strong>をクリックします。</li>
-<li><strong>Profiles</strong>をクリックし、上記のCharles Proxyの設定ステップ6でダウンロードしたSSL証明書を選択します。これにより、設定プロファイルがApple TVにコピーされます。</li>
+<li><strong>Profiles</strong>をクリックし、上記のCharles Proxyの構成ステップ6でダウンロードしたSSL証明書を選択します。これにより、構成プロファイルがApple TVにコピーされます。</li>
 <li>Apple TVからのトラフィックは、これでCharlesを経由してプロキシされます。</li>
 </ol>
-<h3 id="apple-tvから設定プロファイルを削除する">Apple TVから設定プロファイルを削除する</h3>
+<h3 id="apple-tvから構成プロファイルを削除する">Apple TVから構成プロファイルを削除する</h3>
 <p>デバッグが終了したら、プロキシを停止するためにApple TVからプロファイルを削除する必要があります。そのためには：</p>
 <ol>
 <li>Configuratorでデバイスをダブルクリックします。</li>
 <li>左側のメニューから<strong>Profiles</strong>をクリックします。</li>
-<li>設定プロファイルを選択し、<strong>Edit &gt; Delete</strong>を選択します。</li>
+<li>構成プロファイルを選択し、<strong>Edit &gt; Delete</strong>を選択します。</li>
 </ol>
 
 </div>
@@ -490,7 +490,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -505,14 +505,14 @@ var utag_data = {
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">前提条件</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#charles-proxy">Charles Proxyの設定</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#charles-proxy">Charles Proxyの設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#charles-proxy">Charles Proxyの構成</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#charles-proxy">Charles Proxyの構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#charles">Charlesの証明書をエクスポートする</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-configurator">Apple Configuratorの設定</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-configurator">Apple Configuratorを使用して設定プロファイルを作成する</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-tv">Apple TVの設定</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-tv">Apple TVに設定プロファイルをインストールする</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-tv">Apple TVから設定プロファイルを削除する</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-configurator">Apple Configuratorの構成</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-configurator">Apple Configuratorを使用して構成プロファイルを作成する</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-tv">Apple TVの構成</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-tv">Apple TVに構成プロファイルをインストールする</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#apple-tv">Apple TVから構成プロファイルを削除する</a></li>
               </nav>
   </aside></nav>
 
@@ -646,6 +646,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -654,8 +670,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

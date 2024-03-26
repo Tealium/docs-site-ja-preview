@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -356,13 +356,13 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      各ユーザーに対して中央のクロスデバイス訪問者IDを提供します。
+      各ユーザーに対して中央のクロスデバイス訪問IDを提供します。
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p>Adobe Visitor Serviceモジュールは、AdobeのREST APIと直接インターフェースを提供し、訪問者のExperience Cloud ID (ECID)を取得し維持します。</p>
+  <p>Adobe Visitor Serviceモジュールは、AdobeのREST APIと直接インターフェースを提供し、訪問のExperience Cloud ID (ECID)を取得し維持します。</p>
 <p><a href="/platforms/getting-started-mobile/adobe-visitor-service/">AdobeVisitorService</a>モジュールについて詳しく学びましょう。</p>
 <h2 id="要件">要件</h2>
 <ul>
@@ -372,7 +372,7 @@ var utag_data = {
 <h2 id="サンプルアプリ">サンプルアプリ</h2>
 <p>Android向けの<a href="https://github.com/Tealium/tealium-kotlin/tree/master/mobile">AdobeVisitorServiceモジュールのサンプルアプリ</a>を探索して、Tealiumライブラリとベストプラクティスの実装についての知識を深めましょう。</p>
 <h2 id="インストール">インストール</h2>
-<p>AdobeVisitorServiceモジュールは、Tealium SDKを初期化する際に設定され、リモート設定機能はありません。</p>
+<p>AdobeVisitorServiceモジュールは、Tealium SDKを初期化する際に構成され、リモート構成機能はありません。</p>
 <p>このモジュールは<code>DispatchValidator</code>として機能し、Adobe組織IDなしでの呼び出しを防ぎます。Adobe APIからECIDを取得しようとしますが、5回の失敗後は、データ損失を避けるためにECIDなしでの呼び出しを許可します。データの送信は、有効なECIDを持つことよりも優先されます。</p>
 <p>ECIDが取得できない可能性のある原因は次のとおりです：</p>
 <ul>
@@ -394,13 +394,13 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>      app,
 </span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;&lt;account&gt;&#34;</span>,
 </span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;&lt;profile&gt;&#34;</span>,
-</span></span><span style="display:flex;"><span>      Environment.DEV,
-</span></span><span style="display:flex;"><span>      collectors = mutableSetOf(Collectors.AdobeVisitor),
-</span></span><span style="display:flex;"><span>      dispatchers = mutableSetOf(Dispatchers.Collect)
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>      collectors = mutableSetOf(<span style="color:#a6e22e">Collectors</span>.AdobeVisitor),
+</span></span><span style="display:flex;"><span>      dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.Collect)
 </span></span><span style="display:flex;"><span>  )
-</span></span><span style="display:flex;"><span>  config.adobeVisitorOrgId = BuildConfig.ADOBE_ORG_ID
+</span></span><span style="display:flex;"><span>  config.adobeVisitorOrgId = <span style="color:#a6e22e">BuildConfig</span>.ADOBE_ORG_ID
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  tealium = Tealium.create(BuildConfig.TEALIUM_INSTANCE, config)
+</span></span><span style="display:flex;"><span>  tealium = <span style="color:#a6e22e">Tealium</span>.create(<span style="color:#a6e22e">BuildConfig</span>.TEALIUM_INSTANCE, config)
 </span></span></code></pre></div>
 </div>
 
@@ -461,7 +461,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -612,6 +612,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -620,8 +636,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -370,20 +370,20 @@ var utag_data = {
 <li><code>tealium_profile</code>：Tealiumプロファイルの名前。デフォルトは<strong>main</strong>です。</li>
 <li><code>tealium_datasource</code>：（オプション）Customer Data Hubのデータソースキー。詳細については、<a href="/server-side/data-sources/about-data-sources/">データソースについて</a>を参照してください。</li>
 <li><code>tealium_event</code>：（推奨）トラッキング目的のイベントの名前。</li>
-<li><code>tealium_visitor_id</code>：（AudienceStreamの場合必須）イベントに関連する訪問者の一意の識別子（[訪問者識別子]（#visitor-identifiers）セクションを参照）。データのソースによっては、この識別子が、訪問者が使用しているデバイスに関連付けられた匿名のGUID（グローバルユニーク識別子）である場合もあります。または、訪問者の既知のユーザー識別子に基づいている場合もあります。</li>
+<li><code>tealium_visitor_id</code>：（AudienceStreamの場合必須）イベントに関連する訪問の一意の識別子（[訪問識別子]（#visitor-identifiers）セクションを参照）。データのソースによっては、この識別子が、訪問が使用しているデバイスに関連付けられた匿名のGUID（グローバルユニーク識別子）である場合もあります。または、訪問の既知のユーザー識別子に基づいている場合もあります。</li>
 <li><code>tealium_trace_id</code>：（オプション）<a href="/server-side/connectors/trace/about/">トレース</a>で使用するため。</li>
 </ul>
 <p>リクエストの形式は、使用されるHTTPメソッドによって異なります。以下の例では、プレースホルダの値は、次の形式で波括弧で表されます：<code>{VALUE}</code>。</p>
 <h2 id="カスタムイベントパラメータ">カスタムイベントパラメータ</h2>
 <p>追加のイベント属性は、トラッキングのニーズに応じてカスタムパラメータとして送信されます。これらのパラメータは、Customer Data Hubのイベント属性としても定義する必要があります。イベント属性についての詳細は、<a href="/server-side/attributes/about/">属性について</a>を参照してください。</p>
-<h2 id="訪問者識別子">訪問者識別子</h2>
-<p>AudienceStreamは、次の組み合わせを使用して訪問者を追跡します：</p>
+<h2 id="訪問識別子">訪問識別子</h2>
+<p>AudienceStreamは、次の組み合わせを使用して訪問を追跡します：</p>
 <ul>
-<li><strong>匿名ID</strong>：通常、訪問者を匿名で追跡するために使用されるID（たとえば、デバイスやブラウザから）。<a href="#known-visitors-server-to-server">既知の訪問者</a>の場合、ユーザー識別子に基づいた値を使用できます。</li>
-<li><strong>ユーザー識別子</strong>：訪問者が既知の場合に送信されます。特定のデバイスではなく、ユーザーを識別する値に基づいています。</li>
+<li><strong>匿名ID</strong>：通常、訪問を匿名で追跡するために使用されるID（たとえば、デバイスやブラウザから）。<a href="#known-visitors-server-to-server">既知の訪問</a>の場合、ユーザー識別子に基づいた値を使用できます。</li>
+<li><strong>ユーザー識別子</strong>：訪問が既知の場合に送信されます。特定のデバイスではなく、ユーザーを識別する値に基づいています。</li>
 </ul>
 <h3 id="匿名id">匿名ID</h3>
-<p>匿名IDは、AudienceStreamがイベントと訪問を関連付けるために使用する匿名の識別子です。この値がGUIDであり、訪問者に対して一貫していることを確認してください。</p>
+<p>匿名IDは、AudienceStreamがイベントと訪問を関連付けるために使用する匿名の識別子です。この値がGUIDであり、訪問に対して一貫していることを確認してください。</p>
 <p>匿名IDのキー名は<code>tealium_visitor_id</code>です。</p>
 <p>ビジネスケースに応じて、匿名の値または既知のユーザー識別子に基づいた値を使用できます。</p>
 <h4 id="匿名の値">匿名の値</h4>
@@ -401,9 +401,9 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>Tealium iQ Tag Managementを使用して、APIコールをサーバー間で送信して匿名の訪問者プロファイルを豊かにする場合、<code>tealium_visitor_id</code>の値は<code>utag_main_v_id</code>クッキーの値と一致する必要があります。utag.jsからの組み込み変数についての詳細は、<a href="/platforms/javascript/data-layer/">JavaScript（Web）&gt;データレイヤー</a>を参照してください。</p>
+<p>Tealium iQ Tag Managementを使用して、APIコールをサーバー間で送信して匿名の訪問プロファイルを豊かにする場合、<code>tealium_visitor_id</code>の値は<code>utag_main_v_id</code>クッキーの値と一致する必要があります。utag.jsからの組み込み変数についての詳細は、<a href="/platforms/javascript/data-layer/">JavaScript（Web）&gt;データレイヤー</a>を参照してください。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Adobe LaunchまたはGoogle Tag Managerを使用している場合、値は<strong>TEAL</strong>クッキーの<code>v</code>の部分と一致する必要があります。</p>
-<h4 id="既知の訪問者サーバー間">既知の訪問者サーバー間</h4>
+<h4 id="既知の訪問サーバー間">既知の訪問サーバー間</h4>
 <table>
 <thead>
 <tr>
@@ -418,7 +418,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p>既知の訪問者のデータを送信する場合（<code>email_address</code>などの訪問者ID属性に値が存在する場合）、次のものを連結して送信データを作成します：</p>
+<p>既知の訪問のデータを送信する場合（<code>email_address</code>などの訪問ID属性に値が存在する場合）、次のものを連結して送信データを作成します：</p>
 <ul>
 <li>
 <p>アカウント</p>
@@ -427,7 +427,7 @@ var utag_data = {
 <p>プロファイル</p>
 </li>
 <li>
-<p>訪問者ID属性のIDと値<p class="tip"><i class="fa fa-info-circle"></i>属性リストまたは展開された詳細内の属性名の横に訪問者ID属性のIDが表示されます。詳細については、<a href="/server-side/attributes/about/#attribute-ids">属性について</a>を参照してください。</p></p>
+<p>訪問ID属性のIDと値<p class="tip"><i class="fa fa-info-circle"></i>属性リストまたは展開された詳細内の属性名の横に訪問ID属性のIDが表示されます。詳細については、<a href="/server-side/attributes/about/#attribute-ids">属性について</a>を参照してください。</p></p>
 </li>
 <li>
 <p><code>tealium_visitor_id</code>パラメータ内の値</p>
@@ -437,7 +437,7 @@ var utag_data = {
 <ul>
 <li>アカウント名：<code>my-account</code></li>
 <li>プロファイル：<code>main</code></li>
-<li>訪問者ID属性のID：<code>7688</code></li>
+<li>訪問ID属性のID：<code>7688</code></li>
 <li>渡したい顧客番号の値：<code>45653454</code></li>
 </ul>
 <p>次のようにこれらの値を連結します：</p>
@@ -451,20 +451,20 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;email_address&#34;</span>      : <span style="color:#e6db74">&#34;user@example.com&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tealium_visitor_id&#34;</span> : <span style="color:#e6db74">&#34;__my-account_main__7688_45653454__&#34;</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>匿名の訪問者または既知の訪問者を使用する場合、APIコールに一貫した<code>tealium_visitor_id</code>が含まれていない場合、各イベントは新しい訪問となり、訪問者のステッチングができなくなります。</p>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>匿名の訪問または既知の訪問を使用する場合、APIコールに一貫した<code>tealium_visitor_id</code>が含まれていない場合、各イベントは新しい訪問となり、訪問のスティッチングができなくなります。</p>
 <h3 id="ユーザー識別子">ユーザー識別子</h3>
 <p>AudienceStreamを使用する場合、トラッキングコールに既知のユーザー識別子を渡すことができます。たとえば、<code>email_address</code>や<code>login_id</code>です。</p>
 <p>ベンダーコネクタにIDを提供する必要がある場合、EventStreamを使用している場合も、ユーザー識別子が必要です。</p>
-<p>AudienceStreamでは、これらのユーザー識別子を使用して<a href="/server-side/visitor-stitching/visitor-id-attribute/">訪問者ID属性</a>を豊かにします。</p>
-<h3 id="訪問者の切り替え">訪問者の切り替え</h3>
-<p>ファーストパーティのクッキーが利用できない場合、サーバーサイドは次の優先順位で入力データを使用して訪問者のIDを決定します：</p>
+<p>AudienceStreamでは、これらのユーザー識別子を使用して<a href="/server-side/visitor-stitching/visitor-id-attribute/">訪問ID属性</a>を豊かにします。</p>
+<h3 id="訪問の切り替え">訪問の切り替え</h3>
+<p>ファーストパーティのクッキーが利用できない場合、サーバーサイドは次の優先順位で入力データを使用して訪問のIDを決定します：</p>
 <ul>
 <li><code>TAPID</code>クッキー、または<code>tealium_thirdparty_visitor_id</code>とも呼ばれます</li>
 <li><code>tealium_visitor_id</code></li>
 <li><code>utag_main v_id</code>、または<code>tealium_firstparty_visitor_id</code>とも呼ばれます</li>
 </ul>
-<p>AudienceStreamは、<code>TAPID</code>のIDを他のIDよりも優先して訪問者プロファイルを決定するため、同じデバイス上の複数のユーザーのトラッキングに問題が発生する可能性があります。</p>
-<p>たとえば、ユーザーがログインし、そのIDが<code>TAPID</code>に追加された場合、デバイス上のすべての匿名ユーザーのトラフィックがそのユーザーに記録されます。そして、2番目のユーザーがそのデバイスにログインした場合、匿名クッキーがクリアされていないと仮定すると、AudienceStreamは引き続き最初のユーザーのアクティビティを記録します。訪問者が共有のスマートテレビや公共のキオスクを使用している場合、これにより訪問者のプロファイルのデータが汚染される可能性があります。</p>
+<p>AudienceStreamは、<code>TAPID</code>のIDを他のIDよりも優先して訪問プロファイルを決定するため、同じデバイス上の複数のユーザーのトラッキングに問題が発生する可能性があります。</p>
+<p>たとえば、ユーザーがログインし、そのIDが<code>TAPID</code>に追加された場合、デバイス上のすべての匿名ユーザーのトラフィックがそのユーザーに記録されます。そして、2番目のユーザーがそのデバイスにログインした場合、匿名クッキーがクリアされていないと仮定すると、AudienceStreamは引き続き最初のユーザーのアクティビティを記録します。訪問が共有のスマートテレビや公共のキオスクを使用している場合、これにより訪問のプロファイルのデータが汚染される可能性があります。</p>
 <p>イベントで<code>tealium_visitor_id</code>と<code>tealium_thirdparty_visitor_id</code>の値をエンドポイントがどのように処理するかを制御するために、次のパラメータを使用します：</p>
 <table>
 <thead>
@@ -483,12 +483,12 @@ var utag_data = {
 <tr>
 <td><code>tealium_skip_3rd_party_vid_cookies</code></td>
 <td>ブール値</td>
-<td><code>TAPID</code>サードパーティクッキーの収集をスキップするには、<code>true</code>に設定します。</td>
+<td><code>TAPID</code>サードパーティクッキーの収集をスキップするには、<code>true</code>に構成します。</td>
 </tr>
 <tr>
 <td><code>tealium_delete_3rd_party_vid_cookies</code></td>
 <td>ブール値</td>
-<td><code>TAPID</code>サードパーティクッキーを削除するには、<code>true</code>に設定します。</td>
+<td><code>TAPID</code>サードパーティクッキーを削除するには、<code>true</code>に構成します。</td>
 </tr>
 </tbody>
 </table>
@@ -503,7 +503,7 @@ var utag_data = {
 <p>curlを使用した例：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -i -X GET <span style="color:#e6db74">&#34;https://collect.tealiumiq.com/event?tealium_account={ACCOUNT}&amp;tealium_profile={PROFILE}&amp;tealium_event=user_login&amp;email_address=user@example.com&#34;</span> 
 </span></span></code></pre></div><h3 id="post">POST</h3>
-<p>POSTメソッドは、サーバーにデータを送信してリソースを作成/更新するために使用されます。リクエストヘッダーは<code>Content-Type: application/json</code>に設定し、ペイロードは有効なJSON文字列としてフォーマットする必要があります。</p>
+<p>POSTメソッドは、サーバーにデータを送信してリソースを作成/更新するために使用されます。リクエストヘッダーは<code>Content-Type: application/json</code>に構成し、ペイロードは有効なJSON文字列としてフォーマットする必要があります。</p>
 <p><code>user_login</code>イベントの例：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tealium_account&#34;</span>   <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
@@ -627,7 +627,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -645,10 +645,10 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">レート制限</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">標準パラメータ</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">カスタムイベントパラメータ</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問者識別子</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問識別子</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">匿名ID</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユーザー識別子</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問者の切り替え</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問の切り替え</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">メソッド</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#get">GET</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#post">POST</a></li>
@@ -789,6 +789,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -797,8 +813,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

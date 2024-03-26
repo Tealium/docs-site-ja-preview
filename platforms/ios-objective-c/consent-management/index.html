@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -452,7 +452,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    _tealium <span style="color:#f92672">=</span> [Tealium newInstanceForKey:<span style="color:#e6db74">@&#34;INSTANCE&#34;</span> configuration:configuration];
 </span></span><span style="display:flex;"><span>    _tealium.delegate <span style="color:#f92672">=</span> self;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// オプションの同意マネージャーデリゲートを設定する
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// オプションの同意マネージャーデリゲートを構成する
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    _tealium.consentManagerDelegate <span style="color:#f92672">=</span> self;
 </span></span><span style="display:flex;"><span>    NSLog(<span style="color:#e6db74">@&#34;%s, %@&#34;</span>, __FUNCTION__, [TEALConsentManager consentStatusString:_tealium.consentManager.userConsentStatus]);
 </span></span><span style="display:flex;"><span>  }
@@ -478,9 +478,9 @@ var utag_data = {
 TEALConsentManagerDelegateプロトコルに準拠する特定のクラスを登録します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[_tealium setConsentManagerDelegate:(<span style="color:#66d9ef">id</span><span style="color:#f92672">&lt;</span>TEALConsentManagerDelegate<span style="color:#f92672">&gt;</span>)];
 </span></span></code></pre></div><p><strong><code>setUserConsentStatus</code></strong><br>
-ユーザーの同意ステータスを設定します。アプリの同意管理設定画面から呼び出すように設計されています。</p>
+ユーザーの同意ステータスを構成します。アプリの同意管理構成画面から呼び出すように設計されています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[_tealium.consentManager setUserConsentStatus:Consented];
-</span></span></code></pre></div><p>同意マネージャーは常に、ステータスが<code>Consented</code>の場合には、すべての利用可能な同意カテゴリを含む同意済みカテゴリリストを設定します。このメソッドでは、カテゴリを選択的に設定することはできません。</p>
+</span></span></code></pre></div><p>同意マネージャーは常に、ステータスが<code>Consented</code>の場合には、すべての利用可能な同意カテゴリを含む同意済みカテゴリリストを構成します。このメソッドでは、カテゴリを選択的に構成することはできません。</p>
 <table>
 <thead>
 <tr>
@@ -498,9 +498,9 @@ TEALConsentManagerDelegateプロトコルに準拠する特定のクラスを登
 </tbody>
 </table>
 <p><strong><code>setUserConsentCategories</code></strong><br>
-ユーザーの同意カテゴリを設定します。アプリの同意管理設定画面から呼び出すように設計されています。</p>
+ユーザーの同意カテゴリを構成します。アプリの同意管理構成画面から呼び出すように設計されています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[_tealium.consentManager setUserConsentCategories:<span style="color:#ae81ff">@[</span><span style="color:#e6db74">@&#34;analytics&#34;</span><span style="color:#ae81ff">]</span>];
-</span></span></code></pre></div><p>カテゴリが設定されている場合は常に同意ステータスを<code>Consented</code>に設定します。</p>
+</span></span></code></pre></div><p>カテゴリが構成されている場合は常に同意ステータスを<code>Consented</code>に構成します。</p>
 <table>
 <thead>
 <tr>
@@ -518,7 +518,7 @@ TEALConsentManagerDelegateプロトコルに準拠する特定のクラスを登
 </tbody>
 </table>
 <p><strong><code>setUserConsentStatus:withUserConsentCategories</code></strong><br>
-ユーザーの同意ステータスと同意カテゴリを1つのメソッドで設定します。</p>
+ユーザーの同意ステータスと同意カテゴリを1つのメソッドで構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[_tealium.consentManager setUserConsentStatus:Consented withUserConsentCategories:<span style="color:#ae81ff">@[</span><span style="color:#e6db74">@&#34;analytics&#34;</span><span style="color:#ae81ff">]</span>];
 </span></span></code></pre></div><table>
 <thead>
@@ -554,7 +554,7 @@ TEALConsentManagerDelegateプロトコルに準拠する特定のクラスを登
 TEALConsentStatus列挙型の人間が読める文字列のための便利なメソッドです。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[TEALConsentManager consentStatusString:_tealium.consentManager.userConsentStatus];
 </span></span></code></pre></div><p><strong><code>resetUserConsentPreferences</code></strong><br>
-現在保存されているすべての同意設定をリセットします。同意ステータスは「不明」に戻り、カテゴリはありません。</p>
+現在ストレージされているすべての同意構成をリセットします。同意ステータスは「不明」に戻り、カテゴリはありません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[_tealium.consentManager resetUserConsentPreferences];
 </span></span></code></pre></div><p><strong><code>setConsentLoggingEnabled</code></strong><br>
 <a href="/server-side/consent/event-specs/">同意ログ</a>機能を有効にし、同意ステータスの変更を監査目的でTealium Customer Data Hubに送信します。</p>
@@ -583,11 +583,11 @@ TEALConsentStatus列挙型の人間が読める文字列のための便利なメ
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[_tealium.consentManager allCategories];
 </span></span></code></pre></div><h3 id="tealconfiguration"><code>TEALConfiguration</code></h3>
 <p><strong><code>enableConsentManager</code></strong><br>
-ライブラリが初めて起動されたときに、ユーザーの初期同意ステータスを設定します。保存された設定がある場合、それらは構成オブジェクトに渡された設定を上書きします。</p>
+ライブラリが初めて起動されたときに、ユーザーの初期同意ステータスを構成します。ストレージされた構成がある場合、それらは構成オブジェクトに渡された構成を上書きします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>self.configuration.enableConsentManager <span style="color:#f92672">=</span> YES;
-</span></span></code></pre></div><p>同意マネージャーは常に、ステータスが<code>Consented</code>の場合には、すべての利用可能な同意カテゴリを含む同意済みカテゴリリストを設定します。このメソッドでは、カテゴリを選択的に設定することはできません。</p>
+</span></span></code></pre></div><p>同意マネージャーは常に、ステータスが<code>Consented</code>の場合には、すべての利用可能な同意カテゴリを含む同意済みカテゴリリストを構成します。このメソッドでは、カテゴリを選択的に構成することはできません。</p>
 <p><strong><code>userConsentStatus</code></strong><br>
-ライブラリが初めて起動されたときに、ユーザーの初期同意ステータスを設定します。保存された設定がある場合、それらは構成オブジェクトに渡された設定を上書きします。</p>
+ライブラリが初めて起動されたときに、ユーザーの初期同意ステータスを構成します。ストレージされた構成がある場合、それらは構成オブジェクトに渡された構成を上書きします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>self.configuration.userConsentStatus <span style="color:#f92672">=</span> Consented;
 </span></span></code></pre></div><table>
 <thead>
@@ -606,7 +606,7 @@ TEALConsentStatus列挙型の人間が読める文字列のための便利なメ
 </tbody>
 </table>
 <p><strong><code>userConsentCategories</code></strong><br>
-ライブラリが初めて起動されたときに、ユーザーの初期同意カテゴリを設定します。保存された設定がある場合、それらは構成オブジェクトに渡された設定を上書きします。</p>
+ライブラリが初めて起動されたときに、ユーザーの初期同意カテゴリを構成します。ストレージされた構成がある場合、それらは構成オブジェクトに渡された構成を上書きします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>self.configuration.userConsentCategories <span style="color:#f92672">=</span> <span style="color:#ae81ff">@[</span><span style="color:#e6db74">@&#34;analytics&#34;</span>, <span style="color:#e6db74">@&#34;retargeting&#34;</span><span style="color:#ae81ff">]</span>;
 </span></span></code></pre></div><table>
 <thead>
@@ -658,13 +658,13 @@ TEALConsentStatus列挙型の人間が読める文字列のための便利なメ
 </ul>
 <h2 id="tealconsentstatus">TEALConsentStatus</h2>
 <p><strong><code>Unknown</code></strong><br>
-<code>Unknown</code>ステータスは、同意マネージャーのデフォルト設定です。この状態では、同意が提供されるまで同意マネージャーはイベントをローカルにキューに入れます。</p>
+<code>Unknown</code>ステータスは、同意マネージャーのデフォルト構成です。この状態では、同意が提供されるまで同意マネージャーはイベントをローカルにキューに入れます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>self.tealium.consentManager.userConsentStatus <span style="color:#f92672">=</span> Unknown
 </span></span></code></pre></div><p><strong><code>Consented</code></strong><br>
-<code>Consented</code>ステータスは、ユーザーがトラッキングに同意した場合に設定されます。この状態では、同意マネージャーは通常どおりすべてのトラッキングコールを許可します。</p>
+<code>Consented</code>ステータスは、ユーザーがトラッキングに同意した場合に構成されます。この状態では、同意マネージャーは通常どおりすべてのトラッキングコールを許可します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>self.tealium.consentManager.userConsentStatus <span style="color:#f92672">=</span> Consented
 </span></span></code></pre></div><p><strong><code>NotConsented</code></strong><br>
-<code>NotConsented</code>ステータスは、ユーザーがトラッキングを拒否した場合に設定されます。この状態では、同意マネージャーはすべてのトラッキングコールを破棄し、SDKの処理を停止します。</p>
+<code>NotConsented</code>ステータスは、ユーザーがトラッキングを拒否した場合に構成されます。この状態では、同意マネージャーはすべてのトラッキングコールを破棄し、SDKの処理を停止します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>self.tealium.consentManager.userConsentStatus <span style="color:#f92672">=</span> NotConsented
 </span></span></code></pre></div>
 </div>
@@ -726,7 +726,7 @@ TEALConsentStatus列挙型の人間が読める文字列のための便利なメ
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -886,6 +886,22 @@ TEALConsentStatus列挙型の人間が読める文字列のための便利なメ
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -894,8 +910,24 @@ TEALConsentStatus列挙型の人間が読める文字列のための便利なメ
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

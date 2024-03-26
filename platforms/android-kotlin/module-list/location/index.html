@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -362,7 +362,7 @@ var utag_data = {
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p>ロケーションマネージャーモジュールは、Androidアプリに位置情報を受信し、ジオフェンスを設定および監視する機能を提供します。<a href="/platforms/getting-started-mobile/location/">位置情報の追跡とジオフェンスについて詳しく</a>をご覧ください。</p>
+  <p>ロケーションマネージャーモジュールは、Androidアプリに位置情報を受信し、ジオフェンスを構成および監視する機能を提供します。<a href="/platforms/getting-started-mobile/location/">位置情報の追跡とジオフェンスについて詳しく</a>をご覧ください。</p>
 <h2 id="サポートされているプラットフォーム">サポートされているプラットフォーム</h2>
 <p>以下のプラットフォームがサポートされています：</p>
 <ul>
@@ -435,14 +435,14 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>              <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>              <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
 </span></span><span style="display:flex;"><span>              ENVIRONMENT,
-</span></span><span style="display:flex;"><span>              collectors = mutableSetOf(Collectors.Location) <span style="color:#75715e">// Locationモジュール
+</span></span><span style="display:flex;"><span>              collectors = mutableSetOf(<span style="color:#a6e22e">Collectors</span>.Location) <span style="color:#75715e">// Locationモジュール
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>)
 </span></span></code></pre></div><h2 id="位置情報の追跡">位置情報の追跡</h2>
-<p>Locationモジュールは、有効になっていて位置情報の許可が与えられている場合、自動的に連続的な位置情報の追跡を行います。位置情報の更新は、精度と時間間隔の2つの設定に基づいて行われます。</p>
-<p>精度を高または低のいずれかに設定します。高精度はAndroidの設定<code>PRIORITY_HIGH_ACCURACY</code>に対応し、低精度はAndroidの設定<code>PRIORITY_BALANCED_POWER_ACCURACY</code>に対応します。</p>
-<p><a href="https://developer.android.com/guide/topics/location/battery#accuracy">Androidの位置情報の精度設定について詳しく</a>をご覧ください。</p>
-<p>位置情報の更新間隔は、ミリ秒単位の値で設定します。アプリにとって有用な最大の値を使用します。この間隔の値は、Androidの<code>setInterval()</code>および<code>setFastestInterval()</code>メソッドに渡されます。</p>
-<p><a href="https://developer.android.com/guide/topics/location/battery#frequency">Androidの位置情報の間隔設定について詳しく</a>をご覧ください。</p>
+<p>Locationモジュールは、有効になっていて位置情報の許可が与えられている場合、自動的に連続的な位置情報の追跡を行います。位置情報の更新は、精度と時間間隔の2つの構成に基づいて行われます。</p>
+<p>精度を高または低のいずれかに構成します。高精度はAndroidの構成<code>PRIORITY_HIGH_ACCURACY</code>に対応し、低精度はAndroidの構成<code>PRIORITY_BALANCED_POWER_ACCURACY</code>に対応します。</p>
+<p><a href="https://developer.android.com/guide/topics/location/battery#accuracy">Androidの位置情報の精度構成について詳しく</a>をご覧ください。</p>
+<p>位置情報の更新間隔は、ミリ秒単位の値で構成します。アプリにとって有用な最大の値を使用します。この間隔の値は、Androidの<code>setInterval()</code>および<code>setFastestInterval()</code>メソッドに渡されます。</p>
+<p><a href="https://developer.android.com/guide/topics/location/battery#frequency">Androidの位置情報の間隔構成について詳しく</a>をご覧ください。</p>
 <p>高精度と時間間隔60000ミリ秒（60秒）を使用する次の例をご覧ください：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium.location<span style="color:#f92672">?.</span>startLocationTracking(<span style="color:#66d9ef">true</span>, <span style="color:#ae81ff">60000</span>)
 </span></span></code></pre></div><p>連続的な追跡を無効にするには、<a href="/platforms/android-kotlin/api/#stoplocationtracking"><code>stopLocationTracking()</code></a>メソッドを呼び出します。</p>
@@ -454,13 +454,13 @@ var utag_data = {
 <ul>
 <li>
 <p><strong>ホストされたURL</strong><br>
-自分自身のホストされたジオフェンスファイルを、設定オプション<a href="/platforms/android-kotlin/api/#overridegeofenceurl">tealiumConfig.options[GEOFENCE_URL]</a>にURLとして使用します。<br>
-このオプションは、公開設定のURLを上書きした場合や<a href="/iq-tag-management/data-layer/hosted-data-layer/use-case-supplementing-product-data/">ホストされたデータレイヤー</a>を使用したい場合に推奨されます。</p>
+自分自身のホストされたジオフェンスファイルを、構成オプション<a href="/platforms/android-kotlin/api/#overridegeofenceurl">tealiumConfig.options[GEOFENCE_URL]</a>にURLとして使用します。<br>
+このオプションは、公開構成のURLを上書きした場合や<a href="/iq-tag-management/data-layer/hosted-data-layer/use-case-supplementing-product-data/">ホストされたデータレイヤー</a>を使用したい場合に推奨されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealiumConfig.options[GEOFENCE_URL] = <span style="color:#e6db74">&#34;https://example.com/geofences.json&#34;</span>
 </span></span></code></pre></div></li>
 <li>
 <p><strong>ローカルファイル</strong><br>
-アプリのAssetsディレクトリに保存されたジオフェンスファイルを使用します。<a href="/platforms/android-kotlin/api/#geofenceFilename"><code>tealiumConfig.options[GEOFENCE_FILENAME]</code></a>を使用します。</p>
+アプリのAssetsディレクトリにストレージされたジオフェンスファイルを使用します。<a href="/platforms/android-kotlin/api/#geofenceFilename"><code>tealiumConfig.options[GEOFENCE_FILENAME]</code></a>を使用します。</p>
 <pre><code>```kotlin
 tealiumConfig.options[GEOFENCE_FILENAME] = &quot;geofences.json&quot;
 ```
@@ -479,12 +479,12 @@ tealiumConfig.options[GEOFENCE_FILENAME] = &quot;geofences.json&quot;
 <p><strong>レイテンシー:</strong><br>
 ジオフェンスの機能を使用する場合は、次の点に注意してください：</p>
 <ul>
-<li>ジオフェンスサービスは位置情報を連続的にクエリしないため、アラートを受け取る際にはレイテンシーが発生することがあります。レイテンシーは通常2分未満ですが、バックグラウンドの位置情報制限が設定されている場合やデバイスが一定時間停止している場合は、レイテンシーが増加します。</li>
-<li>ジオフェンスサービスはネットワーク位置プロバイダーとデータ接続に依存しています。ジオフェンス内に信頼性のあるネットワーク接続がない場合、アラートがトリガーされない場合があります。</li>
-<li>デバイスでWi-Fiがオフになっている場合、ジオフェンスアラートを受け取らない場合があります。これは、ジオフェンスの半径、デバイスモデル、またはAndroidのバージョンなど、いくつかの設定に依存します。Android 4.3以降では、「Wi-Fiスキャンのみモード」の機能が提供されており、ユーザーがWi-Fiを無効にしても信頼性のあるネットワーク位置を受信できます。この設定を有効にするようユーザーに促すことをお勧めします。</li>
+<li>ジオフェンスサービスは位置情報を連続的にクエリしないため、アラートを受け取る際にはレイテンシーが発生することがあります。レイテンシーは通常2分未満ですが、バックグラウンドの位置情報制限が構成されている場合やデバイスが一定時間停止している場合は、レイテンシーが増加します。</li>
+<li>ジオフェンスサービスはネットワーク位置プロバイダーとデータコネクトに依存しています。ジオフェンス内に信頼性のあるネットワーク接続がない場合、アラートがトリガーされない場合があります。</li>
+<li>デバイスでWi-Fiがオフになっている場合、ジオフェンスアラートを受け取らない場合があります。これは、ジオフェンスの半径、デバイスモデル、またはAndroidのバージョンなど、いくつかの構成に依存します。Android 4.3以降では、「Wi-Fiスキャンのみモード」の機能が提供されており、ユーザーがWi-Fiを無効にしても信頼性のあるネットワーク位置を受信できます。この構成を有効にするようユーザーに促すことをお勧めします。</li>
 </ul>
 <h2 id="データレイヤー">データレイヤー</h2>
-<p>ロケーションモジュールによってモバイルデータレイヤーの一部として次の変数が設定されます。これらの変数は、ライブラリからの各トラッキングコールに自動的に含まれます。</p>
+<p>ロケーションモジュールによってモバイルデータレイヤーの一部として次の変数が構成されます。これらの変数は、ライブラリからの各トラッキングコールに自動的に含まれます。</p>
 <table>
 <thead>
 <tr>
@@ -510,12 +510,12 @@ tealiumConfig.options[GEOFENCE_FILENAME] = &quot;geofences.json&quot;
 <tr>
 <td><code>location_accuracy</code></td>
 <td><code>String</code></td>
-<td>ロケーションモジュールの精度設定（<code>high</code>または<code>low</code>など）</td>
+<td>ロケーションモジュールの精度構成（<code>high</code>または<code>low</code>など）</td>
 <td><code>high</code></td>
 </tr>
 </tbody>
 </table>
-<p>ジオフェンスの場合、ユーザーのトランジション状態が変化したときに位置データを含むトラッキングコールが送信されます。トランジション状態の変化には、ユーザーがジオフェンスに入る、ジオフェンスから出る、またはジオフェンス内で一定の時間滞在するというものがあります。ジオフェンスの滞在アラートが送信される前に滞在時間の期間を設定するには、Androidのメソッド<a href="https://developers.google.com/android/reference/com/google/android/gms/location/Geofence.Builder#setLoiteringDelay(int)">setLoiteringDelay()</a>を使用します。</p>
+<p>ジオフェンスの場合、ユーザーのトランジション状態が変化したときに位置データを含むトラッキングコールが送信されます。トランジション状態の変化には、ユーザーがジオフェンスに入る、ジオフェンスから出る、またはジオフェンス内で一定の時間滞在するというものがあります。ジオフェンスの滞在アラートが送信される前に滞在時間の期間を構成するには、Androidのメソッド<a href="https://developers.google.com/android/reference/com/google/android/gms/location/Geofence.Builder#setLoiteringDelay(int)">setLoiteringDelay()</a>を使用します。</p>
 <p>次の変数がデータレイヤーに送信されます：</p>
 <table>
 <thead>
@@ -609,7 +609,7 @@ tealiumConfig.options[GEOFENCE_FILENAME] = &quot;geofences.json&quot;
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -768,6 +768,22 @@ tealiumConfig.options[GEOFENCE_FILENAME] = &quot;geofences.json&quot;
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -776,8 +792,24 @@ tealiumConfig.options[GEOFENCE_FILENAME] = &quot;geofences.json&quot;
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

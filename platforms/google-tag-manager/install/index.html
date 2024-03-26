@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -388,29 +388,29 @@ var utag_data = {
 <ol>
 <li>Google Tag Managerで、左のナビゲーションで<strong>タグ</strong>をクリックします。</li>
 <li><strong>新規</strong>ボタンをクリックします。</li>
-<li>&ldquo;タグ設定&quot;をクリックしてタグタイプを選択します。リストから&quot;Tealium Collectタグ&quot;を検索して選択します。</li>
+<li>&ldquo;タグ構成&quot;をクリックしてタグタイプを選択します。リストから&quot;Tealium Collectタグ&quot;を検索して選択します。</li>
 <li>&ldquo;Untitled Tag&quot;のテキストを置き換えるタグ名を提供します。</li>
 </ol>
-<p>タグを追加した後、以下の設定を行います。値が不明な場合は、オプションのフィールドを空白にしておきます。</p>
+<p>タグを追加した後、以下の構成を行います。値が不明な場合は、オプションのフィールドを空白にしておきます。</p>
 <ul>
 <li><strong>Tealiumアカウント</strong>（必須）：Tealiumのアカウント名。例えば、<code>companyXYZ</code>。</li>
 <li><strong>Tealiumプロファイル</strong>（必須）：Tealiumのプロファイル名。例えば、<code>main</code>。</li>
-<li><strong>Tealiumデータソースキー</strong>（オプション）：サーバーサイドのTealium設定からのデータソースキー。例えば、<code>abc123</code>。</li>
+<li><strong>Tealiumデータソースキー</strong>（オプション）：サーバーサイドのTealium構成からのデータソースキー。例えば、<code>abc123</code>。</li>
 <li><strong>データ収集エンドポイント</strong>（オプション）：ファーストパーティのデータ収集エンドポイントでTealium Collectエンドポイントを上書きします。例えば、<code>https://collect.example.co.uk/example-event-endpoint</code>。</li>
 <li><strong>データオブジェクト</strong>（オプション）：グローバルな<code>dataLayer</code>オブジェクトの代わりに使用するカスタムJavaScript変数。例えば、<code>{{myObject}}</code>。</li>
 </ul>
 <h3 id="トリガー">トリガー</h3>
 <p>ページビュートラッキングには、組み込みの&quot;All Pages&quot;トリガーを使用します。イベントトラッキングを含めるには、すべてのイベントに対して発火する&quot;All Events&quot;トリガーを使用します。</p>
-<p>Google Tag Managerで&quot;All Events&quot;トリガーを設定するには：</p>
+<p>Google Tag Managerで&quot;All Events&quot;トリガーを構成するには：</p>
 <ol>
 <li>Google Tag Managerで、左のナビゲーションで<strong>トリガー</strong>をクリックします。</li>
 <li><strong>新規</strong>ボタンをクリックしてトリガーを追加します。</li>
-<li>&ldquo;トリガー設定&quot;をクリックしてタグタイプを選択します。リストから&quot;カスタムイベント&quot;を検索して選択します。</li>
+<li>&ldquo;トリガー構成&quot;をクリックしてタグタイプを選択します。リストから&quot;カスタムイベント&quot;を検索して選択します。</li>
 <li>&ldquo;正規表現マッチングを使用する&quot;チェックボックスを選択します。</li>
 <li>&ldquo;イベント名&quot;の正規表現（regex）に以下を入力します：
 <pre tabindex="0"><code>^(?!gtm.load)(?!gtm.dom)(?!gtm.init)(?!gtm.init_consent).*
 </code></pre></li>
-<li><strong>保存</strong>をクリックし、カスタムトリガーに新しい名前を付けて、再度<strong>保存</strong>をクリックします。</li>
+<li><strong>ストレージ</strong>をクリックし、カスタムトリガーに新しい名前を付けて、再度<strong>ストレージ</strong>をクリックします。</li>
 </ol>
 <p>このルールは、<code>gtm.load</code>と<code>gtm.dom</code>（Google Tag Managerに特有の2つのイベントで、無視したいもの）を除くすべてのイベントに対してトリガーします。</p>
 <h3 id="データレイヤーの強化">データレイヤーの強化</h3>
@@ -472,7 +472,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -626,6 +626,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -634,8 +650,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

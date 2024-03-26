@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -467,7 +467,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left"><a href="#updateqoe"><code>updateQOE()</code></a></td>
-<td style="text-align:left">クオリティオブエクスペリエンスのビットレート値を設定します。</td>
+<td style="text-align:left">クオリティオブエクスペリエンスのビットレート値を構成します。</td>
 </tr>
 </tbody>
 </table>
@@ -525,7 +525,7 @@ var utag_data = {
 </tbody>
 </table>
 <p>例:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">startSeek</span><span style="color:#f92672">(</span>10<span style="color:#f92672">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">startSeek</span><span style="color:#f92672">(</span><span style="color:#ae81ff">10</span><span style="color:#f92672">)</span>
 </span></span></code></pre></div><h3 id="endsession"><code>endSession()</code></h3>
 <p>セッションが終了しました（広告とコンテンツを含む）。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">endSession</span><span style="color:#f92672">()</span>
@@ -533,7 +533,7 @@ var utag_data = {
 <p>ユーザーがメディアを一時停止しました。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">pause</span><span style="color:#f92672">()</span>
 </span></span></code></pre></div><h3 id="ping"><code>ping()</code></h3>
-<p>インターバルイベントをデータレイヤーに送信します。このメソッドは、<code>MediaContent</code>オブジェクトのトラッキングタイプが<code>INTERVAL</code>または<code>INTERVAL_MILESTONE</code>に設定されている場合、自動的に10秒ごとに呼び出されます。</p>
+<p>インターバルイベントをデータレイヤーに送信します。このメソッドは、<code>MediaContent</code>オブジェクトのトラッキングタイプが<code>INTERVAL</code>または<code>INTERVAL_MILESTONE</code>に構成されている場合、自動的に10秒ごとに呼び出されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">ping</span><span style="color:#f92672">()</span>
 </span></span></code></pre></div><p><a href="/platforms/getting-started-mobile/media/#trackingtype">メディアトラッキングタイプ</a>について詳しくはこちらをご覧ください。</p>
 <h3 id="play"><code>play()</code></h3>
@@ -543,7 +543,7 @@ var utag_data = {
 <p>セッションが再開されました。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">startSession</span><span style="color:#f92672">()</span>
 </span></span></code></pre></div><h3 id="sendmilestone"><code>sendMilestone()</code></h3>
-<p>マイルストーンデータをデータレイヤーに送信します。このメソッドは、コンテンツの再生率に基づいて自動的に呼び出されます。<code>MediaContent</code>オブジェクトのトラッキングタイプが<code>MILESTONE</code>または<code>INTERVAL_MILESTONE</code>に設定されている場合です。</p>
+<p>マイルストーンデータをデータレイヤーに送信します。このメソッドは、コンテンツの再生率に基づいて自動的に呼び出されます。<code>MediaContent</code>オブジェクトのトラッキングタイプが<code>MILESTONE</code>または<code>INTERVAL_MILESTONE</code>に構成されている場合です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">sendMilestone</span><span style="color:#f92672">()</span>
 </span></span></code></pre></div><p>マイルストーンの値:</p>
 <table>
@@ -582,7 +582,7 @@ var utag_data = {
 </table>
 <p><a href="/platforms/getting-started-mobile/media/#trackingtype">メディアトラッキングタイプ</a>について詳しくはこちらをご覧ください。</p>
 <h3 id="sendsummary"><code>sendSummary()</code></h3>
-<p>サマリーデータをデータレイヤーに送信します。このメソッドは、<code>MediaContent</code>オブジェクトのトラッキングタイプが<code>SUMMARY</code>に設定されている場合、<code>endSession()</code>で自動的に呼び出されます。</p>
+<p>サマリーデータをデータレイヤーに送信します。このメソッドは、<code>MediaContent</code>オブジェクトのトラッキングタイプが<code>SUMMARY</code>に構成されている場合、<code>endSession()</code>で自動的に呼び出されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">sendSummary</span><span style="color:#f92672">()</span>
 </span></span></code></pre></div><p><a href="/platforms/getting-started-mobile/media/#trackingtype">メディアトラッキングタイプ</a>について詳しくはこちらをご覧ください。</p>
 <h3 id="skipad"><code>skipAd()</code></h3>
@@ -678,7 +678,7 @@ var utag_data = {
 </tbody>
 </table>
 <p>例:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">startSeek</span><span style="color:#f92672">(</span>10<span style="color:#f92672">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">startSeek</span><span style="color:#f92672">(</span><span style="color:#ae81ff">10</span><span style="color:#f92672">)</span>
 </span></span></code></pre></div><h3 id="startsession"><code>startSession()</code></h3>
 <p>セッションが開始されました。セッションが完了したら<a href="#endsession"><code>endSession()</code></a>メソッドを呼び出します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">startSession</span><span style="color:#f92672">()</span>
@@ -736,7 +736,7 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">updatePlayerState</span><span style="color:#f92672">(</span>fullscreen<span style="color:#f92672">)</span>
 </span></span></code></pre></div><p><a href="/platforms/getting-started-mobile/media/#state">プレーヤーの状態</a>について詳しくはこちらをご覧ください。</p>
 <h3 id="updateqoe"><code>updateQOE()</code></h3>
-<p>現在のセッションのクオリティオブエクスペリエンスのビットレート値を設定します（キロビット/秒）。</p>
+<p>現在のセッションのクオリティオブエクスペリエンスのビットレート値を構成します（キロビット/秒）。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">updateQOE</span><span style="color:#f92672">(</span>rate<span style="color:#f92672">)</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -755,7 +755,7 @@ var utag_data = {
 </tbody>
 </table>
 <p>例:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">updateQOE</span><span style="color:#f92672">(</span>1500<span style="color:#f92672">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span><span style="color:#a6e22e">media</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">updateQOE</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1500</span><span style="color:#f92672">)</span>
 </span></span></code></pre></div><h2 id="クラス-mediacontent">クラス: <code>MediaContent</code></h2>
 <p><code>MediaContent</code>クラスは、メディアコンテンツオブジェクトを作成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val mediaContent<span style="color:#f92672">:</span> MediaContent <span style="color:#f92672">=</span> MediaContent<span style="color:#f92672">(</span>
@@ -1303,7 +1303,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1482,6 +1482,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1490,8 +1506,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -436,7 +436,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left"><code>tealium_session_number</code></td>
-<td style="text-align:left">このユニークな訪問者のセッションの数。</td>
+<td style="text-align:left">このユニークな訪問のセッションの数。</td>
 <td style="text-align:left"><code>1</code></td>
 </tr>
 <tr>
@@ -446,7 +446,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left"><code>tealium_visitor_id</code></td>
-<td style="text-align:left">訪問者の一意の識別子。40文字以上になる場合があります。</td>
+<td style="text-align:left">訪問の一意の識別子。40文字以上になる場合があります。</td>
 <td style="text-align:left"><code>016297481...</code></td>
 </tr>
 </tbody>
@@ -520,7 +520,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left">tealium_cookie_domain</td>
-<td style="text-align:left">TEALクッキーが設定されているドメイン</td>
+<td style="text-align:left">TEALクッキーが構成されているドメイン</td>
 <td style="text-align:left">example.com</td>
 </tr>
 <tr>
@@ -582,7 +582,7 @@ var utag_data = {
 }
 </code></pre><h2 id="データレイヤー変数のフラット化方法">データレイヤー変数のフラット化方法</h2>
 <p>Google Tag Managerのイベントは、Tealium Customer Data Hubの仕様に準拠するために、Tealium属性名にフラット化されます。イベントデータはTealium EventStreamで受け取られます。</p>
-<p><code>tealium_event</code>の値は、<code>dataLayer.push</code>呼び出しの<code>event</code>の値です。Google Tag Managerは、デフォルトのページビュー値を<code>gtm.js</code>としてイベントの名前に設定します。デフォルトを上書きするには、Tealiumイベントの設定を、イベント名を含む変数に設定します。</p>
+<p><code>tealium_event</code>の値は、<code>dataLayer.push</code>呼び出しの<code>event</code>の値です。Google Tag Managerは、デフォルトのページビュー値を<code>gtm.js</code>としてイベントの名前に構成します。デフォルトを上書きするには、Tealiumイベントの構成を、イベント名を含む変数に構成します。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>属性は自動的に追加されません。これらの属性をTealium EventStreamに追加する必要があります。</p>
 <h2 id="eコマース">Eコマース</h2>
 <p>以下の購入イベントの例は、クライアントサイドのEコマースイベントがフラット化される方法を示しています。</p>
@@ -634,7 +634,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;ecommerce.purchase.products.price&#34;</span><span style="color:#f92672">:</span> [ <span style="color:#e6db74">&#34;15.25&#34;</span>, <span style="color:#e6db74">&#34;33.75&#34;</span> ]
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;ecommerce.purchase.products.variant&#34;</span><span style="color:#f92672">:</span> [ <span style="color:#e6db74">&#34;グレー&#34;</span>, <span style="color:#e6db74">&#34;ブラック&#34;</span> ]
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;ecommerce.purchase.products.quantity&#34;</span><span style="color:#f92672">:</span> [ <span style="color:#e6db74">&#34;1&#34;</span>, <span style="color:#e6db74">&#34;1&#34;</span> ]
-</span></span></code></pre></div><p>フラット化プログラムは、キーを作成するためにドット表記を使用し、値は購入イベントのすべての値の配列に設定されます。</p>
+</span></span></code></pre></div><p>フラット化プログラムは、キーを作成するためにドット表記を使用し、値は購入イベントのすべての値の配列に構成されます。</p>
 <h2 id="イベント">イベント</h2>
 <p>次の<code>dataLayer.push</code>コマンドは、データレイヤーに「event」が含まれている場合に発火します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>window.<span style="color:#a6e22e">dataLayer</span>.<span style="color:#a6e22e">push</span>({
@@ -700,7 +700,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -854,6 +854,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -862,8 +878,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

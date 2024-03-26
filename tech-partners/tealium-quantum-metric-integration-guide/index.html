@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -265,7 +297,7 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      この記事では、Tealium iQタグ管理でQuantum Metricタグを設定し、Quantum MetricタグがセッションリプレイURLをTealium AudienceStreamに送信できるようにすることで、TealiumとQuantum Metricを最大限に活用する方法を説明します。
+      この記事では、Tealium iQタグ管理でQuantum Metricタグを構成し、Quantum MetricタグがセッションリプレイURLをTealium AudienceStreamに送信できるようにすることで、TealiumとQuantum Metricを最大限に活用する方法を説明します。
     </p>
   
 </div>
@@ -290,10 +322,10 @@ var utag_data = {
 <h2 id="仕組み">仕組み</h2>
 <p>Quantum Metricは、デジタルエクスペリエンスインテリジェンスプラットフォームであり、すべてのデバイスでのすべての顧客インタラクションに対する比類のない可視性を提供し、データ駆動型の意思決定を迅速化します。技術的な洞察と行動的な洞察の両方を自動的に優先するように設計されたこのプラットフォームは、組織全体の顧客体験（CX）の整合性を促進し、デジタル変革を推進します。Quantum Metricの基盤はパフォーマンスとセキュリティであり、顧客はリアルタイムのユーザー洞察を安全に、かつ大規模に得ることができます。</p>
 <p>詳細については、<a href="https://tealium.com/technology-partner/quantum-metric/">TealiumとQuantum Metricのパートナーシップ概要</a>をご覧ください。</p>
-<h2 id="タグの設定">タグの設定</h2>
-<p>Quantum Metricタグを追加し設定するには、まずTealiumタグマーケットプレイスからタグを追加し設定する必要があります。その後、Tealium AudienceStreamがQuantum Metric Replay URLを受信できるようにします。</p>
-<h3 id="tealiumアカウントでタグを追加し設定する">Tealiumアカウントでタグを追加し設定する</h3>
-<p>TealiumタグマーケットプレイスからQuantum Metricタグを追加し設定します：</p>
+<h2 id="タグの構成">タグの構成</h2>
+<p>Quantum Metricタグを追加し構成するには、まずTealiumタグマーケットプレイスからタグを追加し構成する必要があります。その後、Tealium AudienceStreamがQuantum Metric Replay URLを受信できるようにします。</p>
+<h3 id="tealiumアカウントでタグを追加し構成する">Tealiumアカウントでタグを追加し構成する</h3>
+<p>TealiumタグマーケットプレイスからQuantum Metricタグを追加し構成します：</p>
 <ol>
 <li>Tealiumアカウントにログインします。</li>
 <li>タグマーケットプレイスから<a href="/iq-tag-management/tags/manage/">新しいタグを追加</a>する手順に従います。<br>
@@ -303,19 +335,19 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 <li><strong>適用</strong>をクリックします。</li>
 <li>（オプション）ロードルールとデータマッピングを定義します。</li>
 <li><strong>完了</strong>をクリックします。</li>
-<li>変更を保存し、希望する環境に公開します。</li>
+<li>変更をストレージし、希望する環境に公開します。</li>
 </ol>
 <h3 id="audiencestreamを有効にする">AudienceStreamを有効にする</h3>
-<p>Quantum Metric Replay URLをAudienceStreamに送信するように設定する前に、Quantum MetricからTealiumに送信する目的のターゲット行動と体験を決定するために、Quantum Metricクライアントサービスマネージャーに相談してください。</p>
+<p>Quantum Metric Replay URLをAudienceStreamに送信するように構成する前に、Quantum MetricからTealiumに送信する目的のターゲット行動と体験を決定するために、Quantum Metricクライアントサービスマネージャーに相談してください。</p>
 <p>Quantum Metricからのデータを受信するためにAudienceStreamを有効にします：</p>
 <ol>
 <li>iQタグ管理のQuantum Metricタグに移動します。</li>
 <li>詳細を展開し、<strong>編集</strong>をクリックします。</li>
-<li>Send Replay URLフィールドを<strong>True</strong>に設定します。<br>
+<li>Send Replay URLフィールドを<strong>True</strong>に構成します。<br>
 <figure><a class="slb" href="/images/tech-partners/quantum-metric-tag-configuration.jpg"><img src="/images/tech-partners/quantum-metric-tag-configuration.jpg"/>
-    </a><figcaption><p>Quantum Metricタグ設定.jpg</p>
-        </figcaption>
-</figure></li>
+          </a><figcaption><p>Quantum Metricタグ構成.jpg</p>
+              </figcaption>
+      </figure></li>
 <li>次のフィールドを定義します：
 <ul>
 <li>タイムスタンプ</li>
@@ -324,17 +356,17 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 </ul>
 </li>
 <li><strong>適用</strong>をクリックします。</li>
-<li>変更を保存し、希望する環境に公開します。</li>
+<li>変更をストレージし、希望する環境に公開します。</li>
 </ol>
 <h3 id="ライブイベントで表示">ライブイベントで表示</h3>
-<p>Quantum Metricタグが設定され、AudienceStreamへのReplay URLの送信が有効になると、ライブイベントフィードで活動を表示することができます。</p>
+<p>Quantum Metricタグが構成され、AudienceStreamへのReplay URLの送信が有効になると、ライブイベントフィードで活動を表示することができます。</p>
 <p>ライブイベントで表示するための手順は次のとおりです：</p>
 <ol>
 <li>Customer Data Hubの左側のサイドバーで、<strong>Event Stream &gt; Live Events</strong>をクリックします。</li>
 <li>イベント属性<code>quantum_metric_replay_url</code>または<code>quantum_metric_user_id</code>を含むイベントをフィルタリングして、Quantum Metricからのイベントを探します。<br>
 <figure><a class="slb" href="/images/tech-partners/quantummetric-live-events.png"><img src="/images/tech-partners/quantummetric-live-events.png"/>
-    </a>
-</figure></li>
+        </a>
+    </figure></li>
 <li>これらのイベント属性を使用して、他の<a href="/server-side/attributes/about/">AudienceStream属性</a>でプロファイルを豊かにします。</li>
 </ol>
 
@@ -382,7 +414,7 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -398,8 +430,8 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">前提条件</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグの設定</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium">Tealiumアカウントでタグを追加し設定する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグの構成</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium">Tealiumアカウントでタグを追加し構成する</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#audiencestream">AudienceStreamを有効にする</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ライブイベントで表示</a></li>
               </nav>
@@ -535,6 +567,22 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -543,8 +591,24 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

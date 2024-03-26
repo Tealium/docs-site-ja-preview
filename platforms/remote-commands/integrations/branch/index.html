@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -467,7 +467,7 @@ var utag_data = {
 GitHub リポジトリ: <a href="https://github.com/tealium/tealium-ios-branch-remote-command">https://github.com/tealium/tealium-ios-branch-remote-command</a></p>
 </li>
 <li>
-<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に設定します。</p>
+<p><a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> 構成フラッグを <code>true</code>に構成します。</p>
 </li>
 </ol>
 <h3 id="手動android">手動（Android）</h3>
@@ -507,10 +507,10 @@ GitHub リポジトリ: <a href="https://github.com/tealium/tealium-ios-branch-r
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>      Environment.DEV,
-</span></span><span style="display:flex;"><span>      dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>      dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> branch = BranchRemoteCommand(application);
 </span></span><span style="display:flex;"><span>    remoteCommands<span style="color:#f92672">?.</span>add(branch, filename = <span style="color:#e6db74">&#34;branch.json&#34;</span>);
 </span></span><span style="display:flex;"><span>}
@@ -521,10 +521,10 @@ GitHub リポジトリ: <a href="https://github.com/tealium/tealium-ios-branch-r
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
-</span></span><span style="display:flex;"><span>        Environment.DEV,
-</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Environment</span>.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(<span style="color:#a6e22e">Dispatchers</span>.RemoteCommands));
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = <span style="color:#a6e22e">Tealium</span>.create(TEALIUM_MAIN, config) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> branch = BranchRemoteCommand(application);
 </span></span><span style="display:flex;"><span>    remoteCommands<span style="color:#f92672">?.</span>add(branch);
 </span></span><span style="display:flex;"><span>}
@@ -857,7 +857,7 @@ GitHub リポジトリ: <a href="https://github.com/tealium/tealium-ios-branch-r
 <li><a href="https://help.branch.io/developers-hub/docs/android-basic-integration">Branch Android SDK</a></li>
 </ul>
 <h4 id="初期化-1">初期化</h4>
-<p>Branch SDK は起動時に自動的に初期化されます。Branch Key は、JSON 構成ファイル内の、Info.plist または <code>branch_dev_key</code> に設定されます。</p>
+<p>Branch SDK は起動時に自動的に初期化されます。Branch Key は、JSON 構成ファイル内の、Info.plist または <code>branch_dev_key</code> に構成されます。</p>
 <table>
 <thead>
 <tr>
@@ -872,7 +872,7 @@ GitHub リポジトリ: <a href="https://github.com/tealium/tealium-ios-branch-r
 </tr>
 </tbody>
 </table>
-<p>Branch リモート コマンド タグに利用できる構成オプションは若干あります。以下のいずれかが起動時に設定された場合は、 <code>configure()</code> メソッドの実行中に送信されます。</p>
+<p>Branch リモート コマンド タグに利用できる構成オプションは若干あります。以下のいずれかが起動時に構成された場合は、 <code>configure()</code> メソッドの実行中に送信されます。</p>
 <h5 id="構成オプション">構成オプション</h5>
 <table>
 <thead>
@@ -948,14 +948,14 @@ GitHub リポジトリ: <a href="https://github.com/tealium/tealium-ios-branch-r
 </div><div class="di mr3">
   
   
-  <a href="/platforms/remote-commands/integrations/appsflyer/"
+  <a href="/platforms/remote-commands/integrations/airship/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"AppsFlyer "</title>
+      <title>"エアシップ "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>AppsFlyer</div>
+      <div>エアシップ</div>
     </section>
   </a>
   
@@ -987,7 +987,7 @@ GitHub リポジトリ: <a href="https://github.com/tealium/tealium-ios-branch-r
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1148,6 +1148,22 @@ GitHub リポジトリ: <a href="https://github.com/tealium/tealium-ios-branch-r
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1156,8 +1172,24 @@ GitHub リポジトリ: <a href="https://github.com/tealium/tealium-ios-branch-r
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

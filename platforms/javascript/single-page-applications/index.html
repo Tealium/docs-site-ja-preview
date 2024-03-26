@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -361,7 +361,7 @@ var utag_data = {
 <p>自動的なページトラッキングをオーバーライドするには、<code>utag.js</code> をロードする前にページに以下の行を追加します:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>window.<span style="color:#a6e22e">utag_cfg_ovrd</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">utag_cfg_ovrd</span> <span style="color:#f92672">||</span> {};
 </span></span><span style="display:flex;"><span>window.<span style="color:#a6e22e">utag_cfg_ovrd</span>.<span style="color:#a6e22e">noview</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
-</span></span></code></pre></div><p>アプリケーションがロードされ（そして <code>utag.js</code> がロードされたら）、ページコード内で <code>utag.view()</code> トラッキング呼び出しをトリガーします。これらの呼び出しは通常、DOM-readyイベントやコンテンツビューのリフレッシュを引き起こすイベントでトリガーされます。<code>utag.js</code> の動作を調整するための利用可能な設定については、<a href="/platforms/javascript/settings/">こちら</a>をご覧ください。</p>
+</span></span></code></pre></div><p>アプリケーションがロードされ（そして <code>utag.js</code> がロードされたら）、ページコード内で <code>utag.view()</code> トラッキング呼び出しをトリガーします。これらの呼び出しは通常、DOM-readyイベントやコンテンツビューのリフレッシュを引き起こすイベントでトリガーされます。<code>utag.js</code> の動作を調整するための利用可能な構成については、<a href="/platforms/javascript/settings/">こちら</a>をご覧ください。</p>
 <p>初期ページ着陸時に宣言された <code>utag_data</code> オブジェクトは、これらの呼び出しで再利用されません。初期ページ着陸からのデータを使用するには、再宣言して関数呼び出しで再度渡す必要があります。</p>
 <p>これらの呼び出し中には、グローバルおよびタグスコープの拡張が実行されます。プリローダーとDOM Ready拡張は、これらの呼び出し中には実行されません。</p>
 <h2 id="ビューの追跡">ビューの追跡</h2>
@@ -369,7 +369,7 @@ var utag_data = {
 <p>以下の <code>utag.view()</code> 関数呼び出しは、キーと値のペアを使用してデータを渡す方法を示しています:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">view</span>({ <span style="color:#a6e22e">variable1</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;VARIABLE1 VALUE&#34;</span>, <span style="color:#a6e22e">variable2</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;VARIABLE2 VALUE&#34;</span>, <span style="color:#a6e22e">variable3</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;VARIABLE3 VALUE&#34;</span> });
 </span></span></code></pre></div><h3 id="例">例</h3>
-<p>以下は、訪問者が &ldquo;政治&rdquo; を検索したコンテンツサイトの例です:</p>
+<p>以下は、訪問が &ldquo;政治&rdquo; を検索したコンテンツサイトの例です:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">view</span>({<span style="color:#a6e22e">tealium_event</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;search&#34;</span>, <span style="color:#a6e22e">search_keyword</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;politics&#34;</span>, <span style="color:#a6e22e">search_results</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">42</span>});
 </span></span></code></pre></div><p>以下の例は、ビューの追跡方法を示しています:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">view</span>({
@@ -378,7 +378,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>})
 </span></span></code></pre></div><h2 id="イベントの追跡">イベントの追跡</h2>
 <p>シングルページアプリケーションでのリンクとイベントの追跡は、<a href="/platforms/javascript/api/tracking-functions/#utag-view"><code>utag.link()</code></a> 関数を使用して行います。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>jQueryがインストールされている場合、<a href="/iq-tag-management/extensions/extensions-list/jquery-onhandler-extension/">jQuery onHandler</a> 拡張を使用するオプションがあります。この拡張は、<code>utag.link()</code> および <code>utag.view()</code> 関数をトリガーする特定のイベントバインディングに対して設定可能です。これにより、トラッキングロジックをサイドコードにハードコーディングする必要がなくなります。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>jQueryがインストールされている場合、<a href="/iq-tag-management/extensions/extensions-list/jquery-onhandler-extension/">jQuery onHandler</a> 拡張を使用するオプションがあります。この拡張は、<code>utag.link()</code> および <code>utag.view()</code> 関数をトリガーする特定のイベントバインディングに対して構成可能です。これにより、トラッキングロジックをサイドコードにハードコーディングする必要がなくなります。</p>
 <p>以下の <code>utag.link()</code> 関数呼び出しは、キーと値のペアを使用してデータを渡す方法を示しています:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">link</span>({ <span style="color:#a6e22e">variable1</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;VARIABLE1 VALUE&#39;</span>, <span style="color:#a6e22e">variable2</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;VARIABLE2 VALUE&#39;</span> });
 </span></span></code></pre></div><h3 id="例-1">例</h3>
@@ -390,7 +390,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;social_network&#34;</span>     <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;facebook&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tealium_event&#34;</span>      <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;social_share&#34;</span>
 </span></span><span style="display:flex;"><span>})
-</span></span></code></pre></div><p>以下のReactJSの例は、<a href="http://react.tealiumdemo.com/">Tealiumデモアプリケーション</a>からのもので、追加、編集、保存、削除機能のイベント追跡方法を示しています。各関数呼び出しは <code>utag.link()</code> 関数をトリガーします。</p>
+</span></span></code></pre></div><p>以下のReactJSの例は、<a href="http://react.tealiumdemo.com/">Tealiumデモアプリケーション</a>からのもので、追加、編集、ストレージ、削除機能のイベント追跡方法を示しています。各関数呼び出しは <code>utag.link()</code> 関数をトリガーします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">text</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">link</span>({
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;page_type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;react&#34;</span>,
@@ -450,10 +450,10 @@ var utag_data = {
   <a href="/platforms/javascript/settings/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>設定</div>
+      <div>構成</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"設定"</title>
+      <title>"構成"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -501,7 +501,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -653,6 +653,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -661,8 +677,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

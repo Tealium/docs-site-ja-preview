@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -379,7 +379,7 @@ var utag_data = {
 <ol>
 <li>Xcodeプロジェクトで、<strong>File &gt; Swift Packages &gt; Add Package Dependency</strong>を選択します。</li>
 <li>リポジトリURLを入力します：<code>https://github.com/tealium/tealium-swift</code></li>
-<li>バージョンルールを設定します。通常、<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
+<li>バージョンルールを構成します。通常、<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
 <li>インストールするモジュールのリストから<code>TagManagement</code>モジュールを選択し、Xcodeプロジェクトの各アプリターゲットに追加します。<strong>Frameworks &gt; Libraries &amp; Embedded Content</strong>の下にあります。</li>
 </ol>
 <h3 id="cocoapods">CocoaPods</h3>
@@ -390,7 +390,7 @@ var utag_data = {
 <p>CarthageでTagManagementモジュールをインストールするには、以下の手順を実行します：</p>
 <ol>
 <li>
-<p>Xcodeでアプリターゲットの一般設定ページに移動します。</p>
+<p>Xcodeでアプリターゲットの一般構成ページに移動します。</p>
 </li>
 <li>
 <p>次のフレームワークを<strong>Embedded Binaries</strong>セクションに追加します：</p>
@@ -401,9 +401,9 @@ var utag_data = {
 <h2 id="初期化">初期化</h2>
 <p>モジュールを初期化するには、<code>TealiumConfig</code>の<a href="/platforms/ios-swift/api/tealium-config/#collectors"><code>collectors</code></a>プロパティで指定されていることを確認します。</p>
 <p><code>config.dispatchers = [Dispatchers.TagManagement]</code></p>
-<h2 id="webview設定のカスタマイズ">WebView設定のカスタマイズ</h2>
+<h2 id="webview構成のカスタマイズ">WebView構成のカスタマイズ</h2>
 <h3 id="app-bound-domains">App Bound Domains</h3>
-<p>アプリが<a href="https://webkit.org/blog/10882/app-bound-domains/">WKAppBoundDomains</a>機能を使用して、アプリ内のwebviewsが通信できるドメインを制限している場合、カスタム<code>WKWebViewConfiguration</code>を渡し、その<code>limitsNavigationsToAppBoundDomains</code>プロパティを<code>true</code>に設定する必要があります。これを行わないと、すべてのトラッキング呼び出しがオペレーティングシステムによってドロップされます。また、<code>Info.plist</code>の<code>WKAppBoundDomains</code>リストに&quot;tags.tiqcdn.com&quot;を含め、Tealium iQで設定したタグのドメイン（例：&ldquo;google-analytics.com&rdquo;）も含める必要があります。複数のクライアントサイドタグを使用している場合、アプリ全体で設定できるドメインの最大数は10であるため、この数を超える可能性があることに注意してください。</p>
+<p>アプリが<a href="https://webkit.org/blog/10882/app-bound-domains/">WKAppBoundDomains</a>機能を使用して、アプリ内のwebviewsが通信できるドメインを制限している場合、カスタム<code>WKWebViewConfiguration</code>を渡し、その<code>limitsNavigationsToAppBoundDomains</code>プロパティを<code>true</code>に構成する必要があります。これを行わないと、すべてのトラッキング呼び出しがオペレーティングシステムによってドロップされます。また、<code>Info.plist</code>の<code>WKAppBoundDomains</code>リストに&quot;tags.tiqcdn.com&quot;を含め、Tealium iQで構成したタグのドメイン（例：&ldquo;google-analytics.com&rdquo;）も含める必要があります。複数のクライアントサイドタグを使用している場合、アプリ全体で構成できるドメインの最大数は10であるため、この数を超える可能性があることに注意してください。</p>
 <pre tabindex="0"><code> let config = TealiumConfig(account: &#34;ACCOUNT&#34;,
                                profile: &#34;PROFILE&#34;,
                                environment: &#34;ENVIRONMENT&#34;,
@@ -452,7 +452,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Do any additional setup after loading the view.</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>完全な例については、サンプルアプリ<a href="https://github.com/Tealium/tealium-swift/tree/master/samples/Swift-WKWebView">Swift-WKWebView</a>をご覧ください。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i><a href="/platforms/ios-swift/api/tealium-config/#shouldaddcookieobserver"><code>shouldAddCookieObserver</code></a>メソッドを使用すると、クッキーの同期化に必要なクッキーオブザーバーを取得するために、メインスレッド上でクッキーを設定した後に独自のクッキーオブザーバーを使用できます。この問題は<code>WKWebView</code>のバグによって引き起こされ、独自のオブザーバーが呼び出されないようにします。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i><a href="/platforms/ios-swift/api/tealium-config/#shouldaddcookieobserver"><code>shouldAddCookieObserver</code></a>メソッドを使用すると、クッキーの同期化に必要なクッキーオブザーバーを取得するために、メインスレッド上でクッキーを構成した後に独自のクッキーオブザーバーを使用できます。この問題は<code>WKWebView</code>のバグによって引き起こされ、独自のオブザーバーが呼び出されないようにします。</p>
 
 </div>
 
@@ -513,7 +513,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -535,7 +535,7 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#cocoapods">CocoaPods</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#carthage">Carthage</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">初期化</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#webview">WebView設定のカスタマイズ</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#webview">WebView構成のカスタマイズ</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#app-bound-domains">App Bound Domains</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#process-pool">Process Pool</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データレイヤー</a></li>
@@ -673,6 +673,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -681,8 +697,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

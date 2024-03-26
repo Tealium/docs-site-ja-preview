@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -390,7 +390,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>resetUserConsentPreferences()</code></td>
-<td>ユーザーの同意設定をリセットします</td>
+<td>ユーザーの同意構成をリセットします</td>
 </tr>
 <tr>
 <td><code>setPolicy()</code></td>
@@ -398,15 +398,15 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>setUserConsentCategories()</code></td>
-<td>ユーザーの同意ステータスと同意カテゴリを設定します</td>
+<td>ユーザーの同意ステータスと同意カテゴリを構成します</td>
 </tr>
 <tr>
 <td><code>setUserConsentStatus()</code></td>
-<td>ユーザーの同意ステータスを設定します</td>
+<td>ユーザーの同意ステータスを構成します</td>
 </tr>
 <tr>
 <td><code>setUserConsentStatusWithCategories()</code></td>
-<td>1つのコールで同意ステータスとカテゴリを設定します</td>
+<td>1つのコールで同意ステータスとカテゴリを構成します</td>
 </tr>
 </tbody>
 </table>
@@ -445,7 +445,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="getuserconsentpreferences"><code>getUserConsentPreferences()</code></h3>
-<p>ユーザーの同意設定を返します。</p>
+<p>ユーザーの同意構成を返します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> UserConsentPreferences userPreferences <span style="color:#f92672">=</span> tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getUserConsentPreferences</span><span style="color:#f92672">();</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -479,7 +479,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="resetuserconsentpreferences"><code>resetUserConsentPreferences()</code></h3>
-<p>保存されている同意設定をクリアし、ユーザー設定をデフォルトにリセットして、同意ステータスをカテゴリが何も設定されていない<code>UNKNOWN</code>に設定します。</p>
+<p>ストレージされている同意構成をクリアし、ユーザー構成をデフォルトにリセットして、同意ステータスをカテゴリが何も構成されていない<code>UNKNOWN</code>に構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">resetUserConsentPreferences</span><span style="color:#f92672">();</span>
 </span></span></code></pre></div><h3 id="setpolicy"><code>setPolicy()</code></h3>
 <p>デフォルトのポリシーパラメータをオーバーライドします。デフォルトは<code>gdpr</code>です。</p>
@@ -497,13 +497,13 @@ var utag_data = {
 <tr>
 <td><code>policy</code></td>
 <td><code>String</code></td>
-<td>設定するポリシー</td>
+<td>構成するポリシー</td>
 <td><code>&quot;custompolicy&quot;</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="setuserconsentcategories"><code>setUserConsentCategories()</code></h3>
-<p>ユーザーの同意ステータスと同意カテゴリを設定します。このメソッドはアプリの同意管理設定画面から呼び出します。このメソッドでは、任意の数のカテゴリが設定された場合に、ユーザーの同意ステータスが自動的に<code>CONSENTED</code>に設定されます。</p>
+<p>ユーザーの同意ステータスと同意カテゴリを構成します。このメソッドはアプリの同意管理構成画面から呼び出します。このメソッドでは、任意の数のカテゴリが構成された場合に、ユーザーの同意ステータスが自動的に<code>CONSENTED</code>に構成されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">setUserConsentCategories</span><span style="color:#f92672">(</span>categories<span style="color:#f92672">);</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -518,7 +518,7 @@ var utag_data = {
 <tr>
 <td><code>categories</code></td>
 <td><code>[String]</code></td>
-<td>設定するカテゴリ</td>
+<td>構成するカテゴリ</td>
 <td><code>String[]</code></td>
 </tr>
 </tbody>
@@ -540,8 +540,8 @@ SEARCH
 SOCIAL
 MISC
 </code></pre><h3 id="setuserconsentstatus"><code>setUserConsentStatus()</code></h3>
-<p>ユーザーの同意ステータスを設定します。このメソッドは、ユーザーがトラッキングをオプトインまたはオプトアウトしたときに、アプリの同意管理設定画面から呼び出します。<code>true</code>の場合は、すべてのカテゴリが自動的に有効になります。<code>false</code>の場合は、すべてのカテゴリが自動的に無効になります。</p>
-<p>このメソッドを使用してユーザーのステータスが<code>CONSENTED</code>に設定されると、Consent Managerでは、ユーザーが自動的に使用可能なすべての同意カテゴリにサブスクライブされます（一部のカテゴリのみにすることはできません）。</p>
+<p>ユーザーの同意ステータスを構成します。このメソッドは、ユーザーがトラッキングをオプトインまたはオプトアウトしたときに、アプリの同意管理構成画面から呼び出します。<code>true</code>の場合は、すべてのカテゴリが自動的に有効になります。<code>false</code>の場合は、すべてのカテゴリが自動的に無効になります。</p>
+<p>このメソッドを使用してユーザーのステータスが<code>CONSENTED</code>に構成されると、Consent Managerでは、ユーザーが自動的に使用可能なすべての同意カテゴリにサブスクライブされます（一部のカテゴリのみにすることはできません）。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">setUserConsentStatus</span><span style="color:#f92672">(</span>status<span style="color:#f92672">);</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -556,7 +556,7 @@ MISC
 <tr>
 <td><code>status</code></td>
 <td><code>String</code></td>
-<td>ユーザーの同意に設定するステータス</td>
+<td>ユーザーの同意に構成するステータス</td>
 <td>[<code>ConsentManager.ConsentStatus.CONSENTED</code>, <code>ConsentManager.ConsentStatus.NOT_CONSENTED</code>]</td>
 </tr>
 </tbody>
@@ -566,17 +566,17 @@ MISC
 NOT_CONSENTED
 UNKNOWN
 </code></pre><p><strong><code>UNKNOWN</code></strong><br>
-<code>UNKNOWN</code>ステータスは、Consent Managerのデフォルト設定です。このステータスの場合、Consent Managerはローカルでイベントをキューに追加します。これは、断定的な<code>CONSENTED/NOT_CONSENTED</code>ステータスが設定されるまで続きます。</p>
+<code>UNKNOWN</code>ステータスは、Consent Managerのデフォルト構成です。このステータスの場合、Consent Managerはローカルでイベントをキューに追加します。これは、断定的な<code>CONSENTED/NOT_CONSENTED</code>ステータスが構成されるまで続きます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">setUserConsentStatus</span><span style="color:#f92672">(</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentStatus</span><span style="color:#f92672">.</span><span style="color:#a6e22e">UNKNOWN</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><p><strong><code>CONSENTED</code></strong><br>
-<code>CONSENTED</code>ステータスは、ユーザーがトラッキングに同意している場合に設定されます。このステータスの場合、Consent Managerは、以前キューに追加されたトラックコールをキューから取り出し、以降のすべてのトラッキングコールを通常通りに続行できます。</p>
+<code>CONSENTED</code>ステータスは、ユーザーがトラッキングに同意している場合に構成されます。このステータスの場合、Consent Managerは、以前キューに追加されたトラックコールをキューから取り出し、以降のすべてのトラッキングコールを通常通りに続行できます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">setUserConsentStatus</span><span style="color:#f92672">(</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentStatus</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><p><strong><code>NOT_CONSENTED</code></strong><br>
-<code>NOT_CONSENTED</code>ステータスは、ユーザーがトラッキングを拒否している場合に設定されます。このステータスの場合、Consent Managerは、以前キューに追加されたトラックコールを削除し、以降のすべてのトラッキングコールがそれ以上SDKによって処理されないようにします。</p>
+<code>NOT_CONSENTED</code>ステータスは、ユーザーがトラッキングを拒否している場合に構成されます。このステータスの場合、Consent Managerは、以前キューに追加されたトラックコールを削除し、以降のすべてのトラッキングコールがそれ以上SDKによって処理されないようにします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">setUserConsentStatus</span><span style="color:#f92672">(</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentStatus</span><span style="color:#f92672">.</span><span style="color:#a6e22e">NOT_CONSENTED</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><h3 id="setuserconsentstatuswithcategories"><code>setUserConsentStatusWithCategories()</code></h3>
 <ol>
-<li>のコールで同意ステータスとカテゴリを設定します。</li>
+<li>のコールで同意ステータスとカテゴリを構成します。</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">setUserConsentStatusWithCategories</span><span style="color:#f92672">(</span>status<span style="color:#f92672">,</span> categories<span style="color:#f92672">);</span>
 </span></span></code></pre></div><table>
@@ -592,13 +592,13 @@ UNKNOWN
 <tr>
 <td><code>status</code></td>
 <td><code>String</code></td>
-<td>ユーザーの同意に設定するステータス</td>
+<td>ユーザーの同意に構成するステータス</td>
 <td>[<code>ConsentManager.ConsentStatus.CONSENTED</code>, <code>ConsentManager.ConsentStatus.NOT_CONSENTED</code>]</td>
 </tr>
 <tr>
 <td><code>categories</code></td>
 <td><code>[String]</code></td>
-<td>設定するカテゴリ</td>
+<td>構成するカテゴリ</td>
 <td><code>new String[]{ConsentManager.ConsentCategory.ANALYTICS, ConsentManager.ConsentCategory.BIG_DATA}</code></td>
 </tr>
 </tbody>
@@ -649,7 +649,7 @@ UNKNOWN
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2022年August月29日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -806,6 +806,22 @@ UNKNOWN
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -814,8 +830,24 @@ UNKNOWN
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

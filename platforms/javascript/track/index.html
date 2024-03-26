@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -370,7 +370,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;product_name&#34;</span> <span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;Lucky Shirt&#34;</span>]
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><h2 id="イベントのトラッキング">イベントのトラッキング</h2>
-<p><a href="/platforms/javascript/api/tracking-functions/#utag-link"><code>utag.link()</code></a> 関数は、非ページ ビュー、ページでのインタラクション、その他の動的ページ イベントなどのイベントをトラッキングします。イベントのトラッキングにより、ページ <em>内での</em> 訪問者のインタラクションに関する情報を収集できます。ページビューのトラッキングでは訪問者の移動パスに関する情報を収集するのに対し、イベントトラッキングでは訪問者が移動中に実行することを監視します。</p>
+<p><a href="/platforms/javascript/api/tracking-functions/#utag-link"><code>utag.link()</code></a> 関数は、非ページ ビュー、ページでのインタラクション、その他の動的ページ イベントなどのイベントをトラッキングします。イベントのトラッキングにより、ページ <em>内での</em> 訪問のインタラクションに関する情報を収集できます。ページビューのトラッキングでは訪問の移動パスに関する情報を収集するのに対し、イベントトラッキングでは訪問が移動中に実行することを監視します。</p>
 <p>以下は、コールバック関数を使用しない、すべてのタグによりトラッキングされる「カートに追加」イベントをトラッキングする例です。 </p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">link</span>({
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tealium_event&#34;</span>    <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;cart_add&#34;</span>,
@@ -436,7 +436,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p class="tip"><i class="fa fa-info-circle"></i>さらに標準的なイベントを設定するには、<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Tealium-Events-Extension/ta-p/18358">Tealiumイベント拡張機能</a>を使用してください。</p>
+<p class="tip"><i class="fa fa-info-circle"></i>さらに標準的なイベントを構成するには、<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Tealium-Events-Extension/ta-p/18358">Tealiumイベント拡張機能</a>を使用してください。</p>
 <p>次の例では、トラッキングコールのイベントに関連した情報が追加されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">link</span>({
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tealium_event&#34;</span>  <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;social_share&#34;</span>,
@@ -455,10 +455,10 @@ var utag_data = {
 </ul>
 <p>データ属性のある要素は、ページのコード内では次のように表示されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/logout&#34;</span> <span style="color:#a6e22e">data-click_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sign Out&#34;</span> <span style="color:#a6e22e">data-click_category</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;header&#34;</span>&gt;Log out&lt;/<span style="color:#f92672">a</span>&gt; 
-</span></span></code></pre></div><p>このリンクのクリックをトラッキングし、&ldquo;JS Code&quot;オプションを使用して関連するイベントデータを設定するには、これらの属性をjQuery拡張機能で参照します。</p>
+</span></span></code></pre></div><p>このリンクのクリックをトラッキングし、&ldquo;JS Code&quot;オプションを使用して関連するイベントデータを構成するには、これらの属性をjQuery拡張機能で参照します。</p>
 <ul>
 <li>特定のデータ属性を持つ要素はセレクタを使用して識別します。たとえば、<code>a[data-click_name]</code>などです。</li>
-<li>&ldquo;JS Code&quot;オプションを使用して、クリックされた要素のデータ属性を参照するよう変数を設定します。たとえば、<code>$(this).data('click_name')</code>などです。</li>
+<li>&ldquo;JS Code&quot;オプションを使用して、クリックされた要素のデータ属性を参照するよう変数を構成します。たとえば、<code>$(this).data('click_name')</code>などです。</li>
 </ul>
 <h3 id="ページコード">ページコード</h3>
 <p>ページ コードは、動的なページ コンテンツの更新、Ajax のページ、モーダル フォームの送信など、まだページに存在しない追加データを取得するためにクライアントのウェブ サーバーへのラウンドトリップの要求/応答が必要なイベントに使用します。</p>
@@ -468,7 +468,7 @@ var utag_data = {
 </ul>
 <h3 id="動画のトラッキング">動画のトラッキング</h3>
 <p>動画のトラッキングでは、多くの場合、動画プラットフォームのAPIの仕様に合わせたカスタムソリューションのコーディングが必要になります。</p>
-<p><a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/YouTube-Video-Tracking-Setup-Guide-for-Tealium-iQ/ta-p/14673">YouTube ビデオ トラッキング設定ガイド</a>で、Tealium の現在のソリューションの詳細を参照してください。</p>
+<p><a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/YouTube-Video-Tracking-Setup-Guide-for-Tealium-iQ/ta-p/14673">YouTube ビデオ トラッキング構成ガイド</a>で、Tealium の現在のソリューションの詳細を参照してください。</p>
 <h3 id="単一ページアプリケーション">単一ページアプリケーション</h3>
 <p><a href="/platforms/javascript/single-page-applications/">単一ページ アプリケーション</a>でのビューとイベントのトラッキングについて説明します。</p>
 
@@ -671,6 +671,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -679,8 +695,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

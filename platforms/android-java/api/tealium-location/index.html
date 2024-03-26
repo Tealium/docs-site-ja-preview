@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -378,23 +378,23 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>setupInstance()</code></td>
-<td>ジオフェンシングを無効にしてTealiumジオロケーションインスタンスを設定します</td>
+<td>ジオフェンシングを無効にしてTealiumジオロケーションインスタンスを構成します</td>
 </tr>
 <tr>
 <td><code>setupInstanceWithConfig()</code></td>
-<td>Tealium構成ファイルからの（Tealiumのホストデータレイヤーでホストされる）ジオフェンスを使用してTealiumジオロケーションインスタンスを設定します</td>
+<td>Tealium構成ファイルからの（Tealiumのホストデータレイヤーでホストされる）ジオフェンスを使用してTealiumジオロケーションインスタンスを構成します</td>
 </tr>
 <tr>
 <td><code>setupInstanceWithFile()</code></td>
-<td>アセットのJSONファイルからのジオフェンスを使用してTealiumジオロケーションインスタンスを設定します</td>
+<td>アセットのJSONファイルからのジオフェンスを使用してTealiumジオロケーションインスタンスを構成します</td>
 </tr>
 <tr>
 <td><code>setupInstanceWithUrl()</code></td>
-<td>未加工のJSONファイルをホストしているURLからのジオフェンスを使用してTealiumジオロケーションインスタンスを設定します</td>
+<td>未加工のJSONファイルをホストしているURLからのジオフェンスを使用してTealiumジオロケーションインスタンスを構成します</td>
 </tr>
 <tr>
 <td><code>startLocationUpdates()</code></td>
-<td>位置情報の更新の精度と継続的トラッキングの更新間隔時間を設定します</td>
+<td>位置情報の更新の精度と継続的トラッキングの更新間隔時間を構成します</td>
 </tr>
 <tr>
 <td><code>stopLocationUpdates()</code></td>
@@ -406,16 +406,16 @@ var utag_data = {
 <p>最後に認識されたユーザーのデバイスの位置を返します。このメソッドは、デバイス上の他のアプリによって精度を確保する目的で使用されているロケーションクライアントに依存します。他のアプリが最新の位置情報を受信して​​いない場合、このメソッドは最後に認識された位置情報を返します。位置情報が使用不可の場合は<code>null</code>を返します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">requestDeviceLastLocation</span><span style="color:#f92672">();</span>
 </span></span></code></pre></div><h3 id="setupinstance"><code>setupInstance()</code></h3>
-<p>ジオフェンシングを無効にしてTealiumジオロケーションインスタンスを設定します。</p>
+<p>ジオフェンシングを無効にしてTealiumジオロケーションインスタンスを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstance</span><span style="color:#f92672">(</span>applicationContext<span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">);</span>
 </span></span></code></pre></div><h3 id="setupinstancewithconfig"><code>setupInstanceWithConfig()</code></h3>
-<p>Tealium構成ファイルからの（Tealiumのホストデータレイヤーでホストされる）ジオフェンスを使用してTealiumジオロケーションインスタンスを設定します。<code>&quot;https://tags.tiqcdn.com/dle/ACCOUNT/PROFILE/geofences.json&quot;</code>の形式でカスタムURLを作成します。</p>
+<p>Tealium構成ファイルからの（Tealiumのホストデータレイヤーでホストされる）ジオフェンスを使用してTealiumジオロケーションインスタンスを構成します。<code>&quot;https://tags.tiqcdn.com/dle/ACCOUNT/PROFILE/geofences.json&quot;</code>の形式でカスタムURLを作成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithConfig</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> mTealiumConfig<span style="color:#f92672">);</span>
 </span></span></code></pre></div><h3 id="setupinstancewithfile"><code>setupInstanceWithFile()</code></h3>
-<p>アセットのJSONファイルからのジオフェンスを使用してTealiumジオロケーションインスタンスを設定します。</p>
+<p>アセットのJSONファイルからのジオフェンスを使用してTealiumジオロケーションインスタンスを構成します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithFile</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;geofences.json&#34;</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><h3 id="setupinstancewithurl"><code>setupInstanceWithUrl()</code></h3>
-<p>未加工のJSONファイルをホストしているURLからのジオフェンスを使用してTealiumジオロケーションインスタンスを設定します。このオプションは、公開設定URLをオーバーライドした場合に推奨されます。</p>
+<p>未加工のJSONファイルをホストしているURLからのジオフェンスを使用してTealiumジオロケーションインスタンスを構成します。このオプションは、公開構成URLをオーバーライドした場合に推奨されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithUrl</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> url<span style="color:#f92672">);</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -436,7 +436,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="startlocationupdates"><code>startLocationUpdates()</code></h3>
-<p>位置情報の更新の精度と継続的トラッキングの更新間隔時間を設定します。ピンポイントの位置情報の精度と高頻度の更新を有効にすると、精度は高まりますが、バッテリーの消費量が多くなります。「ブロック」精度を有効にすると、位置情報の精度を都市区画内（約100メートルの精度）に設定できます。</p>
+<p>位置情報の更新の精度と継続的トラッキングの更新間隔時間を構成します。ピンポイントの位置情報の精度と高頻度の更新を有効にすると、精度は高まりますが、バッテリーの消費量が多くなります。「ブロック」精度を有効にすると、位置情報の精度を都市区画内（約100メートルの精度）に構成できます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startLocationUpdates</span><span style="color:#f92672">(</span>isHighAccuracy<span style="color:#f92672">,</span> updateInterval<span style="color:#f92672">);</span>
 </span></span></code></pre></div><table>
 <thead>
@@ -451,7 +451,7 @@ var utag_data = {
 <tr>
 <td><code>isHighAccuracy</code></td>
 <td><code>boolean</code></td>
-<td>ピンポイントの位置情報の精度の場合は<code>true</code>に設定し、「ブロック」精度の場合は<code>false</code>に設定します。</td>
+<td>ピンポイントの位置情報の精度の場合は<code>true</code>に構成し、「ブロック」精度の場合は<code>false</code>に構成します。</td>
 <td><code>true</code></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2022年March月2日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -665,6 +665,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -673,8 +689,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -276,33 +308,33 @@ var utag_data = {
 <li>Tealium EventStream API Hub および/または Tealium AudienceStream CDP</li>
 <li>LeadsBridgeまたはZapierのアカウント</li>
 <li>Facebookビジネスマネージャー - リードアクセス<br>
-詳細については、<a href="https://help.leadsbridge.com/s/article/how-to-set-up-lead-access-in-facebook-business-manager">リアルタイムリードアクセスの設定</a>を参照してください。</li>
+詳細については、<a href="https://help.leadsbridge.com/s/article/how-to-set-up-lead-access-in-facebook-business-manager">リアルタイムリードアクセスの構成</a>を参照してください。</li>
 </ul>
 <h2 id="仕組み">仕組み</h2>
 <p>Facebookリード広告は、ユーザーをランディングページにリダイレクトせずに広告内からユーザーの情報を収集するリードジェネレーション広告の一種です。Facebookリード広告は、広告内のフォームを通じてユーザーの情報を収集し、収集プロセスをより速く、ユーザーにとってより便利にします。収集した情報は、メールマーケティングやダイレクトセールスのアウトリーチなどのフォローアップ活動に使用できます。</p>
-<p>Facebookリード広告からの顧客情報をTealium EventStreamまたはAudienceStreamに渡すには、LeadsBridgeまたはZapierのWebhookを使用する必要があります。このドキュメントでは、LeadsBridgeのWebhookの設定方法について説明しますが、同様の設定でZapierのWebhookも使用できます。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>Webhookの設定には、<code>tealium_account</code>、<code>tealium_profile</code>、<code>tealium_datasource</code>、およびFacebookリード広告からの<code>Lead ID</code>の値を含めてください。</p>
+<p>Facebookリード広告からの顧客情報をTealium EventStreamまたはAudienceStreamに渡すには、LeadsBridgeまたはZapierのWebhookを使用する必要があります。このドキュメントでは、LeadsBridgeのWebhookの構成方法について説明しますが、同様の構成でZapierのWebhookも使用できます。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Webhookの構成には、<code>tealium_account</code>、<code>tealium_profile</code>、<code>tealium_datasource</code>、およびFacebookリード広告からの<code>Lead ID</code>の値を含めてください。</p>
 <h2 id="facebookリードデータソースの追加">Facebookリードデータソースの追加</h2>
 <ol>
 <li>FacebookリードデータソースをTealium Customer Data Hubプロファイルに追加するには、<a href="/server-side/data-sources/create-data-source/">データソースの作成</a>の指示に従ってください。</li>
 <li>Facebookリードデータソースを作成した後、<a href="/server-side/data-sources/connect-to-data-source/">データソースに接続</a>の指示に従って、<strong>Data Source Key</strong>と<strong>Data Source URL</strong>を見つけます。</li>
-<li>データソースを追加し、接続した後、プロファイルを保存して公開します。</li>
+<li>データソースを追加し、接続した後、プロファイルをストレージして公開します。</li>
 </ol>
 <h2 id="データソースurl">データソースURL</h2>
-<p>FacebookリードデータソースをTealium Customer Data Hubプロファイルに追加すると、次の形式でFacebookリード広告の設定で使用するためのユニークなURLが生成されます：</p>
+<p>FacebookリードデータソースをTealium Customer Data Hubプロファイルに追加すると、次の形式でFacebookリード広告の構成で使用するためのユニークなURLが生成されます：</p>
 <pre tabindex="0"><code>https://collect.tealiumiq.com/integration/event/ACCOUNT/PROFILE/DATA_SOURCE_KEY
-</code></pre><h2 id="facebookビジネスマネージャーを使用してfacebookリードを設定する">Facebookビジネスマネージャーを使用してFacebookリードを設定する</h2>
+</code></pre><h2 id="facebookビジネスマネージャーを使用してfacebookリードを構成する">Facebookビジネスマネージャーを使用してFacebookリードを構成する</h2>
 <ol>
 <li>Facebookアカウントにログインし、<strong>ビジネスマネージャー</strong>と<strong>インスタントフォームを選択</strong>に移動します。</li>
 <li>Tealiumにデータを送信するために使用したいフォームを選択します。</li>
-<li><strong>CRM設定</strong>を選択し、<code>Webhook</code>を検索します。</li>
-<li>あなたの統合URLとLeadsBridgeを使用するようにWebhookを設定します。</li>
+<li><strong>CRM構成</strong>を選択し、<code>Webhook</code>を検索します。</li>
+<li>あなたの統合URLとLeadsBridgeを使用するようにWebhookを構成します。</li>
 <li>Facebookのドキュメンテーションに記載されている<a href="https://business.facebook.com/business/help/1588743581429919?id=735435806665862">FacebookにCRMシステムを接続する</a>の手順を完了します。</li>
 </ol>
 <h2 id="leadsbridgeのwebhookをfacebookリード広告と統合する">LeadsBridgeのWebhookをFacebookリード広告と統合する</h2>
 <ol>
 <li>
-<p><a href="https://www.facebook.com/business/help/375478503258484?id=735435806665862">Facebookリード広告</a>を設定します。</p>
+<p><a href="https://www.facebook.com/business/help/375478503258484?id=735435806665862">Facebookリード広告</a>を構成します。</p>
 </li>
 <li>
 <p>LeadsBridgeアカウントで、メインメニューから<strong>Facebook Suite &gt; Lead Ads Bridges</strong>に移動します。</p>
@@ -320,7 +352,7 @@ var utag_data = {
 <p>LeadsBridgeは、高度なエディターを使用するように促します。<strong>複雑なブリッジに連れて行って</strong>をクリックします。</p>
 </li>
 <li>
-<p>Facebookリード広告の<strong>始めましょう</strong>画面で、次の設定を行います。完了したら、<strong>次へ</strong>をクリックします。</p>
+<p>Facebookリード広告の<strong>始めましょう</strong>画面で、次の構成を行います。完了したら、<strong>次へ</strong>をクリックします。</p>
 <ul>
 <li><strong>ブリッジの名前</strong> - ブリッジの名前を入力します。</li>
 <li><strong>ソースを選択</strong> - ソースの選択としてFacebookリード広告をそのままにします。</li>
@@ -328,7 +360,7 @@ var utag_data = {
 </ul>
 </li>
 <li>
-<p><strong>ソース</strong>画面で、次のフィールドを設定します。完了したら、<strong>次へ</strong>をクリックします。</p>
+<p><strong>ソース</strong>画面で、次のフィールドを構成します。完了したら、<strong>次へ</strong>をクリックします。</p>
 <ul>
 <li><strong>ユーザー</strong> - ユーザーを選択します。<strong>+Facebookと接続</strong>オプションを使用して認証する必要があるかもしれません。</li>
 <li><strong>Facebookページ</strong> - ドロップダウンリストから<strong>Facebookページ</strong>を選択します。Facebookアカウントの認証が必要になるかもしれません。</li>
@@ -336,7 +368,7 @@ var utag_data = {
 </ul>
 </li>
 <li>
-<p><strong>宛先 &gt; 宛先統合の設定</strong>画面で、次のフィールドを設定します。完了したら、<strong>次へ</strong>をクリックします。</p>
+<p><strong>宛先 &gt; 宛先統合の構成</strong>画面で、次のフィールドを構成します。完了したら、<strong>次へ</strong>をクリックします。</p>
 <ul>
 <li><strong>統合の名前</strong> - 統合の名前を入力します。</li>
 <li><strong>方法</strong> - <strong>POST</strong>を選択します。</li>
@@ -347,23 +379,23 @@ var utag_data = {
 </ul>
 </li>
 <li>
-<p><strong>宛先 &gt; 受信リードを送信する場所を選択</strong>画面で、次の設定を行います。完了したら、<strong>次へ</strong>をクリックします。</p>
+<p><strong>宛先 &gt; 受信リードを送信する場所を選択</strong>画面で、次の構成を行います。完了したら、<strong>次へ</strong>をクリックします。</p>
 <ul>
 <li><strong>宛先</strong>と<strong>どのアクション</strong>フィールドは、前の画面からの情報で完成します。</li>
 <li>（オプション）各リードのメールレシートを受け取りたい場合は、**アクティブ？**オプションを有効にします。<strong>受信者</strong>フィールドにメールアドレスを入力し、<strong>件名</strong>フィールドにメールの件名を入力します。</li>
 </ul>
 </li>
 <li>
-<p><strong>フィールドマッピング</strong>画面で、Tealiumにデータをトリガーするために必要な値をドロップダウンリストから選択します。また、次のマッピングフィールドを設定します：<code>tealium_account</code>、<code>tealium_profile</code>、<code>tealium_datasource</code>。</p>
+<p><strong>フィールドマッピング</strong>画面で、Tealiumにデータをトリガーするために必要な値をドロップダウンリストから選択します。また、次のマッピングフィールドを構成します：<code>tealium_account</code>、<code>tealium_profile</code>、<code>tealium_datasource</code>。</p>
 </li>
 <li>
 <p><strong>次へ</strong>をクリックします。</p>
 </li>
 <li>
-<p>（オプション）<strong>テスト</strong>画面で、指定したフィールドの値を入力し、<strong>今すぐテスト</strong>をクリックします。<p class="note"><i class="fa fa-exclamation-triangle"></i><a href="https://developers.facebook.com/tools/lead-ads-testing">Facebookリード広告テストツール</a>を使用して設定をテストすることもできます。</p></p>
+<p>（オプション）<strong>テスト</strong>画面で、指定したフィールドの値を入力し、<strong>今すぐテスト</strong>をクリックします。<p class="note"><i class="fa fa-exclamation-triangle"></i><a href="https://developers.facebook.com/tools/lead-ads-testing">Facebookリード広告テストツール</a>を使用して構成をテストすることもできます。</p></p>
 </li>
 <li>
-<p>LeadsBridgeのアクセス許可を受け入れ、<strong>保存して公開</strong>をクリックします。</p>
+<p>LeadsBridgeのアクセス許可を受け入れ、<strong>ストレージして公開</strong>をクリックします。</p>
 </li>
 </ol>
 <h2 id="イベントと属性">イベントと属性</h2>
@@ -491,7 +523,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -509,7 +541,7 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#facebook">Facebookリードデータソースの追加</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データソースURL</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#facebook">Facebookビジネスマネージャーを使用してFacebookリードを設定する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#facebook">Facebookビジネスマネージャーを使用してFacebookリードを構成する</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#leadsbridge">LeadsBridgeのWebhookをFacebookリード広告と統合する</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">イベントと属性</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ベンダードキュメンテーション</a></li>
@@ -646,6 +678,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -654,8 +702,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

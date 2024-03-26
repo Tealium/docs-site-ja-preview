@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -410,7 +410,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left"><a href="#leavetrace"><code>leaveTrace()</code></a></td>
-<td style="text-align:left">以前に参加したトレースを終了し、訪問者セッションを終了します。</td>
+<td style="text-align:left">以前に参加したトレースを終了し、訪問セッションを終了します。</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="#linkecidtoknownidentifier"><code>linkECIDToKnownIdentifier</code></a></td>
@@ -477,7 +477,7 @@ var utag_data = {
 <p>以前に開始されたすべてのタイマーイベントをクリアします。タイマーイベントはトラッキングされません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.clearAllTimedEvents()
 </span></span></code></pre></div><h3 id="clearstoredvisitorids"><code>clearStoredVisitorIds()</code></h3>
-<p>以前に保存されたすべてのvisitor IDとハッシュ化された顧客識別子をクリアします。</p>
+<p>以前にストレージされたすべてのvisitor IDとハッシュ化された顧客識別子をクリアします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.clearStoredVisitorIds()
 </span></span></code></pre></div><h3 id="decorateurl"><code>decorateUrl()</code></h3>
 <p>入力URLにAdobe ECIDクエリパラメータを追加します。</p>
@@ -517,7 +517,7 @@ var utag_data = {
 <p>キューに入れられたすべてのディスパッチをすぐに送信します。同意マネージャーなどの<code>DispatchValidator</code>によってリクエストがブロックされる場合があります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.disable()
 </span></span></code></pre></div><h3 id="gathertrackdata"><code>gatherTrackData()</code></h3>
-<p>現在のカスタムデータレイヤーの値とコレクターモジュールのデータレイヤーの値をすべて取得します。結果はキャッシュされ、非同期で返されます。最新の値を取得するには、<code>retrieveCachedData</code>を<code>false</code>に設定します。返された値を処理するために、完了ハンドラーを使用します。カスタムデータレイヤーの値は、カスタムキーを使用して直接参照し、コレクターモジュールの値は<code>TealiumDataKey.</code>を使用して参照します。</p>
+<p>現在のカスタムデータレイヤーの値とコレクターモジュールのデータレイヤーの値をすべて取得します。結果はキャッシュされ、非同期で返されます。最新の値を取得するには、<code>retrieveCachedData</code>を<code>false</code>に構成します。返された値を処理するために、完了ハンドラーを使用します。カスタムデータレイヤーの値は、カスタムキーを使用して直接参照し、コレクターモジュールの値は<code>TealiumDataKey.</code>を使用して参照します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span> tealium?.gatherTrackData(retreiveCachedData: <span style="color:#66d9ef">false</span>, completion: { allData <span style="color:#66d9ef">in</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> lifecycleTotalWakeCount = allData[TealiumDataKey.totalWakeCount]
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> visitorId = allData[TealiumDataKey.visitorId]
@@ -525,7 +525,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>})
 </span></span></code></pre></div><p>参照: <a href="/platforms/ios-swift/data-layer/#retrieve-all-data"><code>Tealium.dataLayer.all</code></a>も参照してください。</p>
 <h3 id="gettagmanagementwebview"><code>getTagManagementWebView()</code></h3>
-<p>TagManagement WebViewを返します。クライアントは<code>isInspectable</code>フラグを設定してXCode 14.3+でデバッグできます。</p>
+<p>TagManagement WebViewを返します。クライアントは<code>isInspectable</code>フラグを構成してXCode 14.3+でデバッグできます。</p>
 <p>他のWebviewオブジェクトの使用（別のWebページの読み込みなど）は予測不可能な動作を引き起こす可能性があるため、強く推奨されません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span> tealium?.getTagManagementWebView { webView <span style="color:#66d9ef">in</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#75715e">#available</span>(<span style="color:#75715e">iOS</span> <span style="color:#ae81ff">16.4</span>, <span style="color:#f92672">*</span>) {
@@ -554,7 +554,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="leavetrace"><code>leaveTrace()</code></h3>
-<p>以前に参加したトレースを終了し、訪問者セッションを終了します。トレース訪問者セッションを保持する場合は、オプションのパラメーターを指定します。</p>
+<p>以前に参加したトレースを終了し、訪問セッションを終了します。トレース訪問セッションを保持する場合は、オプションのパラメーターを指定します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.leaveTrace(killVisitorSession: <span style="color:#66d9ef">false</span>)
 </span></span></code></pre></div><h3 id="linkecidtoknownidentifier"><code>linkECIDToKnownIdentifier()</code></h3>
 <p>現在のECIDを既知のセカンダリ識別子（電子メールアドレスやその他の内部IDなど）にリンクします。</p>
@@ -629,7 +629,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>killVisitorSession</code></td>
 <td style="text-align:left"><code>Bool</code></td>
-<td style="text-align:left">（オプション）パラメーターが指定されていない場合はデフォルトで<code>true</code>、パラメーターが<code>false</code>の場合は訪問者セッションを終了しない場合は<code>false</code>を指定します。</td>
+<td style="text-align:left">（オプション）パラメーターが指定されていない場合はデフォルトで<code>true</code>、パラメーターが<code>false</code>の場合は訪問セッションを終了しない場合は<code>false</code>を指定します。</td>
 <td style="text-align:left"><code>true</code></td>
 </tr>
 </tbody>
@@ -831,7 +831,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -999,6 +999,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1007,8 +1023,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -358,11 +358,11 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <h2 id="動作原理">動作原理</h2>
 <p>Tealiumカートリッジを使用すると、マーケターは1行のコードと直感的なWebインターフェースを介してタグ要件を自分自身で管理できます。ITリソースは必要ありません。コード中心のアプローチを好む他のソリューションとは異なり、TealiumはJavaScriptの知識を必要としない使いやすいテンプレートを提供します。これにより、デジタルマーケティングベンダータグを簡単に追加、編集、または削除することができます。Tealiumは、マーケターがより迅速かつ効率的になるために設計されています。</p>
-<p>Tealiumカートリッジの基本的なインストールでは、Tealiumは追加のカスタマイズなしで、コンテンツナビゲーション、検索トラッキング、製品表示、チェックアウト、注文トラッキングなど、豊富な訪問者イベントデータを自動的に収集します。</p>
+<p>Tealiumカートリッジの基本的なインストールでは、Tealiumは追加のカスタマイズなしで、コンテンツナビゲーション、検索トラッキング、製品表示、チェックアウト、注文トラッキングなど、豊富な訪問イベントデータを自動的に収集します。</p>
 <p>Tealiumカートリッジは、サーバーサイドのCommerce Cloud実装からシンプルなTealiumクライアントサイドコンソールに多くの作業を移行することで、マーケターのベンダータグスイートのフルポテンシャルを引き出します。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>TealiumカートリッジにはTealiumのサブスクリプションが必要です。</p>
 <h2 id="ユースケース">ユースケース</h2>
-<p>Tealiumカートリッジの基本的なインストールでは、追加のカスタマイズなしで、コンテンツナビゲーション、検索トラッキング、製品表示、チェックアウト、注文トラッキングなど、豊富な訪問者イベントデータを自動的に収集します。</p>
+<p>Tealiumカートリッジの基本的なインストールでは、追加のカスタマイズなしで、コンテンツナビゲーション、検索トラッキング、製品表示、チェックアウト、注文トラッキングなど、豊富な訪問イベントデータを自動的に収集します。</p>
 <p>その後、Tealium iQは、ITリソースやCommerce Cloudストアフロントの変更を必要とせずに、シームレスで完全なベンダータグの統合を提供します。</p>
 <h2 id="セットアップ">セットアップ</h2>
 <p>次の手順に従って、TealiumカートリッジをCommerce Cloudストアフロントに統合します。これらの手順は、標準のSite Genesisストアフロントを基にしています。</p>
@@ -376,7 +376,7 @@ var utag_data = {
 <li>カートリッジをサンドボックスにリンクするように求められた場合は、<strong>OK</strong>をクリックします。</li>
 </ul>
 </li>
-<li><strong>カスタムサイト設定</strong>をCommerce Cloud Business Managerにインポートします。
+<li><strong>カスタムサイト構成</strong>をCommerce Cloud Business Managerにインポートします。
 <ul>
 <li><strong>Commerce Cloud Business Manager</strong>にログインします。</li>
 <li><strong>管理 &gt; サイト開発 &gt; インポートとエクスポート</strong>に移動します。</li>
@@ -389,11 +389,11 @@ var utag_data = {
 <li><strong>インポート</strong>をクリックします。</li>
 </ul>
 </li>
-<li>Commerce Cloud Business Managerを使用して、Tealiumカスタム設定を構成します。
+<li>Commerce Cloud Business Managerを使用して、Tealiumカスタム構成を構成します。
 <ul>
 <li>Tealiumを構成する各サイトにログインします：</li>
 <li>ページの上部にあるタブから正しいサイトを選択します。</li>
-<li><strong>Merchant Tools &gt; サイト設定 &gt; カスタム設定 &gt; Tealium</strong>に移動します。</li>
+<li><strong>Merchant Tools &gt; サイト構成 &gt; カスタム構成 &gt; Tealium</strong>に移動します。</li>
 <li>実装中に、Tealiumから入力する値が提供されます。</li>
 <li><strong>Tealium Environment</strong>フィールドには、<code>dev</code>、<code>qa</code>、または<code>prod</code>を入力します（たとえば、サンドボックス/開発インスタンスには<code>dev</code>を使用します）。</li>
 <li>この統合を有効にするためにチェックボックスをオンにし、ページの下部近くにある<strong>適用</strong>をクリックします。
@@ -410,7 +410,7 @@ var utag_data = {
 <li>各リストされたサイトとBusiness Managerサイトに対して<strong>管理 &gt; サイト &gt; サイトの管理</strong>に移動します：
 <ul>
 <li>リストからサイトを選択します。</li>
-<li><strong>設定</strong>タブをクリックします。</li>
+<li><strong>構成</strong>タブをクリックします。</li>
 <li>**Cartridges:**フィールドに<code>:int_tealium</code>を追加します。</li>
 <li><strong>適用</strong>をクリックします。</li>
 </ul>
@@ -451,9 +451,9 @@ var utag_data = {
 <pre tabindex="0"><code>&lt;isscript&gt;var pageContext={title:&#39;OrderHistory&#39;,type:&#39;orderhistory&#39;,ns:&#39;orderhistory&#39;};&lt;/isscript&gt;
 </code></pre></li>
 </ol>
-<h3 id="設定">設定</h3>
-<p>Tealiumの設定で適切なTealiumアカウントとTealiumプロファイルを構成してください。セットアップセクションのステップ3で構成したものと一致する必要があります。</p>
-<p>その他のCommerce Cloudの設定は必要ありません。</p>
+<h3 id="構成">構成</h3>
+<p>Tealiumの構成で適切なTealiumアカウントとTealiumプロファイルを構成してください。セットアップセクションのステップ3で構成したものと一致する必要があります。</p>
+<p>その他のCommerce Cloudの構成は必要ありません。</p>
 <p>Tealium iQを使用してマーケティングタグをカスタマイズする方法については、Tealiumアカウントマネージャーと相談してください。</p>
 <h3 id="カスタムコード">カスタムコード</h3>
 <p>基本的な統合では、上記のセットアップ手順以外にカスタムコードは必要ありません。</p>
@@ -466,7 +466,7 @@ var utag_data = {
 <h3 id="サポート">サポート</h3>
 <p>必要なサポートについては、Tealiumアカウントマネージャーにお問い合わせください。</p>
 <h2 id="テスト">テスト</h2>
-<p>カートリッジをデプロイした後、正しいデプロイメントを確認するために、ブラウザ内でストアフロントのページソースを表示するのが最も効果的なテストです。フッターには、<code>utag_data</code>という変数に設定されたJSON構造が含まれているはずです。確認するために、この変数を検索してください。この下に<code>utag.js</code>ファイルを含めるための追加のスクリプトもあります。</p>
+<p>カートリッジをデプロイした後、正しいデプロイメントを確認するために、ブラウザ内でストアフロントのページソースを表示するのが最も効果的なテストです。フッターには、<code>utag_data</code>という変数に構成されたJSON構造が含まれているはずです。確認するために、この変数を検索してください。この下に<code>utag.js</code>ファイルを含めるための追加のスクリプトもあります。</p>
 <p>すべてのページのスクリプトブロックは、次の例のようになります。Tealiumの<code>ACCOUNT</code>、<code>PROFILE</code>、および<code>ENVIRONMENT</code>の値は、セットアップのステップ3で構成したものと一致する必要があります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>,<span style="color:#a6e22e">c</span>,<span style="color:#a6e22e">d</span>){
@@ -681,7 +681,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -698,7 +698,7 @@ var utag_data = {
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">動作原理</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユースケース</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">セットアップ</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">カスタムコード</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">互換性</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">外部インターフェース</a></li>
@@ -844,6 +844,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -852,8 +868,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

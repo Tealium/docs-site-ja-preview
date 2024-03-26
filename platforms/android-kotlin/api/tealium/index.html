@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -378,7 +378,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left"><a href="#consentmanager"><code>consentManager</code></a></td>
-<td style="text-align:left">ユーザーの同意設定を行うための同意管理ツールにアクセスします。</td>
+<td style="text-align:left">ユーザーの同意構成を行うための同意管理ツールにアクセスします。</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="#datalayer"><code>dataLayer</code></a></td>
@@ -470,17 +470,17 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="consentmanager"><code>consentManager</code></h3>
-<p>現在の同意ステータスとカテゴリを設定し、現在のポリシーを確認することができます。詳細は<a href="/platforms/android-kotlin/consent-management/">同意管理</a>ガイドを参照してください。</p>
+<p>現在の同意ステータスとカテゴリを構成し、現在のポリシーを確認することができます。詳細は<a href="/platforms/android-kotlin/consent-management/">同意管理</a>ガイドを参照してください。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentStatus</span> <span style="color:#f92672">=</span> ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span>
 </span></span></code></pre></div><h3 id="datalayer"><code>dataLayer</code></h3>
-<p>キーと値のペアの永続的なストレージを提供し、有効期限を設定することもできます。各エントリは、<a href="#track"><code>track()</code></a>メソッドを介して送信されるすべてのディスパッチに追加されます。詳細は<a href="/platforms/android-kotlin/data-layer/">データ管理</a>ガイドを参照してください。</p>
+<p>キーと値のペアの永続的なストレージを提供し、有効期限を構成することもできます。各エントリは、<a href="#track"><code>track()</code></a>メソッドを介して送信されるすべてのディスパッチに追加されます。詳細は<a href="/platforms/android-kotlin/data-layer/">データ管理</a>ガイドを参照してください。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;key&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
 </span></span></code></pre></div><h3 id="endtracevisitorsession"><code>endTraceVisitorSession()</code></h3>
 <p>ビジターセッションをリモートで終了します。SDKセッションを終了したり、セッションIDをリセットするわけではありません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">]?.</span><span style="color:#a6e22e">endTraceVisitorSession</span><span style="color:#f92672">()</span>
 </span></span></code></pre></div><h3 id="events"><code>events</code></h3>
 <p>SDKから有用な情報を受け取るために、<code>Tealium</code>インスタンスにリスナークラスを登録します。</p>
-<p>次の例では、同意設定の変更に対するリスナーを登録しています。このリスナーには、新しい同意設定と現在のポリシーが提供されます。
+<p>次の例では、同意構成の変更に対するリスナーを登録しています。このリスナーには、新しい同意構成と現在のポリシーが提供されます。
 その他のリスナーは<code>com.tealium.core.messaging</code>で利用可能です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">events</span><span style="color:#f92672">.</span><span style="color:#a6e22e">subscribe</span><span style="color:#f92672">(</span>object<span style="color:#f92672">:</span> UserConsentPreferencesUpdatedListener <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    override fun <span style="color:#a6e22e">onUserConsentPreferencesUpdated</span><span style="color:#f92672">(</span>userConsentPreferences<span style="color:#f92672">:</span> UserConsentPreferences<span style="color:#f92672">,</span> policy<span style="color:#f92672">:</span> ConsentManagementPolicy<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
@@ -643,7 +643,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>config</code></td>
 <td style="text-align:left"><code>Tealium.Config</code></td>
-<td style="text-align:left">新しいインスタンスの設定</td>
+<td style="text-align:left">新しいインスタンスの構成</td>
 <td style="text-align:left"><code>tealConfigObj</code></td>
 </tr>
 </tbody>
@@ -736,7 +736,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -903,6 +903,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -911,8 +927,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

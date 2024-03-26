@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -361,7 +361,7 @@ var utag_data = {
 <li><a href="/server-side/getting-started/intro-cdh/">Tealium Customer Data Hubアカウント</a></li>
 </ul>
 <h2 id="インストール">インストール</h2>
-<p><code>&lt;amp-analytics&gt;</code>要素は、AMPドキュメントから分析データをキャプチャする拡張AMPコンポーネントです。AMP分析は、タイプ属性<a href="https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/configure-analytics/analytics-vendors/#tealium-collect"><code>tealiumcollect</code></a>を使用してTealium Collectの組み込み設定サポートを提供します。</p>
+<p><code>&lt;amp-analytics&gt;</code>要素は、AMPドキュメントから分析データをキャプチャする拡張AMPコンポーネントです。AMP分析は、タイプ属性<a href="https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/configure-analytics/analytics-vendors/#tealium-collect"><code>tealiumcollect</code></a>を使用してTealium Collectの組み込み構成サポートを提供します。</p>
 <p>AMPサイトのTealium Collectをインストールするには：</p>
 <ol>
 <li>
@@ -423,11 +423,11 @@ var utag_data = {
 </li>
 </ol>
 <h2 id="ホストされたjson">ホストされたJSON</h2>
-<p>ページに直接埋め込むのではなく、ホストされたJSONを使用してTealium Collect for AMPをインストールすることを希望する場合は、<code>config</code>属性を使用してAMP設定をホストされた場所からロードします：</p>
+<p>ページに直接埋め込むのではなく、ホストされたJSONを使用してTealium Collect for AMPをインストールすることを希望する場合は、<code>config</code>属性を使用してAMP構成をホストされた場所からロードします：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">amp-analytics</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tealiumcollect&#34;</span> <span style="color:#a6e22e">config</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://tags.tiqcdn.com/dle/ACCOUNT/PROFILE/FILE.json&#34;</span> /&gt;
-</span></span></code></pre></div><p>AMPサイトでリモートJSON設定ファイルを提供する方法について<a href="/iq-tag-management/data-layer/hosted-data-layer/use-case-supplementing-product-data/">詳しく学ぶ</a>。</p>
+</span></span></code></pre></div><p>AMPサイトでリモートJSON構成ファイルを提供する方法について<a href="/iq-tag-management/data-layer/hosted-data-layer/use-case-supplementing-product-data/">詳しく学ぶ</a>。</p>
 <h2 id="フルページの例">フルページの例</h2>
-<p>この例は、完全なAMPページを示しています。この設定は、標準的なページビューデータをTealiumに送信し、ボタンのクリックを追跡します。</p>
+<p>この例は、完全なAMPページを示しています。この構成は、標準的なページビューデータをTealiumに送信し、ボタンのクリックを追跡します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">amp</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
@@ -519,7 +519,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -671,6 +671,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -679,8 +695,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

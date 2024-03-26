@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -356,13 +356,13 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      各ユーザーの中央クロスデバイス訪問者IDを提供します。
+      各ユーザーの中央クロスデバイス訪問IDを提供します。
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p>Adobe Visitor Serviceモジュールは、AdobeのREST APIと直接インターフェースを提供し、訪問者のExperience Cloud ID（ECID）を取得および維持します。</p>
+  <p>Adobe Visitor Serviceモジュールは、AdobeのREST APIと直接インターフェースを提供し、訪問のExperience Cloud ID（ECID）を取得および維持します。</p>
 <p><a href="/platforms/getting-started-mobile/adobe-visitor-service/">AdobeVisitorService</a>モジュールについて詳しく学びましょう。</p>
 <h2 id="要件">要件</h2>
 <ul>
@@ -373,7 +373,7 @@ var utag_data = {
 <h2 id="サンプルアプリ">サンプルアプリ</h2>
 <p>Tealiumライブラリとベストプラクティスの実装に慣れるために、iOS用の<a href="https://github.com/Tealium/tealium-swift-adobe-visitor-api/tree/main/VisitorAPIExample">AdobeVisitorServiceモジュールサンプルアプリ</a>を探索してみてください。</p>
 <h2 id="インストール">インストール</h2>
-<p>AdobeVisitorServiceモジュールは、Tealium SDKを初期化するときに設定され、リモート設定機能はありません。</p>
+<p>AdobeVisitorServiceモジュールは、Tealium SDKを初期化するときに構成され、リモート構成機能はありません。</p>
 <p>このモジュールは<code>DispatchValidator</code>として機能し、Adobe組織IDなしで呼び出しを送信するのを防ぎます。Adobe APIからECIDを取得しようとしますが、5回の失敗後、データ損失を避けるためにECIDなしで呼び出しを続けることが許可されます。データの送信は、有効なECIDを持つことよりも優先されます。</p>
 <p>ECIDが取得できない可能性のある原因は次のとおりです：</p>
 <ul>
@@ -394,7 +394,7 @@ var utag_data = {
 <ol>
 <li>Xcodeプロジェクトで、<strong>File &gt; Swift Packages &gt; Add Package Dependency</strong>を選択します。</li>
 <li>リポジトリURLを入力します：<code>https://github.com/Tealium/tealium-swift-adobe-visitor-api</code>。</li>
-<li>バージョンルールを設定します。デフォルトの<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
+<li>バージョンルールを構成します。デフォルトの<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
 <li>インストールするモジュールのリストから<code>TealiumAdobeVisitorAPI</code>モジュールを選択します。Xcodeプロジェクトの各アプリターゲットにモジュールを追加します。<strong>Frameworks &gt; Libraries &amp; Embedded Content</strong>。</li>
 </ol>
 <p>iOSの<a href="https://docs.tealium.com/platforms/ios-swift/install/#swift-package-manager-recommended">Swift Package Manager</a>インストールについて詳しく学びましょう。</p>
@@ -472,7 +472,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -625,6 +625,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -633,8 +649,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

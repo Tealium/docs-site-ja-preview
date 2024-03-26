@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -384,7 +384,7 @@ var utag_data = {
 <ol>
 <li>Xcodeプロジェクトで、<strong>File &gt; Swift Packages &gt; Add Package Dependency</strong>を選択します。</li>
 <li>リポジトリURLを入力します：<code>https://github.com/tealium/tealium-swift</code>。</li>
-<li>バージョンルールを設定します。デフォルトの<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
+<li>バージョンルールを構成します。デフォルトの<code>&quot;Up to next major&quot;</code>が推奨されます。現在のTealium Swiftライブラリバージョンがリストに表示されない場合は、Swiftパッケージキャッシュをリセットします。</li>
 <li>インストールするモジュールのリストから<code>InAppPurchase</code>モジュールを選択します。Xcodeプロジェクトの各アプリターゲットの<strong>Frameworks &gt; Libraries &amp; Embedded Content</strong>にモジュールを追加します。</li>
 </ol>
 <p>iOSの<a href="https://docs.tealium.com/platforms/ios-swift/install/#swift-package-manager-recommended">Swift Package Manager</a>インストールについて詳しく学びましょう。</p>
@@ -395,7 +395,7 @@ var utag_data = {
 <h3 id="carthage">Carthage</h3>
 <p>Carthageを使用してアプリ内購入モジュールをインストールするには、以下の手順を実行します：</p>
 <ol>
-<li>Xcodeでターゲットアプリの<strong>General</strong>設定ペインに移動します。</li>
+<li>Xcodeでターゲットアプリの<strong>General</strong>構成ペインに移動します。</li>
 <li>次のフレームワークを<strong>Embedded Binaries</strong>セクションに追加します：
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>TealiumInAppPurchase.xcframework
 </span></span></code></pre></div></li>
@@ -404,7 +404,7 @@ var utag_data = {
 </span></span></code></pre></div></li>
 </ol>
 <p>iOSの<a href="https://docs.tealium.com/platforms/ios-swift/install/#carthage">Carthage</a>インストールについて詳しく学びましょう。</p>
-<h2 id="設定">設定</h2>
+<h2 id="構成">構成</h2>
 <p>アプリ内購入モジュールをインスタンス化するには、SDKを初期化する際に<code>TealiumConfig</code>オブジェクトで指定する必要があります：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumCore</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumInAppPurchase</span>
@@ -450,7 +450,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left"><code>autotracked</code></td>
-<td style="text-align:left">イベントが自動的に追跡されたことを示すために<code>true</code>に設定します。</td>
+<td style="text-align:left">イベントが自動的に追跡されたことを示すために<code>true</code>に構成します。</td>
 <td style="text-align:left">true</td>
 </tr>
 <tr>
@@ -520,7 +520,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -539,7 +539,7 @@ var utag_data = {
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#swift-package-manager-">Swift Package Manager (推奨)</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#cocoapods">CocoaPods</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#carthage">Carthage</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">設定</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データレイヤー</a></li>
               </nav>
   </aside></nav>
@@ -674,6 +674,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -682,8 +698,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

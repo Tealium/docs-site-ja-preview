@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -367,8 +367,8 @@ var utag_data = {
 <p><img src="/images/platforms/javascript/debugging-console-utag-link.png" alt="デバッグ時のコンソール -utag.link" title="Debug Console utag.link"></p>
 <p><code>trigger:view</code>または<code>trigger:link</code>の下の行をクリックして、イベントデータオブジェクトを展開したり折りたたんだりします。</p>
 <h2 id="ブレークポイント">ブレークポイント</h2>
-<p>より詳細なデバッグでは、トラッキングコールが行われるときにコードを中断するよう<code>utag.js</code>にブレークポイントを設定すると役立ちます。こうすると、渡されるデータを検討できるほか、スタックトレースを調べてそのコールの起点を確認することができます。 </p>
-<p>Chromeのデベロッパーツールを使用してブレークポイントを設定するには：</p>
+<p>より詳細なデバッグでは、トラッキングコールが行われるときにコードを中断するよう<code>utag.js</code>にブレークポイントを構成すると役立ちます。こうすると、渡されるデータを検討できるほか、スタックトレースを調べてそのコールの起点を確認することができます。 </p>
+<p>Chromeのデベロッパーツールを使用してブレークポイントを構成するには：</p>
 <ol>
 <li>
 <p>Chromeのデベロッパーツールで、[Sources]に移動して、<code>utag.js</code>を開きます。</p>
@@ -377,7 +377,7 @@ var utag_data = {
 <p>ウィンドウの左下にある波括弧をクリックして、コードを読みやすく展開します（pretty print）。</p>
 </li>
 <li>
-<p><code>return this.track(</code>を含む行を見つけ、行番号をクリックしてブレークポイントを設定します。
+<p><code>return this.track(</code>を含む行を見つけ、行番号をクリックしてブレークポイントを構成します。
 <img src="/images/platforms/javascript/debugging-utag-code.png" alt="utagのブレークポイント" title="utag breakpoint"></p>
 </li>
 <li>
@@ -390,14 +390,14 @@ var utag_data = {
 <p>パラメータ<code>a</code>に含まれるオブジェクトを展開して、トラッキングコールに渡されたデータを表示します。これが、拡張機能、タグ配信ルール、マッピングで処理する必要のあるデータです。 </p>
 </li>
 </ol>
-<p>Chromeのデベロッパーツールでのブレークポイントの設定の詳細については、<a href="https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints">こちら</a>を参照してください。</p>
+<p>Chromeのデベロッパーツールでのブレークポイントの構成の詳細については、<a href="https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints">こちら</a>を参照してください。</p>
 <p class="tip"><i class="fa fa-info-circle"></i>この方法のメリットの1つとして、デベロッパーツールの[Sources]タブでレポートされる[Call Stack]を使用してトラッキングコールの起点を調査できる点があります。</p>
 <p><code>utag.link()</code>のコールの位置を探す例を次に示します。</p>
 <p><img src="/images/platforms/javascript/utag-link-call-stack.png" alt="utag-link-call-stack.png" title="utag-link-call-stack.png"></p>
-<p>上の画像は、<code>utag.link()</code>のコールを捉えるために<code>utag.js</code>に設定されたブレークポイントです。（2）をクリックすると、ソースコード内で行われた<code>utag.link()</code>のコールが（左に）表示されます。 </p>
+<p>上の画像は、<code>utag.link()</code>のコールを捉えるために<code>utag.js</code>に構成されたブレークポイントです。（2）をクリックすると、ソースコード内で行われた<code>utag.link()</code>のコールが（左に）表示されます。 </p>
 <p>これで次の3つの点をデバッグできるようになりました。</p>
 <ul>
-<li>ブレークポイントにヒットしたかどうか。ヒットした場合は、その関数が正しくトリガーされるように設定されています。</li>
+<li>ブレークポイントにヒットしたかどうか。ヒットした場合は、その関数が正しくトリガーされるように構成されています。</li>
 <li>ブレークポイントにヒットした後は、<code>utag.view()</code>または<code>utag.link()</code>が呼び出された際に送信されたデータを確認できるようになりました。 </li>
 <li><code>utag.view()</code>または<code>utag.link()</code>のコールの実際の構成を確認できるようになりました。 </li>
 </ul>
@@ -430,15 +430,15 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>utag.loader.INIT: waiting 1</code></td>
-<td>タグがDOM対応になるのを待っています</td>
+<td>タグがDOM Readyになるのを待っています</td>
 </tr>
 <tr>
 <td><code>READY</code></td>
-<td>ライブラリはDOM対応になる準備ができています</td>
+<td>ライブラリはDOM Readyになる準備ができています</td>
 </tr>
 <tr>
 <td><code>WQ</code></td>
-<td>待機するよう設定されているタグの数を示します（たとえば、<code>&quot;services-dang/tiq-as&quot;</code>プロファイルで4つのタグが有効になっていて、4つすべてが待機に設定されています）</td>
+<td>待機するよう構成されているタグの数を示します（たとえば、<code>&quot;services-dang/tiq-as&quot;</code>プロファイルで4つのタグが有効になっていて、4つすべてが待機に構成されています）</td>
 </tr>
 <tr>
 <td><code>Attach to head</code></td>
@@ -446,7 +446,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>utag.loader.WAIT</code></td>
-<td>指定されたタグがブラウザに読み込まれますが、タグをトリガーするためにDOM対応になるまで待機します</td>
+<td>指定されたタグがブラウザに読み込まれますが、タグをトリガーするためにDOM Readyになるまで待機します</td>
 </tr>
 <tr>
 <td><code>utag.loader.LOAD</code></td>
@@ -458,7 +458,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><code>SETFORCE:WAIT</code></td>
-<td>DOM対応のためタグはまもなくトリガーされます</td>
+<td>DOM Readyのためタグはまもなくトリガーされます</td>
 </tr>
 <tr>
 <td><code>trigger:view</code></td>
@@ -676,6 +676,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -684,8 +700,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

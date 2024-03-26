@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -153,7 +153,7 @@ var utag_data = {
 <ul>
 <li><a href="/administration/permission-groups/">権限グループ</a>は、プロファイル、製品機能、および公開権限へのアクセスを許可します。ユーザーを複数の権限グループに追加して、複数のプロファイルとそれらのプロファイルへの権限レベルへのアクセスを提供します。</li>
 <li><a href="/administration/admin-roles/">管理者ロール</a>は、ユーザーや権限グループの管理など、チームの信頼できるメンバーに特化したまたは非常に機密性の高い責任を委任します。</li>
-<li>ユーザーレベルの権限は、<a href="/iq-tag-management/administration/security/mfa/">マルチファクター認証（MFA）</a>トークン、<a href="/iq-tag-management/administration/security/api-keys/">APIキー</a>、および個人を特定可能な情報（PII）のアクセスレベルを設定します。</li>
+<li>ユーザーレベルの権限は、<a href="/iq-tag-management/administration/security/mfa/">マルチファクター認証（MFA）</a>トークン、<a href="/iq-tag-management/administration/security/api-keys/">APIキー</a>、および個人を特定可能な情報（PII）のアクセスレベルを構成します。</li>
 </ul>
 <h3 id="ダイナミックなユーザーインターフェース">ダイナミックなユーザーインターフェース</h3>
 <p>統合プラットフォーム権限システムでは、ユーザーの権限に基づいてプラットフォームのインターフェースが変わります：</p>
@@ -184,8 +184,8 @@ var utag_data = {
 <li><strong>新規ユーザーメール</strong>ボックスに、最大25のメールアドレスを入力します。これらはカンマ、タブ、セミコロンで区切るか、カンマ区切りの値（CSV）ファイルの内容を貼り付けることができます。</li>
 <li><strong>招待を送信</strong>をクリックします。<strong>権限を管理</strong>画面が表示され、新規ユーザーメールアドレスが<strong>登録待ち</strong>の注記とともにテーブルに表示されます。</li>
 </ol>
-<p>Tealiumは、まだTealiumプラットフォームへのアクセスを持っていない新規ユーザーにメール招待を送ります。これらの新規ユーザーは、招待を受け入れてパスワードを設定する必要があります。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>ユーザーを追加すると、そのユーザーはアカウントのプロファイルにアクセスできません。ユーザーを追加した後、そのユーザーを[編集]（＃ユーザーの編集）して、プロファイルへのアクセスを提供する権限グループに追加し、アカウントの側面を管理する必要がある場合は管理者ロールを付与し、MFA、APIキー、およびPIIアクセスのユーザーレベルの権限を設定する必要があります。</p>
+<p>Tealiumは、まだTealiumプラットフォームへのアクセスを持っていない新規ユーザーにメール招待を送ります。これらの新規ユーザーは、招待を受け入れてパスワードを構成する必要があります。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>ユーザーを追加すると、そのユーザーはアカウントのプロファイルにアクセスできません。ユーザーを追加した後、そのユーザーを[編集]（＃ユーザーの編集）して、プロファイルへのアクセスを提供する権限グループに追加し、アカウントの側面を管理する必要がある場合は管理者ロールを付与し、MFA、APIキー、およびPIIアクセスのユーザーレベルの権限を構成する必要があります。</p>
 <p>ユーザーへの招待を取り消すには：</p>
 <ol>
 <li><strong>ユーザー</strong>タブで、ユーザーのその他のアクションボタンを選択します。</li>
@@ -200,7 +200,7 @@ var utag_data = {
 <li><strong>グループ</strong>：ユーザーの権限グループ。</li>
 </ul>
 <h3 id="piiアクセスレベル">PIIアクセスレベル</h3>
-<p>ユーザーは次のいずれかのPIIアクセスレベルに設定できます：</p>
+<p>ユーザーは次のいずれかのPIIアクセスレベルに構成できます：</p>
 <ul>
 <li><strong>No PII</strong>：ユーザーはインターフェース全体でマスクされたPIIデータを表示します。ユーザーはPIIデータを含むフィールドを編集または管理できません。</li>
 <li><strong>View</strong>：ユーザーはPIIデータを表示できますが、PIIデータを含むフィールドを編集または管理することはできません。</li>
@@ -235,7 +235,7 @@ var utag_data = {
 <li>詳細については、<a href="/administration/permission-groups/">権限グループ</a>をご覧ください。</li>
 </ul>
 </li>
-<li><strong>保存</strong>をクリックします。<strong>権限を管理</strong>画面が表示されます。</li>
+<li><strong>ストレージ</strong>をクリックします。<strong>権限を管理</strong>画面が表示されます。</li>
 </ol>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>管理者ロールを持たず、権限グループに所属していないユーザーは、どのプロファイルにもアクセスできません。</p>
 <h2 id="バルクアクションユーザー管理">バルクアクションユーザー管理</h2>
@@ -248,7 +248,7 @@ var utag_data = {
 <li><strong>バルクアクション</strong>をクリックします。
 <ul>
 <li>複数のユーザーの管理者ロールを編集するには、<strong>管理者ロールを割り当てる</strong>をクリックし、ユーザーに割り当てるロールを選択します。</li>
-<li>複数のユーザーの権限グループを編集するには、<strong>グループに追加</strong>をクリックし、ユーザーを追加するグループを選択し、<strong>保存</strong>をクリックします。</li>
+<li>複数のユーザーの権限グループを編集するには、<strong>グループに追加</strong>をクリックし、ユーザーを追加するグループを選択し、<strong>ストレージ</strong>をクリックします。</li>
 <li>複数のユーザーのPIIアクセスを編集するには、<strong>PII権限</strong>をクリックし、ユーザーに割り当てるPII権限を選択します。</li>
 </ul>
 </li>
@@ -309,7 +309,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月12日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -467,6 +467,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -475,8 +491,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -440,21 +440,21 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>mInstance <span style="color:#f92672">=</span> TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstance</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">);</span>
 </span></span></code></pre></div><h2 id="位置追跡">位置追跡</h2>
-<p>Location モジュールは、有効化され、 <a href="#location-permissions">位置情報へのアクセス許可</a> を付与されると、継続的な位置追跡を自動的に実行します。位置情報の更新は、精度と時間間隔という2つの設定に基づいています。</p>
-<p>精度は高または低に設定できます。高精度はAndroid設定の<code>PRIORITY_HIGH_ACCURACY</code>に対応し、低精度はAndroid設定の<code>PRIORITY_BALANCED_POWER_ACCURACY</code>に対応します。</p>
-<p>Android位置情報の精度設定の詳細については、<a href="https://developer.android.com/guide/topics/location/battery#accuracy">こちら</a>を参照してください。</p>
-<p>位置情報の更新間隔は、ミリ秒単位の値で設定されます。アプリにとって好適な範囲内で可能な限り高い値を使用してください。間隔の値は、Androidの<code>setInterval()</code>および<code>setFastestInterval()</code>メソッドに渡されます。</p>
-<p>Android位置情報の間隔設定の詳細については、<a href="https://developer.android.com/guide/topics/location/battery#frequency">こちら</a>を参照してください。</p>
-<p>位置追跡を開始するには、 <a href="/platforms/android-java/api/tealium-location/#startlocationupdates"><code>TealiumLocation.startLocationUpdates()</code></a>を呼び出します。最初のパラメータを高精度のトラッキングの場合は<code>true</code>、精度を下げたトラッキングの場合は<code>false</code>に設定します。</p>
+<p>Location モジュールは、有効化され、 <a href="#location-permissions">位置情報へのアクセス許可</a> を付与されると、継続的な位置追跡を自動的に実行します。位置情報の更新は、精度と時間間隔という2つの構成に基づいています。</p>
+<p>精度は高または低に構成できます。高精度はAndroid構成の<code>PRIORITY_HIGH_ACCURACY</code>に対応し、低精度はAndroid構成の<code>PRIORITY_BALANCED_POWER_ACCURACY</code>に対応します。</p>
+<p>Android位置情報の精度構成の詳細については、<a href="https://developer.android.com/guide/topics/location/battery#accuracy">こちら</a>を参照してください。</p>
+<p>位置情報の更新間隔は、ミリ秒単位の値で構成されます。アプリにとって好適な範囲内で可能な限り高い値を使用してください。間隔の値は、Androidの<code>setInterval()</code>および<code>setFastestInterval()</code>メソッドに渡されます。</p>
+<p>Android位置情報の間隔構成の詳細については、<a href="https://developer.android.com/guide/topics/location/battery#frequency">こちら</a>を参照してください。</p>
+<p>位置追跡を開始するには、 <a href="/platforms/android-java/api/tealium-location/#startlocationupdates"><code>TealiumLocation.startLocationUpdates()</code></a>を呼び出します。最初のパラメータを高精度のトラッキングの場合は<code>true</code>、精度を下げたトラッキングの場合は<code>false</code>に構成します。</p>
 <p>次の例では、高精度と60000ミリ秒（60秒）の時間間隔を使用します。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startLocationUpdates</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> 60000<span style="color:#f92672">);</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startLocationUpdates</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">60000</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><p>継続的な位置追跡を無効にするには、 <code>TealiumLocation.destroyInstance()</code> または <a href="/platforms/android-java/api/tealium-location/#stoplocationupdates"><code>TealiumLocation.stopLocationUpdates()</code></a>メソッドを呼び出します。</p>
 <h3 id="位置情報へのアクセス許可">位置情報へのアクセス許可</h3>
 <p>アプリで、位置情報へのアクセス許可を付与するには:</p>
 <ol>
-<li>位置情報リクエスト コードの定数変数を設定するには:</li>
+<li>位置情報リクエスト コードの定数変数を構成するには:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> LOCATION_REQUEST_CODE <span style="color:#f92672">=</span> 101<span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> LOCATION_REQUEST_CODE <span style="color:#f92672">=</span> <span style="color:#ae81ff">101</span><span style="color:#f92672">;</span>
 </span></span></code></pre></div><ol start="2">
 <li>アプリの <code>MainActivity</code> クラスに次のメソッドを追加します:　</li>
 </ol>
@@ -487,7 +487,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        String message<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>requestCode <span style="color:#f92672">==</span> LOCATION_REQUEST_CODE<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#75715e">// If request is cancelled, the result arrays are empty.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span>grantResults<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>grantResults<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span>grantResults<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>grantResults<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span>              <span style="color:#f92672">==</span> PackageManager<span style="color:#f92672">.</span><span style="color:#a6e22e">PERMISSION_GRANTED</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>                message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Location Permission Granted&#34;</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
@@ -512,12 +512,12 @@ var utag_data = {
 <ul>
 <li><strong>ホスト型URL</strong>
 メソッド <a href="/platforms/android-java/api/tealium-location/#setupinstancewithurl"><code>TealiumLocation.setupInstanceWithUrl()</code></a>への URL として指定されている独自のホスト型ジオフェンス ファイルを使用します。
-このオプションは、公開設定URLをオーバーライドした場合、または<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/About-Hosted-Data-Layer/ta-p/17572">ホスト型データレイヤー</a>を使用する必要がある場合に推奨されます。</li>
+このオプションは、公開構成URLをオーバーライドした場合、または<a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/About-Hosted-Data-Layer/ta-p/17572">ホスト型データレイヤー</a>を使用する必要がある場合に推奨されます。</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithUrl</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;https://example.com/geofences.json&#34;</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><ul>
 <li><strong>ローカルファイル</strong>
-アプリの Assets ディレクトリに保存されているジオフェンス ファイルを <a href="/platforms/android-java/api/tealium-location/#setupinstancewithfile"><code>TealiumLocation.setupInstanceWithFile()</code></a>で使用します。</li>
+アプリの Assets ディレクトリにストレージされているジオフェンス ファイルを <a href="/platforms/android-java/api/tealium-location/#setupinstancewithfile"><code>TealiumLocation.setupInstanceWithFile()</code></a>で使用します。</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithFile</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;geofences.json&#34;</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><h2 id="追加の検討事項">追加の検討事項</h2>
@@ -530,9 +530,9 @@ var utag_data = {
 <p><strong>遅延：</strong>
 ジオフェンシング機能を使用するときは、次の点を考慮してください。</p>
 <ul>
-<li>ジオフェンスサービスは位置情報を継続的に照会しないため、アラートを受信する際に遅延が生じることが予想されます。遅延は通常2分未満ですが、バックグラウンドの位置情報制限が設定されている場合、またはデバイスが一定の期間静止していた場合は、遅延が増加します。</li>
-<li>ジオフェンスサービスは、ネットワーク位置情報プロバイダーとデータ接続に依存しています。ジオフェンス内に信頼できるネットワーク接続がない場合は、アラートがトリガーされない可能性があります。</li>
-<li>Wi-Fiがデバイスでオフになっている場合、ジオフェンスの半径、デバイスモデル、Androidのバージョンなどの設定によっては、アプリケーションがジオフェンスアラートを受信しないことがあります。Android 4.3以降では、「Wi-Fiスキャンのみモード」機能が提供され、ユーザーはWi-Fiを無効にしても、信頼性の高いネットワーク位置情報を受信できるようになっています。この設定を有効にするようユーザーに促すことをお勧めします。</li>
+<li>ジオフェンスサービスは位置情報を継続的に照会しないため、アラートを受信する際に遅延が生じることが予想されます。遅延は通常2分未満ですが、バックグラウンドの位置情報制限が構成されている場合、またはデバイスが一定の期間静止していた場合は、遅延が増加します。</li>
+<li>ジオフェンスサービスは、ネットワーク位置情報プロバイダーとデータコネクトに依存しています。ジオフェンス内に信頼できるネットワーク接続がない場合は、アラートがトリガーされない可能性があります。</li>
+<li>Wi-Fiがデバイスでオフになっている場合、ジオフェンスの半径、デバイスモデル、Androidのバージョンなどの構成によっては、アプリケーションがジオフェンスアラートを受信しないことがあります。Android 4.3以降では、「Wi-Fiスキャンのみモード」機能が提供され、ユーザーはWi-Fiを無効にしても、信頼性の高いネットワーク位置情報を受信できるようになっています。この構成を有効にするようユーザーに促すことをお勧めします。</li>
 </ul>
 <p><strong>アクティブなジオフェンスの数</strong>
 ジオフェンスは、可能な限り少ないリソースを使用して動的に追加および削除されます。定義できるジオフェンスの数に制限はありませんが、アクティブなジオフェンスの数は、実行中の_全_アプリケーションにわたって、デバイスユーザーあたり100個までに制限されています。</p>
@@ -563,12 +563,12 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>location_accuracy</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">Locationモジュールの精度設定（<code>&quot;high&quot;</code>、<code>&quot;low&quot;</code>など）</td>
+<td style="text-align:left">Locationモジュールの精度構成（<code>&quot;high&quot;</code>、<code>&quot;low&quot;</code>など）</td>
 <td style="text-align:left"><code>&quot;high&quot;</code></td>
 </tr>
 </tbody>
 </table>
-<p>ジオフェンシング中にユーザーの遷移状態が変化すると、位置データを含むトラッキングコールが送信されます。遷移状態の変化には、指定された期間にユーザーがジオフェンス内に進入、退出、滞留することなどが含まれます。Androidメソッド<a href="https://developers.google.com/android/reference/com/google/android/gms/location/Geofence.Builder#setLoiteringDelay(int)">setLoiteringDelay()</a>を使用して、滞留アラート送信の基準とする徘徊期間を設定する必要があります。</p>
+<p>ジオフェンシング中にユーザーの遷移状態が変化すると、位置データを含むトラッキングコールが送信されます。遷移状態の変化には、指定された期間にユーザーがジオフェンス内に進入、退出、滞留することなどが含まれます。Androidメソッド<a href="https://developers.google.com/android/reference/com/google/android/gms/location/Geofence.Builder#setLoiteringDelay(int)">setLoiteringDelay()</a>を使用して、滞留アラート送信の基準とする徘徊期間を構成する必要があります。</p>
 <p>以下の変数がデータレイヤーに送信されます。</p>
 <table>
 <thead>
@@ -823,6 +823,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -831,8 +847,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

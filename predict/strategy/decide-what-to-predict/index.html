@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -179,7 +179,7 @@ var utag_data = {
 
   
   
-  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">MLを予測する</a>&nbsp;>&nbsp;</li>
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/predict/">Predict ML</a>&nbsp;>&nbsp;</li>
   
 
   
@@ -209,10 +209,10 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <p>モデルを定義する際、Tealium AudienceStream CDPプロファイルの各属性が自動的にレビューされ、予測したいアクションに対する予測関係を持つトップの属性が決定されます。</p>
 <h2 id="ターゲット属性">ターゲット属性</h2>
-<p>ターゲット属性は、Tealium Predictモデルで予測したい訪問者の行動を表すAudienceStream属性です。例えば、ブール型の訪問属性「Has Purchased」では、<strong>true</strong>の値は訪問中に購入イベントが発生したことを示し、<strong>false</strong>の値は訪問中に購入イベントが発生しなかったことを意味します。</p>
-<p>ターゲット属性は、ブール型/フラグまたはバッジタイプの属性であり、訪問または訪問者のスコープでなければなりません。</p>
-<p>訪問スコープのブール属性をターゲットとして使用することをお勧めします。訪問の開始時にこの属性を<strong>false</strong>に設定し、訪問中にターゲットイベント（例えば、購入イベント）が発生したときに<strong>true</strong>に設定します。</p>
-<p>また、既にそのような属性を持っていない場合、上記で述べたターゲットブール属性を設定する同じルールで1つ増やした訪問者数属性を追加することをお勧めします。</p>
+<p>ターゲット属性は、Tealium Predictモデルで予測したい訪問の行動を表すAudienceStream属性です。例えば、ブール型の訪問属性「Has Purchased」では、<strong>true</strong>の値は訪問中に購入イベントが発生したことを示し、<strong>false</strong>の値は訪問中に購入イベントが発生しなかったことを意味します。</p>
+<p>ターゲット属性は、ブール型/フラグまたはバッジタイプの属性であり、訪問または訪問のスコープでなければなりません。</p>
+<p>訪問スコープのブール属性をターゲットとして使用することをお勧めします。訪問の開始時にこの属性を<strong>false</strong>に構成し、訪問中にターゲットイベント（例えば、購入イベント）が発生したときに<strong>true</strong>に構成します。</p>
+<p>また、既にそのような属性を持っていない場合、上記で述べたターゲットブール属性を構成する同じルールで1つ増やした訪問数属性を追加することをお勧めします。</p>
 <h2 id="除外属性">除外属性</h2>
 <p>モデルに関連性のない属性を除外することができます。どの属性タイプを除外するかを決定する際には、まず属性を除外せずにモデルを初期の洞察のために訓練することをお勧めします。</p>
 <p>除外属性を含まずに訓練することで、モデルが最も関連性が高いと判断した属性についての洞察を得ることができ、将来のモデル訓練を助けるために新しいAudienceStream属性を導入することを検討するきっかけになります。</p>
@@ -268,7 +268,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -418,6 +418,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -426,8 +442,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

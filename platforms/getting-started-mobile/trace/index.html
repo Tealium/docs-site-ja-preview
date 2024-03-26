@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -356,7 +356,7 @@ var utag_data = {
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p><a href="/server-side/connectors/trace/Manage/">Trace</a>は、Tealium EventStreamおよびTealium AudienceStream設定のテストと検査ツールです。トレースを使用して、訪問者のワークフローをキャプチャし、イベントと顧客データがリアルタイムでどのように処理されるかを観察します。</p>
+  <p><a href="/server-side/connectors/trace/Manage/">Trace</a>は、Tealium EventStreamおよびTealium AudienceStream構成のテストと検査ツールです。トレースを使用して、訪問のワークフローをキャプチャし、イベントと顧客データがリアルタイムでどのように処理されるかを観察します。</p>
 <h2 id="モバイルトレースツール">モバイルトレースツール</h2>
 <h3 id="サポートされているプラットフォーム">サポートされているプラットフォーム</h3>
 <p>以下のプラットフォームがモバイルトレースツールをサポートしています：</p>
@@ -380,7 +380,7 @@ var utag_data = {
 <p><strong>URLで追加</strong>テキストフィールドに、URL：<a href="https://solutions.tealium.net/hosted/tealiumTools/mobile-trace/tool.json">https://solutions.tealium.net/hosted/tealiumTools/mobile-trace/tool.json</a>を入力します。</p>
 <p>インストールが完了したら、Tealium Tools拡張機能からモバイルトレースツールのアイコンを起動します。</p>
 <h3 id="urlスキーム">URLスキーム</h3>
-<p>モバイルトレースツールを使用するには、モバイルアプリがどのURLを処理するかを決定し、URLスキームを設定します。</p>
+<p>モバイルトレースツールを使用するには、モバイルアプリがどのURLを処理するかを決定し、URLスキームを構成します。</p>
 <p>QRコードトレース機能は、URLからアプリを起動し、特定のクエリパラメータをリッスンします。URLから直接アプリを起動するためには、アプリが特定のドメインを処理するように自身を登録している必要があります。</p>
 <p>通常、ほとんどのアプリはすでに特定のURLを処理しています。たとえば、ウェブサイトのドメインが<a href="https://mycompany.com">https://mycompany.com</a>である場合、アプリはこのドメインのハンドラとして自身を登録し、アプリがユーザーのデバイスにインストールされている場合、ユーザーはブラウザ内ではなくアプリでリンクを起動するように求められます。</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>一部のアプリは、<code>http</code>または<code>https</code>の代わりにカスタムURLスキームを登録します。例えば<code>mycompanyapp://</code>。これらもモバイルトレースツールで動作します。</p>
@@ -389,7 +389,7 @@ var utag_data = {
     </a><figcaption><p>トレースツール</p>
         </figcaption>
 </figure>
-<p>各URLスキームの隣にある<strong>保存</strong>をクリックして、設定をブラウザの<code>localStorage</code>に保存します。青い鉛筆アイコンをクリックして、必要に応じてURLスキームを編集します。</p>
+<p>各URLスキームの隣にある<strong>ストレージ</strong>をクリックして、構成をブラウザの<code>localStorage</code>にストレージします。青い鉛筆アイコンをクリックして、必要に応じてURLスキームを編集します。</p>
 <h3 id="トレースの開始">トレースの開始</h3>
 <p>トレースを開始する前に、サーバーサイドのTealium Customer Data Hubにいることを確認します。モバイルトレースツールで<strong>トレースを開始</strong>をクリックして新しいトレースを開始し、モバイルトレースQRコードをトレースウィンドウに追加します。</p>
 <figure><a class="slb" href="/images/platforms/getting-started-mobile/trace-tool-start.png"><img src="/images/platforms/getting-started-mobile/trace-tool-start.png" width="350" height="400"/>
@@ -411,8 +411,8 @@ var utag_data = {
 <li>デバイスがトレースセッションに参加しないように、デバイス用のリンクをクリックします。</li>
 </ol>
 <h3 id="訪問の終了audiencestream">訪問の終了（AudienceStream）</h3>
-<p>Tealium AudienceStreamで「訪問の終了」アクションをテストするには、訪問者のセッションを即座に終了する信号が必要です。それ以外の場合は、セッションが通常通りに期限切れになるのを待つ必要があります。</p>
-<p>モバイルトレースツールでは、<strong>訪問者セッションの終了</strong>チェックボックスを選択することで、セッションを即座に終了します。これにより、QRコードにパラメータが追加され、SDKが<code>kill_visitor_session</code>イベントを送信します。</p>
+<p>Tealium AudienceStreamで「訪問の終了」アクションをテストするには、訪問のセッションを即座に終了する信号が必要です。それ以外の場合は、セッションが通常通りに期限切れになるのを待つ必要があります。</p>
+<p>モバイルトレースツールでは、<strong>訪問セッションの終了</strong>チェックボックスを選択することで、セッションを即座に終了します。これにより、QRコードにパラメータが追加され、SDKが<code>kill_visitor_session</code>イベントを送信します。</p>
 <figure><a class="slb" href="/images/platforms/getting-started-mobile/trace-end-visit.png"><img src="/images/platforms/getting-started-mobile/trace-end-visit.png" width="775" height="400"/>
     </a><figcaption><p>訪問の終了トレース</p>
         </figcaption>
@@ -426,7 +426,7 @@ var utag_data = {
 </ul>
 <h3 id="セットアップ">セットアップ</h3>
 <p>Charlesをコンピュータ上でプロキシとして使用し、ネットワークトラフィックを<code>teal</code>でフィルタリングします。リクエストを右クリックし、<strong>URLをコピー</strong>を選択します。</p>
-<p>Charlesメニューから<strong>ツール &gt; 書き換え</strong>を選択して、<strong>書き換え設定</strong>ダイアログを開きます。</p>
+<p>Charlesメニューから<strong>ツール &gt; 書き換え</strong>を選択して、<strong>書き換え構成</strong>ダイアログを開きます。</p>
 <p>場所を追加するには：</p>
 <ol>
 <li>
@@ -436,7 +436,7 @@ var utag_data = {
 <p><strong>名前</strong>フィールドに<code>トレースIDを追加</code>と入力し、場所を追加するために<strong>追加</strong>をクリックします。</p>
 </li>
 <li>
-<p>場所フィールドを入力し、<strong>ホスト</strong>フィールドをCollectタグURLに設定します。</p>
+<p>場所フィールドを入力し、<strong>ホスト</strong>フィールドをCollectタグURLに構成します。</p>
    <p class="tip"><i class="fa fa-info-circle"></i><strong>場所の編集</strong>ダイアログボックスの外をクリックすると、Charlesが自動的に追加のURLコンポーネントを決定します。</p>
 </li>
 <li>
@@ -445,10 +445,10 @@ var utag_data = {
 </ol>
 <p>アクションを追加するには：</p>
 <ol>
-<li>アクションリストの下の<strong>追加</strong>ボタンをクリックし、<strong>タイプ</strong>をドロップダウンメニューから<code>Body</code>に設定します。</li>
+<li>アクションリストの下の<strong>追加</strong>ボタンをクリックし、<strong>タイプ</strong>をドロップダウンメニューから<code>Body</code>に構成します。</li>
 <li><strong>Where</strong>セクションで、<strong>Request</strong>チェックボックスを選択します。</li>
-<li><strong>Match</strong>セクションで、<strong>Value</strong>を<code>&quot;data&quot;:{</code>に設定し、<strong>Match whole value</strong>チェックボックスを選択します。</li>
-<li><strong>Replace</strong>セクションで、<strong>Value</strong>を<code>&quot;data&quot;:{&quot;cp.trace_id&quot;:&quot;TRACE_ID&quot;,</code>に設定し、<strong>Replace first</strong>チェックボックスを選択します。</li>
+<li><strong>Match</strong>セクションで、<strong>Value</strong>を<code>&quot;data&quot;:{</code>に構成し、<strong>Match whole value</strong>チェックボックスを選択します。</li>
+<li><strong>Replace</strong>セクションで、<strong>Value</strong>を<code>&quot;data&quot;:{&quot;cp.trace_id&quot;:&quot;TRACE_ID&quot;,</code>に構成し、<strong>Replace first</strong>チェックボックスを選択します。</li>
 <li><strong>OK</strong>をクリックし、変更を<strong>適用</strong>します。</li>
 </ol>
 <p>これらの手順を完了した後、アプリケーションをブラウズし、AudienceStreamまたはEventStreamトレースセッションのリクエストを表示します。別のトレースを実行するには、Charlesを起動し、既存の書き換えルールを編集して<code>12345</code>のトレースID値を変更します。</p>
@@ -480,7 +480,7 @@ var utag_data = {
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
-  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;(</span>1<span style="color:#f92672">);</span>
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;event&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;kill_visitor_session&#34;</span><span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cp.trace_id&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;TRACE_ID&#34;</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div>
@@ -713,6 +713,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -721,8 +737,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

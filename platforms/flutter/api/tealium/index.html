@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -382,7 +382,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#deletefromdatalayer"><code>deleteFromDataLayer()</code></a></td>
-<td><code>addToDataLayer()</code>を使用して以前に設定されたデータレイヤーから単一のキーと値のペアを削除します</td>
+<td><code>addToDataLayer()</code>を使用して以前に構成されたデータレイヤーから単一のキーと値のペアを削除します</td>
 </tr>
 <tr>
 <td><a href="#gathertrackdata"><code>gatherTrackData()</code></a></td>
@@ -418,7 +418,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#removefromdatalayer"><code>removeFromDataLayer()</code></a></td>
-<td><code>addToDataLayer()</code>を使用して以前に設定された永続データのキーと値のペアを削除します</td>
+<td><code>addToDataLayer()</code>を使用して以前に構成された永続データのキーと値のペアを削除します</td>
 </tr>
 <tr>
 <td><a href="#removeremotecommand"><code>removeRemoteCommand()</code></a></td>
@@ -426,19 +426,19 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#setconsentcategories"><code>setConsentCategories()</code></a></td>
-<td>ユーザーの同意カテゴリを設定します</td>
+<td>ユーザーの同意カテゴリを構成します</td>
 </tr>
 <tr>
 <td><a href="#setconsentexpirylistener"><code>setConsentExpiryListener()</code></a></td>
-<td>同意の有効期限が切れたときに実行するコールバックを設定します</td>
+<td>同意の有効期限が切れたときに実行するコールバックを構成します</td>
 </tr>
 <tr>
 <td><a href="#setconsentstatus"><code>setConsentStatus()</code></a></td>
-<td>ユーザーの同意ステータスを設定します</td>
+<td>ユーザーの同意ステータスを構成します</td>
 </tr>
 <tr>
 <td><a href="#setvisitorservicelistener"><code>setVisitorServiceListener()</code></a></td>
-<td>ビジターサービスのリスナー/コールバックを設定します</td>
+<td>ビジターサービスのリスナー/コールバックを構成します</td>
 </tr>
 <tr>
 <td><a href="#terminateinstance"><code>terminateInstance()</code></a></td>
@@ -513,7 +513,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="deletefromdatalayer"><code>deleteFromDataLayer()</code></h3>
-<p><code>addToDataLayer()</code>を使用して以前に設定されたデータレイヤーから単一のキーと値のペアを削除します。</p>
+<p><code>addToDataLayer()</code>を使用して以前に構成されたデータレイヤーから単一のキーと値のペアを削除します。</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.deleteFromDataLayer(key);
 </code></pre><table>
 <thead>
@@ -706,7 +706,7 @@ var utag_data = {
 <p>以前に参加したトレースを終了し、ビジターセッションを終了します。このメソッドが呼び出されるまで、トレースはアプリセッションの期間中有効です。</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.leaveTrace();
 </code></pre><h3 id="removefromdatalayer"><code>removeFromDataLayer()</code></h3>
-<p><code>Tealium.setPersistentData()</code>を使用して以前に設定された永続データを削除します。</p>
+<p><code>Tealium.setPersistentData()</code>を使用して以前に構成された永続データを削除します。</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.removeFromDataLayer(keys);
 </code></pre><table>
 <thead>
@@ -750,7 +750,7 @@ var utag_data = {
 <p>例:</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.removeRemoteCommand(&#39;test_command&#39;);
 </code></pre><h3 id="setconsentcategories"><code>setConsentCategories()</code></h3>
-<p>ユーザーの同意カテゴリを設定します。カテゴリを設定するには、文字列の配列を渡します。デフォルトは空の配列で、<code>ConsentStatus</code>が<code>.consented</code>に設定されていない場合はすべてのカテゴリが設定されます。</p>
+<p>ユーザーの同意カテゴリを構成します。カテゴリを構成するには、文字列の配列を渡します。デフォルトは空の配列で、<code>ConsentStatus</code>が<code>.consented</code>に構成されていない場合はすべてのカテゴリが構成されます。</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.setConsentCategories(categories);
 </code></pre><table>
 <thead>
@@ -845,7 +845,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="setconsentexpirylistener"><code>setConsentExpiryListener()</code></h3>
-<p>ユーザーの同意設定が<code>ConsentExpiry</code>に従って期限切れになった後に実行するコールバックを設定します。</p>
+<p>ユーザーの同意構成が<code>ConsentExpiry</code>に従って期限切れになった後に実行するコールバックを構成します。</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.setConsentExpiryListener(callback);
 </code></pre><table>
 <thead>
@@ -867,7 +867,7 @@ var utag_data = {
     print(&#39;Consent Expired&#39;);
 });
 </code></pre><h3 id="setconsentstatus"><code>setConsentStatus()</code></h3>
-<p>ユーザーの同意ステータスを設定します。デフォルトは<code>.unknown</code>で、ステータスが更新されるまでです。</p>
+<p>ユーザーの同意ステータスを構成します。デフォルトは<code>.unknown</code>で、ステータスが更新されるまでです。</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.setConsentStatus(status);
 </code></pre><table>
 <thead>
@@ -912,7 +912,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="setvisitorservicelistener"><code>setVisitorServiceListener()</code></h3>
-<p>ビジタープロファイルが更新されたときに実行するコールバックを設定します。更新された<code>VisitorProfile</code>はコールバックの応答で提供されます。</p>
+<p>ビジタープロファイルが更新されたときに実行するコールバックを構成します。更新された<code>VisitorProfile</code>はコールバックの応答で提供されます。</p>
 <p>VisitorServiceモジュールは、Tealium Customer Data Hubの<a href="/server-side/attributes/data-layer-enrichment/enable/">データレイヤーエンリッチメント</a>機能を実装しています。</p>
 <p>このモジュールの使用は、Tealium AudienceStreamのライセンスを受けており、モバイルアプリケーションでユーザーエクスペリエンスを向上させるためにビジタープロファイルを使用したい場合に推奨されます。AudienceStreamのライセンスを受けていない場合、このモジュールの使用は推奨されません。</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.setVisitorServiceListener(callback);
@@ -1010,7 +1010,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1177,6 +1177,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1185,8 +1201,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

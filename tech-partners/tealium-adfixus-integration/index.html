@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -218,6 +218,22 @@ var utag_data = {
         
         
 
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+      
+      </li>
+        
+        
+
       <li class="relative w-100 fw5 f5 selected">
       
         <a href="/tech-partners/" class="db link hover-primary-color pv1 mb2 bg-secondary primary-color" data-target=".">テクノロジーパートナー</a>
@@ -228,7 +244,23 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">用語集</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">早期アクセス</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">リリースノート</a>
       
       </li></ul>
 </nav>
@@ -265,7 +297,7 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      この記事では、iQタグ管理アカウントでAdFixus統合タグを設定する方法について説明します。
+      この記事では、iQタグ管理アカウントでAdFixus統合タグを構成する方法について説明します。
     </p>
   
 </div>
@@ -295,13 +327,13 @@ var utag_data = {
 <h2 id="仕組み">仕組み</h2>
 <p>AdFixus IDをiQタグ管理プラットフォームを通じてではなく、自社のデジタルプロパティを通じて実装します。このインストール方法により、ブラウザのカバレッジが完全に確保されます。</p>
 <p>AdFixus IDを組織のiQタグ管理データレイヤーに追加し、関連するタグにマッピングしたり、Tealiumのサーバーサイドプラットフォームに送信して取り込みとプロファイルの濃縮を行うことができます。組織がiQタグ管理なしでAudienceStreamのみを使用している場合は、AdFixus IDをTealiumに渡し、適切な属性に割り当てます。</p>
-<h2 id="iqタグ管理の設定">iQタグ管理の設定</h2>
+<h2 id="iqタグ管理の構成">iQタグ管理の構成</h2>
 <p>AdFixus IDをiQタグ管理に統合するには：</p>
 <ol>
 <li>iQタグ管理インスタンスでAdFixus <a href="/iq-tag-management/data-layer/manage-variables/#add-a-variable">データレイヤー変数</a>を作成します。
 <ul>
 <li>AdFixus IDを使用するTealiumアカウントプロファイルごとにこの変数を作成します。</li>
-<li>AdFixus IDはおそらくあなたのウェブサイトのクッキーに保存されているでしょう。詳細については、<a href="https://www.adfixus.com/contact">AdFixus実装チーム</a>にお問い合わせください。<figure><a class="slb" href="/images/tech-partners/adfixus-add-variable.png"><img src="/images/tech-partners/adfixus-add-variable.png"
+<li>AdFixus IDはおそらくあなたのウェブサイトのクッキーにストレージされているでしょう。詳細については、<a href="https://www.adfixus.com/contact">AdFixus実装チーム</a>にお問い合わせください。<figure><a class="slb" href="/images/tech-partners/adfixus-add-variable.png"><img src="/images/tech-partners/adfixus-add-variable.png"
          alt="AdFixus - データレイヤー変数を追加"
          title="AdFixus - データレイヤー変数を追加"/>
     </a>
@@ -326,12 +358,12 @@ var utag_data = {
 </li>
 </ol>
 </li>
-<li>保存して公開します。</li>
+<li>ストレージして公開します。</li>
 </ol>
-<h2 id="サーバーサイドの設定">サーバーサイドの設定</h2>
+<h2 id="サーバーサイドの構成">サーバーサイドの構成</h2>
 <p>AdFixus IDをAudienceStreamとEventStreamに統合するには：</p>
 <ol>
-<li>iQタグ管理も使用している場合は、<a href="/client-side-tags/tealium-collect-tag/">Tealium Collectタグ</a>を設定します。</li>
+<li>iQタグ管理も使用している場合は、<a href="/client-side-tags/tealium-collect-tag/">Tealium Collectタグ</a>を構成します。</li>
 </ol>
 <ul>
 <li>AdFixus IDは、<a href="/server-side/attributes/about/">イベント属性</a>の下でユニバーサル変数として表示されます。</li>
@@ -355,13 +387,13 @@ var utag_data = {
 </li>
 </ol>
 </li>
-<li>AdFixus IDのために<a href="/server-side/attributes/manage-attributes/add-attribute/">訪問者属性を作成</a>します。
+<li>AdFixus IDのために<a href="/server-side/attributes/manage-attributes/add-attribute/">訪問属性を作成</a>します。
 <ol>
-<li><strong>訪問者/訪問属性</strong>に移動し、<strong>+ 属性を追加</strong>をクリックします。</li>
-<li><strong>訪問者</strong>を選択し、<strong>続行</strong>をクリックします。</li>
-<li><strong>文字列</strong>または<strong>訪問者ID</strong>を選択し、<strong>続行</strong>をクリックします。
+<li><strong>訪問/訪問属性</strong>に移動し、<strong>+ 属性を追加</strong>をクリックします。</li>
+<li><strong>訪問</strong>を選択し、<strong>続行</strong>をクリックします。</li>
+<li><strong>文字列</strong>または<strong>訪問ID</strong>を選択し、<strong>続行</strong>をクリックします。
 <ul>
-<li><strong>訪問者ID</strong>を選択すると、後でデータタイプを変更することはできません。</li>
+<li><strong>訪問ID</strong>を選択すると、後でデータタイプを変更することはできません。</li>
 </ul>
 </li>
 <li>属性名とその他の関連情報を入力します。</li>
@@ -374,7 +406,7 @@ var utag_data = {
 </figure></li>
 </ol>
 </li>
-<li>保存して公開します。</li>
+<li>ストレージして公開します。</li>
 </ol>
 <p>AdFixus IDは、AudienceStreamコネクタのマッピング可能な属性として利用可能になり、関連する統合でマッピングできます。</p>
 <h2 id="ベンダーのドキュメンテーション">ベンダーのドキュメンテーション</h2>
@@ -441,7 +473,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -457,8 +489,8 @@ var utag_data = {
       <p class="b ttu">このページで</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">前提条件</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#iq">iQタグ管理の設定</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">サーバーサイドの設定</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#iq">iQタグ管理の構成</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">サーバーサイドの構成</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ベンダーのドキュメンテーション</a></li>
               </nav>
   </aside></nav>
@@ -593,6 +625,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -601,8 +649,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

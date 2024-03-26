@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -404,7 +404,7 @@ private class AnnotatedActivityWithoutTracking : Activity()
 </li>
 </ul>
 <h3 id="フルトラッキング">フルトラッキング</h3>
-<p>フルトラッキングモードは、<code>Application.ActivityLifecycleCallbacks</code>を使用して新しいアクティビティがフォーカスに入ったときを判断し、<code>TealiumView</code>イベントをトリガーします。イベントでは、<code>tealium_event</code>はクラス名に設定されますが、名前から&quot;Activity&quot;が削除されます。</p>
+<p>フルトラッキングモードは、<code>Application.ActivityLifecycleCallbacks</code>を使用して新しいアクティビティがフォーカスに入ったときを判断し、<code>TealiumView</code>イベントをトリガーします。イベントでは、<code>tealium_event</code>はクラス名に構成されますが、名前から&quot;Activity&quot;が削除されます。</p>
 <p>画面名を上書きするための注釈を使用するか、アクティビティの追跡を防ぐために注釈を使用します。</p>
 <p><a href="https://developer.android.com/guide/components/activities/activity-lifecycle">Android Developers: The Activity Lifecycle</a>から詳細を学びましょう。</p>
 <h3 id="部分的な追跡">部分的な追跡</h3>
@@ -415,7 +415,7 @@ private class AnnotatedActivityWithoutTracking : Activity()
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;settings&#34;</span>, <span style="color:#e6db74">&#34;profile&#34;</span>
 </span></span><span style="display:flex;"><span>]
-</span></span></code></pre></div><p>ブロックリストファイルは、アプリの<code>assets</code>ディレクトリにローカルに保存するか、URLとしてリモートにホストすることができます。</p>
+</span></span></code></pre></div><p>ブロックリストファイルは、アプリの<code>assets</code>ディレクトリにローカルにストレージするか、URLとしてリモートにホストすることができます。</p>
 <p>ブロックリストを使用するためには、以下の<code>TealiumConfig</code>プロパティのいずれかを使用します：</p>
 <ul>
 <li><a href="/platforms/android-kotlin/api/tealium-config/#autotrackingblocklistfilename"><code>autoTrackingBlocklistFilename</code></a></li>
@@ -462,15 +462,15 @@ private class AnnotatedActivityWithoutTracking : Activity()
 </span></span></code></pre></div></li>
 </ol>
 <h2 id="初期化">初期化</h2>
-<p>AutoTrackingモジュールを初期化するには、<code>TealiumConfig</code>のモジュールリストに追加し、追跡モードを設定します。</p>
+<p>AutoTrackingモジュールを初期化するには、<code>TealiumConfig</code>のモジュールリストに追加し、追跡モードを構成します。</p>
 <p>AutoTrackingモジュールを初期化する例：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>              <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>              <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
 </span></span><span style="display:flex;"><span>              ENVIRONMENT,
-</span></span><span style="display:flex;"><span>              modules = mutableSetOf(Modules.AutoTracking)
+</span></span><span style="display:flex;"><span>              modules = mutableSetOf(<span style="color:#a6e22e">Modules</span>.AutoTracking)
 </span></span><span style="display:flex;"><span>              ).apply {
-</span></span><span style="display:flex;"><span>                autoTrackingMode = AutoTrackingMode.ANNOTATED
+</span></span><span style="display:flex;"><span>                autoTrackingMode = <span style="color:#a6e22e">AutoTrackingMode</span>.ANNOTATED
 </span></span><span style="display:flex;"><span>              }
 </span></span></code></pre></div><p>より多くのオプションについては、<a href="/platforms/android-kotlin/api/tealium-config/#autotrackingmode"><code>TealiumConfig.autoTrackingMode</code></a>を参照してください。</p>
 <h2 id="データレイヤー">データレイヤー</h2>
@@ -488,14 +488,14 @@ private class AnnotatedActivityWithoutTracking : Activity()
 <tr>
 <td style="text-align:left"><code>autotracked</code></td>
 <td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">Autotrackingモジュールによって追跡されたすべてのイベントに設定されます。</td>
+<td style="text-align:left">Autotrackingモジュールによって追跡されたすべてのイベントに構成されます。</td>
 <td style="text-align:left"><code>true</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="カスタムデータ">カスタムデータ</h3>
-<p>デフォルトでは、自動的に追跡されるイベントにはコンテキスト変数は含まれません。AutoTrackingモジュールからのイベントにコンテキストデータを追加するには、<code>TealiumConfig</code>で設定されたグローバルデリゲートを使用して、各追跡アクティビティのカスタムデータオブジェクトのマップを返します。これはモジュールによって追跡されるすべてのイベントで実行されます。</p>
-<p>デリゲートを設定するには：</p>
+<p>デフォルトでは、自動的に追跡されるイベントにはコンテキスト変数は含まれません。AutoTrackingモジュールからのイベントにコンテキストデータを追加するには、<code>TealiumConfig</code>で構成されたグローバルデリゲートを使用して、各追跡アクティビティのカスタムデータオブジェクトのマップを返します。これはモジュールによって追跡されるすべてのイベントで実行されます。</p>
+<p>デリゲートを構成するには：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>config.autoTrackingCollectorDelegate = <span style="color:#66d9ef">object</span>: ActivityDataCollector {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onCollectActivityData</span>(activityName: String): Map&lt;String, Any&gt;? {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">when</span> (activityName) {
@@ -575,7 +575,7 @@ private class AnnotatedActivityWithoutTracking : Activity()
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -734,6 +734,22 @@ private class AnnotatedActivityWithoutTracking : Activity()
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -742,8 +758,24 @@ private class AnnotatedActivityWithoutTracking : Activity()
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

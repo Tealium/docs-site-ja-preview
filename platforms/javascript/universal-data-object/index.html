@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -357,7 +357,7 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="ユニバーサルデータオブジェクト-udo">ユニバーサルデータオブジェクト (UDO)</h2>
-<p><a href="/platforms/getting-started-web/data-layer/an-introduction-to-the-data-layer/">データレイヤー</a>は、Tealiumソリューションの基盤であり、すべてのデジタル資産と顧客インタラクションにわたるデータの真の定義となります。データレイヤーは、サイト全体で収集されるさまざまな<a href="/iq-tag-management/data-layer/data-layer-variables/">変数</a>と、追跡される訪問者のインタラクションとイベントを含みます。</p>
+<p><a href="/platforms/getting-started-web/data-layer/an-introduction-to-the-data-layer/">データレイヤー</a>は、Tealiumソリューションの基盤であり、すべてのデジタル資産と顧客インタラクションにわたるデータの真の定義となります。データレイヤーは、サイト全体で収集されるさまざまな<a href="/iq-tag-management/data-layer/data-layer-variables/">変数</a>と、追跡される訪問のインタラクションとイベントを含みます。</p>
 <p>データレイヤーは、ページからデータを公開するJavaScriptオブジェクト <code>utag_data</code> としてウェブサイトに実装され、Tealiumタグに使用されます。このオブジェクトのプロパティは、ビジネスに合わせてカスタマイズされたプレーンでベンダーニュートラルな名前を使用します。</p>
 <p>以下は <code>utag_data</code> の宣言例です：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
@@ -367,7 +367,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;search_results&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;42&#34;</span>,
 </span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;search_keyword&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Tealium shirt&#34;</span>};
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
-</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>ユニバーサルタグ (<code>utag.js</code>) をロードする前に <code>utag_data</code> オブジェクト変数を定義し、値を設定します。</p>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>ユニバーサルタグ (<code>utag.js</code>) をロードする前に <code>utag_data</code> オブジェクト変数を定義し、値を構成します。</p>
 <p><code>utag.js</code> がページでロードされると、<code>utag_data</code> 変数を探し、そのデータを使用して <code>utag.view()</code> で自動的にページビュートラッキングコールをトリガーします。シングルページアプリケーションを持っている場合や、手動で <code>utag.view()</code> を呼び出している場合、<code>utag_data</code> は必要ないかもしれません。</p>
 <p>ページトラッキングオプションについて<a href="/platforms/javascript/page-tracking/">詳しく学ぶ</a>。</p>
 <h3 id="構文ガイドライン">構文ガイドライン</h3>
@@ -405,7 +405,7 @@ UDOスクリプトブロックに余分なコードを追加しないでくだ�
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;cart_total_items&#34;</span>   <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;3&#34;</span>,    
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;cart_subtotal&#34;</span>      <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;74.00&#34;</span>};
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
-</span></span></code></pre></div><p>必要に応じて、<code>utag.js</code> をロードする前にデータが設定される限り、宣言ブロックの外部でUDOに追加の値を更新します。<code>utag.js</code> のロード後に設定されたUDO変数は無視されます。</p>
+</span></span></code></pre></div><p>必要に応じて、<code>utag.js</code> をロードする前にデータが構成される限り、宣言ブロックの外部でUDOに追加の値を更新します。<code>utag.js</code> のロード後に構成されたUDO変数は無視されます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">utag_data</span>[<span style="color:#e6db74">&#34;page_name&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;View Cart&#34;</span>;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
@@ -419,7 +419,7 @@ UDOスクリプトブロックに余分なコードを追加しないでくだ�
 </span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;search_keyword&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;tennis shoes&#34;</span>};
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span></code></pre></div><h3 id="製品配列">製品配列</h3>
-<p>製品変数は、単一の製品が設定されている場合でも配列として入力されるべきです。以下は、製品ID変数を1つの製品ID（製品詳細ページで）と3つの製品ID（ショッピングカートページなど）で設定する例です。</p>
+<p>製品変数は、単一の製品が構成されている場合でも配列として入力されるべきです。以下は、製品ID変数を1つの製品ID（製品詳細ページで）と3つの製品ID（ショッピングカートページなど）で構成する例です。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// 単一の製品。例えば、製品詳細ページ
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">utag_data</span>[<span style="color:#e6db74">&#34;product_id&#34;</span>] <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;PROD123&#34;</span>];
 </span></span><span style="display:flex;"><span>
@@ -500,7 +500,7 @@ UDOスクリプトブロックに余分なコードを追加しないでくだ�
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年February月1日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -654,6 +654,22 @@ UDOスクリプトブロックに余分なコードを追加しないでくだ�
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -662,8 +678,24 @@ UDOスクリプトブロックに余分なコードを追加しないでくだ�
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

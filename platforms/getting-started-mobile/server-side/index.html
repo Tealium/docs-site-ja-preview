@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -371,21 +371,21 @@ var utag_data = {
 <li><a href="/server-side/data-storage/audiencedb-eventdb/about/">Tealium AudienceDB &amp; EventDB</a></li>
 </ul>
 <p>Tealium Collectはモバイルアプリケーションに多くの利点を提供します。Tealium EventStreamとCollectモジュールがインストールされていれば、サードパーティのベンダーSDKをアプリから削除し、代わりにサーバーサイドコネクタとして実装することができます。EventStreamのようなAPIハブにベンダーをオフロードすることで、アプリのサイズを減らし、ネットワークトラフィックを最小限に抑え、デバイスのバッテリー消費を節約します。</p>
-<p>以下の図は、Tealium SDKがTealium Collectを使用してイベントを直接EventStreamとAudienceStreamにHTTPSリクエストで送信し、ベンダーにデータを送信したり、訪問者をオーディエンスに入れたり、バッジを割り当てたり、属性を適用したりする方法を示しています。</p>
+<p>以下の図は、Tealium SDKがTealium Collectを使用してイベントを直接EventStreamとAudienceStreamにHTTPSリクエストで送信し、ベンダーにデータを送信したり、訪問をオーディエンスに入れたり、バッジを割り当てたり、属性を適用したりする方法を示しています。</p>
 <figure><a class="slb" href="/images/platforms/getting-started-mobile/tealium_collect_data_flow_diagram.png"><img src="/images/platforms/getting-started-mobile/tealium_collect_data_flow_diagram.png" width="375" height="750"/>
     </a><figcaption><p>Tealium Collectデータフローダイアグラム</p>
         </figcaption>
 </figure>
 <h3 id="javascriptタグ">JavaScriptタグ</h3>
-<p>Tealium CollectタグはiQタグ管理設定に追加され、タグ管理モジュール内のデバイスで実行されます。JavaScriptタグは隠されたwebviewで実行され、トラッキングコールをTealiumサーバーにディスパッチします。</p>
+<p>Tealium CollectタグはiQタグ管理構成に追加され、タグ管理モジュール内のデバイスで実行されます。JavaScriptタグは隠されたwebviewで実行され、トラッキングコールをTealiumサーバーにディスパッチします。</p>
 <p><strong>推奨されるのは：</strong></p>
 <ul>
 <li>タグ管理モジュールを既に使用しているインストール</li>
 <li>拡張機能を使用してデータレイヤーをカスタマイズする必要がある実装</li>
 </ul>
-<p><a href="/client-side-tags/tealium-collect-tag/">Tealium Collectタグの設定方法</a>について詳しく学びましょう。</p>
+<p><a href="/client-side-tags/tealium-collect-tag/">Tealium Collectタグの構成方法</a>について詳しく学びましょう。</p>
 <h3 id="ネイティブモジュール">ネイティブモジュール</h3>
-<p>Tealium Collectモジュールは、iQアカウントの<a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイル公開設定</a>を使用して有効化されます。Collectモジュールはアプリのネイティブコードとして実行され、HTTPSを使用してトラッキングコールを直接Tealiumサーバーにディスパッチします。</p>
+<p>Tealium Collectモジュールは、iQアカウントの<a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイル公開構成</a>を使用して有効化されます。Collectモジュールはアプリのネイティブコードとして実行され、HTTPSを使用してトラッキングコールを直接Tealiumサーバーにディスパッチします。</p>
 <p><strong>推奨されるのは：</strong></p>
 <ul>
 <li>シンプルで軽量なインストール。</li>
@@ -393,9 +393,9 @@ var utag_data = {
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Swiftライブラリの場合、Tealium Collectはネイティブコードで有効化および無効化する必要があります。</p>
 <h3 id="データレイヤー濃縮dle">データレイヤー濃縮（DLE）</h3>
-<p>Tealium AudienceStreamは、<a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/manage-data-layer-enrichment-api/">Data Layer Enrichment (DLE)</a>と呼ばれる機能を使用して、訪問者プロファイルデータをTealium Collectに返すという追加の利点を提供します。Collectモジュールでは、返された訪問者属性に基づいてアプリをパーソナライズするためにDLEを使用します。</p>
-<p>Tealium iQタグ管理では、Collectタグが実行されていると、隠されたwebview <code>mobile.html</code>がDLE訪問者属性にアクセスを提供します。これらの属性は、拡張機能の設定、ローディングルールの設定などを行う際にアクセス可能です。DLE値に基づくアプリ内パーソナライゼーションのために、webviewとモバイルアプリ間で通信するために<a href="/platforms/remote-commands/">リモートコマンド</a>が必要です。</p>
-<p><a href="/platforms/ios-swift/module-list/visitor-service/">VisitorServiceモジュール for Swift</a>もデータレイヤーに訪問者プロファイルを追加します。</p>
+<p>Tealium AudienceStreamは、<a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/manage-data-layer-enrichment-api/">Data Layer Enrichment (DLE)</a>と呼ばれる機能を使用して、訪問プロファイルデータをTealium Collectに返すという追加の利点を提供します。Collectモジュールでは、返された訪問属性に基づいてアプリをパーソナライズするためにDLEを使用します。</p>
+<p>Tealium iQタグ管理では、Collectタグが実行されていると、隠されたwebview <code>mobile.html</code>がDLE訪問属性にアクセスを提供します。これらの属性は、拡張機能の構成、ローディングルールの構成などを行う際にアクセス可能です。DLE値に基づくアプリ内パーソナライゼーションのために、webviewとモバイルアプリ間で通信するために<a href="/platforms/remote-commands/">リモートコマンド</a>が必要です。</p>
+<p><a href="/platforms/ios-swift/module-list/visitor-service/">VisitorServiceモジュール for Swift</a>もデータレイヤーに訪問プロファイルを追加します。</p>
 
 </div>
 
@@ -456,7 +456,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -607,6 +607,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -615,8 +631,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

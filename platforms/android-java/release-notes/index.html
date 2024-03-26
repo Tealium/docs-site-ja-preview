@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -363,14 +363,14 @@ var utag_data = {
 </ul>
 <h2 id="591-2021-年-2-月">5.9.1 (2021 年 2 月)</h2>
 <ul>
-<li>バグ修正: <code>WebViewDispatcher</code> - ネットワーク接続の再設定後にオフライン イベントをキューから適切に取り出させるようにしました</li>
+<li>バグ修正: <code>WebViewDispatcher</code> - ネットワーク接続の再構成後にオフライン イベントをキューから適切に取り出させるようにしました</li>
 </ul>
 <h2 id="590-2020-年-10-月">5.9.0 (2020 年 10 月)</h2>
 <ul>
 <li>
 <p>新規リモート コマンド アダプターに対応するため変更</p>
 <ul>
-<li>削除の前の訪問者プロファイルの消去に関する問題を修正</li>
+<li>削除の前の訪問プロファイルの消去に関する問題を修正</li>
 </ul>
 </li>
 <li>
@@ -392,7 +392,7 @@ var utag_data = {
 <li>
 <p>CrashReporter 1.1.0</p>
 <ul>
-<li>クラッシュが発生したときにクラッシュ データを保存し、アプリの次回起動時に送信されるようになりました。このアップデートにより、クラッシュを追跡する信頼性が増しました</li>
+<li>クラッシュが発生したときにクラッシュ データをストレージし、アプリの次回起動時に送信されるようになりました。このアップデートにより、クラッシュを追跡する信頼性が増しました</li>
 </ul>
 </li>
 </ul>
@@ -432,7 +432,7 @@ var utag_data = {
 <ul>
 <li>バグ修正：
 <ul>
-<li>訪問者サービスのドメインとプロファイルを正しくオーバーライドするための追加のメソッドを<code>Tealium.Config</code>クラスに追加</li>
+<li>訪問サービスのドメインとプロファイルを正しくオーバーライドするための追加のメソッドを<code>Tealium.Config</code>クラスに追加</li>
 <li>イベントデータがPOSTメソッドを使用して送信されたときのエンコードの問題を修正</li>
 </ul>
 </li>
@@ -469,7 +469,7 @@ var utag_data = {
 </ul>
 <h4 id="554-2019-年-1-月">5.5.4 (2019 年 1 月)</h4>
 <ul>
-<li><code>Tealium.Config</code>で提供されるプロファイルをデフォルトに設定するようVisitorProfile URLを修正</li>
+<li><code>Tealium.Config</code>で提供されるプロファイルをデフォルトに構成するようVisitorProfile URLを修正</li>
 </ul>
 <h4 id="553-2019-年-1-月">5.5.3 (2019 年 1 月)</h4>
 <ul>
@@ -543,8 +543,8 @@ var utag_data = {
 <h4 id="531">5.3.1</h4>
 <ul>
 <li>初期化時にログレベルをオーバーライドできるメソッドを追加（<code>setForceOverrideLogLevel</code>）</li>
-<li>公開設定のタイムアウトが期限切れになった場合（JavaScript呼び出しが完了する前にWebViewがリロードされていた場合）、一定の非アクティブ期間後に最初のイベントが送信されないというエッジケースに対する保護措置としてWebViewへの呼び出しを変更</li>
-<li>WebViewからのCookieが、トラック呼び出しの直後にディスクにフラッシュされるようになりました。これにより、アプリをすばやく閉じたときにCookieがディスクに保存されないというエッジケースを防ぐことができます</li>
+<li>公開構成のタイムアウトが期限切れになった場合（JavaScript呼び出しが完了する前にWebViewがリロードされていた場合）、一定の非アクティブ期間後に最初のイベントが送信されないというエッジケースに対する保護措置としてWebViewへの呼び出しを変更</li>
+<li>WebViewからのCookieが、トラック呼び出しの直後にディスクにフラッシュされるようになりました。これにより、アプリをすばやく閉じたときにCookieがディスクにストレージされないというエッジケースを防ぐことができます</li>
 <li>Webviewの読み込み時にAndroid Webviewによって<code>Favicon.ico</code>がリクエストされないようにする保護措置を追加</li>
 <li>TealiumにOptimizelyトラッキングイベントを渡すためのオプションのOptimizely Listenerモジュールを追加</li>
 <li>軽微な内部の更新</li>
@@ -600,7 +600,7 @@ var utag_data = {
 <h4 id="501">5.0.1</h4>
 <ul>
 <li>「匿名内部クラスのInnerClasses属性を無視」警告の原因を修正</li>
-<li>「取得した不正な訪問者プロファイル：」エラーメッセージを明確化</li>
+<li>「取得した不正な訪問プロファイル：」エラーメッセージを明確化</li>
 <li>S2Sレガシーのオーバーライドでクエリ文字列変数の使用が可能に</li>
 </ul>
 <h4 id="500">5.0.0</h4>
@@ -814,6 +814,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -822,8 +838,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

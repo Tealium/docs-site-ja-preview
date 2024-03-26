@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -382,11 +382,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#consentcategories"><code>consentCategories</code></a></td>
-<td>ユーザーの同意カテゴリーを取得または設定します</td>
+<td>ユーザーの同意カテゴリーを取得または構成します</td>
 </tr>
 <tr>
 <td><a href="#consentstatus"><code>consentStatus</code></a></td>
-<td>ユーザーの同意ステータスを取得または設定します</td>
+<td>ユーザーの同意ステータスを取得または構成します</td>
 </tr>
 <tr>
 <td><a href="#getdata"><code>getData()</code></a></td>
@@ -398,7 +398,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#initialize"><code>initialize()</code></a></td>
-<td>設定パラメーターでTealiumを初期化します</td>
+<td>構成パラメーターでTealiumを初期化します</td>
 </tr>
 <tr>
 <td><a href="#jointrace"><code>joinTrace()</code></a></td>
@@ -410,7 +410,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#removedata"><code>removeData()</code></a></td>
-<td><code>addData()</code>を使用して以前に設定された永続データを削除します</td>
+<td><code>addData()</code>を使用して以前に構成された永続データを削除します</td>
 </tr>
 <tr>
 <td><a href="#removeremotecommand"><code>removeRemoteCommand()</code></a></td>
@@ -418,11 +418,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#removevisitorservicelistener"><code>removeVisitorServiceListener()</code></a></td>
-<td>訪問者サービスリスナー/コールバックを削除します</td>
+<td>訪問サービスリスナー/コールバックを削除します</td>
 </tr>
 <tr>
 <td><a href="#setvisitorservicelistener"><code>setVisitorServiceListener()</code></a></td>
-<td>訪問者サービスリスナー/コールバックを定義します</td>
+<td>訪問サービスリスナー/コールバックを定義します</td>
 </tr>
 <tr>
 <td><a href="#terminateinstance"><code>terminateInstance()</code></a></td>
@@ -434,7 +434,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#visitorid"><code>visitorId</code></a></td>
-<td>現在の訪問者IDを取得します</td>
+<td>現在の訪問IDを取得します</td>
 </tr>
 </tbody>
 </table>
@@ -454,7 +454,7 @@ var utag_data = {
 <tr>
 <td><code>id</code></td>
 <td><code>String</code></td>
-<td>タグの設定からのリモートコマンドIDの名前</td>
+<td>タグの構成からのリモートコマンドIDの名前</td>
 <td><code>&quot;test_command&quot;</code></td>
 </tr>
 <tr>
@@ -503,7 +503,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">data</span>[<span style="color:#e6db74">&#39;my_test_value&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">addData</span>(<span style="color:#a6e22e">data</span>, <span style="color:#a6e22e">Expiry</span>.<span style="color:#a6e22e">session</span>);
 </span></span></code></pre></div><h4 id="expiry"><code>Expiry</code></h4>
-<p>プロパティの有効期限を設定するための有効期限を定義します。</p>
+<p>プロパティの有効期限を構成するための有効期限を定義します。</p>
 <p>次の有効期限オプションが利用可能です:</p>
 <table>
 <thead>
@@ -528,8 +528,8 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="consentcategories"><code>consentCategories</code></h3>
-<p>ユーザーの同意カテゴリーを取得または設定します。</p>
-<p>ユーザーの同意カテゴリーを設定するには:</p>
+<p>ユーザーの同意カテゴリーを取得または構成します。</p>
+<p>ユーザーの同意カテゴリーを構成するには:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">consentCategories</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">categories</span>
 </span></span></code></pre></div><p>ユーザーの同意カテゴリーを取得するには:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">categories</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">consentCategories</span>
@@ -625,8 +625,8 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="consentstatus"><code>consentStatus</code></h3>
-<p>ユーザーの同意ステータスを取得または設定します。デフォルトは<code>.unknown</code>です。</p>
-<p>ユーザーの同意ステータスを設定するには:</p>
+<p>ユーザーの同意ステータスを取得または構成します。デフォルトは<code>.unknown</code>です。</p>
+<p>ユーザーの同意ステータスを構成するには:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">consentStatus</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">status</span>;
 </span></span></code></pre></div><p>ユーザーの同意ステータスを取得するには:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">status</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">consentStatus</span>
@@ -711,7 +711,7 @@ var utag_data = {
 <tr>
 <td><code>config</code></td>
 <td><a href="/platforms/nativescript/api/tealium-config/#tealiumconfig"><code>TealiumConfig</code></a></td>
-<td>Tealiumの設定パラメーター</td>
+<td>Tealiumの構成パラメーター</td>
 <td>(例を参照)</td>
 </tr>
 </tbody>
@@ -759,10 +759,10 @@ var utag_data = {
 <p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">joinTrace</span>(<span style="color:#e6db74">&#34;abc123xy&#34;</span>);
 </span></span></code></pre></div><h3 id="leavetrace"><code>leaveTrace()</code></h3>
-<p>トレースは、<code>leaveTrace()</code>メソッドが呼び出されるまでアプリのセッションの間アクティブなままであり、以前に参加したトレースを離脱し、訪問者セッションを終了します。</p>
+<p>トレースは、<code>leaveTrace()</code>メソッドが呼び出されるまでアプリのセッションの間アクティブなままであり、以前に参加したトレースを離脱し、訪問セッションを終了します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">leaveTrace</span>();
 </span></span></code></pre></div><h3 id="removedata"><code>removeData()</code></h3>
-<p><code>Tealium.addData()</code>を使用して以前に設定された永続データを削除します。</p>
+<p><code>Tealium.addData()</code>を使用して以前に構成された永続データを削除します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeData</span>(<span style="color:#a6e22e">keys</span>);
 </span></span></code></pre></div><table>
 <thead>
@@ -814,9 +814,9 @@ var utag_data = {
 <p>例:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeRemoteCommand</span>(<span style="color:#e6db74">&#34;test_command&#34;</span>);
 </span></span></code></pre></div><h3 id="setvisitorservicelistener"><code>setVisitorServiceListener()</code></h3>
-<p>訪問者プロファイルが更新されたときに実行するコールバックを定義します。更新された<a href="/platforms/nativescript/api/tealium-config/#visitorprofile"><code>VisitorProfile</code></a>は、コールバックのレスポンスで提供されます。</p>
+<p>訪問プロファイルが更新されたときに実行するコールバックを定義します。更新された<a href="/platforms/nativescript/api/tealium-config/#visitorprofile"><code>VisitorProfile</code></a>は、コールバックのレスポンスで提供されます。</p>
 <p>VisitorServiceモジュールは、Tealium Customer Data Hubの<a href="/server-side/attributes/data-layer-enrichment/enable/">データレイヤーエンリッチメント</a>機能を実装しています。</p>
-<p>このモジュールの使用は、Tealium AudienceStreamのライセンスを受けており、モバイルアプリケーションでユーザーエクスペリエンスを向上させるために訪問者プロファイルを使用したい場合に推奨されます。AudienceStreamのライセンスを受けていない場合、このモジュールの使用は推奨されません。</p>
+<p>このモジュールの使用は、Tealium AudienceStreamのライセンスを受けており、モバイルアプリケーションでユーザーエクスペリエンスを向上させるために訪問プロファイルを使用したい場合に推奨されます。AudienceStreamのライセンスを受けていない場合、このモジュールの使用は推奨されません。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setVisitorServiceListener</span>(<span style="color:#a6e22e">callback</span>);
 </span></span></code></pre></div><table>
 <thead>
@@ -831,12 +831,12 @@ var utag_data = {
 <tr>
 <td><code>callback</code></td>
 <td><code>Function</code></td>
-<td>更新された訪問者プロファイルが返されたときに実行するコード</td>
+<td>更新された訪問プロファイルが返されたときに実行するコード</td>
 <td>(例を参照)</td>
 </tr>
 </tbody>
 </table>
-<p>次の例は、訪問者のオーディエンスとバッジをコンソールにログ出力します:</p>
+<p>次の例は、訪問のオーディエンスとバッジをコンソールにログ出力します:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setVisitorServiceListener</span>(<span style="color:#a6e22e">profile</span> =&gt; {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">profile</span>[<span style="color:#e6db74">&#34;audiences&#34;</span>]);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">profile</span>[<span style="color:#e6db74">&#34;badges&#34;</span>]);
@@ -875,7 +875,7 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">tealEvent</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">TealiumEvent</span>(<span style="color:#e6db74">&#34;EVENT_NAME&#34;</span>, <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Map</span>([[<span style="color:#e6db74">&#34;key&#34;</span>, <span style="color:#e6db74">&#34;value&#34;</span>]]));
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">track</span>(<span style="color:#a6e22e">tealEvent</span>);
 </span></span></code></pre></div><h3 id="visitorid"><code>visitorId</code></h3>
-<p>現在の訪問者IDを取得します。</p>
+<p>現在の訪問IDを取得します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">visitorId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">visitorId</span>;
 </span></span></code></pre></div><h5 id="tealiumdispatch"><code>TealiumDispatch</code></h5>
 <p>トラックされるディスパッチのタイプ、イベントまたはタイトル、およびデータレイヤーを定義するインターフェースです。</p>
@@ -924,7 +924,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1087,6 +1087,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -1095,8 +1111,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -367,7 +367,7 @@ var utag_data = {
 <p>次の例は、同意ステータスを取得します:</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.getConsentStatus()
   .then((status) =&gt; print(&#39;Consent Status: $status&#39;)));
-</code></pre><p>ユーザーの同意ステータスを設定するには、<a href="/platforms/flutter/api/tealium/#setconsentstatus"><code>setConsentStatus()</code></a> メソッドを呼び出します。</p>
+</code></pre><p>ユーザーの同意ステータスを構成するには、<a href="/platforms/flutter/api/tealium/#setconsentstatus"><code>setConsentStatus()</code></a> メソッドを呼び出します。</p>
 <p>次の例は、同意を付与します:</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.setConsentStatus(ConsentStatus.consented);
 </code></pre><h2 id="同意カテゴリ">同意カテゴリ</h2>
@@ -376,8 +376,8 @@ var utag_data = {
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.getConsentCategories()
   .then((categories) =&gt;
       print(&#39;Consent Categories: &#39; + categories.join(&#34;,&#34;))));
-</code></pre><p>ユーザーの同意カテゴリを設定するには、<a href="/platforms/flutter/api/tealium/#setconsentcategories"><code>setConsentCategories()</code></a> メソッドを呼び出し、同意カテゴリのリストを渡します。</p>
-<p>次の例は、同意カテゴリを設定します:</p>
+</code></pre><p>ユーザーの同意カテゴリを構成するには、<a href="/platforms/flutter/api/tealium/#setconsentcategories"><code>setConsentCategories()</code></a> メソッドを呼び出し、同意カテゴリのリストを渡します。</p>
+<p>次の例は、同意カテゴリを構成します:</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">Tealium.setConsentCategories([ConsentCategories.analytics,
     ConsentCategories.email]);
 </code></pre>
@@ -440,7 +440,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -590,6 +590,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -598,8 +614,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

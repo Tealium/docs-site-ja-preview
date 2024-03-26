@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -363,25 +363,25 @@ var utag_data = {
 <h4 id="196-2020年7月">1.9.6 (2020年7月)</h4>
 <p><strong>低影響の変更</strong></p>
 <ul>
-<li>複数のスレッドが同時に永続データストアに保存しようとすることによりクラッシュが発生するバグを修正しました。</li>
-<li>タグ管理モジュールが依存関係として含まれているが、TiQのモバイルパブリッシュ設定で有効にされていない場合にクラッシュが発生するバグを修正しました。</li>
+<li>複数のスレッドが同時に永続データストアにストレージしようとすることによりクラッシュが発生するバグを修正しました。</li>
+<li>タグ管理モジュールが依存関係として含まれているが、TiQのモバイルパブリッシュ構成で有効にされていない場合にクラッシュが発生するバグを修正しました。</li>
 </ul>
 <h4 id="195-2020年6月">1.9.5 (2020年6月)</h4>
 <p><strong>低影響の変更</strong></p>
 <ul>
-<li>リモートパブリッシュ設定機能が有効になっており、リモートファイルに非標準のコンテンツが含まれている場合にクラッシュが発生するバグを修正しました。このバグが将来のリリースで再発するのを防ぐために、ユニットテストを追加しました。</li>
+<li>リモートパブリッシュ構成機能が有効になっており、リモートファイルに非標準のコンテンツが含まれている場合にクラッシュが発生するバグを修正しました。このバグが将来のリリースで再発するのを防ぐために、ユニットテストを追加しました。</li>
 <li>パブリックリポジトリにユニットテストを追加しました。</li>
 <li><code>UIWebView</code> を参照する古いコードコメントを削除しました。</li>
 </ul>
 <p><strong>既知の問題</strong></p>
 <ul>
-<li>iOS バージョン 10.3.3 および 10.3.4 では、アプリが起動するとすぐにクラッシュする可能性がある Xcode コンパイラのバグがあります。これは 32 ビットの iOS デバイス (iPhone 5C およびそれ以下、iPad 4 世代およびそれ以下) に影響します。回避策は、「Dead Code Stripping」ビルドオプションを「NO」に変更することです。これは、プロジェクト設定 &gt; (アプリのターゲット) &gt; ビルド設定 &gt; リンキング &gt; Dead Code Stripping にあります。この回避策は、上記のデバイスをターゲットにしている場合にのみ必要です。</li>
+<li>iOS バージョン 10.3.3 および 10.3.4 では、アプリが起動するとすぐにクラッシュする可能性がある Xcode コンパイラのバグがあります。これは 32 ビットの iOS デバイス (iPhone 5C およびそれ以下、iPad 4 世代およびそれ以下) に影響します。回避策は、「Dead Code Stripping」ビルドオプションを「NO」に変更することです。これは、プロジェクト構成 &gt; (アプリのターゲット) &gt; ビルド構成 &gt; リンキング &gt; Dead Code Stripping にあります。この回避策は、上記のデバイスをターゲットにしている場合にのみ必要です。</li>
 </ul>
 <h4 id="194-2020年4月">1.9.4 (2020年4月)</h4>
 <p><strong>低影響の変更</strong></p>
 <ul>
 <li>Carthage ビルドに影響を与える問題を修正しました。PLCrashReporter 依存関係が一部のプラットフォームでビルドに失敗する問題を修正しました。</li>
-<li>リモートコマンドモジュールがリモートパブリッシュ設定で有効になっている場合、リモートコマンドが複数回トリガーされる場合があるバグを修正しました。</li>
+<li>リモートコマンドモジュールがリモートパブリッシュ構成で有効になっている場合、リモートコマンドが複数回トリガーされる場合があるバグを修正しました。</li>
 <li>Swift Package Manager を使用してライブラリをインストールした場合、Swift Package Manager 以外の iOS 以外のプラットフォームで SwiftUI プレビューが失敗する問題を修正しました。</li>
 </ul>
 <h4 id="193-2020年3月">1.9.3 (2020年3月)</h4>
@@ -390,7 +390,7 @@ var utag_data = {
 <h4 id="192-2020年3月">1.9.2 (2020年3月)</h4>
 <p><strong>低影響の変更</strong></p>
 <ul>
-<li>DispatchQueue モジュールのバグを修正しました。最大キューサイズが <code>-1</code> に設定されている場合にクラッシュする問題を修正しました。</li>
+<li>DispatchQueue モジュールのバグを修正しました。最大キューサイズが <code>-1</code> に構成されている場合にクラッシュする問題を修正しました。</li>
 <li><code>PLCrashReporter</code> 依存関係を更新しました。</li>
 </ul>
 <h4 id="191-2020年2月">1.9.1 (2020年2月)</h4>
@@ -399,10 +399,10 @@ var utag_data = {
 <h4 id="190-2020年2月">1.9.0 (2020年2月)</h4>
 <p><strong>新機能</strong></p>
 <ul>
-<li><a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルパブリッシュ設定</a> のサポート</li>
+<li><a href="/iq-tag-management/profiles/creating-a-mobile-profile/">モバイルパブリッシュ構成</a> のサポート</li>
 </ul>
-<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>モバイルパブリッシュ設定はデフォルトで有効になっており、使用しない場合は無効にする必要があります。</strong></p>
-<pre><code>* Tealium iQ モバイルパブリッシュ設定インターフェースからイベントバッチサイズなどの特定の設定オプションをリモートで変更する機能を追加します。
+<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>モバイルパブリッシュ構成はデフォルトで有効になっており、使用しない場合は無効にする必要があります。</strong></p>
+<pre><code>* Tealium iQ モバイルパブリッシュ構成インターフェースからイベントバッチサイズなどの特定の構成オプションをリモートで変更する機能を追加します。
 </code></pre>
 <ul>
 <li>これは、Tealium iOS (Objective-C) ライブラリと Tealium Android ライブラリで既に存在している機能と一致します。<a href="/iq-tag-management/profiles/creating-a-mobile-profile/">詳細を見る</a>。</li>
@@ -427,13 +427,13 @@ var utag_data = {
 <li>バグ修正: 低メモリのシナリオでクラッシュが発生することがあるライフサイクルモジュールの再現不可能なバグを修正しました。<a href="https://github.com/Tealium/tealium-swift/issues/120">120</a></li>
 <li>ライフサイクルの自動トラッキングを無効にすることができるようになりました。このオプションを使用すると、自動生成されたアプリのライフサイクルイベントが抑制されます。<a href="/platforms/ios-swift-v1/api/tealium-config/">詳細を見る</a></li>
 <li><code>Core</code> モジュールの Objective-C <code>NSError</code> への依存関係を削除しました。Swift Package Manager のサポートに必要です。また、ブリッジングヘッダの暗黙のインポートの問題も修正されました。<a href="https://github.com/Tealium/tealium-swift/issues/125">125</a></li>
-<li><code>Tealium.update</code> メソッドを最適化しました。<code>update</code> メソッドが呼び出されたときに <code>TealiumConfig</code> の設定を変更すると、モジュールが解放されて再初期化されなくなりました。</li>
+<li><code>Tealium.update</code> メソッドを最適化しました。<code>update</code> メソッドが呼び出されたときに <code>TealiumConfig</code> の構成を変更すると、モジュールが解放されて再初期化されなくなりました。</li>
 </ul>
 <p><strong>高影響の変更</strong></p>
 <ul>
 <li><code>TealiumConfig</code> クラスのセッターとゲッターは非推奨となり、プロパティに置き換えられました。たとえば、<code>config.setBatchingEnabled(true)</code> -&gt; <code>config.batchingEnabled = true</code>。セッターとゲッターは引き続き正常に機能しますが、コンパイラの警告を回避するためにプロパティに切り替えることをお勧めします。</li>
-<li>Wi-Fi のみの送信オプションを追加しました。これは、モバイルパブリッシュ設定を介して制御できます。有効にすると、Wi-Fi が利用できない場合はヒットがキューに入れられます。</li>
-<li>バッテリーセーバーオプションを追加しました。これは、モバイルパブリッシュ設定を介して制御できます。有効にすると、低電力モードが有効になっている場合、またはデバイスのバッテリー残量が 20% 未満の場合は、ヒットがキューに入れられます。</li>
+<li>Wi-Fi のみの送信オプションを追加しました。これは、モバイルパブリッシュ構成を介して制御できます。有効にすると、Wi-Fi が利用できない場合はヒットがキューに入れられます。</li>
+<li>バッテリーセーバーオプションを追加しました。これは、モバイルパブリッシュ構成を介して制御できます。有効にすると、低電力モードが有効になっている場合、またはデバイスのバッテリー残量が 20% 未満の場合は、ヒットがキューに入れられます。</li>
 </ul>
 <p><strong>既知の問題</strong></p>
 <ul>
@@ -446,10 +446,10 @@ var utag_data = {
 <p><strong>低影響の変更</strong></p>
 <ul>
 <li>リモートコマンドのスレッド関連のクラッシュを修正しました <a href="https://github.com/Tealium/tealium-swift/issues/121">121</a></li>
-<li>低メモリに関連するクラッシュを解決するために、保存されるライフサイクルセッションを 20 セッションに減らしました <a href="https://github.com/Tealium/tealium-swift/issues/120">120</a></li>
+<li>低メモリに関連するクラッシュを解決するために、ストレージされるライフサイクルセッションを 20 セッションに減らしました <a href="https://github.com/Tealium/tealium-swift/issues/120">120</a></li>
 <li>一部の場合に完全な <code>Tealium</code> クラスの解放ができないような循環参照を修正しました</li>
 <li><code>TealiumInstanceManager</code> に <code>removeInstance</code> メソッドを追加し、<code>Tealium</code> を完全に解放できるようにしました</li>
-<li>WKWebView に対するクッキーオブザーバーの使用をやめるための設定オプションを追加しました <a href="https://github.com/Tealium/tealium-swift/issues/117">117</a> (<code>config.shouldAddCookieObserver = false</code>)</li>
+<li>WKWebView に対するクッキーオブザーバーの使用をやめるための構成オプションを追加しました <a href="https://github.com/Tealium/tealium-swift/issues/117">117</a> (<code>config.shouldAddCookieObserver = false</code>)</li>
 <li>モジュールの初期化を最適化し、モジュールリストに存在するモジュールのみ <code>init</code> が呼び出されるようにしました</li>
 <li>タグ管理モジュールの完了ブロックが予期しない詳細 (エラー/情報) を受け取らない問題を修正しました。関連: <a href="https://github.com/Tealium/tealium-swift/issues/118">118</a></li>
 </ul>
@@ -469,21 +469,21 @@ var utag_data = {
 <li>Tealium EventStream/AudienceStream/Event Data Framework 製品の場合、Collect モジュールを使用してイベントが単一の HTTP リクエストでディスパッチされます。リクエストは Gzip 圧縮されます。イベントの制限が達成されると (最大 10 イベント)、接続が利用可能な場合はすぐにディスパッチされます。</li>
 </ul>
 </li>
-<li>イベントバッチングを無効にするには、バッチサイズを 1 に設定します</li>
+<li>イベントバッチングを無効にするには、バッチサイズを 1 に構成します</li>
 </ul>
 </li>
-<li>オプションの Visitor Service モジュール (AudienceStream CDP が必要)。プロファイルが変更されるたびにリアルタイムで訪問者プロファイルを取得できます。</li>
+<li>オプションの Visitor Service モジュール (AudienceStream CDP が必要)。プロファイルが変更されるたびにリアルタイムで訪問プロファイルを取得できます。</li>
 <li>内部デバイス識別子をキャプチャする新しい変数「device_type」を追加しました。たとえば、iPhone8,4 などです。</li>
 <li>Visitor Service と Event Batching (DispatchQueue モジュール) の追加のヘッダドキュメントを追加しました。</li>
 <li>Visitor Service モジュールとプロファイルの URL をオーバーライドする機能を追加しました</li>
 <li>iOS 12.0 デバイスの DeviceData モジュールで発生する可能性のあるクラッシュを修正しました。これは、iOS 12.0 のネットワークサブスクライバ情報 API の既知のバグによるものです。バグが修正された iOS 12.1 にバージョンチェックを更新し、iOS 12.0 の場合は古い API を使用するようにしました。</li>
 <li>複雑なクロージャ内のコンパイラのヒントを追加して、Xcode 10.3 でプロジェクトをビルドできるようにしました。</li>
-<li>リモートコマンドの将来の互換性のための remote_api 呼び出しを追加しました。これにより、Tag Management の Web ビューに追加の呼び出しがトリガーされます (モジュールが有効な場合)。デフォルトでは無効です。有効にするための設定オプション: <code>config.setIsRemoteAPIEnbled(true)</code></li>
-<li>訪問者 ID を取得するためのメソッドを追加しました</li>
+<li>リモートコマンドの将来の互換性のための remote_api 呼び出しを追加しました。これにより、Tag Management の Web ビューに追加の呼び出しがトリガーされます (モジュールが有効な場合)。デフォルトでは無効です。有効にするための構成オプション: <code>config.setIsRemoteAPIEnbled(true)</code></li>
+<li>訪問 ID を取得するためのメソッドを追加しました</li>
 </ul>
 <p><strong>高影響の変更</strong></p>
 <ul>
-<li>永続ストレージが UserDefaults から JSON ベースのファイルストレージに移動しました。データはデフォルトでデバイスのキャッシュディレクトリに保存されますが、これは設定で上書きできます。</li>
+<li>永続ストレージが UserDefaults から JSON ベースのファイルストレージに移動しました。データはデフォルトでデバイスのキャッシュディレクトリにストレージされますが、これは構成で上書きできます。</li>
 <li>可能な限り、すべての処理はバックグラウンドキューで実行されるようになりました。Tag Management モジュールを使用している場合、一部の処理はメインスレッドで実行される必要があるため、メインスレッドでの処理が制限されます。</li>
 <li>次のモジュールが削除されました:
 <ul>
@@ -568,12 +568,12 @@ var utag_data = {
 <h4 id="162-2018年9月">1.6.2 (2018年9月)</h4>
 <p><strong>高影響の変更</strong></p>
 <ul>
-<li>セッション ID の修正。Tealium セッション ID は 30 分後に期限切れになるように設定されました。この値は設定可能です。</li>
+<li>セッション ID の修正。Tealium セッション ID は 30 分後に期限切れになるように構成されました。この値は構成可能です。</li>
 </ul>
 <h4 id="161-2018年9月">1.6.1 (2018年9月)</h4>
 <p><strong>高影響の変更</strong></p>
 <ul>
-<li>セッション ID の修正。Tealium セッション ID は 30 分後に期限切れになるように設定されました。この値は設定可能です。</li>
+<li>セッション ID の修正。Tealium セッション ID は 30 分後に期限切れになるように構成されました。この値は構成可能です。</li>
 </ul>
 <h4 id="160-2018年7月">1.6.0 (2018年7月)</h4>
 <ul>
@@ -633,7 +633,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -783,6 +783,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -791,8 +807,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   

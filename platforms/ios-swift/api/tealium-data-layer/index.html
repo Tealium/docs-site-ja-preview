@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.111.3">
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -378,11 +378,11 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#all"><code>all</code></a></td>
-<td>データレイヤーに保存されているすべてのデータを返します。</td>
+<td>データレイヤーにストレージされているすべてのデータを返します。</td>
 </tr>
 <tr>
 <td><a href="#allsessiondata"><code>allSessionData</code></a></td>
-<td>アクティブなセッションのデータレイヤーに保存されているすべてのデータを返します。</td>
+<td>アクティブなセッションのデータレイヤーにストレージされているすべてのデータを返します。</td>
 </tr>
 <tr>
 <td><a href="#delete"><code>delete()</code></a></td>
@@ -394,7 +394,7 @@ var utag_data = {
 </tr>
 <tr>
 <td><a href="#persistentdatastorage"><code>persistentDataStorage</code></a></td>
-<td>永続ストレージに保存されているすべてのイベントデータを返します。</td>
+<td>永続ストレージにストレージされているすべてのイベントデータを返します。</td>
 </tr>
 </tbody>
 </table>
@@ -413,12 +413,12 @@ var utag_data = {
 <tr>
 <td><code>key</code></td>
 <td><code>String</code></td>
-<td>保存するキーの名前</td>
+<td>ストレージするキーの名前</td>
 </tr>
 <tr>
 <td><code>value</code></td>
 <td><code>Any</code></td>
-<td>保存するデータ</td>
+<td>ストレージするデータ</td>
 </tr>
 <tr>
 <td><code>expiry</code> (optional)</td>
@@ -428,7 +428,7 @@ var utag_data = {
 </tbody>
 </table>
 <h3 id="all"><code>all</code></h3>
-<p>データレイヤーに保存されているすべてのデータを返します。</p>
+<p>データレイヤーにストレージされているすべてのデータを返します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data: [String: Any] = tealium?.dataLayer.all
 </span></span></code></pre></div><table>
 <thead>
@@ -440,12 +440,12 @@ var utag_data = {
 <tbody>
 <tr>
 <td><code>[String]</code></td>
-<td>データレイヤーに保存されているすべてのデータ</td>
+<td>データレイヤーにストレージされているすべてのデータ</td>
 </tr>
 </tbody>
 </table>
 <h3 id="allsessiondata"><code>allSessionData</code></h3>
-<p>アクティブなセッションのデータレイヤーに保存されているすべてのデータを返します。</p>
+<p>アクティブなセッションのデータレイヤーにストレージされているすべてのデータを返します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data: [String: Any] = tealium?.dataLayer.allSessionData
 </span></span></code></pre></div><table>
 <thead>
@@ -457,7 +457,7 @@ var utag_data = {
 <tbody>
 <tr>
 <td><code>[String]</code></td>
-<td>アクティブなセッションのデータレイヤーに保存されているすべてのデータ</td>
+<td>アクティブなセッションのデータレイヤーにストレージされているすべてのデータ</td>
 </tr>
 </tbody>
 </table>
@@ -502,7 +502,7 @@ var utag_data = {
 <p>ストレージからすべての値を削除します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.deleteAll()
 </span></span></code></pre></div><h3 id="persistentdatastorage"><code>persistentDataStorage</code></h3>
-<p>永続ストレージに保存されているすべてのイベントデータを返します。</p>
+<p>永続ストレージにストレージされているすべてのイベントデータを返します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data: Set&lt;DataLayerItem&gt; = tealium?.dataLayer.persistentDataStorage
 </span></span></code></pre></div><table>
 <thead>
@@ -514,7 +514,7 @@ var utag_data = {
 <tbody>
 <tr>
 <td><code>Set&lt;DataLayerItem&gt;</code></td>
-<td>永続ストレージに保存されているすべてのイベントデータ</td>
+<td>永続ストレージにストレージされているすべてのイベントデータ</td>
 </tr>
 </tbody>
 </table>
@@ -578,7 +578,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年January月31日
+          <p>最終更新日 ::  2024年March月25日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -732,6 +732,22 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ファーマ向けティリウム
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          ティリウムアイデンティティパートナー
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           テクノロジーパートナー
         </a>
@@ -740,8 +756,24 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          用語集
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           早期アクセス
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.co.jp/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          リリースノート
         </a>
     </li>
   
