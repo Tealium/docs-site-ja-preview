@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Google SA360 強化コンバージョンの実装ガイド | テクノロジーパートナー | Tealium開発者ドキュメントプレビュー</title>
+    <title>Google SA360 エンリッチメントコンバージョンの実装ガイド | テクノロジーパートナー | Tealium開発者ドキュメントプレビュー</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -220,7 +220,7 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
-        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティリウム</a>
+        <a href="/industries/tealium-for-pharma/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">ファーマ向けティーリアム</a>
       
       </li>
         
@@ -228,7 +228,7 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
-        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティリウムアイデンティティパートナー</a>
+        <a href="/industries/tealium-identity-partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-identity">ティーリアムアイデンティティパートナー</a>
       
       </li>
         
@@ -289,7 +289,7 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Google SA360 強化コンバージョンの実装ガイド</h1>
+<h1 class="lh-title mt30 mb3">Google SA360 エンリッチメントコンバージョンの実装ガイド</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -297,22 +297,22 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      この記事では、Google SA360 強化コンバージョンの実装について説明します。
+      この記事では、Google SA360 エンリッチメントコンバージョンの実装について説明します。
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p>Tealium EventStreamのGoogle SA360 強化コンバージョン（EC）コネクタは、Google Campaign Manager 360 API（CM360 API）を活用して、PIIを含むクライアントサイドのコンバージョンを強化します。CM360 APIの強化コンバージョンは、タグとAPIの両方を使用するハイブリッドソリューションです。Floodlightタグは、クライアントサイドでコンバージョンイベントをキャプチャするために引き続き使用されます。</p>
+  <p>Tealium EventStreamのGoogle SA360 エンリッチメントコンバージョン（EC）コネクタは、Google Campaign Manager 360 API（CM360 API）を活用して、PIIを含むクライアントサイドのコンバージョンをエンリッチメントします。CM360 APIのエンリッチメントコンバージョンは、タグとAPIの両方を使用するハイブリッドソリューションです。Floodlightタグは、クライアントサイドでコンバージョンイベントをキャプチャするために引き続き使用されます。</p>
 <h2 id="要件---google">要件 - Google</h2>
 <h3 id="cm360の利用規約を承諾する">CM360の利用規約を承諾する</h3>
 <p>CM360の利用規約を承諾するには、以下の手順を実行します：</p>
 <ol>
-<li>CM360アカウントにログインし、強化コンバージョンを実装したい広告主を選択します。</li>
+<li>CM360アカウントにログインし、エンリッチメントコンバージョンを実装したい広告主を選択します。</li>
 <li>左側で、<strong>Floodlight &gt; Configuration</strong>に移動し、<strong>Enhanced conversion section</strong>の下のチェックボックスをチェックします。</li>
 </ol>
 <h3 id="floodlightタグのパラメータを特定する">Floodlightタグのパラメータを特定する</h3>
-<p><strong>Floodlight &gt; Activities</strong>を開き、強化コンバージョンのデータを受け取るために使用しているアクティビティを見つけるか作成します。重要なパラメータは次のとおりです：</p>
+<p><strong>Floodlight &gt; Activities</strong>を開き、エンリッチメントコンバージョンのデータを受け取るために使用しているアクティビティを見つけるか作成します。重要なパラメータは次のとおりです：</p>
 <ul>
 <li>広告主ID（<strong>floodlight Configuration ID</strong>または<code>floodlightConfigurationId</code>）</li>
 <li>アクティビティID</li>
@@ -325,14 +325,14 @@ var utag_data = {
 <h2 id="要件---tealium-iqタグ">要件 - Tealium iQタグ</h2>
 <p>TiQ Floodlightタグの基本的な構成については、<a href="/client-side-tags/floodlight-gtagjs-tag/">Floodlight tag</a>を参照してください。</p>
 <p>上記でメモした構成値（広告主ID、アクティビティタグ文字列、グループタグ文字列、タイプ）を使用し、基本的なタグ構成でコンバージョンをトリガーするためのイベントマッピングとともに使用します。</p>
-<p>強化コンバージョン機能では、Googleに2つの追加値を渡す必要があります。次の値は、特定のコンバージョンイベントのクライアントサイドとAPI呼び出しの両方で一致する必要があります：</p>
+<p>エンリッチメントコンバージョン機能では、Googleに2つの追加値を渡す必要があります。次の値は、特定のコンバージョンイベントのクライアントサイドとAPI呼び出しの両方で一致する必要があります：</p>
 <ul>
 <li>マッチID（<code>match_id</code>）：クライアントサイドとAPIイベントのマッチングに使用される特定のコンバージョンのための一意の識別子。</li>
 <li>序数（<code>ord</code>）：ブラウザまたはアプリに最新バージョンのファイルをロードさせ、特定の訪問のユニークなコンバージョン数を確保するためのキャッシュバスティング値。</li>
 </ul>
 <p>Tealium iQライブラリが生成する<code>tealium_random</code>属性を使用します。これをTealium iQ Floodlightタグの両属性にマッピングします。</p>
 <h2 id="要件---tealium-eventstreamコネクタ">要件 - Tealium EventStreamコネクタ</h2>
-<p><a href="/server-side-connectors/google-sa360-enhanced-conversions-connector/">SA360 強化コンバージョンコネクタ</a>の実装手順は次のとおりです：</p>
+<p><a href="/server-side-connectors/google-sa360-enhanced-conversions-connector/">SA360 エンリッチメントコンバージョンコネクタ</a>の実装手順は次のとおりです：</p>
 <h3 id="コネクタ構成">コネクタ構成</h3>
 <p>コネクタを追加した後、以下の構成を行います：</p>
 <p><strong>Floodlight Profile ID</strong>：これは、<code>api@tealium.com</code>ユーザーがアカウントに追加されたときにCM360で生成されたプロファイルIDです。</p>
@@ -422,7 +422,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年March月25日
+          <p>最終更新日 ::  2024年March月26日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -577,7 +577,7 @@ var utag_data = {
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          ファーマ向けティリウム
+          ファーマ向けティーリアム
         </a>
     </li>
   
@@ -585,7 +585,7 @@ var utag_data = {
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          ティリウムアイデンティティパートナー
+          ティーリアムアイデンティティパートナー
         </a>
     </li>
   

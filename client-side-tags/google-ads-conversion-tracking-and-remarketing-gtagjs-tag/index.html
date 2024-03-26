@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Google Adsのコンバージョン追跡とリマーケティング（gtag.js）タグのセットアップガイド | クライアントサイドタグ | Tealium開発者ドキュメントプレビュー</title>
+    <title>Google Adsのコンバージョン追跡とリマーケティング（gtag.js）タグの設定ガイド | クライアントサイドタグ | Tealium開発者ドキュメントプレビュー</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -120,7 +120,7 @@ var utag_data = {
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/client-side-tags/adobe-experience-platform-web-sdk-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".adobe-experience-platform-web-sdk-tag">Adobe Experience Platform Web SDK</a>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/client-side-tags/adobe-heartbeat-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".adobe-heartbeat-tag">Adobe Heartbeatタグのセットアップガイド</a>
+        <a href="/client-side-tags/adobe-heartbeat-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".adobe-heartbeat-tag">Adobe Heartbeatタグの設定ガイド</a>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/client-side-tags/adobe-media-analytics-3x-sdk-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".adobe-media-analytics-3x-sdk-tag-setup-guide">Adobe Media Analytics (3.x SDK)</a>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -294,7 +294,7 @@ var utag_data = {
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/client-side-tags/fathom-analytics-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".fathom-analytics-tag">Fathom Analytics</a>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/client-side-tags/firebase-remote-command-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".firebase-remote-command-tag">Firebaseリモートコマンドタグのセットアップガイド（モバイル）</a>
+        <a href="/client-side-tags/firebase-remote-command-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".firebase-remote-command-tag">Firebaseリモートコマンドタグの設定ガイド（モバイル）</a>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/client-side-tags/firebase-remote-command-order-event-example/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".firebase-remote-command-order-event-example">Firebaseリモートコマンド注文イベント例</a>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -600,7 +600,7 @@ var utag_data = {
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/client-side-tags/tribal-fusion-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".tribal-fusion-tag">Tribal Fusion</a>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/client-side-tags/true-fit-integration-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".true-fit-integration-tag">True Fit統合タグのセットアップガイド</a>
+        <a href="/client-side-tags/true-fit-integration-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".true-fit-integration-tag">True Fit統合タグの設定ガイド</a>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/client-side-tags/twitter-universal-website-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".twitter-universal-website-tag">Twitter Universal Website Tag 構成ガイド</a>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -676,7 +676,7 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Google Adsのコンバージョン追跡とリマーケティング（gtag.js）タグのセットアップガイド</h1>
+<h1 class="lh-title mt30 mb3">Google Adsのコンバージョン追跡とリマーケティング（gtag.js）タグの設定ガイド</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -758,12 +758,12 @@ var utag_data = {
 <li>このリストは、<code>tealiumiq.com</code>などのトップレベルドメインで構成される必要があります。</li>
 </ul>
 </li>
-<li><strong>強化型コンバージョンの有効化</strong>
+<li><strong>エンリッチメント型コンバージョンの有効化</strong>
 <ul>
-<li>強化型コンバージョンのサポートは2022年6月に追加されました。古いバージョンのタグを使用していてこの機能を使用したい場合は、タグテンプレートを更新する必要があります。詳細については、<a href="/iq-tag-management/templates/about/">タグテンプレートの管理</a>を参照してください。</li>
-<li><strong>Web向け強化型コンバージョン</strong>機能は、ウェブサイトからハッシュ化された第一者コンバージョンデータをプライバシーに配慮した方法で送信することで、コンバージョン測定の精度を向上させます。</li>
-<li><strong>強化型コンバージョン</strong>を有効にする前に、Google Adsアカウントの<strong>ツールと構成 &gt; 測定/コンバージョン &gt; 構成 &gt; カスタマーデータの利用規約</strong>で<strong>カスタマーデータの利用規約</strong>を承認する必要があります。</li>
-<li>サーバーサイドの<strong>Web向け強化型コンバージョン</strong>コネクタを使用して、非購入コンバージョンの<strong>トランザクションID</strong>に<code>tealium_random</code>などの一意の値をマッピングし、Googleがイベントの重複を排除できるようにします。さらに、変換のためのGoogle Adsの構成内で<strong>実装タイプ</strong>を<code>API</code>に構成します。</li>
+<li>エンリッチメント型コンバージョンのサポートは2022年6月に追加されました。古いバージョンのタグを使用していてこの機能を使用したい場合は、タグテンプレートを更新する必要があります。詳細については、<a href="/iq-tag-management/templates/about/">タグテンプレートの管理</a>を参照してください。</li>
+<li><strong>Web向けエンリッチメント型コンバージョン</strong>機能は、ウェブサイトからハッシュ化された第一者コンバージョンデータをプライバシーに配慮した方法で送信することで、コンバージョン測定の精度を向上させます。</li>
+<li><strong>エンリッチメント型コンバージョン</strong>を有効にする前に、Google Adsアカウントの<strong>ツールと構成 &gt; 測定/コンバージョン &gt; 構成 &gt; カスタマーデータの利用規約</strong>で<strong>カスタマーデータの利用規約</strong>を承認する必要があります。</li>
+<li>サーバーサイドの<strong>Web向けエンリッチメント型コンバージョン</strong>コネクタを使用して、非購入コンバージョンの<strong>トランザクションID</strong>に<code>tealium_random</code>などの一意の値をマッピングし、Googleがイベントの重複を排除できるようにします。さらに、変換のためのGoogle Adsの構成内で<strong>実装タイプ</strong>を<code>API</code>に構成します。</li>
 <li>このタグをEventStreamのGoogle Ads Enhanced Conversionコネクタと連携させる方法の詳細については、<a href="/tech-partners/tealium-google-enhanced-conversions-integration-guide/">Tealium + Google Enhanced Conversions Integration Guide</a>を参照してください。</li>
 </ul>
 </li>
@@ -1390,7 +1390,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left"><code>view_search_results</code></td>
-<td style="text-align:left">ユーザーが検索結果を表示しました。Google Analyticsの強化イベント測定を介して、このイベントを自動的に収集するように構成できます。</td>
+<td style="text-align:left">ユーザーが検索結果を表示しました。Google Analyticsのエンリッチメントイベント測定を介して、このイベントを自動的に収集するように構成できます。</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>cst</code></td>
@@ -1454,7 +1454,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<h3 id="強化型コンバージョン">強化型コンバージョン</h3>
+<h3 id="エンリッチメント型コンバージョン">エンリッチメント型コンバージョン</h3>
 <table>
 <thead>
 <tr>
@@ -1467,7 +1467,7 @@ var utag_data = {
 <tr>
 <td style="text-align:left"><code>config.allow_enhanced_conversions</code></td>
 <td style="text-align:left">真偽値</td>
-<td style="text-align:left">強化型コンバージョンを許可するかどうか。</td>
+<td style="text-align:left">エンリッチメント型コンバージョンを許可するかどうか。</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>user_data.email</code></td>
@@ -1634,7 +1634,7 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e">Eコマース</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">イベント固有のパラメータ</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#iab">IABトランスペアレンシーおよび同意フレームワークv2</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">強化型コンバージョン</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">エンリッチメント型コンバージョン</a></li>
               </nav>
   </aside></nav>
 
@@ -1769,7 +1769,7 @@ var utag_data = {
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          ファーマ向けティリウム
+          ファーマ向けティーリアム
         </a>
     </li>
   
@@ -1777,7 +1777,7 @@ var utag_data = {
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.co.jp/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          ティリウムアイデンティティパートナー
+          ティーリアムアイデンティティパートナー
         </a>
     </li>
   
