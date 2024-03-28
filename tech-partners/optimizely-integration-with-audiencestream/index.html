@@ -11,14 +11,22 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       
 
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
-
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
@@ -65,9 +73,8 @@ var utag_data = {
     </ul>
 
   </div>
-
+  
 </nav>
-
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
@@ -328,15 +335,15 @@ var utag_data = {
 <li>条件の下で、<strong>Tealium</strong>をクリックします。</li>
 <li><strong>Tealium Audience</strong>または<strong>Tealium Badge</strong>をドラッグして、Tealiumオーディエンスに基づいたOptimizely Audience条件を作成します。<br>
 <figure><a class="slb" href="/images/tech-partners/createaudience1.png"><img src="/images/tech-partners/createaudience1.png"
-             alt="Create Audience"
-             title="Create Audience" width="600" height="511"/>
-        </a>
-    </figure><br>
+         alt="Create Audience"
+         title="Create Audience" width="600" height="511"/>
+    </a>
+</figure><br>
 <figure><a class="slb" href="/images/tech-partners/createaudience2.png"><img src="/images/tech-partners/createaudience2.png"
-             alt="Create Audience2"
-             title="Create Audience2" width="550" height="560"/>
-        </a>
-    </figure></li>
+         alt="Create Audience2"
+         title="Create Audience2" width="550" height="560"/>
+    </a>
+</figure></li>
 <li><strong>Save Audience</strong>をクリックします。</li>
 </ol>
 <h2 id="オーディエンスベースの実験を作成する">オーディエンスベースの実験を作成する</h2>
@@ -344,8 +351,8 @@ var utag_data = {
 <p>実験の新しいターゲットオーディエンスを選択するには：</p>
 <ol>
 <li>新しい実験を作成するか、既存の実験を編集し、<strong>オーディエンス</strong>をクリックします。</li>
-<li><strong>ストレージされたオーディエンスを追加する</strong>をクリックし、ターゲットとするオーディエンスを選択します。</li>
-<li>実験をストレージします。</li>
+<li><strong>保存されたオーディエンスを追加する</strong>をクリックし、ターゲットとするオーディエンスを選択します。</li>
+<li>実験を保存します。</li>
 </ol>
 
 </div>
@@ -407,7 +414,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年March月25日
+          <p>最終更新日 ::  2024年March月28日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -421,12 +428,12 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">必要条件</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#optimizely-classic">Optimizely ClassicとAudienceStreamの統合</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">あなたのサイトにutag.sync.jsを追加する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#audiencestream">AudienceStreamとOptimizelyの接続</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#optimizely-x">Optimizely XとAudienceStreamの統合</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">オーディエンスベースの実験を作成する</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6" href="javascript:void(0)">必要条件</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#optimizely-classic%E3%81%A8audiencestream%E3%81%AE%E7%B5%B1%E5%90%88" href="javascript:void(0)">Optimizely ClassicとAudienceStreamの統合</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AButagsyncjs%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B" href="javascript:void(0)">あなたのサイトにutag.sync.jsを追加する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#audiencestream%E3%81%A8optimizely%E3%81%AE%E6%8E%A5%E7%B6%9A" href="javascript:void(0)">AudienceStreamとOptimizelyの接続</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#optimizely-x%E3%81%A8audiencestream%E3%81%AE%E7%B5%B1%E5%90%88" href="javascript:void(0)">Optimizely XとAudienceStreamの統合</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%A8%E3%83%B3%E3%82%B9%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E5%AE%9F%E9%A8%93%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B" href="javascript:void(0)">オーディエンスベースの実験を作成する</a></li>
               </nav>
   </aside></nav>
 
@@ -436,11 +443,47 @@ var utag_data = {
 
     </main>
 
-    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
-    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
 <div class="globalmenu mobilemenu dn">
     
 
@@ -653,6 +696,7 @@ var utag_data = {
 
 </div>
 </div>
+
 </footer>
 
     <script src="/dist/js/app.js"></script>

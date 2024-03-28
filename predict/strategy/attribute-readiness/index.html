@@ -11,14 +11,22 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       
 
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
-
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
@@ -65,9 +73,8 @@ var utag_data = {
     </ul>
 
   </div>
-
+  
 </nav>
-
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
@@ -76,7 +83,7 @@ var utag_data = {
 <div class="flex">
 
     
-      <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-ns sticky-l pt3 pl125" style="width:280px;">
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-scroll dn db-ns sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
@@ -86,80 +93,52 @@ var utag_data = {
   <ul class="list pa0"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/predict/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Predict ML</span></a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".predict-gs">使い方</a>
         <ul class="pl2  predict-gs desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/getting-started/about-predict/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-about-predict">Predictについて</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/getting-started/using-predict/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-using-predict">Predictの使用</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/getting-started/best-practices/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-best-practices">ベストプラクティス</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/getting-started/prerequisites/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-prerequisites">前提条件</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/getting-started/terminology/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-terminology">用語集</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/getting-started/data-compliance-and-usage/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-data-compliance-and-usage">データのコンプライアンスと使用</a>
-      </li></ul>
+        <a href="/predict/getting-started/about-predict/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-about-predict">Predictについて</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/getting-started/using-predict/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-using-predict">Predictの使用</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/getting-started/best-practices/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-best-practices">ベストプラクティス</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/getting-started/prerequisites/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-prerequisites">前提条件</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/getting-started/terminology/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-terminology">用語集</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/getting-started/data-compliance-and-usage/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-data-compliance-and-usage">データのコンプライアンスと使用</a></li></ul>
       </li><li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 primary-color expanded " data-target=".predict-strat">戦略を定義する</a>
         <ul class="pl2 bl b--primary bw1 predict-strat desktopmenu animated fadeIn list "><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/strategy/decide-what-to-predict/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-decide-what-to-predict">何を予測するかを決定する</a>
-      </li><li data-level="2" class="selected relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/strategy/attribute-readiness/" class="db link pr2 pv2 bg-secondary primary-color" data-target=".predict-attribute-readiness">属性の準備状況</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/strategy/prepare-your-data/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-prepare-your-data">データの準備</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/strategy/start-training/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-review-and-start-training">トレーニングを開始する</a>
-      </li></ul>
+        <a href="/predict/strategy/decide-what-to-predict/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-decide-what-to-predict">何を予測するかを決定する</a></li><li data-level="2" class="selected relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/strategy/attribute-readiness/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".predict-attribute-readiness">属性の準備状況</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/strategy/prepare-your-data/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-prepare-your-data">データの準備</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/strategy/start-training/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-review-and-start-training">トレーニングを開始する</a></li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".predict-train">トレーニングモデルの作成</a>
         <ul class="pl2  predict-train desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/training-models/add-a-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-add-a-model">モデルを追加する</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/training-models/review-your-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-review-your-model">モデルのレビュー</a>
-      </li></ul>
+        <a href="/predict/training-models/add-a-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-add-a-model">モデルを追加する</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/training-models/review-your-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-review-your-model">モデルのレビュー</a></li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".predict-eval">モデルの評価と再訓練</a>
         <ul class="pl2  predict-eval desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/evaluate-models/evaluate-trained-models/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-evaluate-trained-models">トレーニング済みモデルの評価</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/evaluate-models/strength-scores/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-strength-scores">強度スコア</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/evaluate-models/the-confusion-matrix/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-the-confusion-matrix">混同行列</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/evaluate-models/the-roc-auc-curve/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-roc-auc-curve">ROC/AUCカーブ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/evaluate-models/probability-distribution/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-probability-distribution">確率分布</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/evaluate-models/view-model-status/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-view-model-status">モデルのステータスを表示する</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/evaluate-models/retrain-a-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-retrain-a-model">モデルの再訓練</a>
-      </li></ul>
+        <a href="/predict/evaluate-models/evaluate-trained-models/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-evaluate-trained-models">トレーニング済みモデルの評価</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/evaluate-models/strength-scores/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-strength-scores">強度スコア</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/evaluate-models/the-confusion-matrix/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-the-confusion-matrix">混同行列</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/evaluate-models/the-roc-auc-curve/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-roc-auc-curve">ROC/AUCカーブ</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/evaluate-models/probability-distribution/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-probability-distribution">確率分布</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/evaluate-models/view-model-status/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-view-model-status">モデルのステータスを表示する</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/evaluate-models/retrain-a-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-retrain-a-model">モデルの再訓練</a></li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".predict-deploy">モデルのデプロイ</a>
         <ul class="pl2  predict-deploy desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/deploy/deploy-a-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-deploying-a-model">モデルのデプロイ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/deploy/undeploy-a-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-undeploy-a-model">モデルのアンデプロイ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/deploy/deployed-model-health/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-deployed-model-health">デプロイされたモデルの健康状態</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/deploy/model-retraining-recommendations/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-model-retraining-recommendations">モデルの再訓練に関する推奨事項</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/deploy/delete-a-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-delete-a-model">モデルの削除</a>
-      </li></ul>
+        <a href="/predict/deploy/deploy-a-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-deploying-a-model">モデルのデプロイ</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/deploy/undeploy-a-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-undeploy-a-model">モデルのアンデプロイ</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/deploy/deployed-model-health/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-deployed-model-health">デプロイされたモデルの健康状態</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/deploy/model-retraining-recommendations/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-model-retraining-recommendations">モデルの再訓練に関する推奨事項</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/deploy/delete-a-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-delete-a-model">モデルの削除</a></li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".predict-aud">オーディエンスを作成する</a>
         <ul class="pl2  predict-aud desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/audiences/audience-considerations/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-audience-considerations">オーディエンスの考慮事項</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/audiences/enrich-your-output-attribute/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-create-audiences-with-predict">Predictを使用してオーディエンスを作成する</a>
-      </li></ul>
+        <a href="/predict/audiences/audience-considerations/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-audience-considerations">オーディエンスの考慮事項</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/audiences/enrich-your-output-attribute/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-create-audiences-with-predict">Predictを使用してオーディエンスを作成する</a></li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".predict-adv">高度なトピック</a>
         <ul class="pl2  predict-adv desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/advanced/machine-learning-vs-artificial-intelligence/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-machine-learning-vs-artificial-intelligence">機械学習と人工知能の違い</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/predict/advanced/machine-learning-concepts-and-technology/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-machine-learning-concepts-and-technology">マシンラーニングの概念と技術</a>
-      </li></ul>
+        <a href="/predict/advanced/machine-learning-vs-artificial-intelligence/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-machine-learning-vs-artificial-intelligence">機械学習と人工知能の違い</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/predict/advanced/machine-learning-concepts-and-technology/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-machine-learning-concepts-and-technology">マシンラーニングの概念と技術</a></li></ul>
       </li></ul>
 </nav>
 </div>
@@ -307,11 +286,47 @@ var utag_data = {
 
     </main>
 
-    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
-    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
 <div class="globalmenu mobilemenu dn">
     
 
@@ -716,6 +731,7 @@ var utag_data = {
 
 </div>
 </div>
+
 </footer>
 
     <script src="/dist/js/app.js"></script>

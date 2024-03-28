@@ -11,14 +11,22 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       
 
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
-
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
@@ -65,9 +73,8 @@ var utag_data = {
     </ul>
 
   </div>
-
+  
 </nav>
-
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
@@ -76,7 +83,7 @@ var utag_data = {
 <div class="flex">
 
     
-      <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-ns sticky-l pt3 pl125" style="width:280px;">
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-scroll dn db-ns sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
@@ -84,232 +91,139 @@ var utag_data = {
   
   </ul>
   <ul class="list pa0"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">Web</span></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/getting-started-web/quick-start/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".getting-started-web">はじめに</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/getting-started-web/quick-start/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".getting-started-web">はじめに</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".javascript">JavaScript (Web)</a>
         <ul class="pl2  javascript desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/javascript/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".javascript-overview">概要</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/javascript/track/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".javascript-track">トラッキング</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/javascript/data-layer/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".">データレイヤー</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/javascript/universal-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".">ユニバーサルタグ（utag.js）</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/javascript/debugging/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".">デバッグ</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/javascript/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".javascript-overview">概要</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/javascript/track/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".javascript-track">トラッキング</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/javascript/data-layer/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">データレイヤー</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/javascript/universal-tag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">ユニバーサルタグ（utag.js）</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/javascript/debugging/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">デバッグ</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".javascript-api">APIリファレンス</a>
         <ul class="pl2  javascript-api desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/javascript/api/cookie-functions/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".javascript-api-cookie-functions">Cookie 機能</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/javascript/api/gdpr-functions/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".javascript-api-gdpr-functions">GDPR 機能</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/javascript/api/tracking-functions/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".javascript-api-tracking-functions">トラッキング関数</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/javascript/api/utility-functions/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".javascript-api-utility-functions">ユーティリティ関数</a>
-      </li></ul>
+        <a href="/platforms/javascript/api/cookie-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".javascript-api-cookie-functions">Cookie 機能</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/javascript/api/gdpr-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".javascript-api-gdpr-functions">GDPR 機能</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/javascript/api/tracking-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".javascript-api-tracking-functions">トラッキング関数</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/javascript/api/utility-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".javascript-api-utility-functions">ユーティリティ関数</a></li></ul>
       </li></ul>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/adobe-launch/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".adobe-launch">Adobe Launch</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/amp/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".amp">AMP</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/angular/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".angular">Angular</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/google-tag-manager/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".google-tag-manager">Google Tag Manager</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/magento-v1/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".magento-v1">Magento 1.x</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/magento/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".magento">Magento 2.x</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/salesforce/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".salesforce-launch">Salesforce</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/shopify/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".shopify-launch">Shopify</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  mb2 break ind2">
-        <a href="/platforms/wordpress/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".wordpress-launch">WordPress</a>
-      </li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">Mobile</span></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/getting-started-mobile/quick-start/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".getting-started">はじめに</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/adobe-launch/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".adobe-launch">Adobe Launch</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/amp/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".amp">AMP</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/angular/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".angular">Angular</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/google-tag-manager/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-tag-manager">Google Tag Manager</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/magento-v1/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".magento-v1">Magento 1.x</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/magento/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".magento">Magento 2.x</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/salesforce/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-launch">Salesforce</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/shopify/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".shopify-launch">Shopify</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  mb2 break ind2">
+        <a href="/platforms/wordpress/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".wordpress-launch">WordPress</a></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">Mobile</span></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/getting-started-mobile/quick-start/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".getting-started">はじめに</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".remote-commands">リモートコマンド</a>
         <ul class="pl2  remote-commands desktopmenu animated fadeIn list  dn"><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".remote-commands-integrations">Integrations</a>
         <ul class="pl2  remote-commands-integrations desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/remote-commands/integrations/adjust/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".remote-commands-adjust">Adjust</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/remote-commands/integrations/appsflyer/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".remote-commands-appsflyer">AppsFlyer</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/remote-commands/integrations/branch/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".remote-commands-branch">Branch</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/remote-commands/integrations/braze/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".remote-commands-braze">Braze</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/remote-commands/integrations/contentsquare/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".remote-commands-contentsquare">Contentsquare</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/remote-commands/integrations/facebook/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".remote-commands-facebook">Facebook</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".remote-commands-firebase">Firebase</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/remote-commands/integrations/kochava/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".remote-commands-kochava">Kochava</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/remote-commands/integrations/usabilla/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".remote-commands-usabilla">Usabilla</a>
-      </li></ul>
+        <a href="/platforms/remote-commands/integrations/adjust/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".remote-commands-adjust">Adjust</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/remote-commands/integrations/appsflyer/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".remote-commands-appsflyer">AppsFlyer</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/remote-commands/integrations/branch/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".remote-commands-branch">Branch</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/remote-commands/integrations/braze/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".remote-commands-braze">Braze</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/remote-commands/integrations/contentsquare/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".remote-commands-contentsquare">Contentsquare</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/remote-commands/integrations/facebook/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".remote-commands-facebook">Facebook</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/remote-commands/integrations/firebase/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".remote-commands-firebase">Firebase</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/remote-commands/integrations/kochava/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".remote-commands-kochava">Kochava</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/remote-commands/integrations/usabilla/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".remote-commands-usabilla">Usabilla</a></li></ul>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".android-java">Android (Java)</a>
         <ul class="pl2  android-java desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/android-java/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-overview">概要</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/android-java/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-install">インストール</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/android-java/track/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-track">トラッキング</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/android-java/data-layer/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-data-layer">データレイヤー</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/android-java/data-management/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-data-management">データ管理</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/android-java/consent-management/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-consent-management">同意管理</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/android-java/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-overview">概要</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/android-java/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-install">インストール</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/android-java/track/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-track">トラッキング</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/android-java/data-layer/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-data-layer">データレイヤー</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/android-java/data-management/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-data-management">データ管理</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/android-java/consent-management/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-consent-management">同意管理</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".android-java-module-list">モジュールのリスト</a>
         <ul class="pl2  android-java-module-list desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/module-list/adid/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-module-list-adid">Ad Identifierモジュール</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/module-list/crash-reporter/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-module-list-crash-reporter">Crash Reporterモジュール</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/module-list/install-referrer/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-module-list-install-referrer">Install Referrerモジュール</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/module-list/lifecycle-tracking/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-module-list-lifecycle-tracking">Lifecycle Trackingモジュール</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/module-list/location/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-module-list-location">Locationモジュール</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/module-list/optimizely-x-tracking/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-module-list-optimizely-x-tracking">Optimizely X Trackingモジュール</a>
-      </li></ul>
+        <a href="/platforms/android-java/module-list/adid/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-module-list-adid">Ad Identifierモジュール</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/module-list/crash-reporter/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-module-list-crash-reporter">Crash Reporterモジュール</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/module-list/install-referrer/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-module-list-install-referrer">Install Referrerモジュール</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/module-list/lifecycle-tracking/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-module-list-lifecycle-tracking">Lifecycle Trackingモジュール</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/module-list/location/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-module-list-location">Locationモジュール</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/module-list/optimizely-x-tracking/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-module-list-optimizely-x-tracking">Optimizely X Trackingモジュール</a></li></ul>
       </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/android-java/tv/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-tv">Android TV</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/android-java/wear/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-wear">Android Wear</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/android-java/tv/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-tv">Android TV</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/android-java/wear/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-wear">Android Wear</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".android-java-api">APIリファレンス</a>
         <ul class="pl2  android-java-api desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/api/consent-manager/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-api-consent-manager">ConsentManager</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/api/data-sources/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-api-data-sources">DataSources</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/api/life-cycle/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-api-life-cycle">Lifecycle</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/api/tealium/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-api-tealium">Tealium</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/api/tealium-config/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-api-tealium-config">Tealium.Config</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-java/api/tealium-location/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-api-tealium-location">TealiumLocation</a>
-      </li></ul>
+        <a href="/platforms/android-java/api/consent-manager/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-api-consent-manager">ConsentManager</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/api/data-sources/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-api-data-sources">DataSources</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/api/life-cycle/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-api-life-cycle">Lifecycle</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/api/tealium/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-api-tealium">Tealium</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/api/tealium-config/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-api-tealium-config">Tealium.Config</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/android-java/api/tealium-location/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-api-tealium-location">TealiumLocation</a></li></ul>
       </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/android-java/release-notes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-java-release-notes">リリースノート</a>
-      </li></ul>
+        <a href="/platforms/android-java/release-notes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-java-release-notes">リリースノート</a></li></ul>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/android-kotlin/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".android-kotlin">Android (Kotlin)</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/cordova-v1/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".cordova-v1">Cordova 1.x</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/cordova/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".cordova">Cordova 2.x</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/flutter-v1/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".flutter-v1">Flutter 1.x</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/flutter/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".flutter">Flutter 2.x</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/ios-objective-c/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ios-objective-c">iOS (Objective-C)</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/android-kotlin/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".android-kotlin">Android (Kotlin)</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/cordova-v1/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".cordova-v1">Cordova 1.x</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/cordova/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".cordova">Cordova 2.x</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/flutter-v1/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".flutter-v1">Flutter 1.x</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/flutter/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".flutter">Flutter 2.x</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-objective-c/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-objective-c">iOS (Objective-C)</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".ios-swift-v1">iOS (Swift) 1.x</a>
         <ul class="pl2  ios-swift-v1 desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/ios-swift-v1/feature-comparison/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ios-swift-v1-feature-comparison">機能比較</a>
-      </li></ul>
+        <a href="/platforms/ios-swift-v1/feature-comparison/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-v1-feature-comparison">機能比較</a></li></ul>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/ios-swift/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ios-swift">iOS (Swift) 2.x</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/nativescript/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".nativescript">NativeScript</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/ios-swift/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift">iOS (Swift) 2.x</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/nativescript/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".nativescript">NativeScript</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".react-native-v1">React Native 1.x</a>
         <ul class="pl2  react-native-v1 desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/react-native-v1/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-v1-overview">概要</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/react-native-v1/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-v1-install">インストール</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/react-native-v1/track/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-v1-track">トラッキング</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/react-native-v1/api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-v1-api">APIリファレンス</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/react-native-v1/release-notes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-v1-release-notes">リリースノート</a>
-      </li></ul>
+        <a href="/platforms/react-native-v1/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".react-native-v1-overview">概要</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/react-native-v1/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".react-native-v1-install">インストール</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/react-native-v1/track/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".react-native-v1-track">トラッキング</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/react-native-v1/api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".react-native-v1-api">APIリファレンス</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/react-native-v1/release-notes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".react-native-v1-release-notes">リリースノート</a></li></ul>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/react-native/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native">React Native 2.x</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/unity-v1/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".unity-v1">Unity 1.x</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/unity/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".unity">Unity 2.x</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/react-native/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".react-native">React Native 2.x</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/unity-v1/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".unity-v1">Unity 1.x</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/unity/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".unity">Unity 2.x</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".xamarin-v1">Xamarin 1.x</a>
         <ul class="pl2  xamarin-v1 desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/xamarin-v1/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".xamarin-v1-overview">概要</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/xamarin-v1/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".xamarin-v1-install">インストール</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/xamarin-v1/track/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".xamarin-v1-track">トラッキング</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/xamarin-v1/data-management/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".xamarin-v1-data-management">データ管理</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/xamarin-v1/consent-mangagement/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".xamarin-v1-consent-management">同意管理</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/xamarin-v1/api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".xamarin-v1-api">APIリファレンス</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/xamarin-v1/release-notes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".xamarin-v1-release-notes">リリースノート</a>
-      </li></ul>
+        <a href="/platforms/xamarin-v1/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".xamarin-v1-overview">概要</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/xamarin-v1/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".xamarin-v1-install">インストール</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/xamarin-v1/track/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".xamarin-v1-track">トラッキング</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/xamarin-v1/data-management/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".xamarin-v1-data-management">データ管理</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/xamarin-v1/consent-mangagement/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".xamarin-v1-consent-management">同意管理</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/xamarin-v1/api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".xamarin-v1-api">APIリファレンス</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/xamarin-v1/release-notes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".xamarin-v1-release-notes">リリースノート</a></li></ul>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  mb2 break ind2">
-        <a href="/platforms/xamarin/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".xamarin">Xamarin 2.x</a>
-      </li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">サーバー</span></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/csharp/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".csharp">C#</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/http-api/endpoint/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".http-api">HTTP API</a>
-      </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/java/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".java">Java</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/xamarin/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".xamarin">Xamarin 2.x</a></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">サーバー</span></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/csharp/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".csharp">C#</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/http-api/endpoint/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".http-api">HTTP API</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/java/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".java">Java</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".node">Node</a>
         <ul class="pl2  node desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/node/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".node-overview">概要</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/node/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".node-install">インストール</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/node/track/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".node-track">トラッキング</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/node/api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".node-api">APIリファレンス</a>
-      </li></ul>
+        <a href="/platforms/node/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".node-overview">概要</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/node/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".node-install">インストール</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/node/track/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".node-track">トラッキング</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/node/api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".node-api">APIリファレンス</a></li></ul>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/python/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".python">Python</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/python/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".python">Python</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".roku">Roku</a>
         <ul class="pl2  roku desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/roku/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".roku-overview">概要</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/roku/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".roku-install">インストール</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/roku/track/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".roku-track">トラッキング</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/roku/api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".roku-api">APIリファレンス</a>
-      </li></ul>
+        <a href="/platforms/roku/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".roku-overview">概要</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/roku/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".roku-install">インストール</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/roku/track/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".roku-track">トラッキング</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/roku/api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".roku-api">APIリファレンス</a></li></ul>
       </li><li class="relative w-100 fw8 f5  mb2 break">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".ruby">Ruby</a>
         <ul class="pl2  ruby desktopmenu animated fadeIn list  dn"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/ruby/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ruby-overview">概要</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/ruby/install/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ruby-install">インストール</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/ruby/track/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ruby-track">トラッキング</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/ruby/api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ruby-api">APIリファレンス</a>
-      </li></ul>
+        <a href="/platforms/ruby/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ruby-overview">概要</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ruby/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ruby-install">インストール</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ruby/track/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ruby-track">トラッキング</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ruby/api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ruby-api">APIリファレンス</a></li></ul>
       </li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/platforms/release-notes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".platforms-release-notes">リリースノート</a>
-      </li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">ios-objective-c-module-list</span>
+        <a href="/platforms/release-notes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".platforms-release-notes">リリースノート</a></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">ios-objective-c-module-list</span>
         <ul data-level="1" class=" desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/ios-objective-c/module-list/optimizely-x-tracking/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".ios-objective-c-module-list-optimizely-x-tracking">Optimizely X Trackingモジュール</a>
-      </li></ul></li></ul>
+        <a href="/platforms/ios-objective-c/module-list/optimizely-x-tracking/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-objective-c-module-list-optimizely-x-tracking">Optimizely X Trackingモジュール</a></li></ul></li></ul>
 </nav>
 </div>
     
@@ -426,8 +340,8 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#120-2020">1.2.0 (2020年2月)</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#100-2019">1.0.0 (2019年7月)</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#120-2020%E5%B9%B42%E6%9C%88" href="javascript:void(0)">1.2.0 (2020年2月)</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#100-2019%E5%B9%B47%E6%9C%88" href="javascript:void(0)">1.0.0 (2019年7月)</a></li>
               </nav>
   </aside></nav>
 
@@ -437,11 +351,47 @@ var utag_data = {
 
     </main>
 
-    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
-    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
 <div class="globalmenu mobilemenu dn">
     
 
@@ -978,6 +928,7 @@ var utag_data = {
 
 </div>
 </div>
+
 </footer>
 
     <script src="/dist/js/app.js"></script>

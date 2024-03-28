@@ -11,14 +11,22 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       
 
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
-
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
@@ -65,9 +73,8 @@ var utag_data = {
     </ul>
 
   </div>
-
+  
 </nav>
-
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
@@ -388,7 +395,7 @@ var utag_data = {
 <p>現在開発中の新しいAndroid SDKには、VisitorServiceが含まれています。</p>
 <h4 id="tealium-data-layer-enrichment-public-api">Tealium Data Layer Enrichment Public API</h4>
 <p>SDKがVisitorServiceを実装していない言語で現在のユーザーのTealiumプロファイルを取得するには、<a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/manage-data-layer-enrichment-api/">Data Layer Enrichment Public API</a>を参照してください。</p>
-<p class="tip"><i class="fa fa-info-circle"></i>Data Layer Enrichment APIをサーバーサイドのコードで使用する場合、ユーザープロファイルをローカルサーバーにストレージし、更新リクエストをバックグラウンドで行うことを検討してください（約100ミリ秒以下）。</p>
+<p class="tip"><i class="fa fa-info-circle"></i>Data Layer Enrichment APIをサーバーサイドのコードで使用する場合、ユーザープロファイルをローカルサーバーに保存し、更新リクエストをバックグラウンドで行うことを検討してください（約100ミリ秒以下）。</p>
 <p>あなたの実装があなたのユースケースに適していることを確認するために、Optimizelyの担当者に連絡してください。</p>
 <p>Data Layer Enrichment APIは、以下の例のような訪問プロファイルのJSONを返します：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
@@ -441,7 +448,7 @@ var utag_data = {
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>プロジェクトごとの属性の上限は100です。使用する予定のTealiumのオーディエンスとバッジの属性のみを作成してください。</p>
 <h4 id="属性を編集する">属性を編集する</h4>
-<p>属性は、OptimzelyのAPIを呼び出す際に渡すユーザーの特性で、これを使用してオーディエンスを作成することができます。属性を編集するには、属性をクリックし、Attribute KeyまたはオプションのAttribute Descriptionフィールドを編集し、<strong>Save Attribute</strong>をクリックして変更をストレージします。</p>
+<p>属性は、OptimzelyのAPIを呼び出す際に渡すユーザーの特性で、これを使用してオーディエンスを作成することができます。属性を編集するには、属性をクリックし、Attribute KeyまたはオプションのAttribute Descriptionフィールドを編集し、<strong>Save Attribute</strong>をクリックして変更を保存します。</p>
 <h4 id="optimizelyのオーディエンスを構成する">Optimizelyのオーディエンスを構成する</h4>
 <p>Optimizely Full Stackインターフェース内で属性を作成した後、以下の手順を使用してオーディエンスを作成します：</p>
 <ol>
@@ -450,10 +457,10 @@ var utag_data = {
 <li>オーディエンスの名前と説明を入力します。</li>
 <li>Custom Attributesの下で、前の手順で作成したTealiumの属性を選択します。<br>
 <figure><a class="slb" href="/images/tech-partners/optimizely-create-new-audience.jpg"><img src="/images/tech-partners/optimizely-create-new-audience.jpg"
-             alt="Optimizely Create New Audience"
-             title="Optimizely Create New Audience"/>
-        </a>
-    </figure></li>
+         alt="Optimizely Create New Audience"
+         title="Optimizely Create New Audience"/>
+    </a>
+</figure></li>
 <li>オーディエンスを必要に応じて構成したら、<strong>Save</strong>をクリックします。</li>
 </ol>
 <h4 id="tealiumのオーディエンスとバッジをoptimizelyに渡す">TealiumのオーディエンスとバッジをOptimizelyに渡す</h4>
@@ -546,7 +553,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年March月26日
+          <p>最終更新日 ::  2024年March月28日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -560,12 +567,12 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">前提条件</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">制限事項と考慮事項</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium-sdk-visitorservice">Tealium SDK: VisitorService</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#swift-for-ios">Swift for iOS</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#android">Android</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6" href="javascript:void(0)">前提条件</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E4%BB%95%E7%B5%84%E3%81%BF" href="javascript:void(0)">仕組み</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E5%88%B6%E9%99%90%E4%BA%8B%E9%A0%85%E3%81%A8%E8%80%83%E6%85%AE%E4%BA%8B%E9%A0%85" href="javascript:void(0)">制限事項と考慮事項</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tealium-sdk-visitorservice" href="javascript:void(0)">Tealium SDK: VisitorService</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#swift-for-ios" href="javascript:void(0)">Swift for iOS</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#android" href="javascript:void(0)">Android</a></li>
               </nav>
   </aside></nav>
 
@@ -575,11 +582,47 @@ var utag_data = {
 
     </main>
 
-    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
-    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
 <div class="globalmenu mobilemenu dn">
     
 
@@ -792,6 +835,7 @@ var utag_data = {
 
 </div>
 </div>
+
 </footer>
 
     <script src="/dist/js/app.js"></script>

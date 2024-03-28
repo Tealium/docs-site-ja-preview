@@ -11,14 +11,22 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       
 
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
-
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
@@ -65,9 +73,8 @@ var utag_data = {
     </ul>
 
   </div>
-
+  
 </nav>
-
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
@@ -76,7 +83,7 @@ var utag_data = {
 <div class="flex">
 
     
-      <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-ns sticky-l pt3 pl125" style="width:280px;">
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-scroll dn db-ns sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
@@ -87,35 +94,25 @@ var utag_data = {
         <ul data-level="1" class="api-v1 desktopmenu animated fadeIn list pl0 mt2"><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".api-v1-getting-started">はじめに</a>
         <ul class="pl2  api-v1-getting-started desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/getting-started/auth/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".api-v1-authentication">認証</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/getting-started/request-format/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".api-v1-request-format">リクエスト形式</a>
-      </li></ul>
+        <a href="/api-v1/getting-started/auth/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".api-v1-authentication">認証</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/api-v1/getting-started/request-format/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".api-v1-request-format">リクエスト形式</a></li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".iq-revisions-v1">iQ リビジョン</a>
         <ul class="pl2  iq-revisions-v1 desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/iq-revisions/about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".v1-about-iq-revisions-v1">概要</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/iq-revisions/data-objects/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".v1-iq-revisions-objects-v1">データオブジェクト</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/iq-revisions/endpoints/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".v1-iq-revisions-endpoints-v1">エンドポイント</a>
-      </li></ul>
+        <a href="/api-v1/iq-revisions/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".v1-about-iq-revisions-v1">概要</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/api-v1/iq-revisions/data-objects/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".v1-iq-revisions-objects-v1">データオブジェクト</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/api-v1/iq-revisions/endpoints/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".v1-iq-revisions-endpoints-v1">エンドポイント</a></li></ul>
       </li><li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 primary-color expanded " data-target=".hosted-data-layer-v1">ホストされたデータレイヤー</a>
         <ul class="pl2 bl b--primary bw1 hosted-data-layer-v1 desktopmenu animated fadeIn list "><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/hosted-data-layer/about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".v1-about-hosted-data-layer-v1">概要</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/hosted-data-layer/data-objects/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".v1-hosted-data-layer-objects-v1">データオブジェクト</a>
-      </li><li data-level="3" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/hosted-data-layer/endpoints/" class="db link pr2 pv2 bg-secondary primary-color" data-target=".v1-hosted-data-layer-endpoints-v1">エンドポイント</a>
-      </li></ul>
+        <a href="/api-v1/hosted-data-layer/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".v1-about-hosted-data-layer-v1">概要</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/api-v1/hosted-data-layer/data-objects/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".v1-hosted-data-layer-objects-v1">データオブジェクト</a></li><li data-level="3" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/api-v1/hosted-data-layer/endpoints/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".v1-hosted-data-layer-endpoints-v1">エンドポイント</a></li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".omnichannel-file-status-v1">オムニチャネルファイルステータス</a>
         <ul class="pl2  omnichannel-file-status-v1 desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/omnichannel-file-status/data-objects/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".v1-omnichannel-file-status-objects-v1">データオブジェクト</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api-v1/omnichannel-file-status/endpoints/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".v1-omnichannel-file-status-endpoints-v1">エンドポイント</a>
-      </li></ul>
+        <a href="/api-v1/omnichannel-file-status/data-objects/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".v1-omnichannel-file-status-objects-v1">データオブジェクト</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/api-v1/omnichannel-file-status/endpoints/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".v1-omnichannel-file-status-endpoints-v1">エンドポイント</a></li></ul>
       </li></ul></li></ul>
 </nav>
 </div>
@@ -409,26 +406,26 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">アップロード</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#curl">cURLリクエスト</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">例のレスポンス</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">エラーメッセージ</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">更新</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#curl">cURLリクエスト</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">例のレスポンス</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">エラーメッセージ</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">削除</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#curl">cURLリクエスト</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">例のレスポンス</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">エラーメッセージ</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ステータスの取得</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#curl">cURLリクエスト</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">例のレスポンス</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">エラーメッセージ</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">リスト</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#curl">cURLリクエスト</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">例のレスポンス</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">エラーメッセージ</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89" href="javascript:void(0)">アップロード</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#curl%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88" href="javascript:void(0)">cURLリクエスト</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E4%BE%8B%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B9" href="javascript:void(0)">例のレスポンス</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8" href="javascript:void(0)">エラーメッセージ</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E6%9B%B4%E6%96%B0" href="javascript:void(0)">更新</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#curl%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88" href="javascript:void(0)">cURLリクエスト</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E4%BE%8B%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B9" href="javascript:void(0)">例のレスポンス</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8" href="javascript:void(0)">エラーメッセージ</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E5%89%8A%E9%99%A4" href="javascript:void(0)">削除</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#curl%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88" href="javascript:void(0)">cURLリクエスト</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E4%BE%8B%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B9" href="javascript:void(0)">例のレスポンス</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8" href="javascript:void(0)">エラーメッセージ</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E5%8F%96%E5%BE%97" href="javascript:void(0)">ステータスの取得</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#curl%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88" href="javascript:void(0)">cURLリクエスト</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E4%BE%8B%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B9" href="javascript:void(0)">例のレスポンス</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8" href="javascript:void(0)">エラーメッセージ</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%AA%E3%82%B9%E3%83%88" href="javascript:void(0)">リスト</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#curl%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88" href="javascript:void(0)">cURLリクエスト</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E4%BE%8B%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B9" href="javascript:void(0)">例のレスポンス</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8" href="javascript:void(0)">エラーメッセージ</a></li>
               </nav>
   </aside></nav>
 
@@ -438,11 +435,47 @@ var utag_data = {
 
     </main>
 
-    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
-    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
 <div class="globalmenu mobilemenu dn">
     
 
@@ -690,6 +723,7 @@ var utag_data = {
 
 </div>
 </div>
+
 </footer>
 
     <script src="/dist/js/app.js"></script>

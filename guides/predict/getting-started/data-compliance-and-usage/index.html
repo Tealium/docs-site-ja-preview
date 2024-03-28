@@ -11,14 +11,22 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       
 
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
-
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
@@ -65,9 +73,8 @@ var utag_data = {
     </ul>
 
   </div>
-
+  
 </nav>
-
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
@@ -76,7 +83,7 @@ var utag_data = {
 <div class="flex">
 
     
-      <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-ns sticky-l pt3 pl125" style="width:280px;">
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-scroll dn db-ns sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
@@ -85,155 +92,82 @@ var utag_data = {
   </ul>
   <ul class="list pa0"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/guides/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">audiencestream-getting-started</span></a>
         <ul data-level="1" class=" desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/introduction/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-introduction">はじめに</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/attributes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-attributes">属性</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/attributes-enrichments/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-attributes-enrichments">属性: エンリッチメント</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/attributes-badges/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-attributes-badges">属性: バッジ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/attributes-offline-data/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-attributes-offline-data">属性: オフラインデータ（オムニチャネル）</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/visitor-stitching/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching">Visitor Stitching</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/visitor-stitching-id/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching-id">Visitor Stitching: 訪問ID</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/visitor-stitching-part1/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching-part1">Visitor Stitching: パート1</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/visitor-stitching-part2/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching-part2">Visitor Stitching: パート 2</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/visitor-stitching-discovery/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching-discovery">Visitor Stitching: 検出</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/audiences/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-audiences">オーディエンス</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/connectors/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-connectors">コネクタ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/connectors-add/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-connectors-add">コネクタ: コネクタの追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/trace/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-trace">トレース</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/trace-test/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-trace-test">トレース: トレースでのテスト</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/save-publish/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-save-publish">ストレージと公開</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/audiencestream/getting-started/next-steps/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-next-steps">次のステップ</a>
-      </li></ul></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/guides/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">eventstream-getting-started</span></a>
+        <a href="/guides/audiencestream/getting-started/introduction/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-introduction">はじめに</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-attributes">属性</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/attributes-enrichments/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-attributes-enrichments">属性: エンリッチメント</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/attributes-badges/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-attributes-badges">属性: バッジ</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/attributes-offline-data/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-attributes-offline-data">属性: オフラインデータ（オムニチャネル）</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/visitor-stitching/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching">Visitor Stitching</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/visitor-stitching-id/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching-id">Visitor Stitching: 訪問ID</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/visitor-stitching-part1/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching-part1">Visitor Stitching: パート1</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/visitor-stitching-part2/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching-part2">Visitor Stitching: パート 2</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/visitor-stitching-discovery/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-visitor-stitching-discovery">Visitor Stitching: 検出</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/audiences/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-audiences">オーディエンス</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/connectors/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-connectors">コネクタ</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/connectors-add/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-connectors-add">コネクタ: コネクタの追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/trace/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-trace">トレース</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/trace-test/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-trace-test">トレース: トレースでのテスト</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/save-publish/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-save-publish">保存と公開</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/audiencestream/getting-started/next-steps/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-getting-started-next-steps">次のステップ</a></li></ul></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/guides/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">eventstream-getting-started</span></a>
         <ul data-level="1" class=" desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/introduction/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-introduction">はじめに</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/data-sources/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-data-sources">データソース</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/data-sources-add/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-data-sources-add">データソース: データソースの追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/data-sources-install-test/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-data-sources-install-test">データソース: インストールとテスト</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/live-events/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-live-events">Live Events</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/event-specs/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-specs">イベント仕様</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/event-specs-add/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-specs-add">イベント仕様: 仕様の追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/event-specs-data-quality/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-specs-data-quality">イベント仕様: データ品質</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/event-feeds/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-feeds">イベントフィード</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/event-feeds-add/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-feeds-add">イベントフィード: フィードの追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/connectors/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-connectors">コネクタ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/connectors-add/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-connectors-add">コネクタ: コネクタの追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/trace/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-trace">トレース</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/trace-test/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-trace-test">トレース: トレースでのテスト</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/save-publish/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-save-publish">ストレージと公開</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/eventstream/getting-started/next-steps/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-getting-started-next-steps">次のステップ</a>
-      </li></ul></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/guides/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">iq-tag-management-getting-started</span></a>
+        <a href="/guides/eventstream/getting-started/introduction/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-introduction">はじめに</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/data-sources/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-data-sources">データソース</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/data-sources-add/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-data-sources-add">データソース: データソースの追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/data-sources-install-test/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-data-sources-install-test">データソース: インストールとテスト</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/live-events/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-live-events">Live Events</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/event-specs/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-specs">イベント仕様</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/event-specs-add/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-specs-add">イベント仕様: 仕様の追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/event-specs-data-quality/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-specs-data-quality">イベント仕様: データ品質</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/event-feeds/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-feeds">イベントフィード</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/event-feeds-add/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-event-feeds-add">イベントフィード: フィードの追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/connectors/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-connectors">コネクタ</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/connectors-add/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-connectors-add">コネクタ: コネクタの追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/trace/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-trace">トレース</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/trace-test/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-trace-test">トレース: トレースでのテスト</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/save-publish/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-save-publish">保存と公開</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/eventstream/getting-started/next-steps/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".eventstream-getting-started-next-steps">次のステップ</a></li></ul></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/guides/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">iq-tag-management-getting-started</span></a>
         <ul data-level="1" class=" desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/introduction/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-introduction">はじめに</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/data-layer-basics/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-data-layer-basics">データレイヤーの基本</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/data-layer-add-variables/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-data-layer-add-variables">データレイヤーの基本: 共通変数の追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/tag-basics/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-tag-basics">タグの基本</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/tag-basics-add-tag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-tag-basics-add-tag">タグの基本: タグの追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/tag-basics-load-rule/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-tag-basics-load-rule">タグの基本: 読み込みルールの追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/tag-basics-data-mapping/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-tag-basics-data-mapping">タグの基本: データマッピングの追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/extensions/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-extensions">拡張機能</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/extensions-add/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-extensions-add">拡張機能: 拡張機能の追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/save-publish-basics/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-save-publish-basics&#34;">ストレージと公開</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/saving-changes/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-saving-changes&#34;">変更のストレージ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/publish-environments/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-publish-environments&#34;">公開環境</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/save-publish/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-save-publish&#34;">ストレージと公開</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/install-test/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-install-test&#34;">インストールとテスト</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/install-utag/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-install-utag&#34;">utag_dataとutag.jsのインストール</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/code-center/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-code-center&#34;">コードセンターの使用</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/web-companion/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-web-companion&#34;">Web Companionの検証</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/iq-tag-management/getting-started/next-steps/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-next-steps&#34;">次のステップ</a>
-      </li></ul></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/guides/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">predict-getting-started</span></a>
+        <a href="/guides/iq-tag-management/getting-started/introduction/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-introduction">はじめに</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/data-layer-basics/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-data-layer-basics">データレイヤーの基本</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/data-layer-add-variables/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-data-layer-add-variables">データレイヤーの基本: 共通変数の追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/tag-basics/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-tag-basics">タグの基本</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/tag-basics-add-tag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-tag-basics-add-tag">タグの基本: タグの追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/tag-basics-load-rule/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-tag-basics-load-rule">タグの基本: 読み込みルールの追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/tag-basics-data-mapping/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-tag-basics-data-mapping">タグの基本: データマッピングの追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/extensions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-extensions">拡張機能</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/extensions-add/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-extensions-add">拡張機能: 拡張機能の追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/save-publish-basics/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-save-publish-basics&#34;">保存と公開</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/saving-changes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-saving-changes&#34;">変更の保存</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/publish-environments/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-publish-environments&#34;">公開環境</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/save-publish/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-save-publish&#34;">保存と公開</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/install-test/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-install-test&#34;">インストールとテスト</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/install-utag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-install-utag&#34;">utag_dataとutag.jsのインストール</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/code-center/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-code-center&#34;">コードセンターの使用</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/web-companion/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-web-companion&#34;">Web Companionの検証</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/iq-tag-management/getting-started/next-steps/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-tag-management-getting-started-next-steps&#34;">次のステップ</a></li></ul></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/guides/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">predict-getting-started</span></a>
         <ul data-level="1" class=" desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/introduction-to-predict/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-introduction-to-predict">予測の紹介</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/terminology/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-terminology">用語集</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/available-tiers/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-available-tiers">使用可能な階層</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/prerequisites/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-prerequisites">前提条件</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/approaches/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-approaches">複数のアプローチ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/data-readiness/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-data-readiness">データの準備</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/model-scores-and-ratings/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-model-scores-and-ratings">モデルのスコアとレーティング</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/about-models/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-about-models">モデルについて</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/adding-a-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-adding-a-model">モデルの追加</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/review-and-start-training/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-review-and-start-training">確認とトレーニングの開始</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/evaluating-the-trained-version/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-evaluating-the-trained-version">トレーニング済みバージョンの評価</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/retraining-a-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-retraining-a-model">モデルの再トレーニング</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/deploying-a-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-deploying-a-model">モデルのデプロイ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/deleting-a-model/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-deleting-a-model">モデルの削除</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/viewing-model-health/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-viewing-model-health">モデルの正常性の表示</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/deployed-model-health-scores/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-deployed-model-health-scores">デプロイ済みモデルの正常性スコア</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/audience-considerations/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-audience-considerations">オーディエンスの検討事項</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/model-retraining-recommendations/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-model-retraining-recommendations">モデルの再トレーニングに関する推奨</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/how-visitor-stitching-affects-predict-models/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-how-visitor-stitching-affects-predict-models">Visitor Stitchingが予測モデルに影響を与える方法</a>
-      </li><li data-level="2" class="selected relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/data-compliance-and-usage/" class="db link pr2 pv2 bg-secondary primary-color" data-target=".predict-getting-started-data-compliance-and-usage">データのコンプライアンスと使用方法</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/machine-learning-vs-artificial-intelligence/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-machine-learning-vs-artificial-intelligence">マシン ラーニングと人工知能 (AI) の比較</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/guides/predict/getting-started/machine-learning-concepts-and-technology/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".predict-getting-started-machine-learning-concepts-and-technology">マシンラーニングのコンセプトとテクノロジー</a>
-      </li></ul></li></ul>
+        <a href="/guides/predict/getting-started/introduction-to-predict/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-introduction-to-predict">予測の紹介</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/terminology/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-terminology">用語集</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/available-tiers/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-available-tiers">使用可能な階層</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/prerequisites/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-prerequisites">前提条件</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/approaches/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-approaches">複数のアプローチ</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/data-readiness/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-data-readiness">データの準備</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/model-scores-and-ratings/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-model-scores-and-ratings">モデルのスコアとレーティング</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/about-models/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-about-models">モデルについて</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/adding-a-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-adding-a-model">モデルの追加</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/review-and-start-training/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-review-and-start-training">確認とトレーニングの開始</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/evaluating-the-trained-version/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-evaluating-the-trained-version">トレーニング済みバージョンの評価</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/retraining-a-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-retraining-a-model">モデルの再トレーニング</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/deploying-a-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-deploying-a-model">モデルのデプロイ</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/deleting-a-model/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-deleting-a-model">モデルの削除</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/viewing-model-health/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-viewing-model-health">モデルの正常性の表示</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/deployed-model-health-scores/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-deployed-model-health-scores">デプロイ済みモデルの正常性スコア</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/audience-considerations/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-audience-considerations">オーディエンスの検討事項</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/model-retraining-recommendations/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-model-retraining-recommendations">モデルの再トレーニングに関する推奨</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/how-visitor-stitching-affects-predict-models/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-how-visitor-stitching-affects-predict-models">Visitor Stitchingが予測モデルに影響を与える方法</a></li><li data-level="2" class="selected relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/data-compliance-and-usage/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".predict-getting-started-data-compliance-and-usage">データのコンプライアンスと使用方法</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/machine-learning-vs-artificial-intelligence/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-machine-learning-vs-artificial-intelligence">マシン ラーニングと人工知能 (AI) の比較</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/guides/predict/getting-started/machine-learning-concepts-and-technology/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".predict-getting-started-machine-learning-concepts-and-technology">マシンラーニングのコンセプトとテクノロジー</a></li></ul></li></ul>
 </nav>
 </div>
     
@@ -370,13 +304,13 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#ccpa">CCPAとGDPRのコンプライアンス</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データ収集</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データの使用方法、共有、アクセスの制御</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">訪問データの使用方法</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">アクセス制御</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データストレージ</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">データの保持</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#ccpa%E3%81%A8gdpr%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%97%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%82%B9" href="javascript:void(0)">CCPAとGDPRのコンプライアンス</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%8E%E9%9B%86" href="javascript:void(0)">データ収集</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%E5%85%B1%E6%9C%89%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AE%E5%88%B6%E5%BE%A1" href="javascript:void(0)">データの使用方法、共有、アクセスの制御</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E8%A8%AA%E5%95%8F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" href="javascript:void(0)">訪問データの使用方法</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E5%88%B6%E5%BE%A1" href="javascript:void(0)">アクセス制御</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8" href="javascript:void(0)">データストレージ</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E4%BF%9D%E6%8C%81" href="javascript:void(0)">データの保持</a></li>
               </nav>
   </aside></nav>
 
@@ -386,11 +320,47 @@ var utag_data = {
 
     </main>
 
-    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
-    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
 <div class="globalmenu mobilemenu dn">
     
 
@@ -689,7 +659,7 @@ var utag_data = {
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.co.jp/guides/audiencestream/getting-started/save-publish/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          ストレージと公開
+          保存と公開
       </a>
       </li>
       
@@ -787,7 +757,7 @@ var utag_data = {
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.co.jp/guides/eventstream/getting-started/save-publish/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          ストレージと公開
+          保存と公開
       </a>
       </li>
       
@@ -855,13 +825,13 @@ var utag_data = {
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/save-publish-basics/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          ストレージと公開
+          保存と公開
       </a>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/saving-changes/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          変更のストレージ
+          変更の保存
       </a>
       </li>
       
@@ -873,7 +843,7 @@ var utag_data = {
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.co.jp/guides/iq-tag-management/getting-started/save-publish/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          ストレージと公開
+          保存と公開
       </a>
       </li>
       
@@ -1058,6 +1028,7 @@ var utag_data = {
 
 </div>
 </div>
+
 </footer>
 
     <script src="/dist/js/app.js"></script>

@@ -11,14 +11,22 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       
 
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
-
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
@@ -65,9 +73,8 @@ var utag_data = {
     </ul>
 
   </div>
-
+  
 </nav>
-
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
@@ -76,7 +83,7 @@ var utag_data = {
 <div class="flex">
 
     
-      <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-ns sticky-l pt3 pl125" style="width:280px;">
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-scroll dn db-ns sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
@@ -85,52 +92,33 @@ var utag_data = {
   </ul>
   <ul class="list pa0"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/early-access/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">早期アクセス</span></a>
         <ul data-level="1" class="early-access desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/early-access/about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".">アーリーアクセスについて</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/server-side-connectors/linkedin-conversions-connector/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".linkedin-conversions-connector">LinkedIn Conversions</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/early-access/spotify-conversions-connector-alpha/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".spotify-conversions-connector-alpha">Spotify Conversionsコネクタ</a>
-      </li><li class="relative w-100 fw8 f5 ">
+        <a href="/early-access/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">アーリーアクセスについて</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/server-side-connectors/linkedin-conversions-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".linkedin-conversions-connector">LinkedIn Conversions</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/early-access/spotify-conversions-connector-alpha/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".spotify-conversions-connector-alpha">Spotify Conversionsコネクタ</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".api-v3">Tealium API v3</a>
         <ul class="pl2  api-v3 desktopmenu animated fadeIn list  dn"><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".iq-profiles-api">iQプロファイル</a>
         <ul class="pl2  iq-profiles-api desktopmenu animated fadeIn list  dn"><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/iq-profiles/about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".early-access-iq-profiles-v3-api">iQプロファイルについて</a>
-      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/iq-profiles/iq-profiles-api-objects/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".early-access-iq-profiles-api-objects">iQ Profiles APIオブジェクト</a>
-      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/iq-profiles/iq-get-profile-api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-get-profile-api">iQ GETプロファイルAPI</a>
-      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/iq-profiles/iq-javascript-extension-api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".early-access-iq-javascript-extension-api">iQ JavaScript拡張API</a>
-      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/iq-profiles/iq-events-api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".early-access-iq-events-api">iQ イベント API</a>
-      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/iq-profiles/iq-variables-api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".early-access-iq-variables-api">iQ変数API</a>
-      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/iq-profiles/iq-load-rules-api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".early-access-iq-load-rules-api">iQロードルールAPI</a>
-      </li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/iq-profiles/iq-tags-api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".early-access-iq-tags-api">iQ タグ API</a>
-      </li></ul>
+        <a href="/early-access/api-v3/iq-profiles/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-profiles-v3-api">iQプロファイルについて</a></li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/iq-profiles/iq-profiles-api-objects/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-profiles-api-objects">iQ Profiles APIオブジェクト</a></li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/iq-profiles/iq-get-profile-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".iq-get-profile-api">iQ GETプロファイルAPI</a></li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/iq-profiles/iq-javascript-extension-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-javascript-extension-api">iQ JavaScript拡張API</a></li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/iq-profiles/iq-events-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-events-api">iQ イベント API</a></li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/iq-profiles/iq-variables-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-variables-api">iQ変数API</a></li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/iq-profiles/iq-load-rules-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-load-rules-api">iQロードルールAPI</a></li><li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/iq-profiles/iq-tags-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-tags-api">iQ タグ API</a></li></ul>
       </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/tealium-collect-http-api-v3-early-access/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-collect-http-api-v3-early-access">Tealium Collect HTTP API</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/tealium-api-v3-visitor-privacy-api-formerly-visitor-lookup-api/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-api-v3-visitor-privacy-api-formerly-visitor-lookup-api">Visitor Privacy API</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/tealium-api-visitor-profile-api-early-access/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-api-v3-visitor-profile-api-early-access">Visitor Profile API</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api-v3/tealium-api-v3-getting-started-early-access/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-api-v3-getting-started-early-access">認証とリクエスト形式</a>
-      </li></ul>
+        <a href="/early-access/api-v3/tealium-collect-http-api-v3-early-access/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tealium-collect-http-api-v3-early-access">Tealium Collect HTTP API</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/tealium-api-v3-visitor-privacy-api-formerly-visitor-lookup-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tealium-api-v3-visitor-privacy-api-formerly-visitor-lookup-api">Visitor Privacy API</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/tealium-api-visitor-profile-api-early-access/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tealium-api-v3-visitor-profile-api-early-access">Visitor Profile API</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api-v3/tealium-api-v3-getting-started-early-access/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tealium-api-v3-getting-started-early-access">認証とリクエスト形式</a></li></ul>
       </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/early-access/connectors-dashboard/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".connectors-dashboard">コネクタダッシュボード</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/early-access/visitor-deletion-jobs/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".visitor-deletion-jobs">ビジター削除ジョブ</a>
-      </li><li class="relative w-100 fw8 f5  active">
+        <a href="/early-access/connectors-dashboard/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".connectors-dashboard">コネクタダッシュボード</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/early-access/visitor-deletion-jobs/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".visitor-deletion-jobs">ビジター削除ジョブ</a></li><li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 primary-color expanded " data-target=".platform-permissions">プラットフォームの権限</a>
         <ul class="pl2 bl b--primary bw1 platform-permissions desktopmenu animated fadeIn list "><li data-level="3" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/platform-permissions/ea/" class="db link pr2 pv2 bg-secondary primary-color" data-target=".">早期アクセスリリース</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/platform-permissions/pii-account-roles/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".">PIIとアカウントレベルのロール</a>
-      </li></ul>
+        <a href="/early-access/platform-permissions/ea/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".">早期アクセスリリース</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/platform-permissions/pii-account-roles/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">PIIとアカウントレベルのロール</a></li></ul>
       </li></ul></li></ul>
 </nav>
 </div>
@@ -242,7 +230,7 @@ var utag_data = {
 <li>Server-Side (Others)</li>
 </ul>
 <p>グループに割り当てることができる機能権限は、グループに割り当てられた製品権限によって異なります。以下の表に示すように、製品権限によって割り当てられる機能権限が異なります。</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>表示と編集</strong>または<strong>表示、編集、削除</strong>の権限を持つユーザーは、<strong>ストレージ</strong>の権限も持っています。</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i><strong>表示と編集</strong>または<strong>表示、編集、削除</strong>の権限を持つユーザーは、<strong>保存</strong>の権限も持っています。</p>
 <table>
 <thead>
 <tr>
@@ -375,7 +363,7 @@ var utag_data = {
 <li>このグループがサーバーサイドの変更を公開できる必要がある場合は、<strong>公開を有効にする</strong>を選択します。</li>
 <li>選択した製品の機能権限を選択し、<strong>次へ</strong>をクリックします。</li>
 <li>このグループにアクセスできるアカウントプロファイルを選択し、<strong>次へ</strong>をクリックします。</li>
-<li>このグループに追加する各ユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>ストレージ</strong>をクリックします。</li>
+<li>このグループに追加する各ユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>保存</strong>をクリックします。</li>
 </ol>
 <h3 id="既存のグループを複製する">既存のグループを複製する</h3>
 <p>既存のグループを複製して新しいグループを作成し、新しいグループの権限とアクセスを変更することができます。次の手順でグループを複製します。</p>
@@ -385,7 +373,7 @@ var utag_data = {
 <li><strong>グループの種類</strong>で<strong>既存のグループを複製</strong>を選択します。</li>
 <li>複製するグループを選択します。</li>
 <li>複製するグループの名前を入力し、<strong>次へ</strong>をクリックします。</li>
-<li>グループに追加するユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>ストレージ</strong>をクリックします。</li>
+<li>グループに追加するユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>保存</strong>をクリックします。</li>
 </ol>
 <h3 id="グループにユーザーを追加する">グループにユーザーを追加する</h3>
 <p>既存のユーザーをグループに追加することができます。新しいユーザーの追加方法については、<a href="/server-side/administration/user-permissions/about/">サーバーサイドのユーザー権限の管理について</a>を参照してください。ユーザーリストからユーザーをグループに追加する方法については、<a href="#user-add-remove-groups">ユーザーの追加または削除</a>を参照してください。</p>
@@ -394,7 +382,7 @@ var utag_data = {
 <li>管理メニューで<strong>権限の管理</strong>をクリックします。</li>
 <li>編集したいグループをクリックします。</li>
 <li><strong>+ ユーザーを追加</strong>をクリックします。</li>
-<li>追加するユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>ストレージ</strong>をクリックします。</li>
+<li>追加するユーザーのメールアドレスを入力またはコピーして貼り付け、<strong>保存</strong>をクリックします。</li>
 </ol>
 <p>複数のグループにユーザーを追加するには、各グループに対してこれらの手順を繰り返します。</p>
 <h3 id="グループの機能権限を変更する">グループの機能権限を変更する</h3>
@@ -405,7 +393,7 @@ var utag_data = {
 <li><strong>機能</strong>タブをクリックします。</li>
 <li><strong>PII権限</strong>を選択または選択解除します。</li>
 <li>必要に応じて製品アクセスと機能アクセスを変更します。</li>
-<li><strong>ストレージ</strong>をクリックします。</li>
+<li><strong>保存</strong>をクリックします。</li>
 </ol>
 <h3 id="グループにプロファイルを追加または削除する">グループにプロファイルを追加または削除する</h3>
 <p>グループにプロファイルを追加または削除するには、次の手順を使用します。</p>
@@ -415,10 +403,10 @@ var utag_data = {
 <li><strong>プロファイル</strong>タブをクリックします。</li>
 <li>プロファイルを削除するには、次の手順に従います:</li>
 <li>プロファイルメニューをクリックし、<strong>削除</strong>を選択します。</li>
-<li>確認ダイアログで<strong>削除</strong>をクリックし、<strong>ストレージ</strong>をクリックします。</li>
+<li>確認ダイアログで<strong>削除</strong>をクリックし、<strong>保存</strong>をクリックします。</li>
 <li>プロファイルを追加するには、次の手順に従います:</li>
 <li><strong>+ プロファイルを追加</strong>をクリックします。</li>
-<li>プロファイルを選択し、<strong>ストレージ</strong>をクリックします。</li>
+<li>プロファイルを選択し、<strong>保存</strong>をクリックします。</li>
 </ol>
 <h3 id="グループを表示する">グループを表示する</h3>
 <p>アカウントのグループを表示するには、次の手順を使用します。</p>
@@ -464,11 +452,11 @@ var utag_data = {
 <li><strong>グループ</strong>タブをクリックします。</li>
 <li>グループを追加するには、次の手順に従います:</li>
 <li><strong>+ グループを追加</strong>をクリックします。</li>
-<li><strong>グループを追加</strong>画面で、1つ以上のグループを選択し、<strong>ストレージ</strong>をクリックします。</li>
+<li><strong>グループを追加</strong>画面で、1つ以上のグループを選択し、<strong>保存</strong>をクリックします。</li>
 <li>グループを削除するには、次の手順に従います:</li>
 <li>グループメニューをクリックし、<strong>削除</strong>をクリックします。</li>
-<li>確認ダイアログで<strong>削除</strong>をクリックし、<strong>ストレージ</strong>をクリックします。</li>
-<li><strong>グループの詳細</strong>画面で、<strong>ストレージ</strong>をクリックしてグループへの変更をストレージします。</li>
+<li>確認ダイアログで<strong>削除</strong>をクリックし、<strong>保存</strong>をクリックします。</li>
+<li><strong>グループの詳細</strong>画面で、<strong>保存</strong>をクリックしてグループへの変更を保存します。</li>
 </ol>
 <h2 id="ユーザーにアカウントの役割権限を割り当てる">ユーザーにアカウントの役割権限を割り当てる</h2>
 <p>アカウントの役割権限は既存のユーザーに追加することができます。新しいユーザーの追加方法については、<a href="/server-side/administration/user-permissions/about/">サーバーサイドのユーザー権限の管理について</a>を参照してください。</p>
@@ -487,7 +475,7 @@ var utag_data = {
          title="admin-roles-user-details.png"/>
     </a>
 </figure></li>
-<li>1つ以上の<strong>アカウントの役割権限</strong>を選択し、<strong>ストレージ</strong>をクリックします。</li>
+<li>1つ以上の<strong>アカウントの役割権限</strong>を選択し、<strong>保存</strong>をクリックします。</li>
 </ol>
 
 </div>
@@ -534,7 +522,7 @@ var utag_data = {
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年March月25日
+          <p>最終更新日 ::  2024年March月28日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -548,25 +536,25 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">動作方法</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">アカウントの役割権限</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">グループの権限</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">権限の強制とPII権限の管理</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">プラットフォームの権限をオンにする</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">プラットフォームの権限をオフにする</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#pii">PII権限をオンにする</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#pii">PII権限をオフにする</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">グループの管理</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">新しいグループを作成する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">既存のグループを複製する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">グループにユーザーを追加する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">グループの機能権限を変更する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">グループにプロファイルを追加または削除する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">グループを表示する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">グループを削除する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユーザー情報を表示する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユーザーにグループを追加または削除する</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ユーザーにアカウントの役割権限を割り当てる</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E5%8B%95%E4%BD%9C%E6%96%B9%E6%B3%95" href="javascript:void(0)">動作方法</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%BD%B9%E5%89%B2%E6%A8%A9%E9%99%90" href="javascript:void(0)">アカウントの役割権限</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E6%A8%A9%E9%99%90" href="javascript:void(0)">グループの権限</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E6%A8%A9%E9%99%90%E3%81%AE%E5%BC%B7%E5%88%B6%E3%81%A8pii%E6%A8%A9%E9%99%90%E3%81%AE%E7%AE%A1%E7%90%86" href="javascript:void(0)">権限の強制とPII権限の管理</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E6%A8%A9%E9%99%90%E3%82%92%E3%82%AA%E3%83%B3%E3%81%AB%E3%81%99%E3%82%8B" href="javascript:void(0)">プラットフォームの権限をオンにする</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E6%A8%A9%E9%99%90%E3%82%92%E3%82%AA%E3%83%95%E3%81%AB%E3%81%99%E3%82%8B" href="javascript:void(0)">プラットフォームの権限をオフにする</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#pii%E6%A8%A9%E9%99%90%E3%82%92%E3%82%AA%E3%83%B3%E3%81%AB%E3%81%99%E3%82%8B" href="javascript:void(0)">PII権限をオンにする</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#pii%E6%A8%A9%E9%99%90%E3%82%92%E3%82%AA%E3%83%95%E3%81%AB%E3%81%99%E3%82%8B" href="javascript:void(0)">PII権限をオフにする</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E7%AE%A1%E7%90%86" href="javascript:void(0)">グループの管理</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E6%96%B0%E3%81%97%E3%81%84%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B" href="javascript:void(0)">新しいグループを作成する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E6%97%A2%E5%AD%98%E3%81%AE%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%92%E8%A4%87%E8%A3%BD%E3%81%99%E3%82%8B" href="javascript:void(0)">既存のグループを複製する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AB%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B" href="javascript:void(0)">グループにユーザーを追加する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E6%A9%9F%E8%83%BD%E6%A8%A9%E9%99%90%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B" href="javascript:void(0)">グループの機能権限を変更する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AB%E3%83%97%E3%83%AD%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%BE%E3%81%9F%E3%81%AF%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B" href="javascript:void(0)">グループにプロファイルを追加または削除する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B" href="javascript:void(0)">グループを表示する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B" href="javascript:void(0)">グループを削除する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E6%83%85%E5%A0%B1%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B" href="javascript:void(0)">ユーザー情報を表示する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%BE%E3%81%9F%E3%81%AF%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B" href="javascript:void(0)">ユーザーにグループを追加または削除する</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AB%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%BD%B9%E5%89%B2%E6%A8%A9%E9%99%90%E3%82%92%E5%89%B2%E3%82%8A%E5%BD%93%E3%81%A6%E3%82%8B" href="javascript:void(0)">ユーザーにアカウントの役割権限を割り当てる</a></li>
               </nav>
   </aside></nav>
 
@@ -576,11 +564,47 @@ var utag_data = {
 
     </main>
 
-    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
-    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
 <div class="globalmenu mobilemenu dn">
     
 
@@ -846,6 +870,7 @@ var utag_data = {
 
 </div>
 </div>
+
 </footer>
 
     <script src="/dist/js/app.js"></script>

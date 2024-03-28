@@ -11,14 +11,22 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       
 
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
-
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
@@ -65,9 +73,8 @@ var utag_data = {
     </ul>
 
   </div>
-
+  
 </nav>
-
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
@@ -335,7 +342,7 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 <li><strong>適用</strong>をクリックします。</li>
 <li>（オプション）ロードルールとデータマッピングを定義します。</li>
 <li><strong>完了</strong>をクリックします。</li>
-<li>変更をストレージし、希望する環境に公開します。</li>
+<li>変更を保存し、希望する環境に公開します。</li>
 </ol>
 <h3 id="audiencestreamを有効にする">AudienceStreamを有効にする</h3>
 <p>Quantum Metric Replay URLをAudienceStreamに送信するように構成する前に、Quantum MetricからTealiumに送信する目的のターゲット行動と体験を決定するために、Quantum Metricクライアントサービスマネージャーに相談してください。</p>
@@ -345,9 +352,9 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 <li>詳細を展開し、<strong>編集</strong>をクリックします。</li>
 <li>Send Replay URLフィールドを<strong>True</strong>に構成します。<br>
 <figure><a class="slb" href="/images/tech-partners/quantum-metric-tag-configuration.jpg"><img src="/images/tech-partners/quantum-metric-tag-configuration.jpg"/>
-          </a><figcaption><p>Quantum Metricタグ構成.jpg</p>
-              </figcaption>
-      </figure></li>
+    </a><figcaption><p>Quantum Metricタグ構成.jpg</p>
+        </figcaption>
+</figure></li>
 <li>次のフィールドを定義します：
 <ul>
 <li>タイムスタンプ</li>
@@ -356,7 +363,7 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 </ul>
 </li>
 <li><strong>適用</strong>をクリックします。</li>
-<li>変更をストレージし、希望する環境に公開します。</li>
+<li>変更を保存し、希望する環境に公開します。</li>
 </ol>
 <h3 id="ライブイベントで表示">ライブイベントで表示</h3>
 <p>Quantum Metricタグが構成され、AudienceStreamへのReplay URLの送信が有効になると、ライブイベントフィードで活動を表示することができます。</p>
@@ -365,8 +372,8 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 <li>Customer Data Hubの左側のサイドバーで、<strong>Event Stream &gt; Live Events</strong>をクリックします。</li>
 <li>イベント属性<code>quantum_metric_replay_url</code>または<code>quantum_metric_user_id</code>を含むイベントをフィルタリングして、Quantum Metricからのイベントを探します。<br>
 <figure><a class="slb" href="/images/tech-partners/quantummetric-live-events.png"><img src="/images/tech-partners/quantummetric-live-events.png"/>
-        </a>
-    </figure></li>
+    </a>
+</figure></li>
 <li>これらのイベント属性を使用して、他の<a href="/server-side/attributes/about/">AudienceStream属性</a>でプロファイルを豊かにします。</li>
 </ol>
 
@@ -414,7 +421,7 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>最終更新日 ::  2024年March月25日
+          <p>最終更新日 ::  2024年March月28日
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -428,12 +435,12 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">前提条件</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">仕組み</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">タグの構成</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium">Tealiumアカウントでタグを追加し構成する</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#audiencestream">AudienceStreamを有効にする</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">ライブイベントで表示</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6" href="javascript:void(0)">前提条件</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E4%BB%95%E7%B5%84%E3%81%BF" href="javascript:void(0)">仕組み</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%BF%E3%82%B0%E3%81%AE%E6%A7%8B%E6%88%90" href="javascript:void(0)">タグの構成</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tealium%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%82%BF%E3%82%B0%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E6%A7%8B%E6%88%90%E3%81%99%E3%82%8B" href="javascript:void(0)">Tealiumアカウントでタグを追加し構成する</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#audiencestream%E3%82%92%E6%9C%89%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B" href="javascript:void(0)">AudienceStreamを有効にする</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%A9%E3%82%A4%E3%83%96%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%A7%E8%A1%A8%E7%A4%BA" href="javascript:void(0)">ライブイベントで表示</a></li>
               </nav>
   </aside></nav>
 
@@ -443,11 +450,47 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 
     </main>
 
-    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
-    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
 <div class="globalmenu mobilemenu dn">
     
 
@@ -660,6 +703,7 @@ Quantum Metricタグを見つけるには、ベンダー名の検索フィール
 
 </div>
 </div>
+
 </footer>
 
     <script src="/dist/js/app.js"></script>

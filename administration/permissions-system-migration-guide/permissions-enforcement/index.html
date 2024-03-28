@@ -11,14 +11,22 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       
 
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
-
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
@@ -65,9 +73,8 @@ var utag_data = {
     </ul>
 
   </div>
-
+  
 </nav>
-
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
@@ -76,7 +83,7 @@ var utag_data = {
 <div class="flex">
 
     
-      <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-ns sticky-l pt3 pl125" style="width:280px;">
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-scroll dn db-ns sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
@@ -85,27 +92,18 @@ var utag_data = {
   </ul>
   <ul class="list pa0"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/administration/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">管理</span></a>
         <ul data-level="1" class="administration desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/administration/about-permissions/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".about-platform-permissions">プラットフォームの権限について</a>
-      </li><li class="relative w-100 fw8 f5  active">
+        <a href="/administration/about-permissions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-platform-permissions">プラットフォームの権限について</a></li><li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 primary-color expanded " data-target=".platform-permissions-migration-guide">プラットフォーム権限移行ガイド</a>
         <ul class="pl2 bl b--primary bw1 platform-permissions-migration-guide desktopmenu animated fadeIn list "><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/administration/permissions-system-migration-guide/migration-about/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-about">移行について</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/administration/permissions-system-migration-guide/strategy/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-strategy">戦略</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/administration/permissions-system-migration-guide/plan/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-plan">移行プラン</a>
-      </li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/administration/permissions-system-migration-guide/permissions-system-migration-guide-deployment-strategies/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-deployment-strategies">デプロイメント戦略</a>
-      </li><li data-level="3" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/administration/permissions-system-migration-guide/permissions-enforcement/" class="db link pr2 pv2 bg-secondary primary-color" data-target=".permissions-system-migration-guide-permissions-enforcement">権限の強制</a>
-      </li></ul>
+        <a href="/administration/permissions-system-migration-guide/migration-about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-about">移行について</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/administration/permissions-system-migration-guide/strategy/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-strategy">戦略</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/administration/permissions-system-migration-guide/plan/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-plan">移行プラン</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/administration/permissions-system-migration-guide/permissions-system-migration-guide-deployment-strategies/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-deployment-strategies">デプロイメント戦略</a></li><li data-level="3" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/administration/permissions-system-migration-guide/permissions-enforcement/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".permissions-system-migration-guide-permissions-enforcement">権限の強制</a></li></ul>
       </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/administration/admin-roles/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".admin-roles">管理者の役割</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/administration/permission-groups/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".permission-groups">権限グループ</a>
-      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/administration/users/" class="db link pr2 pv2 text-color-primary hover-primary-color " data-target=".users">ユーザー</a>
-      </li></ul></li></ul>
+        <a href="/administration/admin-roles/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".admin-roles">管理者の役割</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/administration/permission-groups/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".permission-groups">権限グループ</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/administration/users/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".users">ユーザー</a></li></ul></li></ul>
 </nav>
 </div>
     
@@ -229,8 +227,8 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">それはどのように機能するか</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#">プラットフォームの権限を管理する</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%81%9D%E3%82%8C%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E6%A9%9F%E8%83%BD%E3%81%99%E3%82%8B%E3%81%8B" href="javascript:void(0)">それはどのように機能するか</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E6%A8%A9%E9%99%90%E3%82%92%E7%AE%A1%E7%90%86%E3%81%99%E3%82%8B" href="javascript:void(0)">プラットフォームの権限を管理する</a></li>
               </nav>
   </aside></nav>
 
@@ -240,11 +238,47 @@ var utag_data = {
 
     </main>
 
-    <footer class="bg-primary-color-dark ph1-ns relative w-100" role="contentinfo">
-    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
 <div class="globalmenu mobilemenu dn">
     
 
@@ -498,6 +532,7 @@ var utag_data = {
 
 </div>
 </div>
+
 </footer>
 
     <script src="/dist/js/app.js"></script>
