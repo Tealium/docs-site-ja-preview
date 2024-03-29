@@ -122,7 +122,7 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
-        <a href="/server-side/getting-started/eventstream-api-hub/introduction/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-es">EventStream API Hub</a>
+        <a href="/server-side/#eventstream-api-hub" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-es">EventStream API Hub</a>
       
       </li>
         
@@ -130,7 +130,7 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
-        <a href="/server-side/getting-started/audiencestream-cdp/introduction/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-as">AudienceStream CDP</a>
+        <a href="/server-side/#audiencestream-cdp" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-as">AudienceStream CDP</a>
       
       </li>
         
@@ -292,6 +292,15 @@ var utag_data = {
           
           
 
+          <h2 class="rn-section" id="net-maui用tealiumリリースノート"><a href="/platforms/dotnet-maui/release-notes/">.NET MAUI用Tealiumリリースノート</a></h2>
+          <div class="f3"id="101-2024年2月">1.0.1 (2024年2月)</div>
+<ul>
+<li>NuGetパッケージングへの更新。パッケージング形式の変更により、バージョン1.0.0のユーザーは問題が発生する可能性があります。</li>
+</ul>
+        
+          
+          
+
           <h2 class="rn-section" id="cordova用tealiumリリースノート"><a href="/platforms/cordova/release-notes/">Cordova用Tealiumリリースノート</a></h2>
           <div class="f3"id="231-2023年4月">2.3.1 (2023年4月)</div>
 <ul>
@@ -419,6 +428,26 @@ var utag_data = {
           
           
 
+          <h2 class="rn-section" id="イベントリリースノート"><a href="/iq-tag-management/events/release-notes/">イベントリリースノート</a></h2>
+          <div class="f3"id="2024年3月13日">2024年3月13日</div>
+<h4 id="新規クールな機能">新規/クールな機能</h4>
+<ul>
+<li>以下の新機能を追加して、イベントUIを更新しました：
+<ul>
+<li><strong>イベント</strong>ページを更新して、<strong>ラベル</strong>列とは別の<strong>ライブラリ</strong>列を追加しました。</li>
+<li>イベントの<strong>詳細</strong>スライドアウトを更新して、左列にUIDを表示します。</li>
+<li><strong>公開場所</strong>セクションを拡張して、より多くの情報を表示します。</li>
+</ul>
+</li>
+</ul>
+<h4 id="更新と修正">更新と修正</h4>
+<ul>
+<li>イベントに使用される継承されたロードルールまたは変数が削除された場合に表示される警告を追加して、イベントUIを更新しました。</li>
+</ul>
+        
+          
+          
+
           <h2 class="rn-section" id="データソースリリースノート"><a href="/server-side/data-sources/release-notes/">データソースリリースノート</a></h2>
           <div class="f3"id="2023年12月13日">2023年12月13日</div>
 <h4 id="更新">更新</h4>
@@ -434,6 +463,17 @@ var utag_data = {
 <h4 id="修正">修正</h4>
 <ul>
 <li><strong>新規タグ</strong>ウィンドウから削除された変数が削除できない問題を修正しました。</li>
+</ul>
+        
+          
+          
+
+          <h2 class="rn-section" id="データレイヤーリリースノート"><a href="/iq-tag-management/data-layer/release-notes/">データレイヤーリリースノート</a></h2>
+          <div class="f3"id="2024年1月31日">2024年1月31日</div>
+<h4 id="修正">修正</h4>
+<ul>
+<li>特殊文字を含むデータレイヤー変数をページビューイベントに適用すると、JavaScriptエラーが発生し、iQタグ管理がロードされない問題を修正しました。</li>
+<li>ダブルクォート（<code>&quot;</code>）を含む値の場合、結果の値に余分なシングルクォート（<code>'</code>）が追加されないように、<code>utag.js</code>で実行されるイベントトリガー変数を更新しました。</li>
 </ul>
         
           
@@ -491,6 +531,22 @@ var utag_data = {
           
           
 
+          <h2 class="rn-section" id="クライアントサイドの同意管理リリースノート"><a href="/iq-tag-management/consent/consent-management/release-notes/">クライアントサイドの同意管理リリースノート</a></h2>
+          <div class="f3"id="2024年2月14日">2024年2月14日</div>
+<h4 id="更新と修正">更新と修正</h4>
+<ul>
+<li>Consent Manager <code>cmGeneral</code> テンプレートをv3.0.13に更新しました：
+<ul>
+<li><code>shouldTagFire</code> 関数の名前を <code>shouldBlockTag</code> に変更し、その目的をより明確にしました（動作は変わりません）。</li>
+<li>UIDで呼び出されるタグが、同意強制が適用されないはずの場合でも、オプトアウトしたユーザーに対してブロックされる問題を修正しました。</li>
+<li>オプトインとオプトアウトのモジュール間の相互作用を改善しました。</li>
+</ul>
+</li>
+</ul>
+        
+          
+          
+
           <h2 class="rn-section" id="コネクタのリリースノート"><a href="/server-side/connectors/release-notes/">コネクタのリリースノート</a></h2>
           <div class="f3"id="2023年11月15日">2023年11月15日</div>
 <h4 id="更新">更新</h4>
@@ -506,6 +562,26 @@ var utag_data = {
 <h4 id="修正">修正</h4>
 <ul>
 <li>ユーザーがタグを更新した後に<strong>タブ</strong>タブの検索フィールドがリセットされる問題を修正しました。</li>
+</ul>
+        
+          
+          
+
+          <h2 class="rn-section" id="テンプレートリリースノート"><a href="/iq-tag-management/templates/release-notes/">テンプレートリリースノート</a></h2>
+          <div class="f3"id="2024年2月14日">2024年2月14日</div>
+<h4 id="更新と修正">更新と修正</h4>
+<ul>
+<li>継承されたタグテンプレートが誤って編集可能になっていた問題を修正しました。継承されたタグテンプレートは現在、読み取り専用です。</li>
+</ul>
+        
+          
+          
+
+          <h2 class="rn-section" id="プロファイルリリースノート"><a href="/iq-tag-management/profiles/release-notes/">プロファイルリリースノート</a></h2>
+          <div class="f3"id="2024年1月18日">2024年1月18日</div>
+<h4 id="修正">修正</h4>
+<ul>
+<li>古いプロファイルバージョンを表示しているときに、古いプロファイルバージョンのバナーが表示されない問題を修正しました。</li>
 </ul>
         
           
@@ -557,6 +633,16 @@ var utag_data = {
 <li>Consent Integrationsの免除と目的グループの事前ロードルールが編集できないように更新しました。</li>
 </ul>
         
+          
+          
+
+          <h2 class="rn-section" id="同意統合リリースノート"><a href="/iq-tag-management/consent/consent-integrations/release-notes/">同意統合リリースノート</a></h2>
+          <div class="f3"id="2024年3月20日">2024年3月20日</div>
+<h4 id="更新と修正">更新と修正</h4>
+<ul>
+<li>タグ名に特殊文字（<code>&lt;</code>、<code>&gt;</code>、<code>&amp;</code>など）が表示されない問題を修正しました。</li>
+</ul>
+        
         </div>
 
         <div class="bt-l b--moon-gray pv3 cb">
@@ -591,7 +677,8 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">このページで</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#cordova%E7%94%A8tealium%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">Cordova用Tealiumリリースノート</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#net-maui%E7%94%A8tealium%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">.NET MAUI用Tealiumリリースノート</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#cordova%E7%94%A8tealium%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">Cordova用Tealiumリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#dataaccess%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">DataAccessリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tealium-for-android-kotlin-%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">Tealium for Android (Kotlin) リリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tealium-for-iosswift%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">Tealium for iOS（Swift）リリースノート</a></li>
@@ -599,17 +686,23 @@ var utag_data = {
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%BF%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">サーバーサイドコネクタのリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B5%E3%82%A4%E3%83%89%E7%AE%A1%E7%90%86%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">サーバーサイド管理リリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B5%E3%82%A4%E3%83%89%E5%90%8C%E6%84%8F%E7%AE%A1%E7%90%86%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">サーバーサイド同意管理リリースノート</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">イベントリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">データソースリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">データマッピングリリースノート</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">データレイヤーリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%A8%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">オーディエンスリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%AD%E3%83%BC%E3%83%89%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">ロードルールリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%83%89%E3%82%BF%E3%82%B0%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">クライアントサイドタグのリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%83%89%E3%81%AE%E5%90%8C%E6%84%8F%E7%AE%A1%E7%90%86%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">クライアントサイドの同意管理リリースノート</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%83%89%E3%81%AE%E5%90%8C%E6%84%8F%E7%AE%A1%E7%90%86%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">クライアントサイドの同意管理リリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%BF%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">コネクタのリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%82%BF%E3%82%B0%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">タグリリースノート</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">テンプレートリリースノート</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%97%E3%83%AD%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">プロファイルリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%A9%E3%83%99%E3%83%AB%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">ラベルリリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88%E3%81%AE%E4%BF%9D%E5%AD%98%E3%81%A8%E5%85%AC%E9%96%8B" href="javascript:void(0)">リリースノートの保存と公開</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">拡張機能のリリースノート</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E5%90%8C%E6%84%8F%E7%B5%B1%E5%90%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">同意統合リリースノート</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#%E5%90%8C%E6%84%8F%E7%B5%B1%E5%90%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88" href="javascript:void(0)">同意統合リリースノート</a></li>
               </nav>
   </aside></nav>
@@ -689,7 +782,7 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/server-side/getting-started/eventstream-api-hub/introduction/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.co.jp/server-side/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           EventStream API Hub
         </a>
     </li>
@@ -697,7 +790,7 @@ var utag_data = {
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.co.jp/server-side/getting-started/audiencestream-cdp/introduction/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.co.jp/server-side/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           AudienceStream CDP
         </a>
     </li>
